@@ -169,7 +169,7 @@ body {
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The paths of (<a href="#ex1.7">1.7</a>) conform to Figure <a href="#fig1.1">1.1</a>. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that in (<a href="#ex1.7">1.7</a>) there are nodes with extra marking: <tt>"PHRASE;&#64;1"</tt> and <tt>"PHRASE;&#64;3"</tt>. These nodes have the same preceeding path: <tt>"IP-MAT","CLAUSE","CLAUSE"</tt>. When distinct nodes have the same tag and the same preceeding path, extra marking ensures they are uniquely distinguished when considering multiple paths. The convention followed for extra marking includes &lsquo;<tt>;&#64;n</tt>&rsquo; for the <tt>n</tt>-th sister node of a shared preceeding path.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that in (<a href="#ex1.7">1.7</a>) there are nodes with extra marking: <tt>"PHRASE;&#64;1"</tt> and <tt>"PHRASE;&#64;3"</tt>. These nodes have the same preceding path: <tt>"IP-MAT","CLAUSE","CLAUSE"</tt>. When distinct nodes have the same tag and the same preceding path, extra marking ensures they are uniquely distinguished when considering multiple paths. The convention followed for extra marking includes &lsquo;<tt>;&#64;n</tt>&rsquo; for the <tt>n</tt>-th sister node of a shared preceding path.</p>
 
 <br>
 <h2><a name="sec1.4">1.4</a>&nbsp;&nbsp;&nbsp;Orientation</h2>
@@ -292,7 +292,7 @@ body {
 
 <p align="justify">This chapter details the range of possible <b>words</b> as the bottom layer of sentence structure, while chapter <a href="#ch3">3</a> considers <b>phrase</b> layers, and chapter <a href="#ch4">4</a> ascends to <b>clause</b> layers. This unravelling of the layers of grammatical structure will show all elements as inter-related components. Understanding of what is possible at one layer will require the integration of knowledge from the others. With this chapter, words are categorised into classes informed by how words function in phrases and clauses.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. To start establishing criteria for tagging, the chapter identifies words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="#sec2.2">2.2</a>; words for adjective phrases, in section <a href="#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="#sec2.4">2.4</a>. Section <a href="#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="#sec2.6">2.6</a> considers verbs (lexical verbs, auxiliary verbs, and modal verbs), which are minimal components for clause layers. Section <a href="#sec2.7">2.7</a> provides details for other word types that occur under a clause layer. Section <a href="#sec2.8">2.8</a> considers words that serve as connectives to combine layers. Section <a href="#sec2.9">2.9</a> looks at the treatment of punctuation. Section <a href="#sec2.10">2.10</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="#sec2.11">2.11</a> covers other possible elements of a parse.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. To start establishing criteria for tagging, the chapter identifies words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="#sec2.2">2.2</a>; words for adjective phrases, in section <a href="#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="#sec2.4">2.4</a>. Section <a href="#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="#sec2.6">2.6</a> presents tags for verbs which are components for clause layers. Section <a href="#sec2.7">2.7</a> adds other word types that occur under a clause layer. Section <a href="#sec2.8">2.8</a> considers words that serve as connectives to combine layers. Section <a href="#sec2.9">2.9</a> looks at the treatment of punctuation. Section <a href="#sec2.10">2.10</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="#sec2.11">2.11</a> notes other possible elements of a parse.</p>
 
 <h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;Beware: Same character string; different word class tag</h3>
 
@@ -334,26 +334,23 @@ body {
 <dl>
   <dt>(<a name="ex2.3">2.3</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-SUB&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;rain))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADV&nbsp;so)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;*ICH*-178))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;heavy))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-VOC&nbsp;(NS&nbsp;friends))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-178&nbsp;(<font style="background-color: SandyBrown;">__P-CONN</font>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~Tn&nbsp;ask)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(N&nbsp;leave))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-SCON-CNT&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(VB;~phr_Vp&nbsp;come)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(RP&nbsp;in))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VB;~I&nbsp;rest)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;awhile)))))))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=83_classics_HARDY-1883@90" target="_blank">66#83_classics_HARDY-1883&#64;25</a>))</tt><br>
+<tt>(&nbsp;(IP-MAT-IMP&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;tell)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{GIANT}&nbsp;(PRO&nbsp;me))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(<font style="background-color: SandyBrown;">__P-CONN</font>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ;{GIANT}&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;might)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(VB&nbsp;take)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(NP-GENV;{GIANT}&nbsp;(PRO&nbsp;my))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;big))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;sword)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VB&nbsp;slay)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;him)))))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rdquo&gt;))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=90_classics_WILDE_2-1888@12" target="_blank">90_classics_WILDE_2-1888&#64;12</a>))</tt><br>
 
 <br>
 <h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
@@ -466,7 +463,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;work))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=212_christine_T37@19" target="_blank">7#212_christine_T37&#64;13</a>))</tt><br>
 
-<p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceeding <i>of</i> preposition, as (<a href="#ex2.12">2.12</a>) illustrates.</p>
+<p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as (<a href="#ex2.12">2.12</a>) illustrates.</p>
 
 <dl>
   <dt>(<a name="ex2.12">2.12</a>)</dt><dd></dd>
@@ -874,7 +871,7 @@ body {
 <br>
 <h2><a name="sec2.5">2.5</a>&nbsp;&nbsp;&nbsp;Other noun phrase level words</h2>
 
-<p align="justify">Section <a href="#sec2.2">2.2</a> above has already discussed words that can head a noun phrase. Table <a href="#table2.8">2.8</a> gives tags for other words that can be immediate components of a noun phrase, but that can't be a noun phrase head. Rather, these words preceed the head within noun phrases and function to modify the head in terms of definiteness, item under question, or quantity.</p>
+<p align="justify">Section <a href="#sec2.2">2.2</a> above has already discussed words that can head a noun phrase. Table <a href="#table2.8">2.8</a> gives tags for other words that can be immediate components of a noun phrase, but that can't be a noun phrase head. Rather, these words precede the head within noun phrases and function to modify the head in terms of definiteness, item under question, or quantity.</p>
 
 <p><a name="table2.8">Table 2.8: Tags for words that can be immediate components of a noun phrase</a></p>
 
@@ -902,30 +899,14 @@ body {
 <br>
 <h2><a name="sec2.6">2.6</a>&nbsp;&nbsp;&nbsp;Verbs</h2>
 
-<p align="justify">Verbs occur at clause levels of structure in the annotation. Tagging for verbs will follow the subclassification presented in Table <a href="#table2.9">2.9</a>.</p>
-
-<p><a name="table2.9">Table 2.9: The subclassification of English verbs</a></p>
-
-<table border="1" cellpadding="10px">
-  <tr>
-    <td rowspan="5">verbs</td>
-    <td colspan="2">lexical (<tt>VBP</tt>, <tt>VBD</tt>, <tt>VB</tt>, <tt>VAG</tt>, <tt>VVN</tt>)</td>
-  </tr>
-  <tr>
-    <td colspan="2"><small style="font-size: 75%">HAVE</small> (<tt>HVP</tt>, <tt>HVD</tt>, <tt>HV</tt>, <tt>HAG</tt>, <tt>HVN</tt>)</td>
-  </tr>
-  <tr>
-    <td colspan="2"><small style="font-size: 75%">BE</small> (<tt>BEP</tt>, <tt>BED</tt>, <tt>BE</tt>, <tt>BAG</tt>, <tt>BEN</tt>)</td>
-  </tr>
-  <tr>
-    <td colspan="2"><small style="font-size: 75%">DO</small> (<tt>DOP</tt>, <tt>DOD</tt>, <tt>DO</tt>, <tt>DAG</tt>, <tt>DON</tt>)</td>
-  </tr>
-  <tr>
-    <td colspan="2">modal verbs (<tt>MD</tt>)</td>
-  </tr>
-</table>
-
-<p align="justify">This section documents tags for lexical verbs (section <a href="#sec2.6.1">2.6.1</a>), tags for <small style="font-size: 75%">HAVE</small> (section <a href="#sec2.6.2">2.6.2</a>), tags for <small style="font-size: 75%">BE</small> (section <a href="#sec2.6.3">2.6.3</a>), tags for <small style="font-size: 75%">DO</small> (section <a href="#sec2.6.4">2.6.4</a>), and tags for modals (section <a href="#sec2.6.5">2.6.5</a>).</p>
+<p align="justify">Verbs occur at clause levels of structure in the annotation. There are tags to subclassify verbs in accordance to their form:</p>
+<ul>
+<li><b>lexical verbs</b> (<tt>VBP</tt>, <tt>VBD</tt>, <tt>VB</tt>, <tt>VAG</tt>, <tt>VVN</tt>) (discussed in section <a href="#sec2.6.1">2.6.1</a>),</li>
+<li><b><small style="font-size: 75%">HAVE</small> verbs</b> (<tt>HVP</tt>, <tt>HVD</tt>, <tt>HV</tt>, <tt>HAG</tt>, <tt>HVN</tt>) (discussed in section <a href="#sec2.6.2">2.6.2</a>),</li>
+<li><b><small style="font-size: 75%">BE</small> verbs</b> (<tt>BEP</tt>, <tt>BED</tt>, <tt>BE</tt>, <tt>BAG</tt>, <tt>BEN</tt>) (discussed in section <a href="#sec2.6.3">2.6.3</a>),</li>
+<li><b><small style="font-size: 75%">DO</small> verbs</b> (<tt>DOP</tt>, <tt>DOD</tt>, <tt>DO</tt>, <tt>DAG</tt>, <tt>DON</tt>) (discussed in section <a href="#sec2.6.4">2.6.4</a>), and</li>
+<li><b>modal verbs</b> (<tt>MD</tt>) (discussed in section <a href="#sec2.6.5">2.6.5</a>).</li>
+</ul>
 
 <h3><a name="sec2.6.1">2.6.1</a>&nbsp;&nbsp;&nbsp;Lexical verbs</h3>
 
@@ -938,11 +919,11 @@ body {
 <li>past participle forms.</li>
 </ul>
 
-<p align="justify">Note that participle forms are tenseless despite their full names! Infinitive forms occur in infinitive clauses, often preceeded by the infinitive marker <i>to</i> (e.g.&nbsp;<i>John happened to <b><i>support</i></b> Peter.</i>). Present participles are used in the progressive construction (e.g.&nbsp;<i>John is <b><i>supporting</i></b> Peter</i>). Past participles are used in the perfect construction (e.g.&nbsp;<i>John has <b><i>supported</i></b> Peter</i>) and the passive construction (e.g.&nbsp;<i>Peter is <b><i>supported</i></b> by John</i>).</p>
+<p align="justify">Note that participle forms are tenseless despite their full names! Infinitive forms occur in infinitive clauses, often preceded by the infinitive marker <i>to</i> (e.g.&nbsp;<i>John happened to <b><i>support</i></b> Peter.</i>). Present participles are used in the progressive construction (e.g.&nbsp;<i>John is <b><i>supporting</i></b> Peter</i>). Past participles are used in the perfect construction (e.g.&nbsp;<i>John has <b><i>supported</i></b> Peter</i>) and the passive construction (e.g.&nbsp;<i>Peter is <b><i>supported</i></b> by John</i>).</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The distinctions in verb forms just sketched are captured in the tags for lexical verbs of Table <a href="#table2.10">2.10</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The distinctions in verb forms just sketched are captured in the tags for lexical verbs of Table <a href="#table2.9">2.9</a>.</p>
 
-<p><a name="table2.10">Table 2.10: Tags for lexical verbs</a></p>
+<p><a name="table2.9">Table 2.9: Tags for lexical verbs</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>VBP</tt></td><td>The present tense form of lexical verbs (e.g.&nbsp;<i>forgets</i>, <i>sends</i>, <i>lives</i>, <i>returns</i>, <i>forget</i>, <i>send</i>, <i>live</i>, <i>return</i>)</td></tr>
@@ -951,9 +932,9 @@ body {
 <tr><td><tt>VAG</tt></td><td>The present participle (&lcub;ing&rcub;) form of lexical verbs (used in the progressive construction) (e.g.&nbsp;<i>forgetting</i>, <i>sending</i>, <i>living</i>, <i>returning</i>)</td></tr>
 <tr><td><tt>VVN</tt></td><td>The past participle (&lcub;en&rcub;) form of lexical verbs (used in the perfect construction and the passive construction) (e.g.&nbsp;<i>forgotten</i>, <i>sent</i>, <i>lived</i>, <i>returned</i>)</td></tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Table <a href="#table2.11">2.11</a> further illustrates with examples the distinctions between the different lexical verb forms. This includes examples of <b>irregular verbs</b> that do not have a regular past tense inflection.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Table <a href="#table2.10">2.10</a> further illustrates with examples the distinctions between the different lexical verb forms. This includes examples of <b>irregular verbs</b> that do not have a regular past tense inflection.</p>
 
-<p><a name="table2.11">Table 2.11: Forms of lexical verb</a></p>
+<p><a name="table2.10">Table 2.10: Forms of lexical verb</a></p>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -1022,9 +1003,9 @@ body {
 
 <h3><a name="sec2.6.2">2.6.2</a>&nbsp;&nbsp;&nbsp;HAVE</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">HAVE</small> are tagged as in Table <a href="#table2.12">2.12</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">HAVE</small> are tagged as in Table <a href="#table2.11">2.11</a>.</p>
 
-<p><a name="table2.12">Table 2.12: Tags for <small style="font-size: 75%">HAVE</small></a></p>
+<p><a name="table2.11">Table 2.11: Tags for <small style="font-size: 75%">HAVE</small></a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>HVP</tt></td><td>The present tense forms of the verb <small style="font-size: 75%">HAVE</small>: <i>have</i>, <i>'ve</i>, <i>has</i>, <i>'s</i></td></tr>
@@ -1033,9 +1014,9 @@ body {
 <tr><td><tt>HAG</tt></td><td>The present participle (&lcub;ing&rcub;) form of the verb <small style="font-size: 75%">HAVE</small>: <i>having</i></td></tr>
 <tr><td><tt>HVN</tt></td><td>The past participle (&lcub;en&rcub;) form of the verb <small style="font-size: 75%">HAVE</small>: <i>had</i></td></tr>
 </table>
-<p align="justify"><small style="font-size: 75%">HAVE</small> has the non-contracted inflections of Table <a href="#table2.13">2.13</a>.</p>
+<p align="justify"><small style="font-size: 75%">HAVE</small> has the non-contracted inflections of Table <a href="#table2.12">2.12</a>.</p>
 
-<p><a name="table2.13">Table 2.13: Forms of <small style="font-size: 75%">HAVE</small></a></p>
+<p><a name="table2.12">Table 2.12: Forms of <small style="font-size: 75%">HAVE</small></a></p>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -1069,9 +1050,9 @@ body {
 
 <h3><a name="sec2.6.3">2.6.3</a>&nbsp;&nbsp;&nbsp;BE</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">BE</small> are tagged as in Table <a href="#table2.14">2.14</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">BE</small> are tagged as in Table <a href="#table2.13">2.13</a>.</p>
 
-<p><a name="table2.14">Table 2.14: Tags for <small style="font-size: 75%">BE</small></a></p>
+<p><a name="table2.13">Table 2.13: Tags for <small style="font-size: 75%">BE</small></a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>BEP</tt></td><td>The present tense forms of the verb <small style="font-size: 75%">BE</small>: i.e.&nbsp;<i>is</i>, <i>am</i>, <i>are</i>, <i>'m</i>, <i>'re</i>, and <i>'s</i></td></tr>
@@ -1080,9 +1061,9 @@ body {
 <tr><td><tt>BAG</tt></td><td>The present participle (&lcub;ing&rcub;) form of the verb <small style="font-size: 75%">BE</small>: <i>being</i></td></tr>
 <tr><td><tt>BEN</tt></td><td>The past participle (&lcub;en&rcub;) form of the verb <small style="font-size: 75%">BE</small>: <i>been</i></td></tr>
 </table>
-<p align="justify">Table <a href="#table2.15">2.15</a> presents an overview of the eight different non-contracted forms of <small style="font-size: 75%">BE</small>. This is the widest range of distinct forms for the same verb lexme in English, with extra person-number contrasts in the past and present tenses.</p>
+<p align="justify">Table <a href="#table2.14">2.14</a> presents an overview of the eight different non-contracted forms of <small style="font-size: 75%">BE</small>. This is the widest range of distinct forms for the same verb lexme in English, with extra person-number contrasts in the past and present tenses.</p>
 
-<p><a name="table2.15">Table 2.15: Forms of <small style="font-size: 75%">BE</small></a></p>
+<p><a name="table2.14">Table 2.14: Forms of <small style="font-size: 75%">BE</small></a></p>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -1121,9 +1102,9 @@ body {
 
 <h3><a name="sec2.6.4">2.6.4</a>&nbsp;&nbsp;&nbsp;DO</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">DO</small> are tagged as in Table <a href="#table2.16">2.16</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">DO</small> are tagged as in Table <a href="#table2.15">2.15</a>.</p>
 
-<p><a name="table2.16">Table 2.16: Tags for <small style="font-size: 75%">DO</small></a></p>
+<p><a name="table2.15">Table 2.15: Tags for <small style="font-size: 75%">DO</small></a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>DOP</tt></td><td>The present tense forms of the verb <small style="font-size: 75%">DO</small>: <i>do</i>, <i>does</i>, <i>'s</i></td></tr>
@@ -1132,9 +1113,9 @@ body {
 <tr><td><tt>DAG</tt></td><td>The present participle (&lcub;ing&rcub;) form of the verb <small style="font-size: 75%">DO</small>: <i>doing</i></td></tr>
 <tr><td><tt>DON</tt></td><td>The past participle (&lcub;en&rcub;) form of the verb <small style="font-size: 75%">DO</small>: <i>done</i></td></tr>
 </table>
-<p align="justify"><small style="font-size: 75%">DO</small> has the the non-contracted inflections of Table <a href="#table2.17">2.17</a>.</p>
+<p align="justify"><small style="font-size: 75%">DO</small> has the the non-contracted inflections of Table <a href="#table2.16">2.16</a>.</p>
 
-<p><a name="table2.17">Table 2.17: Forms of <small style="font-size: 75%">DO</small></a></p>
+<p><a name="table2.16">Table 2.16: Forms of <small style="font-size: 75%">DO</small></a></p>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -1168,19 +1149,19 @@ body {
 
 <h3><a name="sec2.6.5">2.6.5</a>&nbsp;&nbsp;&nbsp;Modal verbs</h3>
 
-<p align="justify">Modal verbs express meanings such as certainty, ability, or obligation. The main modal verbs are <small style="font-size: 75%">WILL</small>, <small style="font-size: 75%">WOULD</small>, <small style="font-size: 75%">CAN</small>, <small style="font-size: 75%">COULD</small>, <small style="font-size: 75%">MAY</small>, <small style="font-size: 75%">MIGHT</small>, <small style="font-size: 75%">SHALL</small>, <small style="font-size: 75%">SHOULD</small>, <small style="font-size: 75%">MUST</small> and <small style="font-size: 75%">OUGHT</small>. A modal verb only has finite forms and has no suffixes (e.g.&nbsp;<i>I sing</i>&nbsp;&mdash;&nbsp;<i>he sings</i>, but not <i>I must</i>&nbsp;&mdash;&nbsp;<i>he musts</i>). Modal verbs are tagged as in Table <a href="#table2.18">2.18</a>.</p>
+<p align="justify">Modal verbs express meanings such as certainty, ability, or obligation. The main modal verbs are <small style="font-size: 75%">WILL</small>, <small style="font-size: 75%">WOULD</small>, <small style="font-size: 75%">CAN</small>, <small style="font-size: 75%">COULD</small>, <small style="font-size: 75%">MAY</small>, <small style="font-size: 75%">MIGHT</small>, <small style="font-size: 75%">SHALL</small>, <small style="font-size: 75%">SHOULD</small>, <small style="font-size: 75%">MUST</small> and <small style="font-size: 75%">OUGHT</small>. A modal verb only has finite forms and has no suffixes (e.g.&nbsp;<i>I sing</i>&nbsp;&mdash;&nbsp;<i>he sings</i>, but <i>I must</i>&nbsp;&mdash;&nbsp;<i>he must</i>). Modal verbs are tagged as in Table <a href="#table2.17">2.17</a>.</p>
 
-<p><a name="table2.18">Table 2.18: Tag for modal verbs</a></p>
+<p><a name="table2.17">Table 2.17: Tag for modal verbs</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>MD</tt></td><td>Modal auxiliary verb (e.g.&nbsp;<i>will</i>, <i>would</i>, <i>can</i>, <i>could</i>, <i>'ll</i>, <i>'d</i>)</td></tr>
+<tr><td><tt>MD</tt></td><td>Modal verbs (e.g.&nbsp;<i>will</i>, <i>would</i>, <i>can</i>, <i>could</i>, <i>'ll</i>, <i>'d</i>)</td></tr>
 </table>
 <br>
 <h2><a name="sec2.7">2.7</a>&nbsp;&nbsp;&nbsp;Other clause level words</h2>
 
-<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="#table2.19">2.19</a>.</p>
+<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="#table2.18">2.18</a>.</p>
 
-<p><a name="table2.19">Table 2.19: Tags for clause level components</a></p>
+<p><a name="table2.18">Table 2.18: Tags for clause level components</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>EX</tt></td><td>Existential <i>there</i>, i.e.&nbsp;<i>there</i> occurring in the <i>there is ...</i> or <i>there are ...</i> construction</td></tr>
@@ -1234,9 +1215,9 @@ body {
 <br>
 <h2><a name="sec2.8">2.8</a>&nbsp;&nbsp;&nbsp;Connective words</h2>
 
-<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="#table2.20">2.20</a> that serve as the means to connect phrases and clauses.</p>
+<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="#table2.19">2.19</a> that serve as the means to connect phrases and clauses.</p>
 
-<p><a name="table2.20">Table 2.20: Tags for connective words</a></p>
+<p><a name="table2.19">Table 2.19: Tags for connective words</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>CONJ</tt></td><td>Coordinating conjunction (e.g.&nbsp;<i>and</i>, <i>or</i>, <i>but</i>)</td></tr>
@@ -1250,9 +1231,9 @@ body {
 <br>
 <h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;Punctuation</h2>
 
-<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="#table2.21">2.21</a>.</p>
+<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="#table2.20">2.20</a>.</p>
 
-<p><a name="table2.21">Table 2.21: Tags for punctuation</a></p>
+<p><a name="table2.20">Table 2.20: Tags for punctuation</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>PU</tt></td><td>Punctuation: general separating mark &mdash; i.e.&nbsp;<i>.</i> <i>,</i> <i>!</i> <i>:</i> <i>;</i> <i>-</i> or <i>?</i></td></tr>
@@ -1265,9 +1246,9 @@ body {
 <br>
 <h2><a name="sec2.10">2.10</a>&nbsp;&nbsp;&nbsp;Interjection, reaction signals, and formulaic expressions</h2>
 
-<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="#table2.22">2.22</a>. They are placed high in constituent structure, occurring typically as clause or fragment layer components.</p>
+<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="#table2.21">2.21</a>. They are placed high in constituent structure, occurring typically as clause or fragment layer components.</p>
 
-<p><a name="table2.22">Table 2.22: Tags for interjection, reaction signals, and formulaic expressions</a></p>
+<p><a name="table2.21">Table 2.21: Tags for interjection, reaction signals, and formulaic expressions</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>INTJ</tt></td><td>Interjection (e.g.&nbsp;<i>aah</i>, <i>eh</i>, <i>ummmmm</i>)</td></tr>
@@ -1298,9 +1279,9 @@ body {
 <br>
 <h2><a name="sec2.11">2.11</a>&nbsp;&nbsp;&nbsp;Other tags</h2>
 
-<p align="justify">Tags for other possible elements of a parse are given in Table <a href="#table2.23">2.23</a>.</p>
+<p align="justify">Tags for other possible elements of a parse are given in Table <a href="#table2.22">2.22</a>.</p>
 
-<p><a name="table2.23">Table 2.23: Other tags</a></p>
+<p><a name="table2.22">Table 2.22: Other tags</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>FO</tt></td><td>Formula</td></tr>
@@ -1811,7 +1792,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;as_well))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_lob_N01@24,38" target="_blank">22#3_lob_N01&#64;3,17</a>))</tt><br>
 
-<p align="justify">Example (<a href="#ex3.30">3.30</a>) also shows how an <tt>ADVP-MOD</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-MOD</tt> or <tt>ADVP-CNT</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it preceeds, as illustrated in (<a href="#ex3.31">3.31</a>) and (<a href="#ex3.32">3.32</a>),</p>
+<p align="justify">Example (<a href="#ex3.30">3.30</a>) also shows how an <tt>ADVP-MOD</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-MOD</tt> or <tt>ADVP-CNT</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="#ex3.31">3.31</a>) and (<a href="#ex3.32">3.32</a>),</p>
 
 <dl>
   <dt>(<a name="ex3.31">3.31</a>)</dt><dd></dd>
@@ -1992,7 +1973,7 @@ body {
 <dt>e.</dt><dd><tt>Just hold it (NP-MNR that way) .</tt> [manner]</dd>
 </dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Section <a href="#sec4.2.4">4.2.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> and <tt>-COM</tt> can be used with <tt>NP</tt>. An <tt>NP</tt> can also take an adverbial function from occuring as complement of a preposition (such as <i>of</i>, <i>to</i>, <i>with</i>, <i>at</i>, <i>by</i>, etc.) (see section <a href="#sec3.5.4">3.5.4</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Section <a href="#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> and <tt>-COM</tt> can be used with <tt>NP</tt>. An <tt>NP</tt> can also take an adverbial function from occuring as complement of a preposition (such as <i>of</i>, <i>to</i>, <i>with</i>, <i>at</i>, <i>by</i>, etc.) (see section <a href="#sec3.5.4">3.5.4</a>).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might also occur in the genitive construction, seen in section <a href="#sec2.2.5">2.2.5</a>, with the tag of Table <a href="#table3.5">3.5</a>.</p>
 
@@ -2023,7 +2004,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=12_susanne_N12@4" target="_blank">12_susanne_N12&#64;4</a>))</tt><br>
 
-<p align="justify">See <a href="#sec4.6.4">4.6.4</a> for discussion on <tt>NP-VOC</tt> in imperative sentences.</p>
+<p align="justify">See <a href="#sec4.2.3">4.2.3</a> for discussion on <tt>NP-VOC</tt> in imperative sentences.</p>
 
 <br>
 <h2><a name="sec3.3">3.3</a>&nbsp;&nbsp;&nbsp;Adjective phrase (ADJP)</h2>
@@ -2225,7 +2206,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;swimmer))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=9_age_10_K11@12" target="_blank">9#9_age_10_K11&#64;4</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a clause, an <tt>ADJP</tt> will typically have a PREDICATIVE function, marked with the tag extension <tt>-PRD</tt>(<tt>2</tt>) (see section <a href="#sec4.2.3">4.2.3</a>), and with a PREDICATE POSITION after verbs that include <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">APPEAR</small>, <small style="font-size: 75%">SEEM</small>, <small style="font-size: 75%">SOUND</small>, <small style="font-size: 75%">MAKE</small> (e.g.&nbsp;<i>The cookbook is <b><i>practical</i></b></i>, <i>This description sounds <b><i>familiar</i></b></i>, <i>It makes me <b><i>uneasy</i></b></i>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a clause, an <tt>ADJP</tt> will typically have a PREDICATIVE function, marked with the tag extension <tt>-PRD</tt>(<tt>2</tt>) (see section <a href="#sec4.3.3">4.3.3</a>), and with a PREDICATE POSITION after verbs that include <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">APPEAR</small>, <small style="font-size: 75%">SEEM</small>, <small style="font-size: 75%">SOUND</small>, <small style="font-size: 75%">MAKE</small> (e.g.&nbsp;<i>The cookbook is <b><i>practical</i></b></i>, <i>This description sounds <b><i>familiar</i></b></i>, <i>It makes me <b><i>uneasy</i></b></i>).</p>
 
 <br>
 <h2><a name="sec3.4">3.4</a>&nbsp;&nbsp;&nbsp;Adverb phrase (ADVP)</h2>
@@ -2319,7 +2300,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;can))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=258_christine_T04@2" target="_blank">258_christine_T04&#64;2</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="#sec4.2.4">4.2.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="#ex3.66">3.66</a>) has directional function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="#ex3.66">3.66</a>) has directional function.</p>
 
 <dl>
   <dt>(<a name="ex3.66">3.66</a>)</dt><dd></dd>
@@ -2457,7 +2438,7 @@ body {
 
 <h3><a name="sec3.5.4">3.5.4</a>&nbsp;&nbsp;&nbsp;PP functions</h3>
 
-<p align="justify">In the clause, a <tt>PP</tt> typically acts as an adverbial. All of the possible adverbial roles listed in section <a href="#sec4.2.4">4.2.4</a> can be used with <tt>PP</tt>. In addition, <tt>PP-OBU</tt> of Section <a href="#sec4.2.2.3">4.2.2.3</a> is possible to make an unspecified object, which gains the content of its role from being a verb selected element.</p>
+<p align="justify">In the clause, a <tt>PP</tt> typically acts as an adverbial. All of the possible adverbial roles listed in section <a href="#sec4.3.4">4.3.4</a> can be used with <tt>PP</tt>. In addition, <tt>PP-OBU</tt> of Section <a href="#sec4.3.2.3">4.3.2.3</a> is possible to make an unspecified object, which gains the content of its role from being a verb selected element.</p>
 
 <br>
 <br>
@@ -2468,52 +2449,336 @@ body {
 <br>
 <h2><a name="sec4.1">4.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">The focus of this chapter is on matrix clauses, possibly with structure for internal coordination. A clause is a matrix clause when it is not subordinate &mdash; that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were mentioned in chapter <a href="#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="#ch5">5</a> will present options for clause-within-clause subordination.</p>
+<p align="justify">The focus of this chapter is on matrix clauses, possibly with structure for internal coordination. A clause is a matrix clause when it is not subordinate &mdash; that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were seen in chapter <a href="#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="#ch5">5</a> will present options for clause-within-clause subordination.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This chapter is organised as follows. Section <a href="#sec4.2">4.2</a> presents clause function. Section <a href="#sec4.3">4.3</a> is a discussion of clausal negation. Section <a href="#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers. Section <a href="#sec4.5">4.5</a> notes another use for <tt>IML</tt> outside of conjunction. Section <a href="#sec4.6">4.6</a> presents an overview of matrix clause types.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This chapter is organised as follows. Section <a href="#sec4.2">4.2</a> presents an overview of matrix clause types. Section <a href="#sec4.3">4.3</a> presents clause function. Section <a href="#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
 
 <br>
-<h2><a name="sec4.2">4.2</a>&nbsp;&nbsp;&nbsp;Clause function</h2>
+<h2><a name="sec4.2">4.2</a>&nbsp;&nbsp;&nbsp;Matrix clause types</h2>
 
-<p align="justify">A clause is formed by having a main verb. In addition to the main verb, there may be preceeding auxiliary verbs, or a preceeding finite &lsquo;dummy&rsquo; <small style="font-size: 75%">DO</small>, or preceeding catenative verbs. Other clause level words may also occur, such as negation, adverb particles, and existential <i>there</i>. Besides the clause level words, phrases may occur as components of annotated clause structure, provided each phrase component has a tag with an extension for one of the following clause level functions:</p>
+<p align="justify">The internal form of a matrix clause can determine its use, and this gives rise to a basis for distinguishing the different clause types of:</p>
 <ul>
-<li><b>subject</b> (discussed in section <a href="#sec4.2.1">4.2.1</a>),</li>
-<li><b>object</b>(s) (discussed in section <a href="#sec4.2.2">4.2.2</a>),</li>
-<li><b>predicative</b> (discussed in section <a href="#sec4.2.3">4.2.3</a>), and</li>
-<li><b>adverbial</b>(s) (discussed in section <a href="#sec4.2.4">4.2.4</a>).</li>
+<li><b>declaratives</b> (discussed in section <a href="#sec4.2.1">4.2.1</a>),</li>
+<li><b>interrogatives</b> (discussed in section <a href="#sec4.2.2">4.2.2</a>),</li>
+<li><b>imperatives</b> (discussed in section <a href="#sec4.2.3">4.2.3</a>), and</li>
+<li><b>sentence fragments</b> (discussed in section <a href="#sec4.2.4">4.2.4</a>).</li>
 </ul>
 
-<h3><a name="sec4.2.1">4.2.1</a>&nbsp;&nbsp;&nbsp;Subject</h3>
+<h3><a name="sec4.2.1">4.2.1</a>&nbsp;&nbsp;&nbsp;Declaratives</h3>
 
-<p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the main verb. The subject can determine the form of the first verb instance in the verb sequence of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he&sol;she&sol;it <b><i>is</i></b></i>, <i>we&sol;you (all)&sol;they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I&sol;we&sol;he&sol;she&sol;they</i> contrast with non-subject forms <i>me&sol;us&sol;him&sol;her&sol;them</i>.</p>
+<p><a name="table4.1">Table 4.1: Tag for matrix clause</a></p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Subjects typically occur with a clause initial position. For a couple of untypical clause types, the subject can appear after an auxiliary. This holds especially for interrogatives, as in (<a href="#ex4.1">4.1</a>) and (<a href="#ex4.2">4.2</a>).</p>
+<table border="1" cellpadding="10px">
+<tr><td><tt>IP-MAT</tt></td><td>matrix clause</td></tr>
+</table>
+<p align="justify">A basic matrix clause provides a declarative clause. A matrix clause requires a finite verb. For example, (<a href="#ex4.1">4.1</a>) has the past tense verb <i>cried</i>.</p>
 
 <dl>
   <dt>(<a name="ex4.1">4.1</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: MediumSpringGreen;">___DOP</font>&nbsp;Does)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;work))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=73_bnc_B17@5,3" target="_blank">73_bnc_B17&#64;5,3</a>))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__VBD</font>&nbsp;cried)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(NP-GENV&nbsp;(PRO&nbsp;my))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;eyes))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-DIR&nbsp;(RP&nbsp;out))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CNT&nbsp;(P-ROLE&nbsp;at)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;that))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=106_christine_T27@5" target="_blank">106_christine_T27&#64;5</a>))</tt><br>
+
+<p align="justify">Modal verbs only have finite forms. The short form <i>'ll</i> of <small style="font-size: 75%">WILL</small> occurs as the finte verb of (<a href="#ex4.2">4.2</a>) with <i>cry</i> as a following infinitive lexical verb.</p>
 
 <dl>
   <dt>(<a name="ex4.2">4.2</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(WPRO&nbsp;What))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___DOP</font>&nbsp;do)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ;{DORLE}</font>&nbsp;(PRO&nbsp;you))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;mean))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rdquo&gt;))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=322_classics_DICK-1952@10,8" target="_blank">322_classics_DICK-1952&#64;10,8</a>))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__MD</font>&nbsp;&lt;apos&gt;ll)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___VB</font>&nbsp;cry)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-MNR&nbsp;(D&nbsp;some)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJR&nbsp;more)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT-CND&nbsp;(P-CONN&nbsp;if)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;#))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=431_christine_T21@5,7" target="_blank">431_christine_T21&#64;5,7</a>))</tt><br>
 
-<p align="justify">Inversion of the subject and an auxiliary verb can also occur after a front-shifted negative (including such semi-negatives as <i>hardly</i>, <i>scarcely</i>, <i>little</i>, <i>never</i>, <i>seldom</i>, <i>rarely</i>), as in (<a href="#ex4.3">4.3</a>).</p>
+<p align="justify">A finite <small style="font-size: 75%">DO</small> can also occur with an infinitive lexical verb, as in (<a href="#ex4.3">4.3</a>) with past tense <i>did</i> acting to emphasise the <i>kiss</i>.</p>
 
 <dl>
   <dt>(<a name="ex4.3">4.3</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(CONJ&nbsp;And)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{FORREST}&nbsp;(PRO&nbsp;he))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__DOD</font>&nbsp;did)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;kiss)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{BERYL}&nbsp;(PRO&nbsp;me))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=76_lob_N02@7" target="_blank">76_lob_N02&#64;7</a>))</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Basic declarative clauses have positive polarity. The polarity of a matrix clause is inverted by adding negation, either as the full form <i>not</i> (e.g., (<a href="#ex4.4">4.4</a>)) or the contracted <i>n't</i> (e.g., (<a href="#ex4.5">4.5</a>) and (<a href="#ex4.6">4.6</a>)). Both forms need a preceding (immediately preceding when there is contraction) modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>.</p>
+
+<dl>
+  <dt>(<a name="ex4.4">4.4</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__BEP;~Ln</font>&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG</font>&nbsp;not)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;an)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;acceptable))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;turnover))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=112_bnc_B41@5,7" target="_blank">112_bnc_B41&#64;5,7</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.5">4.5</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__MD</font>&nbsp;wo)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG</font>&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___VB</font>&nbsp;cry))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=466_christine_T21@5,7,9" target="_blank">466_christine_T21&#64;5,7,9</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.6">4.6</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(N&nbsp;People))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__DOP</font>&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG</font>&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;bital&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DO&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;eital&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;that))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=147_bnc_C02@5,7" target="_blank">147_bnc_C02&#64;5,7</a>))</tt><br>
+
+<h3><a name="sec4.2.2">4.2.2</a>&nbsp;&nbsp;&nbsp;Interrogatives</h3>
+
+<p><a name="table4.2">Table 4.2: Tags for interrogative clause</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>CP-QUE</tt></td><td>question (direct or indirect)</td></tr>
+<tr><td><tt>IP-SUB</tt></td><td>clause complement of CP</td></tr>
+</table>
+<p align="justify">Annotation for a matrix interrogative clause involves an <tt>IP-SUB</tt> clause layer that: (i) contains all of the clause content, and (ii) projects a <tt>CP-QUE</tt> layer. A matrix interrogative is formed by having an initial clause component that is either:</p>
+<ul>
+<dt>(i)</dt><dd>a modal verb (e.g., (<a href="#ex4.7">4.7</a>)), or</dd>
+<dt>(ii)</dt><dd>a finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> (e.g., (<a href="#ex4.8">4.8</a>) and (<a href="#ex4.9">4.9</a>)), or</dd>
+<dt>(iii)</dt><dd>a constituent that includes a WH word (e.g. (<a href="#ex4.10">4.10</a>)&ndash;(<a href="#ex4.15">4.15</a>)).</dd>
+</ul>
+
+<p align="justify">A clause with (iii) is called a constituent question.</p>
+
+<dl>
+  <dt>(<a name="ex4.7">4.7</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__MD</font>&nbsp;shall)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~Ipr&nbsp;go)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;in)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NP-GENV&nbsp;(NPR&nbsp;Tesco)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(GENM&nbsp;&lt;apos&gt;s))))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=173_christine_T36@3" target="_blank">173_christine_T36&#64;3</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.8">4.8</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__BEP;~Ln</font>&nbsp;Is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(P-ROLE&nbsp;that))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;still))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(NP-GENV&nbsp;(PRO&nbsp;his))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;position)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=23_texts_written-case-for-sir-john-major@3" target="_blank">23_texts_written-case-for-sir-john-major&#64;3</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.9">4.9</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__DOP</font>&nbsp;Does)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;work))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=73_bnc_B17@3" target="_blank">73_bnc_B17&#64;3</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.10">4.10</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(WPRO&nbsp;who))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;smacked)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;you))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=188_christine_T33@3" target="_blank">188_christine_T33&#64;3</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.11">4.11</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(WPRO&nbsp;What))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__DOP</font>&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{DORLE}&nbsp;(PRO&nbsp;you))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;mean))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rdquo&gt;))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=322_classics_DICK-1952@8" target="_blank">322_classics_DICK-1952&#64;8</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.12">4.12</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(NP-NSBJ&nbsp;(NP-GENV&nbsp;(<font style="background-color: SandyBrown;">__WPRO</font>&nbsp;whose))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;turn))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~I&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PSBJ&nbsp;(PRO&nbsp;it))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=213_christine_T09@5" target="_blank">213_christine_T09&#64;5</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.13">4.13</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__ADVP-CNT</font>&nbsp;(WADV&nbsp;why))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___DOD</font>&nbsp;did)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP;~Tn&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;that))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=158_christine_T35@3,6" target="_blank">158_christine_T35&#64;3,6</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.14">4.14</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__ADVP-MNR</font>&nbsp;(WADV&nbsp;how))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;spell)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(WPRO&nbsp;what))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=22_christine_T34@3" target="_blank">22_christine_T34&#64;3</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.15">4.15</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(PP-MNR&nbsp;(P-ROLE&nbsp;In)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(<font style="background-color: SandyBrown;">__WD</font>&nbsp;what)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;ways)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;might)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;they))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;still))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE;~Ln&nbsp;be)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;same))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=20_fce_0100_2000_12@7" target="_blank">20_fce_0100_2000_12&#64;7</a>))</tt><br>
+
+<p align="justify">For constituent questions where the initial position is filled by a non-subject, this initial constituent needs to be followed by a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> (as seen with (<a href="#ex4.11">4.11</a>)&ndash;(<a href="#ex4.15">4.15</a>)).</p>
+
+<h3><a name="sec4.2.3">4.2.3</a>&nbsp;&nbsp;&nbsp;Imperatives</h3>
+
+<p><a name="table4.3">Table 4.3: Tag for imperative clause</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>IP-MAT-IMP</tt></td><td>imperative clause</td></tr>
+</table>
+<p align="justify">An imperative clause requires a verb in the imperative form. The imperative form is a finite form of the verb that is equivalent to the infinitive form, and so the verb is tagged in the same way as an infinitive. It is appearance under an <tt>IP-MAT-IMP</tt> layer that distinguishes the verb as having imperative form.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the absence of a subject constituent. Presence of a constituent with vocative function (as in (<a href="#ex4.16">4.16</a>) and (<a href="#ex4.17">4.17</a>)) is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb.</p>
+
+<dl>
+  <dt>(<a name="ex4.16">4.16</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT-IMP&nbsp;(<font style="background-color: SandyBrown;">__NP-VOC</font>&nbsp;(NS&nbsp;Students))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;always))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tt&nbsp;remember)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;include)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(NS&nbsp;references)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=82_samples_ENG1100@2" target="_blank">82_samples_ENG1100&#64;2</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.17">4.17</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT-IMP-OB1&nbsp;(VB;~I&nbsp;Stop)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-VOC</font>&nbsp;(N&nbsp;thief)))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=13_classics_POTTER-1902@96" target="_blank">93#13_classics_POTTER-1902&#64;4</a>))</tt><br>
+
+<h3><a name="sec4.2.4">4.2.4</a>&nbsp;&nbsp;&nbsp;Sentence fragments</h3>
+
+<p align="justify">When there is not enough material in an utterance to create a basic clause, the utterance is marked as a sentence fragment with the <tt>FRAG</tt> tag.</p>
+
+<p><a name="table4.4">Table 4.4: Tag for sentence fragment</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>FRAG</tt></td><td>sentence fragment</td></tr>
+</table>
+<p align="justify">Presence of either (i) a subject and a finite verb, or (ii) an imperative verb are sufficient materials to warrant marking the enclosing structure as a clause (<tt>IP</tt>) rather than as a <tt>FRAG</tt>.</p>
+
+<dl>
+  <dt>(<a name="ex4.18">4.18</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;just))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{pause})</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;up)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;stairs))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=71_christine_T40@1" target="_blank">71_christine_T40&#64;1</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.19">4.19</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(IML&nbsp;(IML&nbsp;(REACT&nbsp;yes))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(REACT&nbsp;no)))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=208_christine_T09@1" target="_blank">208_christine_T09&#64;1</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.20">4.20</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(CP-QUE&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(REACT&nbsp;Really))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rdquo&gt;))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=199_classics_DICK-1952@2" target="_blank">199_classics_DICK-1952&#64;2</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.21">4.21</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(NP-SBJ&nbsp;(Q&nbsp;all)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~cat_t&nbsp;seem)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(NP-OB1&nbsp;*T*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;think))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CP-THT-PRD2&nbsp;(IP-SUB&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(FLJ&nbsp;bloody)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;Hallowe&lt;apos&gt;en)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(VVN&nbsp;come)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-DIR&nbsp;(ADV&nbsp;back))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;again)))))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=458_christine_T04@1" target="_blank">458_christine_T04&#64;1</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.22">4.22</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(ADVP-MNR&nbsp;(ADV&nbsp;sadly))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(NP&nbsp;(Q&nbsp;no))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVR&nbsp;longer))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-PRD2&nbsp;(P-ROLE&nbsp;with)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;us))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=59_texts_PaulFellows@32" target="_blank">32#59_texts_PaulFellows&#64;1</a>))</tt><br>
+
+<br>
+<h2><a name="sec4.3">4.3</a>&nbsp;&nbsp;&nbsp;Clause function</h2>
+
+<p align="justify">Besides clause level words (notably verbs, but also negation, adverb particles, and existential <i>there</i>), phrases may occur as components of annotated clause structure. To occur at the clause level, a phrase component requires a tag with an extension for a clause level function. Available clause level functions are:</p>
+<ul>
+<li><b>subject</b> (discussed in section <a href="#sec4.3.1">4.3.1</a>),</li>
+<li><b>object</b>(s) (discussed in section <a href="#sec4.3.2">4.3.2</a>),</li>
+<li><b>predicative</b> (discussed in section <a href="#sec4.3.3">4.3.3</a>), and</li>
+<li><b>adverbial</b>(s) (discussed in section <a href="#sec4.3.4">4.3.4</a>).</li>
+</ul>
+
+<h3><a name="sec4.3.1">4.3.1</a>&nbsp;&nbsp;&nbsp;Subject</h3>
+
+<p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb. The subject can determine the form of the first verb instance of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he&sol;she&sol;it <b><i>is</i></b></i>, <i>we&sol;you (all)&sol;they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I&sol;we&sol;he&sol;she&sol;they</i> contrast with non-subject forms <i>me&sol;us&sol;him&sol;her&sol;them</i>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Subjects typically occur with a clause initial position. For a couple of untypical clause types, the subject can appear after an auxiliary. This holds especially for interrogatives, as in examples of section <a href="#sec4.2.2">4.2.2</a> above. Inversion of the subject and an auxiliary verb can also occur after a frontmost adverbial phrase with a (semi-)negative adverbial head such as <i>hardly</i>, <i>scarcely</i>, <i>little</i>, <i>never</i>, <i>seldom</i>, <i>rarely</i>), as in (<a href="#ex4.23">4.23</a>).</p>
+
+<dl>
+  <dt>(<a name="ex4.23">4.23</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;Never)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;at)</tt><br>
@@ -2522,34 +2787,36 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___DOP</font>&nbsp;does)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(D&nbsp;the)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;user))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;feel)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD2&nbsp;(VVN&nbsp;constrained))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~La&nbsp;feel)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;constrained))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=28_young_adult_E82@15,13" target="_blank">28_young_adult_E82&#64;15,13</a>))</tt><br>
 
-<p align="justify">Inversion of the subject and an auxiliary verb also happens with <i>and so</i> reduced clauses:</p>
+<p align="justify">Inversion of the subject with a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> also happens with <i>and so</i> reduced clauses:</p>
 
 <dl>
-  <dt>(<a name="ex4.4">4.4</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.24">4.24</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Bill))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;bought)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;present))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NP-GENV&nbsp;(PRO&nbsp;his))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;aunt))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(<font style="background-color: SandyBrown;">__CONJ</font>&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___ADVP-CNT</font>&nbsp;(ADV&nbsp;so))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Fred)))))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(IML&nbsp;(PP-TMP&nbsp;(P-ROLE&nbsp;By)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;then)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Hez))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;could)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;see)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-BNF&nbsp;(P-ROLE&nbsp;for)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PNX&nbsp;himself))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(ADVP-MNR&nbsp;(ADV&nbsp;so))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;could)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;others)))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=367_samples_blue_book@24,27" target="_blank">367_samples_blue_book&#64;24,27</a>))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=41_susanne_N13@28" target="_blank">41_susanne_N13&#64;28</a>))</tt><br>
 
 <p align="justify">Also, the subject occurs after the verb in clauses with existential <i>there</i>. Subjects of clauses with existential <i>there</i> are marked with tag extension <tt>-ESBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex4.5">4.5</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.25">4.25</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(EX&nbsp;There)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__VBP;~I</font>&nbsp;remain)</tt><br>
@@ -2566,14 +2833,14 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=54_susanne_J22@4,6" target="_blank">54_susanne_J22&#64;4,6</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings seen in table <a href="#table4.1">4.1</a> relate to the subject function in particular constructions:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings seen in table <a href="#table4.5">4.5</a> relate to the subject function in particular constructions:</p>
 <ul>
 <li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction;</li>
 <li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>; and</li>
 <li>tag extension <tt>-NSBJ</tt> marks an extraposed subject that occurs in a clause with either: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>; or (ii) a derived subject, marked <tt>-DSBJ</tt>.</li>
 </ul>
 
-<p><a name="table4.1">Table 4.1: The full range of extension tags related to the subject function</a></p>
+<p><a name="table4.5">Table 4.5: The full range of extension tags related to the subject function</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
@@ -2584,7 +2851,7 @@ body {
 <tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex4.6">4.6</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.26">4.26</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-CSBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
@@ -2599,7 +2866,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_christine_T37@2" target="_blank">5_christine_T37&#64;2</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.7">4.7</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.27">4.27</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NP-DSBJ</font>&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;breaststroke))</tt><br>
@@ -2614,7 +2881,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_stories_09_M14@4,17" target="_blank">3#3_stories_09_M14&#64;2,15</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.8">4.8</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.28">4.28</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -2641,11 +2908,11 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rquo&gt;))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=19_lob_A01@15,10" target="_blank">19_lob_A01&#64;15,10</a>))</tt><br>
 
-<h3><a name="sec4.2.2">4.2.2</a>&nbsp;&nbsp;&nbsp;Object</h3>
+<h3><a name="sec4.3.2">4.3.2</a>&nbsp;&nbsp;&nbsp;Object</h3>
 
-<p align="justify">An object can only occur when the main verb is transitive. The following properties are typical:</p>
+<p align="justify">An object can only occur when there is a transitive verb. The following properties are typical:</p>
 <ul>
-<li>An object is normally a noun phrase that follows the main verb, and gives the content that the main verb is acting upon.</li>
+<li>An object is normally a noun phrase that follows its transitive verb, and gives the content that the transitive verb is acting upon.</li>
 <li>An object cannot be an adjective phrase (in contrast to predicatives).</li>
 <li>An object can be turned into the subject of a corresponding passive clause (see section <a href="#sec6.8.3">6.8.3</a>). Compare <i>Everyone saw <b><i>me</i></b></i> with <i><b><i>I</i></b> was seen (by everyone)</i>.</li>
 <li>An object pronoun is in the accusative case. For example, in <i>He likes <b><i>her</i></b></i> and <i>She likes <b><i>him</i></b></i>, the accusative forms <i>her</i> and <i>him</i> fill the object position.</li>
@@ -2653,21 +2920,21 @@ body {
 
 <p align="justify">There are two types of objects:</p>
 <ul>
-<li><b>direct object</b> (<tt>-OB1</tt>) (discussed in section <a href="#sec4.2.2.1">4.2.2.1</a>), and</li>
-<li><b>indirect object</b> (<tt>-OB2</tt>) (discussed in section <a href="#sec4.2.2.2">4.2.2.2</a>).</li>
+<li><b>direct object</b> (<tt>-OB1</tt>) (discussed in section <a href="#sec4.3.2.1">4.3.2.1</a>), and</li>
+<li><b>indirect object</b> (<tt>-OB2</tt>) (discussed in section <a href="#sec4.3.2.2">4.3.2.2</a>).</li>
 </ul>
 
-<p align="justify">Also, section <a href="#sec4.2.2.3">4.2.2.3</a> notes the <b>unspecified object</b> function, which is a function selected by particular verbs and which occurs only with preposition phrases.</p>
+<p align="justify">Also, section <a href="#sec4.3.2.3">4.3.2.3</a> notes the <b>unspecified object</b> function, which is a function selected by particular verbs and which occurs only with preposition phrases.</p>
 
-<h4><a name="sec4.2.2.1">4.2.2.1</a>&nbsp;&nbsp;&nbsp;Direct object</h4>
+<h4><a name="sec4.3.2.1">4.3.2.1</a>&nbsp;&nbsp;&nbsp;Direct object</h4>
 
-<p align="justify">A direct object generally follows immediately after the main verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="#table4.2">4.2</a> relate to the direct object function in particular constructions:</p>
+<p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="#table4.6">4.6</a> relate to the direct object function in particular constructions:</p>
 <ul>
 <li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt> (see sections <a href="#sec5.2">5.2</a> and <a href="#sec5.3">5.3</a>); and</li>
 <li>tag extension <tt>-NOB1</tt> marks an extraposed direct object that occurs (see section <a href="#sec7.7">7.7</a>) in a clause with a provisional direct object <i>it</i>, marked <tt>-POB1</tt></li>
 </ul>
 
-<p><a name="table4.2">Table 4.2: The full range of extension tags related to the direct object function</a></p>
+<p><a name="table4.6">Table 4.6: The full range of extension tags related to the direct object function</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
@@ -2675,19 +2942,19 @@ body {
 <tr><td><tt>-NOB1</tt></td><td>extraposed direct object</td></tr>
 <tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
 </table>
-<h4><a name="sec4.2.2.2">4.2.2.2</a>&nbsp;&nbsp;&nbsp;Indirect object</h4>
+<h4><a name="sec4.3.2.2">4.3.2.2</a>&nbsp;&nbsp;&nbsp;Indirect object</h4>
 
 <p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
 
-<p><a name="table4.3">Table 4.3: Extension tag for indirect object function</a></p>
+<p><a name="table4.7">Table 4.7: Extension tag for indirect object function</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OB2</tt></td><td>indirect object</td></tr>
 </table>
-<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="#ex4.10">4.10</a>).</p>
+<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="#ex4.30">4.30</a>).</p>
 
 <dl>
-  <dt>(<a name="ex4.10">4.10</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.30">4.30</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;that))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
@@ -2697,20 +2964,20 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-OB2</font>&nbsp;(PRO&nbsp;you)))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=300_christine_T16@15,17" target="_blank">300_christine_T16&#64;15,17</a>))</tt><br>
 
-<h4><a name="sec4.2.2.3">4.2.2.3</a>&nbsp;&nbsp;&nbsp;Underspecified object</h4>
+<h4><a name="sec4.3.2.3">4.3.2.3</a>&nbsp;&nbsp;&nbsp;Underspecified object</h4>
 
-<p><a name="table4.4">Table 4.4: Tag extension for unspecified object</a></p>
+<p><a name="table4.8">Table 4.8: Tag extension for unspecified object</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OBU</tt></td><td>unspecified object, a verb selected function occurring only with preposition phrases</td></tr>
 </table>
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When we look at verb codes, starting from section sectionref:[__codes__], we will find that verbs selecting <tt>PP-OBU</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
 
-<h3><a name="sec4.2.3">4.2.3</a>&nbsp;&nbsp;&nbsp;Predicative</h3>
+<h3><a name="sec4.3.3">4.3.3</a>&nbsp;&nbsp;&nbsp;Predicative</h3>
 
-<p align="justify">A predicative can only occur as a clause element when selected by the main verb. A predicative typically follows the main verb and (if one is present) the direct object. All of the phrase types considered in chapter <a href="#ch3">3</a> are able to function as predicatives: noun phrase, adjective phrase, adverb phrase, and preposition phrase. This behaviour is in contrast to objects, which cannot be adjective phrases.</p>
+<p align="justify">A predicative can only occur as a clause element when selected by the verb. A predicative typically follows the verb and (if one is present) the direct object. All of the phrase types considered in chapter <a href="#ch3">3</a> are able to function as predicatives: noun phrase, adjective phrase, adverb phrase, and preposition phrase. This behaviour is in contrast to objects, which cannot be adjective phrases.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. Both types have the semantic role of characterising a preceeding noun phrase:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. Both types have the semantic role of characterising a preceding noun phrase:</p>
 <ul>
 <li>A subject predicative adds more information about the subject, while</li>
 <li>an object predicative does the same for its direct object.</li>
@@ -2718,20 +2985,20 @@ body {
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, having <tt>2</tt> as part of the predicative tag, to give <tt>-PRD2</tt>, marks a subject predicative. Absence of <tt>2</tt>, signals an object predicative.</p>
 
-<p><a name="table4.5">Table 4.5: Extension tags related to predicative functions</a></p>
+<p><a name="table4.9">Table 4.9: Extension tags related to predicative functions</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
 <tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
 </table>
-<h3><a name="sec4.2.4">4.2.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
+<h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
 
-<p align="justify">An adverbial is a phrase that is used, like an adverb phrase, to modify a main verb or clause. Of course, adverb phrases can be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
+<p align="justify">An adverbial is a phrase that is used, like an adverb phrase, to modify a verb or clause. Of course, adverb phrases can be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex4.11">4.11</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18 at Franklin and Mount streets</i> are all adverbials that modify <i>struck</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex4.31">4.31</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18 at Franklin and Mount streets</i> are all adverbials that modify <i>struck</i>.</p>
 
 <dl>
-  <dt>(<a name="ex4.11">4.11</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.31">4.31</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;A)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;thug))</tt><br>
@@ -2761,11 +3028,11 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=10_susanne_A19@7,16,24,32,38" target="_blank">10_susanne_A19&#64;7,16,24,32,38</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="#ex4.11">4.11</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb requires present. The selected presence of adverbials gives rise to the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in section sectionref:[__codes__] below.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="#ex4.31">4.31</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb requires present. The selected presence of adverbials gives rise to the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in section sectionref:[__codes__] below.</p>
 
-<p align="justify">Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="#table4.6">4.6</a>.</p>
+<p align="justify">Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="#table4.10">4.10</a>.</p>
 
-<p><a name="table4.6">Table 4.6: Tag extensions for marking adverbial functions</a></p>
+<p><a name="table4.10">Table 4.10: Tag extensions for marking adverbial functions</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-ABS</tt></td><td>absolute</td></tr>
@@ -2779,10 +3046,10 @@ body {
 <tr><td><tt>-RST</tt></td><td>respect</td></tr>
 <tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbial functions of Table <a href="#table4.6">4.6</a> typically mark phrases that are not selected by the verb. Even when not selected, adverbials still need to make a meaning contribution that is compatible with the meaning of the main verb.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbial functions of Table <a href="#table4.10">4.10</a> typically mark phrases that are not selected by the verb. Even when not selected, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
 
 <dl>
-  <dt>(<a name="ex4.12">4.12</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.32">4.32</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___PP-TMP</font>&nbsp;(P-ROLE&nbsp;For)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
@@ -2802,7 +3069,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=40_texts_Alresford@20,4,17,22,33,38" target="_blank">3#40_texts_Alresford&#64;18,2,15,20,31,36</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.13">4.13</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.33">4.33</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;visual))</tt><br>
@@ -2822,7 +3089,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=94_texts_Alresford@68" target="_blank">46#94_texts_Alresford&#64;23</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.14">4.14</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.34">4.34</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___PP-TMP</font>&nbsp;(P-ROLE&nbsp;In)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
@@ -2847,7 +3114,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=87_texts_Alresford@27,4,40,46" target="_blank">3#87_texts_Alresford&#64;25,2,38,44</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.15">4.15</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.35">4.35</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(VB;~phr_Vp.pr&nbsp;head)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__ADVP-DIR</font>&nbsp;(ADV&nbsp;straight))</tt><br>
@@ -2859,7 +3126,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=116_susanne_N14@99,102,110" target="_blank">96#116_susanne_N14&#64;4,7,15</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.16">4.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.36">4.36</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(HVP;~cat_e&nbsp;&lt;apos&gt;ve)</tt><br>
@@ -2872,7 +3139,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=46_christine_T11@13" target="_blank">46_christine_T11&#64;13</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.17">4.17</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.37">4.37</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(VBD;~Ipr&nbsp;went)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__PP-DIR</font>&nbsp;(P-ROLE&nbsp;through)</tt><br>
@@ -2885,7 +3152,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=7_classics_POTTER-1902@41,49" target="_blank">38#7_classics_POTTER-1902&#64;4,12</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.18">4.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.38">4.38</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__VBP;~Ip</font>&nbsp;arrive)</tt><br>
@@ -2903,46 +3170,17 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=1_age_12_F37@9,11,14,20,30" target="_blank">5#1_age_12_F37&#64;5,7,10,16,26</a>))</tt><br>
 
 <br>
-<h2><a name="sec4.3">4.3</a>&nbsp;&nbsp;&nbsp;Clausal negation</h2>
-
-<p align="justify">Basic clauses always have positive polarity. The polarity of the clause is changed by adding negation.</p>
-
-<dl>
-  <dt>(<a name="ex4.19">4.19</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(CONJ&nbsp;And)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{FORREST}&nbsp;(PRO&nbsp;he))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__DOD</font>&nbsp;did)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;kiss)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{BERYL}&nbsp;(PRO&nbsp;me))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=76_lob_N02@7" target="_blank">76_lob_N02&#64;7</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.20">4.20</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(N&nbsp;People))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__DOP</font>&nbsp;do)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG</font>&nbsp;n&lt;apos&gt;t)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;bital&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DO&nbsp;do)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;eital&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;that))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=147_bnc_C02@5,7" target="_blank">147_bnc_C02&#64;5,7</a>))</tt><br>
-
-<br>
 <h2><a name="sec4.4">4.4</a>&nbsp;&nbsp;&nbsp;Clause internal coordination</h2>
 
-<p><a name="table4.7">Table 4.7: Tag for clause intermediate level</a></p>
+<p><a name="table4.11">Table 4.11: Tag for clause intermediate level</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>IML</tt></td><td>clause intermediate level</td></tr>
 </table>
-<p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="#ex4.21">4.21</a>).</p>
+<p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="#ex4.39">4.39</a>).</p>
 
 <dl>
-  <dt>(<a name="ex4.21">4.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.39">4.39</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mr)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;G))</tt><br>
@@ -2966,12 +3204,12 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_11_H11@2,3,19,37" target="_blank">3_age_11_H11&#64;2,3,19,37</a>))</tt><br>
 
-<p align="justify">The overall coordinated structure of (<a href="#ex4.21">4.21</a>) is gathered under a single <tt>IML</tt> (intermediate clause layer) projection with the external behaviour of a single clause. Each separate <b>conjunct</b> of the coordinated structure is an <tt>IML</tt> that is either: (i) the first conjunct and so a sister to <tt>CONJP</tt>(s) over <tt>IML</tt>(s), or (ii) a conjunct that is directly under a <tt>CONJP</tt>.</p>
+<p align="justify">The overall coordinated structure of (<a href="#ex4.39">4.39</a>) is gathered under a single <tt>IML</tt> (intermediate clause layer) projection with the external behaviour of a single clause. Each separate <b>conjunct</b> of the coordinated structure is an <tt>IML</tt> that is either: (i) the first conjunct and so a sister to <tt>CONJP</tt>(s) over <tt>IML</tt>(s), or (ii) a conjunct that is directly under a <tt>CONJP</tt>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure, as (<a href="#ex4.22">4.22</a>) illustrates. Such layered coordination is easiest to identify when different coordinators are used at each level, as in the following example.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure, as (<a href="#ex4.40">4.40</a>) illustrates. Such layered coordination is easiest to identify when different coordinators are used at each level, as in the following example.</p>
 
 <dl>
-  <dt>(<a name="ex4.22">4.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.40">4.40</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mrs)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;G))</tt><br>
@@ -3003,42 +3241,26 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=4_age_11_H04@3,4,51,52" target="_blank">4_age_11_H04&#64;3,4,51,52</a>))</tt><br>
 
-<p align="justify">Coordination can be recursive within a sentence or clause. This happens when a phrase or clause containing coordinated constituents is itself coordinated. This is always possible provided two constituents are of the same type.</p>
-
 <dl>
-  <dt>(<a name="ex4.23">4.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.41">4.41</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ;{CAT}&nbsp;(PRO&nbsp;It))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(BEP;~cat_e&nbsp;is)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VVN;~Cn.n&nbsp;called)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD&nbsp;(NPR&nbsp;Lucky))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__CONJP</font>&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(IML&nbsp;(VBP&nbsp;drinks))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___CONJP</font>&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VBP&nbsp;eats))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-MNR&nbsp;(Q&nbsp;a_lot)))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=4_age_11_H31@17,25" target="_blank">4_age_11_H31&#64;17,25</a>))</tt><br>
+<tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(BEP;~Ln&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;manager)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___CONJP</font>&nbsp;(CONJ&nbsp;or)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(BEP;~La&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;unemployed))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-TMP&nbsp;(P-ROLE&nbsp;at)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;moment))))))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=497_christine_T14@3,4,15" target="_blank">497_christine_T14&#64;3,4,15</a>))</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination can happen at different levels of clause structure. In (<a href="#ex4.42">4.42</a>) the coordination is within the scope of the subject.</p>
 
 <dl>
-  <dt>(<a name="ex4.24">4.24</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(NP&nbsp;(N&nbsp;motion)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;which))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;constant)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(RPRO&nbsp;which)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(EX&nbsp;there)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;is)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-ESBJ&nbsp;(Q&nbsp;no)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;acceleration)))))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_young_adult_E01@46,47,59" target="_blank">42#5_young_adult_E01&#64;5,6,18</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.25">4.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.42">4.42</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;They))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NEG</font>&nbsp;not)</tt><br>
@@ -3061,227 +3283,28 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;epara&gt;))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=14_young_adult_E40@6,30,32" target="_blank">14_young_adult_E40&#64;6,30,32</a>))</tt><br>
 
-<dl>
-  <dt>(<a name="ex4.26">4.26</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___ADVP-MOD</font>&nbsp;(ADV&nbsp;Firstly))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ipr&nbsp;are)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG&nbsp;not)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;an)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;erotic))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;relationship)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;are)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;instead))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(NML&nbsp;(NP&nbsp;(N&nbsp;father))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;daughter))))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__CONJP</font>&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___ADVP-MOD</font>&nbsp;(ADV&nbsp;secondly))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(NP-GENV&nbsp;(PRO&nbsp;their))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;realistic))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;situations))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_g&nbsp;are)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(VAG&nbsp;detaining)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;them))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;from)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(BAG;~cat_e&nbsp;being)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VVN;~Tn&nbsp;absorbed)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PNX&nbsp;one_another))))))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=19_young_adult_E74@48,3,51" target="_blank">19_young_adult_E74&#64;48,3,51</a>))</tt><br>
-
-<br>
-<h2><a name="sec4.5">4.5</a>&nbsp;&nbsp;&nbsp;Another use for IML</h2>
-
-<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="#ex4.27">4.27</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that preceeds the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
+<p align="justify">Coordination can be recursive within a sentence or clause. This happens when a phrase or clause containing coordinated constituents is itself coordinated. This is always possible provided two constituents are of the same type.</p>
 
 <dl>
-  <dt>(<a name="ex4.27">4.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.43">4.43</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-CAT</font>&nbsp;(VAG&nbsp;Opposing)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{GAUNT}&nbsp;(PRO&nbsp;him)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_g&nbsp;was))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{DE_VIENNE}&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;French))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;Admiral)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;(NP&nbsp;(NPR&nbsp;Jean)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(FW&nbsp;de)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;Vienne)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;mdash&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;(NP&nbsp;(NML&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;great))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;sailor))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;an)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;able))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;strategist)))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=6_lob_G01@3,2" target="_blank">6_lob_G01&#64;3,2</a>))</tt><br>
-
-<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="#ex4.27">4.27</a>); or  (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex4.28">4.28</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
-
-<dl>
-  <dt>(<a name="ex4.28">4.28</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(VBD&nbsp;spent)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;night))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;library)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-MNR&nbsp;(P-CONN&nbsp;without)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL2&nbsp;(VAG&nbsp;sleeping))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(P-CONN&nbsp;in_order)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;prepare)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;exam)))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=386_samples_purple_intermediate@5" target="_blank">386_samples_purple_intermediate&#64;5</a>))</tt><br>
-
-<br>
-<h2><a name="sec4.6">4.6</a>&nbsp;&nbsp;&nbsp;Matrix clause types</h2>
-
-<p align="justify">The internal form of a matrix clause can determine its use, and this gives rise to a basis for distiguishing the different clause types of:</p>
-<ul>
-<li><b>declaratives</b> (section <a href="#sec4.6.1">4.6.1</a>),</li>
-<li><b>interrogatives</b> (section <a href="#sec4.6.2">4.6.2</a>),</li>
-<li><b>exclamatives</b> (section <a href="#sec4.6.3">4.6.3</a>),</li>
-<li><b>imperatives</b> (section <a href="#sec4.6.4">4.6.4</a>), and</li>
-<li><b>sentence fragments</b> (section <a href="#sec4.6.5">4.6.5</a>).</li>
-</ul>
-
-<h3><a name="sec4.6.1">4.6.1</a>&nbsp;&nbsp;&nbsp;Declaratives</h3>
-
-<p align="justify">Basic clauses are always declarative.</p>
-
-<p><a name="table4.8">Table 4.8: Tag for declarative clause</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>IP-MAT</tt></td><td>matrix clause</td></tr>
-</table>
-<h3><a name="sec4.6.2">4.6.2</a>&nbsp;&nbsp;&nbsp;Interrogatives</h3>
-
-<p><a name="table4.9">Table 4.9: Tag for interrogative clause</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>CP-QUE</tt></td><td>question (direct or indirect)</td></tr>
-<tr><td><tt>IP-SUB</tt></td><td>clause complement of CP</td></tr>
-</table>
-<h3><a name="sec4.6.3">4.6.3</a>&nbsp;&nbsp;&nbsp;Exclamatives</h3>
-
-<p align="justify">There is no specific tag to distinguish exclamatives, and so they receive the unmarked <tt>IP-MAT</tt> tag. If there is an <tt>IP-MAT</tt> that contains a WH word without an intervening <tt>CP-QUE</tt> or <tt>FRAG</tt>, then the clause is likely to be an exclamative. Such clauses can be found with pattern (<a href="#ex4.29">4.29</a>).</p>
-
-<dl>
-  <dt>(<a name="ex4.29">4.29</a>)</dt><dd></dd>
-</dl>
-<tt>&sol;^IP-MAT&#92;b&sol;=x&nbsp;&lt;&lt;&nbsp;(&sol;^W&sol;&nbsp;&lt;&nbsp;__&nbsp;!==&nbsp;&sol;^WQ&#92;b&sol;&nbsp;!&gt;&gt;&nbsp;(&sol;^(CP-QUE|FRAG)&#92;b&sol;&nbsp;&gt;&gt;&nbsp;=x))</tt><br>
-
-<p align="justify">Exclamatives can also be found as clauses with the unmarked <tt>IP-MAT</tt> tag that end with an exclamation mark as sentence final punctuation.</p>
-
-<h3><a name="sec4.6.4">4.6.4</a>&nbsp;&nbsp;&nbsp;Imperatives</h3>
-
-<p><a name="table4.10">Table 4.10: Tag for imperative clause</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>IP-MAT-IMP</tt></td><td>imperative clause</td></tr>
-</table>
-<dl>
-  <dt>(<a name="ex4.30">4.30</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT-IMP&nbsp;(<font style="background-color: SandyBrown;">__NP-VOC</font>&nbsp;(NS&nbsp;Students))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;always))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tt&nbsp;remember)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;include)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(NS&nbsp;references)))</tt><br>
+<tt>(&nbsp;(IP-MAT-IMP&nbsp;(IML&nbsp;(IML&nbsp;(VB&nbsp;Transfer)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NUM&nbsp;four)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NML&nbsp;(NUM&nbsp;200)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;ml))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;polythene)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;bottles))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(IML&nbsp;(VB&nbsp;centrifuge))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(IML&nbsp;(VB&nbsp;decant)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VB&nbsp;discard))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(Q&nbsp;each)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;supernate)))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=82_samples_ENG1100@2" target="_blank">82_samples_ENG1100&#64;2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.31">4.31</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT-IMP-OB1&nbsp;(VB;~I&nbsp;Stop)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-VOC</font>&nbsp;(N&nbsp;thief)))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=13_classics_POTTER-1902@96" target="_blank">93#13_classics_POTTER-1902&#64;4</a>))</tt><br>
-
-<h3><a name="sec4.6.5">4.6.5</a>&nbsp;&nbsp;&nbsp;Sentence fragments</h3>
-
-<p align="justify">When there is not enough material in an utterance to create a basic clause, the utterance is marked as a sentence fragment with the <tt>FRAG</tt> tag.</p>
-
-<p><a name="table4.11">Table 4.11: Tag for sentence fragment</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>FRAG</tt></td><td>sentence fragment</td></tr>
-</table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Presence of either (i) a subject and a finite verb, or (ii) an imperative verb are sufficient materials to warrant marking the enclosing structure as a clause (<tt>IP</tt>) rather than as a <tt>FRAG</tt>.</p>
-
-<dl>
-  <dt>(<a name="ex4.32">4.32</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;just))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{pause})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;up)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;stairs))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=71_christine_T40@1" target="_blank">71_christine_T40&#64;1</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.33">4.33</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(IML&nbsp;(IML&nbsp;(REACT&nbsp;yes))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(REACT&nbsp;no)))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=208_christine_T09@1" target="_blank">208_christine_T09&#64;1</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.34">4.34</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(CP-QUE&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(REACT&nbsp;Really))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;?)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rdquo&gt;))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=199_classics_DICK-1952@2" target="_blank">199_classics_DICK-1952&#64;2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.35">4.35</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(NP-SBJ&nbsp;(Q&nbsp;all)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~cat_t&nbsp;seem)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(NP-OB1&nbsp;*T*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;think))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CP-THT-PRD2&nbsp;(IP-SUB&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(FLJ&nbsp;bloody)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;Hallowe&lt;apos&gt;en)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(VVN&nbsp;come)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-DIR&nbsp;(ADV&nbsp;back))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;again)))))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=458_christine_T04@1" target="_blank">458_christine_T04&#64;1</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.36">4.36</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(<font style="background-color: SandyBrown;">__FRAG</font>&nbsp;(ADVP-MNR&nbsp;(ADV&nbsp;sadly))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-TMP&nbsp;(NP&nbsp;(Q&nbsp;no))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVR&nbsp;longer))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-PRD2&nbsp;(P-ROLE&nbsp;with)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;us))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=59_texts_PaulFellows@32" target="_blank">32#59_texts_PaulFellows&#64;1</a>))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=95_lob_J01@25" target="_blank">95_lob_J01&#64;25</a>))</tt><br>
 
 <br>
 <br>
@@ -4022,10 +4045,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=10_age_12_F27@7,9" target="_blank">10_age_12_F27&#64;7,9</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Extrapostion of the subject is possible in a clause with the [La] pattern, as (<a href="#ex7.18">7.18</a>) shows.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Extraposition of the subject is possible in a clause with the [La] pattern, as (<a href="#ex7.19">7.19</a>) shows.</p>
 
 <dl>
-  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;it_#_it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -4041,7 +4064,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{unclear}_that_ear))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>))</tt><br>
 
-<p align="justify">In the annotation of (<a href="#ex7.18">7.18</a>), <tt>-NSBJ</tt> function information marks the extraposed subject, while <tt>-PSBJ</tt> marks the provisional subject <i>it</i>.</p>
+<p align="justify">In the annotation of (<a href="#ex7.19">7.19</a>), <tt>-NSBJ</tt> function information marks the extraposed subject, while <tt>-PSBJ</tt> marks the provisional subject <i>it</i>.</p>
 
 <h3><a name="sec6.2.2">6.2.2</a>&nbsp;&nbsp;&nbsp;[Ln]</h3>
 
@@ -4730,7 +4753,7 @@ body {
 <tr><td>4.</td><td></td><td><b></b></td><td>.</td></tr>
 <tr><td>5.</td><td></td><td><b></b></td><td>.</td></tr>
 </table><ul>
-<li>In this pattern, the direct object is a non-finite clause consisting of the &lcub;ing&rcub; form of a verb inroduced EITHER by a noun phrase (e.g., <i>him</i>, <i>her</i>, <i>us</i>, <i>John</i>, <i>the staff</i> OR by a possesive form (e.g., <i>his</i>, <i>her</i>, <i>our</i>, <i>John's</i>, <i>the staff's</i>). The introductory noun phrase is the subject of the whole non-finite clause.</li>
+<li>In this pattern, the direct object is a non-finite clause consisting of the &lcub;ing&rcub; form of a verb introduced EITHER by a noun phrase (e.g., <i>him</i>, <i>her</i>, <i>us</i>, <i>John</i>, <i>the staff</i> OR by a possesive form (e.g., <i>his</i>, <i>her</i>, <i>our</i>, <i>John's</i>, <i>the staff's</i>). The introductory noun phrase is the subject of the whole non-finite clause.</li>
 <li>The possesive form at the beginning of the direct object is more formal than a noun phrase.</li>
 <li>The verbs in this pattern cannot normally be made passive.</li>
 </ul>
@@ -5194,7 +5217,9 @@ body {
 <dt>b.</dt><dd>The white cat was <b>bought</b> <b>for</b> Emma (by Father).</dd>
 </dl>
 
-<p align="justify">There are exceptions where no passive is possible [Dn.pr no passive]. The noun phrase direct object can appear after the preposition phrase indirect object, typically when it has more weight:</p>
+<p align="justify">There are exceptions where no passive is possible [Dn.pr no passive].</p>
+
+<p align="justify">The noun phrase direct object can appear after the preposition phrase indirect object, typically when it has more weight:</p>
 
 <dl>
   <dt>(<a name="ex6.60">6.60</a>)</dt><dd></dd>
@@ -5952,7 +5977,7 @@ body {
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The chapter also contains a full discussion of relative clauses (section <a href="#sec7.4">7.4</a>) and it-cleft constructions (section <a href="#sec7.5">7.5</a>).</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The chapter also clears up other loose ends, notably with discussions of elision (section <a href="#sec7.8">7.8</a>), parentheticals (section <a href="#sec7.9">7.9</a>), exceptional scope (section <a href="#sec7.10">7.10</a>), and anaphora (section <a href="#sec7.12">7.12</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The chapter also clears up other loose ends, notably with discussions of elision (section <a href="#sec7.8">7.8</a>), parentheticals (section <a href="#sec7.9">7.9</a>), exceptional scope (section <a href="#sec7.10">7.10</a>), a use for <tt>IML</tt> outside of conjunction (section <a href="#sec7.11">7.11</a>), and anaphora (section <a href="#sec7.13">7.13</a>).</p>
 
 <br>
 <h2><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;Displacement</h2>
@@ -6059,7 +6084,7 @@ body {
 <p align="justify">Typically found within a noun phrase, a relative clause is a clause that is itself a modifier of an external head with the further property that the modified external head contributes a role within the relative clause. This necessitates the wherewithal to integrate the internal role. Such integration typically occurs in one of two ways:</p>
 <dl>
 <dt>(i)</dt><dd>with a relative pronoun (<tt>RPRO</tt> or <tt>RD</tt>) of which there are various kinds with varying placement requirements, or</dd>
-<dt>(ii)</dt><dd>through the complete absence of a nevertheless selected element internal to the relative clause, represented in the annotation with the pesence of a trace (<tt>*T*</tt>).</dd>
+<dt>(ii)</dt><dd>through the complete absence of a nevertheless selected element internal to the relative clause, represented in the annotation with a trace (<tt>*T*</tt>).</dd>
 </dl>
 
 <p align="justify">An example of a further option for integration, although rare in English, is to have a pronoun (<tt>PRO</tt>) integrating the content of the modified head, called a resumptive pronoun.</p>
@@ -6097,6 +6122,22 @@ body {
 
 <p align="justify">stacking relative clauses versus relative clauses with coordination</p>
 
+<dl>
+  <dt>(<a name="ex7.7">7.7</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(NP&nbsp;(N&nbsp;motion)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;which))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;constant)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;in)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(RPRO&nbsp;which)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(EX&nbsp;there)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-ESBJ&nbsp;(Q&nbsp;no)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;acceleration)))))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_young_adult_E01@46,47,59" target="_blank">42#5_young_adult_E01&#64;5,6,18</a>))</tt><br>
+
 <p align="justify">Overt relative pronouns versus relative clause traces</p>
 
 <p align="justify">conditions on the placement of traces</p>
@@ -6105,12 +6146,12 @@ body {
 
 <p align="justify">Long distance connections in relative clauses</p>
 
-<p align="justify">Free relaitve clause</p>
+<p align="justify">Free relative clause</p>
 
 <p align="justify">comparatives</p>
 
 <dl>
-  <dt>(<a name="ex7.7">7.7</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.8">7.8</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP-ESBJ&nbsp;(N&nbsp;people)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(IML&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;that))</tt><br>
@@ -6133,7 +6174,7 @@ body {
 <p align="justify"><tt>IP-CAR</tt> (Clause adjoined relative clause)</p>
 
 <dl>
-  <dt>(<a name="ex7.8">7.8</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.9">7.9</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;Sometimes))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
@@ -6159,7 +6200,7 @@ body {
 <h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;Resumptive pronouns</h3>
 
 <dl>
-  <dt>(<a name="ex7.9">7.9</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.10">7.10</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP-OB1;{BOX_ROOM}&nbsp;(D&nbsp;a)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
@@ -6193,7 +6234,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=24_age_12_F16@39,27,37" target="_blank">7#24_age_12_F16&#64;33,21,31</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.10">7.10</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.11">7.11</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(EX&nbsp;There)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;are)</tt><br>
@@ -6231,7 +6272,7 @@ body {
 <p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>FOC</tt> tag extension. The focus complement is labelled <tt>IP-CLF</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.11">7.11</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJ&nbsp;But)</tt><br>
@@ -6253,7 +6294,7 @@ body {
 <p align="justify">cf.&nbsp;The firing came from here.</p>
 
 <dl>
-  <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(NP-FOC&nbsp;(WPRO&nbsp;what))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__BED;~cleft</font>&nbsp;was)</tt><br>
@@ -6269,10 +6310,10 @@ body {
 <br>
 <h2><a name="sec7.6">7.6</a>&nbsp;&nbsp;&nbsp;Right node raising</h2>
 
-<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="#ex7.13">7.13</a>) illustrates right node raising internal to a noun phrase.</p>
+<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="#ex7.14">7.14</a>) illustrates right node raising internal to a noun phrase.</p>
 
 <dl>
-  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(NML&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;direct))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;contact)</tt><br>
@@ -6298,7 +6339,7 @@ body {
 <p align="justify">Right node raising internal in a clause:</p>
 
 <dl>
-  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-PPL-SCON-ABS&nbsp;(IML&nbsp;(IML&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;time_and_again))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VAG&nbsp;stuffing)</tt><br>
@@ -6312,7 +6353,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=10_susanne_G06@42,29,40" target="_blank">21#10_susanne_G06&#64;22,9,20</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;French))</tt><br>
@@ -6358,10 +6399,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=33_texts_FACTBOOK_2-2010@50,28,46" target="_blank">33_texts_FACTBOOK_2-2010&#64;50,28,46</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.16">7.16</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.17">7.17</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
 
 <dl>
-  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-SUB&nbsp;(C&nbsp;that)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;an)</tt><br>
@@ -6382,7 +6423,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=39_texts_KYOTO_2@30" target="_blank">17#39_texts_KYOTO_2&#64;14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(NS&nbsp;actions)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
@@ -6415,10 +6456,10 @@ body {
 <br>
 <h2><a name="sec7.7">7.7</a>&nbsp;&nbsp;&nbsp;Extrapositioning</h2>
 
-<p align="justify">In (<a href="#ex7.18">7.18</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
+<p align="justify">In (<a href="#ex7.19">7.19</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;it_#_it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -6434,10 +6475,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{unclear}_that_ear))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.19">7.19</a>) and (<a href="#ex7.20">7.20</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.20">7.20</a>) and (<a href="#ex7.21">7.21</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NP-DSBJ</font>&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;breaststroke))</tt><br>
@@ -6452,7 +6493,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_09_M14@4,17" target="_blank">3#3_age_09_M14&#64;2,15</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(PRO&nbsp;they))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
@@ -6466,7 +6507,7 @@ body {
 <p align="justify">Extrapositioning</p>
 
 <dl>
-  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(CONJ&nbsp;and)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
@@ -6485,7 +6526,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=273_christine_T38@21,29" target="_blank">273_christine_T38&#64;21,29</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;We))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_g&nbsp;are)</tt><br>
@@ -6507,7 +6548,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_11_H16@15,22" target="_blank">3_age_11_H16&#64;15,22</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;gave)</tt><br>
@@ -6531,7 +6572,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=181_christine_T23@27,35" target="_blank">181_christine_T23&#64;27,35</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;went)</tt><br>
@@ -6548,7 +6589,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_10_K59@57,61" target="_blank">42#3_age_10_K59&#64;16,20</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Persons)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-REL</font>&nbsp;*ICH*-111))</tt><br>
@@ -6585,7 +6626,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=14_young_adult_E53@44,53" target="_blank">40#14_young_adult_E53&#64;5,14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NML&nbsp;(NP&nbsp;(NP-GENV&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;morning)</tt><br>
@@ -6611,7 +6652,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=26_susanne_N06@28,14" target="_blank">26_susanne_N06&#64;28,14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-TMP&nbsp;(NUM&nbsp;One)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;day))</tt><br>
@@ -6634,7 +6675,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=117_susanne_G12@20,32" target="_blank">117_susanne_G12&#64;20,32</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(N&nbsp;confusion)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;which))</tt><br>
@@ -6656,7 +6697,7 @@ body {
 <p align="justify">We have seen elision already with missing phrase heads in chapter <a href="#ch3">3</a>. It is also possible for entire phrases to be elided under parallelism. For example,</p>
 
 <dl>
-  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_g&nbsp;were)</tt><br>
@@ -6673,7 +6714,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=9_stories_11_H38@44,17" target="_blank">10#9_stories_11_H38&#64;35,8</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Relocation)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;allowances)</tt><br>
@@ -6713,7 +6754,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_bnc_B21@42,29" target="_blank">21_bnc_B21&#64;42,29</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;provision)</tt><br>
@@ -6731,7 +6772,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=24_bnc_B38@115,133" target="_blank">108#24_bnc_B38&#64;8,26</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
@@ -6753,7 +6794,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=8_bnc_B26@18,37" target="_blank">8_bnc_B26&#64;18,37</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(IML&nbsp;(NP-CSBJ&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;is)</tt><br>
@@ -6778,7 +6819,7 @@ body {
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can take place when coordination and subordination are combined.</p>
 
 <dl>
-  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(ADJP&nbsp;(ADJ&nbsp;NEW))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;management)</tt><br>
@@ -6806,10 +6847,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_bnc_B35@27,36,56" target="_blank">5_bnc_B35&#64;27,36,56</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="#ex7.35">7.35</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="#ex7.36">7.36</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
 
 <dl>
-  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT-OB1&nbsp;(FS&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;&lt;apos&gt;ll)</tt><br>
@@ -6826,7 +6867,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=220_christine_T16@36" target="_blank">7#220_christine_T16&#64;30</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__VB;~Tn</font>&nbsp;Saut&lt;eacute&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-TMP&nbsp;(P-ROLE&nbsp;for)</tt><br>
@@ -6841,7 +6882,7 @@ body {
 <tr><td><tt>PRN</tt></td><td>parenthetical</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{NARRATOR}&nbsp;(PRO&nbsp;You)</tt><br>
@@ -6864,7 +6905,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=80_classics_SAINT-EXUPERY-1943@7,11" target="_blank">80_classics_SAINT-EXUPERY-1943&#64;7,11</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;know)</tt><br>
@@ -6879,7 +6920,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=518_christine_T36@12" target="_blank">518_christine_T36&#64;12</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;that))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
@@ -6894,17 +6935,17 @@ body {
 
 <h3><a name="sec7.9.1">7.9.1</a>&nbsp;&nbsp;&nbsp;Tag questions</h3>
 
-<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="#ex7.40">7.40</a>):</p>
-
-<dl>
-  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
-</dl>
-<tt>&sol;^PRN&sol;&nbsp;&gt;&nbsp;&sol;^IP-MAT&sol;&nbsp;&lt;&nbsp;(&sol;^CP-QUE&sol;&nbsp;&lt;&nbsp;(&sol;^IP-SUB&sol;&nbsp;&lt;-1&nbsp;&sol;^NP-SBJ&sol;))</tt><br>
-
-<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="#ex7.40">7.40</a>) returns example sentences like (<a href="#ex7.41">7.41</a>).</p>
+<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="#ex7.41">7.41</a>):</p>
 
 <dl>
   <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
+</dl>
+<tt>&sol;^PRN&sol;&nbsp;&gt;&nbsp;&sol;^IP-MAT&sol;&nbsp;&lt;&nbsp;(&sol;^CP-QUE&sol;&nbsp;&lt;&nbsp;(&sol;^IP-SUB&sol;&nbsp;&lt;-1&nbsp;&sol;^NP-SBJ&sol;))</tt><br>
+
+<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="#ex7.41">7.41</a>) returns example sentences like (<a href="#ex7.42">7.42</a>).</p>
+
+<dl>
+  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-MAT</font>&nbsp;(FRM&nbsp;I_mean)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
@@ -6927,7 +6968,7 @@ body {
 <p align="justify">Quantificational elements typically scope with a leftward direction, with the exception that intermediate layers, phrase heads, and verbs of clauses are always within the scope of other elements of the same layer. But a quantificational element with a functional role at its point of occurrence can also have broader scope consequences. This is the opposite of what happens for displacement in section <a href="#sec7.2">7.2</a>. Displacement of a quantificational element had to capture the point of role integration while maintaining the scope gained from the place of occurrence. Exceptional scope needs to capture a broader scope contribution from an occurrence point that is the point of role integration.</p>
 
 <dl>
-  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP</font>&nbsp;*ICH*-1)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Thousands)</tt><br>
@@ -6955,12 +6996,66 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=102_texts_Voice_of_America@2,20" target="_blank">102_texts_Voice_of_America&#64;2,20</a>))</tt><br>
 
 <br>
-<h2><a name="sec7.11">7.11</a>&nbsp;&nbsp;&nbsp;Control</h2>
+<h2><a name="sec7.11">7.11</a>&nbsp;&nbsp;&nbsp;Another use for IML</h2>
 
-<p align="justify">Example (<a href="#ex7.43">7.43</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
+<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="#ex7.44">7.44</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
 
 <dl>
-  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-CAT</font>&nbsp;(VAG&nbsp;Opposing)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{GAUNT}&nbsp;(PRO&nbsp;him)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_g&nbsp;was))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{DE_VIENNE}&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;French))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;Admiral)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;(NP&nbsp;(NPR&nbsp;Jean)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(FW&nbsp;de)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;Vienne)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;mdash&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;(NP&nbsp;(NML&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;great))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;sailor))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;an)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;able))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;strategist)))))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=6_lob_G01@3,2" target="_blank">6_lob_G01&#64;3,2</a>))</tt><br>
+
+<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="#ex7.44">7.44</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.45">7.45</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
+
+<dl>
+  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(VBD&nbsp;spent)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;night))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;library)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-MNR&nbsp;(P-CONN&nbsp;without)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL2&nbsp;(VAG&nbsp;sleeping))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(P-CONN&nbsp;in_order)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;prepare)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;exam)))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=386_samples_purple_intermediate@5" target="_blank">386_samples_purple_intermediate&#64;5</a>))</tt><br>
+
+<br>
+<h2><a name="sec7.12">7.12</a>&nbsp;&nbsp;&nbsp;Managing control</h2>
+
+<p align="justify">Example (<a href="#ex7.46">7.46</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
+
+<dl>
+  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;should)</tt><br>
@@ -6988,10 +7083,10 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=35_young_adult_E05@68,89,95,106" target="_blank">60#35_young_adult_E05&#64;9,30,36,47</a>))</tt><br>
 
 <br>
-<h2><a name="sec7.12">7.12</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
+<h2><a name="sec7.13">7.13</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
 
 <dl>
-  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(BED;~cat_e&nbsp;were)</tt><br>
