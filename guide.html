@@ -281,7 +281,7 @@ body {
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapter <a href="#ch6">6</a>. This includes codes for classifying catenative verbs, relatable to the analysis of catenative verbs in Huddleston, and Pullum (2002), and further supported in the annotation by the layering of clause structure.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic based meaning representations. While the annotation seldom includes indexing, calculated results from Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies from a discourse perspective. It can be helpful to see calculated results from Treebank Semantics as dependency graphs to make more apparent connections that the annotation captures.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic based meaning representations. While the annotation seldom includes indexing, calculated results from Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies from a discourse perspective. It is often helpful to see calculated results from Treebank Semantics as dependency graphs to make more apparent connections that the annotation captures.</p>
 
 <br>
 <br>
@@ -2832,35 +2832,27 @@ body {
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings in table <a href="#table4.5">4.5</a> relate to the subject function in particular constructions:</p>
 <ul>
 <li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="#ex4.26">4.26</a>) above;</li>
-<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as discussed in section <a href="#sec7.5">7.5</a>; and</li>
-<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="#ex4.27">4.27</a>) and (<a href="#ex4.29">4.29</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as discussed in section <a href="#sec5.2.3">5.2.3</a>.</li>
+<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="#ex4.27">4.27</a>); and</li>
+<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="#ex4.28">4.28</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="#ex4.29">4.29</a>).</li>
 </ul>
 
 <dl>
   <dt>(<a name="ex4.27">4.27</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-NSBJ</font>&nbsp;(N&nbsp;night))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=92_classics_DICK_1952@2,7" target="_blank">92_classics_DICK_1952&#64;2,7</a>))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-CSBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cleft&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-FOC&nbsp;(D&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;kind)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;smell))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-CLF&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;into)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;*T*))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_christine_T37@2" target="_blank">5_christine_T37&#64;2</a>))</tt><br>
 
 <dl>
   <dt>(<a name="ex4.28">4.28</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_t&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE;~I&nbsp;be)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-NSBJ</font>&nbsp;(Q&nbsp;nothing)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJR&nbsp;more)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;than)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;that))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=96_susanne_N10@12,2" target="_blank">96_susanne_N10&#64;12,2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex4.29">4.29</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
@@ -2873,6 +2865,21 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;it)))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=143_christine_T27@2,13" target="_blank">143_christine_T27&#64;2,13</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.29">4.29</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NP-DSBJ</font>&nbsp;(D&nbsp;The)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;breaststroke))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;hard))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-INF-NSBJ</font>&nbsp;(NP-LGS&nbsp;*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn.pr&nbsp;explain)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-MNR&nbsp;(P-ROLE&nbsp;in)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;words)))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_stories_09_M14@4,17" target="_blank">3#3_stories_09_M14&#64;2,15</a>))</tt><br>
 
 <p><a name="table4.5">Table 4.5: The full range of extension tags related to the subject function</a></p>
 
@@ -3414,10 +3421,12 @@ body {
 <li><tt>CP-QUE</tt> (section <a href="#sec5.6">5.6</a>).</li>
 </ul>
 
+<p align="justify">With the exception of <tt>CP-QUE</tt>, which is as the tag for both direct and indirect questions, the other tags label clauses that are incapable of standing alone as the main clause of a sentence.</p>
+
 <br>
 <h2><a name="sec5.2">5.2</a>&nbsp;&nbsp;&nbsp;IP-INF (infinitival)</h2>
 
-<p align="justify">Infinitival clauses have a maximal constituent with the tag of Table <a href="#table5.1">5.1</a>.</p>
+<p align="justify">Infinitival clauses are clauses that contain a verb in the infinitive form without support from a finite element like a dummy <small style="font-size: 75%">DO</small> or modal verb as seen with matrix clauses in section <a href="#sec4.2.1">4.2.1</a>. Infinitival clauses have a maximal constituent with the tag of Table <a href="#table5.1">5.1</a>.</p>
 
 <p><a name="table5.1">Table 5.1: Tag for infinitival clause</a></p>
 
@@ -3430,7 +3439,7 @@ body {
 <li>those that lack the infinitive marker <i>to</i>, called <b>bare</b> infinitival clauses.</li>
 </ul>
 
-<p align="justify">When occuring directly within a clause, the syntactic tag <tt>IP-INF</tt> needs a function extension. Possibilities are listed in Table <a href="#table5.2">5.2</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When occuring directly within a clause, the syntactic tag <tt>IP-INF</tt> needs a function extension. Possibilities are listed in Table <a href="#table5.2">5.2</a>.</p>
 
 <p><a name="table5.2">Table 5.2: Tags for infinitival clauses with function extensions</a></p>
 
@@ -3446,27 +3455,29 @@ body {
 <tr><td><tt>IP-INF-SCON-MOD</tt></td><td>modality adverbial</td></tr>
 <tr><td><tt>IP-INF-SCON-RST</tt></td><td>respect adverbial</td></tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="#ch6">6</a> will show infinitival clauses as verb selected elements with catenative, direct object, and object predicative functions. Instances of bare infinitival clauses occur as:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="#ch6">6</a> will show infinitival clauses as verb selected elements with direct object, object predicative, and catenative functions. Notably, instances of bare infinitival clauses occur as:</p>
 <ul>
-<li>bare <tt>IP-INF-CAT</tt> with code [cat_i] (section sectionref:[__cat_ipattern__]),</li>
-<li>bare <tt>IP-INF-OB1</tt> with code [Tni] (section <a href="#sec6.4.11">6.4.11</a>), and</li>
-<li>bare <tt>IP-INF-PRD</tt> with code [Cn.i] (section <a href="#sec6.5.7">6.5.7</a>).</li>
+<li>bare <tt>IP-INF-OB1</tt> with code [Tni] (section <a href="#sec6.4.11">6.4.11</a>),</li>
+<li>bare <tt>IP-INF-PRD</tt> with code [Cn.i] (section <a href="#sec6.5.7">6.5.7</a>), and</li>
+<li>bare <tt>IP-INF-CAT</tt> with code [cat_i] (section sectionref:[__cat_ipattern__]).</li>
 </ul>
 
-<p align="justify">Infinitival clauses with the infinitive marker <i>to</i> occur as:</p>
+<p align="justify">Infinitival clauses with the infinitive marker <i>to</i> exhibit a fuller range of options, occurring as:</p>
 <ul>
-<li><tt>IP-INF-CAT</tt> with code [cat_t] (section sectionref:[__cat_tpattern__]),</li>
 <li><tt>IP-INF-OB1</tt> with code [It] (section <a href="#sec6.3.5">6.3.5</a>).</li>
 <li><tt>IP-INF-OB1</tt> with code [Tt] (section <a href="#sec6.4.6">6.4.6</a>).</li>
 <li><tt>IP-INF-OB1</tt> with code [Tnt] (section <a href="#sec6.4.7">6.4.7</a>).</li>
 <li><tt>IP-INF-PRD</tt> with code [Cn.t] (section <a href="#sec6.5.5">6.5.5</a>),</li>
-<li><tt>IP-INF-OB1</tt> with code [Dn.t] (section <a href="#sec6.5.14">6.5.14</a>), and</li>
-<li><tt>IP-INF-OB1</tt> with code [Dpr.t] (section <a href="#sec6.5.15">6.5.15</a>).</li>
+<li><tt>IP-INF-OB1</tt> with code [Dn.t] (section <a href="#sec6.5.14">6.5.14</a>),</li>
+<li><tt>IP-INF-OB1</tt> with code [Dpr.t] (section <a href="#sec6.5.15">6.5.15</a>), and</li>
+<li><tt>IP-INF-CAT</tt> with code [cat_t] (section sectionref:[__cat_tpattern__]).</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The remainder of this section considers infinitival clauses with the infinitive marker <i>to</i> with: subject (section <a href="#sec5.2.1">5.2.1</a>), subject predicative (section <a href="#sec5.2.2">5.2.2</a>), and adverbial uses (section <a href="#sec5.2.3">5.2.3</a>).</p>
+<p align="justify">In addition, the remainder of this section considers infinitival clauses with the infinitive marker <i>to</i> that occur with subject (section <a href="#sec5.2.1">5.2.1</a>), subject predicative (section <a href="#sec5.2.2">5.2.2</a>), and adverbial (section <a href="#sec5.2.3">5.2.3</a>) uses.</p>
 
 <h3><a name="sec5.2.1">5.2.1</a>&nbsp;&nbsp;&nbsp;IP-INF with subject function</h3>
+
+<p align="justify">Infinitival clauses with the infinitive marker <i>to</i> can have subject function, as in (<a href="#ex5.1">5.1</a>).</p>
 
 <dl>
   <dt>(<a name="ex5.1">5.1</a>)</dt><dd></dd>
@@ -3483,6 +3494,8 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=135_susanne_N09@2" target="_blank">135_susanne_N09&#64;2</a>))</tt><br>
 
+<p align="justify">It is typical for an infinitival clause with subject function to occur as an extraposed notional subject (<tt>-NSBJ</tt>). A notional subject occurs in combination with a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="#ex5.2">5.2</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="#ex5.3">5.3</a>).</p>
+
 <dl>
   <dt>(<a name="ex5.2">5.2</a>)</dt><dd></dd>
 </dl>
@@ -3496,95 +3509,35 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;it)))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=431_christine_T40@13,2" target="_blank">431_christine_T40&#64;13,2</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there is clause-within-clause subordination, the possibility arises of an element from the main clause making a direct contribution to the subordinate clause while being left with unclear status in the main clause. One notable scenario of this involves derived subjects. (The other notable scenario involves derived objects.)</p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>NP-DSBJ</tt></td><td>derived subject noun phrase</td></tr>
-</table>
 <dl>
   <dt>(<a name="ex5.3">5.3</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-ADV&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-DSBJ</font>&nbsp;(D&nbsp;these))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;are)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;likely))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-DSBJ</font>&nbsp;(D&nbsp;This))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~Ipr&nbsp;seems)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;me)))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;crease)))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_bnc_B27@27,16" target="_blank">15#101_bnc_B27&#64;13,2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex5.4">5.4</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-ADV&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-DSBJ</font>&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;problems)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;reform)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;programme))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~La&nbsp;became)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;difficult))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(NP-LGS&nbsp;*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;contain)))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=20_bnc_B20@75,52" target="_blank">51#20_bnc_B20&#64;25,2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex5.5">5.5</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NP-DSBJ</font>&nbsp;(D&nbsp;The)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;breaststroke))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;hard))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-INF-NSBJ</font>&nbsp;(NP-LGS&nbsp;*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn.pr&nbsp;explain)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-MNR&nbsp;(P-ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;words)))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_stories_09_M14@4,17" target="_blank">3#3_stories_09_M14&#64;2,15</a>))</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="#ex6.75">6.75</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="#ex5.7">5.7</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.75">6.75</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(EX&nbsp;There)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(BEP;~La&nbsp;are)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;bound))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE&nbsp;be)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-ESBJ</font>&nbsp;(NS&nbsp;demonstrations))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rquo&gt;))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=19_lob_A01@15,10" target="_blank">19_lob_A01&#64;15,10</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex5.7">5.7</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;increasing))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;numbers)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;young))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;intellectuals)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(IML&nbsp;(IML&nbsp;(VAG&nbsp;taking)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(N&nbsp;part)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADV&nbsp;importantly))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VAG&nbsp;failing)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;return)))))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_bnc_B20@93" target="_blank">54#21_bnc_B20&#64;40</a>))</tt><br>
-
-<p align="justify">Note the presence of the <tt>IML</tt> layer in (<a href="#ex6.75">6.75</a>). With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had final placement within its containing layer. This allows the <tt>-ESBJ</tt> subject to scope into the <tt>IML</tt>.</p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE;~Ln&nbsp;be)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;difference)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;between)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NML&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;single))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;distorted))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;perception))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;universal))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;truth))))))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=13_young_adult_E12@13,2" target="_blank">13_young_adult_E12&#64;13,2</a>))</tt><br>
 
 <h3><a name="sec5.2.2">5.2.2</a>&nbsp;&nbsp;&nbsp;IP-INF with subject predicative function</h3>
 
+<p align="justify">When occuring with the copula verb <small style="font-size: 75%">BE</small>, an infinitival clause with the infinitive marker <i>to</i> can have subject predicative function, to thereby create an equative construction, as in (<a href="#ex5.4">5.4</a>)&ndash;(<a href="#ex5.6">5.6</a>). Equative constructions with an infinitival clause predicative can be found by looking for the [equ_t] verb code.</p>
+
 <dl>
-  <dt>(<a name="ex5.8">5.8</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.4">5.4</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(IP-INF-SBJ&nbsp;(TO&nbsp;to)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;dismiss)</tt><br>
@@ -3598,7 +3551,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=44_bnc_B13@52" target="_blank">41#44_bnc_B13&#64;12</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.9">5.9</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.5">5.5</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;primary))</tt><br>
@@ -3615,7 +3568,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=44_texts_freedoom@20" target="_blank">44_texts_freedoom&#64;20</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.10">5.10</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.6">5.6</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;normal))</tt><br>
@@ -3635,7 +3588,7 @@ body {
 <h3><a name="sec5.2.3">5.2.3</a>&nbsp;&nbsp;&nbsp;IP-INF with adverbial function</h3>
 
 <dl>
-  <dt>(<a name="ex5.11">5.11</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.7">5.7</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;He))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;gave)</tt><br>
@@ -3655,7 +3608,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=77_bnc_B14@28" target="_blank">3#77_bnc_B14&#64;26</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.12">5.12</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.8">5.8</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;pointed)</tt><br>
@@ -3681,7 +3634,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=26_young_adult_E01@21" target="_blank">26_young_adult_E01&#64;21</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.13">5.13</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.9">5.9</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;They))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_g&nbsp;were)</tt><br>
@@ -3727,80 +3680,76 @@ body {
 <tr><td><tt>IP-PPL-SCON-RST</tt></td><td>respect adverbial</td></tr>
 <tr><td><tt>IP-PPL-SCON-TMP</tt></td><td>temporal adverbial</td></tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="#ch6">6</a> will show participial clauses as verb selected elements with catenative, direct object, and object predicative functions. Participial clauses with a past participle (&lcub;en&rcub;) verb form occur as:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="#ch6">6</a> will show participial clauses as verb selected elements with direct object, object predicative, and catenative functions. Notably, instances of participial clauses with a past participle (&lcub;en&rcub;) verb form occur as:</p>
 <ul>
-<li><tt>IP-PPL-CAT</tt> with code [cat_e] (section sectionref:[__cat_epattern__]),</li>
-<li><tt>IP-PPL-PRD</tt> with codes [VP24A, VP24B, VP24C] (section <a href="#sec6.6">6.6</a>),</li>
+<li><tt>IP-PPL-PRD</tt> with codes [VP24A, VP24B, VP24C] (section <a href="#sec6.6">6.6</a>), and</li>
+<li><tt>IP-PPL-CAT</tt> with code [cat_e] (section sectionref:[__cat_epattern__]).</li>
 </ul>
 
-<p align="justify">Participial clauses with a present participial (&lcub;ing&rcub;) verb form occur as:</p>
+<p align="justify">Participial clauses with a present participial (&lcub;ing&rcub;) verb form exhibit a fuller range of options, occurring as:</p>
 <ul>
-<li><tt>IP-PPL-CAT</tt> with code [cat_g] (section sectionref:[__cat_gpattern__]),</li>
 <li><tt>IP-PPL-OB1</tt> with code [Tg] (section <a href="#sec6.4.8">6.4.8</a>),</li>
 <li><tt>IP-PPL-OB1</tt> with code [Tsg] (section <a href="#sec6.4.9">6.4.9</a>),</li>
-<li><tt>IP-PPL-OB1</tt> with code [Tng] (section <a href="#sec6.4.10">6.4.10</a>), and</li>
-<li><tt>IP-PPL-PRD</tt> with code [Cn.g] (section <a href="#sec6.5.6">6.5.6</a>),</li>
+<li><tt>IP-PPL-OB1</tt> with code [Tng] (section <a href="#sec6.4.10">6.4.10</a>),</li>
+<li><tt>IP-PPL-PRD</tt> with code [Cn.g] (section <a href="#sec6.5.6">6.5.6</a>), and</li>
+<li><tt>IP-PPL-CAT</tt> with code [cat_g] (section sectionref:[__cat_gpattern__]).</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The remainder of this section considers participial clauses with: subject (section <a href="#sec5.3.1">5.3.1</a>), subject predicative (section <a href="#sec5.3.2">5.3.2</a>), and adverbial uses (section <a href="#sec5.3.3">5.3.3</a>).</p>
+<p align="justify">The remainder of this section considers how the two types of participial clause can occur with subject (section <a href="#sec5.3.1">5.3.1</a>), subject predicative (section <a href="#sec5.3.2">5.3.2</a>), and adverbial (section <a href="#sec5.3.3">5.3.3</a>) uses.</p>
 
 <h3><a name="sec5.3.1">5.3.1</a>&nbsp;&nbsp;&nbsp;IP-PPL with subject function</h3>
 
-<dl>
-  <dt>(<a name="ex5.14">5.14</a>)</dt><dd></dd>
-</dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(PP-SCON-TMP&nbsp;(P-CONN&nbsp;When)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;appeared)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;store)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-SCON-CNT&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;help)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(RP&nbsp;out)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-TMP&nbsp;(P-ROLE&nbsp;for)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(Q&nbsp;a_few)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;hours))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;even))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-SBJ</font>&nbsp;(NP-SBJ&nbsp;(NP-GENV&nbsp;(PRO&nbsp;my)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VAG;~Ipr&nbsp;looking)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;at)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;her))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;surreptitious))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(P-CONN&nbsp;lest)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV%&nbsp;(NP-SBJ&nbsp;(NP-GENV&nbsp;(PRO&nbsp;my))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;Uncle))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;notice)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;it))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=34_susanne_N18@37" target="_blank">34_susanne_N18&#64;37</a>))</tt><br>
+<p align="justify">Participial clauses with a present participial (&lcub;ing&rcub;) verb can have subject function, as in (<a href="#ex5.10">5.10</a>).</p>
 
 <dl>
-  <dt>(<a name="ex5.15">5.15</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.10">5.10</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~I&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-NSBJ</font>&nbsp;(VAG&nbsp;raining)))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=7_age_10_K60@33,28" target="_blank">27#7_age_10_K60&#64;7,2</a>))</tt><br>
+<tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-SBJ</font>&nbsp;(VAG;~Tn&nbsp;Shooting)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{REACTOR}&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;reactor)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;will)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;damage)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{REACTOR}&nbsp;(PRO&nbsp;it)))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=12_texts_THRUST@4" target="_blank">3#12_texts_THRUST&#64;2</a>))</tt><br>
+
+<p align="justify">A participial clause with a present participial (&lcub;ing&rcub;) verb can also occur as an extraposed notional subject (<tt>-NSBJ</tt>) in combination with a provisional subject <i>it</i>, as in (<a href="#ex5.11">5.11</a>).</p>
 
 <dl>
-  <dt>(<a name="ex5.16">5.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.11">5.11</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;a)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(NP&nbsp;(N&nbsp;time))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;-)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;consuming))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;task))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-NSBJ</font>&nbsp;(VAG;~Ipr&nbsp;waiting)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Michael))))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;does)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;seem)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADV&nbsp;quite))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;right))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-NSBJ</font>&nbsp;(VAG&nbsp;telling)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB2&nbsp;(PRO&nbsp;her))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;thing)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;like)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;that)))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=12_samples_ENG1100@20,2" target="_blank">12_samples_ENG1100&#64;20,2</a>))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=17_susanne_N12@21,4" target="_blank">17_susanne_N12&#64;21,4</a>))</tt><br>
 
 <h3><a name="sec5.3.2">5.3.2</a>&nbsp;&nbsp;&nbsp;IP-PPL with subject predicative function</h3>
+
+<p align="justify">When occuring with the copula verb <small style="font-size: 75%">BE</small>, a participial clause with a present participial (&lcub;ing&rcub;) verb form can have subject predicative function, to thereby create an equative construction, as in (<a href="#ex5.12">5.12</a>). Equative constructions with a participial clause predicative with a present participial (&lcub;ing&rcub;) verb can be found by looking for the [equ_g] verb code.</p>
+
+<dl>
+  <dt>(<a name="ex5.12">5.12</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJS&nbsp;funniest))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;job))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~equ&nbsp;was)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-PRD2</font>&nbsp;(VAG;~Tn&nbsp;cleaning)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;dog)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=2_age_09_M12@12" target="_blank">2_age_09_M12&#64;12</a>))</tt><br>
 
 <h3><a name="sec5.3.3">5.3.3</a>&nbsp;&nbsp;&nbsp;IP-PPL with adverbial function</h3>
 
@@ -3837,7 +3786,7 @@ body {
 <tr><td><tt>IP-ADV</tt></td><td>adverbial clause</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex5.17">5.17</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.13">5.13</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;&lt;apos&gt;ll)</tt><br>
@@ -3852,7 +3801,7 @@ body {
 </ul>
 
 <dl>
-  <dt>(<a name="ex5.18">5.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.14">5.14</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__PP-SCON-CNT-CND</font>&nbsp;(IP-ADV&nbsp;(HVD;~cat_e&nbsp;Had)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{PRIEST}&nbsp;(PRO&nbsp;he))</tt><br>
@@ -3895,7 +3844,7 @@ body {
 </ul>
 
 <dl>
-  <dt>(<a name="ex5.19">5.19</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.15">5.15</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(D&nbsp;that))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)</tt><br>
@@ -3915,7 +3864,7 @@ body {
 </ul>
 
 <dl>
-  <dt>(<a name="ex5.20">5.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.16">5.16</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-REL&nbsp;(ADVP-LOC&nbsp;(RADV&nbsp;where))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))</tt><br>
@@ -3967,7 +3916,7 @@ body {
 <h3><a name="sec5.5.1">5.5.1</a>&nbsp;&nbsp;&nbsp;CP-THT with subject function</h3>
 
 <dl>
-  <dt>(<a name="ex5.21">5.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.17">5.17</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__CP-THT-SBJ</font>&nbsp;(IP-SUB&nbsp;(C&nbsp;That)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))</tt><br>
@@ -3981,7 +3930,7 @@ body {
 <p align="justify">There is an extraposed notional subject when the sentence is introduced by anticipatory <i>it</i>. Subject <i>that</i>-clauses and extraposed notional subject <i>that</i>-clauses are equivalent structures. In both cases, the <i>that</i>-clause is the logical subject of the main clause. The dummy subject <i>it</i> is used in the ordinary subject position, anticipating the extraposed clause.</p>
 
 <dl>
-  <dt>(<a name="ex5.22">5.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.18">5.18</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
@@ -4001,8 +3950,10 @@ body {
 
 <h3><a name="sec5.5.2">5.5.2</a>&nbsp;&nbsp;&nbsp;CP-THT with subject predicative function</h3>
 
+<p align="justify">When occuring with the copula verb <small style="font-size: 75%">BE</small>, a <i>that</i>-clause can have subject predicative function, to thereby create an equative construction, as in (<a href="#ex5.19">5.19</a>). Equative constructions with a <i>that</i>-clause predicative can be found by looking for the [equ_f] verb code.</p>
+
 <dl>
-  <dt>(<a name="ex5.23">5.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.19">5.19</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NUM&nbsp;One)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
@@ -4050,7 +4001,7 @@ body {
 <h3><a name="sec5.6.1">5.6.1</a>&nbsp;&nbsp;&nbsp;CP-QUE with subject function</h3>
 
 <dl>
-  <dt>(<a name="ex5.24">5.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.20">5.20</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__CP-QUE-SBJ</font>&nbsp;(IP-SUB&nbsp;(ADVP-MNR&nbsp;(AML&nbsp;(ADVP&nbsp;(WADV&nbsp;How))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
@@ -4070,7 +4021,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=77_susanne_G11@2" target="_blank">77_susanne_G11&#64;2</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.25">5.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.21">5.21</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__CP-QUE-SBJ</font>&nbsp;(IP-SUB&nbsp;(WQ&nbsp;Whether)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;this))</tt><br>
@@ -4085,7 +4036,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=141_texts_ANC_HistoryOfGreece@4" target="_blank">3#141_texts_ANC_HistoryOfGreece&#64;2</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.26">5.26</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.22">5.22</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
@@ -4105,7 +4056,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=59_bnc_B36@15,2" target="_blank">59_bnc_B36&#64;15,2</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.27">5.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.23">5.23</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -4121,12 +4072,27 @@ body {
 
 <h3><a name="sec5.6.2">5.6.2</a>&nbsp;&nbsp;&nbsp;CP-QUE with subject predicative function</h3>
 
+<p align="justify">When occuring with the copula verb <small style="font-size: 75%">BE</small>, an indirect question can have subject predicative function, to thereby create an equative construction, as in (<a href="#ex5.24">5.24</a>). Equative constructions with an indirect indirect question predicative can be found by looking for the [equ_w] verb code.</p>
+
+<dl>
+  <dt>(<a name="ex5.24">5.24</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~equ_w&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__CP-QUE-PRD2</font>&nbsp;(IP-SUB&nbsp;(ADVP-CNT&nbsp;(WADV&nbsp;how))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;Spring)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;Drive))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;works)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=42_texts_seiko_9R65@7" target="_blank">42_texts_seiko_9R65&#64;7</a>))</tt><br>
+
 <h3><a name="sec5.6.3">5.6.3</a>&nbsp;&nbsp;&nbsp;CP-QUE with adverbial function</h3>
 
 <p align="justify">respect function:</p>
 
 <dl>
-  <dt>(<a name="ex5.28">5.28</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.25">5.25</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ;{ALAN+MARTIN}&nbsp;(NML&nbsp;(NP;{ALAN}&nbsp;(NPR&nbsp;Alan))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
@@ -4149,10 +4115,10 @@ body {
 <h2><a name="sec5.7">5.7</a>&nbsp;&nbsp;&nbsp;Subjunctive</h2>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>IP-SUB%</tt></td><td>subjunctive clause</td></tr>
+<tr><td><tt>%</tt></td><td>subjunctive clause</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex5.29">5.29</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.26">5.26</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Joe))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;naturally))</tt><br>
@@ -4178,7 +4144,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=107_susanne_A14@11" target="_blank">107_susanne_A14&#64;11</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex5.30">5.30</a>)</dt><dd></dd>
+  <dt>(<a name="ex5.27">5.27</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;urged)</tt><br>
@@ -4308,10 +4274,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=10_age_12_F27@7,9" target="_blank">10_age_12_F27&#64;7,9</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Extraposition of the subject is possible in a clause with the [La] pattern, as (<a href="#ex7.20">7.20</a>) shows.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Extraposition of the subject is possible in a clause with the [La] pattern, as (<a href="#ex7.19">7.19</a>) shows.</p>
 
 <dl>
-  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;it_#_it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -4327,7 +4293,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{unclear}_that_ear))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>))</tt><br>
 
-<p align="justify">In the annotation of (<a href="#ex7.20">7.20</a>), <tt>-NSBJ</tt> function information marks the extraposed subject, while <tt>-PSBJ</tt> marks the provisional subject <i>it</i>.</p>
+<p align="justify">In the annotation of (<a href="#ex7.19">7.19</a>), <tt>-NSBJ</tt> function information marks the extraposed subject, while <tt>-PSBJ</tt> marks the provisional subject <i>it</i>.</p>
 
 <h3><a name="sec6.2.2">6.2.2</a>&nbsp;&nbsp;&nbsp;[Ln]</h3>
 
@@ -5813,10 +5779,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-ESBJ&nbsp;(N&nbsp;trouble)))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=587_christine_T33@28" target="_blank">20#587_christine_T33&#64;9</a>))</tt><br>
 
-<p align="justify">Example (<a href="#ex6.75">6.75</a>) involves a passive.</p>
+<p align="justify">Example (<a href="#ex7.50">7.50</a>) involves a passive.</p>
 
 <dl>
-  <dt>(<a name="ex6.75">6.75</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(EX&nbsp;There)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(BEP;~La&nbsp;are)</tt><br>
@@ -6582,21 +6548,6 @@ body {
 <dl>
   <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-CSBJ</font>&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cleft&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-FOC&nbsp;(D&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;kind)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;smell))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-CLF&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;into)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;*T*))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_christine_T37@2" target="_blank">5_christine_T37&#64;2</a>))</tt><br>
-
-<dl>
-  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
-</dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJ&nbsp;But)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-CSBJ&nbsp;(PRO&nbsp;it))</tt><br>
@@ -6617,7 +6568,7 @@ body {
 <p align="justify">cf.&nbsp;The firing came from here.</p>
 
 <dl>
-  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(CP-QUE&nbsp;(IP-SUB&nbsp;(NP-FOC&nbsp;(WPRO&nbsp;what))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__BED;~cleft</font>&nbsp;was)</tt><br>
@@ -6633,10 +6584,10 @@ body {
 <br>
 <h2><a name="sec7.6">7.6</a>&nbsp;&nbsp;&nbsp;Right node raising</h2>
 
-<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="#ex7.15">7.15</a>) illustrates right node raising internal to a noun phrase.</p>
+<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="#ex7.14">7.14</a>) illustrates right node raising internal to a noun phrase.</p>
 
 <dl>
-  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(NML&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;direct))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;contact)</tt><br>
@@ -6662,7 +6613,7 @@ body {
 <p align="justify">Right node raising internal in a clause:</p>
 
 <dl>
-  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-PPL-SCON-ABS&nbsp;(IML&nbsp;(IML&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;time_and_again))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VAG&nbsp;stuffing)</tt><br>
@@ -6676,7 +6627,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=10_susanne_G06@42,29,40" target="_blank">21#10_susanne_G06&#64;22,9,20</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;French))</tt><br>
@@ -6722,10 +6673,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=33_texts_FACTBOOK_2_2010@50,28,46" target="_blank">33_texts_FACTBOOK_2_2010&#64;50,28,46</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.18">7.18</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.17">7.17</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
 
 <dl>
-  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-SUB&nbsp;(C&nbsp;that)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;an)</tt><br>
@@ -6746,7 +6697,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=39_texts_KYOTO_2@30" target="_blank">17#39_texts_KYOTO_2&#64;14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(NS&nbsp;actions)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
@@ -6779,10 +6730,10 @@ body {
 <br>
 <h2><a name="sec7.7">7.7</a>&nbsp;&nbsp;&nbsp;Extrapositioning</h2>
 
-<p align="justify">In (<a href="#ex7.20">7.20</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
+<p align="justify">In (<a href="#ex7.19">7.19</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-PSBJ</font>&nbsp;(PRO&nbsp;it_#_it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~La&nbsp;was)</tt><br>
@@ -6798,10 +6749,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;{unclear}_that_ear))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.21">7.21</a>) and (<a href="#ex7.22">7.22</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.20">7.20</a>) and (<a href="#ex7.21">7.21</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__NP-DSBJ</font>&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;breaststroke))</tt><br>
@@ -6816,7 +6767,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_09_M14@4,17" target="_blank">3#3_age_09_M14&#64;2,15</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(PRO&nbsp;they))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
@@ -6830,7 +6781,7 @@ body {
 <p align="justify">Extrapositioning</p>
 
 <dl>
-  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(CONJ&nbsp;and)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))</tt><br>
@@ -6849,7 +6800,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=273_christine_T38@21,29" target="_blank">273_christine_T38&#64;21,29</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;We))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_g&nbsp;are)</tt><br>
@@ -6871,7 +6822,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_11_H16@15,22" target="_blank">3_age_11_H16&#64;15,22</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;gave)</tt><br>
@@ -6895,7 +6846,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=181_christine_T23@27,35" target="_blank">181_christine_T23&#64;27,35</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;went)</tt><br>
@@ -6912,7 +6863,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=3_age_10_K59@57,61" target="_blank">42#3_age_10_K59&#64;16,20</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Persons)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-REL</font>&nbsp;*ICH*-111))</tt><br>
@@ -6949,7 +6900,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=14_young_adult_E53@44,53" target="_blank">40#14_young_adult_E53&#64;5,14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NML&nbsp;(NP&nbsp;(NP-GENV&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;morning)</tt><br>
@@ -6975,7 +6926,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=26_susanne_N06@28,14" target="_blank">26_susanne_N06&#64;28,14</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-TMP&nbsp;(NUM&nbsp;One)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;day))</tt><br>
@@ -6998,7 +6949,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=117_susanne_G12@20,32" target="_blank">117_susanne_G12&#64;20,32</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(N&nbsp;confusion)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;which))</tt><br>
@@ -7020,7 +6971,7 @@ body {
 <p align="justify">We have seen elision already with missing phrase heads in chapter <a href="#ch3">3</a>. It is also possible for entire phrases to be elided under parallelism. For example,</p>
 
 <dl>
-  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~cat_g&nbsp;were)</tt><br>
@@ -7037,7 +6988,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=9_stories_11_H38@44,17" target="_blank">10#9_stories_11_H38&#64;35,8</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Relocation)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;allowances)</tt><br>
@@ -7077,7 +7028,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_bnc_B21@42,29" target="_blank">21_bnc_B21&#64;42,29</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(NP&nbsp;(D&nbsp;a)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;provision)</tt><br>
@@ -7095,7 +7046,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=24_bnc_B38@115,133" target="_blank">108#24_bnc_B38&#64;8,26</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;is)</tt><br>
@@ -7117,7 +7068,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=8_bnc_B26@18,37" target="_blank">8_bnc_B26&#64;18,37</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(IML&nbsp;(IML&nbsp;(NP-CSBJ&nbsp;(PRO&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cleft&nbsp;is)</tt><br>
@@ -7142,7 +7093,7 @@ body {
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can take place when coordination and subordination are combined.</p>
 
 <dl>
-  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(ADJP&nbsp;(ADJ&nbsp;NEW))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;management)</tt><br>
@@ -7170,10 +7121,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=5_bnc_B35@27,36,56" target="_blank">5_bnc_B35&#64;27,36,56</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="#ex7.37">7.37</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="#ex7.36">7.36</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
 
 <dl>
-  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT-OB1&nbsp;(FS&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;&lt;apos&gt;ll)</tt><br>
@@ -7190,7 +7141,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=220_christine_T16@36" target="_blank">7#220_christine_T16&#64;30</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(<font style="background-color: SandyBrown;">__VB;~Tn</font>&nbsp;Saut&lt;eacute&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-TMP&nbsp;(P-ROLE&nbsp;for)</tt><br>
@@ -7205,7 +7156,7 @@ body {
 <tr><td><tt>PRN</tt></td><td>parenthetical</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{NARRATOR}&nbsp;(PRO&nbsp;You)</tt><br>
@@ -7228,7 +7179,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=80_classics_SAINT_EXUPERY_1943@7,11" target="_blank">80_classics_SAINT_EXUPERY_1943&#64;7,11</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;know)</tt><br>
@@ -7243,7 +7194,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=518_christine_T36@12" target="_blank">518_christine_T36&#64;12</a>))</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;that))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~equ_w&nbsp;&lt;apos&gt;s)</tt><br>
@@ -7258,17 +7209,17 @@ body {
 
 <h3><a name="sec7.9.1">7.9.1</a>&nbsp;&nbsp;&nbsp;Tag questions</h3>
 
-<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="#ex7.42">7.42</a>):</p>
+<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="#ex7.41">7.41</a>):</p>
 
 <dl>
-  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
 </dl>
 <tt>&sol;^PRN&sol;&nbsp;&gt;&nbsp;&sol;^IP-MAT&sol;&nbsp;&lt;&nbsp;(&sol;^CP-QUE&sol;&nbsp;&lt;&nbsp;(&sol;^IP-SUB&sol;&nbsp;&lt;-1&nbsp;&sol;^NP-SBJ&sol;))</tt><br>
 
-<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="#ex7.42">7.42</a>) returns example sentences like (<a href="#ex7.43">7.43</a>).</p>
+<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="#ex7.41">7.41</a>) returns example sentences like (<a href="#ex7.42">7.42</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-MAT</font>&nbsp;(FRM&nbsp;I_mean)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
@@ -7291,7 +7242,7 @@ body {
 <p align="justify">Quantificational elements typically scope with a leftward direction, with the exception that intermediate layers, phrase heads, and verbs of clauses are always within the scope of other elements of the same layer. But a quantificational element with a functional role at its point of occurrence can also have broader scope consequences. This is the opposite of what happens for displacement in section <a href="#sec7.2">7.2</a>. Displacement of a quantificational element had to capture the point of role integration while maintaining the scope gained from the place of occurrence. Exceptional scope needs to capture a broader scope contribution from an occurrence point that is the point of role integration.</p>
 
 <dl>
-  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP</font>&nbsp;*ICH*-1)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Thousands)</tt><br>
@@ -7321,10 +7272,10 @@ body {
 <br>
 <h2><a name="sec7.11">7.11</a>&nbsp;&nbsp;&nbsp;Another use for IML</h2>
 
-<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="#ex7.45">7.45</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
+<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="#ex7.44">7.44</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
 
 <dl>
-  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___IML</font>&nbsp;(<font style="background-color: SandyBrown;">__IP-PPL-CAT</font>&nbsp;(VAG;~Tn&nbsp;Opposing)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{GAUNT}&nbsp;(PRO&nbsp;him)))</tt><br>
@@ -7347,12 +7298,12 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=6_lob_G01@3,2" target="_blank">6_lob_G01&#64;3,2</a>))</tt><br>
 
-<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="#ex7.45">7.45</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
+<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="#ex7.44">7.44</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.46">7.46</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex7.45">7.45</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IML</font>&nbsp;(VBD&nbsp;spent)</tt><br>
@@ -7375,10 +7326,10 @@ body {
 <br>
 <h2><a name="sec7.12">7.12</a>&nbsp;&nbsp;&nbsp;Managing control</h2>
 
-<p align="justify">Example (<a href="#ex7.47">7.47</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
+<p align="justify">Example (<a href="#ex7.46">7.46</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
 
 <dl>
-  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;should)</tt><br>
@@ -7405,10 +7356,10 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(Q&nbsp;all))))))))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=35_young_adult_E05@68,89,95,106" target="_blank">60#35_young_adult_E05&#64;9,30,36,47</a>))</tt><br>
 
-<p align="justify">In (<a href="#ex7.48">7.48</a>) the matrix subject controls through to the embedded <i>be</i>.</p>
+<p align="justify">In (<a href="#ex7.47">7.47</a>) the matrix subject controls through to the embedded <i>be</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.48">7.48</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__NP-SBJ</font>&nbsp;(D&nbsp;The)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;cost)</tt><br>
@@ -7446,11 +7397,78 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=6_young_adult_E94@2,31" target="_blank">6_young_adult_E94&#64;2,31</a>))</tt><br>
 
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there is clause-within-clause subordination, the possibility arises of an element from the main clause making a direct contribution to the subordinate clause while being left with unclear status in the main clause. One notable scenario of this involves derived subjects. (The other notable scenario involves derived objects.)</p>
+
+<dl>
+  <dt>(<a name="ex7.48">7.48</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-ADV&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-DSBJ</font>&nbsp;(D&nbsp;these))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;are)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;likely))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;crease)))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_bnc_B27@27,16" target="_blank">15#101_bnc_B27&#64;13,2</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.49">7.49</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-ADV&nbsp;(<font style="background-color: MediumSpringGreen;">___NP-DSBJ</font>&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;problems)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;reform)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;programme))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~La&nbsp;became)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;difficult))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(NP-LGS&nbsp;*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;contain)))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=20_bnc_B20@75,52" target="_blank">51#20_bnc_B20&#64;25,2</a>))</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="#ex7.50">7.50</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="#ex7.51">7.51</a>).</p>
+
+<dl>
+  <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(IP-MAT&nbsp;(EX&nbsp;There)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(BEP;~La&nbsp;are)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;bound))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE&nbsp;be)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__NP-ESBJ</font>&nbsp;(NS&nbsp;demonstrations))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUQ&nbsp;&lt;rquo&gt;))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=19_lob_A01@15,10" target="_blank">19_lob_A01&#64;15,10</a>))</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.51">7.51</a>)</dt><dd></dd>
+</dl>
+<tt>(&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;increasing))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;numbers)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;young))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;intellectuals)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(IML&nbsp;(IML&nbsp;(VAG&nbsp;taking)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(N&nbsp;part)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADVP&nbsp;(ADVR&nbsp;more))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADV&nbsp;importantly))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(VAG&nbsp;failing)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: SandyBrown;">__IP-INF-NSBJ</font>&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;return)))))))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=21_bnc_B20@93" target="_blank">54#21_bnc_B20&#64;40</a>))</tt><br>
+
+<p align="justify">Note the presence of the <tt>IML</tt> layer in (<a href="#ex7.50">7.50</a>). With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had final placement within its containing layer. This allows the <tt>-ESBJ</tt> subject to scope into the <tt>IML</tt>.</p>
+
 <br>
 <h2><a name="sec7.13">7.13</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
 
 <dl>
-  <dt>(<a name="ex7.49">7.49</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.52">7.52</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(IML&nbsp;(BED;~cat_e&nbsp;were)</tt><br>
