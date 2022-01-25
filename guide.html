@@ -3424,7 +3424,7 @@ body {
 <p align="justify">With the exception of <tt>CP-QUE</tt>, which is as the tag for both direct and indirect questions, the other tags label clauses that are incapable of standing alone as the main clause of a sentence.</p>
 
 <br>
-<h2><a name="sec5.2">5.2</a>&nbsp;&nbsp;&nbsp;IP-INF (infinitival)</h2>
+<h2><a name="sec5.2">5.2</a>&nbsp;&nbsp;&nbsp;IP-INF (infinitival clause)</h2>
 
 <p align="justify">Infinitival clauses are clauses that contain a verb in the infinitive form without support from a finite element like a dummy <small style="font-size: 75%">DO</small> or modal verb as seen with matrix clauses in section <a href="#sec4.2.1">4.2.1</a>. Infinitival clauses have a maximal constituent with the tag of Table <a href="#table5.1">5.1</a>.</p>
 
@@ -3649,7 +3649,7 @@ body {
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=66_samples_ENG1100@19" target="_blank">66_samples_ENG1100&#64;19</a>))</tt><br>
 
 <br>
-<h2><a name="sec5.3">5.3</a>&nbsp;&nbsp;&nbsp;IP-PPL (participial)</h2>
+<h2><a name="sec5.3">5.3</a>&nbsp;&nbsp;&nbsp;IP-PPL (participial clause)</h2>
 
 <p align="justify">Participial clauses have a maximal constituent with the tag of Table <a href="#table5.3">5.3</a>.</p>
 
@@ -3886,18 +3886,18 @@ body {
 <tr><td><tt>PP-PRD</tt>(<tt>2</tt>)</td><td>predicative subordinating conjunction</td></tr>
 </table>
 <br>
-<h2><a name="sec5.5">5.5</a>&nbsp;&nbsp;&nbsp;CP-THT (that-introduced finite clause)</h2>
+<h2><a name="sec5.5">5.5</a>&nbsp;&nbsp;&nbsp;CP-THT (that clause)</h2>
 
-<p><a name="table5.8">Table 5.8: Tag for THAT clause</a></p>
+<p align="justify">A <i>that</i>-clause is an embedded clause with a finite verb. This may have the complementizer <i>that</i> (tagged <tt>C</tt>) as the clause initial word. A <i>that</i> clause has a maximal constituent with the tag of Table <a href="#table5.8">5.8</a> and, when structurally complete, contains a finite clause layer (<tt>IP-SUB</tt>) which in turn contains all the clause content, including any clause initial complementizer.</p>
+
+<p><a name="table5.8">Table 5.8: Tag for <i>that</i>-clause</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>CP-THT</tt></td><td>THAT clause</td></tr>
 </table>
-<p align="justify">A structurally complete <tt>CP-THT</tt> always contains a finite clause (<tt>IP-SUB</tt>).</p>
-
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When occuring directly within a clause, the syntactic tag <tt>CP-THT</tt> needs a function extension. Possibilities are listed in Table <a href="#table5.9">5.9</a>:</p>
 
-<p><a name="table5.9">Table 5.9: Tags for THAT clauses with function extensions</a></p>
+<p><a name="table5.9">Table 5.9: Tags for <i>that</i>-clauses with function extensions</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>CP-THT-</tt>(<tt>N</tt>)<tt>SBJ</tt></td><td>(notional) subject</td></tr>
@@ -3911,9 +3911,11 @@ body {
 <li><tt>CP-THT-OB1</tt> with code [Dpr.f] (section <a href="#sec6.5.11">6.5.11</a>).</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The remainder of this section considers THAT clauses with subject (section <a href="#sec5.5.1">5.5.1</a>), and subject predicative (section <a href="#sec5.5.2">5.5.2</a>) uses.</p>
+<p align="justify">The remainder of this section considers <i>that</i>-clauses with subject (section <a href="#sec5.5.1">5.5.1</a>), and subject predicative (section <a href="#sec5.5.2">5.5.2</a>) uses.</p>
 
 <h3><a name="sec5.5.1">5.5.1</a>&nbsp;&nbsp;&nbsp;CP-THT with subject function</h3>
+
+<p align="justify"><i>That</i>-clauses can have subject function, as in (<a href="#ex5.17">5.17</a>).</p>
 
 <dl>
   <dt>(<a name="ex5.17">5.17</a>)</dt><dd></dd>
@@ -3927,7 +3929,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;obvious)))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=27_susanne_N18@4" target="_blank">3#27_susanne_N18&#64;2</a>))</tt><br>
 
-<p align="justify">There is an extraposed notional subject when the sentence is introduced by anticipatory <i>it</i>. Subject <i>that</i>-clauses and extraposed notional subject <i>that</i>-clauses are equivalent structures. In both cases, the <i>that</i>-clause is the logical subject of the main clause. The dummy subject <i>it</i> is used in the ordinary subject position, anticipating the extraposed clause.</p>
+<p align="justify">It is typical for a <i>that</i>-clause with subject function to occur as an extraposed notional subject (<tt>-NSBJ</tt>) in combination with a provisional subject <i>it</i>, as in (<a href="#ex5.18">5.18</a>).</p>
 
 <dl>
   <dt>(<a name="ex5.18">5.18</a>)</dt><dd></dd>
@@ -4756,8 +4758,8 @@ body {
 <dl>
   <dt>(<a name="ex6.26">6.26</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___CP-THT-SBJ</font>&nbsp;(C&nbsp;That)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: MediumSpringGreen;">___CP-THT-SBJ</font>&nbsp;(IP-SUB&nbsp;(C&nbsp;That)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~La&nbsp;remain)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;stopped))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_e&nbsp;is)</tt><br>
