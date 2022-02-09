@@ -20,7 +20,7 @@ a.class1:hover, a.class1:active {
   background-color: #FF6347;
 }
 body {
-  padding-left: 13em;
+  padding-left: 13%;
   padding-right: 5em;
   padding-bottom: 1em;
 }
@@ -31,7 +31,8 @@ ul.navbar {
   position: fixed;
   top: 2em;
   left: 1em;
-  width: 11em;
+  width: 12%;
+  margin-left: -1em; /*half the width*/
 }
 ul.navbar li.active {
   background: #48D1CC;
