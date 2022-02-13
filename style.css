@@ -1,6 +1,5 @@
 #headline1 {
-  background:linear-gradient(#5d9634, #5d9634 50%, #538c2b 50%, #538c2b);
-  color: white;
+  background: #A7D8DE;
   padding-left: 20px;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -25,7 +24,7 @@ ul.navbar li.active {
   border-right: 1em solid black;
 }
 ul.navbar li {
-  background: #48D1CC;
+  background: #A7D8DE;
   margin: 0.2em 0;
   padding: 0.2em;
   border-right: 1em solid gray;
