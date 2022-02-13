@@ -20,6 +20,7 @@ a.class1:hover, a.class1:active {
   background-color: #FF6347;
 }
 body {
+  background: #F5F5F5;
   padding-left: 13%;
   padding-right: 4%;
   padding-bottom: 1em;
@@ -35,24 +36,16 @@ ul.navbar {
   word-break: break-word;
 }
 ul.navbar li.active {
-  background: #48D1CC;
-  opacity: 0.9;
-  margin: 0.1em 0;
-  padding: 0.4em;
   border-right: 1em solid black;
-  height: 110%;
-  line-height: 110%;
-  font-size: 15px;
 }
 ul.navbar li {
   background: #48D1CC;
-  opacity: 0.9;
-  margin: 0.1em 0;
-  padding: 0.4em;
+  margin: 0.2em 0;
+  padding: 0.2em;
   border-right: 1em solid gray;
   height: 110%;
-  line-height: 110%;
-  font-size: 15px;
+  line-height: 130%;
+  font-size: 14px;
 }
 ul.navbar a {
   text-decoration: none
