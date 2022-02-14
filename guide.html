@@ -101,7 +101,7 @@ body {
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(VERB&nbsp;Look)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;!))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_classics_SAINT-EXUPERY-1943" target="_blank">101_classics_SAINT-EXUPERY-1943</a>))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_classics_SAINT_EXUPERY_1943" target="_blank">101_classics_SAINT_EXUPERY_1943</a>))</tt><br>
 
 <p align="justify">With CorpusSearch format, every tree has a &ldquo;wrapper&rdquo;. A wrapper is a pair of unlabelled parentheses surrounding the tree content together with an ID node. Furthermore, for the TSPC, an ID node contains a character string that begins with a number corresponding to the number of the tree in its corpus file. This tree number is followed by an underscore (&lsquo;<tt>_</tt>&rsquo;) and then by the name of the corpus file (minus any extension). Other character string material may follow the filename, provided there is an intervening semicolon (&lsquo;<tt>;</tt>&rsquo;).</p>
 
@@ -113,7 +113,7 @@ body {
 <tt>=N("&nbsp;Look&nbsp;!&nbsp;")</tt><br>
 <tt>"IP-MAT","VERB","Look"</tt><br>
 <tt>"IP-MAT","-VERB","!"</tt><br>
-<tt>"ID","<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_classics_SAINT-EXUPERY-1943" target="_blank">101_classics_SAINT-EXUPERY-1943</a>"</tt><br>
+<tt>"ID","<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=101_classics_SAINT_EXUPERY_1943" target="_blank">101_classics_SAINT_EXUPERY_1943</a>"</tt><br>
 
 <p align="justify">With (<a href="#ex1.4">1.4</a>), each word of the parse comes at the end of its own line, with each line presenting path information from the root (<tt>IP-MAT</tt>) layer through to a word layer. The last line is the ID node for the parse.</p>
 
@@ -281,9 +281,9 @@ body {
 
 <p align="justify">These intermediate layers are required when their corresponding levels of structure include <tt>CONJP</tt> layers.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapter <a href="#ch6">6</a>. This includes codes for classifying catenative verbs, relatable to the analysis of catenative verbs in Huddleston, and Pullum (2002), and further supported in the annotation by the layering of clause structure.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapter <a href="#ch6">6</a>. This adopts the verb code system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989). Extra codes with with very particular distributions are included from Hornby (1975). Also, there are codes to classify catenative verbs. These catenative codes are relatable to the analysis of catenative verbs in Huddleston and Pullum (2002), and further supported in the annotation by the layering of clause structure.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic based meaning representations. While the annotation seldom includes indexing, calculated results from Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies from a discourse perspective. It is often helpful to see calculated results from Treebank Semantics as dependency graphs to make more apparent connections that the annotation captures.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic based meaning representations. While the annotation seldom includes indexing, results calculated with Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies from a discourse perspective. It is sometimes especially helpful to see meaning representations from Treebank Semantics as dependency graphs (e.g., from the on-line corpus interface) to make visually apparent connections that the design of the annotation captures.</p>
 
 <br>
 <br>
@@ -296,7 +296,7 @@ body {
 
 <p align="justify">This chapter details the range of possible <b>words</b> as the bottom layer of sentence structure, while chapter <a href="#ch3">3</a> considers <b>phrase</b> layers, and chapter <a href="#ch4">4</a> ascends to <b>clause</b> layers. This unravelling of the layers of grammatical structure will show all elements as inter-related components. Understanding of what is possible at one layer will require the integration of knowledge from the others. With this chapter, words are categorised into classes informed by how words function in phrases and clauses.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. To start establishing criteria for tagging, the chapter identifies words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="#sec2.2">2.2</a>; words for adjective phrases, in section <a href="#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="#sec2.4">2.4</a>. Section <a href="#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="#sec2.6">2.6</a> presents tags for verbs which are components for clause layers. Section <a href="#sec2.7">2.7</a> adds other word types that occur under a clause layer. Section <a href="#sec2.8">2.8</a> considers words that serve as connectives to combine layers. Section <a href="#sec2.9">2.9</a> looks at the treatment of punctuation. Section <a href="#sec2.10">2.10</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="#sec2.11">2.11</a> notes other possible elements of a parse.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. One criteria for tagging is to identify words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="#sec2.2">2.2</a>; words for adjective phrases, in section <a href="#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="#sec2.4">2.4</a>. Section <a href="#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="#sec2.6">2.6</a> presents tags for verbs which are components for clause layers. Section <a href="#sec2.7">2.7</a> adds other word types that occur under a clause layer. Section <a href="#sec2.8">2.8</a> considers words that serve as connectives to combine layers. Section <a href="#sec2.9">2.9</a> looks at the treatment of punctuation. Section <a href="#sec2.10">2.10</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="#sec2.11">2.11</a> notes other possible elements of a parse.</p>
 
 <h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;Beware: Same character string; different word class tag</h3>
 
@@ -1661,7 +1661,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;personnel))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=56_susanne_J22@15,16" target="_blank">14#56_susanne_J22&#64;2,3</a>))</tt><br>
 
-<p align="justify">Further scenarios for (i) are (<a href="#ex3.23">3.23</a>) and (<font style="background-color: SandyBrown;">__tspc_2_texts_freedoom#29__).</font> These illustrate how an <tt>NML</tt> layer can be used to isolate noun phrase content for modification by a quantifier.</p>
+<p align="justify">Further scenarios for (i) are (<a href="#ex3.23">3.23</a>) and (<a href="#ex3.24">3.24</a>). These illustrate how an <tt>NML</tt> layer can be used to isolate noun phrase content for modification by a quantifier.</p>
 
 <dl>
   <dt>(<a name="ex3.23">3.23</a>)</dt><dd></dd>
@@ -2439,7 +2439,7 @@ body {
 <br>
 <h2><a name="sec4.1">4.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">This chapter begins with a focus on matrix clauses, with section <a href="#sec4.2">4.2</a> offering an overview of matrix clause types. A clause is a matrix clause when it is not subordinate &mdash; that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were seen in chapter <a href="#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="#ch5">5</a> will present options for clause-within-clause subordination. Also in this chapter, section <a href="#sec4.3">4.3</a> covers the range of options available for analysing clause function. Finally, section <a href="#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
+<p align="justify">This chapter begins with an overview of matrix clause types in section <a href="#sec4.2">4.2</a>. A clause is a matrix clause when it is not subordinate &mdash; that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were seen in chapter <a href="#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="#ch5">5</a> will present options for clause-within-clause subordination. Also in the current chapter, section <a href="#sec4.3">4.3</a> covers the range of options available for analysing clause function. Finally, section <a href="#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
 
 <br>
 <h2><a name="sec4.2">4.2</a>&nbsp;&nbsp;&nbsp;Matrix clause types</h2>
@@ -2660,7 +2660,7 @@ body {
 </table>
 <p align="justify">An imperative clause requires a verb in the imperative form. The imperative form is a finite form of the verb that is typically equivalent to the infinitive form, and so the verb is tagged in the same way as an infinitive. It is appearance under an <tt>IP-MAT-IMP</tt> layer that distinguishes the verb as having imperative form.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the typical absence of a subject constituent. Presence of a constituent with vocative function (as in (<a href="#ex4.16">4.16</a>) and (<font style="background-color: SandyBrown;">__tspc_13_classics_POTTER_1902#93__))</font> is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; for the verb.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the typical absence of a subject constituent. Presence of a constituent with vocative function (as in (<a href="#ex4.16">4.16</a>) and (<a href="#ex4.17">4.17</a>)) is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; for the verb.</p>
 
 <dl>
   <dt>(<a name="ex4.16">4.16</a>)</dt><dd></dd>
@@ -7734,7 +7734,7 @@ body {
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;contain)))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="http://160.16.203.55/dev/cgi-bin/tspc.sh?tree=20_bnc_B20@75,52" target="_blank">51#20_bnc_B20&#64;25,2</a>))</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="#ex7.50">7.50</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<font style="background-color: SandyBrown;">__tspc_21_bnc_B20#54__).</p></font>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="#ex7.50">7.50</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="#ex7.51">7.51</a>).</p>
 
 <dl>
   <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
