@@ -1,0 +1,1020 @@
+<h1><a name="ch4">Chapter 4</a><br>Clauses</h1>
+
+<br>
+<h2><a name="sec4.1">4.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
+
+<p align="justify">A clause is a matrix clause when it is not subordinate &mdash; that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were seen in chapter <a href="chapter3.html#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="chapter5.html#ch5">5</a> will present options for clause-within-clause subordination. In this chapter, section <a href="chapter4.html#sec4.2">4.2</a> gives an overview of annotation to distinguish matrix clause types. Section <a href="chapter4.html#sec4.3">4.3</a> covers options available for analysing clause function. Finally, section <a href="chapter4.html#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
+
+<br>
+<h2><a name="sec4.2">4.2</a>&nbsp;&nbsp;&nbsp;Matrix clause types</h2>
+
+<p align="justify">The internal form of a matrix clause can determine its use, and this gives rise to a basis for distinguishing the different clause types of:</p>
+<ul>
+<li><b>declaratives</b> (discussed in section <a href="chapter4.html#sec4.2.1">4.2.1</a>),</li>
+<li><b>interrogatives</b> (discussed in section <a href="chapter4.html#sec4.2.2">4.2.2</a>),</li>
+<li><b>imperatives</b> (discussed in section <a href="chapter4.html#sec4.2.3">4.2.3</a>), and</li>
+<li><b>sentence fragments</b> (discussed in section <a href="chapter4.html#sec4.2.4">4.2.4</a>).</li>
+</ul>
+
+<h3><a name="sec4.2.1">4.2.1</a>&nbsp;&nbsp;&nbsp;Declaratives</h3>
+
+<p><a name="table4.1">Table 4.1: Tag for matrix clause</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>IP-MAT</tt></td><td>matrix clause</td></tr>
+</table>
+<p align="justify">A basic matrix clause, given the tag of Table <a href="#table4.1">4.1</a>, is a declarative clause. A basic matrix clause requires a finite verb. For example, (<a href="#ex4.1">4.1</a>) has the past tense verb <i>cried</i>.</p>
+
+<dl>
+  <dt>(<a name="ex4.1">4.1</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;cried&nbsp;my&nbsp;eyes&nbsp;out&nbsp;at&nbsp;that&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD"</font>,"cried"</tt><br>
+<tt>"IP-MAT","NP-OB1","NP-GENV","PRO","my"</tt><br>
+<tt>"IP-MAT","NP-OB1","NS","eyes"</tt><br>
+<tt>"IP-MAT","ADVP-DIR","RP","out"</tt><br>
+<tt>"IP-MAT","PP-CNT","P-ROLE","at"</tt><br>
+<tt>"IP-MAT","PP-CNT","NP","D","that"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=106_christine_T27@5" target="_blank">106_christine_T27&#64;5</a>"</tt><br>
+
+<p align="justify">Modal verbs only have finite forms. The short form <i>'ll</i> of <small style="font-size: 75%">WILL</small> occurs as the finte verb of (<a href="#ex4.2">4.2</a>), with <i>cry</i> as a following infinitive lexical verb.</p>
+
+<dl>
+  <dt>(<a name="ex4.2">4.2</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;&lt;apos&gt;ll&nbsp;cry&nbsp;some&nbsp;more&nbsp;if&nbsp;you&nbsp;#&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"MD"</font>,"&lt;apos&gt;ll"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"VB"</font>,"cry"</tt><br>
+<tt>"IP-MAT","NP-MNR","D","some"</tt><br>
+<tt>"IP-MAT","NP-MNR","ADJP","ADJR","more"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND","P-CONN","if"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND","IP-ADV","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND","IP-ADV","PU","#"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=431_christine_T21@5,7" target="_blank">431_christine_T21&#64;5,7</a>"</tt><br>
+
+<p align="justify">A finite <small style="font-size: 75%">DO</small> can also occur with an infinitive lexical verb, as in (<a href="#ex4.3">4.3</a>), with past tense <i>did</i> acting to emphasise the <i>kiss</i>.</p>
+
+<dl>
+  <dt>(<a name="ex4.3">4.3</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;And&nbsp;he&nbsp;did&nbsp;kiss&nbsp;me&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","CONJ","And"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{FORREST}","PRO","he"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"DOD"</font>,"did"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"VB"</font>,"kiss"</tt><br>
+<tt>"IP-MAT","NP-OB1;{BERYL}","PRO","me"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=76_lob_N02@7,9" target="_blank">76_lob_N02&#64;7,9</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Basic declarative clauses have positive polarity. The polarity of a matrix clause is inverted by adding negation, either as the full form <i>not</i> (e.g., (<a href="#ex4.4">4.4</a>)) or the contracted <i>n't</i> (e.g., (<a href="#ex4.5">4.5</a>) and (<a href="#ex4.6">4.6</a>)). Both forms need a preceding (immediately preceding when there is contraction) modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>.</p>
+
+<dl>
+  <dt>(<a name="ex4.4">4.4</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;This&nbsp;is&nbsp;not&nbsp;an&nbsp;acceptable&nbsp;turnover&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","This"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~Ln"</font>,"is"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"not"</tt><br>
+<tt>"IP-MAT","NP-PRD2","D","an"</tt><br>
+<tt>"IP-MAT","NP-PRD2","ADJP","ADJ","acceptable"</tt><br>
+<tt>"IP-MAT","NP-PRD2","N","turnover"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=112_bnc_B41@7,5" target="_blank">112_bnc_B41&#64;7,5</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.5">4.5</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;wo&nbsp;n&lt;apos&gt;t&nbsp;cry&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"MD"</font>,"wo"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"VB"</font>,"cry"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=466_christine_T21@7,5,9" target="_blank">466_christine_T21&#64;7,5,9</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.6">4.6</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;People&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;&lt;bital&gt;&nbsp;do&nbsp;&lt;eital&gt;&nbsp;that&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","People"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"DOP"</font>,"do"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT","PU","&lt;bital&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"DO"</font>,"do"</tt><br>
+<tt>"IP-MAT","PU","&lt;eital&gt;"</tt><br>
+<tt>"IP-MAT","NP-OB1","D","that"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=147_bnc_C02@7,5,11" target="_blank">147_bnc_C02&#64;7,5,11</a>"</tt><br>
+
+<h3><a name="sec4.2.2">4.2.2</a>&nbsp;&nbsp;&nbsp;Interrogatives</h3>
+
+<p><a name="table4.2">Table 4.2: Tags for interrogative clause</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>CP-QUE</tt></td><td>question (direct or indirect)</td></tr>
+<tr><td><tt>IP-SUB</tt></td><td>clause complement of CP</td></tr>
+</table>
+<p align="justify">Annotation for a matrix interrogative clause involves an <tt>IP-SUB</tt> clause layer that: (i) contains all of the clause content (except end punctuation), and (ii) projects a <tt>CP-QUE</tt> layer. A matrix interrogative is formed by having an initial clause component that is either:</p>
+<ul>
+<dt>(i)</dt><dd>a modal verb (e.g., (<a href="#ex4.7">4.7</a>)), or</dd>
+<dt>(ii)</dt><dd>a finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> (e.g., (<a href="#ex4.8">4.8</a>) and (<a href="#ex4.9">4.9</a>)), or</dd>
+<dt>(iii)</dt><dd>a constituent that includes a WH word (e.g. (<a href="#ex4.10">4.10</a>)&ndash;(<a href="#ex4.15">4.15</a>)).</dd>
+</ul>
+
+<p align="justify">A clause with (iii) is called a constituent question.</p>
+
+<dl>
+  <dt>(<a name="ex4.7">4.7</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;shall&nbsp;we&nbsp;go&nbsp;in&nbsp;Tesco&nbsp;&lt;apos&gt;s&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"MD"</font>,"shall"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","we"</tt><br>
+<tt>"CP-QUE","IP-SUB","VBP;~Ipr","go"</tt><br>
+<tt>"CP-QUE","IP-SUB","PP-DIR","P-ROLE","in"</tt><br>
+<tt>"CP-QUE","IP-SUB","PP-DIR","NP","NP-GENV","NPR","Tesco"</tt><br>
+<tt>"CP-QUE","IP-SUB","PP-DIR","NP","NP-GENV","GENM","&lt;apos&gt;s"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=173_christine_T36@3" target="_blank">173_christine_T36&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.8">4.8</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Is&nbsp;that&nbsp;still&nbsp;his&nbsp;position&nbsp;?&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"BEP;~Ln"</font>,"Is"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","P-ROLE","that"</tt><br>
+<tt>"CP-QUE","IP-SUB","ADVP-TMP","ADV","still"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PRD2","NP-GENV","PRO","his"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PRD2","N","position"</tt><br>
+<tt>"CP-QUE","PU","?"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=23_texts_written_case_for_sir_john_major@3" target="_blank">23_texts_written_case_for_sir_john_major&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.9">4.9</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Does&nbsp;it&nbsp;work&nbsp;?&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"DOP"</font>,"Does"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","it"</tt><br>
+<tt>"CP-QUE","IP-SUB","VB","work"</tt><br>
+<tt>"CP-QUE","PU","?"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=73_bnc_B17@3" target="_blank">73_bnc_B17&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.10">4.10</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;who&nbsp;smacked&nbsp;you&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"WPRO","who"</tt><br>
+<tt>"CP-QUE","IP-SUB","VBD","smacked"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-OB1","PRO","you"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=188_christine_T33@3" target="_blank">188_christine_T33&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.11">4.11</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;What&nbsp;do&nbsp;you&nbsp;mean&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB","PUQ","&lt;ldquo&gt;"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-OB1","WPRO","What"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"DOP"</font>,"do"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ;{DORLE}","PRO","you"</tt><br>
+<tt>"CP-QUE","IP-SUB","VB","mean"</tt><br>
+<tt>"CP-QUE","PU","?"</tt><br>
+<tt>"CP-QUE","PUQ","&lt;rdquo&gt;"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=322_classics_DICK_1952@8" target="_blank">322_classics_DICK_1952&#64;8</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.12">4.12</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;whose&nbsp;turn&nbsp;is&nbsp;it&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-NSBJ"</font>,"NP-GENV","WPRO","whose"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-NSBJ"</font>,"N","turn"</tt><br>
+<tt>"CP-QUE","IP-SUB","BEP;~I","is"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PSBJ","PRO","it"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=213_christine_T09@3" target="_blank">213_christine_T09&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.13">4.13</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;why&nbsp;did&nbsp;you&nbsp;do&nbsp;that&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"ADVP-CNT"</font>,"WADV","why"</tt><br>
+<tt>"CP-QUE","IP-SUB","DOD","did"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","you"</tt><br>
+<tt>"CP-QUE","IP-SUB","DOP;~Tn","do"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-OB1","D","that"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=158_christine_T35@3" target="_blank">158_christine_T35&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.14">4.14</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;how&nbsp;do&nbsp;I&nbsp;spell&nbsp;what&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"ADVP-MNR"</font>,"WADV","how"</tt><br>
+<tt>"CP-QUE","IP-SUB","DOP","do"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"CP-QUE","IP-SUB","VBP","spell"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-OB1","WPRO","what"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=22_christine_T34@3" target="_blank">22_christine_T34&#64;3</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.15">4.15</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;In&nbsp;what&nbsp;ways&nbsp;might&nbsp;they&nbsp;still&nbsp;be&nbsp;the&nbsp;same&nbsp;?&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"P-ROLE","In"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"NP","WD","what"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"NP","NS","ways"</tt><br>
+<tt>"CP-QUE","IP-SUB","MD","might"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP","PRO","they"</tt><br>
+<tt>"CP-QUE","IP-SUB","ADVP-TMP","ADV","still"</tt><br>
+<tt>"CP-QUE","IP-SUB","BE;~Ln","be"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PRD2","D","the"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PRD2","ADJP","ADJ","same"</tt><br>
+<tt>"CP-QUE","PU","?"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=20_fce_0100_2000_12@3" target="_blank">20_fce_0100_2000_12&#64;3</a>"</tt><br>
+
+<p align="justify">For matrix constituent questions where the initial clause component is a non-subject, before the clause subject occurs, there needs to be an intervening modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>, as seen with (<a href="#ex4.11">4.11</a>)&ndash;(<a href="#ex4.15">4.15</a>).</p>
+
+<h3><a name="sec4.2.3">4.2.3</a>&nbsp;&nbsp;&nbsp;Imperatives</h3>
+
+<p><a name="table4.3">Table 4.3: Tag for imperative clause</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>IP-MAT-IMP</tt></td><td>imperative clause</td></tr>
+</table>
+<p align="justify">An imperative clause requires a verb in the imperative form. The imperative form is a finite form of the verb that is typically equivalent to the infinitive form, and so the verb is tagged in the same way as an infinitive. It is appearance under an <tt>IP-MAT-IMP</tt> layer that distinguishes the verb as having imperative form.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the typical absence of a subject constituent. Presence of a constituent with vocative function (as in (<a href="#ex4.16">4.16</a>) and (<a href="#ex4.17">4.17</a>)) is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; for the verb.</p>
+
+<dl>
+  <dt>(<a name="ex4.16">4.16</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Students&nbsp;&lt;comma&gt;&nbsp;always&nbsp;remember&nbsp;to&nbsp;include&nbsp;references&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT-IMP",<font style="background-color: MediumSpringGreen;">"NP-VOC"</font>,"NS","Students"</tt><br>
+<tt>"IP-MAT-IMP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT-IMP","ADVP-MOD","ADV","always"</tt><br>
+<tt>"IP-MAT-IMP",<font style="background-color: SandyBrown;">"VB;~Tt"</font>,"remember"</tt><br>
+<tt>"IP-MAT-IMP","IP-INF-OB1","TO","to"</tt><br>
+<tt>"IP-MAT-IMP","IP-INF-OB1","VB;~Tn","include"</tt><br>
+<tt>"IP-MAT-IMP","IP-INF-OB1","NP-OB1","NS","references"</tt><br>
+<tt>"IP-MAT-IMP","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=82_samples_ENG1100@10,2" target="_blank">82_samples_ENG1100&#64;10,2</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.17">4.17</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Stop&nbsp;thief&nbsp;")</tt><br>
+<tt>"IP-MAT-IMP-OB1",<font style="background-color: SandyBrown;">"VB;~I"</font>,"Stop"</tt><br>
+<tt>"IP-MAT-IMP-OB1",<font style="background-color: MediumSpringGreen;">"NP-VOC"</font>,"N","thief"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_classics_POTTER_1902@96,98" target="_blank">95#13_classics_POTTER_1902&#64;2,4</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.18">4.18</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;You&nbsp;shut&nbsp;up&nbsp;!&nbsp;")</tt><br>
+<tt>"IP-MAT-IMP","PUQ","&lt;ldquo&gt;"</tt><br>
+<tt>"IP-MAT-IMP",<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"PRO","You"</tt><br>
+<tt>"IP-MAT-IMP",<font style="background-color: SandyBrown;">"VB;~phr_Vp"</font>,"shut"</tt><br>
+<tt>"IP-MAT-IMP","RP","up"</tt><br>
+<tt>"IP-MAT-IMP","PU","!"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=11_susanne_N09@7,4" target="_blank">11_susanne_N09&#64;7,4</a>"</tt><br>
+
+<h3><a name="sec4.2.4">4.2.4</a>&nbsp;&nbsp;&nbsp;Sentence fragments</h3>
+
+<p align="justify">Presence of either (i) a subject and a finite verb, or (ii) an imperative verb are sufficient materials to warrant marking the enclosing structure as a clause (<tt>IP</tt>). When there is not enough material in an utterance to create an <tt>IP</tt>, the utterance is marked as a sentence fragment with the tag of Table <a href="#table4.4">4.4</a>.</p>
+
+<p><a name="table4.4">Table 4.4: Tag for sentence fragment</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>FRAG</tt></td><td>sentence fragment</td></tr>
+</table>
+<p align="justify">Examples (<a href="#ex4.19">4.19</a>)&ndash;(<a href="#ex4.23">4.23</a>) are illustrative of possible <tt>FRAG</tt> utterances.</p>
+
+<dl>
+  <dt>(<a name="ex4.19">4.19</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;just&nbsp;{pause}&nbsp;up&nbsp;the&nbsp;stairs&nbsp;")</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-MOD","ADV","just"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"META","{pause}"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-DIR","P-ROLE","up"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-DIR","NP","D","the"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-DIR","NP","NS","stairs"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=71_christine_T40@1" target="_blank">71_christine_T40&#64;1</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.20">4.20</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;all&nbsp;you&nbsp;seem&nbsp;to&nbsp;think&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;bloody&nbsp;Hallowe&lt;apos&gt;en&nbsp;come&nbsp;back&nbsp;again&nbsp;")</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","Q","all"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","NP-SBJ","PRO","you"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","VBP;~cat_t","seem"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","IP-INF-CAT","NP-OB1","*T*"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","IP-INF-CAT","TO","to"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","IP-INF-CAT","VB","think"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-SBJ","PRO","it"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","BEP;~Ln","&lt;apos&gt;s"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-PRD2","FLJ","bloody"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-PRD2","N","Hallowe&lt;apos&gt;en"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-PRD2","IP-PPL","VVN","come"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-PRD2","IP-PPL","ADVP-DIR","ADV","back"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"CP-THT-PRD2","IP-SUB","NP-PRD2","IP-PPL","ADVP-TMP","ADV","again"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=458_christine_T04@1" target="_blank">458_christine_T04&#64;1</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.21">4.21</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;sadly&nbsp;no&nbsp;longer&nbsp;with&nbsp;us&nbsp;")</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-MNR","ADV","sadly"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-TMP","NP","Q","no"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-TMP","ADVR","longer"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-PRD2","P-ROLE","with"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-PRD2","NP","PRO","us"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=59_texts_PaulFellows@32" target="_blank">32#59_texts_PaulFellows&#64;1</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.22">4.22</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;yes&nbsp;or&nbsp;no&nbsp;")</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","IML","REACT","yes"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","CONJP","CONJ","or"</tt><br>
+<tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","CONJP","IML","REACT","no"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=208_christine_T09@1" target="_blank">208_christine_T09&#64;1</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.23">4.23</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;Really&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
+<tt>"CP-QUE",<font style="background-color: SandyBrown;">"FRAG"</font>,"PUQ","&lt;ldquo&gt;"</tt><br>
+<tt>"CP-QUE",<font style="background-color: SandyBrown;">"FRAG"</font>,"REACT","Really"</tt><br>
+<tt>"CP-QUE","PU","?"</tt><br>
+<tt>"CP-QUE","PUQ","&lt;rdquo&gt;"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=199_classics_DICK_1952@2" target="_blank">199_classics_DICK_1952&#64;2</a>"</tt><br>
+
+<p align="justify">Note how (<a href="#ex4.22">4.22</a>) involves clause internal coordination, with the inclusion of <tt>CONJP</tt> and <tt>IML</tt> projections, as explained below in section <a href="chapter4.html#sec4.4">4.4</a>. Example (<a href="#ex4.23">4.23</a>) consists of a sentence fragment that forms a matrix question, and so there is projection of a <tt>CP-QUE</tt> layer above the <tt>FRAG</tt> layer.</p>
+
+<br>
+<h2><a name="sec4.3">4.3</a>&nbsp;&nbsp;&nbsp;Clause function</h2>
+
+<p align="justify">Besides clause level words (notably verbs, but also negation, adverb particles, and existential <i>there</i>), phrases may occur as components of annotated clause structure. To occur at the clause level, a phrase component requires a tag with an extension for a clause level function. Available clause level functions are:</p>
+<ul>
+<li><b>subject</b> (discussed in section <a href="chapter4.html#sec4.3.1">4.3.1</a>),</li>
+<li><b>object</b>(s) (discussed in section <a href="chapter4.html#sec4.3.2">4.3.2</a>),</li>
+<li><b>predicative</b> (discussed in section <a href="chapter4.html#sec4.3.3">4.3.3</a>), and</li>
+<li><b>adverbial</b>(s) (discussed in section <a href="chapter4.html#sec4.3.4">4.3.4</a>).</li>
+</ul>
+
+<h3><a name="sec4.3.1">4.3.1</a>&nbsp;&nbsp;&nbsp;Subject</h3>
+
+<p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb. The subject can determine the form of the first verb instance of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he&sol;she&sol;it <b><i>is</i></b></i>, <i>we&sol;you (all)&sol;they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I&sol;we&sol;he&sol;she&sol;they</i> contrast with non-subject forms <i>me&sol;us&sol;him&sol;her&sol;them</i>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Subjects typically occur with a clause initial position. For a couple of untypical clause types, the subject can appear after an auxiliary. This holds especially for interrogatives, as in examples of section <a href="chapter4.html#sec4.2.2">4.2.2</a> above. Inversion of the subject and an auxiliary verb can also occur after a frontmost adverbial phrase with a (semi-)negative adverbial head such as <i>hardly</i>, <i>scarcely</i>, <i>little</i>, <i>never</i>, <i>seldom</i>, <i>rarely</i>), as in (<a href="#ex4.24">4.24</a>).</p>
+
+<dl>
+  <dt>(<a name="ex4.24">4.24</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Never&nbsp;at&nbsp;any&nbsp;time&nbsp;does&nbsp;the&nbsp;user&nbsp;feel&nbsp;constrained&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","ADVP-TMP","ADV","Never"</tt><br>
+<tt>"IP-MAT","ADVP-TMP","PP","P-ROLE","at"</tt><br>
+<tt>"IP-MAT","ADVP-TMP","PP","NP","D","any"</tt><br>
+<tt>"IP-MAT","ADVP-TMP","PP","NP","N","time"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"DOP"</font>,"does"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"N","user"</tt><br>
+<tt>"IP-MAT","VB;~La","feel"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADJ","constrained"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=28_young_adult_E82@15,13" target="_blank">28_young_adult_E82&#64;15,13</a>"</tt><br>
+
+<p align="justify">Inversion of the subject with a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> also happens with <i>and so</i> reduced clauses:</p>
+
+<dl>
+  <dt>(<a name="ex4.25">4.25</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;By&nbsp;then&nbsp;Hez&nbsp;could&nbsp;see&nbsp;for&nbsp;himself&nbsp;&lt;comma&gt;&nbsp;and&nbsp;so&nbsp;could&nbsp;the&nbsp;others&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","IML","IML","PP-TMP","P-ROLE","By"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-TMP","ADVP","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","IML","NP-SBJ","NPR","Hez"</tt><br>
+<tt>"IP-MAT","IML","IML","MD","could"</tt><br>
+<tt>"IP-MAT","IML","IML","VB","see"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-BNF","P-ROLE","for"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-BNF","NP","PNX","himself"</tt><br>
+<tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","ADVP-MNR","ADV","so"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: MediumSpringGreen;">"MD"</font>,"could"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"D","the"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"NS","others"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_N13@34,32" target="_blank">41_susanne_N13&#64;34,32</a>"</tt><br>
+
+<p align="justify">Also, the subject occurs after the verb in clauses with existential <i>there</i>.</p>
+
+<dl>
+  <dt>(<a name="ex4.26">4.26</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;There&nbsp;remain&nbsp;many&nbsp;political&nbsp;and&nbsp;administrative&nbsp;problems&nbsp;to&nbsp;be&nbsp;solved&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","EX","There"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBP;~I"</font>,"remain"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP;&#64;1","ADJ","many"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP;&#64;2","AML","ADJP","ADJ","political"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP;&#64;2","AML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP;&#64;2","AML","CONJP","ADJP","ADJ","administrative"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"NS","problems"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"IP-INF-REL","NP-SBJ","*T*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"IP-INF-REL","TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"IP-INF-REL","BE;~cat_e","be"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"IP-INF-REL","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"IP-INF-REL","IP-PPL-CAT","VVN;~Tn","solved"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_susanne_J22@4,6" target="_blank">54_susanne_J22&#64;4,6</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings in table <a href="#table4.5">4.5</a> relate to the subject function in particular constructions:</p>
+<ul>
+<li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="#ex4.26">4.26</a>) above;</li>
+<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="#ex4.27">4.27</a>); and</li>
+<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="#ex4.28">4.28</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="#ex4.29">4.29</a>).</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex4.27">4.27</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;that&nbsp;kind&nbsp;of&nbsp;smell&nbsp;he&nbsp;&lt;apos&gt;s&nbsp;into&nbsp;")</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-CSBJ"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~cleft","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","NP-FOC","D","that"</tt><br>
+<tt>"IP-MAT","NP-FOC","N","kind"</tt><br>
+<tt>"IP-MAT","NP-FOC","PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT","NP-FOC","PP","NP","N","smell"</tt><br>
+<tt>"IP-MAT","IP-CLF","NP-SBJ","PRO","he"</tt><br>
+<tt>"IP-MAT","IP-CLF","BEP","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","IP-CLF","PP-LOC","P-ROLE","into"</tt><br>
+<tt>"IP-MAT","IP-CLF","PP-LOC","NP","*T*"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_christine_T37@2" target="_blank">5_christine_T37&#64;2</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.28">4.28</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;it&nbsp;is&nbsp;absolutely&nbsp;brilliant&nbsp;the&nbsp;way&nbsp;they&nbsp;do&nbsp;it&nbsp;")</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~La","is"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADVP","ADV","absolutely"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADJ","brilliant"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"N","way"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"IP-REL","NP-MNR","*T*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"IP-REL","NP-SBJ","PRO","they"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"IP-REL","DOP","do"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"IP-REL","NP-OB1","PRO","it"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=143_christine_T27@2,13" target="_blank">143_christine_T27&#64;2,13</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.29">4.29</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;The&nbsp;breaststroke&nbsp;is&nbsp;very&nbsp;hard&nbsp;to&nbsp;explain&nbsp;in&nbsp;words&nbsp;")</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"D","The"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"N","breaststroke"</tt><br>
+<tt>"IML","BEP;~La","is"</tt><br>
+<tt>"IML","ADJP-PRD2","ADVP","ADV","very"</tt><br>
+<tt>"IML","ADJP-PRD2","ADJ","hard"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"NP-LGS","*"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"VB;~Tn.pr","explain"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","P-ROLE","in"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","NP","NS","words"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_stories_09_M14@4,17" target="_blank">3#3_stories_09_M14&#64;2,15</a>"</tt><br>
+
+<p><a name="table4.5">Table 4.5: The full range of extension tags related to the subject function</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
+<tr><td><tt>-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
+<tr><td><tt>-DSBJ</tt></td><td>derived subject</td></tr>
+<tr><td><tt>-ESBJ</tt></td><td>subject of a clause with existential <i>there</i></td></tr>
+<tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
+<tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
+</table>
+<h3><a name="sec4.3.2">4.3.2</a>&nbsp;&nbsp;&nbsp;Object</h3>
+
+<p align="justify">An object can only occur when there is a transitive verb. The following properties are typical:</p>
+<ul>
+<li>An object is normally a noun phrase that follows its transitive verb, and gives the content that the transitive verb is acting upon.</li>
+<li>An object cannot be an adjective phrase (in contrast to predicatives).</li>
+<li>An object can be turned into the subject of a corresponding passive clause (see section <a href="chapter6.html#sec6.8.3">6.8.3</a>). Compare <i>Everyone saw <b><i>me</i></b></i> with <i><b><i>I</i></b> was seen (by everyone)</i>.</li>
+<li>An object pronoun is in the accusative case. For example, in <i>He likes <b><i>her</i></b></i> and <i>She likes <b><i>him</i></b></i>, the accusative forms <i>her</i> and <i>him</i> fill the object position.</li>
+</ul>
+
+<p align="justify">There are two types of objects:</p>
+<ul>
+<li><b>direct object</b> (<tt>-OB1</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.1">4.3.2.1</a>), and</li>
+<li><b>indirect object</b> (<tt>-OB2</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.2">4.3.2.2</a>).</li>
+</ul>
+
+<p align="justify">Also, section <a href="chapter4.html#sec4.3.2.3">4.3.2.3</a> notes the <b>unspecified object</b> function for preposition phrases.</p>
+
+<h4><a name="sec4.3.2.1">4.3.2.1</a>&nbsp;&nbsp;&nbsp;Direct object</h4>
+
+<p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="#table4.6">4.6</a> relate to the direct object function in particular constructions:</p>
+<ul>
+<li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt>, as with (<a href="#ex4.30">4.30</a>) and (<a href="#ex4.31">4.31</a>); and</li>
+<li>tag extension <tt>-NOB1</tt> marks a notional direct object that occurs in a clause with a provisional direct object <i>it</i>, marked <tt>-POB1</tt>, as with (<a href="#ex4.32">4.32</a>) and (<a href="#ex6.52">6.52</a>).</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex4.30">4.30</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;We&nbsp;want&nbsp;children&nbsp;to&nbsp;fulfil&nbsp;their&nbsp;potential&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
+<tt>"IP-MAT","VBP","want"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-DOB1"</font>,"NS","children"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"VB","fulfil"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"NP-OB1","NP-GENV","PRO","their"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"NP-OB1","N","potential"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=30_bnc_B41@7,10" target="_blank">30_bnc_B41&#64;7,10</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.31">4.31</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;could&nbsp;see&nbsp;the&nbsp;blood&nbsp;running&nbsp;down&nbsp;his&nbsp;chest&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","MD","could"</tt><br>
+<tt>"IP-MAT","VB;~Tng","see"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-DOB1"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-DOB1"</font>,"N","blood"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"VAG","running"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"PP-DIR","P-ROLE","down"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"PP-DIR","NP","NP-GENV","PRO","his"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"PP-DIR","NP","N","chest"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=132_susanne_N04@9,14" target="_blank">132_susanne_N04&#64;9,14</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.32">4.32</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;leave&nbsp;it&nbsp;to&nbsp;you&nbsp;&lt;comma&gt;&nbsp;Madam&nbsp;Deputy&nbsp;Speaker&nbsp;&lt;comma&gt;&nbsp;to&nbsp;decide&nbsp;which&nbsp;of&nbsp;those&nbsp;traits&nbsp;I&nbsp;share&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBP;~Tn.pr","leave"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-POB1"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","PP-OBU","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP;{LAING}","PRO","you"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP;{LAING}","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP;{LAING}","PRN","NP","NPR","Madam"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP;{LAING}","PRN","NP","NPR","Deputy"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP;{LAING}","PRN","NP","NPR","Speaker"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"VB;~Tw","decide"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","NP-OB1","RPRO","which"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","NP-OB1","PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","NP-OB1","PP","NP","D","those"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","NP-OB1","PP","NP","NS","traits"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NOB1"</font>,"CP-QUE-OB1","IP-SUB","VBP;~Tn","share"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_texts_Hedgehog_Conservation@7,28" target="_blank">9_texts_Hedgehog_Conservation&#64;7,28</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex6.52">6.52</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;found&nbsp;it&nbsp;strange&nbsp;that&nbsp;neither&nbsp;I&nbsp;nor&nbsp;the&nbsp;day&nbsp;seemed&nbsp;in&nbsp;a&nbsp;mourning&nbsp;mood&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","PRO","I"</tt><br>
+<tt>"IML","VBD;~Cn.a","found"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"NP-POB1"</font>,"PRO","it"</tt><br>
+<tt>"IML","ADJP-PRD","ADJ","strange"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","C","that"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJ","neither"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","NP","PRO","I"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","CONJ","nor"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","NP","N","day"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","VBD","seemed"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","P-ROLE","in"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","D","a"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","ADJP","ADJ","mourning"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","N","mood"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=79_classics_JOYCE_1914@9,15" target="_blank">3#79_classics_JOYCE_1914&#64;7,13</a>"</tt><br>
+
+<p><a name="table4.6">Table 4.6: The full range of extension tags related to the direct object function</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
+<tr><td><tt>-DOB1</tt></td><td>derived object</td></tr>
+<tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
+<tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
+</table>
+<h4><a name="sec4.3.2.2">4.3.2.2</a>&nbsp;&nbsp;&nbsp;Indirect object</h4>
+
+<p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
+
+<p><a name="table4.7">Table 4.7: Extension tag for indirect object function</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-OB2</tt></td><td>indirect object</td></tr>
+</table>
+<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="#ex4.34">4.34</a>).</p>
+
+<dl>
+  <dt>(<a name="ex4.34">4.34</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;why&nbsp;I&nbsp;asked&nbsp;you&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","that"</tt><br>
+<tt>"IP-MAT","BEP;~equ_w","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","CP-QUE-PRD2","IP-SUB","ADVP-CNT","WADV","why"</tt><br>
+<tt>"IP-MAT","CP-QUE-PRD2","IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","CP-QUE-PRD2","IP-SUB",<font style="background-color: SandyBrown;">"VBD;~Dn.*"</font>,"asked"</tt><br>
+<tt>"IP-MAT","CP-QUE-PRD2","IP-SUB",<font style="background-color: MediumSpringGreen;">"NP-OB2"</font>,"PRO","you"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=300_christine_T16@15,17" target="_blank">300_christine_T16&#64;15,17</a>"</tt><br>
+
+<h4><a name="sec4.3.2.3">4.3.2.3</a>&nbsp;&nbsp;&nbsp;Underspecified object</h4>
+
+<p align="justify">The unspecified object function of Table <a href="#table4.8">4.8</a> occurs only with preposition phrases that have a verb selected function.</p>
+
+<p><a name="table4.8">Table 4.8: Tag extension for unspecified object</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-OBU</tt></td><td>unspecified object</td></tr>
+</table>
+<p align="justify">When we look at verb codes in chapter <a href="chapter6.html#ch6">6</a>, we will find that verbs selecting <tt>PP-OBU</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
+
+<h3><a name="sec4.3.3">4.3.3</a>&nbsp;&nbsp;&nbsp;Predicative</h3>
+
+<p align="justify">A predicative can only occur as a clause element when selected by the verb. A predicative typically follows the verb and (if one is present) the direct object. All of the phrase types considered in chapter <a href="chapter3.html#ch3">3</a> are able to function as predicatives: noun phrase, adjective phrase, adverb phrase, and preposition phrase. This behaviour is in contrast to objects, which cannot be adjective phrases.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. Both types have the semantic role of characterising a preceding noun phrase:</p>
+<ul>
+<li>A subject predicative adds more information about the subject, as seen with (<a href="#ex4.35">4.35</a>), while</li>
+<li>an object predicative does the same for its direct object, as seen with (<a href="#ex4.36">4.36</a>).</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex4.35">4.35</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;The&nbsp;Skipjack&nbsp;became&nbsp;the&nbsp;fastest&nbsp;submarine&nbsp;ever&nbsp;built&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","Skipjack"</tt><br>
+<tt>"IP-MAT","VBD;~Ln","became"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"ADJP","ADJS","fastest"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"N","submarine"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"IP-PPL","NP-LGS","*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"IP-PPL","ADVP-TMP","ADV","ever"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PRD2"</font>,"IP-PPL","VVN","built"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_susanne_A20@9" target="_blank">46_susanne_A20&#64;9</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.36">4.36</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;find&nbsp;this&nbsp;very&nbsp;interesting&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBP;~Cn.a","find"</tt><br>
+<tt>"IP-MAT","NP-OB1","D","this"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"ADJP-PRD"</font>,"ADVP","ADV","very"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"ADJP-PRD"</font>,"ADJ","interesting"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_texts_TED_talk_11@10" target="_blank">14_texts_TED_talk_11&#64;10</a>"</tt><br>
+
+<p align="justify">In the annotation, having <tt>2</tt> as part of the predicative tag, to give <tt>-PRD2</tt>, marks a subject predicative. Absence of <tt>2</tt>, signals an object predicative.</p>
+
+<p><a name="table4.9">Table 4.9: Extension tags related to predicative functions</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
+<tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
+</table>
+<h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
+
+<p align="justify">An adverbial is a phrase that is used to modify a verb or clause. It is typical for adverb phrases to be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="#ex4.37">4.37</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18 at Franklin and Mount streets</i> are all adverbials that modify <i>struck</i>.</p>
+
+<dl>
+  <dt>(<a name="ex4.37">4.37</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;A&nbsp;thug&nbsp;struck&nbsp;a&nbsp;cab&nbsp;driver&nbsp;in&nbsp;the&nbsp;face&nbsp;with&nbsp;a&nbsp;pistol&nbsp;last&nbsp;night&nbsp;after&nbsp;robbing&nbsp;him&nbsp;of&nbsp;&lt;dollar&gt;&nbsp;18&nbsp;at&nbsp;Franklin&nbsp;and&nbsp;Mount&nbsp;streets&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","A"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","thug"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Tn.pr"</font>,"struck"</tt><br>
+<tt>"IP-MAT","NP-OB1","D","a"</tt><br>
+<tt>"IP-MAT","NP-OB1","N","cab"</tt><br>
+<tt>"IP-MAT","NP-OB1","N","driver"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"P-ROLE","in"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"NP","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"NP","N","face"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-MNR"</font>,"P-ROLE","with"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-MNR"</font>,"NP","D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-MNR"</font>,"NP","N","pistol"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"ADJP","ADJ","last"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"N","night"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"P-CONN","after"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","VAG;~Tn.pr","robbing"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","NP-OB1","PRO","him"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-OBU","P-ROLE","of"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-OBU","NP","N","&lt;dollar&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-OBU","NP","NUM","18"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-LOC","P-ROLE","at"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-LOC","NP","NML","NML","NP","NPR","Franklin"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-LOC","NP","NML","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-LOC","NP","NML","NML","CONJP","NP","N","Mount"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-TMP"</font>,"IP-PPL","PP-LOC","NP","NS","streets"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_A19@7,16,24,32,38" target="_blank">10_susanne_A19&#64;7,16,24,32,38</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="#ex4.37">4.37</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb selects, as seen with the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in chapter <a href="chapter6.html#ch6">6</a>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="#table4.10">4.10</a>.</p>
+
+<p><a name="table4.10">Table 4.10: Tag extensions for marking adverbial functions</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-ABS</tt></td><td>absolute</td></tr>
+<tr><td><tt>-BNF</tt></td><td>benefactive</td></tr>
+<tr><td><tt>-CNT</tt></td><td>contingency</td></tr>
+<tr><td><tt>-COM</tt></td><td>comitative</td></tr>
+<tr><td><tt>-DIR</tt></td><td>directional</td></tr>
+<tr><td><tt>-LOC</tt></td><td>locative</td></tr>
+<tr><td><tt>-MNR</tt></td><td>manner&sol;degree</td></tr>
+<tr><td><tt>-MOD</tt></td><td>modality</td></tr>
+<tr><td><tt>-RST</tt></td><td>respect</td></tr>
+<tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
+</table>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>-DIR</tt>, the adverbial functions of Table <a href="#table4.10">4.10</a> typically mark phrases that are not selected by the verb. Even when not selected by the verb, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
+
+<dl>
+  <dt>(<a name="ex4.38">4.38</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;For&nbsp;a&nbsp;time&nbsp;&lt;comma&gt;&nbsp;I&nbsp;still&nbsp;worked&nbsp;a&nbsp;couple&nbsp;of&nbsp;afternoons&nbsp;supply&nbsp;teaching&nbsp;at&nbsp;Perins&nbsp;")</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"P-ROLE","For"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"NP","D","a"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"NP","N","time"</tt><br>
+<tt>"IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML","NP-SBJ","PRO","I"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-TMP"</font>,"ADV","still"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBD;~I"</font>,"worked"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"D","a"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"N","couple"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"PP","P-ROLE","of"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-TMP"</font>,"PP","NP","NS","afternoons"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-MNR"</font>,"N","supply"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-MNR"</font>,"N","teaching"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"P-ROLE","at"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"NP","NPR","Perins"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=40_texts_Alresford@20,4,17,22,33,38" target="_blank">3#40_texts_Alresford&#64;18,2,15,20,31,36</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.39">4.39</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;the&nbsp;visual&nbsp;aspect&nbsp;is&nbsp;much&nbsp;the&nbsp;same&nbsp;&lt;comma&gt;&nbsp;even&nbsp;with&nbsp;major&nbsp;changes&nbsp;in&nbsp;Broad&nbsp;Street&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","D","the"</tt><br>
+<tt>"IML","NP-SBJ","ADJP","ADJ","visual"</tt><br>
+<tt>"IML","NP-SBJ","N","aspect"</tt><br>
+<tt>"IML","BEP;~Ln","is"</tt><br>
+<tt>"IML","NP-PRD2","ADVP-MOD","ADV","much"</tt><br>
+<tt>"IML","NP-PRD2","D","the"</tt><br>
+<tt>"IML","NP-PRD2","ADJP","ADJ","same"</tt><br>
+<tt>"IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"ADVP-MOD","ADV","even"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"P-ROLE","with"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"NP","ADJP","ADJ","major"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"NP","NS","changes"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"NP","PP","P-ROLE","in"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"NP","PP","NP","NPR","Broad"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-COM"</font>,"NP","PP","NP","NPR","Street"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=94_texts_Alresford@68" target="_blank">46#94_texts_Alresford&#64;23</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.40">4.40</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;In&nbsp;the&nbsp;summer&nbsp;of&nbsp;1979&nbsp;&lt;comma&gt;&nbsp;the&nbsp;ITV&nbsp;channel&nbsp;disappeared&nbsp;from&nbsp;the&nbsp;national&nbsp;screens&nbsp;for&nbsp;months&nbsp;due&nbsp;to&nbsp;industrial&nbsp;action&nbsp;")</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"P-ROLE","In"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","N","summer"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","PP","P-ROLE","of"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","PP","NP","NUM","1979"</tt><br>
+<tt>"IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML","NP-SBJ","D","the"</tt><br>
+<tt>"IML","NP-SBJ","NPR","ITV"</tt><br>
+<tt>"IML","NP-SBJ","N","channel"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBD"</font>,"disappeared"</tt><br>
+<tt>"IML","PP-DIR","P-ROLE","from"</tt><br>
+<tt>"IML","PP-DIR","NP","D","the"</tt><br>
+<tt>"IML","PP-DIR","NP","ADJP","ADJ","national"</tt><br>
+<tt>"IML","PP-DIR","NP","NS","screens"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;6"</font>,"P-ROLE","for"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;6"</font>,"NP","NS","months"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-CNT"</font>,"ADV","due"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-CNT"</font>,"PP","P-ROLE","to"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-CNT"</font>,"PP","NP","ADJP","ADJ","industrial"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-CNT"</font>,"PP","NP","N","action"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=87_texts_Alresford@27,4,40,46" target="_blank">3#87_texts_Alresford&#64;25,2,38,44</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.41">4.41</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;head&nbsp;straight&nbsp;across&nbsp;the&nbsp;swells&nbsp;for&nbsp;Antler&nbsp;")</tt><br>
+<tt>"IML","VB;~phr_Vp.pr","head"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"ADVP-DIR"</font>,"ADV","straight"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;3"</font>,"P-ROLE","across"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;3"</font>,"NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;3"</font>,"NP","NS","swells"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;4"</font>,"P-ROLE","for"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;4"</font>,"NP","N","Antler"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_susanne_N14@100,103,111" target="_blank">97#116_susanne_N14&#64;4,7,15</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.42">4.42</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;&lt;apos&gt;ve&nbsp;watched&nbsp;them&nbsp;all&nbsp;through&nbsp;the&nbsp;week&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","HVP;~cat_e","&lt;apos&gt;ve"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","VVN;~Tn","watched"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","PRO","them"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"PP-TMP"</font>,"ADVP-MOD","ADV","all"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"PP-TMP"</font>,"P-ROLE","through"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"PP-TMP"</font>,"NP","D","the"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"PP-TMP"</font>,"NP","N","week"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_christine_T11@13" target="_blank">46_christine_T11&#64;13</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.43">4.43</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;went&nbsp;through&nbsp;the&nbsp;wood&nbsp;to&nbsp;the&nbsp;baker&nbsp;&lt;apos&gt;s&nbsp;")</tt><br>
+<tt>"IML","VBD;~Ipr","went"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-DIR"</font>,"P-ROLE","through"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-DIR"</font>,"NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"PP-DIR"</font>,"NP","N","wood"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"P-ROLE","to"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","NP-GENV","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","NP-GENV","N","baker"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","NP-GENV","GENM","&lt;apos&gt;s"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_classics_POTTER_1902@41,49" target="_blank">38#7_classics_POTTER_1902&#64;4,12</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex4.44">4.44</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;arrive&nbsp;home&nbsp;from&nbsp;school&nbsp;in&nbsp;the&nbsp;evening&nbsp;&lt;comma&gt;&nbsp;at&nbsp;about&nbsp;four&nbsp;o&lt;apos&gt;clock&nbsp;")</tt><br>
+<tt>"IP-ADV","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"VBP;~Ip"</font>,"arrive"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"ADVP-DIR"</font>,"ADV","home"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"P-ROLE","from"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","N","school"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;5"</font>,"P-ROLE","in"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;5"</font>,"NP","D","the"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;5"</font>,"NP","N","evening"</tt><br>
+<tt>"IP-ADV","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;7"</font>,"P-ROLE","at"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;7"</font>,"NP","ADVP;&#64;1","ADV","about"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;7"</font>,"NP","NUM","four"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;7"</font>,"NP","ADVP;&#64;3","ADV","o&lt;apos&gt;clock"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1_age_12_F37@9,11,14,20,30" target="_blank">5#1_age_12_F37&#64;5,7,10,16,26</a>"</tt><br>
+
+<br>
+<h2><a name="sec4.4">4.4</a>&nbsp;&nbsp;&nbsp;Clause internal coordination</h2>
+
+<p><a name="table4.11">Table 4.11: Tag for clause intermediate level</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>IML</tt></td><td>clause intermediate level</td></tr>
+</table>
+<p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="#ex4.45">4.45</a>).</p>
+
+<dl>
+  <dt>(<a name="ex4.45">4.45</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Mr&nbsp;G&nbsp;is&nbsp;the&nbsp;headmaster&nbsp;&lt;comma&gt;&nbsp;Miss&nbsp;K&nbsp;is&nbsp;the&nbsp;deputy&nbsp;head&nbsp;and&nbsp;Mrs&nbsp;V&nbsp;is&nbsp;the&nbsp;school&nbsp;secretary&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","N","Mr"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","NPR","G"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","headmaster"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","N","Miss"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","NPR","K"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","deputy"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","head"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","N","Mrs"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","NPR","V"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","school"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP;&#64;4",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","secretary"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_11_H11@2,3,19,37" target="_blank">3_age_11_H11&#64;2,3,19,37</a>"</tt><br>
+
+<p align="justify">The overall coordinated structure of (<a href="#ex4.45">4.45</a>) is gathered under a single <tt>IML</tt> (intermediate clause layer) projection with the external behaviour of a single clause. Each <b>conjunct</b> of the coordinated structure is an <tt>IML</tt> that is either:</p>
+<ul>
+<dt>(i)</dt><dd>the first conjunct followed by one or more <tt>CONJP</tt> sisters, or</dd>
+<dt>(ii)</dt><dd>a conjunct that is directly under a <tt>CONJP</tt>.</dd>
+</ul>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure. Such layered coordination is easiest to identify when different coordinators are used at each level, as (<a href="#ex4.46">4.46</a>) illustrates.</p>
+
+<dl>
+  <dt>(<a name="ex4.46">4.46</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Mrs&nbsp;G&nbsp;was&nbsp;headmistress&nbsp;when&nbsp;I&nbsp;came&nbsp;but&nbsp;she&nbsp;left&nbsp;#&nbsp;soon&nbsp;after&nbsp;she&nbsp;left&nbsp;&lt;comma&gt;&nbsp;and&nbsp;a&nbsp;new&nbsp;headmistress&nbsp;came&nbsp;*&lt;comma&gt;*&nbsp;her&nbsp;name&nbsp;is&nbsp;Miss&nbsp;B&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","NP-SBJ","N","Mrs"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","NP-SBJ","NPR","G"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","BED;~Ln","was"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","NP-PRD2","N","headmistress"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","PP-SCON-TMP","P-CONN","when"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","PP-SCON-TMP","IP-ADV","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","PP-SCON-TMP","IP-ADV","VBD;~I","came"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","CONJ","but"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","FS","NP-SBJ","PRO","she"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","FS","VBD","left"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","FS","PU","#"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","ADVP-TMP","ADVP","ADV","soon"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","ADVP-TMP","ADV","after"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","IP-ADV","NP-SBJ","PRO","she"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","IP-ADV","VBD;~I","left"</tt><br>
+<tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,<font style="background-color: MediumSpringGreen;">"CONJ"</font>,"and"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","IML","NP-SBJ","D","a"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","IML","NP-SBJ","ADJP","ADJ","new"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","IML","NP-SBJ","N","headmistress"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","IML","VBD;~I","came"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","PU","_*&lt;comma&gt;*_"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","CONJP","IML","NP-SBJ","NP-GENV","PRO","her"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","CONJP","IML","NP-SBJ","N","name"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","CONJP","IML","BEP;~Ln","is"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","CONJP","IML","NP-PRD2","N","Miss"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","IML","CONJP","IML","NP-PRD2","NPR","B"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_age_11_H04@3,4,51,52" target="_blank">4_age_11_H04&#64;3,4,51,52</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination can happen at different levels of clause structure. In (<a href="#ex4.47">4.47</a>) coordination occurs at the highest level of clause structure, so that the front placement of <i>is</i> (i.e.&nbsp;marking for an interrogative clause) is required for both conjuncts.</p>
+
+<dl>
+  <dt>(<a name="ex4.47">4.47</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;is&nbsp;he&nbsp;a&nbsp;manager&nbsp;or&nbsp;is&nbsp;he&nbsp;unemployed&nbsp;at&nbsp;the&nbsp;moment&nbsp;")</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","PRO","he"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","D","a"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","N","manager"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"CONJ","or"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","BEP;~La","is"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","NP-SBJ","PRO","he"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","ADJP-PRD2","ADJ","unemployed"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-TMP","P-ROLE","at"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-TMP","NP","D","the"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-TMP","NP","N","moment"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=497_christine_T14@3,4,15" target="_blank">497_christine_T14&#64;3,4,15</a>"</tt><br>
+
+<p align="justify">In (<a href="#ex4.48">4.48</a>) the coordination is within the syntactic scope of the subject.</p>
+
+<dl>
+  <dt>(<a name="ex4.48">4.48</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;They&nbsp;not&nbsp;only&nbsp;look&nbsp;at&nbsp;the&nbsp;inside&nbsp;of&nbsp;the&nbsp;apartment&nbsp;&lt;comma&gt;&nbsp;but&nbsp;also&nbsp;look&nbsp;at&nbsp;the&nbsp;surroundings&nbsp;&lt;mdash&gt;&nbsp;&lt;epara&gt;&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"NEG"</font>,"not"</tt><br>
+<tt>"IP-MAT","IML","ADVP-MOD","ADV","only"</tt><br>
+<tt>"IP-MAT","IML","IML","VBP","look"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","P-ROLE","at"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","NP","D","the"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","NP","N","inside"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","NP","PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","NP","PP","NP","D","the"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-OBU","NP","PP","NP","N","apartment"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"PU"</font>,"&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"CONJ","but"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"ADVP-MOD","ADV","also"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","VBP","look"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-OBU","P-ROLE","at"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-OBU","NP","D","the"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-OBU","NP","NS","surroundings"</tt><br>
+<tt>"IP-MAT","PU","&lt;mdash&gt;"</tt><br>
+<tt>"IP-MAT","PU","&lt;epara&gt;"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_young_adult_E40@6,30,32" target="_blank">14_young_adult_E40&#64;6,30,32</a>"</tt><br>
+
+<p align="justify">In (<a href="#ex4.49">4.49</a>) we can see coordination occurring within the clause at two distinct levels: (i) at a level that is just under the syntactic scope of the overall subject, and (ii) at a level that is under the syntactic scope of an object.</p>
+
+<dl>
+  <dt>(<a name="ex4.49">4.49</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;On&nbsp;Fridays&nbsp;the&nbsp;fourth&nbsp;year&nbsp;go&nbsp;out&nbsp;on&nbsp;to&nbsp;the&nbsp;field&nbsp;and&nbsp;practise&nbsp;or&nbsp;play&nbsp;cricket&nbsp;or&nbsp;rounders&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","PP-TMP","P-ROLE","On"</tt><br>
+<tt>"IP-MAT","PP-TMP","NP","NPRS","Fridays"</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NUM","fourth"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","year"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"IML","VBP;~Ip","go"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"IML","ADVP-DIR","RP","out"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"IML","PP-LOC","P-ROLE","on_to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"IML","PP-LOC","NP","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"IML","PP-LOC","NP","N","field"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML",<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","VBP;~Tn","practise"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML",<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","CONJ","or"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML",<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","IML","VBP;~Tn","play"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML","NP-OB1","NML","NP","N","cricket"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML","NP-OB1","NML","CONJP","CONJ","or"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","IML","NP-OB1","NML","CONJP","NP","NS","rounders"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_10_K12@15,34" target="_blank">3_age_10_K12&#64;15,34</a>"</tt><br>
+
+<br>
+<br>
+<br>
+<br>
