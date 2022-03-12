@@ -10,7 +10,11 @@
 <br>
 <h2><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;Displacement in declaratives</h2>
 
-<p align="justify">A declarative is a basic matrix clause (see section <a href="chapter4.html#sec4.2.1">4.2.1</a>). This section notes how displacement is annotated when occuring with a basic matrix clause. When displacement keeps to the same structural layer, there is no need for indexing. For example, (<a href="chapter7.html#ex7.1">7.1</a>) illustrates displacement with its sentence initial object <i>This disparity</i>: The canonical position for the object of a clause with a [Cn.n] main verb is just after the main verb (Cf.&nbsp;section <a href="chapter6.html#sec6.2.4.2">6.2.4.2</a>). As a basic matrix clause with a present tense lexical verb, (<a href="chapter7.html#ex7.1">7.1</a>) has only the one clause layer (<tt>IP-MAT</tt>), and so, despite the displacement, the object with clause initial placement remains at the same structural layer as its verb.</p>
+<p align="justify">A declarative is a basic matrix clause (see section <a href="chapter4.html#sec4.2.1">4.2.1</a>). This section notes how displacement is annotated when occuring within a declarative.</p>
+
+<h3><a name="sec7.2.1">7.2.1</a>&nbsp;&nbsp;&nbsp;Keeping to the same structural layer</h3>
+
+<p align="justify">If displacement can keep to the same structural layer, then there is no need for indexing. For example, (<a href="chapter7.html#ex7.1">7.1</a>) illustrates displacement with its sentence initial object.</p>
 
 <dl>
   <dt>(<a name="ex7.1">7.1</a>)</dt><dd></dd>
@@ -29,12 +33,16 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_young_adult_E97@2" target="_blank">13_young_adult_E97&#64;2</a>"</tt><br>
 
+<p align="justify">The canonical position for the object of a clause with a [Cn.n] main verb is just after the main verb (Cf.&nbsp;section <a href="chapter6.html#sec6.2.4.2">6.2.4.2</a>). As a basic matrix clause with a present tense lexical verb, (<a href="chapter7.html#ex7.1">7.1</a>) has only the one clause layer (<tt>IP-MAT</tt>), and so, despite the displacement, the object with clause initial placement remains at the same structural layer as its verb.</p>
+
+<h3><a name="sec7.2.2">7.2.2</a>&nbsp;&nbsp;&nbsp;Crossing structural layers</h3>
+
 <p><a name="table7.1">Table 7.1: Indexed <tt>*ICH*</tt> null element marking</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>*ICH*</tt></td><td>abbreviation mnemonic for &lsquo;interpret constituent here&rsquo;</td></tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When displacement crosses structural layers, indexing with <tt>*ICH*</tt> of Table <a href="chapter7.html#table7.1">7.1</a> is needed to mark the point where the function contribution is needed, as (<a href="chapter7.html#ex7.2">7.2</a>) illustrates with its sentence initial object.</p>
+<p align="justify">If displacement crosses structural layers, then indexing with <tt>*ICH*</tt> of Table <a href="chapter7.html#table7.1">7.1</a> is needed to mark the point where the function contribution is needed. For example, (<a href="chapter7.html#ex7.2">7.2</a>) has a sentence initial displaced object with indexing.</p>
 
 <dl>
   <dt>(<a name="ex7.2">7.2</a>)</dt><dd></dd>
@@ -56,9 +64,9 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=691_samples_blue_book@28,2" target="_blank">691_samples_blue_book&#64;28,2</a>"</tt><br>
 
-<p align="justify">While the sentence initial object of (<a href="chapter7.html#ex7.2">7.2</a>) occurs internally to a sentence with a single clause, this clause contains a verb sequence that places the main verb inside a distinct <tt>IP-PPL-CAT</tt> layer. Annotation for the object role contribution needs to occur at the layer of the main ([Tn]) verb: This is accomplished with the placement of the object role information within the <tt>IP-PPL-CAT</tt> layer together with an instance of <tt>*ICH*</tt> that shares an index with the displaced object. The displaced object carries no function information itself, but rather its function marking resides directly above the <tt>*ICH*</tt> with which it shares its index.</p>
+<p align="justify">While the displaced object of (<a href="chapter7.html#ex7.2">7.2</a>) occurs internally to a sentence with a single clause, this clause contains a verb sequence that places the main verb inside a distinct <tt>IP-PPL-CAT</tt> layer. Annotation for the object role contribution needs to occur at the layer of the main ([Tn]) verb: This is accomplished with the placement of the object role information within the <tt>IP-PPL-CAT</tt> layer together with an instance of <tt>*ICH*</tt> that shares an index with the displaced object. The displaced object carries no function information itself, but rather its function marking resides directly above the <tt>*ICH*</tt> with which it shares its index.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter7.html#ex7.3">7.3</a>) illustrates an initial noun phrase that contributes the complement of a prepostion phrase that is within an embedded clause. A clause boundary is crossed, making this a long-distance displacement, a dependency that can only be captured through annotation with indexing due to its parts needing to be in distinct layers.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter7.html#ex7.3">7.3</a>) illustrates an initial noun phrase that contributes the complement of a prepostion phrase that is within an embedded clause. A clause boundary is crossed, making this a long-distance displacement, a dependency that can only be captured through annotation with indexing due to its parts needing to be in distinct clause layers.</p>
 
 <dl>
   <dt>(<a name="ex7.3">7.3</a>)</dt><dd></dd>
@@ -76,7 +84,9 @@
 <tt>"IP-MAT","CP-THT-OB1","IP-SUB","PP-LOC",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-221"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=375_christine_T07@2,31" target="_blank">375_christine_T07&#64;2,31</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that the subject of (<a href="chapter7.html#ex7.2">7.2</a>), while also occuring outside the <tt>IP-PPL-CAT</tt> layer, does not require indexing in the way that the object does. This is because the subject contribution of a main verb in a verb sequence is automatically inherited from the configuration of control (see section <a href="chapter7.html#sec7.14">7.14</a> below for a discussion of how control works). While typically subjects will not need indexing, this is not always the case. For example, (<a href="chapter7.html#ex7.4">7.4</a>) contains a matrix subject (<i>the Fool with his pig's bladder</i>) that has undergone subject-verb inversion but needs to have its content contribution indicated with indexing at a point that is above the <i>and</i> conjunction.</p>
+<h3><a name="sec7.2.3">7.2.3</a>&nbsp;&nbsp;&nbsp;Indexing with subjects</h3>
+
+<p align="justify">Note that the subject of (<a href="chapter7.html#ex7.2">7.2</a>), while also occuring outside the <tt>IP-PPL-CAT</tt> layer, does not require indexing in the way that the object does. This is because the subject contribution of a main verb in a verb sequence is automatically inherited from the configuration of control (see section <a href="chapter7.html#sec7.14">7.14</a> below for a discussion of how control works). While typically subjects will not need indexing, this is not always the case. For example, (<a href="chapter7.html#ex7.4">7.4</a>) contains a matrix subject (<i>the Fool with his pig's bladder</i>) that has undergone subject-verb inversion but needs to have its content contribution indicated with indexing at a point that is above the <i>and</i> conjunction.</p>
 
 <dl>
   <dt>(<a name="ex7.4">7.4</a>)</dt><dd></dd>
@@ -114,6 +124,8 @@
 <br>
 <h2><a name="sec7.3">7.3</a>&nbsp;&nbsp;&nbsp;Constituent questions</h2>
 
+<p align="justify">As with declaratives, the need for indexing with constituent questions only arises when layers are crossed. Consider (<a href="chapter7.html#ex7.5">7.5</a>) which involves a matrix constituent question with a further constituent question inside a parenthetical.</p>
+
 <dl>
   <dt>(<a name="ex7.5">7.5</a>)</dt><dd></dd>
 </dl>
@@ -127,6 +139,10 @@
 <tt>"CP-QUE","IP-SUB","PRN","CP-QUE","IP-SUB","PP-RST","P-ROLE","about"</tt><br>
 <tt>"CP-QUE","IP-SUB","PRN","CP-QUE","IP-SUB","PP-RST",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-183"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=429_christine_T35@3,14,25" target="_blank">429_christine_T35&#64;3,14,25</a>"</tt><br>
+
+<p align="justify">The matrix constituent question of (<a href="chapter7.html#ex7.5">7.5</a>) has an initial object WH expression of a single <tt>IP</tt> layer, requiring no indexing. Inside the parenthetical of (<a href="chapter7.html#ex7.5">7.5</a>), the displaced WH expression is the complement of a prepostion phrase and so layers are crossed to establish the dependency with the complement position, requiring indexing.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter7.html#ex7.6">7.6</a>) illustrates a long distance dependency with a clause boundary crossed involving a displaced adverb phrase with WH expression.</p>
 
 <dl>
   <dt>(<a name="ex7.6">7.6</a>)</dt><dd></dd>
@@ -145,6 +161,8 @@
 <tt>"CP-QUE","IP-SUB","CP-THT-OB1","IP-SUB","IP-PPL-CAT","IP-INF-CAT",<font style="background-color: SandyBrown;">"ADVP-TMP"</font>,"*ICH*-185"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=530_christine_T33@31" target="_blank">530_christine_T33&#64;31</a>"</tt><br>
 
+<p align="justify">Note how indexing is required and how the function marking for the adverb phrase resides directly above the <tt>*ICH*</tt> with which the adverb phrase shares its index.</p>
+
 <br>
 <h2><a name="sec7.4">7.4</a>&nbsp;&nbsp;&nbsp;Relative clauses</h2>
 
@@ -152,13 +170,12 @@
 
 <h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;Integration of the internal role</h3>
 
-<p align="justify">This necessitates the wherewithal to integrate the internal role. Such integration typically occurs in one of two ways:</p>
+<p align="justify">This necessitates the wherewithal to integrate the internal role. Such integration occurs in one of three ways:</p>
 <dl>
-<dt>(i)</dt><dd>with a relative pronoun of which there are various kinds (<tt>RADV</tt>, <tt>RPRO</tt> or <tt>RD</tt>) with varying placement requirements, or</dd>
-<dt>(ii)</dt><dd>through the complete absence of a nevertheless selected element internal to the relative clause, represented in the annotation with a trace (<tt>*T*</tt>).</dd>
+<dt>(i)</dt><dd>with a relative pronoun of which there are various kinds with varying placement requirements (<tt>RPRO</tt> discussed in section <a href="chapter7.html#sec7.4.1.1">7.4.1.1</a>, <tt>RD</tt> discussed in section <a href="chapter7.html#sec7.4.1.2">7.4.1.2</a>, or <tt>RADV</tt> discussed in section <a href="chapter7.html#sec7.4.1.3">7.4.1.3</a>);</dd>
+<dt>(ii)</dt><dd>through the complete absence of a nevertheless selected element internal to the relative clause, represented in the annotation with a trace (<tt>*T*</tt>), discussed in section <a href="chapter7.html#sec7.4.1.4">7.4.1.4</a>;</dd>
+<dt>(iii)</dt><dd>although rare in English, a further option for integration is to have a pronoun (<tt>PRO</tt>) integrating the content of the modified head, called a resumptive pronoun, discussed in section <a href="chapter7.html#sec7.4.1.5">7.4.1.5</a>.</dd>
 </dl>
-
-<p align="justify">An example of a further option for integration, although rare in English, is to have a pronoun (<tt>PRO</tt>) integrating the content of the modified head, called a resumptive pronoun.</p>
 
 <h4><a name="sec7.4.1.1">7.4.1.1</a>&nbsp;&nbsp;&nbsp;RPRO</h4>
 
@@ -492,8 +509,122 @@
 <br>
 <h2><a name="sec7.5">7.5</a>&nbsp;&nbsp;&nbsp;Free relatives</h2>
 
+<h3><a name="sec7.5.1">7.5.1</a>&nbsp;&nbsp;&nbsp;RPRO</h3>
+
+<dl>
+  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;reading&nbsp;between&nbsp;the&nbsp;lines&nbsp;of&nbsp;what&nbsp;Stuart&nbsp;told&nbsp;me&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","that"</tt><br>
+<tt>"IP-MAT","BEP;~equ_g","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","VAG","reading"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","P-ROLE","between"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","D","the"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","NS","lines"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"RPRO","what"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","NPR","Stuart"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","VBD","told"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD2","PP-LOC","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-OB2","PRO","me"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=29_bnc_C02@21,23" target="_blank">29_bnc_C02&#64;21,23</a>"</tt><br>
+
+<h3><a name="sec7.5.2">7.5.2</a>&nbsp;&nbsp;&nbsp;RD</h3>
+
+<dl>
+  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;So&nbsp;you&nbsp;can&nbsp;imagine&nbsp;what&nbsp;a&nbsp;seamless&nbsp;transition&nbsp;that&nbsp;was&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","ADVP-CNT","ADV","So"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT","MD","can"</tt><br>
+<tt>"IP-MAT","VB","imagine"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-OB1",<font style="background-color: MediumSpringGreen;">"RD"</font>,"what"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-OB1","D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-OB1","ADJP","ADJ","seamless"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-OB1","N","transition"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-SBJ;{HOUSEMOVE}","D","that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","BED","was"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=93_texts_TED_talk_11@12,15" target="_blank">93_texts_TED_talk_11&#64;12,15</a>"</tt><br>
+
+<h3><a name="sec7.5.3">7.5.3</a>&nbsp;&nbsp;&nbsp;RADV</h3>
+
+<dl>
+  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;We&nbsp;&lt;apos&gt;re&nbsp;putting&nbsp;you&nbsp;where&nbsp;you&nbsp;wo&nbsp;n&lt;apos&gt;t&nbsp;come&nbsp;to&nbsp;harm&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","PUQ","&lt;ldquo&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
+<tt>"IP-MAT","BEP;~cat_g","&lt;apos&gt;re"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","VAG;~Tn.p","putting"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","PRO","you"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","ADVP-LOC",<font style="background-color: MediumSpringGreen;">"RADV"</font>,"where"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","MD","wo"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","VB;~Ipr","come"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","PP-MNR","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-DIR"</font>,"IP-REL","PP-MNR","NP","N","harm"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=159_susanne_N10@15,18" target="_blank">159_susanne_N10&#64;15,18</a>"</tt><br>
+
 <br>
 <h2><a name="sec7.6">7.6</a>&nbsp;&nbsp;&nbsp;Comparatives</h2>
+
+<dl>
+  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;thought&nbsp;I&nbsp;had&nbsp;less&nbsp;than&nbsp;I&nbsp;actually&nbsp;had&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBD","thought"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","HVD","had"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","ADJ","less"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","PP","P-ROLE","than"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"*T*"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","ADVP-MOD","ADV","actually"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-OB1","ADJP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","HVD","had"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=104_christine_T23@21,23" target="_blank">104_christine_T23&#64;21,23</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;in&nbsp;better&nbsp;bloody&nbsp;nick&nbsp;than&nbsp;what&nbsp;my&nbsp;old&nbsp;E&nbsp;reg&nbsp;was&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~Ln","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","P-ROLE","in"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","ADJP","ADJR","better"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","FLJ","bloody"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","N","nick"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP","P-ROLE","than"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-PRD2",<font style="background-color: MediumSpringGreen;">"RPRO"</font>,"what"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","NP-GENV","PRO","my"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","ADJP","ADJ","old"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","SYM","E"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","N","reg"</tt><br>
+<tt>"IP-MAT","NP-PRD2","PP","NP","PP",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","BED;~Ln","was"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=501_christine_T40@22,25" target="_blank">501_christine_T40&#64;22,25</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;It&nbsp;was&nbsp;a&nbsp;little&nbsp;more&nbsp;sour&nbsp;than&nbsp;when&nbsp;I&nbsp;ate&nbsp;it&nbsp;before&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ;{FOOD}","PRO","It"</tt><br>
+<tt>"IP-MAT","BED;~La","was"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADVP","ADVP","ADV","a_little"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADVP","ADVR","more"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADVP","PP","*ICH*-146"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADJ","sour"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146","P-ROLE","than"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","ADVP-TMP;&#64;1",<font style="background-color: MediumSpringGreen;">"RADV"</font>,"when"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","VBD;~Tn","ate"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","NP-OB1;{FOOD}","PRO","it"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","PP-146",<font style="background-color: SandyBrown;">"NP"</font>,"IP-REL","ADVP-TMP;&#64;5","ADV","before"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_samples_takmi@21,24" target="_blank">10_samples_takmi&#64;21,24</a>"</tt><br>
 
 <br>
 <h2><a name="sec7.7">7.7</a>&nbsp;&nbsp;&nbsp;IP-CLF (it-cleft)</h2>
@@ -510,7 +641,7 @@
 <p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>FOC</tt> tag extension. The focus complement is labelled <tt>IP-CLF</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;But&nbsp;it&nbsp;was&nbsp;from&nbsp;here&nbsp;that&nbsp;the&nbsp;firing&nbsp;came&nbsp;&lt;comma&gt;&nbsp;&lt;rdquo&gt;&nbsp;Tance&nbsp;murmured&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","PUQ","&lt;ldquo&gt;"</tt><br>
@@ -533,7 +664,7 @@
 <p align="justify">cf.&nbsp;The firing came from here.</p>
 
 <dl>
-  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;what&nbsp;was&nbsp;it&nbsp;you&nbsp;were&nbsp;so&nbsp;interested&nbsp;in&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-FOC","WPRO","what"</tt><br>
@@ -550,10 +681,10 @@
 <br>
 <h2><a name="sec7.8">7.8</a>&nbsp;&nbsp;&nbsp;Right node raising</h2>
 
-<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="chapter7.html#ex7.22">7.22</a>) illustrates right node raising internal to a noun phrase.</p>
+<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="chapter7.html#ex7.28">7.28</a>) illustrates right node raising internal to a noun phrase.</p>
 
 <dl>
-  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;direct&nbsp;contact&nbsp;with&nbsp;or&nbsp;consumption&nbsp;of&nbsp;food&nbsp;contaminated&nbsp;by&nbsp;rodent&nbsp;urine&nbsp;or&nbsp;fecal&nbsp;matter&nbsp;containing&nbsp;virus&nbsp;particles&nbsp;")</tt><br>
 <tt>"NP","NML","NP","ADJP","ADJ","direct"</tt><br>
@@ -580,7 +711,7 @@
 <p align="justify">Right node raising internal in a clause:</p>
 
 <dl>
-  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;time&nbsp;and&nbsp;again&nbsp;&nbsp;&nbsp;&nbsp;stuffing&nbsp;and&nbsp;dragging&nbsp;&nbsp;&nbsp;&nbsp;on&nbsp;&nbsp;*ICH*-1&nbsp;his&nbsp;pipe&nbsp;")</tt><br>
 <tt>"PP-SCON-ABS","IP-PPL","IML","IML","ADVP-TMP","ADV","time_and_again"</tt><br>
@@ -595,7 +726,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_G06@42,29,40" target="_blank">21#10_susanne_G06&#64;22,9,20</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;French&nbsp;system&nbsp;also&nbsp;serves&nbsp;as&nbsp;the&nbsp;basis&nbsp;for&nbsp;&lt;comma&gt;&nbsp;or&nbsp;is&nbsp;mixed&nbsp;with&nbsp;&lt;comma&gt;&nbsp;other&nbsp;legal&nbsp;systems&nbsp;in&nbsp;approximately&nbsp;50&nbsp;countries&nbsp;&lt;comma&gt;&nbsp;notably&nbsp;in&nbsp;North&nbsp;Africa&nbsp;&lt;comma&gt;&nbsp;the&nbsp;Near&nbsp;East&nbsp;&lt;comma&gt;&nbsp;and&nbsp;the&nbsp;French&nbsp;territories&nbsp;and&nbsp;dependencies&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
@@ -642,10 +773,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=33_texts_FACTBOOK_2_2010@50,28,46" target="_blank">33_texts_FACTBOOK_2_2010&#64;50,28,46</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.25">7.25</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.31">7.31</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
 
 <dl>
-  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;that&nbsp;an&nbsp;enlightened&nbsp;Zen&nbsp;master&nbsp;instructs&nbsp;and&nbsp;enables&nbsp;someone&nbsp;to&nbsp;gain&nbsp;enlightenment&nbsp;")</tt><br>
 <tt>"IP-SUB","C","that"</tt><br>
@@ -667,7 +798,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_texts_KYOTO_2@30" target="_blank">17#39_texts_KYOTO_2&#64;14</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;actions&nbsp;of&nbsp;persons&nbsp;and&nbsp;organisations&nbsp;whether&nbsp;directed&nbsp;from&nbsp;within&nbsp;or&nbsp;without&nbsp;the&nbsp;country&nbsp;&lt;comma&gt;&nbsp;which&nbsp;may&nbsp;be&nbsp;judged&nbsp;to&nbsp;be&nbsp;subversive&nbsp;of&nbsp;the&nbsp;State&nbsp;")</tt><br>
 <tt>"NP","NS","actions"</tt><br>
@@ -701,10 +832,10 @@
 <br>
 <h2><a name="sec7.9">7.9</a>&nbsp;&nbsp;&nbsp;Extrapositioning</h2>
 
-<p align="justify">In (<a href="chapter7.html#ex7.27">7.27</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
+<p align="justify">In (<a href="chapter7.html#ex7.33">7.33</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;it&nbsp;#&nbsp;it&nbsp;was&nbsp;n&lt;apos&gt;t&nbsp;funny&nbsp;that&nbsp;day&nbsp;before&nbsp;I&nbsp;went&nbsp;to&nbsp;the&nbsp;{unclear}&nbsp;that&nbsp;ear&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it_#_it"</tt><br>
@@ -721,10 +852,10 @@
 <tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","NP","META","{unclear}_that_ear"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.28">7.28</a>) and (<a href="chapter7.html#ex7.29">7.29</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.34">7.34</a>) and (<a href="chapter7.html#ex7.35">7.35</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;breaststroke&nbsp;is&nbsp;very&nbsp;hard&nbsp;to&nbsp;explain&nbsp;in&nbsp;words&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"D","The"</tt><br>
@@ -740,7 +871,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_09_M14@4,17" target="_blank">3#3_age_09_M14&#64;2,15</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;they&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;seem&nbsp;to&nbsp;use&nbsp;it&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PRO","they"</tt><br>
@@ -755,7 +886,7 @@
 <p align="justify">Extrapositioning</p>
 
 <dl>
-  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;and&nbsp;he&nbsp;said&nbsp;there&nbsp;ai&nbsp;n&lt;apos&gt;t&nbsp;a&nbsp;bugger&nbsp;in&nbsp;England&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;good&nbsp;")</tt><br>
 <tt>"IP-MAT","CONJ","and"</tt><br>
@@ -775,7 +906,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=273_christine_T38@21,29" target="_blank">273_christine_T38&#64;21,29</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;We&nbsp;are&nbsp;having&nbsp;Area&nbsp;Sports&nbsp;soon&nbsp;&lt;comma&gt;&nbsp;in&nbsp;which&nbsp;I&nbsp;might&nbsp;be&nbsp;doing&nbsp;relay&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
@@ -798,7 +929,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_11_H16@15,22" target="_blank">3_age_11_H16&#64;15,22</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;she&nbsp;gave&nbsp;me&nbsp;a&nbsp;lovely&nbsp;book&nbsp;on&nbsp;musical&nbsp;composers&nbsp;last&nbsp;year&nbsp;which&nbsp;must&nbsp;have&nbsp;cost&nbsp;her&nbsp;a&nbsp;bomb&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","she"</tt><br>
@@ -823,7 +954,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=181_christine_T23@27,35" target="_blank">181_christine_T23&#64;27,35</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;I&nbsp;went&nbsp;to&nbsp;the&nbsp;same&nbsp;one&nbsp;as&nbsp;where&nbsp;my&nbsp;brother&nbsp;went&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","PRO","I"</tt><br>
@@ -841,7 +972,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_10_K59@57,61" target="_blank">42#3_age_10_K59&#64;16,20</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Persons&nbsp;must&nbsp;be&nbsp;present&nbsp;who&nbsp;are&nbsp;not&nbsp;only&nbsp;legally&nbsp;in&nbsp;the&nbsp;position&nbsp;&lt;comma&gt;&nbsp;but&nbsp;are&nbsp;also&nbsp;economically&nbsp;compelled&nbsp;&lt;comma&gt;&nbsp;to&nbsp;sell&nbsp;their&nbsp;labour&nbsp;on&nbsp;the&nbsp;market&nbsp;without&nbsp;restriction&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","NS","Persons"</tt><br>
@@ -879,7 +1010,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_young_adult_E53@44,53" target="_blank">40#14_young_adult_E53&#64;5,14</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;morning&nbsp;&lt;apos&gt;s&nbsp;tabloids&nbsp;were&nbsp;on&nbsp;the&nbsp;counter&nbsp;&lt;comma&gt;&nbsp;and&nbsp;a&nbsp;stack&nbsp;of&nbsp;dog&nbsp;&lt;hyphen&gt;&nbsp;eared&nbsp;men&nbsp;&lt;apos&gt;s&nbsp;magazines&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","NML","NP","NP-GENV","D","The"</tt><br>
@@ -906,7 +1037,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=26_susanne_N06@28,14" target="_blank">26_susanne_N06&#64;28,14</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;One&nbsp;day&nbsp;the&nbsp;dogs&nbsp;of&nbsp;Ireland&nbsp;will&nbsp;do&nbsp;that&nbsp;too&nbsp;and&nbsp;perhaps&nbsp;also&nbsp;the&nbsp;pigs&nbsp;&lt;rdquo&gt;&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-TMP","NUM","One"</tt><br>
@@ -930,7 +1061,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=117_susanne_G12@20,32" target="_blank">117_susanne_G12&#64;20,32</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;confusion&nbsp;which&nbsp;not&nbsp;only&nbsp;keeps&nbsp;his&nbsp;&nbsp;&nbsp;foes&nbsp;guessing&nbsp;but&nbsp;his&nbsp;friends&nbsp;&nbsp;&nbsp;&nbsp;as&nbsp;well&nbsp;")</tt><br>
 <tt>"NP","N","confusion"</tt><br>
@@ -953,7 +1084,7 @@
 <p align="justify">We have seen elision already with missing phrase heads in chapter <a href="chapter3.html#ch3">3</a>. It is also possible for entire phrases to be elided under parallelism. For example,</p>
 
 <dl>
-  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;By&nbsp;this&nbsp;time&nbsp;we&nbsp;were&nbsp;dying&nbsp;laughing&nbsp;watching&nbsp;them&nbsp;&lt;comma&gt;&nbsp;but&nbsp;Mrs&nbsp;Smith&nbsp;was&nbsp;n&lt;apos&gt;t&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"IML"</font>,"PP-TMP","P-ROLE","By"</tt><br>
@@ -975,7 +1106,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_stories_11_H38@17,3,36" target="_blank">9_stories_11_H38&#64;17,3,36</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Relocation&nbsp;allowances&nbsp;for&nbsp;existing&nbsp;staff&nbsp;should&nbsp;not&nbsp;be&nbsp;reviewed&nbsp;as&nbsp;bonuses&nbsp;but&nbsp;as&nbsp;compensatory&nbsp;payments&nbsp;which&nbsp;enable&nbsp;employees&nbsp;to&nbsp;make&nbsp;decisions&nbsp;about&nbsp;their&nbsp;futures&nbsp;within&nbsp;their&nbsp;companies&nbsp;without&nbsp;worrying&nbsp;about&nbsp;financial&nbsp;pressures&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","NPR","Relocation"</tt><br>
@@ -1016,7 +1147,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=21_bnc_B21@42,29" target="_blank">21_bnc_B21&#64;42,29</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;a&nbsp;provision&nbsp;specifically&nbsp;drafted&nbsp;for&nbsp;Scotland&nbsp;but&nbsp;which&nbsp;also&nbsp;applies&nbsp;to&nbsp;England&nbsp;")</tt><br>
 <tt>"NP","D","a"</tt><br>
@@ -1035,7 +1166,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=24_bnc_B38@115,133" target="_blank">108#24_bnc_B38&#64;8,26</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;This&nbsp;is&nbsp;less&nbsp;obviously&nbsp;true&nbsp;for&nbsp;wage&nbsp;&lt;hyphen&gt;&nbsp;labourers&nbsp;;&nbsp;not&nbsp;at&nbsp;all&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;the&nbsp;middle&nbsp;class&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","This"</tt><br>
@@ -1058,7 +1189,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=8_bnc_B26@18,37" target="_blank">8_bnc_B26&#64;18,37</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.48">7.48</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;It&nbsp;is&nbsp;sex&nbsp;that&nbsp;obsesses&nbsp;them&nbsp;&lt;comma&gt;&nbsp;sex&nbsp;that&nbsp;is&nbsp;at&nbsp;the&nbsp;basis&nbsp;of&nbsp;their&nbsp;aesthetic&nbsp;creed&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","IML","IML","NP-CSBJ","PRO","It"</tt><br>
@@ -1084,7 +1215,7 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can take place when coordination and subordination are combined.</p>
 
 <dl>
-  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.49">7.49</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;NEW&nbsp;management&nbsp;changes&nbsp;at&nbsp;the&nbsp;top&nbsp;of&nbsp;LASMO&nbsp;have&nbsp;seen&nbsp;Joe&nbsp;Darby&nbsp;appointed&nbsp;chief&nbsp;executive&nbsp;and&nbsp;John&nbsp;Hogan&nbsp;chief&nbsp;operating&nbsp;officer&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","ADJP","ADJ","NEW"</tt><br>
@@ -1113,10 +1244,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_bnc_B35@27,36,56" target="_blank">5_bnc_B35&#64;27,36,56</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="chapter7.html#ex7.44">7.44</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Elision can be found when there is a grammatical code that lacks support from its environment. For example, in (<a href="chapter7.html#ex7.50">7.50</a>) <i>want</i> is coded <tt>Tnt</tt> and yet there is no direct object non-finite clause and indirect object noun phrase in its clause of occurrence.</p>
 
 <dl>
-  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;I&nbsp;&lt;apos&gt;ll&nbsp;t&nbsp;#&nbsp;I&nbsp;&lt;apos&gt;ll&nbsp;take&nbsp;it&nbsp;off&nbsp;if&nbsp;you&nbsp;want&nbsp;")</tt><br>
 <tt>"IP-MAT-OB1","FS","NP-SBJ","PRO","I"</tt><br>
@@ -1134,7 +1265,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=220_christine_T16@36" target="_blank">7#220_christine_T16&#64;30</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.51">7.51</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Saut&lt;eacute&gt;&nbsp;for&nbsp;3&nbsp;minutes&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"VB;~Tn"</font>,"Saut&lt;eacute&gt;"</tt><br>
@@ -1150,7 +1281,7 @@
 <tr><td><tt>PRN</tt></td><td>parenthetical</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.52">7.52</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;You&nbsp;see&nbsp;yourself&nbsp;&lt;comma&gt;&nbsp;&lt;rdquo&gt;&nbsp;he&nbsp;said&nbsp;&lt;comma&gt;&nbsp;&lt;ldquo&gt;&nbsp;that&nbsp;this&nbsp;is&nbsp;not&nbsp;a&nbsp;sheep&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","PUQ","&lt;ldquo&gt;"</tt><br>
@@ -1174,7 +1305,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=80_classics_SAINT_EXUPERY_1943@7,11" target="_blank">80_classics_SAINT_EXUPERY_1943&#64;7,11</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.53">7.53</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;you&nbsp;know&nbsp;why&nbsp;cos&nbsp;shit&nbsp;I&nbsp;&lt;apos&gt;m&nbsp;not&nbsp;having&nbsp;that&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
@@ -1190,7 +1321,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=518_christine_T36@12" target="_blank">518_christine_T36&#64;12</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.48">7.48</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.54">7.54</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;what&nbsp;made&nbsp;him&nbsp;spew&nbsp;I&nbsp;reckon&nbsp;then&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","that"</tt><br>
@@ -1204,19 +1335,39 @@
 <tt>"IP-MAT","ADVP-CNT","ADV","then"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=77_christine_T12@20" target="_blank">77_christine_T12&#64;20</a>"</tt><br>
 
+<dl>
+  <dt>(<a name="ex7.55">7.55</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;a&nbsp;thing&nbsp;you&nbsp;forget&nbsp;about&nbsp;is&nbsp;all&nbsp;the&nbsp;really&nbsp;obvious&nbsp;things&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","that"</tt><br>
+<tt>"IP-MAT","BEP;~Ln","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","NP-PRD2","D","a"</tt><br>
+<tt>"IP-MAT","NP-PRD2","N","thing"</tt><br>
+<tt>"IP-MAT","NP-PRD2","IP-REL","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT","NP-PRD2","IP-REL","VBP","forget"</tt><br>
+<tt>"IP-MAT","NP-PRD2","IP-REL","PP-OBU","P-ROLE","about"</tt><br>
+<tt>"IP-MAT","NP-PRD2","IP-REL","PP-OBU","NP","*T*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","BEP;~Ln","is"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","NP-PRD2","Q","all"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","NP-PRD2","ADJP","ADVP","ADV","really"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","NP-PRD2","ADJP","ADJ","obvious"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PRN"</font>,"IP-MAT","NP-PRD2","NS","things"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=136_christine_T31@23" target="_blank">136_christine_T31&#64;23</a>"</tt><br>
+
 <h3><a name="sec7.11.1">7.11.1</a>&nbsp;&nbsp;&nbsp;Tag questions</h3>
 
-<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="chapter7.html#ex7.49">7.49</a>):</p>
+<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="chapter7.html#ex7.56">7.56</a>):</p>
 
 <dl>
-  <dt>(<a name="ex7.49">7.49</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.56">7.56</a>)</dt><dd></dd>
 </dl>
 <tt>&sol;^PRN&sol;&nbsp;&gt;&nbsp;&sol;^IP-MAT&sol;&nbsp;&lt;&nbsp;(&sol;^CP-QUE&sol;&nbsp;&lt;&nbsp;(&sol;^IP-SUB&sol;&nbsp;&lt;-1&nbsp;&sol;^NP-SBJ&sol;))</tt><br>
 
-<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="chapter7.html#ex7.49">7.49</a>) returns example sentences like (<a href="chapter7.html#ex7.50">7.50</a>).</p>
+<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="chapter7.html#ex7.56">7.56</a>) returns example sentences like (<a href="chapter7.html#ex7.57">7.57</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.57">7.57</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;I&nbsp;mean&nbsp;&lt;comma&gt;&nbsp;Sirena&nbsp;last&nbsp;night&nbsp;was&nbsp;a&nbsp;marvel&nbsp;&lt;comma&gt;&nbsp;was&nbsp;n&lt;apos&gt;t&nbsp;she&nbsp;?&nbsp;")</tt><br>
 <tt><font style="background-color: MediumSpringGreen;">"IP-MAT"</font>,"FRM","I_mean"</tt><br>
@@ -1240,7 +1391,7 @@
 <p align="justify">Quantificational elements typically scope with a leftward direction, with the exception that intermediate layers, phrase heads, and verbs of clauses are always within the scope of other elements of the same layer. But a quantificational element with a functional role at its point of occurrence can also have broader scope consequences. This is the opposite of what happens for displacement in section <a href="chapter7.html#sec7.2">7.2</a>. Displacement of a quantificational element had to capture the point of role integration while maintaining the scope gained from the place of occurrence. Exceptional scope needs to capture a broader scope contribution from an occurrence point that is the point of role integration.</p>
 
 <dl>
-  <dt>(<a name="ex7.51">7.51</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.58">7.58</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Thousands&nbsp;of&nbsp;people&nbsp;are&nbsp;killed&nbsp;every&nbsp;year&nbsp;in&nbsp;explosions&nbsp;&lt;comma&gt;&nbsp;cave-ins&nbsp;and&nbsp;floods&nbsp;&lt;comma&gt;&nbsp;despite&nbsp;government&nbsp;crackdowns&nbsp;on&nbsp;safety&nbsp;violations&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP"</font>,"*ICH*-1"</tt><br>
@@ -1271,10 +1422,10 @@
 <br>
 <h2><a name="sec7.13">7.13</a>&nbsp;&nbsp;&nbsp;Another use for IML</h2>
 
-<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="chapter7.html#ex7.52">7.52</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
+<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="chapter7.html#ex7.59">7.59</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
 
 <dl>
-  <dt>(<a name="ex7.52">7.52</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.59">7.59</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Opposing&nbsp;him&nbsp;was&nbsp;the&nbsp;French&nbsp;Admiral&nbsp;&lt;comma&gt;&nbsp;Jean&nbsp;de&nbsp;Vienne&nbsp;&lt;mdash&gt;&nbsp;a&nbsp;great&nbsp;sailor&nbsp;and&nbsp;an&nbsp;able&nbsp;strategist&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"VAG;~Tn","Opposing"</tt><br>
@@ -1298,12 +1449,12 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lob_G01@3,2" target="_blank">6_lob_G01&#64;3,2</a>"</tt><br>
 
-<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="chapter7.html#ex7.52">7.52</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="chapter4.html#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
+<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="chapter7.html#ex7.59">7.59</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="chapter4.html#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.53">7.53</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter7.html#ex7.60">7.60</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.53">7.53</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.60">7.60</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;I&nbsp;spent&nbsp;the&nbsp;night&nbsp;at&nbsp;the&nbsp;library&nbsp;without&nbsp;sleeping&nbsp;in&nbsp;order&nbsp;to&nbsp;prepare&nbsp;for&nbsp;the&nbsp;exam&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
@@ -1327,10 +1478,10 @@
 <br>
 <h2><a name="sec7.14">7.14</a>&nbsp;&nbsp;&nbsp;Managing control</h2>
 
-<p align="justify">Example (<a href="chapter7.html#ex7.54">7.54</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
+<p align="justify">Example (<a href="chapter7.html#ex7.61">7.61</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
 
 <dl>
-  <dt>(<a name="ex7.54">7.54</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.61">7.61</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;we&nbsp;should&nbsp;try&nbsp;to&nbsp;appreciate&nbsp;what&nbsp;is&nbsp;financially&nbsp;free&nbsp;whilst&nbsp;being&nbsp;prepared&nbsp;to&nbsp;pay&nbsp;emotional&nbsp;prices&nbsp;to&nbsp;achieve&nbsp;what&nbsp;is&nbsp;best&nbsp;for&nbsp;all&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","PRO","we"</tt><br>
@@ -1358,10 +1509,10 @@
 <tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","PP-BNF","NP","Q","all"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=35_young_adult_E05@68,89,95,106" target="_blank">60#35_young_adult_E05&#64;9,30,36,47</a>"</tt><br>
 
-<p align="justify">In (<a href="chapter7.html#ex7.55">7.55</a>) the matrix subject controls through to the embedded <i>be</i>.</p>
+<p align="justify">In (<a href="chapter7.html#ex7.62">7.62</a>) the matrix subject controls through to the embedded <i>be</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.55">7.55</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.62">7.62</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;cost&nbsp;per&nbsp;job&nbsp;to&nbsp;the&nbsp;Exchequer&nbsp;was&nbsp;estimated&nbsp;to&nbsp;be&nbsp;around&nbsp;&lt;pound&gt;&nbsp;30&lt;comma&gt;000&nbsp;-LRB-&nbsp;National&nbsp;Audit&nbsp;Office&nbsp;&lt;comma&gt;&nbsp;1990&nbsp;&lt;comma&gt;&nbsp;23-4&nbsp;&lt;comma&gt;&nbsp;cited&nbsp;in&nbsp;Atkinson&nbsp;and&nbsp;Moon&nbsp;&lt;comma&gt;&nbsp;1994&nbsp;-RRB-&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"D","The"</tt><br>
@@ -1403,7 +1554,7 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there is clause-within-clause subordination, the possibility arises of an element from the main clause making a direct contribution to the subordinate clause while being left with unclear status in the main clause. One notable scenario of this involves derived subjects. (The other notable scenario involves derived objects.)</p>
 
 <dl>
-  <dt>(<a name="ex7.56">7.56</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.63">7.63</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;these&nbsp;are&nbsp;more&nbsp;likely&nbsp;to&nbsp;crease&nbsp;")</tt><br>
 <tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"D","these"</tt><br>
@@ -1415,7 +1566,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=101_bnc_B27@27,16" target="_blank">15#101_bnc_B27&#64;13,2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.57">7.57</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.64">7.64</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;the&nbsp;problems&nbsp;of&nbsp;the&nbsp;reform&nbsp;programme&nbsp;became&nbsp;more&nbsp;difficult&nbsp;to&nbsp;contain&nbsp;")</tt><br>
 <tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"D","the"</tt><br>
@@ -1432,10 +1583,10 @@
 <tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","contain"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=20_bnc_B20@75,52" target="_blank">51#20_bnc_B20&#64;25,2</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="chapter7.html#ex7.58">7.58</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="chapter7.html#ex7.59">7.59</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="chapter7.html#ex7.65">7.65</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="chapter7.html#ex7.66">7.66</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.58">7.58</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.65">7.65</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;There&nbsp;are&nbsp;bound&nbsp;to&nbsp;be&nbsp;demonstrations&nbsp;.&nbsp;&lt;rquo&gt;&nbsp;")</tt><br>
 <tt>"IP-MAT","EX","There"</tt><br>
@@ -1449,7 +1600,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_lob_A01@15,10" target="_blank">19_lob_A01&#64;15,10</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.59">7.59</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.66">7.66</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;the&nbsp;increasing&nbsp;numbers&nbsp;of&nbsp;young&nbsp;intellectuals&nbsp;taking&nbsp;part&nbsp;and&nbsp;more&nbsp;importantly&nbsp;&lt;comma&gt;&nbsp;failing&nbsp;to&nbsp;return&nbsp;")</tt><br>
 <tt>"NP","D","the"</tt><br>
@@ -1469,13 +1620,13 @@
 <tt>"NP","IP-PPL","IML","CONJP","IML",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","return"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=21_bnc_B20@94" target="_blank">55#21_bnc_B20&#64;40</a>"</tt><br>
 
-<p align="justify">Note the presence of the <tt>IML</tt> layer in (<a href="chapter7.html#ex7.58">7.58</a>). With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had final placement within its containing layer. This allows the <tt>-ESBJ</tt> subject to scope into the <tt>IML</tt>.</p>
+<p align="justify">Note the presence of the <tt>IML</tt> layer in (<a href="chapter7.html#ex7.65">7.65</a>). With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had final placement within its containing layer. This allows the <tt>-ESBJ</tt> subject to scope into the <tt>IML</tt>.</p>
 
 <br>
 <h2><a name="sec7.15">7.15</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
 
 <dl>
-  <dt>(<a name="ex7.60">7.60</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.67">7.67</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;they&nbsp;were&nbsp;disappointed&nbsp;.&nbsp;And&nbsp;determined&nbsp;not&nbsp;to&nbsp;show&nbsp;it&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","PRO","they"</tt><br>
@@ -1490,6 +1641,42 @@
 <tt>"IML","IML","CONJP","IML","IP-INF-OB1",<font style="background-color: MediumSpringGreen;">"NP-OB1;{DISAPPOINTMENT}"</font>,"PRO","it"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=139_susanne_N05@55,73" target="_blank">47#139_susanne_N05&#64;9,27</a>"</tt><br>
 
+<dl>
+  <dt>(<a name="ex7.68">7.68</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;You&nbsp;then&nbsp;move&nbsp;your&nbsp;legs&nbsp;and&nbsp;arms&nbsp;forward&nbsp;&lt;comma&gt;&nbsp;and&nbsp;then&nbsp;kick&nbsp;your&nbsp;legs&nbsp;out&nbsp;and&nbsp;move&nbsp;your&nbsp;hands&nbsp;round&nbsp;&lt;comma&gt;&nbsp;and&nbsp;then&nbsp;do&nbsp;this&nbsp;again&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ;{YOU}","PRO","You"</tt><br>
+<tt>"IP-MAT","IML","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","VBP;~Tn.p","move"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","NP","NS","legs"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","CONJP","NP","NS","arms"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","ADVP-DIR","ADV","forward"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","VBP;~Tn.p","kick"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","NP-OB1","NS","legs"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","ADVP-DIR","RP","out"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","VBP;~Tn.p","move"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","NP-OB1","NS","hands"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","ADVP-DIR","ADV","round"</tt><br>
+<tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","CONJP","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML",<font style="background-color: MediumSpringGreen;">"NP;{MOVE1}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML","CONJP;&#64;2",<font style="background-color: MediumSpringGreen;">"NP;{KICK}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML","CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"NP;{MOVE2}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","DOP;~Tn","do"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","NP-OB1;{MOVEMENTS}","D","this"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","ADVP-TMP","ADV","again"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_stories_09_M14@77,79,83,87" target="_blank">5_stories_09_M14&#64;77,79,83,87</a>"</tt><br>
+
 <br>
 <h2><a name="sec7.16">7.16</a>&nbsp;&nbsp;&nbsp;Multi-sentence</h2>
 
@@ -1498,6 +1685,39 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>multi-sentence</tt></td><td>embedded discourse</td></tr>
 </table>
+<dl>
+  <dt>(<a name="ex7.69">7.69</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Without&nbsp;missing&nbsp;a&nbsp;beat&nbsp;&lt;comma&gt;&nbsp;the&nbsp;voice&nbsp;replied&nbsp;:&nbsp;&lt;ldquo&gt;&nbsp;Oh&nbsp;&lt;comma&gt;&nbsp;OK&nbsp;&lt;comma&gt;&nbsp;cool&nbsp;.&nbsp;In&nbsp;that&nbsp;case&nbsp;&lt;comma&gt;&nbsp;what&nbsp;&lt;apos&gt;s&nbsp;the&nbsp;wait&nbsp;time&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS","P-CONN","Without"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS","IP-PPL","VAG","missing"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS","IP-PPL","NP-OB1","D","a"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS","IP-PPL","NP-OB1","N","beat"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","voice"</tt><br>
+<tt>"IP-MAT","VBD;~Tf","replied"</tt><br>
+<tt>"IP-MAT","PU",":"</tt><br>
+<tt>"IP-MAT","PUQ","&lt;ldquo&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","INTJ","Oh"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","REACT","OK"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","REACT","cool"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"FRAG","PU","."</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","PP-CNT","P-ROLE","In"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","PP-CNT","NP","D","that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","PP-CNT","NP","N","case"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","NP-SBJ","WPRO","what"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","BEP;~Ln","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","NP-PRD2","ADJP","ADJ","wait"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","IP-SUB","NP-PRD2","N","time"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"multi-sentence"</font>,"CP-QUE","PU","?"</tt><br>
+<tt>"IP-MAT","PUQ","&lt;rdquo&gt;"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=34_texts_Duplex@26" target="_blank">34_texts_Duplex&#64;26</a>"</tt><br>
+
 <br>
 <br>
 <br>
