@@ -118,9 +118,9 @@
 <li>clauses are typed (<tt>IP-MAT</tt>=declarative main clause, <tt>FRAG</tt>=sentence fragment),</li>
 <li>coordination involves <tt>CONJP</tt> projections and intermediate layers of structure (<tt>IML</tt>=clause intermediate level, <tt>NML</tt>=nominal intermediate level),</li>
 <li>clause level constituents are function marked (<tt>-ESBJ</tt>=subject of an existential construction, <tt>-SBJ</tt>=subject, <tt>-PRD2</tt>=subject predicative role, etc.),</li>
-<li>constituents contributing discourse referents have witness information (<tt>{RABBITS}</tt>=witness for the collection of rabbits named Flopsy, Mopsy, Cotton_tail, and Peter),</li>
+<li>constituents contributing discourse referents have witness information (for the collection of rabbits named Flopsy, Mopsy, Cotton-tail, and Peter, there is <tt>{RABBITS}</tt>),</li>
 <li>pronouns with antecedents have resolved witness information (<tt>{RABBITS}</tt> appearing with <tt>their</tt>), and</li>
-<li>verbs have grammar pattern information (<tt>~I</tt>=selection of clause structure where there is an intransitive, <tt>~Ln</tt>=selection of clause structure where there is a linking verb with a subject predicative that is a noun phrase).</li>
+<li>verbs have grammar pattern information (<tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected adverbial elements, <tt>~Ln</tt>=selection of clause structure where there is a linking verb with a subject predicative that is a noun phrase).</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The data format of (<a href="#ex1">1</a>) is easy to edit, especially with a text editor capable of multi-line editing. It is notable that edits will always maintain balanced regularised tree structure. But what is most significant is that the format allows for quick and simple line and table based post-processing. As a case in point, an overview can be returned for items that have a particular word class. (This is accessed from link items that make up a listing of all tags, displayed on the Grep or TGrep2 pages when the search field is empty.) Figure <a href="#fig2">2</a> shows the result for all words in the corpus that are tagged <tt>RPRO</tt> (relative pronoun). This information is presented with the lemma of the word serving as a link to a Grep search for the lemma followed by a list within brackets of the particular attestations of the lemma with a count of instances after a colon.</p>
@@ -129,7 +129,7 @@
 
 <img src="word_class.png" alt="Example tree page" height="250">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig3">3</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, etc.) and the lemmas of adverbs that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig3">3</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, etc.)&nbsp;and the lemmas of adverbs that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data (demonstrated below in section <a href="#sec6.1">6.1</a> with (<a href="#ex3">3</a>)).</p>
 
 <p><a name="fig3">Figure 3: Function marking with prepositions (<tt>P-ROLE</tt>)</a></p>
 
@@ -190,7 +190,7 @@
 
 <h3><a name="sec6.1">6.1</a>&nbsp;&nbsp;&nbsp;Grep page</h3>
 
-<p align="justify">The Grep page gives a link for returning to the corpus overview page, and a text field box for entering a grep search pattern. There is a second field box for entering a number. If the search text box is blank, then there are tables listing the full tag set used in the corpus. A search begins when the &lsquo;Search&rsquo; button is clicked, or after a search pattern is entered into the text field box and the <tt>[ENTER]</tt> key is pressed.</p>
+<p align="justify">The Grep page gives a link for returning to the corpus overview page, and a text field box for entering a grep search pattern. There is a second field box for entering a start number (explained below). If the search text box is blank, then there are tables listing the full tag set used in the corpus. A search begins when the &lsquo;Search&rsquo; button is clicked, or after a search pattern is entered into the text field box and the <tt>[ENTER]</tt> key is pressed.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search is made using the <tt>grep</tt> command (Magloire et al. 2021) under a recursive call (<tt>grep -nr</tt>) in a directory that contains the corpus data in the native corpus format described in section <a href="#sec4">4</a>, and illustrated with (<a href="#ex1">1</a>). Aside from making changes to the search pattern, there is no other way to restrict the searched data.</p>
 
@@ -249,7 +249,7 @@
 
 <p align="justify">The TGrep2 page gives a link for returning to the corpus overview page, and a text field box for entering a TGrep2 search pattern. There is a second field box for entering a start number. There is also a pull-down-selector for choosing between two methods for displaying results:</p>
 <ul>
-<li>The default &lsquo;basic&rsquo; display provides a listing of <b>up to five hundred</b> tree yields from matched trees in corpus order. A part of each yield is highlighted corresponding to what is matched by the master node of the query.</li>
+<li>The default &lsquo;basic&rsquo; display provides a listing of <b>up to five hundred</b> tree yields from matched trees in corpus order. A part of each yield is highlighted as the match of the query.</li>
 <li>Choosing &lsquo;graphical&rsquo; display provides a listing of <b>up to fifty</b> graphical trees in corpus order with one highlighted node per tree.</li>
 </ul>
 
@@ -342,7 +342,7 @@
 <br>
 <h2><a name="sec7">7</a>&nbsp;&nbsp;&nbsp;Visualisation pages</h2>
 
-<p align="justify">The interface provides three different modes for visualising consequences of parse analysis: the tree page (section <a href="#sec7.1">7.1</a>); the word page (section <a href="#sec7.2">7.2</a>); and the graph page (section <a href="#sec7.3">7.3</a>). These pages all have an ID text field box that will contain the full name(s) for the analysis being shown. The content of the ID box can be edited, as described in section <a href="#sec3">3</a>.</p>
+<p align="justify">The interface provides three different modes for visualising consequences of parse analysis: the tree page (section <a href="#sec7.1">7.1</a>), the word page (section <a href="#sec7.2">7.2</a>), and the graph page (section <a href="#sec7.3">7.3</a>). These pages all have an ID text field box that will contain the full name(s) for the analysis being shown. The content of the ID box can be edited, as described in section <a href="#sec3">3</a>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;At the top of each page, in addition to the ID box, there is also:</p>
 <ul>
@@ -408,7 +408,7 @@
 <li>the <b><i>complementizer</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>).</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for word content to involve the &lsquo;#&rsquo; symbol. This marks a word absence due to phrase head or verb elision in the source sentence. For example, consider (<a href="#ex7">7</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for graph content to involve the &lsquo;#&rsquo; symbol. This marks a word absence due to phrase head or verb elision in the source sentence. For example, consider (<a href="#ex7">7</a>).</p>
 
 <dl>
   <dt>(<a name="ex7">7</a>)</dt><dd>He lost one of his shoes among the cabbages, and the other shoe amongst the potatoes.</dd>
