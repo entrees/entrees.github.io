@@ -274,7 +274,7 @@
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","NP-SBJ","ADJP;&#64;2","ADJ","personal"</tt><br>
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","NP-SBJ","N","information"</tt><br>
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","MD","can"</tt><br>
-<tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","BE;~cat_e","be"</tt><br>
+<tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","BE;~cat_Ve","be"</tt><br>
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","IP-PPL-CAT","NP-LGS","*"</tt><br>
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","IP-PPL-CAT","ADVP-MNR","ADV","easily"</tt><br>
 <tt>"NP",<font style="background-color: MediumSpringGreen;">"CP-THT"</font>,"IP-SUB","IP-PPL-CAT","VVN;~Tn","retrieved"</tt><br>
@@ -605,7 +605,7 @@
 <dl>
   <dt>(<a name="ex3.35">3.35</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;about&nbsp;&nbsp;&nbsp;&nbsp;number&nbsp;two&nbsp;or&nbsp;three&nbsp;or&nbsp;something&nbsp;like&nbsp;that&nbsp;")</tt><br>
+<tt>=N("&nbsp;about&nbsp;&nbsp;number&nbsp;two&nbsp;or&nbsp;three&nbsp;or&nbsp;something&nbsp;like&nbsp;that&nbsp;")</tt><br>
 <tt>"NP","NML","NP","ADVP","ADV","about"</tt><br>
 <tt>"NP","NML","NP",<font style="background-color: SandyBrown;">"N"</font>,<font style="background-color: MediumSpringGreen;">"number"</font></tt><br>
 <tt>"NP","NML","NP","NML","NML","NP","NUM","two"</tt><br>
@@ -998,12 +998,26 @@
 
 <p align="justify">Conjunction with an <tt>ADVP</tt> is the same as with an <tt>ADJP</tt>. With the annotation, <tt>CONJP</tt> projections are adjoined to the first <tt>CONJP</tt>-less conjunct under an <tt>AML</tt> layer.</p>
 
+<dl>
+  <dt>(<a name="ex3.59">3.59</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;&nbsp;never&nbsp;&lt;comma&gt;&nbsp;or&nbsp;not&nbsp;for&nbsp;a&nbsp;long&nbsp;time&nbsp;")</tt><br>
+<tt>"ADVP-TMP","AML","ADVP","ADV",<font style="background-color: MediumSpringGreen;">"never"</font></tt><br>
+<tt>"ADVP-TMP","AML","PU","&lt;comma&gt;"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","CONJ","or"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","NEG","not"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","PP","P-ROLE","for"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","PP","NP","D","a"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","PP","NP","ADJP","ADJ","long"</tt><br>
+<tt>"ADVP-TMP","AML","CONJP","PP","NP","N","time"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_susanne_A04&#64;" target="_blank">68#5_susanne_A04&#64;</a>"</tt><br>
+
 <h3><a name="sec3.4.4">3.4.4</a>&nbsp;&nbsp;&nbsp;ADVP functions</h3>
 
 <p align="justify">Adverb phrases are able to modify adjectives (e.g.&nbsp;<i><b><i>totally</i></b> disgusting</i>), and verbs (e.g.&nbsp;<i><b><i>strongly</i></b> supported</i>). Adverb phrases can also modify preposition phrases (e.g.&nbsp;<i><b><i>far</i></b> up the valley</i>), noun phrases (e.g.&nbsp;<i><b><i>nearly</i></b> a decade</i>), adverb phrases (e.g.&nbsp;<i><b><i>Quite</i></b> often</i>), and clauses (e.g.&nbsp;<i><b><i>of_course</i></b> you can</i>).</p>
 
 <dl>
-  <dt>(<a name="ex3.59">3.59</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.60">3.60</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;totally&nbsp;disgusting&nbsp;")</tt><br>
 <tt>"ADJP-PRD",<font style="background-color: SandyBrown;">"ADVP"</font>,"ADV","totally"</tt><br>
@@ -1011,7 +1025,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=89_christine_T19@15" target="_blank">14#89_christine_T19&#64;2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.60">3.60</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.61">3.61</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;strongly&nbsp;supported&nbsp;")</tt><br>
 <tt>"IP-PPL","NP-LGS","*"</tt><br>
@@ -1020,7 +1034,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=71_susanne_N11@67" target="_blank">64#71_susanne_N11&#64;4</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.61">3.61</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.62">3.62</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Far&nbsp;up&nbsp;the&nbsp;valley&nbsp;")</tt><br>
 <tt>"PP-LOC",<font style="background-color: SandyBrown;">"ADVP-DIR"</font>,"ADV","Far"</tt><br>
@@ -1030,7 +1044,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_susanne_N04@3" target="_blank">2#116_susanne_N04&#64;2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.62">3.62</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.63">3.63</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;purely&nbsp;and&nbsp;simply&nbsp;for&nbsp;the&nbsp;money&nbsp;")</tt><br>
 <tt>"PP-CNT",<font style="background-color: SandyBrown;">"ADVP-MOD"</font>,"AML","ADVP","ADV","purely"</tt><br>
@@ -1042,7 +1056,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=491_christine_T29@82" target="_blank">81#491_christine_T29&#64;2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.63">3.63</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.64">3.64</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;nearly&nbsp;a&nbsp;decade&nbsp;")</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"ADVP"</font>,"ADV","nearly"</tt><br>
@@ -1051,7 +1065,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=81_bnc_B37@29" target="_blank">28#81_bnc_B37&#64;2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.64">3.64</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.65">3.65</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Quite&nbsp;often&nbsp;")</tt><br>
 <tt>"ADVP-TMP",<font style="background-color: SandyBrown;">"ADVP"</font>,"ADV","Quite"</tt><br>
@@ -1059,7 +1073,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=18_susanne_J10@3" target="_blank">2#18_susanne_J10&#64;2</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.65">3.65</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.66">3.66</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;of&nbsp;course&nbsp;you&nbsp;can&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"ADVP-MOD"</font>,"ADV","of_course"</tt><br>
@@ -1067,10 +1081,10 @@
 <tt>"IP-MAT","MD","can"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=258_christine_T04@2" target="_blank">258_christine_T04&#64;2</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.66">3.66</a>) has directional function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.67">3.67</a>) has directional function.</p>
 
 <dl>
-  <dt>(<a name="ex3.66">3.66</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.67">3.67</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;shall&nbsp;we&nbsp;go&nbsp;on&nbsp;up&nbsp;there&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB","MD","shall"</tt><br>
@@ -1084,7 +1098,7 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials can occur with selected functions <tt>-OB1</tt> (primary object) and <tt>-PRD</tt>(<tt>2</tt>) (predicative).</p>
 
 <dl>
-  <dt>(<a name="ex3.67">3.67</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.68">3.68</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;it&nbsp;takes&nbsp;so&nbsp;long&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","it"</tt><br>
@@ -1094,7 +1108,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=99_christine_T04@7" target="_blank">99_christine_T04&#64;7</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.68">3.68</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.69">3.69</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;the&nbsp;game&nbsp;&lt;apos&gt;s&nbsp;over&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
@@ -1114,10 +1128,10 @@
 
 <h3><a name="sec3.5.2">3.5.2</a>&nbsp;&nbsp;&nbsp;PP dependents</h3>
 
-<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a COMPLEMENT. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.69">3.69</a>).</p>
+<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a COMPLEMENT. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.70">3.70</a>).</p>
 
 <dl>
-  <dt>(<a name="ex3.69">3.69</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.70">3.70</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;out&nbsp;of&nbsp;the&nbsp;box&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"PP-DIR"</font>,"P-ROLE","out_of"</tt><br>
@@ -1135,7 +1149,7 @@
 <p align="justify">Instances of <tt>PP</tt> are conjoined at the top level of their structure.</p>
 
 <dl>
-  <dt>(<a name="ex3.70">3.70</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.71">3.71</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Across&nbsp;the&nbsp;Commonwealth&nbsp;and&nbsp;around&nbsp;the&nbsp;world&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"PP-DIR"</font>,<font style="background-color: MediumSpringGreen;">"PP"</font>,"P-ROLE","Across"</tt><br>
@@ -1148,7 +1162,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_texts_Queen_broadcast_5_April_2020@2,3,14" target="_blank">2#12_texts_Queen_broadcast_5_April_2020&#64;1,2,13</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.71">3.71</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.72">3.72</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;skilled&nbsp;not&nbsp;merely&nbsp;at&nbsp;response&nbsp;but&nbsp;also&nbsp;at&nbsp;projection&nbsp;")</tt><br>
 <tt>"ADJP-PRD2","ADJ","skilled"</tt><br>
@@ -1163,7 +1177,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=70_susanne_J22@36,42,54" target="_blank">33#70_susanne_J22&#64;4,10,22</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.72">3.72</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.73">3.73</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;in&nbsp;cases&nbsp;involving&nbsp;imprisonable&nbsp;offences&nbsp;&lt;comma&gt;&nbsp;and&nbsp;even&nbsp;in&nbsp;connection&nbsp;with&nbsp;non&nbsp;&lt;hyphen&gt;&nbsp;imprisonable&nbsp;offences&nbsp;in&nbsp;exceptional&nbsp;cases&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"PP-CNT"</font>,<font style="background-color: MediumSpringGreen;">"PP"</font>,"P-ROLE","in"</tt><br>
@@ -1184,7 +1198,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=2_bnc_B34@127,128,153" target="_blank">127#2_bnc_B34&#64;1,2,27</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.73">3.73</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.74">3.74</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;either&nbsp;for&nbsp;example&nbsp;in&nbsp;building&nbsp;or&nbsp;farming&nbsp;")</tt><br>
 <tt>"PP-RST","CONJ","either"</tt><br>
@@ -1196,7 +1210,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_young_adult_E08@69" target="_blank">54#10_young_adult_E08&#64;16</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex3.74">3.74</a>)</dt><dd></dd>
+  <dt>(<a name="ex3.75">3.75</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;to&nbsp;late&nbsp;&lt;hyphen&gt;&nbsp;night&nbsp;movies&nbsp;&lt;comma&gt;&nbsp;and&nbsp;then&nbsp;on&nbsp;to&nbsp;parties&nbsp;")</tt><br>
 <tt>"PP-DIR",<font style="background-color: SandyBrown;">"PP"</font>,"P-ROLE","to"</tt><br>
