@@ -1655,7 +1655,7 @@
 <br>
 <h2><a name="sec8.15">8.15</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
 
-<p align="justify">The annotation adds coreference information by adding witness information to the tag of a noun phrase (<tt>NP</tt>) level constituent. For a non-anaphoric noun phrase, the witness information provides type information for the discourse referent that the noun phrase serves to introduce. Witness information can can also be given to clause layers in which case it is used to type the discourse referent introduced by the local clause event. A pronominal noun phrase that also has witness information can then be associated with any accessible discourse referent that has the same witness information.</p>
+<p align="justify">The annotation includes coreference information by adding witness information to the tag of a noun phrase (<tt>NP</tt>) level constituent. For a non-anaphoric noun phrase, the witness information provides type information for the discourse referent that the noun phrase serves to introduce. Witness information can can also be given to clause layers in which case it is used to type the discourse referent introduced by the local clause event. A pronominal noun phrase that also has witness information can then be associated with any accessible discourse referent that has the same witness information.</p>
 
 <dl>
   <dt>(<a name="ex8.69">8.69</a>)</dt><dd></dd>
@@ -1675,6 +1675,28 @@
 
 <dl>
   <dt>(<a name="ex8.70">8.70</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;you&nbsp;could&nbsp;listen&nbsp;to&nbsp;the&nbsp;news&nbsp;on&nbsp;the&nbsp;telly&nbsp;and&nbsp;it&nbsp;would&nbsp;n&lt;apos&gt;t&nbsp;make&nbsp;any&nbsp;difference&nbsp;")</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"NP-SBJ","PRO","you"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"MD","could"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"VB","listen"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","P-ROLE","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","NP","N","news"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","P-ROLE","on"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","NP","N","telly"</tt><br>
+<tt>"IML","CONJP","CONJ","and"</tt><br>
+<tt>"IML","CONJP","IML",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{LISTEN}"</font>,"PRO","it"</tt><br>
+<tt>"IML","CONJP","IML","MD","would"</tt><br>
+<tt>"IML","CONJP","IML","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IML","CONJP","IML","VB;~Ln","make"</tt><br>
+<tt>"IML","CONJP","IML","NP-PRD2","D","any"</tt><br>
+<tt>"IML","CONJP","IML","NP-PRD2","N","difference"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=138_christine_T37@5,33" target="_blank">4#138_christine_T37&#64;2,30</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex8.71">8.71</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;You&nbsp;then&nbsp;move&nbsp;your&nbsp;legs&nbsp;and&nbsp;arms&nbsp;forward&nbsp;&lt;comma&gt;&nbsp;and&nbsp;then&nbsp;kick&nbsp;your&nbsp;legs&nbsp;out&nbsp;and&nbsp;move&nbsp;your&nbsp;hands&nbsp;round&nbsp;&lt;comma&gt;&nbsp;and&nbsp;then&nbsp;do&nbsp;this&nbsp;again&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ;{YOU}","PRO","You"</tt><br>
@@ -1718,7 +1740,7 @@
 <tr><td><tt>multi-sentence</tt></td><td>embedded discourse</td></tr>
 </table>
 <dl>
-  <dt>(<a name="ex8.71">8.71</a>)</dt><dd></dd>
+  <dt>(<a name="ex8.72">8.72</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Without&nbsp;missing&nbsp;a&nbsp;beat&nbsp;&lt;comma&gt;&nbsp;the&nbsp;voice&nbsp;replied&nbsp;:&nbsp;&lt;ldquo&gt;&nbsp;Oh&nbsp;&lt;comma&gt;&nbsp;OK&nbsp;&lt;comma&gt;&nbsp;cool&nbsp;.&nbsp;In&nbsp;that&nbsp;case&nbsp;&lt;comma&gt;&nbsp;what&nbsp;&lt;apos&gt;s&nbsp;the&nbsp;wait&nbsp;time&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
 <tt>"IP-MAT","PP-SCON-ABS","P-CONN","Without"</tt><br>
