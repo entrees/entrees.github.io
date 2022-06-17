@@ -5,7 +5,7 @@
 
 <p align="justify">Chapter <a href="chapter6.html#ch6">6</a> was concerned with providing verb codes for main verbs. The main verb is either the only verb of a clause or the last verb to occur in a sequence of verbs of the same clause. Verbs of a verb sequence that are prior to the main verb are called catenative verbs. Section <a href="chapter7.html#sec7.2">7.2</a> is an overview of the codes available for catenative verbs.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Passive voice is discussed in section <a href="chapter7.html#sec7.3">7.3</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Passive voice is discussed in section <a href="chapter7.html#sec7.3">7.3</a>. Passive voice is most easily recognised when arising with the catenative [cat_Ve] verb <small style="font-size: 75%">BE</small>, or some other catenative [cat_Ve] verb, such as <small style="font-size: 75%">GET</small>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Additional verb codes in section <a href="chapter7.html#sec7.4">7.4</a> support the occurrence of existential <i>there</i>.</p>
 
@@ -38,14 +38,48 @@
 <tt>"IP-MAT","PU",";"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_lob_A02@7,12" target="_blank">54_lob_A02&#64;7,12</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Differences in codes for catenative verbs stem from two parameters: (i) selection of a particle as part of a phrasal verb or not, and (ii) the form of the <tt>-CAT</tt> marked complement as determined by the form of the verb directly contained inside. The remainder of this section illustrates with examples the catenative verb codes: [cat_Ve], [cat_Vg], [cat_Vi], [cat_Vt]. [cat_phr_Vp.g], and [cat_phr_Vp.t],</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The remainder of this section illustrates the codes available for catenative verbs. Codes differ because they indicate the form of the <tt>-CAT</tt> marked complement:</p>
+<ul>
+<li>[cat_Ve] (section <a href="chapter7.html#sec7.2.1">7.2.1</a>),</li>
+<li>[cat_Vg] (section <a href="chapter7.html#sec7.2.2">7.2.2</a>),</li>
+<li>[cat_Vi] (section <a href="chapter7.html#sec7.2.3">7.2.3</a>), and</li>
+<li>[cat_Vt] (section <a href="chapter7.html#sec7.2.4">7.2.4</a>).</li>
+</ul>
+
+<p align="justify">There are also catenative verbs that, in addition to a <tt>-CAT</tt> marked complement, select a particle as part of a phrasal verb:</p>
+<ul>
+<li>[cat_phr_Vp.g] (section <a href="chapter7.html#sec7.2.5">7.2.5</a>) and</li>
+<li>[cat_phr_Vp.t] (section <a href="chapter7.html#sec7.2.6">7.2.6</a>).</li>
+</ul>
 
 <h3><a name="sec7.2.1">7.2.1</a>&nbsp;&nbsp;&nbsp;[cat_Ve]</h3>
 
-<p align="justify">[cat_Ve] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains a past participle (&lcub;en&rcub;) verb form.</p>
+<p align="justify">[cat_Ve] is the code to mark a catenative verb with a <tt>-CAT</tt> complement that directly contains a past participle (&lcub;en&rcub;) verb form. Example (<a href="chapter7.html#ex7.2">7.2</a>) illustrates the [cat_Ve] verb <i>appeared</i> with selection of a <tt>-CAT</tt> complement with past participle <i>struck</i> as a passive verb.</p>
 
 <dl>
   <dt>(<a name="ex7.2">7.2</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;For&nbsp;a&nbsp;second&nbsp;&lt;comma&gt;&nbsp;engages&nbsp;&lt;comma&gt;&nbsp;cooks&nbsp;&lt;comma&gt;&nbsp;voyageurs&nbsp;appeared&nbsp;struck&nbsp;dumb&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","PP-TMP","P-ROLE","For"</tt><br>
+<tt>"IP-MAT","PP-TMP","NP","D","a"</tt><br>
+<tt>"IP-MAT","PP-TMP","NP","N","second"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","NP","NS","engages"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","CONJP;&#64;3","NP","NS","cooks"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","CONJP;&#64;5","NP","NS","voyageurs"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"appeared"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Cn.a","struck"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADJP-PRD2","ADJ","dumb"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=15_susanne_N04@29,31" target="_blank">15_susanne_N04&#64;29,31</a>"</tt><br>
+
+<p align="justify">Example (<a href="chapter7.html#ex7.3">7.3</a>) illustrates the [cat_Ve] verb <i>grown</i> with selection of a <tt>-CAT</tt> complement with past participle <i>accustomed</i> as a passive verb.</p>
+
+<dl>
+  <dt>(<a name="ex7.3">7.3</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;eyes&nbsp;that&nbsp;had&nbsp;grown&nbsp;accustomed&nbsp;to&nbsp;the&nbsp;absence&nbsp;of&nbsp;light&nbsp;")</tt><br>
 <tt>"NP","NS","eyes"</tt><br>
@@ -61,9 +95,9 @@
 <tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","NP","N","light"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=108_susanne_N02@62,64" target="_blank">52#108_susanne_N02&#64;11,13</a>"</tt><br>
 
-<p align="justify">Catenative [cat_Ve] <small style="font-size: 75%">BE</small> is typically used to form the passive construction.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The [cat_Ve] verbs <i>appeared</i> of (<a href="chapter7.html#ex7.2">7.2</a>) and <i>grown</i> of (<a href="chapter7.html#ex7.3">7.3</a>) bring about a passive interpretation for the past participle (&lcub;en&rcub;) verb of their <tt>-CAT</tt> complement. Most typically, it is [cat_Ve] <small style="font-size: 75%">BE</small> that is used to create the environment for a passive <tt>-CAT</tt> complement to occur, discussed in section <a href="chapter7.html#sec7.3">7.3</a> below. Also, [cat_Ve] <small style="font-size: 75%">GET</small> is another notable trigger for a passive.</p>
 
-<p align="justify">Passive, but not with <small style="font-size: 75%">HAVE</small> in the perfect construction.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;One exception where a [cat_Ve] verb doesn't lead to a passive interpretation is <small style="font-size: 75%">HAVE</small>, e.g., seen as past tense <i>had</i> in (<a href="chapter7.html#ex7.3">7.3</a>). Instead, [cat_Ve] <small style="font-size: 75%">HAVE</small> brings about a perfect construction, discussed next in section <a href="chapter7.html#sec7.2.1.1">7.2.1.1</a>.</p>
 
 <h4><a name="sec7.2.1.1">7.2.1.1</a>&nbsp;&nbsp;&nbsp;Perfect construction</h4>
 
@@ -73,10 +107,10 @@
 <li>adding a form of the verb <small style="font-size: 75%">HAVE</small> before it.</li>
 </ul>
 
-<p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter7.html#ex7.3">7.3</a>).</p>
+<p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter7.html#ex7.4">7.4</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.3">7.3</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.4">7.4</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Mr.&nbsp;Yamada&nbsp;has&nbsp;gone&nbsp;to&nbsp;Tokyo&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","Mr."</tt><br>
@@ -88,10 +122,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1366_samples_kisonihongo@10,9" target="_blank">1366_samples_kisonihongo&#64;10,9</a>"</tt><br>
 
-<p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter7.html#ex7.3">7.3</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter7.html#ex7.4">7.4</a>).</p>
+<p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter7.html#ex7.4">7.4</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter7.html#ex7.5">7.5</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.4">7.4</a>)</dt><dd>Mr.&nbsp;Yamada went to Tokyo.</dd>
+  <dt>(<a name="ex7.5">7.5</a>)</dt><dd>Mr.&nbsp;Yamada went to Tokyo.</dd>
 </dl>
 
 <h3><a name="sec7.2.2">7.2.2</a>&nbsp;&nbsp;&nbsp;[cat_Vg]</h3>
@@ -99,7 +133,7 @@
 <p align="justify">[cat_Vg] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form.</p>
 
 <dl>
-  <dt>(<a name="ex7.5">7.5</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.6">7.6</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;He&nbsp;kept&nbsp;going&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
@@ -110,10 +144,10 @@
 
 <h4><a name="sec7.2.2.1">7.2.2.1</a>&nbsp;&nbsp;&nbsp;Progressive construction</h4>
 
-<p align="justify">Catenative [cat_Vg] <small style="font-size: 75%">BE</small> is used to form the progressive construction. The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining the verb's present participle (e.g. <i>watching</i>) with a form of the verb <small style="font-size: 75%">BE</small> (e.g. <i>I was watching</i>).</p>
+<p align="justify">The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining a verb's present participle (&lcub;ing&rcub;) verb form (e.g., <i>watching</i>) with an instance of <small style="font-size: 75%">BE</small> that is a catenative [cat_Vg] verb, e.g., <i>was watching</i> in (<a href="chapter7.html#ex7.7">7.7</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.6">7.6</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.7">7.7</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;I&nbsp;was&nbsp;watching&nbsp;the&nbsp;fire-engines&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
@@ -123,10 +157,10 @@
 <tt>"IP-MAT","IP-PPL-CAT","NP-OB1","NS","fire-engines"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=391_christine_T40@8,5" target="_blank">391_christine_T40&#64;8,5</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be combined with the perfect construction (see section <a href="chapter7.html#sec7.2.1.1">7.2.1.1</a>), as in (<a href="chapter7.html#ex7.7">7.7</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction (see section <a href="chapter7.html#sec7.2.1.1">7.2.1.1</a>), as with <i>been watching</i> in (<a href="chapter7.html#ex7.8">7.8</a>).</p>
 
 <dl>
-  <dt>(<a name="ex7.7">7.7</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.8">7.8</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;Bill&nbsp;has&nbsp;been&nbsp;watching&nbsp;little&nbsp;Alice&nbsp;ever&nbsp;since&nbsp;Mary&nbsp;left&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","NPR","Bill"</tt><br>
@@ -140,14 +174,46 @@
 <tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","IP-ADV","NP-SBJ","NPR","Mary"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","IP-ADV","VBD","left"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=447_samples_blue_book@11,5,8" target="_blank">447_samples_blue_book&#64;11,5,8</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=447_samples_blue_book@11,8,5" target="_blank">447_samples_blue_book&#64;11,8,5</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be used to introduce the passive construction (see section <a href="chapter7.html#sec7.3">7.3</a>), as with <i>is getting</i> in (<a href="chapter7.html#ex7.9">7.9</a>).</p>
+
+<dl>
+  <dt>(<a name="ex7.9">7.9</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Britain&nbsp;is&nbsp;getting&nbsp;left&nbsp;behind&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","NPR","Britain"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~cat_Vg"</font>,"is"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG;~cat_Ve"</font>,"getting"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN"</font>,"left"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","ADVP-LOC","ADV","behind"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_bnc_B41@33,30,38" target="_blank">26#43_bnc_B41&#64;8,5,13</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction and introduce the passive construction, as with <i>been being</i> in (<a href="chapter7.html#ex7.10">7.10</a>).</p>
+
+<dl>
+  <dt>(<a name="ex7.10">7.10</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;He&nbsp;might&nbsp;have&nbsp;been&nbsp;being&nbsp;questioned&nbsp;by&nbsp;the&nbsp;police&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
+<tt>"IP-MAT","MD","might"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HV;~cat_Ve"</font>,"have"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"BAG;~cat_Ve"</font>,"being"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"questioned"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","P-ROLE","by"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","D","the"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","NS","police"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=164_samples_BUFFALO@13,10,7,16" target="_blank">164_samples_BUFFALO&#64;13,10,7,16</a>"</tt><br>
 
 <h3><a name="sec7.2.3">7.2.3</a>&nbsp;&nbsp;&nbsp;[cat_Vi]</h3>
 
 <p align="justify">[cat_Vi] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains a bare infinitive verb.</p>
 
 <dl>
-  <dt>(<a name="ex7.8">7.8</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.11">7.11</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;you&nbsp;dare&nbsp;talk&nbsp;to&nbsp;me&nbsp;like&nbsp;that&nbsp;")</tt><br>
 <tt>"IP-MAT","DOP;~op_V","do"</tt><br>
@@ -166,7 +232,7 @@
 <p align="justify">[cat_Vt] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.9">7.9</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;This&nbsp;may&nbsp;appear&nbsp;to&nbsp;be&nbsp;missing&nbsp;the&nbsp;point&nbsp;somewhat&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","D","This"</tt><br>
@@ -181,7 +247,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_young_adult_E12@11" target="_blank">3#6_young_adult_E12&#64;9</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.10">7.10</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;A&nbsp;drawing&nbsp;of&nbsp;the&nbsp;structure&nbsp;is&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;reference&nbsp;6&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","A"</tt><br>
@@ -201,7 +267,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_J04@17" target="_blank">41_susanne_J04&#64;17</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.11">7.11</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;that&nbsp;it&nbsp;was&nbsp;going&nbsp;to&nbsp;be&nbsp;a&nbsp;very&nbsp;special&nbsp;day&nbsp;for&nbsp;her&nbsp;")</tt><br>
 <tt>"IP-SUB","C","that"</tt><br>
@@ -219,7 +285,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=31_fce_0100_2001_06@44" target="_blank">33#31_fce_0100_2001_06&#64;12</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;we&nbsp;&lt;apos&gt;re&nbsp;gon&nbsp;na&nbsp;have&nbsp;to&nbsp;share&nbsp;them&nbsp;me&nbsp;and&nbsp;dad&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","we"</tt><br>
@@ -238,10 +304,10 @@
 
 <h3><a name="sec7.2.5">7.2.5</a>&nbsp;&nbsp;&nbsp;[cat_phr_Vp.g]</h3>
 
-<p align="justify">[cat_phr_Vp.g] is the code to mark a catenative phrasal verb with required particle and <tt>-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter7.html#ex7.13">7.13</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>-CAT</tt> complement.</p>
+<p align="justify">[cat_phr_Vp.g] is the code to mark a catenative phrasal verb with required particle and <tt>-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter7.html#ex7.16">7.16</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>-CAT</tt> complement.</p>
 
 <dl>
-  <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;if&nbsp;you&nbsp;keep&nbsp;on&nbsp;drinking&nbsp;")</tt><br>
 <tt>"PP-SCON-CNT-CND","P-CONN","if"</tt><br>
@@ -253,10 +319,10 @@
 
 <h3><a name="sec7.2.6">7.2.6</a>&nbsp;&nbsp;&nbsp;[cat_phr_Vp.t]</h3>
 
-<p align="justify">[cat_phr_Vp.t] is the code to mark a catenative phrasal verb with particle and <tt>-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter7.html#ex7.14">7.14</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>-CAT</tt> complement.</p>
+<p align="justify">[cat_phr_Vp.t] is the code to mark a catenative phrasal verb with particle and <tt>-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter7.html#ex7.17">7.17</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>-CAT</tt> complement.</p>
 
 <dl>
-  <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;arrangement&nbsp;turned&nbsp;out&nbsp;to&nbsp;be&nbsp;excellent&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
@@ -282,16 +348,16 @@
 
 <p align="justify">The PASSIVE VOICE is the more marked form of the clause in which the <tt>-SBJ</tt> corresponds in meaning to an <tt>-OB1</tt> or <tt>-OB2</tt> (or very occasionally a <tt>-PRD</tt>) of a corresponding active clause.</p>
 
-<p align="justify">Sentence (<a href="chapter7.html#ex7.15">7.15</a>) is the passive of <i>Her boyfriend gave her a new outfit.</i> A passive is recognisable from:</p>
+<p align="justify">Sentence (<a href="chapter7.html#ex7.18">7.18</a>) is the passive of <i>Her boyfriend gave her a new outfit.</i> A passive is recognisable from:</p>
 <ul>
 <li>the past participle form <i>gave</i></li>
 <li>a normal object (<i>her</i>) turned into the subject (<i>She</i>)</li>
 <li>the normal subject (<i>her boyfriend</i>) turned into an optional preposition phrase with <i>by</i></li>
-<li>the verb <small style="font-size: 75%">BE</small>, or some other verb, such as <small style="font-size: 75%">GET</small>.</li>
+<li>the catenative [cat_Ve] verb <small style="font-size: 75%">BE</small>, or some other catenative [cat_Ve] verb, such as <small style="font-size: 75%">GET</small>.</li>
 </ul>
 
 <dl>
-  <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;She&nbsp;was&nbsp;given&nbsp;a&nbsp;new&nbsp;outfit&nbsp;by&nbsp;her&nbsp;boyfriend&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","She"</tt><br>
@@ -307,7 +373,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_samples_ENG1100@8,5,18" target="_blank">39_samples_ENG1100&#64;8,5,18</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;She&nbsp;has&nbsp;given&nbsp;a&nbsp;new&nbsp;outfit&nbsp;to&nbsp;her&nbsp;boyfriend&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","She"</tt><br>
@@ -322,12 +388,25 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_samples_ENG1100@8,5,18" target="_blank">38_samples_ENG1100&#64;8,5,18</a>"</tt><br>
 
-<p align="justify"><small style="font-size: 75%">GET</small> can be used in place of <small style="font-size: 75%">BE</small> as an auxiliary verb to form passives. Does she ever get asked for her autograph? A pane of glass got broken.</p>
+<p align="justify"><small style="font-size: 75%">GET</small> can be used in place of <small style="font-size: 75%">BE</small> as a [cat_Ve] verb to form passives.</p>
+
+<dl>
+  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;ARX&nbsp;got&nbsp;cancelled&nbsp;the&nbsp;next&nbsp;day&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","NPR","ARX"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"got"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"VVN"</font>,"cancelled"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","ADJP","ADJ","next"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","N","day"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=74_texts_PaulFellows@145,147,150" target="_blank">141#74_texts_PaulFellows&#64;5,7,10</a>"</tt><br>
 
 <h3><a name="sec7.3.1">7.3.1</a>&nbsp;&nbsp;&nbsp;Concealed passives</h3>
 
 <dl>
-  <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;His&nbsp;wounds&nbsp;need&nbsp;dressing&nbsp;now&nbsp;&lt;rdquo&gt;&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","NP-GENV","PRO","His"</tt><br>
@@ -342,10 +421,10 @@
 
 <h3><a name="sec7.3.2">7.3.2</a>&nbsp;&nbsp;&nbsp;Other cases with -LGS</h3>
 
-<p align="justify">In (<a href="chapter7.html#ex7.18">7.18</a>) <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt> in a construction that is also mentioned in section <a href="chapter8.html#sec8.9">8.9</a>.</p>
+<p align="justify">In (<a href="chapter7.html#ex7.22">7.22</a>) <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt> in a construction that is also mentioned in section <a href="chapter8.html#sec8.9">8.9</a>.</p>
 
 <dl>
-  <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;The&nbsp;breaststroke&nbsp;is&nbsp;very&nbsp;hard&nbsp;to&nbsp;explain&nbsp;in&nbsp;words&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"D","The"</tt><br>
@@ -360,17 +439,66 @@
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","NP","NS","words"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_09_M14@4,17" target="_blank">3#3_age_09_M14&#64;2,15</a>"</tt><br>
 
+<h3><a name="sec7.3.3">7.3.3</a>&nbsp;&nbsp;&nbsp;Adjectival passives</h3>
+
+<dl>
+  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;more&nbsp;of&nbsp;the&nbsp;therapy&nbsp;group&nbsp;were&nbsp;married&nbsp;&lt;comma&gt;&nbsp;and&nbsp;married&nbsp;people&nbsp;with&nbsp;cancer&nbsp;are&nbsp;known&nbsp;to&nbsp;survive&nbsp;longer&nbsp;")</tt><br>
+<tt>"IML","IML","NP-SBJ","ADJP","ADJR","more"</tt><br>
+<tt>"IML","IML","NP-SBJ","PP","P-ROLE","of"</tt><br>
+<tt>"IML","IML","NP-SBJ","PP","NP","D","the"</tt><br>
+<tt>"IML","IML","NP-SBJ","PP","NP","N","therapy"</tt><br>
+<tt>"IML","IML","NP-SBJ","PP","NP","N","group"</tt><br>
+<tt>"IML","IML",<font style="background-color: SandyBrown;">"BED;~La"</font>,"were"</tt><br>
+<tt>"IML","IML",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"ADJ","married"</tt><br>
+<tt>"IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML","CONJP","CONJ","and"</tt><br>
+<tt>"IML","CONJP","IML","NP-SBJ","ADJP","ADJ","married"</tt><br>
+<tt>"IML","CONJP","IML","NP-SBJ","NS","people"</tt><br>
+<tt>"IML","CONJP","IML","NP-SBJ","PP","P-ROLE","with"</tt><br>
+<tt>"IML","CONJP","IML","NP-SBJ","PP","NP","N","cancer"</tt><br>
+<tt>"IML","CONJP","IML","BEP;~cat_Ve","are"</tt><br>
+<tt>"IML","CONJP","IML","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IML","CONJP","IML","IP-PPL-CAT","VVN","known"</tt><br>
+<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","TO","to"</tt><br>
+<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","VB","survive"</tt><br>
+<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","ADVP-TMP","ADVR","longer"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=69_bnc_B05@29,31" target="_blank">13#69_bnc_B05&#64;17,19</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;the&nbsp;next&nbsp;day&nbsp;they&nbsp;were&nbsp;married&nbsp;")</tt><br>
+<tt>"IML","NP-TMP","D","the"</tt><br>
+<tt>"IML","NP-TMP","NUM","next"</tt><br>
+<tt>"IML","NP-TMP","N","day"</tt><br>
+<tt>"IML","NP-SBJ;{PRINCE+CINDERELLA}","PRO","they"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"BED;~cat_Ve"</font>,"were"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn","married"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_age_09_M72@152,154" target="_blank">141#12_age_09_M72&#64;12,14</a>"</tt><br>
+
 <br>
 <h2><a name="sec7.4">7.4</a>&nbsp;&nbsp;&nbsp;Codes for verbs that co-occur with existential <i>there</i></h2>
 
-<p align="justify">This section introduces codes for verbs that co-occur with existential <i>there</i> (tagged <tt>EX</tt>): [ex_V], [ex_Va], [ex_Vpr], [ex_Vp], [ex_cat_Ve], [ex_cat_Vg], and [ex_cat_Vt].</p>
+<p align="justify">This section introduces codes for verbs that co-occur with existential <i>there</i> (tagged <tt>EX</tt>):</p>
+<ul>
+<li>[ex_V] (section <a href="chapter7.html#sec7.4.1">7.4.1</a>),</li>
+<li>[ex_Va] (section <a href="chapter7.html#sec7.4.2">7.4.2</a>),</li>
+<li>[ex_Vpr] (section <a href="chapter7.html#sec7.4.3">7.4.3</a>),</li>
+<li>[ex_Vp] (section <a href="chapter7.html#sec7.4.4">7.4.4</a>),</li>
+<li>[ex_cat_Ve] (section <a href="chapter7.html#sec7.4.5">7.4.5</a>),</li>
+<li>[ex_cat_Vg] (section <a href="chapter7.html#sec7.4.6">7.4.6</a>), and</li>
+<li>[ex_cat_Vt] (section <a href="chapter7.html#sec7.4.7">7.4.7</a>).</li>
+</ul>
 
 <h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;[ex_V]</h3>
 
-<p align="justify">[ex_V] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) and nothing else. Example (<a href="chapter7.html#ex7.19">7.19</a>) illustrates how co-occuring <i>there</i> can be separated by interveing catenative verbs from the [ex_V] marked verb <i>be</i> with its existential subject <i>trouble</i>.</p>
+<p align="justify">[ex_V] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) and nothing else. Example (<a href="chapter7.html#ex7.25">7.25</a>) illustrates how co-occuring <i>there</i> can be separated by interveing catenative verbs from the [ex_V] marked verb <i>be</i> with its existential subject <i>trouble</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;there&nbsp;&lt;apos&gt;s&nbsp;going&nbsp;to&nbsp;be&nbsp;trouble&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
@@ -383,10 +511,10 @@
 
 <h3><a name="sec7.4.2">7.4.2</a>&nbsp;&nbsp;&nbsp;[ex_Va]</h3>
 
-<p align="justify">[ex_Va] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + subject predicative that is an adjective phrase. Example (<a href="chapter7.html#ex7.20">7.20</a>) illustrates the [ex_Va] marked verb <i>ai</i> with selected existential subject <i>nothing</i> and subject predicative <i>wrong with it</i>.</p>
+<p align="justify">[ex_Va] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + subject predicative that is an adjective phrase. Example (<a href="chapter7.html#ex7.26">7.26</a>) illustrates the [ex_Va] marked verb <i>ai</i> with selected existential subject <i>nothing</i> and subject predicative <i>wrong with it</i>.</p>
 
 <dl>
-  <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;there&nbsp;ai&nbsp;n&lt;apos&gt;t&nbsp;nothing&nbsp;wrong&nbsp;with&nbsp;it&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
@@ -400,10 +528,10 @@
 
 <h3><a name="sec7.4.3">7.4.3</a>&nbsp;&nbsp;&nbsp;[ex_Vpr]</h3>
 
-<p align="justify">[ex_Vpr] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + preposition phrase. In the annotation of (<a href="chapter7.html#ex7.21">7.21</a>), the selected preposition phrase is marked with location (<tt>-LOC</tt>) function.</p>
+<p align="justify">[ex_Vpr] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + preposition phrase. In the annotation of (<a href="chapter7.html#ex7.27">7.27</a>), the selected preposition phrase is marked with location (<tt>-LOC</tt>) function.</p>
 
 <dl>
-  <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;There&nbsp;was&nbsp;an&nbsp;inscription&nbsp;on&nbsp;the&nbsp;door&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"There"</tt><br>
@@ -417,10 +545,10 @@
 
 <h3><a name="sec7.4.4">7.4.4</a>&nbsp;&nbsp;&nbsp;[ex_Vp]</h3>
 
-<p align="justify">[ex_Vp] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + particle. In the annotation of (<a href="chapter7.html#ex7.22">7.22</a>), the selected particle is marked with location (<tt>-LOC</tt>) function.</p>
+<p align="justify">[ex_Vp] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + particle. In the annotation of (<a href="chapter7.html#ex7.28">7.28</a>), the selected particle is marked with location (<tt>-LOC</tt>) function.</p>
 
 <dl>
-  <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;there&nbsp;&lt;apos&gt;s&nbsp;nothing&nbsp;there&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
@@ -434,7 +562,7 @@
 <p align="justify">[ex_cat_Ve] is the code to mark</p>
 
 <dl>
-  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;There&nbsp;&lt;apos&gt;s&nbsp;something&nbsp;inscribed&nbsp;on&nbsp;this&nbsp;.&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PUQ"</font>,"&lt;ldquo&gt;"</tt><br>
@@ -454,7 +582,7 @@
 <p align="justify">[ex_cat_Vg] is the code to mark</p>
 
 <dl>
-  <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;is&nbsp;there&nbsp;heat&nbsp;coming&nbsp;out&nbsp;anywhere&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"BEP;~ex_cat_Vg"</font>,"is"</tt><br>
@@ -470,7 +598,7 @@
 <p align="justify">[ex_cat_Vt] is the code to mark</p>
 
 <dl>
-  <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
 </dl>
 <tt>=N("&nbsp;There&nbsp;is&nbsp;&lt;comma&gt;&nbsp;I&nbsp;believe&nbsp;&lt;comma&gt;&nbsp;insufficient&nbsp;evidence&nbsp;to&nbsp;back&nbsp;up&nbsp;this&nbsp;viewpoint&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"There"</tt><br>
