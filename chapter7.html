@@ -1,621 +1,1209 @@
-<h1><a name="ch7">Chapter 7</a><br>More verb codes</h1>
+<h1><a name="ch7">Chapter 7</a><br>Main verbs</h1>
 
 <br>
 <h2><a name="sec7.1">7.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">Chapter <a href="chapter6.html#ch6">6</a> was concerned with providing verb codes for main verbs. The main verb is either the only verb of a clause or the last verb to occur in a sequence of verbs of the same clause. Verbs of a verb sequence that are prior to the main verb are called catenative verbs. Section <a href="chapter7.html#sec7.2">7.2</a> is an overview of the codes available for catenative verbs.</p>
+<p align="justify">It is the main verb of a clause that determines which constituents (if any, besides the subject) are required to make the clause structurally complete. The annotation marks these requirements by adding to the word class tag of each main verb a code from the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989). These verb codes:</p>
+<dl>
+<dt>(i)</dt><dd>partially establish word sense,</dd>
+<dt>(ii)</dt><dd>disambiguate the subject contribution for passivised verbs (for example <tt>-DOB1</tt> role with [Tnt] vs <tt>-OB2</tt> role with [Dn.t]),</dd>
+<dt>(iii)</dt><dd>signal when adverbial elements are selected items of the clause,</dd>
+<dt>(iv)</dt><dd>provide a succinct notation to assist cataloging and searching clause structure, and</dd>
+<dt>(v)</dt><dd>offer an independent check on the validity of the clause annotation.</dd>
+</dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Passive voice is discussed in section <a href="chapter7.html#sec7.3">7.3</a>. Passive voice is most easily recognised when arising with the catenative [cat_Ve] verb <small style="font-size: 75%">BE</small>, or some other catenative [cat_Ve] verb, such as <small style="font-size: 75%">GET</small>.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Additional verb codes in section <a href="chapter7.html#sec7.4">7.4</a> support the occurrence of existential <i>there</i>.</p>
+<p align="justify">The chapter is organised as follows. Section <a href="chapter7.html#sec7.2">7.2</a> gives an overview of the OALD4 codes. Thereafter each code is described and illustrated, with section <a href="chapter7.html#sec7.3">7.3</a> covering linking verb codes; section <a href="chapter7.html#sec7.4">7.4</a>, intransitive verb codes; section <a href="chapter7.html#sec7.5">7.5</a>, monotransitive verb codes; section <a href="chapter7.html#sec7.6">7.6</a>, complex-transitive verb codes; and section <a href="chapter7.html#sec7.7">7.7</a>, ditransitive verb codes.</p>
 
 <br>
-<h2><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;Catenative verb codes</h2>
+<h2><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;OALD4 verb codes</h2>
 
-<p align="justify">A catenative verb occurs at a clause layer of the annotation alongside a clause intermediate layer with the <tt>-CAT</tt> extension. This clause intermediate layer is the selected complement of the catenative verb. Full tags for <tt>-CAT</tt> layers are listed in Table <a href="chapter7.html#table7.1">7.1</a>. The full tag for a <tt>-CAT</tt> layer is determined by the form of the directly contained verb.</p>
+<p align="justify">An OALD4 verb code starts with a capital letter: L, I, T, C, or D. This capital letter signals how the verb belongs to one of the verb classes of Table <a href="chapter7.html#table7.1">7.1</a>. These verb classes set requirements for the structural level of the clause: the NUMBER of elements and their FUNCTION. An element with subject function is always required in a basic clause, so mentioned elements are additional to the subject.</p>
 
-<p><a name="table7.1">Table 7.1: Tags for marking a layer selected as the complement of a catenative verb</a></p>
+<p><a name="table7.1">Table 7.1: Capital letters L, I, T, C, and D</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>IP-INF-CAT</tt></td><td>layer with infinitive verb introduced by a catenative verb</td></tr>
-<tr><td><tt>IP-PPL-CAT</tt></td><td>layer with participle verb introduced by a catenative verb</td></tr>
+  <tr>
+    <td>L</td>
+    <td colspan="2">LINKING verb</td>
+    <td>is associated with a SUBJECT PREDICATIVE (<tt>-PRD2</tt>), an element which provides information about the subject of the clause.</td>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td colspan="2">INTRANSITIVE verb</td>
+    <td>is NOT associated with a PREDICATIVE or an OBJECT, although it may be associated with an ADVERBIAL, an element which tells us about time, place, manner, etc of the action of the verb.</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td rowspan="3">TRANSITIVE verb</td>
+    <td>MONO-TRANSITIVE verb</td>
+    <td>is associated with a DIRECT OBJECT (<tt>-OB1</tt>), an element which often refers to the person or thing affected by the action of the verb.</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>COMPLEX-TRANSITIVE verb</td>
+    <td>is associated with both a DIRECT OBJECT (<tt>-OB1</tt>) and an OBJECT PREDICATIVE (<tt>-PRD</tt>), an element which provides more information about the direct object. Note: in the code, a dot divides information about the realisation of the direct object from information about the realisation of the object predicative.</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>DITRANSITIVE verb</td>
+    <td>is associated with both a DIRECT OBJECT (<tt>-OB1</tt>) and an INDIRECT OBJECT (<tt>-OB2</tt>), an element which refers to a person who receives something or benefits from an action. Note: in the code, a dot divides information about the realisation of the direct object from information about the realisation of the indirect object.</td>
+  </tr>
 </table>
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Having clause intermediate structure made up from embedded <tt>-CAT</tt> layers reflects the structural commitments of the catenative verb codes that mark a <tt>-CAT</tt> layer as their complement. This intermediate structure also provides the structural isolation needed for coordination, which is possible with any clause intermediate layer. For example, there are multiple <tt>-CAT</tt> layers in (<a href="chapter7.html#ex7.1">7.1</a>), with coordination occuring with the higher layer.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A complete verb code is reached when a capital letter from Table <a href="chapter7.html#table7.1">7.1</a> is possibly followed by lower case letters from Table <a href="chapter7.html#table7.2">7.2</a>.</p>
+
+<p><a name="table7.2">Table 7.2: Lower case letters a, n, p, pr, n&sol;pr, n&sol;a, t, f, w, g, and i</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td>a</td><td>adjective phrase</td></tr>
+<tr><td>n</td><td>noun phrase</td></tr>
+<tr><td>p</td><td>adverb particle</td></tr>
+<tr><td>pr</td><td>preposition phrase</td></tr>
+<tr><td>n&sol;pr</td><td>noun phrase&sol;preposition phrase</td></tr>
+<tr><td>n&sol;a</td><td><i>as</i> + noun phrase&sol;adjective phrase</td></tr>
+<tr><td>t</td><td>non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF</tt> with internal <tt>TO</tt>)</td></tr>
+<tr><td>f</td><td><i>that</i>-clause (<tt>CP-THT</tt>)</td></tr>
+<tr><td>w</td><td>finite or non-finite clause with <i>wh</i> (<tt>CP-QUE</tt>)</td></tr>
+<tr><td>g</td><td>participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL</tt>)</td></tr>
+<tr><td>i</td><td>non-finite clause (&lsquo;bare&rsquo; infinitive) (<tt>IP-INF</tt> without internal <tt>TO</tt>)</td></tr>
+</table>
+<p align="justify">These lower case letters represent information about the FORM of the constituents that are used to realise the required elements that are signalled by their capital letter. For example, [La] is the code to mark a linking verb in clause structure with the linking verb + a subject predicative constituent that is an adjective phrase. In codes with multiple lower case letters, the lower case letters can appear separated by a dot (&lsquo;.&rsquo;) character. For example, [Cn.a] is the code to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object constituent that is a noun phrase + an object predicative constituent that is an adjective phrase.</p>
+
+<br>
+<h2><a name="sec7.3">7.3</a>&nbsp;&nbsp;&nbsp;Linking verb codes</h2>
+
+<p align="justify">This section introduces linking verb codes: [La] and [Ln].</p>
+
+<h3><a name="sec7.3.1">7.3.1</a>&nbsp;&nbsp;&nbsp;[La]</h3>
+
+<p align="justify">[La] is the code used to mark a linking verb in clause structure with the linking verb + subject predicative that is an adjective phrase. The subject predicative describes some quality or feature of the subject. In (<a href="chapter7.html#ex7.1">7.1</a>), <i>was</i> is a linking verb with the subject predicative <i>quite good</i> to add information about the subject, <i>the weather</i>.</p>
 
 <dl>
   <dt>(<a name="ex7.1">7.1</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Phones&nbsp;were&nbsp;being&nbsp;tapped&nbsp;and&nbsp;going&nbsp;out&nbsp;of&nbsp;action&nbsp;;&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","NS","Phones"</tt><br>
-<tt>"IP-MAT","BED;~cat_Vg","were"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","IML","BAG;~cat_Ve","being"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN","tapped"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","CONJ","and"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","VAG","going"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","PP-OBU","P-ROLE","out_of"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","PP-OBU","NP","N","action"</tt><br>
-<tt>"IP-MAT","PU",";"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_lob_A02@7,12" target="_blank">54_lob_A02&#64;7,12</a>"</tt><br>
+<tt>=N("&nbsp;The&nbsp;weather&nbsp;was&nbsp;quite&nbsp;good&nbsp;&lt;comma&gt;&nbsp;apart&nbsp;from&nbsp;the&nbsp;occasional&nbsp;shower&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","weather"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BED;~La"</font>,"was"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"ADVP","ADV","quite"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"ADJ","good"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-MOD","P-ROLE","apart_from"</tt><br>
+<tt>"IP-MAT","PP-MOD","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-MOD","NP","ADJP","ADJ","occasional"</tt><br>
+<tt>"IP-MAT","PP-MOD","NP","N","shower"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_age_12_F27@7,9" target="_blank">10_age_12_F27&#64;7,9</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The remainder of this section illustrates the codes available for catenative verbs. Codes differ because they indicate the form of the <tt>-CAT</tt> marked complement:</p>
-<ul>
-<li>[cat_Ve] (section <a href="chapter7.html#sec7.2.1">7.2.1</a>),</li>
-<li>[cat_Vg] (section <a href="chapter7.html#sec7.2.2">7.2.2</a>),</li>
-<li>[cat_Vi] (section <a href="chapter7.html#sec7.2.3">7.2.3</a>), and</li>
-<li>[cat_Vt] (section <a href="chapter7.html#sec7.2.4">7.2.4</a>).</li>
-</ul>
-
-<p align="justify">There are also catenative verbs that, in addition to a <tt>-CAT</tt> marked complement, select a particle as part of a phrasal verb:</p>
-<ul>
-<li>[cat_phr_Vp.g] (section <a href="chapter7.html#sec7.2.5">7.2.5</a>) and</li>
-<li>[cat_phr_Vp.t] (section <a href="chapter7.html#sec7.2.6">7.2.6</a>).</li>
-</ul>
-
-<h3><a name="sec7.2.1">7.2.1</a>&nbsp;&nbsp;&nbsp;[cat_Ve]</h3>
-
-<p align="justify">[cat_Ve] is the code to mark a catenative verb with a <tt>-CAT</tt> complement that directly contains a past participle (&lcub;en&rcub;) verb form. Example (<a href="chapter7.html#ex7.2">7.2</a>) illustrates the [cat_Ve] verb <i>appeared</i> with selection of a <tt>-CAT</tt> complement with past participle <i>struck</i> as a passive verb.</p>
+<p align="justify">Co-occurrence of a provisional subject (<tt>-PSBJ</tt>) with a notational subject (<tt>-NSBJ</tt>) is possible in a clause with an [La] marked verb, as (<a href="chapter7.html#ex7.2">7.2</a>) and (<a href="chapter7.html#ex7.3">7.3</a>) show.</p>
 
 <dl>
   <dt>(<a name="ex7.2">7.2</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;For&nbsp;a&nbsp;second&nbsp;&lt;comma&gt;&nbsp;engages&nbsp;&lt;comma&gt;&nbsp;cooks&nbsp;&lt;comma&gt;&nbsp;voyageurs&nbsp;appeared&nbsp;struck&nbsp;dumb&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","PP-TMP","P-ROLE","For"</tt><br>
-<tt>"IP-MAT","PP-TMP","NP","D","a"</tt><br>
-<tt>"IP-MAT","PP-TMP","NP","N","second"</tt><br>
-<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","NP","NS","engages"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","CONJP;&#64;3","NP","NS","cooks"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","CONJP;&#64;5","NP","NS","voyageurs"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"appeared"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Cn.a","struck"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADJP-PRD2","ADJ","dumb"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=15_susanne_N04@29,31" target="_blank">15_susanne_N04&#64;29,31</a>"</tt><br>
-
-<p align="justify">Example (<a href="chapter7.html#ex7.3">7.3</a>) illustrates the [cat_Ve] verb <i>grown</i> with selection of a <tt>-CAT</tt> complement with past participle <i>accustomed</i> as a passive verb.</p>
+<tt>=N("&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;amazing&nbsp;that&nbsp;#&nbsp;er&nbsp;that&nbsp;Hoover&nbsp;")</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~La","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADJ","amazing"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"D","that_#_er_that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"NPR","Hoover"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=464_christine_T13@2,10" target="_blank">464_christine_T13&#64;2,10</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex7.3">7.3</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;eyes&nbsp;that&nbsp;had&nbsp;grown&nbsp;accustomed&nbsp;to&nbsp;the&nbsp;absence&nbsp;of&nbsp;light&nbsp;")</tt><br>
-<tt>"NP","NS","eyes"</tt><br>
-<tt>"NP","IP-REL","NP-SBJ","RPRO","that"</tt><br>
-<tt>"NP","IP-REL","HVD;~cat_Ve","had"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~cat_Ve"</font>,"grown"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn.pr","accustomed"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","D","the"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","N","absence"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","P-ROLE","of"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","NP","N","light"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=108_susanne_N02@62,64" target="_blank">52#108_susanne_N02&#64;11,13</a>"</tt><br>
+<tt>=N("&nbsp;It&nbsp;is&nbsp;possible&nbsp;that&nbsp;I&nbsp;over&nbsp;&lt;hyphen&gt;&nbsp;corrected&nbsp;")</tt><br>
+<tt>"IP-MAT-OB1","NP-PSBJ","PRO","It"</tt><br>
+<tt>"IP-MAT-OB1","BEP;~La","is"</tt><br>
+<tt>"IP-MAT-OB1","ADJP-PRD2",<font style="background-color: MediumSpringGreen;">"ADJ"</font>,<font style="background-color: SandyBrown;">"possible"</font></tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-THT-NSBJ"</font>,"IP-SUB","C","that"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-THT-NSBJ"</font>,"IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-THT-NSBJ"</font>,"IP-SUB","RP","over"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-THT-NSBJ"</font>,"IP-SUB","PU","&lt;hyphen&gt;"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-THT-NSBJ"</font>,"IP-SUB","VBD","corrected"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=83_susanne_A14@12,11,13" target="_blank">4#83_susanne_A14&#64;9,8,10</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The [cat_Ve] verbs <i>appeared</i> of (<a href="chapter7.html#ex7.2">7.2</a>) and <i>grown</i> of (<a href="chapter7.html#ex7.3">7.3</a>) bring about a passive interpretation for the past participle (&lcub;en&rcub;) verb of their <tt>-CAT</tt> complement. Most typically, it is [cat_Ve] <small style="font-size: 75%">BE</small> that is used to create the environment for a passive <tt>-CAT</tt> complement to occur, discussed in section <a href="chapter7.html#sec7.3">7.3</a> below. Also, [cat_Ve] <small style="font-size: 75%">GET</small> is another notable trigger for a passive.</p>
+<h3><a name="sec7.3.2">7.3.2</a>&nbsp;&nbsp;&nbsp;[Ln]</h3>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;One exception where a [cat_Ve] verb doesn't lead to a passive interpretation is <small style="font-size: 75%">HAVE</small>, e.g., seen as past tense <i>had</i> in (<a href="chapter7.html#ex7.3">7.3</a>). Instead, [cat_Ve] <small style="font-size: 75%">HAVE</small> brings about a perfect construction, discussed next in section <a href="chapter7.html#sec7.2.1.1">7.2.1.1</a>.</p>
-
-<h4><a name="sec7.2.1.1">7.2.1.1</a>&nbsp;&nbsp;&nbsp;Perfect construction</h4>
-
-<p align="justify">Catenative [cat_Ve] <small style="font-size: 75%">HAVE</small> is used to form the perfect construction. The perfect tense is formed by:</p>
-<ul>
-<li>turning the verb into its past participle inflection</li>
-<li>adding a form of the verb <small style="font-size: 75%">HAVE</small> before it.</li>
-</ul>
-
-<p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter7.html#ex7.4">7.4</a>).</p>
+<p align="justify">[Ln] is the code used to mark a linking verb in clause structure with the linking verb + subject predicative that is a noun phrase. The subject predicative gives further information about the subject. In (<a href="chapter7.html#ex7.4">7.4</a>), <i>remained</i> is a linking verb with the subject predicative <i>the real problem</i> to add information about the subject, <i>the date</i>.</p>
 
 <dl>
   <dt>(<a name="ex7.4">7.4</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Mr.&nbsp;Yamada&nbsp;has&nbsp;gone&nbsp;to&nbsp;Tokyo&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","N","Mr."</tt><br>
-<tt>"IP-MAT","NP-SBJ","NPR","Yamada"</tt><br>
-<tt>"IP-MAT","HVP;~cat_Ve","has"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,<font style="background-color: SandyBrown;">"VVN"</font>,"gone"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","NP","NPR","Tokyo"</tt><br>
+<tt>=N("&nbsp;But&nbsp;the&nbsp;date&nbsp;remained&nbsp;the&nbsp;real&nbsp;problem&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","CONJ","But"</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","date"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Ln"</font>,"remained"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD2"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD2"</font>,"ADJP","ADJ","real"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD2"</font>,"N","problem"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1366_samples_kisonihongo@10,9" target="_blank">1366_samples_kisonihongo&#64;10,9</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=51_bnc_B13@9,11" target="_blank">51_bnc_B13&#64;9,11</a>"</tt><br>
 
-<p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter7.html#ex7.4">7.4</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter7.html#ex7.5">7.5</a>).</p>
+<br>
+<h2><a name="sec7.4">7.4</a>&nbsp;&nbsp;&nbsp;Intransitive verb codes</h2>
+
+<p align="justify">This section introduces intransitive verb codes: [I], [Ipr], [Ip], [In&sol;pr], and [It].</p>
+
+<h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;[I]</h3>
+
+<p align="justify">[I] is the code used to mark an intransitive verb in clause structure with the intransitive verb but no other post-verbal selected element(s). In this pattern, the verb is not followed by an object, a subject predicative, or a closely linked adjunct. Optional adverbial phrases of location, manner, time, etc <i>can</i> be used (e.g.&nbsp;<i>here where the chip shop was</i> in (<a href="chapter7.html#ex7.5">7.5</a>), and <i>with high hopes and a mongrel puppy</i> in (<a href="chapter7.html#ex7.6">7.6</a>)).</p>
 
 <dl>
-  <dt>(<a name="ex7.5">7.5</a>)</dt><dd>Mr.&nbsp;Yamada went to Tokyo.</dd>
+  <dt>(<a name="ex7.5">7.5</a>)</dt><dd></dd>
 </dl>
-
-<h3><a name="sec7.2.2">7.2.2</a>&nbsp;&nbsp;&nbsp;[cat_Vg]</h3>
-
-<p align="justify">[cat_Vg] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form.</p>
+<tt>=N("&nbsp;another&nbsp;shop&nbsp;opened&nbsp;here&nbsp;where&nbsp;the&nbsp;chip&nbsp;shop&nbsp;was&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","another"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","shop"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~I"</font>,"opened"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"ADV","here"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"PRN","NP","IP-REL","ADVP-LOC","RADV","where"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"PRN","NP","IP-REL","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"PRN","NP","IP-REL","NP-SBJ","N","chip"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"PRN","NP","IP-REL","NP-SBJ","N","shop"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"PRN","NP","IP-REL","BED;~I","was"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=332_christine_T14@7,9" target="_blank">332_christine_T14&#64;7,9</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex7.6">7.6</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;He&nbsp;kept&nbsp;going&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Vg"</font>,"kept"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG","going"</tt><br>
+<tt>=N("&nbsp;I&nbsp;arrived&nbsp;with&nbsp;high&nbsp;hopes&nbsp;and&nbsp;a&nbsp;mongrel&nbsp;puppy&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~I"</font>,"arrived"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"P-ROLE","with"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","NP","ADJP","ADJ","high"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","NP","NS","hopes"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","CONJP","NP","D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","CONJP","NP","N","mongrel"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-COM"</font>,"NP","NML","CONJP","NP","N","puppy"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=52_susanne_N03@5,7" target="_blank">52_susanne_N03&#64;5,7</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_texts_Alresford@5,7" target="_blank">13_texts_Alresford&#64;5,7</a>"</tt><br>
 
-<h4><a name="sec7.2.2.1">7.2.2.1</a>&nbsp;&nbsp;&nbsp;Progressive construction</h4>
-
-<p align="justify">The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining a verb's present participle (&lcub;ing&rcub;) verb form (e.g., <i>watching</i>) with an instance of <small style="font-size: 75%">BE</small> that is a catenative [cat_Vg] verb, e.g., <i>was watching</i> in (<a href="chapter7.html#ex7.7">7.7</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation of (<a href="chapter7.html#ex7.7">7.7</a>), <tt>-NSBJ</tt> function information marks the extraposed subject, while <tt>-PSBJ</tt> marks the provisional subject <i>it</i>.</p>
 
 <dl>
   <dt>(<a name="ex7.7">7.7</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;was&nbsp;watching&nbsp;the&nbsp;fire-engines&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BED;~cat_Vg"</font>,"was"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","the"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","NS","fire-engines"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=391_christine_T40@8,5" target="_blank">391_christine_T40&#64;8,5</a>"</tt><br>
+<tt>=N("&nbsp;It&nbsp;has&nbsp;become&nbsp;spring&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-PSBJ","PRO","It"</tt><br>
+<tt>"IP-MAT","HVP;~cat_Ve","has"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~I"</font>,"become"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"N","spring"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=406_samples_purple_intermediate@8,10" target="_blank">406_samples_purple_intermediate&#64;8,10</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction (see section <a href="chapter7.html#sec7.2.1.1">7.2.1.1</a>), as with <i>been watching</i> in (<a href="chapter7.html#ex7.8">7.8</a>).</p>
+<h3><a name="sec7.4.2">7.4.2</a>&nbsp;&nbsp;&nbsp;[Ipr]</h3>
+
+<p align="justify">[Ipr] is the code used to mark an intransitive verb in clause structure with the intransitive verb and a post-verbal selected preposition phrase. The verb is closely linked in grammar and meaning to the preposition phrase.</p>
+<ul>
+<li>After some verbs, the preposition phrase cannot be removed without changing the meaning of the verb or producing nonsense:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.8">7.8</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Bill&nbsp;has&nbsp;been&nbsp;watching&nbsp;little&nbsp;Alice&nbsp;ever&nbsp;since&nbsp;Mary&nbsp;left&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","NPR","Bill"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HVP;~cat_Ve"</font>,"has"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-OB1","ADJP","ADJ","little"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-OB1","NPR","Alice"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","ADVP","ADV","ever"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","P-CONN","since"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","IP-ADV","NP-SBJ","NPR","Mary"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","PP-SCON-CNT","IP-ADV","VBD","left"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=447_samples_blue_book@11,8,5" target="_blank">447_samples_blue_book&#64;11,8,5</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be used to introduce the passive construction (see section <a href="chapter7.html#sec7.3">7.3</a>), as with <i>is getting</i> in (<a href="chapter7.html#ex7.9">7.9</a>).</p>
+<tt>=N("&nbsp;we&nbsp;got&nbsp;out&nbsp;the&nbsp;car&nbsp;")</tt><br>
+<tt>"IP-ADV","NP-SBJ","PRO","we"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"VBD;~Ipr"</font>,"got"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"P-ROLE","out"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","D","the"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","N","car"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=427_christine_T05@13,15" target="_blank">9#427_christine_T05&#64;5,7</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex7.9">7.9</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Britain&nbsp;is&nbsp;getting&nbsp;left&nbsp;behind&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","NPR","Britain"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~cat_Vg"</font>,"is"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG;~cat_Ve"</font>,"getting"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN"</font>,"left"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","ADVP-LOC","ADV","behind"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_bnc_B41@33,30,38" target="_blank">26#43_bnc_B41&#64;8,5,13</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction and introduce the passive construction, as with <i>been being</i> in (<a href="chapter7.html#ex7.10">7.10</a>).</p>
+<tt>=N("&nbsp;some&nbsp;cases&nbsp;result&nbsp;in&nbsp;persistent&nbsp;arthritis&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","some"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","cases"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBP;~Ipr"</font>,"result"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"P-ROLE","in"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","ADJP","ADJ","persistent"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","N","arthritis"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=56_texts_FACTBOOK_1_2010@130,132" target="_blank">124#56_texts_FACTBOOK_1_2010&#64;7,9</a>"</tt><br>
+<ul>
+<li>After other verbs, the preposition phrase can be removed freely:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.10">7.10</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;He&nbsp;might&nbsp;have&nbsp;been&nbsp;being&nbsp;questioned&nbsp;by&nbsp;the&nbsp;police&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
-<tt>"IP-MAT","MD","might"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HV;~cat_Ve"</font>,"have"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"BAG;~cat_Ve"</font>,"being"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"questioned"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","P-ROLE","by"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","D","the"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","NS","police"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=164_samples_BUFFALO@13,10,7,16" target="_blank">164_samples_BUFFALO&#64;13,10,7,16</a>"</tt><br>
-
-<h3><a name="sec7.2.3">7.2.3</a>&nbsp;&nbsp;&nbsp;[cat_Vi]</h3>
-
-<p align="justify">[cat_Vi] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains a bare infinitive verb.</p>
+<tt>=N("&nbsp;could&nbsp;n&lt;apos&gt;t&nbsp;cope&nbsp;with&nbsp;the&nbsp;demand&nbsp;created&nbsp;")</tt><br>
+<tt>"IML","MD","could"</tt><br>
+<tt>"IML","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VB;~Ipr"</font>,"cope"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"P-ROLE","with"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","N","demand"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","IP-PPL","VVN","created"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_young_adult_E81@55,57" target="_blank">50#3_young_adult_E81&#64;6,8</a>"</tt><br>
+<ul>
+<li>Some verbs used in this pattern can be made passive. The noun phrase following the preposition in the active pattern becomes the subject of the passive one:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.11">7.11</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;you&nbsp;dare&nbsp;talk&nbsp;to&nbsp;me&nbsp;like&nbsp;that&nbsp;")</tt><br>
-<tt>"IP-MAT","DOP;~op_V","do"</tt><br>
-<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VB;~cat_Vi"</font>,"dare"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"VB","talk"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","NP","PRO","me"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","P-ROLE","like"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","NP","D","that"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=523_christine_T06@9,11" target="_blank">523_christine_T06&#64;9,11</a>"</tt><br>
+<tt>=N("&nbsp;All&nbsp;accommodation&nbsp;and&nbsp;travel&nbsp;costs&nbsp;are&nbsp;paid&nbsp;for&nbsp;&lt;comma&gt;&nbsp;including&nbsp;transport&nbsp;to&nbsp;and&nbsp;from&nbsp;the&nbsp;airport&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","Q","All"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","NML","NP","N","accommodation"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NML","NML","CONJP","NP","N","travel"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","costs"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PP","*ICH*-167"</tt><br>
+<tt>"IP-MAT","BEP;~cat_Ve","are"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~Ipr"</font>,"paid"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"P-ROLE","for"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-167","P-ROLE","including"</tt><br>
+<tt>"IP-MAT","PP-167","NP","N","transport"</tt><br>
+<tt>"IP-MAT","PP-167","NP","PP","PP","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","PP-167","NP","PP","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","PP-167","NP","PP","CONJP","PP","P-ROLE","from"</tt><br>
+<tt>"IP-MAT","PP-167","NP","PP","CONJP","PP","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-167","NP","PP","CONJP","PP","NP","N","airport"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=8_fce_0100_2000_06@25,27" target="_blank">8_fce_0100_2000_06&#64;25,27</a>"</tt><br>
 
-<h3><a name="sec7.2.4">7.2.4</a>&nbsp;&nbsp;&nbsp;[cat_Vt]</h3>
+<h3><a name="sec7.4.3">7.4.3</a>&nbsp;&nbsp;&nbsp;[Ip]</h3>
 
-<p align="justify">[cat_Vt] is the code to mark a catenative verb with <tt>-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>.</p>
+<p align="justify">[Ip] is the code used to mark an intransitive verb in clause structure with the intransitive verb and a post-verbal selected adverb particle. The verb is closely linked in grammar and meaning to the adverb particle.</p>
+<ul>
+<li>After some verbs, the particle cannot be removed without changing the meaning of the verb or producing nonsense:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.12">7.12</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;This&nbsp;may&nbsp;appear&nbsp;to&nbsp;be&nbsp;missing&nbsp;the&nbsp;point&nbsp;somewhat&nbsp;")</tt><br>
-<tt>"IML","NP-SBJ","D","This"</tt><br>
-<tt>"IML","MD","may"</tt><br>
-<tt>"IML","VB;~cat_Vt","appear"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"BE;~cat_Vg","be"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","VAG","missing"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","NP-OB1","D","the"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","NP-OB1","N","point"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","ADVP-MNR","ADV","somewhat"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_young_adult_E12@11" target="_blank">3#6_young_adult_E12&#64;9</a>"</tt><br>
+<tt>=N("&nbsp;they&nbsp;got&nbsp;out&nbsp;")</tt><br>
+<tt>"IP-ADV","NP-SBJ;{MOTHER+DOCTOR}","PRO","they"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"VBD;~Ip"</font>,"got"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"ADVP-DIR"</font>,"RP","out"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=233_texts_TED_talk_11@11,13" target="_blank">7#233_texts_TED_talk_11&#64;5,7</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex7.13">7.13</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;A&nbsp;drawing&nbsp;of&nbsp;the&nbsp;structure&nbsp;is&nbsp;to&nbsp;be&nbsp;found&nbsp;in&nbsp;reference&nbsp;6&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","D","A"</tt><br>
-<tt>"IP-MAT","NP-SBJ","N","drawing"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PP","P-ROLE","of"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PP","NP","D","the"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PP","NP","N","structure"</tt><br>
-<tt>"IP-MAT","BEP;~cat_Vt","is"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"BE;~cat_Ve","be"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","VVN","found"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","PP-LOC","P-ROLE","in"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","PP-LOC","NP","N","reference"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","PP-LOC","NP","NUM","6"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_J04@17" target="_blank">41_susanne_J04&#64;17</a>"</tt><br>
+<tt>=N("&nbsp;he&nbsp;might&nbsp;have&nbsp;got&nbsp;away&nbsp;altogether&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ;{PETER}","PRO","he"</tt><br>
+<tt>"IML","MD","might"</tt><br>
+<tt>"IML","HV;~cat_Ve","have"</tt><br>
+<tt>"IML","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~Ip"</font>,"got"</tt><br>
+<tt>"IML","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"ADVP-DIR"</font>,"ADV","away"</tt><br>
+<tt>"IML","IP-PPL-CAT","ADVP-MNR","ADV","altogether"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=16_classics_POTTER_1902@59,61" target="_blank">50#16_classics_POTTER_1902&#64;10,12</a>"</tt><br>
+<ul>
+<li>After some verbs, the particle can be deleted freely:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.14">7.14</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;that&nbsp;it&nbsp;was&nbsp;going&nbsp;to&nbsp;be&nbsp;a&nbsp;very&nbsp;special&nbsp;day&nbsp;for&nbsp;her&nbsp;")</tt><br>
-<tt>"IP-SUB","C","that"</tt><br>
-<tt>"IP-SUB","NP-PSBJ","PRO","it"</tt><br>
-<tt>"IP-SUB","BED;~cat_Vg","was"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT","VAG;~cat_Vt","going"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"BE;~I","be"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","D","a"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","ADJP","ADVP","ADV","very"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","ADJP","ADJ","special"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","N","day"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"PP-BNF","P-ROLE","for"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"PP-BNF","NP","PRO","her"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=31_fce_0100_2001_06@44" target="_blank">33#31_fce_0100_2001_06&#64;12</a>"</tt><br>
+<tt>=N("&nbsp;He&nbsp;turned&nbsp;away&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","PRO","He"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBD;~Ip"</font>,"turned"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"ADVP-DIR"</font>,"ADV","away"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=53_bnc_C03@7,9" target="_blank">3#53_bnc_C03&#64;5,7</a>"</tt><br>
+
+<h3><a name="sec7.4.4">7.4.4</a>&nbsp;&nbsp;&nbsp;[In&sol;pr]</h3>
+
+<p align="justify">[In&sol;pr] is the code used to mark an intransitive verb in clause structure with the intransitive verb and a post-verbal selected element that is either a noun phrase or a preposition phrase.</p>
+<li>Here, the verb is closely linked to a noun phrase or preposition phrase which indicates &lsquo;extent&rsquo; (e.g.&nbsp;how much the subject costs, what it measures, how long it lasts).</li>
+<li>The correct choice of preposition is <i>for</i> or <i>by</i>.</li>
+</ul>
+
+<h3><a name="sec7.4.5">7.4.5</a>&nbsp;&nbsp;&nbsp;[It]</h3>
+
+<p align="justify">[It] is the code to mark an intransitive verb in clause structure with the intransitive verb + a closely linked <i>to</i>-infinitive clause.</p>
+<ul>
+<li>Here, an intransitive verb is closely linked to a <i>to</i>-infinitive clause.</li>
+<li>Verbs in this pattern cannot be made passive.</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.15">7.15</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;we&nbsp;&lt;apos&gt;re&nbsp;gon&nbsp;na&nbsp;have&nbsp;to&nbsp;share&nbsp;them&nbsp;me&nbsp;and&nbsp;dad&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","we"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRN","*ICH*-141"</tt><br>
-<tt>"IP-MAT","BEP;~cat_Vg","&lt;apos&gt;re"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"VAG;~cat_Vt","gon"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"TO","na"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"HV;~cat_Vt","have"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"VB;~Tn","share"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"NP-OB1","PRO","them"</tt><br>
-<tt>"IP-MAT","PRN-141","NP","NML","NP","PRO","me"</tt><br>
-<tt>"IP-MAT","PRN-141","NP","NML","CONJP","CONJ","and"</tt><br>
-<tt>"IP-MAT","PRN-141","NP","NML","CONJP","NP","N","dad"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=267_christine_T09@9,12,17" target="_blank">267_christine_T09&#64;9,12,17</a>"</tt><br>
+<tt>=N("&nbsp;She&nbsp;goes&nbsp;to&nbsp;bed&nbsp;at&nbsp;about&nbsp;8.00&nbsp;P&lt;slash&gt;M&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","PRO","She"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBP;~Ipr"</font>,"goes"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"P-ROLE","to"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","N","bed"</tt><br>
+<tt>"IML","PP-TMP","P-ROLE","at"</tt><br>
+<tt>"IML","PP-TMP","NP","ADVP","ADV","about"</tt><br>
+<tt>"IML","PP-TMP","NP","NUM","8.00"</tt><br>
+<tt>"IML","PP-TMP","NP","N","P&lt;slash&gt;M"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_age_12_F26@7,9" target="_blank">3#9_age_12_F26&#64;5,7</a>"</tt><br>
 
-<h3><a name="sec7.2.5">7.2.5</a>&nbsp;&nbsp;&nbsp;[cat_phr_Vp.g]</h3>
+<br>
+<h2><a name="sec7.5">7.5</a>&nbsp;&nbsp;&nbsp;Mono-transitive verb codes</h2>
 
-<p align="justify">[cat_phr_Vp.g] is the code to mark a catenative phrasal verb with required particle and <tt>-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter7.html#ex7.16">7.16</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>-CAT</tt> complement.</p>
+<p align="justify">This section introduces mono-transitive verb codes: [Tn], [Tn.pr], [Tn.p], [Tf], [Tw], [Tt], [Tnt], [Tg], [Tsg], [Tng], and [Tni].</p>
+
+<h3><a name="sec7.5.1">7.5.1</a>&nbsp;&nbsp;&nbsp;[Tn]</h3>
+
+<p align="justify">[Tn] is the code to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase.</p>
+<ul>
+<li>The direct object is a noun phrase</li>
+<li>For verbs used in this pattern and the [I] pattern without a change of subject or meaning see section <a href="chapter7.html#sec7.4.1">7.4.1</a>.</li>
+</ul>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used in this pattern can also be used on the [I] pattern only with what is the object of the [Tn] needing to become the subject of the [I] pattern. For example, compare (<a href="chapter7.html#ex7.16">7.16</a>) with (<a href="chapter7.html#ex7.5">7.5</a>) above.</p>
 
 <dl>
   <dt>(<a name="ex7.16">7.16</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;if&nbsp;you&nbsp;keep&nbsp;on&nbsp;drinking&nbsp;")</tt><br>
-<tt>"PP-SCON-CNT-CND","P-CONN","if"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV","NP-SBJ","PRO","you"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: SandyBrown;">"VBP;~cat_phr_Vp.g"</font>,"keep"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"RP"</font>,"on"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG","drinking"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=370_christine_T26@32,34,36" target="_blank">25#370_christine_T26&#64;8,10,12</a>"</tt><br>
-
-<h3><a name="sec7.2.6">7.2.6</a>&nbsp;&nbsp;&nbsp;[cat_phr_Vp.t]</h3>
-
-<p align="justify">[cat_phr_Vp.t] is the code to mark a catenative phrasal verb with particle and <tt>-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter7.html#ex7.17">7.17</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>-CAT</tt> complement.</p>
+<tt>=N("&nbsp;In&nbsp;35&nbsp;years&nbsp;we&nbsp;have&nbsp;opened&nbsp;7&lt;comma&gt;000&nbsp;churches&nbsp;")</tt><br>
+<tt>"IP-MAT-OB1","PP-TMP","P-ROLE","In"</tt><br>
+<tt>"IP-MAT-OB1","PP-TMP","NP","NUM","35"</tt><br>
+<tt>"IP-MAT-OB1","PP-TMP","NP","NS","years"</tt><br>
+<tt>"IP-MAT-OB1","NP-SBJ","PRO","we"</tt><br>
+<tt>"IP-MAT-OB1","HVP;~cat_Ve","have"</tt><br>
+<tt>"IP-MAT-OB1","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~Tn"</font>,"opened"</tt><br>
+<tt>"IP-MAT-OB1","IP-PPL-CAT","NP-OB1","NUM","7&lt;comma&gt;000"</tt><br>
+<tt>"IP-MAT-OB1","IP-PPL-CAT","NP-OB1","NS","churches"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=77_susanne_A10@19" target="_blank">4#77_susanne_A10&#64;16</a>"</tt><br>
+</dl>
+<ul>
+<li>Most verbs in this pattern can be made passive, with the object of the active pattern becoming the subject of the passive one:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.17">7.17</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;The&nbsp;arrangement&nbsp;turned&nbsp;out&nbsp;to&nbsp;be&nbsp;excellent&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
-<tt>"IP-MAT","NP-SBJ","N","arrangement"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_phr_Vp.t"</font>,"turned"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"RP"</font>,"out"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"BE;~La","be"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"ADJP-PRD2","ADJ","excellent"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_susanne_N18@7,9,11" target="_blank">9_susanne_N18&#64;7,9,11</a>"</tt><br>
+<dl>
+<dt>a.</dt><dd>A small boy <b>opened</b> the door.</dd>
+<dt>b.</dt><dd>The door was <b>opened</b> (by a small boy).</dd>
+</dl>
 
-<br>
-<h2><a name="sec7.3">7.3</a>&nbsp;&nbsp;&nbsp;Passive voice</h2>
+<p align="justify">There are exception where no passive is possible [Tn no passive].</p>
 
-<p><a name="table7.2">Table 7.2: Tags for marking a logical subject</a></p>
+<h3><a name="sec7.5.2">7.5.2</a>&nbsp;&nbsp;&nbsp;[Tn.pr]</h3>
 
-<table border="1" cellpadding="10px">
-<tr><td><tt>NP-LGS</tt></td><td>logical subject noun phrase</td></tr>
-<tr><td><tt>PP-LGS</tt></td><td>logical subject preposition phrase</td></tr>
-</table>
-<p align="justify">The ACTIVE VOICE is the basic, unmarked form of the clause.</p>
-
-<p align="justify">The PASSIVE VOICE is the more marked form of the clause in which the <tt>-SBJ</tt> corresponds in meaning to an <tt>-OB1</tt> or <tt>-OB2</tt> (or very occasionally a <tt>-PRD</tt>) of a corresponding active clause.</p>
-
-<p align="justify">Sentence (<a href="chapter7.html#ex7.18">7.18</a>) is the passive of <i>Her boyfriend gave her a new outfit.</i> A passive is recognisable from:</p>
+<p align="justify">[Tn.pr] is the code to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase + an adverbial preposition phrase that is a selected item of the verb.</p>
 <ul>
-<li>the past participle form <i>gave</i></li>
-<li>a normal object (<i>her</i>) turned into the subject (<i>She</i>)</li>
-<li>the normal subject (<i>her boyfriend</i>) turned into an optional preposition phrase with <i>by</i></li>
-<li>the catenative [cat_Ve] verb <small style="font-size: 75%">BE</small>, or some other catenative [cat_Ve] verb, such as <small style="font-size: 75%">GET</small>.</li>
+<li>In this pattern, the verb is closely linked in grammar and meaning to a preposition phrase. The exact choice of preposition is shown in <b>bold print</b> in the above table.</li>
+<li>After some verbs, the preposition phrase cannot be removed without changing the meaning of the verb or producing nonsense:</li>
 </ul>
 
 <dl>
   <dt>(<a name="ex7.18">7.18</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;She&nbsp;was&nbsp;given&nbsp;a&nbsp;new&nbsp;outfit&nbsp;by&nbsp;her&nbsp;boyfriend&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","She"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BED;~cat_Ve"</font>,"was"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~Dn.n"</font>,"given"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","a"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","ADJP","ADJ","new"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","N","outfit"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"P-ROLE","by"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"NP","NP-GENV","PRO","her"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"NP","N","boyfriend"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_samples_ENG1100@8,5,18" target="_blank">39_samples_ENG1100&#64;8,5,18</a>"</tt><br>
+<dl>
+<dt>a.</dt><dd>The teacher <b>referred</b> the class <b>to</b> a passage in the textbook.</dd>
+<dt>b.</dt><dd>*The teacher <b>referred</b> the class.</dd>
+</dl>
+<ul>
+<li>After other verbs, the preposition phrase can be removed without changing the meaning of the verb:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.19">7.19</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;She&nbsp;has&nbsp;given&nbsp;a&nbsp;new&nbsp;outfit&nbsp;to&nbsp;her&nbsp;boyfriend&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","She"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HVP;~cat_Ve"</font>,"has"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~Dn.pr"</font>,"given"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","a"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","ADJP","ADJ","new"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","N","outfit"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"P-ROLE","to"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","NP-GENV","PRO","her"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","N","boyfriend"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_samples_ENG1100@8,5,18" target="_blank">38_samples_ENG1100&#64;8,5,18</a>"</tt><br>
-
-<p align="justify"><small style="font-size: 75%">GET</small> can be used in place of <small style="font-size: 75%">BE</small> as a [cat_Ve] verb to form passives.</p>
+<dl>
+<dt>a.</dt><dd>The visiting speaker <b>thanked</b> the Chairman <b>for</b> his kind remarks. [Tn.pr]</dd>
+<dt>b.</dt><dd>The visiting speaker <b>thanked</b> the Chairman. [Tn]</dd>
+</dl>
+<ul>
+<li>Most verbs in this pattern can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.20">7.20</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;ARX&nbsp;got&nbsp;cancelled&nbsp;the&nbsp;next&nbsp;day&nbsp;")</tt><br>
-<tt>"IML","NP-SBJ","NPR","ARX"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"got"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,<font style="background-color: MediumSpringGreen;">"VVN"</font>,"cancelled"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","D","the"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","ADJP","ADJ","next"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-TMP","N","day"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=74_texts_PaulFellows@145,147,150" target="_blank">141#74_texts_PaulFellows&#64;5,7,10</a>"</tt><br>
+<dl>
+<dt>a.</dt><dd>The council have <b>cleared</b> the pavements <b>of</b> rubbish.</dd>
+<dt>b.</dt><dd>The pavements have been <b>cleared</b> <b>of</b> rubbish (by the council).</dd>
+</dl>
 
-<h3><a name="sec7.3.1">7.3.1</a>&nbsp;&nbsp;&nbsp;Concealed passives</h3>
+<p align="justify">There are exceptions where no passive is possible [Tn.pr no passive].</p>
+
+<h3><a name="sec7.5.3">7.5.3</a>&nbsp;&nbsp;&nbsp;[Tn.p]</h3>
+
+<p align="justify">[Tn.p] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase + a selected adverb particle.</p>
+<ul>
+<li>In this pattern, the verb is closely linked to an adverb particle. The exact choice of particle is shown in <b>bold print</b> in the above table.</li>
+<li>After some verbs, the particle cannot be removed without changing the meaning of the verb or producing nonsense:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.21">7.21</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;His&nbsp;wounds&nbsp;need&nbsp;dressing&nbsp;now&nbsp;&lt;rdquo&gt;&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","NP-SBJ","NP-GENV","PRO","His"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NS","wounds"</tt><br>
-<tt>"IP-MAT","VBP;~cat_Vg","need"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"NP-LGS"</font>,"*"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","VAG;~Tn","dressing"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","ADVP-TMP","ADV","now"</tt><br>
-<tt>"IP-MAT","PUQ","&lt;rdquo&gt;"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_susanne_N13@11" target="_blank">7_susanne_N13&#64;11</a>"</tt><br>
-
-<h3><a name="sec7.3.2">7.3.2</a>&nbsp;&nbsp;&nbsp;Other cases with -LGS</h3>
-
-<p align="justify">In (<a href="chapter7.html#ex7.22">7.22</a>) <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt> in a construction that is also mentioned in section <a href="chapter8.html#sec8.9">8.9</a>.</p>
+<dl>
+<dt>a.</dt><dd>He <b>turned</b> the radio <b>on</b>.</dd>
+<dt>b.</dt><dd>He <b>turned</b> the radio.</dd>
+</dl>
+<ul>
+<li>After other verbs, the particle can be deleted freely:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.22">7.22</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;The&nbsp;breaststroke&nbsp;is&nbsp;very&nbsp;hard&nbsp;to&nbsp;explain&nbsp;in&nbsp;words&nbsp;")</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"D","The"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"N","breaststroke"</tt><br>
-<tt>"IML","BEP;~La","is"</tt><br>
-<tt>"IML","ADJP-PRD2","ADVP","ADV","very"</tt><br>
-<tt>"IML","ADJP-PRD2","ADJ","hard"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"NP-LGS","*"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"VB;~Tn.pr","explain"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","P-ROLE","in"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","NP","NS","words"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_09_M14@4,17" target="_blank">3#3_age_09_M14&#64;2,15</a>"</tt><br>
-
-<h3><a name="sec7.3.3">7.3.3</a>&nbsp;&nbsp;&nbsp;Adjectival passives</h3>
+<dl>
+<dt>a.</dt><dd>An automatic safety system <b>shut</b> the plant <b>down</b>.</dd>
+<dt>b.</dt><dd>An automatic safety system <b>shut</b> the plant.</dd>
+</dl>
+<ul>
+<li>When the direct object is a pronoun, it precedes the particle:</li>
+</ul>
 
 <dl>
-  <dt>(<a name="ex7.23">7.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.23">7.23</a>)</dt><dd>He <b>lined</b> us <b>up</b>.</dd>
 </dl>
-<tt>=N("&nbsp;more&nbsp;of&nbsp;the&nbsp;therapy&nbsp;group&nbsp;were&nbsp;married&nbsp;&lt;comma&gt;&nbsp;and&nbsp;married&nbsp;people&nbsp;with&nbsp;cancer&nbsp;are&nbsp;known&nbsp;to&nbsp;survive&nbsp;longer&nbsp;")</tt><br>
-<tt>"IML","IML","NP-SBJ","ADJP","ADJR","more"</tt><br>
-<tt>"IML","IML","NP-SBJ","PP","P-ROLE","of"</tt><br>
-<tt>"IML","IML","NP-SBJ","PP","NP","D","the"</tt><br>
-<tt>"IML","IML","NP-SBJ","PP","NP","N","therapy"</tt><br>
-<tt>"IML","IML","NP-SBJ","PP","NP","N","group"</tt><br>
-<tt>"IML","IML",<font style="background-color: SandyBrown;">"BED;~La"</font>,"were"</tt><br>
-<tt>"IML","IML",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"ADJ","married"</tt><br>
-<tt>"IML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IML","CONJP","CONJ","and"</tt><br>
-<tt>"IML","CONJP","IML","NP-SBJ","ADJP","ADJ","married"</tt><br>
-<tt>"IML","CONJP","IML","NP-SBJ","NS","people"</tt><br>
-<tt>"IML","CONJP","IML","NP-SBJ","PP","P-ROLE","with"</tt><br>
-<tt>"IML","CONJP","IML","NP-SBJ","PP","NP","N","cancer"</tt><br>
-<tt>"IML","CONJP","IML","BEP;~cat_Ve","are"</tt><br>
-<tt>"IML","CONJP","IML","IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"IML","CONJP","IML","IP-PPL-CAT","VVN","known"</tt><br>
-<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","TO","to"</tt><br>
-<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","VB","survive"</tt><br>
-<tt>"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","ADVP-TMP","ADVR","longer"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=69_bnc_B05@29,31" target="_blank">13#69_bnc_B05&#64;17,19</a>"</tt><br>
+
+<p align="justify">When it is a short noun phrase, it can usually either precede or follow the particle:</p>
 
 <dl>
   <dt>(<a name="ex7.24">7.24</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;the&nbsp;next&nbsp;day&nbsp;they&nbsp;were&nbsp;married&nbsp;")</tt><br>
-<tt>"IML","NP-TMP","D","the"</tt><br>
-<tt>"IML","NP-TMP","NUM","next"</tt><br>
-<tt>"IML","NP-TMP","N","day"</tt><br>
-<tt>"IML","NP-SBJ;{PRINCE+CINDERELLA}","PRO","they"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"BED;~cat_Ve"</font>,"were"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn","married"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_age_09_M72@152,154" target="_blank">141#12_age_09_M72&#64;12,14</a>"</tt><br>
+<dl>
+<dt>a.</dt><dd>One barrel explosion can <b>set</b> a chain reaction <b>off</b>.</dd>
+<dt>b.</dt><dd>One barrel explosion can <b>set</b> <b>off</b> a chain reaction.</dd>
+</dl>
 
-<br>
-<h2><a name="sec7.4">7.4</a>&nbsp;&nbsp;&nbsp;Codes for verbs that co-occur with existential <i>there</i></h2>
-
-<p align="justify">This section introduces codes for verbs that co-occur with existential <i>there</i> (tagged <tt>EX</tt>):</p>
-<ul>
-<li>[ex_V] (section <a href="chapter7.html#sec7.4.1">7.4.1</a>),</li>
-<li>[ex_Va] (section <a href="chapter7.html#sec7.4.2">7.4.2</a>),</li>
-<li>[ex_Vpr] (section <a href="chapter7.html#sec7.4.3">7.4.3</a>),</li>
-<li>[ex_Vp] (section <a href="chapter7.html#sec7.4.4">7.4.4</a>),</li>
-<li>[ex_cat_Ve] (section <a href="chapter7.html#sec7.4.5">7.4.5</a>),</li>
-<li>[ex_cat_Vg] (section <a href="chapter7.html#sec7.4.6">7.4.6</a>), and</li>
-<li>[ex_cat_Vt] (section <a href="chapter7.html#sec7.4.7">7.4.7</a>).</li>
-</ul>
-
-<h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;[ex_V]</h3>
-
-<p align="justify">[ex_V] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) and nothing else. Example (<a href="chapter7.html#ex7.25">7.25</a>) illustrates how co-occuring <i>there</i> can be separated by interveing catenative verbs from the [ex_V] marked verb <i>be</i> with its existential subject <i>trouble</i>.</p>
+<p align="justify">When the direct object is a long noun phrase, it usually follows the particle:</p>
 
 <dl>
   <dt>(<a name="ex7.25">7.25</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;there&nbsp;&lt;apos&gt;s&nbsp;going&nbsp;to&nbsp;be&nbsp;trouble&nbsp;")</tt><br>
-<tt>"IML",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
-<tt>"IML","BEP;~cat_Vg","&lt;apos&gt;s"</tt><br>
-<tt>"IML","IP-PPL-CAT","VAG;~cat_Vt","going"</tt><br>
-<tt>"IML","IP-PPL-CAT","IP-INF-CAT","TO","to"</tt><br>
-<tt>"IML","IP-PPL-CAT","IP-INF-CAT",<font style="background-color: SandyBrown;">"BE;~ex_V"</font>,"be"</tt><br>
-<tt>"IML","IP-PPL-CAT","IP-INF-CAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"N","trouble"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=587_christine_T33@31,33,21" target="_blank">20#587_christine_T33&#64;12,14,2</a>"</tt><br>
-
-<h3><a name="sec7.4.2">7.4.2</a>&nbsp;&nbsp;&nbsp;[ex_Va]</h3>
-
-<p align="justify">[ex_Va] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + subject predicative that is an adjective phrase. Example (<a href="chapter7.html#ex7.26">7.26</a>) illustrates the [ex_Va] marked verb <i>ai</i> with selected existential subject <i>nothing</i> and subject predicative <i>wrong with it</i>.</p>
+<tt>=N("&nbsp;But&nbsp;as&nbsp;they&nbsp;went&nbsp;out&nbsp;of&nbsp;the&nbsp;room&nbsp;&lt;comma&gt;&nbsp;he&nbsp;turned&nbsp;on&nbsp;the&nbsp;radio&nbsp;that&nbsp;was&nbsp;sitting&nbsp;on&nbsp;his&nbsp;desk&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","CONJ","But"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","P-CONN","as"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","NP-SBJ;{MOTHER+DOCTOR}","PRO","they"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","VBD","went"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","P-ROLE","out_of"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","NP","N","room"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DOCTOR}","PRO","he"</tt><br>
+<tt>"IP-MAT","VBD","turned"</tt><br>
+<tt>"IP-MAT","RP","on"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"N","radio"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","NP-SBJ","RPRO","that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","BED;~cat_Vg","was"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","IP-PPL-CAT","VAG","sitting"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","IP-PPL-CAT","PP-LOC","P-ROLE","on"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","IP-PPL-CAT","PP-LOC","NP","NP-GENV;{DOCTOR}","PRO","his"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-OB1"</font>,"IP-REL","IP-PPL-CAT","PP-LOC","NP","N","desk"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=232_texts_TED_talk_11@30" target="_blank">232_texts_TED_talk_11&#64;30</a>"</tt><br>
+<ul>
+<li>Most verbs in this pattern can be made passive. The object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.26">7.26</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;there&nbsp;ai&nbsp;n&lt;apos&gt;t&nbsp;nothing&nbsp;wrong&nbsp;with&nbsp;it&nbsp;")</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VAI;~ex_Va"</font>,"ai"</tt><br>
-<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"Q","nothing"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"ADJ","wrong"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"PP","P-ROLE","with"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADJP-PRD2"</font>,"PP","NP","PRO","it"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=72_christine_T14@4,8,11,2" target="_blank">72_christine_T14&#64;4,8,11,2</a>"</tt><br>
+<dl>
+<dt>a.</dt><dd>One barrel explosion can <b>set</b> a chain reaction <b>off</b>.</dd>
+<dt>b.</dt><dd>A chain reaction can be <b>set</b> <b>off</b> (by one barrel explosion).</dd>
+</dl>
 
-<h3><a name="sec7.4.3">7.4.3</a>&nbsp;&nbsp;&nbsp;[ex_Vpr]</h3>
+<p align="justify">There are exceptions where no passive is possible [Tn.p no passive].</p>
 
-<p align="justify">[ex_Vpr] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + preposition phrase. In the annotation of (<a href="chapter7.html#ex7.27">7.27</a>), the selected preposition phrase is marked with location (<tt>-LOC</tt>) function.</p>
+<h3><a name="sec7.5.4">7.5.4</a>&nbsp;&nbsp;&nbsp;[Tf]</h3>
+
+<p align="justify">[Tf] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a <i>that</i>-clause.</p>
+<ul>
+<li>In this pattern, the direct object is a <i>that</i>-clause.</li>
+<li>The complementizer <i>that</i> can sometimes be omitted.</li>
+<li>Some verbs used in this pattern can be made passive. (Note the construction with <i>it</i>.)</li>
+</ul>
 
 <dl>
   <dt>(<a name="ex7.27">7.27</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;There&nbsp;was&nbsp;an&nbsp;inscription&nbsp;on&nbsp;the&nbsp;door&nbsp;")</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"There"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BED;~ex_Vpr"</font>,"was"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ;{INSCRIPTION}"</font>,"D","an"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ;{INSCRIPTION}"</font>,"N","inscription"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"P-ROLE","on"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"NP","D","the"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-LOC"</font>,"NP","N","door"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=437_classics_DICK_1952@4,6,11,2" target="_blank">437_classics_DICK_1952&#64;4,6,11,2</a>"</tt><br>
-
-<h3><a name="sec7.4.4">7.4.4</a>&nbsp;&nbsp;&nbsp;[ex_Vp]</h3>
-
-<p align="justify">[ex_Vp] is the code to mark a verb that co-occurs with existential <i>there</i> with selection of an existential subject (<tt>-ESBJ</tt>) + particle. In the annotation of (<a href="chapter7.html#ex7.28">7.28</a>), the selected particle is marked with location (<tt>-LOC</tt>) function.</p>
+<dl>
+<dt>a.</dt><dd>The law <b>requires</b>	that you remain stopped.</dd>
+<dt>b.</dt><dd>That you remain stopped is <b>required</b> (by law).</dd>
+<dt>c.</dt><dd>It is <b>required</b> (by law) that you remain stopped.</dd>
+</dl>
 
 <dl>
   <dt>(<a name="ex7.28">7.28</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;there&nbsp;&lt;apos&gt;s&nbsp;nothing&nbsp;there&nbsp;")</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BEP;~ex_Vp"</font>,"&lt;apos&gt;s"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"Q","nothing"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"ADVP-LOC"</font>,"ADV","there"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=181_christine_T04@4,6,9,2" target="_blank">181_christine_T04&#64;4,6,9,2</a>"</tt><br>
+<tt>=N("&nbsp;The&nbsp;law&nbsp;requires&nbsp;you&nbsp;remain&nbsp;stopped&nbsp;as&nbsp;long&nbsp;as&nbsp;the&nbsp;red&nbsp;lights&nbsp;are&nbsp;flashing&nbsp;-LRB-&nbsp;CVC&nbsp;22454&nbsp;-RRB-&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","law"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBP;~Tf"</font>,"requires"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","NP-SBJ;{READER}","PRO","you"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","VBP;~La","remain"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","ADJP-PRD2","ADJ","stopped"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","P-CONN","as_long_as"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","IP-ADV","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","IP-ADV","NP-SBJ","ADJP","ADJ","red"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","IP-ADV","NP-SBJ","NS","lights"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","IP-ADV","BEP;~cat_Vg","are"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","PP-SCON-TMP","IP-ADV","IP-PPL-CAT","VAG;~I","flashing"</tt><br>
+<tt>"IP-MAT","PUL","-LRB-"</tt><br>
+<tt>"IP-MAT","PRN","NP","NPR","CVC"</tt><br>
+<tt>"IP-MAT","PRN","NP","NUM","22454"</tt><br>
+<tt>"IP-MAT","PUR","-RRB-"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_texts_driver_handbook@7,9" target="_blank">43_texts_driver_handbook&#64;7,9</a>"</tt><br>
 
-<h3><a name="sec7.4.5">7.4.5</a>&nbsp;&nbsp;&nbsp;[ex_cat_Ve]</h3>
+<p align="justify">There are exceptions [Tf no passive].</p>
 
-<p align="justify">[ex_cat_Ve] is the code to mark</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For a <tt>CP-THT</tt> that has an object or predicative function, <i>that</i> is often omitted:</p>
 
 <dl>
   <dt>(<a name="ex7.29">7.29</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;There&nbsp;&lt;apos&gt;s&nbsp;something&nbsp;inscribed&nbsp;on&nbsp;this&nbsp;.&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PUQ"</font>,"&lt;ldquo&gt;"</tt><br>
-<tt>"IP-MAT","EX","There"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BEP;~ex_cat_Ve"</font>,"&lt;apos&gt;s"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ;{INSCRIPTION}"</font>,"D","something"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN","inscribed"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-LOC","P-ROLE","on"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-LOC","NP","D","this"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"IP-MAT","PUQ","&lt;rdquo&gt;"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=275_classics_DICK_1952@6,8,11,2" target="_blank">275_classics_DICK_1952&#64;6,8,11,2</a>"</tt><br>
-
-<h3><a name="sec7.4.6">7.4.6</a>&nbsp;&nbsp;&nbsp;[ex_cat_Vg]</h3>
-
-<p align="justify">[ex_cat_Vg] is the code to mark</p>
+<tt>=N("&nbsp;I&nbsp;thought&nbsp;that&nbsp;I&nbsp;was&nbsp;clear&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","PRO","I"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"VBD;~Tf"</font>,"thought"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","C","that"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","BED;~La","was"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","ADJP-PRD2","ADJ","clear"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=53_bnc_C03@19,21" target="_blank">15#53_bnc_C03&#64;5,7</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex7.30">7.30</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;is&nbsp;there&nbsp;heat&nbsp;coming&nbsp;out&nbsp;anywhere&nbsp;")</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"BEP;~ex_cat_Vg"</font>,"is"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"EX"</font>,"there"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"N","heat"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG;~Ip","coming"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADVP-DIR","RP","out"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADVP-LOC","ADV","anywhere"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_christine_T12@3,7,10,5" target="_blank">116_christine_T12&#64;3,7,10,5</a>"</tt><br>
+<tt>=N("&nbsp;I&nbsp;thought&nbsp;that&nbsp;was&nbsp;quite&nbsp;{unclear}&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD"</font>,"thought"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","NP-SBJ","D","that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","BED","was"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-THT-OB1"</font>,"IP-SUB","META","quite_{unclear}"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=57_christine_T30@5,7" target="_blank">57_christine_T30&#64;5,7</a>"</tt><br>
 
-<h3><a name="sec7.4.7">7.4.7</a>&nbsp;&nbsp;&nbsp;[ex_cat_Vt]</h3>
+<h3><a name="sec7.5.5">7.5.5</a>&nbsp;&nbsp;&nbsp;[Tw]</h3>
 
-<p align="justify">[ex_cat_Vt] is the code to mark</p>
+<p align="justify">[Tw] is the code to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a finite or non-finite clause with <i>wh</i>.</p>
+<ul>
+<li>In this pattern, the direct object is a finite or non-finite clause beginning with</li>
+</ul>
+
+<p align="justify">EITHER (i) A <i>wh</i>-element, which can be a pronoun (<i>who(m)</i>, <i>whose</i>, <i>which</i>, <i>what</i>), or a determiner + noun (<i>which roads</i>, <i>what time</i>), or an adverb (<i>why</i> (finite clauses only), <i>when</i>, <i>where</i>, <i>how</i>);</p>
+
+<p align="justify">OR (ii) One of the conjunctions <i>if</i> (finite clauses only) or <i>whether</i>.</p>
 
 <dl>
   <dt>(<a name="ex7.31">7.31</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;There&nbsp;is&nbsp;&lt;comma&gt;&nbsp;I&nbsp;believe&nbsp;&lt;comma&gt;&nbsp;insufficient&nbsp;evidence&nbsp;to&nbsp;back&nbsp;up&nbsp;this&nbsp;viewpoint&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"EX"</font>,"There"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BEP;~ex_cat_Vt"</font>,"is"</tt><br>
-<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","PRN","IP-MAT","NP-SBJ","PRO","I"</tt><br>
-<tt>"IP-MAT","PRN","IP-MAT","VBP","believe"</tt><br>
-<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP","ADJ","insufficient"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"N","evidence"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"VB","back"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"RP","up"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"NP-OB1","D","this"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"NP-OB1","N","viewpoint"</tt><br>
+<tt>=N("&nbsp;I&nbsp;said&nbsp;can&nbsp;I&nbsp;have&nbsp;some&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBD","said"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","MD","can"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","HVP","have"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","NP-OB1","D","some"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=202_christine_T34@7" target="_blank">202_christine_T34&#64;7</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.32">7.32</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;know&nbsp;what&nbsp;we&nbsp;can&nbsp;do&nbsp;")</tt><br>
+<tt>"IP-MAT-OB1","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: SandyBrown;">"VBP"</font>,"know"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-SUB","NP-OB1","WPRO","what"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-SUB","NP-SBJ","PRO","we"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-SUB","MD","can"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-SUB","DO","do"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=69_susanne_N18@8,10" target="_blank">4#69_susanne_N18&#64;5,7</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.33">7.33</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;wonder&nbsp;who&nbsp;you&nbsp;saw&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBP","wonder"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","NP-OB1","WPRO","who"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CP-QUE-OB1"</font>,"IP-SUB","VBD","saw"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_young_adult_E02@4,2,17,23" target="_blank">4_young_adult_E02&#64;4,2,17,23</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=683_samples_kisonihongo@7" target="_blank">683_samples_kisonihongo&#64;7</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.34">7.34</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;know&nbsp;what&nbsp;to&nbsp;do&nbsp;about&nbsp;this&nbsp;one&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","DOP;~op_V","do"</tt><br>
+<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VB"</font>,"know"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","NP-OB1","WPRO","what"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","DO","do"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","PP-RST","P-ROLE","about"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","PP-RST","NP","D","this"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CP-QUE-OB1"</font>,"IP-INF","PP-RST","NP","NUM","one"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=400_christine_T10@9,11" target="_blank">400_christine_T10&#64;9,11</a>"</tt><br>
+<ul>
+<li>Some verbs used in this pattern can be made passive. (Note the construction with <i>it</i>.)</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.35">7.35</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The group hasn't <b>decided</b> what products they will sell&sol;what products to sell.</dd>
+<dt>b.</dt><dd>What products they will sell&sol;what products to sell hasn't been <b>decided</b> (by the group).</dd>
+<dt>c.</dt><dd>It hasn't been <b>decided</b> (by the group) what products they will sell&sol;what products to sell.</dd>
+</dl>
+
+<p align="justify">There are exceptions [Tw no passive].</p>
+
+<h3><a name="sec7.5.6">7.5.6</a>&nbsp;&nbsp;&nbsp;[Tt]</h3>
+
+<p align="justify">[Tt] is the code to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a non-finite clause (<i>to</i>-infinitive).</p>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause that is a <i>to</i>-infinitive.</li>
+<li>After <i>remember</i> and <i>forget</i>, the contrast between the <i>to</i>-infinitive and the &lcub;ing&rcub; form corresponds to a difference in meaning:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.36">7.36</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>I <b>remembered</b> to post your letters. [Tt] <br> (= &lsquo;I didn't forget to post them&rsquo;)</dd>
+<dt>b.</dt><dd>I <b>remembered</b> posting your letters. [Tg] <br> (= &lsquo;I recalled having posted them&rsquo;)</dd>
+</dl>
+<ul>
+<li>For <i>need</i>, <i>require</i>, <i>want</i> see [Tg], note (c).</li>
+<li>Verbs in this pattern cannot be made passive.</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.37">7.37</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;They&nbsp;were&nbsp;trying&nbsp;their&nbsp;best&nbsp;to&nbsp;be&nbsp;honest&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
+<tt>"IP-MAT","BED;~cat_Vg","were"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG;~It"</font>,"trying"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-MNR","NP-GENV","PRO","their"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-MNR","ADJP","ADJS","best"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"BE;~La","be"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"ADJP-PRD2","ADJ","honest"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=67_samples_ENG1100@8,17" target="_blank">67_samples_ENG1100&#64;8,17</a>"</tt><br>
+
+<h3><a name="sec7.5.7">7.5.7</a>&nbsp;&nbsp;&nbsp;[Tnt]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause that is a <i>to</i>-infinitive introduced by a noun phrase. The noun phrase is the subject of the whole non-finite clause.</li>
+<li>Some verbs in this pattern are made passive. The subject of the non-finite clause becomes the subject of the whole passive sentence:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.38">7.38</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>I <b>expect</b> the parcel to arrive tomorrow.</dd>
+<dt>b.</dt><dd>The parcel is <b>expected</b> to arrive tomorrow.</dd>
+</dl>
+
+<p align="justify">There are exceptions [Tnt no passive].</p>
+
+<h3><a name="sec7.5.8">7.5.8</a>&nbsp;&nbsp;&nbsp;[Tg]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause containing an &lcub;ing&rcub; form.</li>
+<li>For <i>remember</i> and <i>forget</i>, see [Tt], note (b).</li>
+<li>After <i>need</i>, <i>require</i> and <i>want</i> (as in <i>This shirt wants washing</i>), the &lcub;ing&rcub; form of the verb can be replaced by the passive <i>to</i>-infinitive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.39">7.39</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The children will still <b>need</b> looking after. [Tg]</dd>
+<dt>b.</dt><dd>The children will still <b>need</b> to be looked after. [Tf]</dd>
+</dl>
+<ul>
+<li>This construction has no corresponding passive construction.</li>
+</ul>
+
+<h3><a name="sec7.5.9">7.5.9</a>&nbsp;&nbsp;&nbsp;[Tsg]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause containing an &lcub;ing&rcub; form verb introduced EITHER by a noun phrase (e.g., <i>him</i>, <i>her</i>, <i>us</i>, <i>John</i>, <i>the staff</i> OR by a possesive form (e.g., <i>his</i>, <i>her</i>, <i>our</i>, <i>John's</i>, <i>the staff's</i>). The introductory noun phrase is the subject of the whole non-finite clause.</li>
+<li>The possesive form at the beginning of the direct object is more formal than a noun phrase.</li>
+<li>The verbs in this pattern cannot normally be made passive.</li>
+</ul>
+
+<h3><a name="sec7.5.10">7.5.10</a>&nbsp;&nbsp;&nbsp;[Tng]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause, in which a noun phrase introduces the &lcub;ing&rcub; form of the verb.</li>
+<li>Most verbs in this pattern are &lsquo;perception&rsquo; verbs. Of these, <i>see</i>, <i>hear</i>, <i>feel</i>, <i>watch</i>, <i>notice</i>, <i>overhear</i> and <i>observe</i> are also used in the [Tni] pattern:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.40">7.40</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The rescuers <b>felt</b> John losing his grip of the rope. [Tng]</dd>
+<dt>b.</dt><dd>The rescuers <b>felt</b> John lose his grip of the rope. [Tni]</dd>
+</dl>
+
+<p align="justify">Using the &lsquo;bare&rsquo; infinitive here [Tni] implies that John fully lost his hold of the rope while the rescuers were in contact with him. The &lcub;ing&rcub; form [Tng] does not imply this.</p>
+<ul>
+<li>Verbs in this pattern can be made passive. The noun phrase introducing the &lcub;ing&rcub; form becomes the subject of the whole passive sentence:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.41">7.41</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The children <b>saw</b> the cat stealing the meat.</dd>
+<dt>b.</dt><dd>The cat was <b>seen</b> stealing the meat (by the children).</dd>
+</dl>
+
+<p align="justify">Exceptions are shown in dictionary entries thus: [Tng no passive]</p>
+
+<dl>
+  <dt>(<a name="ex7.42">7.42</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;We&nbsp;watch&nbsp;the&nbsp;T&nbsp;boys&nbsp;and&nbsp;girls&nbsp;playing&nbsp;cricket&nbsp;and&nbsp;tennis&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBP;~Tng"</font>,"watch"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"NPR","T"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"NML","NML","NP","NS","boys"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"NML","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"NML","NML","CONJP","NP","NS","girls"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"VAG;~Tn","playing"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"NP-OB1","NML","NP","N","cricket"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"NP-OB1","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-OB1"</font>,"NP-OB1","NML","CONJP","NP","N","tennis"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=11_age_09_M51@5,7,23" target="_blank">11_age_09_M51&#64;5,7,23</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex7.43">7.43</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;The&nbsp;first&nbsp;thing&nbsp;he&nbsp;saw&nbsp;was&nbsp;Mr.&nbsp;McGregor&nbsp;hoeing&nbsp;onions&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NUM","first"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","thing"</tt><br>
+<tt>"IP-MAT","NP-SBJ","IP-REL","NP-OB1","*T*"</tt><br>
+<tt>"IP-MAT","NP-SBJ","IP-REL","NP-SBJ;{PETER}","PRO","he"</tt><br>
+<tt>"IP-MAT","NP-SBJ","IP-REL","VBD;~Tng","saw"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BED"</font>,"was"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1;{MRMCG}"</font>,"N","Mr."</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DOB1;{MRMCG}"</font>,"NPR","McGregor"</tt><br>
+<tt>"IP-MAT","IP-PPL-OB1","VAG;~Tn","hoeing"</tt><br>
+<tt>"IP-MAT","IP-PPL-OB1","NP-OB1","NS","onions"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=42_classics_POTTER_1902@17,19" target="_blank">42_classics_POTTER_1902&#64;17,19</a>"</tt><br>
+
+<h3><a name="sec7.5.11">7.5.11</a>&nbsp;&nbsp;&nbsp;[Tni]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause, in which a noun phrase introduces a &lsquo;bare&rsquo; infinitive (the infinitive without <i>to</i>).</li>
+<li>All the verbs used in this pattern are verbs of perception. They are <i>watch</i>, <i>hear</i>, <i>see</i>, <i>feel</i>, <i>notice</i>, <i>overhear</i> and <i>observe</i>. All are used in the [Tng] pattern also (see [Tng], note (b)).</li>
+<li>Except for <i>watch</i> and <i>notice</i>, verbs in this pattern can be made passive. The noun phrase introducing the bare infinitive becomes the subject of the whole passive sentence, while the bare infinitive itself (e.g.&nbsp;<i>slam</i>, <i>steal</i>) becomes the <i>to</i>-infinitive (e.g.&nbsp;<i>to slam</i>, <i>to steal</i>):</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.44">7.44</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The porter <b>heard</b> someone slam the door.</dd>
+<dt>b.</dt><dd>Someone was <b>heard</b> to slam the door (by the porter).</dd>
+</dl>
+
+<p align="justify">Exceptions are shown in dictionary entries thus: [Tni no passive]</p>
+
+<br>
+<h2><a name="sec7.6">7.6</a>&nbsp;&nbsp;&nbsp;Complex-transitive verb codes</h2>
+
+<h3><a name="sec7.6.1">7.6.1</a>&nbsp;&nbsp;&nbsp;[Cn.a]</h3>
+
+<p align="justify">[Cn.a] marks clause structure where there is a complex-transitive verb + direct object that is a noun phrase + object predicative that is an adjective phrase.</p>
+<ul>
+<li>In this pattern, the object predicative is an adjective phrase which describes a feature or quality of the direct object.</li>
+<li>Many verbs in this pattern can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.45">7.45</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The CEGB <b>made</b> the situation slightly worse.</dd>
+<dt>b.</dt><dd>The situation was <b>made</b> slightly worse (by the CEGB).</dd>
+</dl>
+
+<p align="justify">There are exceptions where no passive is possible [Cn.a no passive].</p>
+
+<h3><a name="sec7.6.2">7.6.2</a>&nbsp;&nbsp;&nbsp;[Cn.n]</h3>
+
+<p align="justify">[Cn.n] is the code used to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object that is a noun phrase + an object predicative that is a noun phrase.</p>
+<ul>
+<li>In this pattern, the object predicative is a noun phrase which indicates the role, name, status, etc of the direct object.</li>
+<li>Many verbs in this pattern can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.46">7.46</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The court <b>considered</b> Smith a trustworthy witness.</dd>
+<dt>b.</dt><dd>Smith was <b>considered</b> a trustworthy witness (by the court).</dd>
+</dl>
+
+<p align="justify">There are exceptions where no passive is possible [Cn.n no passive].</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A main verb that takes an object predicative is called a complex transitive verb. It is typical for an object predicative to immediately follow the direct object. For example, in (<a href="chapter7.html#ex7.47">7.47</a>) <small style="font-size: 75%">FIND</small> acts as a complex transitive with object predicative <i>a great help</i> to add more information about the direct object, <i>her</i>. Other verbs able to act as complex transitives &mdash; and so require an object predicative &mdash; are <small style="font-size: 75%">MAKE</small>, <small style="font-size: 75%">CONSIDER</small>, and <small style="font-size: 75%">NAME</small>.</p>
+
+<dl>
+  <dt>(<a name="ex7.47">7.47</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;They&nbsp;found&nbsp;her&nbsp;a&nbsp;great&nbsp;help&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Cn.n"</font>,"found"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PRO","her"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD"</font>,"D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD"</font>,"ADJP","ADJ","great"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PRD"</font>,"N","help"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_samples_ENG1100@5,7,10" target="_blank">10_samples_ENG1100&#64;5,7,10</a>"</tt><br>
+
+<p align="justify">In contast to (<a href="chapter7.html#ex7.47">7.47</a>), <i>a great belt</i> in (<a href="chapter7.html#ex7.48">7.48</a>) is an object. This contrast illustrates how a predicative provides additional information about another entity in the clause, while an object will refer to a different entity (when not a reflexive or reciprocal pronoun).</p>
+
+<dl>
+  <dt>(<a name="ex7.48">7.48</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;They&nbsp;found&nbsp;her&nbsp;a&nbsp;great&nbsp;belt&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Dn.n"</font>,"found"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB2"</font>,"PRO","her"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"ADJP","ADJ","great"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"N","belt"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=11_samples_ENG1100@5,7,10" target="_blank">11_samples_ENG1100&#64;5,7,10</a>"</tt><br>
+
+<p align="justify">This contrast also shows how verbs will have different meanings when selecting either objects or predicatives: In (<a href="chapter7.html#ex7.47">7.47</a>), <small style="font-size: 75%">FIND</small> has the meaning &lsquo;become aware of&rsquo;; In (<a href="chapter7.html#ex7.48">7.48</a>), <small style="font-size: 75%">FIND</small> has the meaning &lsquo;discover something after search&rsquo;.</p>
+
+<h3><a name="sec7.6.3">7.6.3</a>&nbsp;&nbsp;&nbsp;[Cn.n&sol;a]</h3>
+
+<p align="justify">[Cn.n&sol;a] is the code to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object that is a noun phrase + an object predicative that is <i>as</i> + noun phrase&sol;adjective phrase.</p>
+<ul>
+<li>In this pattern, the object predicative tells us how the direct object is regarded, judged, etc, or what he, she, or it is chosen to act or serve as.</li>
+<li>The first word in the object predicative is always <i>as</i>.</li>
+<li>A passive construction is possible for all verbs in this pattern except <i>have</i>. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.49">7.49</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The police didn't <b>accept</b> the story <b>as</b> genuine.</dd>
+<dt>b.</dt><dd>The story wasn't <b>accepted</b> <b>as</b> genuine (by the police).</dd>
+</dl>
+
+<h3><a name="sec7.6.4">7.6.4</a>&nbsp;&nbsp;&nbsp;[Cn.pr]</h3>
+
+<p align="justify">[Cn.pr] is the code used to mark a complex-transitive verb in clause structure with a complex-transitive verb + a direct object that is a noun phrase + an object predicative that is a preposition phrase.</p>
+
+<h3><a name="sec7.6.5">7.6.5</a>&nbsp;&nbsp;&nbsp;[Cn.t]</h3>
+<ul>
+<li>In this pattern, the object complement is a <i>to</i>-infinitive, either alone or as part of a larger clause. It tells us what the object is made or helped to do or be.</li>
+<li>The verbs in this pattern can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.50">7.50</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>An official <b>declared</b> the place to be free of infection.</dd>
+<dt>b.</dt><dd>The place was <b>declared</b> to be free of infection (by an official).</dd>
+</dl>
+
+<p align="justify">Exceptions are shown in dictionary entries thus: [Cn.t no passive]</p>
+
+<h3><a name="sec7.6.6">7.6.6</a>&nbsp;&nbsp;&nbsp;[Cn.g]</h3>
+<ul>
+<li>In this pattern, the object complement is the &lcub;ing&rcub; form of a verb, either alone (e.g.&nbsp;<i>thinking</i>) or as part of a longer clause (e.g.&nbsp;<i>playing in the garden</i>). It tells us what the object is made to do or is kept doing.</li>
+<li>Only the verbs shown in the table are used in this pattern. Of these, <i>set</i>, <i>have</i>. <i>get</i> and <i>start</i> are &lsquo;causative&rsquo; verbs (ie verbs meaning &lsquo;cause something to happen&rsquo;).</li>
+<li>Except for <i>have</i> and <i>start</i>, the verbs can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.51">7.51</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The policeman <b>got</b> the traffic moving.</dd>
+<dt>b.</dt><dd>The traffic was <b>got</b> moving (by the policeman).</dd>
+</dl>
+
+<h3><a name="sec7.6.7">7.6.7</a>&nbsp;&nbsp;&nbsp;[Cn.i]</h3>
+<ul>
+<li>In this pattern, the object complement is the &lsquo;bare&rsquo; infinitive (the infinitive without <i>to</i>), either alone (e.g.&nbsp;<i>work</i>) or as part of a larger clause (e.g.&nbsp;<i>play in the road</i>). It tells us what the object is made or allowed to do.</li>
+<li>Only the verbs shown in the table are used in this pattern.</li>
+<li>The verbs <i>make</i> and <i>help</i> can be made passive, but when they are, they are followed by a <i>to</i>-infinitive as in pattern [Cn.t]:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.52">7.52</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>He was <b>made</b> to work (by his tutor).</dd>
+<dt>b.</dt><dd>We were <b>helped</b> to organise the party (by Stephen).</dd>
+</dl>
+
+<p align="justify">The other verbs shown here cannot be made passive.</p>
+
+<p align="justify">Introductory <i>it</i> may also be used to anticipate a following object clause where there is an intervening obligatory clause element. In this case there is no alternative to extraposition and the verb is marked with [Cn.a] code:</p>
+
+<dl>
+  <dt>(<a name="ex7.53">7.53</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;I&nbsp;found&nbsp;it&nbsp;strange&nbsp;that&nbsp;neither&nbsp;I&nbsp;nor&nbsp;the&nbsp;day&nbsp;seemed&nbsp;in&nbsp;a&nbsp;mourning&nbsp;mood&nbsp;")</tt><br>
+<tt>"IML","NP-SBJ","PRO","I"</tt><br>
+<tt>"IML","VBD;~Cn.a","found"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"NP-POB1"</font>,"PRO","it"</tt><br>
+<tt>"IML","ADJP-PRD","ADJ","strange"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","C","that"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJ","neither"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","NP","PRO","I"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","CONJ","nor"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","NP-SBJ","NML","CONJP","NP","N","day"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","VBD","seemed"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","P-ROLE","in"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","D","a"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","ADJP","ADJ","mourning"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"CP-THT-NOB1"</font>,"IP-SUB","PP-MNR","NP","N","mood"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=79_classics_JOYCE_1914@9,15" target="_blank">3#79_classics_JOYCE_1914&#64;7,13</a>"</tt><br>
+
+<p align="justify">In (<a href="chapter7.html#ex7.53">7.53</a>) the NOB1 clause is a CP-THT, and the POB1 is <t>it</t>. The NOB1 clause can also be an IP-INF in which case the derived object is NP-DOB1 which then acts as a controller into the IP-INF-NOB1, as (<a href="chapter7.html#ex7.54">7.54</a>) demonstrates.</p>
+
+<dl>
+  <dt>(<a name="ex7.54">7.54</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;found&nbsp;the&nbsp;orders&nbsp;process&nbsp;hard&nbsp;to&nbsp;take&nbsp;")</tt><br>
+<tt>"IML","VBD","found"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"D","the"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"NS","orders"</tt><br>
+<tt>"IML",<font style="background-color: MediumSpringGreen;">"NP-DOB1"</font>,"N","process"</tt><br>
+<tt>"IML","ADJP-PRD","ADJ","hard"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-NOB1"</font>,"NP-LGS","*"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-NOB1"</font>,"TO","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-NOB1"</font>,"VB","take"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_bnc_C03@27,17" target="_blank">14#10_bnc_C03&#64;14,4</a>"</tt><br>
+
+<br>
+<h2><a name="sec7.7">7.7</a>&nbsp;&nbsp;&nbsp;Ditransitive verb codes</h2>
+
+<h3><a name="sec7.7.1">7.7.1</a>&nbsp;&nbsp;&nbsp;[Dn.n]</h3>
+
+<p align="justify">[Dn.n] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a noun phrase + a direct object that is a noun phrase.</p>
+<ul>
+<li>This pattern has an indirect object (without a preposition) followed by a direct object. Both are noun phrases. The indirect but not the direct object can also be a personal pronoun.</li>
+<li>When the indirect object refers to someone who <i>receives</i> something, this pattern can usually be changed to the [Dn.pr] pattern with <i>to</i>:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.55">7.55</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>Some major organisations <b>give</b> staff additional compensation. [Dn.n]</dd>
+<dt>b.</dt><dd>Some major organisations <b>give</b> additional compensation to staff. [Dn.pr]</dd>
+</dl>
+<ul>
+<li>When the indirect object refers to someone who is expected to <i>benefit</i> from the action of the verb, the [Dn.n] pattern can be changed to the [Dn.pr] with <i>for</i>:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.56">7.56</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>I'll <b>make</b> you a nice cup of tea. [Dn.n]</dd>
+<dt>b.</dt><dd>I'll <b>make</b> a nice cup of tea for you. [Dn.pr]</dd>
+</dl>
+<ul>
+<li>For reasons why the [Dn.pr] pattern (with <i>to</i> or <i>for</i>) may be preferred to the [Dn.n] pattern, see the discussion of [Dn.pr].</li>
+<li>Most verbs in this pattern can be made passive, with the <i>indirect</i> object becoming the subject:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.57">7.57</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The Prime Minister has <b>offered</b> commonwealth governments every facility possible to safeguard their interests.</dd>
+<dt>b.</dt><dd>Commonwealth governments have been <b>offered</b> (by the Prime Minister) every facility possible to safeguard their interests.</dd>
+</dl>
+
+<p align="justify">There are exceptions where no passive is possible [Dn.n no passive].</p>
+
+<p align="justify">A passive in which the <i>direct</i> object becomes subject is rare [search: <tt>NP-LGS &dollar; NP-OB2</tt>]:</p>
+
+<dl>
+  <dt>(<a name="ex7.58">7.58</a>)</dt><dd>Every facility possible to safeguard their interests has been <b>offered</b> commonwealth governments (by the Prime Minister).</dd>
+</dl>
+
+<p align="justify">A case where the direct object is missing:</p>
+
+<dl>
+  <dt>(<a name="ex7.59">7.59</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;a&nbsp;friend&nbsp;&nbsp;asked&nbsp;him&nbsp;once&nbsp;")</tt><br>
+<tt>"PRN","IP-MAT","NP-SBJ","D","a"</tt><br>
+<tt>"PRN","IP-MAT","NP-SBJ","N",<font style="background-color: SandyBrown;">"friend"</font></tt><br>
+<tt>"PRN","IP-MAT","VBD;~Dn.w",<font style="background-color: MediumSpringGreen;">"asked"</font></tt><br>
+<tt>"PRN","IP-MAT","NP-OB2","PRO","him"</tt><br>
+<tt>"PRN","IP-MAT","ADVP-TMP","ADV","once"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=75_susanne_N11@18,20" target="_blank">12#75_susanne_N11&#64;7,9</a>"</tt><br>
+
+<h3><a name="sec7.7.2">7.7.2</a>&nbsp;&nbsp;&nbsp;[Dn.pr]</h3>
+
+<p align="justify">[Dn.pr] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + a direct object that is a noun phrase + an indirect object that is a preposition phrase.</p>
+<ul>
+<li>In this pattern, the indirect object is placed at the end. It consists of <i>to</i> or <i>for</i> and a noun phrase.</li>
+<li>When introduced by <i>to</i>, the indirect object refers to a person or people <i>receiving</i> something (see [Dn.n], note (b)). When introduced by <i>for</i>, it refers to a person or people intended to <i>benefit</i> (see [Dn.n], note (c)).</li>
+<li>When the <i>indirect</i> object provides new information (e.g.&nbsp;in answer to a question), this pattern is preferred to [Dn.n], and the main stress falls on the last noun or pronoun.</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.60">7.60</a>)</dt><dd>Q: Who did Henri <b>teach</b> French <b>to</b>? <br> A: Henri <b>taught</b> French <b>to</b> the `children. [Dn.pr]</dd>
+</dl>
+
+<p align="justify">But when the <i>direct</i> object refers to information that is new, Dn.n is preferred:</p>
+
+<dl>
+  <dt>(<a name="ex7.61">7.61</a>)</dt><dd>Q: What did Henri <b>teach</b> the children? <br> A: Henri <b>taught</b> the children `French. [Dn.n]</dd>
+</dl>
+<ul>
+<li>Most verbs in this pattern can be made passive, with the <i>direct</i> object of the active pattern becoming the subject of the passive one:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.62">7.62</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>Father <b>bought</b> the white cat <b>for</b> Emma.</dd>
+<dt>b.</dt><dd>The white cat was <b>bought</b> <b>for</b> Emma (by Father).</dd>
+</dl>
+
+<p align="justify">There are exceptions where no passive is possible [Dn.pr no passive].</p>
+
+<p align="justify">The noun phrase direct object can appear after the preposition phrase indirect object, typically when it has more weight:</p>
+
+<dl>
+  <dt>(<a name="ex7.63">7.63</a>)</dt><dd></dd>
+</dl>
+<tt>=N("&nbsp;Through&nbsp;the&nbsp;Double&nbsp;Cross&nbsp;Committee&nbsp;&lt;comma&gt;&nbsp;usually&nbsp;known&nbsp;as&nbsp;the&nbsp;XX&nbsp;Committee&nbsp;&lt;comma&gt;&nbsp;these&nbsp;turned&nbsp;spies&nbsp;sent&nbsp;back&nbsp;to&nbsp;Germany&nbsp;a&nbsp;steady&nbsp;stream&nbsp;of&nbsp;fictitious&nbsp;information&nbsp;garnished&nbsp;with&nbsp;sufficient&nbsp;truth&nbsp;to&nbsp;give&nbsp;it&nbsp;credibility&nbsp;&lt;comma&gt;&nbsp;which&nbsp;the&nbsp;Germans&nbsp;apparently&nbsp;accepted&nbsp;without&nbsp;question&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","PP-MNR","P-ROLE","Through"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","NML","NPR","Double"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","NML","NPR","Cross"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","N","Committee"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","ADVP-MOD","ADV","usually"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","VVN;~Cn.n&sol;a","known"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","PP-PRD","P-ROLE","as"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","PP-PRD","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","PP-PRD","NP","NPR","XX"</tt><br>
+<tt>"IP-MAT","PP-MNR","NP","IP-PPL","PP-PRD","NP","N","Committee"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","D","these"</tt><br>
+<tt>"IP-MAT","NP-SBJ","IP-PPL","VVN","turned"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","spies"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Dn.pr"</font>,"sent"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"ADVP-DIR","ADV","back"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"P-ROLE","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-DIR"</font>,"NP","NPR","Germany"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"D","a"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"ADJP","ADJ","steady"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"N","stream"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","ADJP","ADJ","fictitious"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","N","information"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","VVN","garnished"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","P-ROLE","with"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","ADJP","ADJ","sufficient"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","N","truth"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","IP-INF","TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","IP-INF","VB","give"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","IP-INF","NP-OB2","PRO","it"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PP","NP","IP-PPL","PP-MNR","NP","IP-INF","NP-OB1","N","credibility"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","NP-OB1","RPRO","which"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","NP-SBJ","NS","Germans"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","ADVP-MOD","ADV","apparently"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","VBD;~Tn","accepted"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","PP-MNR","P-ROLE","without"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL","PP-MNR","NP","N","question"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=32_bnc_B14@45,47,56" target="_blank">32_bnc_B14&#64;45,47,56</a>"</tt><br>
+
+<h3><a name="sec7.7.3">7.7.3</a>&nbsp;&nbsp;&nbsp;[Dn.f]</h3>
+<ul>
+<li>This pattern has an indirect object without <i>to</i> and a direct object consisting of a <i>that</i> clause. The indirect object refers to the person or people addressed by the subject.</li>
+<li>Some verbs in this pattern can be made passive, with the indirect object of the active pattern becoming the subject of the passive one:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.64">7.64</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>Colleagues told Paul that the job wouldn't be easy.</dd>
+<dt>b.</dt><dd>Paul was told (by colleagues) that the job wouldn't be easy.</dd>
+</dl>
+
+<h3><a name="sec7.7.4">7.7.4</a>&nbsp;&nbsp;&nbsp;[Dpr.f]</h3>
+<ul>
+<li>This pattern has an indirect object with <i>to</i> and a direct object consisting of a <i>that</i> clause.</li>
+<li>Some verbs in this pattern can be made passive. (Note the construction with <i>it</i>.)</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.65">7.65</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>The garage explained to customers that the spare parts had not been delivered.</dd>
+<dt>b.</dt><dd>It was explained to customers (by the garage) that the spare parts had not been delivered.</dd>
+</dl>
+
+<h3><a name="sec7.7.5">7.7.5</a>&nbsp;&nbsp;&nbsp;[Dn.w]</h3>
+<ul>
+<li>In this pattern, the direct object is a finite or non-finite clause beginning with</li>
+</ul>
+
+<p align="justify">EITHER (i) A <i>wh</i>-element, which can be a pronoun (<i>who(m)</i>, <i>whose</i>, <i>which</i>, <i>what</i>), or a determiner + noun (<i>which roads</i>, <i>what time</i>), or an adverb (<i>why</i> (finite clauses only), <i>when</i>, <i>where</i>, <i>how</i>);</p>
+
+<p align="justify">OR (ii) One of the conjunctions <i>if</i> (finite clauses only) or <i>whether</i>.</p>
+<ul>
+<li>Some verbs used in this pattern can be made passive, with the indirect object of the active pattern becoming the subject of the passive one:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.66">7.66</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>A friendly guard showed the prisoner how he could escape&sol;how to escape.</dd>
+<dt>b.</dt><dd>The prisoner was shown how he could escape&sol;how to escape (by a friendly guard).</dd>
+</dl>
+
+<h3><a name="sec7.7.6">7.7.6</a>&nbsp;&nbsp;&nbsp;[Dpr.w]</h3>
+<ul>
+<li>This pattern has an indirect object with <i>to</i> and a direct object consisting of a finite or non-finite <i>wh</i>-clause. The indirect object refers to the person or people addressed by the subject.</li>
+<li>Some verbs in this pattern can be made passive. (Note the construction with <i>it</i>.)</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.67">7.67</a>)</dt><dd>It was explained to the staff how they should handle complaints&sol;how to handle complaints.</dd>
+</dl>
+
+<h3><a name="sec7.7.7">7.7.7</a>&nbsp;&nbsp;&nbsp;[Dn.t]</h3>
+<ul>
+<li>In this pattern, the direct object is a non-finite clause, consisting of a <i>to</i>-infinitive.</li>
+<li>Some verbs in this pattern can be made passive, with the indirect object of the active pattern becoming the subject of the passive one:</li>
+</ul>
+
+<dl>
+  <dt>(<a name="ex7.68">7.68</a>)</dt><dd></dd>
+</dl>
+<dl>
+<dt>a.</dt><dd>John and Mary encouraged Simon to stay.</dd>
+<dt>b.</dt><dd>Simon was encouraged to stay (by John and Mary).</dd>
+</dl>
 
 <br>
 <br>
