@@ -10,10 +10,10 @@
 
 <p align="justify">The internal form of a matrix clause can determine its use, and this gives rise to a basis for distinguishing the different clause types of:</p>
 <ul>
-<li><b>declaratives</b> (discussed in section <a href="chapter4.html#sec4.2.1">4.2.1</a>),</li>
-<li><b>interrogatives</b> (discussed in section <a href="chapter4.html#sec4.2.2">4.2.2</a>),</li>
-<li><b>imperatives</b> (discussed in section <a href="chapter4.html#sec4.2.3">4.2.3</a>), and</li>
-<li><b>sentence fragments</b> (discussed in section <a href="chapter4.html#sec4.2.4">4.2.4</a>).</li>
+<li><b>declaratives</b> (discussed in section <a href="chapter4.html#sec4.2.1">4.2.1</a>)</li>
+<li><b>interrogatives</b> (discussed in section <a href="chapter4.html#sec4.2.2">4.2.2</a>)</li>
+<li><b>imperatives</b> (discussed in section <a href="chapter4.html#sec4.2.3">4.2.3</a>)</li>
+<li><b>sentence fragments</b> (discussed in section <a href="chapter4.html#sec4.2.4">4.2.4</a>)</li>
 </ul>
 
 <h3><a name="sec4.2.1">4.2.1</a>&nbsp;&nbsp;&nbsp;Declaratives</h3>
@@ -23,12 +23,13 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-MAT</tt></td><td>matrix clause</td></tr>
 </table>
+<br>
+
 <p align="justify">A basic matrix clause, given the tag of Table <a href="chapter4.html#table4.1">4.1</a>, is a declarative clause. A basic matrix clause requires a finite verb. For example, (<a href="chapter4.html#ex4.1">4.1</a>) has the past tense verb <i>cried</i>.</p>
 
 <dl>
   <dt>(<a name="ex4.1">4.1</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;cried&nbsp;my&nbsp;eyes&nbsp;out&nbsp;at&nbsp;that&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD"</font>,"cried"</tt><br>
 <tt>"IP-MAT","NP-OB1","NP-GENV","PRO","my"</tt><br>
@@ -43,7 +44,6 @@
 <dl>
   <dt>(<a name="ex4.2">4.2</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;&lt;apos&gt;ll&nbsp;cry&nbsp;some&nbsp;more&nbsp;if&nbsp;you&nbsp;#&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"MD"</font>,"&lt;apos&gt;ll"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"VB"</font>,"cry"</tt><br>
@@ -59,7 +59,6 @@
 <dl>
   <dt>(<a name="ex4.3">4.3</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;And&nbsp;he&nbsp;did&nbsp;kiss&nbsp;me&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","CONJ","And"</tt><br>
 <tt>"IP-MAT","NP-SBJ;{FORREST}","PRO","he"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"DOD;~op_V"</font>,"did"</tt><br>
@@ -73,7 +72,6 @@
 <dl>
   <dt>(<a name="ex4.4">4.4</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;This&nbsp;is&nbsp;not&nbsp;an&nbsp;acceptable&nbsp;turnover&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","This"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~Ln"</font>,"is"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"not"</tt><br>
@@ -86,7 +84,6 @@
 <dl>
   <dt>(<a name="ex4.5">4.5</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;wo&nbsp;n&lt;apos&gt;t&nbsp;cry&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"MD"</font>,"wo"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"n&lt;apos&gt;t"</tt><br>
@@ -96,7 +93,6 @@
 <dl>
   <dt>(<a name="ex4.6">4.6</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;People&nbsp;do&nbsp;n&lt;apos&gt;t&nbsp;&lt;bital&gt;&nbsp;do&nbsp;&lt;eital&gt;&nbsp;that&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","People"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"DOP"</font>,"do"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NEG"</font>,"n&lt;apos&gt;t"</tt><br>
@@ -115,19 +111,20 @@
 <tr><td><tt>CP-QUE</tt></td><td>top layer of question (direct or indirect) marking clause type</td></tr>
 <tr><td><tt>IP-SUB</tt></td><td>finite clause complement of CP</td></tr>
 </table>
-<p align="justify">Annotation for a matrix interrogative clause involves an <tt>IP-SUB</tt> clause layer that: (i) contains all of the clause content (except end punctuation), and (ii) projects a <tt>CP-QUE</tt> layer. A matrix interrogative is formed by having an initial clause component that is either:</p>
-<ul>
-<dt>(i)</dt><dd>a modal verb (e.g., (<a href="chapter4.html#ex4.7">4.7</a>)), or</dd>
-<dt>(ii)</dt><dd>a finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> (e.g., (<a href="chapter4.html#ex4.8">4.8</a>) and (<a href="chapter4.html#ex4.9">4.9</a>)), or</dd>
-<dt>(iii)</dt><dd>a constituent that includes a WH word (e.g. (<a href="chapter4.html#ex4.10">4.10</a>)&ndash;(<a href="chapter4.html#ex4.15">4.15</a>)).</dd>
-</ul>
+<br>
 
-<p align="justify">A clause with (iii) is called a constituent question.</p>
+<p align="justify">Annotation for a matrix interrogative clause involves an <tt>IP-SUB</tt> clause layer that: (i) contains all of the clause content (except end punctuation), and (ii) projects a <tt>CP-QUE</tt> layer. A matrix interrogative is formed by having an initial clause component that is either:</p>
+<dl>
+<dt>(i)</dt><dd>a modal verb (e.g., (<a href="chapter4.html#ex4.7">4.7</a>)),</dd>
+<dt>(ii)</dt><dd>a finite <small style="font-size: 75%">BE</small> or a finite <small style="font-size: 75%">HAVE</small> or a finite <small style="font-size: 75%">DO</small> (e.g., (<a href="chapter4.html#ex4.8">4.8</a>) and (<a href="chapter4.html#ex4.9">4.9</a>))</dd>
+<dt>(iii)</dt><dd>a constituent that includes a WH word (e.g. (<a href="chapter4.html#ex4.10">4.10</a>)&ndash;(<a href="chapter4.html#ex4.15">4.15</a>))</dd>
+</dl>
+
+<p align="justify">A clause with (i) or (ii) is called a yes&sol;no question. A clause with (iii) is called a constituent question. For matrix constituent questions where the initial clause component is a non-subject, before the clause subject occurs, there needs to have occurred a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>, as seen with (<a href="chapter4.html#ex4.11">4.11</a>)&ndash;(<a href="chapter4.html#ex4.15">4.15</a>).</p>
 
 <dl>
   <dt>(<a name="ex4.7">4.7</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;shall&nbsp;we&nbsp;go&nbsp;in&nbsp;Tesco&nbsp;&lt;apos&gt;s&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"MD"</font>,"shall"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","we"</tt><br>
 <tt>"CP-QUE","IP-SUB","VBP;~Ipr","go"</tt><br>
@@ -139,7 +136,6 @@
 <dl>
   <dt>(<a name="ex4.8">4.8</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Is&nbsp;that&nbsp;still&nbsp;his&nbsp;position&nbsp;?&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"BEP;~Ln"</font>,"Is"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","P-ROLE","that"</tt><br>
 <tt>"CP-QUE","IP-SUB","ADVP-TMP","ADV","still"</tt><br>
@@ -151,7 +147,6 @@
 <dl>
   <dt>(<a name="ex4.9">4.9</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Does&nbsp;it&nbsp;work&nbsp;?&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"DOP;~op_V"</font>,"Does"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","it"</tt><br>
 <tt>"CP-QUE","IP-SUB","VB","work"</tt><br>
@@ -161,7 +156,6 @@
 <dl>
   <dt>(<a name="ex4.10">4.10</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;who&nbsp;smacked&nbsp;you&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"WPRO","who"</tt><br>
 <tt>"CP-QUE","IP-SUB","VBD","smacked"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-OB1","PRO","you"</tt><br>
@@ -170,7 +164,6 @@
 <dl>
   <dt>(<a name="ex4.11">4.11</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;What&nbsp;do&nbsp;you&nbsp;mean&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB","PUQ","&lt;ldquo&gt;"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-OB1","WPRO","What"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"DOP;~op_V"</font>,"do"</tt><br>
@@ -183,7 +176,6 @@
 <dl>
   <dt>(<a name="ex4.12">4.12</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;whose&nbsp;turn&nbsp;is&nbsp;it&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-NSBJ"</font>,"NP-GENV","WPRO","whose"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"NP-NSBJ"</font>,"N","turn"</tt><br>
 <tt>"CP-QUE","IP-SUB","BEP;~I","is"</tt><br>
@@ -193,7 +185,6 @@
 <dl>
   <dt>(<a name="ex4.13">4.13</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;why&nbsp;did&nbsp;you&nbsp;do&nbsp;that&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"ADVP-CNT"</font>,"WADV","why"</tt><br>
 <tt>"CP-QUE","IP-SUB","DOD","did"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","you"</tt><br>
@@ -204,7 +195,6 @@
 <dl>
   <dt>(<a name="ex4.14">4.14</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;how&nbsp;do&nbsp;I&nbsp;spell&nbsp;what&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"ADVP-MNR"</font>,"WADV","how"</tt><br>
 <tt>"CP-QUE","IP-SUB","DOP;~op_V","do"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","I"</tt><br>
@@ -215,7 +205,6 @@
 <dl>
   <dt>(<a name="ex4.15">4.15</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;In&nbsp;what&nbsp;ways&nbsp;might&nbsp;they&nbsp;still&nbsp;be&nbsp;the&nbsp;same&nbsp;?&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"P-ROLE","In"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"NP","WD","what"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"PP-MNR"</font>,"NP","NS","ways"</tt><br>
@@ -228,8 +217,6 @@
 <tt>"CP-QUE","PU","?"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=20_fce_0100_2000_12@3" target="_blank">20_fce_0100_2000_12&#64;3</a>"</tt><br>
 
-<p align="justify">For matrix constituent questions where the initial clause component is a non-subject, before the clause subject occurs, there needs to be an intervening modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>, as seen with (<a href="chapter4.html#ex4.11">4.11</a>)&ndash;(<a href="chapter4.html#ex4.15">4.15</a>).</p>
-
 <h3><a name="sec4.2.3">4.2.3</a>&nbsp;&nbsp;&nbsp;Imperatives</h3>
 
 <p><a name="table4.3">Table 4.3: Tag for imperative clause</a></p>
@@ -237,6 +224,8 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-IMP</tt></td><td>imperative clause</td></tr>
 </table>
+<br>
+
 <p align="justify">An imperative clause requires a verb in the imperative form. The imperative form is a finite form of the verb that is typically equivalent to the infinitive form, and so the verb is tagged in the same way as an infinitive. It is appearance under an <tt>IP-IMP</tt> layer that distinguishes the verb as having imperative form.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the typical absence of a subject constituent. Presence of a constituent with vocative function (as in (<a href="chapter4.html#ex4.16">4.16</a>) and (<a href="chapter4.html#ex4.17">4.17</a>)) is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; for the verb.</p>
@@ -244,7 +233,6 @@
 <dl>
   <dt>(<a name="ex4.16">4.16</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Students&nbsp;&lt;comma&gt;&nbsp;always&nbsp;remember&nbsp;to&nbsp;include&nbsp;references&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-IMP",<font style="background-color: MediumSpringGreen;">"NP-VOC"</font>,"NS","Students"</tt><br>
 <tt>"IP-IMP","PU","&lt;comma&gt;"</tt><br>
 <tt>"IP-IMP","ADVP-MOD","ADV","always"</tt><br>
@@ -258,7 +246,6 @@
 <dl>
   <dt>(<a name="ex4.17">4.17</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Stop&nbsp;thief&nbsp;")</tt><br>
 <tt>"IP-IMP-OB1",<font style="background-color: SandyBrown;">"VB;~I"</font>,"Stop"</tt><br>
 <tt>"IP-IMP-OB1",<font style="background-color: MediumSpringGreen;">"NP-VOC"</font>,"N","thief"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_classics_POTTER_1902@96,98" target="_blank">95#13_classics_POTTER_1902&#64;2,4</a>"</tt><br>
@@ -266,7 +253,6 @@
 <dl>
   <dt>(<a name="ex4.18">4.18</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;You&nbsp;shut&nbsp;up&nbsp;!&nbsp;")</tt><br>
 <tt>"IP-IMP","PUQ","&lt;ldquo&gt;"</tt><br>
 <tt>"IP-IMP",<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"PRO","You"</tt><br>
 <tt>"IP-IMP",<font style="background-color: SandyBrown;">"VB;~phr_Vp"</font>,"shut"</tt><br>
@@ -283,12 +269,13 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>FRAG</tt></td><td>sentence fragment</td></tr>
 </table>
+<br>
+
 <p align="justify">Examples (<a href="chapter4.html#ex4.19">4.19</a>)&ndash;(<a href="chapter4.html#ex4.23">4.23</a>) are illustrative of possible <tt>FRAG</tt> utterances.</p>
 
 <dl>
   <dt>(<a name="ex4.19">4.19</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;just&nbsp;{pause}&nbsp;up&nbsp;the&nbsp;stairs&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-MOD","ADV","just"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"META","{pause}"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"PP-DIR","P-ROLE","up"</tt><br>
@@ -299,7 +286,6 @@
 <dl>
   <dt>(<a name="ex4.20">4.20</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;all&nbsp;you&nbsp;seem&nbsp;to&nbsp;think&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;bloody&nbsp;Hallowe&lt;apos&gt;en&nbsp;come&nbsp;back&nbsp;again&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","Q","all"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","NP-SBJ","PRO","you"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"NP-SBJ","IP-REL","VBP;~cat_Vt","seem"</tt><br>
@@ -318,7 +304,6 @@
 <dl>
   <dt>(<a name="ex4.21">4.21</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;sadly&nbsp;no&nbsp;longer&nbsp;with&nbsp;us&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-MNR","ADV","sadly"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-TMP","NP","Q","no"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"ADVP-TMP","ADVR","longer"</tt><br>
@@ -329,7 +314,6 @@
 <dl>
   <dt>(<a name="ex4.22">4.22</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;yes&nbsp;or&nbsp;no&nbsp;")</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","IML","REACT","yes"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","CONJP","CONJ","or"</tt><br>
 <tt><font style="background-color: SandyBrown;">"FRAG"</font>,"IML","CONJP","IML","REACT","no"</tt><br>
@@ -338,7 +322,6 @@
 <dl>
   <dt>(<a name="ex4.23">4.23</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;&lt;ldquo&gt;&nbsp;Really&nbsp;?&nbsp;&lt;rdquo&gt;&nbsp;")</tt><br>
 <tt>"CP-QUE",<font style="background-color: SandyBrown;">"FRAG"</font>,"PUQ","&lt;ldquo&gt;"</tt><br>
 <tt>"CP-QUE",<font style="background-color: SandyBrown;">"FRAG"</font>,"REACT","Really"</tt><br>
 <tt>"CP-QUE","PU","?"</tt><br>
@@ -352,10 +335,10 @@
 
 <p align="justify">Besides clause level words (notably verbs, but also negation, adverb particles, and existential <i>there</i>), phrases may occur as components of annotated clause structure. To occur at the clause level, a phrase component requires a tag with an extension for a clause level function. Available clause level functions are:</p>
 <ul>
-<li><b>subject</b> (discussed in section <a href="chapter4.html#sec4.3.1">4.3.1</a>),</li>
-<li><b>object</b>(s) (discussed in section <a href="chapter4.html#sec4.3.2">4.3.2</a>),</li>
-<li><b>predicative</b> (discussed in section <a href="chapter4.html#sec4.3.3">4.3.3</a>), and</li>
-<li><b>adverbial</b>(s) (discussed in section <a href="chapter4.html#sec4.3.4">4.3.4</a>).</li>
+<li><b>subject</b> (discussed in section <a href="chapter4.html#sec4.3.1">4.3.1</a>)</li>
+<li><b>object</b>(s) (discussed in section <a href="chapter4.html#sec4.3.2">4.3.2</a>)</li>
+<li><b>predicative</b> (discussed in section <a href="chapter4.html#sec4.3.3">4.3.3</a>)</li>
+<li><b>adverbial</b>(s) (discussed in section <a href="chapter4.html#sec4.3.4">4.3.4</a>)</li>
 </ul>
 
 <h3><a name="sec4.3.1">4.3.1</a>&nbsp;&nbsp;&nbsp;Subject</h3>
@@ -367,7 +350,6 @@
 <dl>
   <dt>(<a name="ex4.24">4.24</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Never&nbsp;at&nbsp;any&nbsp;time&nbsp;does&nbsp;the&nbsp;user&nbsp;feel&nbsp;constrained&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","ADVP-TMP","ADV","Never"</tt><br>
 <tt>"IP-MAT","ADVP-TMP","PP","P-ROLE","at"</tt><br>
 <tt>"IP-MAT","ADVP-TMP","PP","NP","D","any"</tt><br>
@@ -385,7 +367,6 @@
 <dl>
   <dt>(<a name="ex4.25">4.25</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;By&nbsp;then&nbsp;Hez&nbsp;could&nbsp;see&nbsp;for&nbsp;himself&nbsp;&lt;comma&gt;&nbsp;and&nbsp;so&nbsp;could&nbsp;the&nbsp;others&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","IML","IML","PP-TMP","P-ROLE","By"</tt><br>
 <tt>"IP-MAT","IML","IML","PP-TMP","ADVP","ADV","then"</tt><br>
 <tt>"IP-MAT","IML","IML","NP-SBJ","NPR","Hez"</tt><br>
@@ -407,7 +388,6 @@
 <dl>
   <dt>(<a name="ex4.26">4.26</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;There&nbsp;remain&nbsp;many&nbsp;political&nbsp;and&nbsp;administrative&nbsp;problems&nbsp;to&nbsp;be&nbsp;solved&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","EX","There"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBP;~ex_V"</font>,"remain"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-ESBJ"</font>,"ADJP;&#64;1","ADJ","many"</tt><br>
@@ -425,15 +405,15 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings in table <a href="chapter4.html#table4.5">4.5</a> relate to the subject function in particular constructions:</p>
 <ul>
-<li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="chapter4.html#ex4.26">4.26</a>) above;</li>
-<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="chapter4.html#ex4.27">4.27</a>); and</li>
-<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="chapter4.html#ex4.28">4.28</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="chapter4.html#ex4.29">4.29</a>).</li>
+<li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="chapter4.html#ex4.26">4.26</a>) above</li>
+<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="chapter4.html#ex4.27">4.27</a>)</li>
+<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="chapter4.html#ex4.28">4.28</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="chapter4.html#ex4.29">4.29</a>)</li>
+<li>The subject can also be <i>it</i> as a dummy element that has nothing else to relate in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.30">4.30</a>).</li>
 </ul>
 
 <dl>
   <dt>(<a name="ex4.27">4.27</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;that&nbsp;kind&nbsp;of&nbsp;smell&nbsp;he&nbsp;&lt;apos&gt;s&nbsp;into&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-CSBJ"</font>,"PRO","it"</tt><br>
 <tt>"IP-MAT","BEP;~cleft_V","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","NP-FOC","D","that"</tt><br>
@@ -449,7 +429,6 @@
 <dl>
   <dt>(<a name="ex4.28">4.28</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;it&nbsp;&lt;apos&gt;s&nbsp;not&nbsp;right&nbsp;this&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it"</tt><br>
 <tt>"IP-MAT","BEP;~La","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","NEG","not"</tt><br>
@@ -460,7 +439,6 @@
 <dl>
   <dt>(<a name="ex4.29">4.29</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;The&nbsp;breaststroke&nbsp;is&nbsp;very&nbsp;hard&nbsp;to&nbsp;explain&nbsp;in&nbsp;words&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"D","The"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"NP-DSBJ"</font>,"N","breaststroke"</tt><br>
 <tt>"IML","BEP;~La","is"</tt><br>
@@ -473,6 +451,23 @@
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"PP-MNR","NP","NS","words"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_stories_09_M14@4,17" target="_blank">3#3_stories_09_M14&#64;2,15</a>"</tt><br>
 
+<dl>
+  <dt>(<a name="ex4.30">4.30</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","CONJ","but"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","P-CONN","when"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV",<font style="background-color: SandyBrown;">"NP-SBJ;{DUMMY}"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","VBD","got"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-TMP","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-TMP","NP","N","lunch-time"</tt><br>
+<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","ADVP-TMP","ADV","today"</tt><br>
+<tt>"IP-MAT","META","{whispering}"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{DUMMY}"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","HVP;~cat_Ve","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","BEN","been"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","META","quite_{unclear}"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=188_christine_T32@8,24" target="_blank">188_christine_T32&#64;8,24</a>"</tt><br>
+
 <p><a name="table4.5">Table 4.5: The full range of extension tags related to the subject function</a></p>
 
 <table border="1" cellpadding="10px">
@@ -483,6 +478,8 @@
 <tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
 <tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
 </table>
+<br>
+
 <h3><a name="sec4.3.2">4.3.2</a>&nbsp;&nbsp;&nbsp;Object</h3>
 
 <p align="justify">An object can only occur when there is a transitive verb. The following properties are typical:</p>
@@ -495,8 +492,8 @@
 
 <p align="justify">There are two types of objects:</p>
 <ul>
-<li><b>direct object</b> (<tt>-OB1</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.1">4.3.2.1</a>), and</li>
-<li><b>indirect object</b> (<tt>-OB2</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.2">4.3.2.2</a>).</li>
+<li><b>direct object</b> (<tt>-OB1</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.1">4.3.2.1</a>)</li>
+<li><b>indirect object</b> (<tt>-OB2</tt>) (discussed in section <a href="chapter4.html#sec4.3.2.2">4.3.2.2</a>)</li>
 </ul>
 
 <p align="justify">Also, section <a href="chapter4.html#sec4.3.2.3">4.3.2.3</a> notes the <b>unspecified object</b> function for preposition phrases.</p>
@@ -505,14 +502,13 @@
 
 <p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="chapter4.html#table4.6">4.6</a> relate to the direct object function in particular constructions:</p>
 <ul>
-<li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt>, as with (<a href="chapter4.html#ex4.30">4.30</a>) and (<a href="chapter4.html#ex4.31">4.31</a>); and</li>
-<li>tag extension <tt>-NOB1</tt> marks a notional direct object that occurs in a clause with a provisional direct object <i>it</i>, marked <tt>-POB1</tt>, as with (<a href="chapter4.html#ex4.32">4.32</a>) and (<a href="chapter7.html#ex7.53">7.53</a>).</li>
+<li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt>, as with (<a href="chapter4.html#ex4.31">4.31</a>) and (<a href="chapter4.html#ex4.32">4.32</a>)</li>
+<li>tag extension <tt>-NOB1</tt> marks a notional direct object that occurs in a clause with a provisional direct object <i>it</i>, marked <tt>-POB1</tt>, as with (<a href="chapter4.html#ex4.33">4.33</a>) and (<a href="chapter7.html#ex7.56">7.56</a>)</li>
 </ul>
 
 <dl>
-  <dt>(<a name="ex4.30">4.30</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.31">4.31</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;We&nbsp;want&nbsp;children&nbsp;to&nbsp;fulfil&nbsp;their&nbsp;potential&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
 <tt>"IP-MAT","VBP","want"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-DOB1"</font>,"NS","children"</tt><br>
@@ -524,9 +520,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=30_bnc_B41@7,10" target="_blank">30_bnc_B41&#64;7,10</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.31">4.31</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.32">4.32</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;could&nbsp;see&nbsp;the&nbsp;blood&nbsp;running&nbsp;down&nbsp;his&nbsp;chest&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","MD","could"</tt><br>
 <tt>"IP-MAT","VB;~Tng","see"</tt><br>
@@ -540,9 +535,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=132_susanne_N04@9,14" target="_blank">132_susanne_N04&#64;9,14</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.32">4.32</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.33">4.33</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;leave&nbsp;it&nbsp;to&nbsp;you&nbsp;&lt;comma&gt;&nbsp;Madam&nbsp;Deputy&nbsp;Speaker&nbsp;&lt;comma&gt;&nbsp;to&nbsp;decide&nbsp;which&nbsp;of&nbsp;those&nbsp;traits&nbsp;I&nbsp;share&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","VBP;~Tn.pr","leave"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-POB1"</font>,"PRO","it"</tt><br>
@@ -565,9 +559,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_texts_Hedgehog_Conservation@7,28" target="_blank">9_texts_Hedgehog_Conservation&#64;7,28</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex7.53">7.53</a>)</dt><dd></dd>
+  <dt>(<a name="ex7.56">7.56</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;found&nbsp;it&nbsp;strange&nbsp;that&nbsp;neither&nbsp;I&nbsp;nor&nbsp;the&nbsp;day&nbsp;seemed&nbsp;in&nbsp;a&nbsp;mourning&nbsp;mood&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","PRO","I"</tt><br>
 <tt>"IML","VBD;~Cn.a","found"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"NP-POB1"</font>,"PRO","it"</tt><br>
@@ -593,6 +586,8 @@
 <tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
 <tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
 </table>
+<br>
+
 <h4><a name="sec4.3.2.2">4.3.2.2</a>&nbsp;&nbsp;&nbsp;Indirect object</h4>
 
 <p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
@@ -602,12 +597,13 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OB2</tt></td><td>indirect object</td></tr>
 </table>
-<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="chapter4.html#ex4.34">4.34</a>).</p>
+<br>
+
+<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="chapter4.html#ex4.35">4.35</a>).</p>
 
 <dl>
-  <dt>(<a name="ex4.34">4.34</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.35">4.35</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;that&nbsp;&lt;apos&gt;s&nbsp;why&nbsp;I&nbsp;asked&nbsp;you&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","that"</tt><br>
 <tt>"IP-MAT","BEP;~equ_Vw","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","CP-QUE-PRD2","IP-SUB","ADVP-CNT","WADV","why"</tt><br>
@@ -625,6 +621,8 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OBU</tt></td><td>unspecified object</td></tr>
 </table>
+<br>
+
 <p align="justify">When we look at verb codes with objects in chapter <a href="chapter7.html#ch7">7</a>, we will find that verbs selecting <tt>PP-OBU</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
 
 <h3><a name="sec4.3.3">4.3.3</a>&nbsp;&nbsp;&nbsp;Predicative</h3>
@@ -633,14 +631,13 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. Both types have the semantic role of characterising a preceding noun phrase:</p>
 <ul>
-<li>A subject predicative adds more information about the subject, as seen with (<a href="chapter4.html#ex4.35">4.35</a>), while</li>
-<li>an object predicative does the same for its direct object, as seen with (<a href="chapter4.html#ex4.36">4.36</a>).</li>
+<li>a subject predicative adds more information about the subject, as seen with (<a href="chapter4.html#ex4.36">4.36</a>)</li>
+<li>an object predicative does the same for its direct object, as seen with (<a href="chapter4.html#ex4.37">4.37</a>)</li>
 </ul>
 
 <dl>
-  <dt>(<a name="ex4.35">4.35</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.36">4.36</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;The&nbsp;Skipjack&nbsp;became&nbsp;the&nbsp;fastest&nbsp;submarine&nbsp;ever&nbsp;built&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","Skipjack"</tt><br>
 <tt>"IP-MAT","VBD;~Ln","became"</tt><br>
@@ -654,9 +651,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_susanne_A20@9" target="_blank">46_susanne_A20&#64;9</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.36">4.36</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.37">4.37</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;find&nbsp;this&nbsp;very&nbsp;interesting&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","VBP;~Cn.a","find"</tt><br>
 <tt>"IP-MAT","NP-OB1","D","this"</tt><br>
@@ -673,16 +669,17 @@
 <tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
 <tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
 </table>
+<br>
+
 <h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
 
 <p align="justify">An adverbial is a phrase that is used to modify a verb or clause. It is typical for adverb phrases to be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter4.html#ex4.37">4.37</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18 at Franklin and Mount streets</i> are all adverbials that modify <i>struck</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter4.html#ex4.38">4.38</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18 at Franklin and Mount streets</i> are all adverbials that modify <i>struck</i>.</p>
 
 <dl>
-  <dt>(<a name="ex4.37">4.37</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.38">4.38</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;A&nbsp;thug&nbsp;struck&nbsp;a&nbsp;cab&nbsp;driver&nbsp;in&nbsp;the&nbsp;face&nbsp;with&nbsp;a&nbsp;pistol&nbsp;last&nbsp;night&nbsp;after&nbsp;robbing&nbsp;him&nbsp;of&nbsp;&lt;dollar&gt;&nbsp;18&nbsp;at&nbsp;Franklin&nbsp;and&nbsp;Mount&nbsp;streets&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","A"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","thug"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~Tn.pr"</font>,"struck"</tt><br>
@@ -711,7 +708,7 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_A19@7,16,24,32,38" target="_blank">10_susanne_A19&#64;7,16,24,32,38</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="chapter4.html#ex4.37">4.37</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb selects, as seen with the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in chapter <a href="chapter7.html#ch7">7</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="chapter4.html#ex4.38">4.38</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb selects, as seen with the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in chapter <a href="chapter7.html#ch7">7</a>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="chapter4.html#table4.10">4.10</a>.</p>
 
@@ -729,12 +726,13 @@
 <tr><td><tt>-RST</tt></td><td>respect</td></tr>
 <tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
 </table>
+<br>
+
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>-DIR</tt>, the adverbial functions of Table <a href="chapter4.html#table4.10">4.10</a> typically mark phrases that are not selected by the verb. Even when not selected by the verb, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
 
 <dl>
-  <dt>(<a name="ex4.38">4.38</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.39">4.39</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;For&nbsp;a&nbsp;time&nbsp;&lt;comma&gt;&nbsp;I&nbsp;still&nbsp;worked&nbsp;a&nbsp;couple&nbsp;of&nbsp;afternoons&nbsp;supply&nbsp;teaching&nbsp;at&nbsp;Perins&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"P-ROLE","For"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"NP","D","a"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP"</font>,"NP","N","time"</tt><br>
@@ -753,9 +751,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=40_texts_Alresford@20,4,17,22,33,38" target="_blank">3#40_texts_Alresford&#64;18,2,15,20,31,36</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.39">4.39</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.40">4.40</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;the&nbsp;visual&nbsp;aspect&nbsp;is&nbsp;much&nbsp;the&nbsp;same&nbsp;&lt;comma&gt;&nbsp;even&nbsp;with&nbsp;major&nbsp;changes&nbsp;in&nbsp;Broad&nbsp;Street&nbsp;")</tt><br>
 <tt>"IML","NP-SBJ","D","the"</tt><br>
 <tt>"IML","NP-SBJ","ADJP","ADJ","visual"</tt><br>
 <tt>"IML","NP-SBJ","N","aspect"</tt><br>
@@ -774,9 +771,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=94_texts_Alresford@68" target="_blank">46#94_texts_Alresford&#64;23</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.40">4.40</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.41">4.41</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;In&nbsp;the&nbsp;summer&nbsp;of&nbsp;1979&nbsp;&lt;comma&gt;&nbsp;the&nbsp;ITV&nbsp;channel&nbsp;disappeared&nbsp;from&nbsp;the&nbsp;national&nbsp;screens&nbsp;for&nbsp;months&nbsp;due&nbsp;to&nbsp;industrial&nbsp;action&nbsp;")</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"P-ROLE","In"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","D","the"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-TMP;&#64;1"</font>,"NP","N","summer"</tt><br>
@@ -800,9 +796,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=87_texts_Alresford@27,4,40,46" target="_blank">3#87_texts_Alresford&#64;25,2,38,44</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.41">4.41</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.42">4.42</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;head&nbsp;straight&nbsp;across&nbsp;the&nbsp;swells&nbsp;for&nbsp;Antler&nbsp;")</tt><br>
 <tt>"IML","VB;~phr_Vp.pr","head"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"ADVP-DIR"</font>,"ADV","straight"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"PP-DIR;&#64;3"</font>,"P-ROLE","across"</tt><br>
@@ -813,9 +808,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_susanne_N14@100,103,111" target="_blank">97#116_susanne_N14&#64;4,7,15</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.42">4.42</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.43">4.43</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;&lt;apos&gt;ve&nbsp;watched&nbsp;them&nbsp;all&nbsp;through&nbsp;the&nbsp;week&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","HVP;~cat_Ve","&lt;apos&gt;ve"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","VVN;~Tn","watched"</tt><br>
@@ -827,9 +821,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_christine_T11@13" target="_blank">46_christine_T11&#64;13</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.43">4.43</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.44">4.44</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;went&nbsp;through&nbsp;the&nbsp;wood&nbsp;to&nbsp;the&nbsp;baker&nbsp;&lt;apos&gt;s&nbsp;")</tt><br>
 <tt>"IML","VBD;~Ipr","went"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"PP-DIR"</font>,"P-ROLE","through"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"PP-DIR"</font>,"NP","D","the"</tt><br>
@@ -841,9 +834,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_classics_POTTER_1902@41,49" target="_blank">38#7_classics_POTTER_1902&#64;4,12</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex4.44">4.44</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.45">4.45</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;I&nbsp;arrive&nbsp;home&nbsp;from&nbsp;school&nbsp;in&nbsp;the&nbsp;evening&nbsp;&lt;comma&gt;&nbsp;at&nbsp;about&nbsp;four&nbsp;o&lt;apos&gt;clock&nbsp;")</tt><br>
 <tt>"IP-ADV","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-ADV",<font style="background-color: SandyBrown;">"VBP;~Ip"</font>,"arrive"</tt><br>
 <tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"ADVP-DIR"</font>,"ADV","home"</tt><br>
@@ -867,12 +859,13 @@
 <table border="1" cellpadding="10px">
 <tr><td><tt>IML</tt></td><td>clause intermediate level</td></tr>
 </table>
-<p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="chapter4.html#ex4.45">4.45</a>).</p>
+<br>
+
+<p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="chapter4.html#ex4.46">4.46</a>).</p>
 
 <dl>
-  <dt>(<a name="ex4.45">4.45</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.46">4.46</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Mr&nbsp;G&nbsp;is&nbsp;the&nbsp;headmaster&nbsp;&lt;comma&gt;&nbsp;Miss&nbsp;K&nbsp;is&nbsp;the&nbsp;deputy&nbsp;head&nbsp;and&nbsp;Mrs&nbsp;V&nbsp;is&nbsp;the&nbsp;school&nbsp;secretary&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","N","Mr"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","NPR","G"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
@@ -895,18 +888,17 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_age_11_H11@2,3,19,37" target="_blank">3_age_11_H11&#64;2,3,19,37</a>"</tt><br>
 
-<p align="justify">The overall coordinated structure of (<a href="chapter4.html#ex4.45">4.45</a>) is gathered under a single <tt>IML</tt> (intermediate clause layer) projection with the external behaviour of a single clause. Each <b>conjunct</b> of the coordinated structure is an <tt>IML</tt> that is either:</p>
-<ul>
+<p align="justify">The overall coordinated structure of (<a href="chapter4.html#ex4.46">4.46</a>) is gathered under a single <tt>IML</tt> (intermediate clause layer) projection with the external behaviour of a single clause. Each <b>conjunct</b> of the coordinated structure is an <tt>IML</tt> that is either:</p>
+<dl>
 <dt>(i)</dt><dd>the first conjunct followed by one or more <tt>CONJP</tt> sisters, or</dd>
 <dt>(ii)</dt><dd>a conjunct that is directly under a <tt>CONJP</tt>.</dd>
-</ul>
+</dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure. Such layered coordination is easiest to identify when different coordinators are used at each level, as (<a href="chapter4.html#ex4.46">4.46</a>) illustrates.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure. Such layered coordination is easiest to identify when different coordinators are used at each level, as (<a href="chapter4.html#ex4.47">4.47</a>) illustrates.</p>
 
 <dl>
-  <dt>(<a name="ex4.46">4.46</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.47">4.47</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Mrs&nbsp;G&nbsp;was&nbsp;headmistress&nbsp;when&nbsp;I&nbsp;came&nbsp;but&nbsp;she&nbsp;left&nbsp;#&nbsp;soon&nbsp;after&nbsp;she&nbsp;left&nbsp;&lt;comma&gt;&nbsp;and&nbsp;a&nbsp;new&nbsp;headmistress&nbsp;came&nbsp;*&lt;comma&gt;*&nbsp;her&nbsp;name&nbsp;is&nbsp;Miss&nbsp;B&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","NP-SBJ","N","Mrs"</tt><br>
 <tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","NP-SBJ","NPR","G"</tt><br>
 <tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IML","BED;~Ln","was"</tt><br>
@@ -937,12 +929,11 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_age_11_H04@3,4,51,52" target="_blank">4_age_11_H04&#64;3,4,51,52</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination can happen at different levels of clause structure. In (<a href="chapter4.html#ex4.47">4.47</a>) coordination occurs at the highest level of clause structure, so that the front placement of <i>is</i> (i.e.&nbsp;marking for an interrogative clause) is required for both conjuncts.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination can happen at different levels of clause structure. In (<a href="chapter4.html#ex4.48">4.48</a>) coordination occurs at the highest level of clause structure, so that the front placement of <i>is</i> (i.e.&nbsp;marking for an interrogative clause) is required for both conjuncts.</p>
 
 <dl>
-  <dt>(<a name="ex4.47">4.47</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.48">4.48</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;is&nbsp;he&nbsp;a&nbsp;manager&nbsp;or&nbsp;is&nbsp;he&nbsp;unemployed&nbsp;at&nbsp;the&nbsp;moment&nbsp;")</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~Ln","is"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","PRO","he"</tt><br>
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-PRD2","D","a"</tt><br>
@@ -956,12 +947,11 @@
 <tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"IML","PP-TMP","NP","N","moment"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=497_christine_T14@3,4,15" target="_blank">497_christine_T14&#64;3,4,15</a>"</tt><br>
 
-<p align="justify">In (<a href="chapter4.html#ex4.48">4.48</a>) the coordination is within the syntactic scope of the subject.</p>
+<p align="justify">In (<a href="chapter4.html#ex4.49">4.49</a>) the coordination is within the syntactic scope of the subject.</p>
 
 <dl>
-  <dt>(<a name="ex4.48">4.48</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.49">4.49</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;They&nbsp;not&nbsp;only&nbsp;look&nbsp;at&nbsp;the&nbsp;inside&nbsp;of&nbsp;the&nbsp;apartment&nbsp;&lt;comma&gt;&nbsp;but&nbsp;also&nbsp;look&nbsp;at&nbsp;the&nbsp;surroundings&nbsp;&lt;mdash&gt;&nbsp;&lt;epara&gt;&nbsp;")</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
 <tt>"IP-MAT","IML",<font style="background-color: SandyBrown;">"NEG"</font>,"not"</tt><br>
 <tt>"IP-MAT","IML","ADVP-MOD","ADV","only"</tt><br>
@@ -983,12 +973,11 @@
 <tt>"IP-MAT","PU","&lt;epara&gt;"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_young_adult_E40@6,30,32" target="_blank">14_young_adult_E40&#64;6,30,32</a>"</tt><br>
 
-<p align="justify">In (<a href="chapter4.html#ex4.49">4.49</a>) we can see coordination occurring within the clause at two distinct levels: (i) at a level that is just under the syntactic scope of the overall subject, and (ii) at a level that is under the syntactic scope of an object.</p>
+<p align="justify">In (<a href="chapter4.html#ex4.50">4.50</a>) we can see coordination occurring within the clause at two distinct levels: (i) at a level that is just under the syntactic scope of the overall subject, and (ii) at a level that is under the syntactic scope of an object.</p>
 
 <dl>
-  <dt>(<a name="ex4.49">4.49</a>)</dt><dd></dd>
+  <dt>(<a name="ex4.50">4.50</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;On&nbsp;Fridays&nbsp;the&nbsp;fourth&nbsp;year&nbsp;go&nbsp;out&nbsp;on&nbsp;to&nbsp;the&nbsp;field&nbsp;and&nbsp;practise&nbsp;or&nbsp;play&nbsp;cricket&nbsp;or&nbsp;rounders&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","PP-TMP","P-ROLE","On"</tt><br>
 <tt>"IP-MAT","PP-TMP","NP","NPRS","Fridays"</tt><br>
 <tt>"IP-MAT","NP-SBJ","D","the"</tt><br>

@@ -59,7 +59,6 @@
 <dl>
   <dt>(<a name="ex1.4">1.4</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;Look&nbsp;!&nbsp;")</tt><br>
 <tt>"IP-MAT","VERB","Look"</tt><br>
 <tt>"IP-MAT","-VERB","!"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=101_classics_SAINT_EXUPERY_1943" target="_blank">101_classics_SAINT_EXUPERY_1943</a>"</tt><br>
@@ -101,7 +100,6 @@
 <dl>
   <dt>(<a name="ex1.7">1.7</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;He&nbsp;wanted&nbsp;to&nbsp;show&nbsp;what&nbsp;happened&nbsp;to&nbsp;anyone&nbsp;who&nbsp;tried&nbsp;to&nbsp;start&nbsp;trouble&nbsp;.&nbsp;")</tt><br>
 <tt>"IP-MAT","PHRASE","-VERB","He"</tt><br>
 <tt>"IP-MAT","VERB","wanted"</tt><br>
 <tt>"IP-MAT","CLAUSE","-VERB","to"</tt><br>
@@ -129,28 +127,28 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We have so far categorised words into being either:</p>
 <ul>
-<li><tt>VERB</tt> words (e.g.&nbsp;<i>look</i>, <i>wanted</i>, <i>start</i>), or</li>
-<li><tt>-VERB</tt> words (e.g.&nbsp;<i>he</i>, <i>to</i>, <i>town</i>).</li>
+<li><tt>VERB</tt> words (e.g.&nbsp;<i>look</i>, <i>wanted</i>, <i>start</i>)</li>
+<li><tt>-VERB</tt> words (e.g.&nbsp;<i>he</i>, <i>to</i>, <i>town</i>)</li>
 </ul>
 
 <p align="justify">Because of this categorisation, we have already been able to distinguish clause constituents from phrase constituents:</p>
 <ul>
-<li>An immediately contained <tt>VERB</tt> word gives a clause layer.</li>
-<li>Without an immediately contained <tt>VERB</tt> word, a non-word unit is a phrase.</li>
+<li>an immediately contained <tt>VERB</tt> word gives a clause layer</li>
+<li>without an immediately contained <tt>VERB</tt> word, a non-word unit is a phrase</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We will want to further distinguish phrases into being of various kinds based on the words they contain. To this end, we can divide <tt>-VERB</tt> words into classes such as:</p>
 <ul>
-<li><b>noun</b> (<tt>N</tt>),</li>
-<li><b>adjective</b> (<tt>ADJ</tt>), and</li>
-<li><b>adverb</b> (<tt>ADV</tt>).</li>
+<li><b>noun</b> (<tt>N</tt>)</li>
+<li><b>adjective</b> (<tt>ADJ</tt>)</li>
+<li><b>adverb</b> (<tt>ADV</tt>)</li>
 </ul>
 
 <p align="justify">With such divisions, phrases can be sub-divided into:</p>
 <ul>
-<li><b>noun phrases</b> (<tt>NP</tt>) that minimally contain a noun,</li>
-<li><b>adjective phrases</b> (<tt>ADJP</tt>) that minimally contain an adjective, and</li>
-<li><b>adverb phrases</b> (<tt>ADVP</tt>) that minimally contain an adverb.</li>
+<li><b>noun phrases</b> (<tt>NP</tt>) that minimally contain a <b>noun</b></li>
+<li><b>adjective phrases</b> (<tt>ADJP</tt>) that minimally contain an <b>adjective</b></li>
+<li><b>adverb phrases</b> (<tt>ADVP</tt>) that minimally contain an <b>adverb</b></li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Establishing the range of word classes is the aim of chapter <a href="chapter2.html#ch2">2</a>. Looking at phrase classes in detail is pursued in chapter <a href="chapter3.html#ch3">3</a>. A big part of chapters <a href="chapter2.html#ch2">2</a> and <a href="chapter3.html#ch3">3</a> will be to raise and answer questions of FORM, that is, how words and constituents look &mdash; their shape or appearance, and what their internal structure happens to be. But form is not the full story required for parsing: In order to gain motivation for having structure, we will often need to be equally concerned to explore the FUNCTION that words and constituents perform in the larger structures which contain them.</p>
@@ -161,7 +159,7 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapters <a href="chapter6.html#ch6">6</a> <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a> integrate verb codes that signal the clause requirements of main verbs.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="chapter9.html#ch9">9</a> adds the use of indexing and other practises that broaden the kinds of connections that the annotation can capture.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter chapterref:[__indexingchap__] adds the use of indexing and other practises that broaden the kinds of connections that the annotation can capture.</p>
 
 <h3><a name="sec1.4.1">1.4.1</a>&nbsp;&nbsp;&nbsp;Notational conventions</h3>
 
@@ -214,18 +212,18 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The Penn Historical Corpora scheme, which itself draws on the bracketed approach of the Penn Treebank scheme, has informed the &lsquo;look&rsquo; of the annotation. This includes:</p>
 <dl>
-<dt>(i)</dt><dd>the tag labelling: <tt>CP</tt> and <tt>IP</tt> for clause layers; <tt>ADJP</tt>, <tt>ADVP</tt>, <tt>NP</tt>, and <tt>PP</tt> for phrase layers,</dd>
-<dt>(ii)</dt><dd>that label extensions are added to <tt>CP</tt>, <tt>IP</tt>, <tt>ADJP</tt>, <tt>ADVP</tt>, <tt>NP</tt>, and <tt>PP</tt> to indicate functions, and</dd>
-<dt>(iii)</dt><dd>the presentation of conjunction structure with <tt>CONJP</tt> layers.</dd>
+<dt>(i)</dt><dd>the tag labelling: <tt>CP</tt> and <tt>IP</tt> for clause layers; <tt>ADJP</tt>, <tt>ADVP</tt>, <tt>NP</tt>, and <tt>PP</tt> for phrase layers</dd>
+<dt>(ii)</dt><dd>that label extensions are added to <tt>CP</tt>, <tt>IP</tt>, <tt>ADJP</tt>, <tt>ADVP</tt>, <tt>NP</tt>, and <tt>PP</tt> to indicate functions</dd>
+<dt>(iii)</dt><dd>the presentation of conjunction structure with <tt>CONJP</tt> layers</dd>
 </dl>
 
 <p align="justify">However, it should be noted that, labels aside, the tagset of the current scheme is most compatible with the SUSANNE scheme, especially with regards to function marking. Moreover, word class tags closely overlap with the Lancaster word class tagging systems, especially the UCREL CLAWS7 Tagset used for the British National Corpus (BNC-Consortium 2005).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation also contains plenty that is innovative. For example, normalised structure is achieved with intermediate layers at:</p>
 <ul>
-<li>clause levels (<tt>IML</tt>),</li>
-<li>noun phrase levels (<tt>NML</tt>), and</li>
-<li>adjective phrase and adverb phrase levels (<tt>AML</tt>).</li>
+<li>clause levels (<tt>IML</tt>)</li>
+<li>noun phrase levels (<tt>NML</tt>)</li>
+<li>adjective phrase and adverb phrase levels (<tt>AML</tt>)</li>
 </ul>
 
 <p align="justify">These intermediate layers are required when their corresponding levels of structure include <tt>CONJP</tt> layers.</p>

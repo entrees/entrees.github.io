@@ -1,0 +1,487 @@
+<h1><a name="ch10">Chapter 10</a><br>Exceptional sope, control, and anaphora</h1>
+
+<br>
+<h2><a name="sec10.1">10.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
+
+<p align="justify">This chapter discusses exceptional scope (section <a href="chapter10.html#sec10.2">10.2</a>), a need for <tt>IML</tt> layers distinct from their use with conjunction (section <a href="chapter10.html#sec10.3">10.3</a>), managing control (section <a href="chapter10.html#sec10.4">10.4</a>), blocking control (section <a href="chapter10.html#sec10.5">10.5</a>), and resolving anaphora (section <a href="chapter10.html#sec10.6">10.6</a>).</p>
+
+<br>
+<h2><a name="sec10.2">10.2</a>&nbsp;&nbsp;&nbsp;Exceptional scope</h2>
+
+<p align="justify">Quantificational elements scope from their place of occurrence with a leftward direction (but see section <a href="chapter10.html#sec10.3">10.3</a> for how this can be manipulated), only with intermediate layers, phrase heads, and verbs of clauses always within the scope of other elements of the same layer. But a quantificational element with a functional role at its point of occurrence can also have broader scope consequences. This is closely related to what happens for displacement in section <a href="chapter9.html#sec9.2">9.2</a>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Displacement of a quantificational element needs to capture a narrower point of integration from a broader scope gained from the place of element occurrence. Annotation has an indexed <tt>*ICH*</tt> node under role information at the place of integration. The quantificational element from its place of occurrence takes index information identical to the <tt>*ICH*</tt> as its own role integration information.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Exceptional scope needs to capture a broader scope contribution from an occurrence point that is the point of role integration. Annotation for exceptional scope is also achieved with an indexed <tt>*ICH*</tt> node, only with placement of this indexed node without any role integration information at the point where the exceptional scope begins. The quantificational element from its place of occurrence has both role integration information and the same index information as the <tt>*ICH*</tt> occurrence that itself lacks role integration information but which gives the exceptional scope information in virtue of its placement.</p>
+
+<dl>
+  <dt>(<a name="ex10.1">10.1</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP"</font>,"*ICH*-1"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","Thousands"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PP","P-ROLE","of"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PP","NP","NS","people"</tt><br>
+<tt>"IP-MAT","BEP;~cat_Ve","are"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","VVN","killed"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"NP-TMP-1"</font>,"Q","every"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"NP-TMP-1"</font>,"N","year"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","P-ROLE","in"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","NP","NML","NP","NS","explosions"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","NP","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","NP","NML","CONJP;&#64;3","NP","NS","cave-ins"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","NP","NML","CONJP;&#64;4","CONJ","and"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-LOC","NP","NML","CONJP;&#64;4","NP","NS","floods"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","P-ROLE","despite"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","NP","N","government"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","NP","NS","crackdowns"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","NP","PP","P-ROLE","on"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","NP","PP","NP","N","safety"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-CNT","NP","PP","NP","NS","violations"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=102_texts_Voice_of_America@2,20" target="_blank">102_texts_Voice_of_America&#64;2,20</a>"</tt><br>
+
+<br>
+<h2><a name="sec10.3">10.3</a>&nbsp;&nbsp;&nbsp;Managing scope with IML</h2>
+
+<p align="justify">Examples above have <tt>IP-PPL-CAT</tt> structures that follow the subject, so that the <tt>IP-PPL-CAT</tt> is within the scope of the subject. The word order of (<a href="chapter10.html#ex10.2">10.2</a>) suggests content for an <tt>IP-PPL-CAT</tt> (<i>Opposing him</i>) that precedes the subject (<i>the French Admiral ...</i>), and yet inheritance of the subject is also needed. Subject inheritance is achieved by the placement of the <tt>IP-PPL-CAT</tt> under an <tt>IML</tt> projection that also contains the auxiliary verb. With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had its content placed last in the containing layer.</p>
+
+<dl>
+  <dt>(<a name="ex10.2">10.2</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"VAG;~Tn","Opposing"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"NP-OB1;{GAUNT}","PRO","him"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IML"</font>,"BED;~cat_Vg","was"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","D","the"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","ADJP","ADJ","French"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","N","Admiral"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;5","NP","NPR","Jean"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;5","NP","FW","de"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;5","NP","NPR","Vienne"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PU","&lt;mdash&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","NP","D","a"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","NP","ADJP","ADJ","great"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","NP","N","sailor"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","CONJP","NP","D","an"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","CONJP","NP","ADJP","ADJ","able"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{DE_VIENNE}","PRN;&#64;7","NP","NML","CONJP","NP","N","strategist"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lob_G01@3,2" target="_blank">6_lob_G01&#64;3,2</a>"</tt><br>
+
+<p align="justify">It follows that an <tt>IML</tt> instance will either (i) have a placement that is directly under a clause layer, as in (<a href="chapter10.html#ex10.2">10.2</a>); or (ii) have a placement that is either sister to <tt>CONJP</tt> layer(s) or directly under a <tt>CONJP</tt> layer, as with the examples of clause internal coordination in section <a href="chapter4.html#sec4.4">4.4</a>. An <tt>IML</tt> is never sister to another <tt>IML</tt>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter10.html#ex10.3">10.3</a>) <tt>IML</tt> is needed to ensure that <i>in_order</i> attaches at a higher scope level than <i>without</i>.</p>
+
+<dl>
+  <dt>(<a name="ex10.3">10.3</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"VBD","spent"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"NP-OB1","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"NP-OB1","N","night"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PP-LOC","P-ROLE","at"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PP-LOC","NP","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PP-LOC","NP","N","library"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PP-SCON-MNR","P-CONN","without"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IML"</font>,"PP-SCON-MNR","IP-PPL2","VAG","sleeping"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","P-CONN","in_order"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","IP-INF","TO","to"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","IP-INF","VB","prepare"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","IP-INF","PP-OBU","P-ROLE","for"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","IP-INF","PP-OBU","NP","D","the"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT","IP-INF","PP-OBU","NP","N","exam"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=386_samples_purple_intermediate@5" target="_blank">386_samples_purple_intermediate&#64;5</a>"</tt><br>
+
+<br>
+<h2><a name="sec10.4">10.4</a>&nbsp;&nbsp;&nbsp;Managing control</h2>
+
+<p align="justify">No extra annotation is required for subject control to reach into an adverbial clause occurring within the same clause but prior to a subject. For example, in (<a href="chapter10.html#ex10.4">10.4</a>) <i>the disease</i> controls into the initial conditional adverbial to be the subject for the passive <i>untreated</i>.</p>
+
+<dl>
+  <dt>(<a name="ex10.4">10.4</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","PP-SCON-CNT-CND",<font style="background-color: MediumSpringGreen;">"IP-PPL"</font>,"NP-LGS","*"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND",<font style="background-color: MediumSpringGreen;">"IP-PPL"</font>,"VVN;~Tn","untreated"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"N","disease"</tt><br>
+<tt>"IP-MAT","MD","can"</tt><br>
+<tt>"IP-MAT","VB;~Ipr","result"</tt><br>
+<tt>"IP-MAT","PP-OBU","P-ROLE","in"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","NP","N","kidney"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","NP","N","damage"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;3","NP","N","liver"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;3","NP","N","failure"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;5","NP","N","meningitis"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;7","CONJ","or"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;7","NP","ADJP","ADJ","respiratory"</tt><br>
+<tt>"IP-MAT","PP-OBU","NP","NML","CONJP;&#64;7","NP","N","distress"</tt><br>
+<tt>"IP-MAT","PU",";"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=61_texts_FACTBOOK_1_2010@10,3" target="_blank">61_texts_FACTBOOK_1_2010&#64;10,3</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.5">10.5</a>) illustrates the need to mark <tt>IP-PPL2</tt> and <tt>IP-INF2</tt> to maintains subject control.</p>
+
+<dl>
+  <dt>(<a name="ex10.5">10.5</a>)</dt><dd></dd>
+</dl>
+<tt>"IML","NP-SBJ","PRO","we"</tt><br>
+<tt>"IML","MD","should"</tt><br>
+<tt>"IML","VB","try"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"TO","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"VB","appreciate"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"NP-OB1","IP-REL","NP-SBJ","RPRO","what"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"NP-OB1","IP-REL","BEP;~La","is"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"NP-OB1","IP-REL","ADJP-PRD2","ADVP","ADV","financially"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"NP-OB1","IP-REL","ADJP-PRD2","ADJ","free"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP","P-CONN","whilst"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"BAG;~cat_Ve","being"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT","VVN","prepared"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,"TO","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,"VB","pay"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,"NP-OB1","ADJP","ADJ","emotional"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,"NP-OB1","NS","prices"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","TO","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","VB;~Tn","achieve"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","NP-SBJ","RPRO","what"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","BEP;~La","is"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","ADJP-PRD2","ADJS","best"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","PP-BNF","P-ROLE","for"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-OB1"</font>,"PP-SCON-TMP",<font style="background-color: MediumSpringGreen;">"IP-PPL2"</font>,"IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-INF2","NP-OB1","IP-REL","PP-BNF","NP","Q","all"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=35_young_adult_E05@68,89,95,106" target="_blank">60#35_young_adult_E05&#64;9,30,36,47</a>"</tt><br>
+
+<p align="justify">In (<a href="chapter10.html#ex10.6">10.6</a>) the matrix subject controls through to the embedded <i>be</i>.</p>
+
+<dl>
+  <dt>(<a name="ex10.6">10.6</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"D","The"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"N","cost"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PP;&#64;3","P-ROLE","per"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PP;&#64;3","NP","N","job"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PP;&#64;4","P-ROLE","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PP;&#64;4","NP","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-SBJ"</font>,"PP;&#64;4","NP","N","Exchequer"</tt><br>
+<tt>"IP-MAT","BED;~cat_Ve","was"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","VVN;~Tnt","estimated"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-INF-OB1","TO","to"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-INF-OB1",<font style="background-color: MediumSpringGreen;">"BE;~Ln"</font>,"be"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-INF-OB1","NP-PRD2","ADVP","ADV","around"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-INF-OB1","NP-PRD2","N","&lt;pound&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-INF-OB1","NP-PRD2","NUM","30&lt;comma&gt;000"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PUL","-LRB-"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","NPR","National"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","NPR","Audit"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","N","Office"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","NUM","1990"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","NUM","23-4"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","VVN;~Tn","cited"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","P-ROLE","in"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","NP","NML","NP","NPR","Atkinson"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","NP","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","NP","NML","CONJP","NP","NPR","Moon"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","NP","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PRN","NP","IP-PPL","PP-LOC","NP","NUM","1994"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PUR","-RRB-"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_young_adult_E94@2,31" target="_blank">6_young_adult_E94&#64;2,31</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there is clause-within-clause subordination, the possibility arises of an element from the main clause making a direct contribution to the subordinate clause while being left with unclear status in the main clause. One notable scenario of this involves derived subjects. (The other notable scenario involves derived objects.)</p>
+
+<dl>
+  <dt>(<a name="ex10.7">10.7</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"D","these"</tt><br>
+<tt>"IP-ADV","BEP;~La","are"</tt><br>
+<tt>"IP-ADV","ADJP-PRD2","ADVP","ADVR","more"</tt><br>
+<tt>"IP-ADV","ADJP-PRD2","ADJ","likely"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","crease"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=101_bnc_B27@27,16" target="_blank">15#101_bnc_B27&#64;13,2</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex10.8">10.8</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"D","the"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"NS","problems"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"PP","P-ROLE","of"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"PP","NP","D","the"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"PP","NP","N","reform"</tt><br>
+<tt>"IP-ADV",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"PP","NP","N","programme"</tt><br>
+<tt>"IP-ADV","VBD;~La","became"</tt><br>
+<tt>"IP-ADV","ADJP-PRD2","ADVP","ADVR","more"</tt><br>
+<tt>"IP-ADV","ADJP-PRD2","ADJ","difficult"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"NP-LGS","*"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IP-ADV",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","contain"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=20_bnc_B20@75,52" target="_blank">51#20_bnc_B20&#64;25,2</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Tag extension <tt>-NSBJ</tt> marking a notional subject can also be seen when the clause has: (i) a subject  marked <tt>-ESBJ</tt> occurring with existential <i>there</i>, as in (<a href="chapter10.html#ex10.9">10.9</a>); or (ii) a subject inherited from control, as with the environment created by the reduced relative clause (the <tt>IP-PPL</tt> under <tt>NP</tt>) in (<a href="chapter10.html#ex10.10">10.10</a>).</p>
+
+<dl>
+  <dt>(<a name="ex10.9">10.9</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","EX","There"</tt><br>
+<tt>"IP-MAT","IML","BEP;~La","are"</tt><br>
+<tt>"IP-MAT","IML","ADJP-PRD2","ADJ","bound"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT","IML",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"BE;~ex_V","be"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-ESBJ"</font>,"NS","demonstrations"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"IP-MAT","PUQ","&lt;rquo&gt;"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_lob_A01@15,10" target="_blank">19_lob_A01&#64;15,10</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex10.10">10.10</a>)</dt><dd></dd>
+</dl>
+<tt>"NP","D","the"</tt><br>
+<tt>"NP","ADJP","ADJ","increasing"</tt><br>
+<tt>"NP","NS","numbers"</tt><br>
+<tt>"NP","PP","P-ROLE","of"</tt><br>
+<tt>"NP","PP","NP","ADJP","ADJ","young"</tt><br>
+<tt>"NP","PP","NP","NS","intellectuals"</tt><br>
+<tt>"NP","IP-PPL","IML","IML","VAG","taking"</tt><br>
+<tt>"NP","IP-PPL","IML","IML","NP-OB1","N","part"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","CONJ","and"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","ADVP-MOD","ADVP","ADVR","more"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","ADVP-MOD","ADV","importantly"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","PU","&lt;comma&gt;"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","IML","VAG","failing"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","IML",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"NP","IP-PPL","IML","CONJP","IML",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","return"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=21_bnc_B20@94" target="_blank">55#21_bnc_B20&#64;40</a>"</tt><br>
+
+<p align="justify">Note the presence of the <tt>IML</tt> layer in (<a href="chapter10.html#ex10.9">10.9</a>). With this annotation, the <tt>IML</tt> projection functions as a direct embedding of the layer that contains it, so that all other content of the containing layer scopes over the <tt>IML</tt>, as if the <tt>IML</tt> had final placement within its containing layer. This allows the <tt>-ESBJ</tt> subject to scope into the <tt>IML</tt>.</p>
+
+<br>
+<h2><a name="sec10.5">10.5</a>&nbsp;&nbsp;&nbsp;Blocking control</h2>
+
+<p align="justify">Example (<a href="chapter10.html#ex10.12">10.12</a>) illustrates the need to mark <tt>IP-PPL3</tt> to prevent subject control.</p>
+
+<dl>
+  <dt>(<a name="ex10.11">10.11</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
+<tt>"IP-MAT","NP-SBJ","ADJP","ADJ","low"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","clouds"</tt><br>
+<tt>"IP-MAT","VBD;~Cn.a","made"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL3-OB1"</font>,"VAG;~I","bombing"</tt><br>
+<tt>"IP-MAT","ADJP-PRD","ADJ","difficult"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=64_susanne_N15@12" target="_blank">64_susanne_N15&#64;12</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex10.12">10.12</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ;{ISSUES}","D","These"</tt><br>
+<tt>"IP-MAT","IML","IML","VBD;~Ipr","ranged"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;2","P-ROLE","from"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;2",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"VAG;~Tn","costing"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;2",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"NP-OB1","N","playground"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;2",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"NP-OB1","N","equipment"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;3","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;3",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"VAG;~Tn","monitoring"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;3",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","N","street"</tt><br>
+<tt>"IP-MAT","IML","IML","PP-DIR;&#64;3",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","N","lighting"</tt><br>
+<tt>"IP-MAT","IML","PU",";"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1","P-ROLE","from"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"VAG;~Tn","allocating"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","NS","grants"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","PP","P-ROLE","for"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","PP","NP","ADJP","ADJ","local"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;1",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","PP","NP","NS","projects"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;2","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;2",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"VAG;~Tn","vetting"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;2",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","N","planning"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","PP-DIR;&#64;2",<font style="background-color: MediumSpringGreen;">"IP-PPL3"</font>,"NP-OB1","NS","applications"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=61_texts_Alresford@12,23,38,56" target="_blank">61_texts_Alresford&#64;12,23,38,56</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.13">10.13</a>) contains an adverbial participle clause that contains a subject and so as is tagged <tt>IP-PPL3</tt> (under <tt>PP-SCON-MNR</tt> function information) to ensure there is no control to disrupt the internal subject.</p>
+
+<dl>
+  <dt>(<a name="ex10.13">10.13</a>)</dt><dd></dd>
+</dl>
+<tt>"IML","NP-SBJ","D","a"</tt><br>
+<tt>"IML","NP-SBJ","NUM","second"</tt><br>
+<tt>"IML","NP-SBJ","N","tier"</tt><br>
+<tt>"IML","BEP;~cat_Ve","is"</tt><br>
+<tt>"IML","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IML","IP-PPL-CAT","VVN","laid"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-LOC","P-ROLE","over"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-LOC","NP","D","this"</tt><br>
+<tt>"IML","IP-PPL-CAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-CNT","IP-PPL","VVN","protected"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-CNT","IP-PPL","PP-LGS","P-ROLE","by"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-CNT","IP-PPL","PP-LGS","NP","D","a"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-CNT","IP-PPL","PP-LGS","NP","N","lath"</tt><br>
+<tt>"IML","IP-PPL-CAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"D","the"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"N","head"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"PP","P-ROLE","of"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"PP","NP","D","the"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"PP","NP","NUM","second"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"BAG;~cat_Ve"</font>,"being"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","VVN","laid"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","P-ROLE","to"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","NP","D","the"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","NP","N","bottom"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","NP","PP","P-ROLE","of"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","NP","PP","NP","D","the"</tt><br>
+<tt>"IML","IP-PPL-CAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"IP-PPL-CAT","PP-DIR","NP","PP","NP","NUM","first"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_classics_BEETON_1861@144,145,158" target="_blank">106#39_classics_BEETON_1861&#64;39,40,53</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Compare (<a href="chapter10.html#ex10.14">10.14</a>) with (<a href="chapter10.html#ex10.4">10.4</a>) above.</p>
+
+<dl>
+  <dt>(<a name="ex10.14">10.14</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","PP-SCON-CNT-CND",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"NP-LGS","*"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"VVN;~Cn.a","left"</tt><br>
+<tt>"IP-MAT","PP-SCON-CNT-CND",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"ADJP-PRD","ADJ","untreated"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","mortality"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NS","rates"</tt><br>
+<tt>"IP-MAT","MD","can"</tt><br>
+<tt>"IP-MAT","VB","reach"</tt><br>
+<tt>"IP-MAT","NP-OB1","NUM","20"</tt><br>
+<tt>"IP-MAT","NP-OB1","N","%"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_texts_FACTBOOK_1_2010@3" target="_blank">19_texts_FACTBOOK_1_2010&#64;3</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For (<a href="chapter10.html#ex10.15">10.15</a>) it needs to be the marriage that is arranged and not Edward.</p>
+
+<dl>
+  <dt>(<a name="ex10.15">10.15</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"Arranged"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"PP-LGS","P-ROLE","by"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"PP-LGS","NP","NP-GENV;{EDWARD+LEONORA}","PRO","their"</tt><br>
+<tt>"IP-MAT","PP-SCON-ABS",<font style="background-color: SandyBrown;">"IP-PPL3"</font>,"PP-LGS","NP","NS","parents"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{EDWARD}","NPR","Edward"</tt><br>
+<tt>"IP-MAT","BED;~cat_Ve","was"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","VVN","married"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-OBU","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","PP-OBU","NP;{LEONORA}","NPR","Leonora"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_young_adult_E72@3,4" target="_blank">12_young_adult_E72&#64;3,4</a>"</tt><br>
+
+<br>
+<h2><a name="sec10.6">10.6</a>&nbsp;&nbsp;&nbsp;Anaphora</h2>
+
+<p align="justify">The annotation includes coreference information by adding witness information to the tag of a noun phrase (<tt>NP</tt>) level constituent. For a non-anaphoric noun phrase, the witness information provides type information for the discourse referent that the noun phrase serves to introduce. Witness information can can also be given to clause layers in which case it is used to type the discourse referent introduced by the local clause event. A pronominal noun phrase that also has witness information can then be associated with any accessible discourse referent that has the same witness information.</p>
+
+<dl>
+  <dt>(<a name="ex10.16">10.16</a>)</dt><dd></dd>
+</dl>
+<tt>"IML","NP-SBJ","PRO","they"</tt><br>
+<tt>"IML","IML","IML","BED;~cat_Ve","were"</tt><br>
+<tt>"IML","IML","IML",<font style="background-color: SandyBrown;">"IP-PPL-CAT;{DISAPPOINTMENT}"</font>,"VVN;~Tn","disappointed"</tt><br>
+<tt>"IML","IML","IML","PU","."</tt><br>
+<tt>"IML","IML","CONJP","CONJ","And"</tt><br>
+<tt>"IML","IML","CONJP","IML","VBD;~Tt","determined"</tt><br>
+<tt>"IML","IML","CONJP","IML","IP-INF-OB1","NEG","not"</tt><br>
+<tt>"IML","IML","CONJP","IML","IP-INF-OB1","TO","to"</tt><br>
+<tt>"IML","IML","CONJP","IML","IP-INF-OB1","VB;~Tn","show"</tt><br>
+<tt>"IML","IML","CONJP","IML","IP-INF-OB1",<font style="background-color: MediumSpringGreen;">"NP-OB1;{DISAPPOINTMENT}"</font>,"PRO","it"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=139_susanne_N05@55,73" target="_blank">47#139_susanne_N05&#64;9,27</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex10.17">10.17</a>)</dt><dd></dd>
+</dl>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"NP-SBJ","PRO","you"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"MD","could"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"VB","listen"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","P-ROLE","to"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-OBU","NP","N","news"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","P-ROLE","on"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","NP","D","the"</tt><br>
+<tt>"IML",<font style="background-color: SandyBrown;">"IML;{LISTEN}"</font>,"PP-LOC","NP","N","telly"</tt><br>
+<tt>"IML","CONJP","CONJ","and"</tt><br>
+<tt>"IML","CONJP","IML",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{LISTEN}"</font>,"PRO","it"</tt><br>
+<tt>"IML","CONJP","IML","MD","would"</tt><br>
+<tt>"IML","CONJP","IML","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IML","CONJP","IML","VB;~Ln","make"</tt><br>
+<tt>"IML","CONJP","IML","NP-PRD2","D","any"</tt><br>
+<tt>"IML","CONJP","IML","NP-PRD2","N","difference"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=138_christine_T37@5,33" target="_blank">4#138_christine_T37&#64;2,30</a>"</tt><br>
+
+<dl>
+  <dt>(<a name="ex10.18">10.18</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ;{YOU}","PRO","You"</tt><br>
+<tt>"IP-MAT","IML","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","VBP;~Tn.p","move"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","NP","NS","legs"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","NP-OB1","NML","CONJP","NP","NS","arms"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","IML;{MOVE1}","ADVP-DIR","ADV","forward"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","VBP;~Tn.p","kick"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","NP-OB1","NS","legs"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","IML;{KICK}","ADVP-DIR","RP","out"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","VBP;~Tn.p","move"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","NP-OB1","NP-GENV;{YOU}","PRO","your"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","NP-OB1","NS","hands"</tt><br>
+<tt>"IP-MAT","IML","IML","IML","CONJP","IML","IML","CONJP","IML;{MOVE2}","ADVP-DIR","ADV","round"</tt><br>
+<tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","IML","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","IML","CONJP","ADVP-CNT","ADV","then"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML",<font style="background-color: MediumSpringGreen;">"NP;{MOVE1}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML","CONJP;&#64;2",<font style="background-color: MediumSpringGreen;">"NP;{KICK}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML",<font style="background-color: SandyBrown;">"NP-DSC;{MOVEMENTS}"</font>,"NML","CONJP;&#64;3",<font style="background-color: MediumSpringGreen;">"NP;{MOVE2}"</font>,"PRO","*"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","DOP;~Tn","do"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","NP-OB1;{MOVEMENTS}","D","this"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","ADVP-TMP","ADV","again"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_stories_09_M14@77,79,83,87" target="_blank">5_stories_09_M14&#64;77,79,83,87</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.19">10.19</a>) illustrates <i>one</i> anaphora:</p>
+
+<dl>
+  <dt>(<a name="ex10.19">10.19</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","PP-RST","P-ROLE","In"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3","VAG;~Tn","requesting"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"NS","postcards"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"IP-PPL","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"IP-PPL","VVN;~Dn.pr","sent"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"IP-PPL","PP-DIR","P-ROLE","to"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"IP-PPL","PP-DIR","NP","D","this"</tt><br>
+<tt>"IP-MAT","PP-RST","IP-PPL3",<font style="background-color: SandyBrown;">"NP-OB1;{POSTCARDS}"</font>,"IP-PPL","PP-DIR","NP","N","program"</tt><br>
+<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{POSTCARDS}"</font>,"NS","ones"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{POSTCARDS}"</font>,"PP","P-ROLE","from"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{POSTCARDS}"</font>,"PP","NP","ADJP","ADJ","teenage"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ;{POSTCARDS}"</font>,"PP","NP","NS","girls"</tt><br>
+<tt>"IP-MAT","BEP;~Ln","are"</tt><br>
+<tt>"IP-MAT","NP-PRD2","D","the"</tt><br>
+<tt>"IP-MAT","NP-PRD2","ADJP","ADVP","ADVS","most"</tt><br>
+<tt>"IP-MAT","NP-PRD2","ADJP","ADJ","numerous"</tt><br>
+<tt>"IP-MAT","PU","."</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=880_samples_kisonihongo@8,26" target="_blank">880_samples_kisonihongo&#64;8,26</a>"</tt><br>
+
+<br>
+<br>
+<br>
+<br>
