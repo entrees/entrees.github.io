@@ -3,9 +3,9 @@
 <br>
 <h2><a name="sec6.1">6.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">Chapter <a href="chapter7.html#ch7">7</a> will focus on MAIN VERBS, where the main verb is either the only verb of a clause or the last verb to occur in a sequence of verbs of the same clause. Verbs of a verb sequence that are prior to the main verb are called CATENATIVE VERBS.</p>
+<p align="justify">A clause might contain a sequence of verbs. This chapter is concerned with verbs of a verb sequence that are prior to the last verb. These prior verbs are called CATENATIVE VERBS. The last verb of a verb sequence, called the MAIN VERB, is the focus of chapter <a href="chapter7.html#ch7">7</a>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With annotation, a catenative verb occurs at a clause layer alongside a clause intermediate layer with the <tt>-CAT</tt> extension. This clause intermediate <tt>-CAT</tt> layer is the selected complement of the catenative verb.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With annotation, a catenative verb occurs at a level of clause structure alongside a clause intermediate layer with the <tt>-CAT</tt> extension. This clause intermediate layer is the selected complement of the catenative verb.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Full tags for <tt>-CAT</tt> layers are listed in Table <a href="chapter6.html#table6.1">6.1</a>. The full tag for a <tt>-CAT</tt> layer is determined by the form of the directly contained verb.</p>
 
@@ -19,28 +19,24 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation marks each catenative verb with a catenative verb code, and sections <a href="chapter6.html#sec6.2">6.2</a> to <a href="chapter6.html#sec6.7">6.7</a> will provide examples to illustrate all of the possible codes. Codes differ because they indicate the form of the <tt>-CAT</tt> marked complement following Table <a href="chapter6.html#table6.2">6.2</a>.</p>
 
-<p><a name="table6.2">Table 6.2: Lower case letters e, g, i, and t</a></p>
+<p><a name="table6.2">Table 6.2: Lower case letters e, g, t, and i</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td>e</td><td>participial clause (&lcub;en&rcub; form) (<tt>IP-PPL-CAT</tt>)</td></tr>
-<tr><td>g</td><td>participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL-CAT</tt>)</td></tr>
-<tr><td>i</td><td>non-finite clause (&lsquo;bare&rsquo; infinitive) (<tt>IP-INF-CAT</tt> without internal <tt>TO</tt>)</td></tr>
-<tr><td>t</td><td>non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF-CAT</tt> with internal <tt>TO</tt>)</td></tr>
+<tr><td>t</td><td>non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF-CAT</tt> with <i>to</i> tagged <tt>TO</tt> and verb tagged <tt>VB</tt>)</td></tr>
+<tr><td>i</td><td>non-finite clause (bare infinitive) (<tt>IP-INF-CAT</tt> with verb tagged <tt>VB</tt> but no <tt>TO</tt> tagged word)</td></tr>
+<tr><td>e</td><td>participial clause (&lcub;en&rcub; form) (<tt>IP-PPL-CAT</tt> with verb tagged <tt>VVN</tt>)</td></tr>
+<tr><td>g</td><td>participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL-CAT</tt> with verb tagged <tt>VAG</tt>)</td></tr>
 </table>
 <br>
 
-<p align="justify">A complete verb code is reached when cat_V is followed by a lower case letter from Table <a href="chapter6.html#table6.2">6.2</a>:</p>
+<p align="justify">A complete verb code is reached when cat_V is followed by a lower case letter from Table <a href="chapter6.html#table6.2">6.2</a>. There are also codes with an added lowercase &lsquo;p&rsquo; to indicate the presence of an adverb particle selected by the verb in addition to the <tt>-CAT</tt> marked complement. The list of catenative codes is as follows:</p>
 <ul>
-<li>[cat_Ve] (section <a href="chapter6.html#sec6.2">6.2</a>)</li>
-<li>[cat_Vg] (section <a href="chapter6.html#sec6.3">6.3</a>)</li>
+<li>[cat_Vt] (section <a href="chapter6.html#sec6.2">6.2</a>)</li>
+<li>[cat_Vp.t] (section <a href="chapter6.html#sec6.3">6.3</a>)</li>
 <li>[cat_Vi] (section <a href="chapter6.html#sec6.4">6.4</a>)</li>
-<li>[cat_Vt] (section <a href="chapter6.html#sec6.5">6.5</a>)</li>
-</ul>
-
-<p align="justify">There are also catenative verbs that take codes with an added lowercase &lsquo;p&rsquo; to indicate the required presence of an adverb particle in addition to the <tt>-CAT</tt> marked complement:</p>
-<ul>
-<li>[cat_Vp.g] (section <a href="chapter6.html#sec6.6">6.6</a>)</li>
-<li>[cat_Vp.t] (section <a href="chapter6.html#sec6.7">6.7</a>)</li>
+<li>[cat_Ve] (section <a href="chapter6.html#sec6.5">6.5</a>)</li>
+<li>[cat_Vg] (section <a href="chapter6.html#sec6.6">6.6</a>)</li>
+<li>[cat_Vp.g] (section <a href="chapter6.html#sec6.7">6.7</a>)</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination with the complements of catenative verbs is discussed in section <a href="chapter6.html#sec6.8">6.8</a>.</p>
@@ -50,166 +46,12 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Finally, section <a href="chapter6.html#sec6.10">6.10</a> introduces some specialised verb codes from Hornby (1975) that select passive complements.</p>
 
 <br>
-<h2><a name="sec6.2">6.2</a>&nbsp;&nbsp;&nbsp;[cat_Ve]</h2>
-
-<p align="justify">[cat_Ve] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a past participle (&lcub;en&rcub;) verb form. Example (<a href="chapter6.html#ex6.1">6.1</a>) illustrates the [cat_Ve] verb <i>appeared</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>struck</i> as a passive verb.</p>
-
-<dl>
-  <dt>(<a name="ex6.1">6.1</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","NS","voyageurs"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"appeared"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Cn.a","struck"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADJP-PRD2","ADJ","dumb"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=15_susanne_N04@29,31" target="_blank">15_susanne_N04&#64;29,31</a>"</tt><br>
-
-<p align="justify">Example (<a href="chapter6.html#ex6.2">6.2</a>) illustrates the [cat_Ve] verb <i>grown</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>accustomed</i> as a passive verb.</p>
-
-<dl>
-  <dt>(<a name="ex6.2">6.2</a>)</dt><dd></dd>
-</dl>
-<tt>"NP","NS","eyes"</tt><br>
-<tt>"NP","IP-REL","NP-SBJ","RPRO","that"</tt><br>
-<tt>"NP","IP-REL","HVD;~cat_Ve","had"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~cat_Ve"</font>,"grown"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn.pr","accustomed"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","D","the"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","N","absence"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","P-ROLE","of"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","NP","N","light"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=108_susanne_N02@62,64" target="_blank">52#108_susanne_N02&#64;11,13</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The [cat_Ve] verbs <i>appeared</i> of (<a href="chapter6.html#ex6.1">6.1</a>) and <i>grown</i> of (<a href="chapter6.html#ex6.2">6.2</a>) bring about a passive interpretation for the past participle (&lcub;en&rcub;) verb of their <tt>-CAT</tt> complement. Most typically, it is [cat_Ve] <small style="font-size: 75%">BE</small> that is used to create the environment for a passive <tt>-CAT</tt> complement to occur, discussed in section <a href="chapter6.html#sec6.9">6.9</a> below. Also, [cat_Ve] <small style="font-size: 75%">GET</small> is another notable trigger for a passive.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;One exception where a [cat_Ve] verb doesn't lead to a passive interpretation is <small style="font-size: 75%">HAVE</small>, e.g., seen as past tense <i>had</i> in (<a href="chapter6.html#ex6.2">6.2</a>). Instead, [cat_Ve] <small style="font-size: 75%">HAVE</small> brings about a perfect construction, discussed next in section <a href="chapter6.html#sec6.2.1">6.2.1</a>.</p>
-
-<h3><a name="sec6.2.1">6.2.1</a>&nbsp;&nbsp;&nbsp;Perfect construction</h3>
-
-<p align="justify">Catenative [cat_Ve] <small style="font-size: 75%">HAVE</small> is used to form the perfect construction. The perfect tense is formed by:</p>
-<ul>
-<li>turning the verb into its past participle inflection</li>
-<li>adding a form of the verb <small style="font-size: 75%">HAVE</small> before it</li>
-</ul>
-
-<p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter6.html#ex6.3">6.3</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.3">6.3</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","N","Mr."</tt><br>
-<tt>"IP-MAT","NP-SBJ","NPR","Yamada"</tt><br>
-<tt>"IP-MAT","HVP;~cat_Ve","has"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,<font style="background-color: SandyBrown;">"VVN;~Ipr"</font>,"gone"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","NP","NPR","Tokyo"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1366_B_samples_kisonihongo@10,9" target="_blank">1366_B_samples_kisonihongo&#64;10,9</a>"</tt><br>
-
-<p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter6.html#ex6.3">6.3</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter6.html#ex6.4">6.4</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.4">6.4</a>)</dt><dd>Mr.&nbsp;Yamada went to Tokyo.</dd>
-</dl>
-
-<br>
-<h2><a name="sec6.3">6.3</a>&nbsp;&nbsp;&nbsp;[cat_Vg]</h2>
-
-<p align="justify">[cat_Vg] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form.</p>
-
-<dl>
-  <dt>(<a name="ex6.5">6.5</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Vg"</font>,"kept"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG;~I","going"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=52_susanne_N03@5,7" target="_blank">52_susanne_N03&#64;5,7</a>"</tt><br>
-
-<h3><a name="sec6.3.1">6.3.1</a>&nbsp;&nbsp;&nbsp;Progressive construction</h3>
-
-<p align="justify">The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining a verb's present participle (&lcub;ing&rcub;) verb form (e.g., <i>watching</i>) with an instance of <small style="font-size: 75%">BE</small> that is a catenative [cat_Vg] verb, e.g., <i>was watching</i> in (<a href="chapter6.html#ex6.6">6.6</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.6">6.6</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BED;~cat_Vg"</font>,"was"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","the"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","NS","fire-engines"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=391_christine_T40@8,5" target="_blank">391_christine_T40&#64;8,5</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction (see section <a href="chapter6.html#sec6.2.1">6.2.1</a>), as with <i>been watching</i> in (<a href="chapter6.html#ex6.7">6.7</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.7">6.7</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","NPR","Bill"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HVP;~cat_Ve"</font>,"has"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-OB1","NPR","Alice"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=447_B_samples_blue_book@11,8,5" target="_blank">447_B_samples_blue_book&#64;11,8,5</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be used to introduce the passive construction (see section <a href="chapter6.html#sec6.9">6.9</a>), as with <i>is getting</i> in (<a href="chapter6.html#ex6.8">6.8</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.8">6.8</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","NPR","Britain"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~cat_Vg"</font>,"is"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG;~cat_Ve"</font>,"getting"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN"</font>,"left"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","ADVP-LOC","ADV","behind"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_lucy_bnc_B41@33,30,38" target="_blank">26#43_lucy_bnc_B41&#64;8,5,13</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction and introduce the passive construction, as with <i>been being</i> in (<a href="chapter6.html#ex6.9">6.9</a>).</p>
-
-<dl>
-  <dt>(<a name="ex6.9">6.9</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
-<tt>"IP-MAT","MD","might"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HV;~cat_Ve"</font>,"have"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"BAG;~cat_Ve"</font>,"being"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"questioned"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","P-ROLE","by"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","D","the"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","NS","police"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=164_B_samples_BUFFALO@13,10,7,16" target="_blank">164_B_samples_BUFFALO&#64;13,10,7,16</a>"</tt><br>
-
-<br>
-<h2><a name="sec6.4">6.4</a>&nbsp;&nbsp;&nbsp;[cat_Vi]</h2>
-
-<p align="justify">[cat_Vi] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains a bare infinitive verb.</p>
-
-<dl>
-  <dt>(<a name="ex6.10">6.10</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","DOP;~op_V","do"</tt><br>
-<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VB;~cat_Vi"</font>,"dare"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"VB","talk"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","NP","PRO","me"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","P-ROLE","like"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","NP","D","that"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=523_christine_T06@9,11" target="_blank">523_christine_T06&#64;9,11</a>"</tt><br>
-
-<br>
-<h2><a name="sec6.5">6.5</a>&nbsp;&nbsp;&nbsp;[cat_Vt]</h2>
+<h2><a name="sec6.2">6.2</a>&nbsp;&nbsp;&nbsp;[cat_Vt]</h2>
 
 <p align="justify">[cat_Vt] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>.</p>
 
 <dl>
-  <dt>(<a name="ex6.11">6.11</a>)</dt><dd></dd>
+  <dt>(<a name="ex6.1">6.1</a>)</dt><dd></dd>
 </dl>
 <tt>"IML","NP-SBJ","D","This"</tt><br>
 <tt>"IML","MD","may"</tt><br>
@@ -219,11 +61,10 @@
 <tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","VAG","missing"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","NP-OB1","D","the"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","NP-OB1","N","point"</tt><br>
-<tt>"IML",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"IP-PPL-CAT","ADVP-MNR","ADV","somewhat"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lucy_student_E12@11" target="_blank">3#6_lucy_student_E12&#64;9</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex6.12">6.12</a>)</dt><dd></dd>
+  <dt>(<a name="ex6.2">6.2</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","D","A"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","drawing"</tt><br>
@@ -238,20 +79,20 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_J04@17" target="_blank">41_susanne_J04&#64;17</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex6.13">6.13</a>)</dt><dd></dd>
+  <dt>(<a name="ex6.3">6.3</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-SUB","NP-PSBJ","PRO","it"</tt><br>
+<tt>"IP-SUB","NP-SBJ;{DUMMY}","PRO","it"</tt><br>
 <tt>"IP-SUB","BED;~cat_Vg","was"</tt><br>
 <tt>"IP-SUB","IP-PPL-CAT","VAG;~cat_Vt","going"</tt><br>
 <tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"BE;~I","be"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","D","a"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","ADJP","ADJ","special"</tt><br>
-<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-NSBJ","N","day"</tt><br>
+<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"BE;~Ln","be"</tt><br>
+<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-PRD2","D","a"</tt><br>
+<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-PRD2","ADJP","ADJ","special"</tt><br>
+<tt>"IP-SUB","IP-PPL-CAT",<font style="background-color: SandyBrown;">"IP-INF-CAT"</font>,"NP-PRD2","N","day"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=31_A_fce_0100_2001_06@44" target="_blank">33#31_A_fce_0100_2001_06&#64;12</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex6.14">6.14</a>)</dt><dd></dd>
+  <dt>(<a name="ex6.4">6.4</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","PRO","we"</tt><br>
 <tt>"IP-MAT","BEP;~cat_Vg","&lt;apos&gt;re"</tt><br>
@@ -264,27 +105,12 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=267_christine_T09@9,12,17" target="_blank">267_christine_T09&#64;9,12,17</a>"</tt><br>
 
 <br>
-<h2><a name="sec6.6">6.6</a>&nbsp;&nbsp;&nbsp;[cat_Vp.g]</h2>
+<h2><a name="sec6.3">6.3</a>&nbsp;&nbsp;&nbsp;[cat_Vp.t]</h2>
 
-<p align="justify">[cat_Vp.g] is the code to mark a catenative phrasal verb with required particle and an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter6.html#ex6.15">6.15</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>IP-PPL-CAT</tt> complement.</p>
-
-<dl>
-  <dt>(<a name="ex6.15">6.15</a>)</dt><dd></dd>
-</dl>
-<tt>"PP-SCON-CNT-CND","P-CONN","if"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV","NP-SBJ","PRO","you"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: SandyBrown;">"VBP;~cat_Vp.g"</font>,"keep"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"RP"</font>,"on"</tt><br>
-<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG","drinking"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=370_christine_T26@32,34,36" target="_blank">25#370_christine_T26&#64;8,10,12</a>"</tt><br>
-
-<br>
-<h2><a name="sec6.7">6.7</a>&nbsp;&nbsp;&nbsp;[cat_Vp.t]</h2>
-
-<p align="justify">[cat_Vp.t] is the code to mark a catenative phrasal verb with particle and an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter6.html#ex6.16">6.16</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>IP-INF-CAT</tt> complement.</p>
+<p align="justify">[cat_Vp.t] is the code to mark a catenative phrasal verb with particle and an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter6.html#ex6.5">6.5</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>IP-INF-CAT</tt> complement.</p>
 
 <dl>
-  <dt>(<a name="ex6.16">6.16</a>)</dt><dd></dd>
+  <dt>(<a name="ex6.5">6.5</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","arrangement"</tt><br>
@@ -293,8 +119,173 @@
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"TO","to"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"BE;~La","be"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"ADJP-PRD2","ADJ","excellent"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_susanne_N18@7,9,11" target="_blank">9_susanne_N18&#64;7,9,11</a>"</tt><br>
+
+<br>
+<h2><a name="sec6.4">6.4</a>&nbsp;&nbsp;&nbsp;[cat_Vi]</h2>
+
+<p align="justify">[cat_Vi] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains a bare infinitive verb.</p>
+
+<dl>
+  <dt>(<a name="ex6.6">6.6</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","DOP;~op_V","do"</tt><br>
+<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VB;~cat_Vi"</font>,"dare"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"VB","talk"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-OBU","NP","PRO","me"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","P-ROLE","like"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-CAT"</font>,"PP-MNR","NP","D","that"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=523_christine_T06@9,11" target="_blank">523_christine_T06&#64;9,11</a>"</tt><br>
+
+<br>
+<h2><a name="sec6.5">6.5</a>&nbsp;&nbsp;&nbsp;[cat_Ve]</h2>
+
+<p align="justify">[cat_Ve] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a past participle (&lcub;en&rcub;) verb form. Example (<a href="chapter6.html#ex6.7">6.7</a>) illustrates the [cat_Ve] verb <i>appeared</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>struck</i> as a passive verb.</p>
+
+<dl>
+  <dt>(<a name="ex6.7">6.7</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","NS","voyageurs"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Ve"</font>,"appeared"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Cn.a","struck"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"ADJP-PRD2","ADJ","dumb"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=15_susanne_N04@29,31" target="_blank">15_susanne_N04&#64;29,31</a>"</tt><br>
+
+<p align="justify">Example (<a href="chapter6.html#ex6.8">6.8</a>) illustrates the [cat_Ve] verb <i>grown</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>accustomed</i> as a passive verb.</p>
+
+<dl>
+  <dt>(<a name="ex6.8">6.8</a>)</dt><dd></dd>
+</dl>
+<tt>"NP","NS","eyes"</tt><br>
+<tt>"NP","IP-REL","NP-SBJ","RPRO","that"</tt><br>
+<tt>"NP","IP-REL","HVD;~cat_Ve","had"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VVN;~cat_Ve"</font>,"grown"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn.pr","accustomed"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","P-ROLE","to"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","D","the"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","N","absence"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","P-ROLE","of"</tt><br>
+<tt>"NP","IP-REL","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-OBU","NP","PP","NP","N","light"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=108_susanne_N02@62,64" target="_blank">52#108_susanne_N02&#64;11,13</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The [cat_Ve] verbs <i>appeared</i> of (<a href="chapter6.html#ex6.7">6.7</a>) and <i>grown</i> of (<a href="chapter6.html#ex6.8">6.8</a>) bring about a passive interpretation for the past participle (&lcub;en&rcub;) verb of their <tt>-CAT</tt> complement. Most typically, it is [cat_Ve] <small style="font-size: 75%">BE</small> that is used to create the environment for a passive <tt>-CAT</tt> complement to occur, discussed in section <a href="chapter6.html#sec6.9">6.9</a> below. Also, [cat_Ve] <small style="font-size: 75%">GET</small> is another notable trigger for a passive.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;One exception where a [cat_Ve] verb doesn't lead to a passive interpretation is <small style="font-size: 75%">HAVE</small>, e.g., seen as past tense <i>had</i> in (<a href="chapter6.html#ex6.8">6.8</a>). Instead, [cat_Ve] <small style="font-size: 75%">HAVE</small> brings about a perfect construction, discussed next in section <a href="chapter6.html#sec6.5.1">6.5.1</a>.</p>
+
+<h3><a name="sec6.5.1">6.5.1</a>&nbsp;&nbsp;&nbsp;Perfect construction</h3>
+
+<p align="justify">Catenative [cat_Ve] <small style="font-size: 75%">HAVE</small> is used to form the perfect construction. The perfect tense is formed by:</p>
+<ul>
+<li>turning the verb into its past participle inflection</li>
+<li>adding a form of the verb <small style="font-size: 75%">HAVE</small> before it</li>
+</ul>
+
+<p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter6.html#ex6.9">6.9</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.9">6.9</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","N","Mr."</tt><br>
+<tt>"IP-MAT","NP-SBJ","NPR","Yamada"</tt><br>
+<tt>"IP-MAT","HVP;~cat_Ve","has"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,<font style="background-color: SandyBrown;">"VVN;~Ipr"</font>,"gone"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","P-ROLE","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"PP-DIR","NP","NPR","Tokyo"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1366_X_samples_kisonihongo@10,9" target="_blank">1366_X_samples_kisonihongo&#64;10,9</a>"</tt><br>
+
+<p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter6.html#ex6.9">6.9</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter6.html#ex6.10">6.10</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.10">6.10</a>)</dt><dd>Mr.&nbsp;Yamada went to Tokyo.</dd>
+</dl>
+
+<br>
+<h2><a name="sec6.6">6.6</a>&nbsp;&nbsp;&nbsp;[cat_Vg]</h2>
+
+<p align="justify">[cat_Vg] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form.</p>
+
+<dl>
+  <dt>(<a name="ex6.11">6.11</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~cat_Vg"</font>,"kept"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG;~I","going"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=52_susanne_N03@5,7" target="_blank">52_susanne_N03&#64;5,7</a>"</tt><br>
+
+<h3><a name="sec6.6.1">6.6.1</a>&nbsp;&nbsp;&nbsp;Progressive construction</h3>
+
+<p align="justify">The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining a verb's present participle (&lcub;ing&rcub;) verb form (e.g., <i>watching</i>) with an instance of <small style="font-size: 75%">BE</small> that is a catenative [cat_Vg] verb, e.g., <i>was watching</i> in (<a href="chapter6.html#ex6.12">6.12</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.12">6.12</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BED;~cat_Vg"</font>,"was"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","the"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","NS","fire-engines"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=391_christine_T40@8,5" target="_blank">391_christine_T40&#64;8,5</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction (see section <a href="chapter6.html#sec6.5.1">6.5.1</a>), as with <i>been watching</i> in (<a href="chapter6.html#ex6.13">6.13</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.13">6.13</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","NPR","Bill"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HVP;~cat_Ve"</font>,"has"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG"</font>,"watching"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-OB1","NPR","Alice"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=447_X_samples_blue_book@11,8,5" target="_blank">447_X_samples_blue_book&#64;11,8,5</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be used to introduce the passive construction (see section <a href="chapter6.html#sec6.9">6.9</a>), as with <i>is getting</i> in (<a href="chapter6.html#ex6.14">6.14</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.14">6.14</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","NPR","Britain"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"BEP;~cat_Vg"</font>,"is"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"VAG;~cat_Ve"</font>,"getting"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","NP-LGS","*"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN"</font>,"left"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","ADVP-LOC","ADV","behind"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_lucy_bnc_B41@33,30,38" target="_blank">26#43_lucy_bnc_B41&#64;8,5,13</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction and introduce the passive construction, as with <i>been being</i> in (<a href="chapter6.html#ex6.15">6.15</a>).</p>
+
+<dl>
+  <dt>(<a name="ex6.15">6.15</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT","NP-SBJ","PRO","He"</tt><br>
+<tt>"IP-MAT","MD","might"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"HV;~cat_Ve"</font>,"have"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"BEN;~cat_Vg"</font>,"been"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"BAG;~cat_Ve"</font>,"being"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"questioned"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","P-ROLE","by"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","D","the"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","IP-PPL-CAT","IP-PPL-CAT","PP-LGS","NP","NS","police"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=164_X_samples_BUFFALO@13,10,7,16" target="_blank">164_X_samples_BUFFALO&#64;13,10,7,16</a>"</tt><br>
+
+<br>
+<h2><a name="sec6.7">6.7</a>&nbsp;&nbsp;&nbsp;[cat_Vp.g]</h2>
+
+<p align="justify">[cat_Vp.g] is the code to mark a catenative phrasal verb with required particle and an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter6.html#ex6.16">6.16</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>IP-PPL-CAT</tt> complement.</p>
+
+<dl>
+  <dt>(<a name="ex6.16">6.16</a>)</dt><dd></dd>
+</dl>
+<tt>"PP-SCON-CNT-CND","P-CONN","if"</tt><br>
+<tt>"PP-SCON-CNT-CND","IP-ADV","NP-SBJ","PRO","you"</tt><br>
+<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: SandyBrown;">"VBP;~cat_Vp.g"</font>,"keep"</tt><br>
+<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"RP"</font>,"on"</tt><br>
+<tt>"PP-SCON-CNT-CND","IP-ADV",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VAG","drinking"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=370_christine_T26@32,34,36" target="_blank">25#370_christine_T26&#64;8,10,12</a>"</tt><br>
 
 <br>
 <h2><a name="sec6.8">6.8</a>&nbsp;&nbsp;&nbsp;Coordination with the complements of catenative verbs</h2>
@@ -313,7 +304,6 @@
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","VAG","going"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","PP-OBU","P-ROLE","out_of"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-PPL-CAT"</font>,"IML","CONJP","IML","PP-OBU","NP","N","action"</tt><br>
-<tt>"IP-MAT","PU",";"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_A_lob_A02@7,12" target="_blank">54_A_lob_A02&#64;7,12</a>"</tt><br>
 
 <br>
@@ -351,8 +341,7 @@
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"P-ROLE","by"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"NP","NP-GENV","PRO","her"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-LGS"</font>,"NP","N","boyfriend"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_B_samples_ENG1100@8,5,18" target="_blank">39_B_samples_ENG1100&#64;8,5,18</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_X_samples_ENG1100@8,5,18" target="_blank">39_X_samples_ENG1100&#64;8,5,18</a>"</tt><br>
 
 <dl>
   <dt>(<a name="ex6.19">6.19</a>)</dt><dd></dd>
@@ -366,8 +355,7 @@
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"P-ROLE","to"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","NP-GENV","PRO","her"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"PP-OBU"</font>,"NP","N","boyfriend"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_B_samples_ENG1100@8,5,18" target="_blank">38_B_samples_ENG1100&#64;8,5,18</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_X_samples_ENG1100@8,5,18" target="_blank">38_X_samples_ENG1100&#64;8,5,18</a>"</tt><br>
 
 <p align="justify"><small style="font-size: 75%">GET</small> can be used in place of <small style="font-size: 75%">BE</small> as a [cat_Ve] verb to form passives.</p>
 
@@ -391,14 +379,14 @@
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"PP-SCON-CNT"</font>,"IP-PPL","NP-LGS","*"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"PP-SCON-CNT"</font>,"IP-PPL",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"Seated"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LOC","P-ROLE","beside"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LOC","NP;{ALASTAIR}","NPR","Alastair"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LOC","NP","NPR","Alastair"</tt><br>
 <tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-PPL",<font style="background-color: MediumSpringGreen;">"VVN;~Tn"</font>,"lulled"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LGS","P-ROLE","by"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LGS","NP","D","the"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-SCON-CNT"</font>,"IP-PPL","PP-LGS","NP","N","silence"</tt><br>
 <tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","NP-SBJ;{GEOFFREY}","NPR","Geoffrey"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NPR","Geoffrey"</tt><br>
 <tt>"IP-MAT","MD","could"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=17_A_lob_N01@2,6,16,18" target="_blank">17_A_lob_N01&#64;2,6,16,18</a>"</tt><br>
 
@@ -496,7 +484,7 @@
 <tt>"IML","NP-TMP","D","the"</tt><br>
 <tt>"IML","NP-TMP","NUM","next"</tt><br>
 <tt>"IML","NP-TMP","N","day"</tt><br>
-<tt>"IML","NP-SBJ;{PRINCE+CINDERELLA}","PRO","they"</tt><br>
+<tt>"IML","NP-SBJ","PRO","they"</tt><br>
 <tt>"IML",<font style="background-color: SandyBrown;">"BED;~cat_Ve"</font>,"were"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"NP-LGS","*"</tt><br>
 <tt>"IML",<font style="background-color: MediumSpringGreen;">"IP-PPL-CAT"</font>,"VVN;~Tn","married"</tt><br>
@@ -514,22 +502,14 @@
 <dl>
   <dt>(<a name="ex6.29">6.29</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-MAT","PP-LOC","P-ROLE","In"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","D","the"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","ADJP","ADJ","little"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","N","room"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","ADVP-DIR","ADV","downstairs"</tt><br>
-<tt>"IP-MAT","NP-SBJ;{NARRATOR+AUNT}","PRO","we"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","we"</tt><br>
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"VBD;~VP24A"</font>,"found"</tt><br>
-<tt>"IP-MAT","NP-OB1;{ELIZA}","NPR","Eliza"</tt><br>
+<tt>"IP-MAT","NP-OB1","NPR","Eliza"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","NP-LGS","*"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","VVN;~Tn","seated"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","PP-LOC","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","IP-PPL-PRD","PP-LOC","NP","NP-GENV;{PRIEST}","PRO","his"</tt><br>
+<tt>"IP-MAT","IP-PPL-PRD","PP-LOC","NP","NP-GENV","PRO","his"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","PP-LOC","NP","N","arm-chair"</tt><br>
-<tt>"IP-MAT","IP-PPL-PRD","PP-MNR","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","IP-PPL-PRD","PP-MNR","NP","N","state"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=111_A_JOYCE_1914@19" target="_blank">111_A_JOYCE_1914&#64;19</a>"</tt><br>
 
 <dl>
@@ -567,15 +547,13 @@
 <dl>
   <dt>(<a name="ex6.32">6.32</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-MAT","NP-SBJ;{PERSONS}","PRO","They"</tt><br>
-<tt>"IP-MAT","ADVP-TMP","ADV","always"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","They"</tt><br>
 <tt>"IP-MAT","VBP","need"</tt><br>
 <tt>"IP-MAT","IP-INF-OB1","TO","to"</tt><br>
 <tt>"IP-MAT","IP-INF-OB1",<font style="background-color: SandyBrown;">"HV;~VP24B"</font>,"have"</tt><br>
 <tt>"IP-MAT","IP-INF-OB1","NP-OB1","NS","things"</tt><br>
 <tt>"IP-MAT","IP-INF-OB1","IP-PPL-PRD","NP-LGS","*"</tt><br>
 <tt>"IP-MAT","IP-INF-OB1","IP-PPL-PRD","VVN;~Tn","explained"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=17_A_SAINT_EXUPERY_1943@13" target="_blank">17_A_SAINT_EXUPERY_1943&#64;13</a>"</tt><br>
 
 <dl>
@@ -586,9 +564,9 @@
 <tt>"IP-MAT","HVP;~cat_Ve","have"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","ADVP-MOD","ADV","just"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT",<font style="background-color: SandyBrown;">"HVN;~VP24B"</font>,"had"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1;{BICYCLE2}","D","a"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1;{BICYCLE2}","ADJP","ADJ","new"</tt><br>
-<tt>"IP-MAT","IP-PPL-CAT","NP-OB1;{BICYCLE2}","N","bicycle"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","D","a"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","ADJP","ADJ","new"</tt><br>
+<tt>"IP-MAT","IP-PPL-CAT","NP-OB1","N","bicycle"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","IP-PPL-PRD","NP-LGS","*"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","IP-PPL-PRD","VVN;~Tn","bought"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
@@ -610,9 +588,6 @@
 <tt>"IP-MAT","IP-PPL-PRD","ADVP-MNR","ADV","full"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","ADVP-MNR","PP","P-ROLE","of"</tt><br>
 <tt>"IP-MAT","IP-PPL-PRD","ADVP-MNR","PP","NP","NS","agents"</tt><br>
-<tt>"IP-MAT","IP-PPL-PRD","ADVP-MNR","PP","NP","PP","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","IP-PPL-PRD","ADVP-MNR","PP","NP","PP","NP","NS","T-shirts"</tt><br>
-<tt>"IP-MAT","PU",":"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=63_A_TED_talk_11@5" target="_blank">63_A_TED_talk_11&#64;5</a>"</tt><br>
 
 <dl>
