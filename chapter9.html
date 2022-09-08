@@ -78,14 +78,11 @@
 </dl>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"*ICH*-1"</tt><br>
 <tt>"IP-MAT","IML","IML","ADVP-DIR","ADV","along"</tt><br>
-<tt>"IP-MAT","IML","IML","VBP","comes"</tt><br>
+<tt>"IP-MAT","IML","IML","VBP;~Ip","comes"</tt><br>
 <tt>"IP-MAT","IML","IML",<font style="background-color: SandyBrown;">"NP-1"</font>,"D","the"</tt><br>
 <tt>"IP-MAT","IML","IML",<font style="background-color: SandyBrown;">"NP-1"</font>,"N","Fool"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","VBP","whops"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","VBP;~Tn","whops"</tt><br>
 <tt>"IP-MAT","IML","CONJP","IML","NP-OB1","PRO","you"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","PP-LOC","P-ROLE","on"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","PP-LOC","NP","D","the"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","PP-LOC","NP","N","nose"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=68_lucy_bnc_C02@41,32" target="_blank">68_lucy_bnc_C02&#64;41,32</a>"</tt><br>
 
 <br>
@@ -129,7 +126,7 @@
 <br>
 <h2><a name="sec9.4">9.4</a>&nbsp;&nbsp;&nbsp;Relative clauses</h2>
 
-<p align="justify">Typically found within a noun phrase, a relative clause is a clause that is itself a modifier of an external head with the further property that the modified external head contributes a role within the relative clause. This necessitates the wherewithal to integrate the internal role, which is discussed in section <a href="chapter9.html#sec9.4.1">9.4.1</a>. Section <a href="chapter9.html#sec9.4.2">9.4.2</a> distinguishes different kinds of relative clauses. Section <a href="chapter9.html#sec9.4.3">9.4.3</a> discusses relative clause stacking versus relative clauses with coordination.</p>
+<p align="justify">Typically found within a noun phrase, a relative clause is a clause that is itself a modifier of an external head with the further property that the modified external head contributes a role within the relative clause. This necessitates the wherewithal to integrate the internal role, which is discussed in section <a href="chapter9.html#sec9.4.1">9.4.1</a>. Section <a href="chapter9.html#sec9.4.2">9.4.2</a> distinguishes different kinds of relative clauses.</p>
 
 <h3><a name="sec9.4.1">9.4.1</a>&nbsp;&nbsp;&nbsp;Integration of the internal role</h3>
 
@@ -207,6 +204,8 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=48_A_lob_A02@68,64" target="_blank">45#48_A_lob_A02&#64;24,20</a>"</tt><br>
 
 <h4><a name="sec9.4.1.3">9.4.1.3</a>&nbsp;&nbsp;&nbsp;RADV</h4>
+
+<p align="justify">Occurrence of the relativised element as a relativised adverb (<tt>RADV</tt>) is illustrated in (<a href="chapter9.html#ex9.10">9.10</a>).</p>
 
 <dl>
   <dt>(<a name="ex9.10">9.10</a>)</dt><dd></dd>
@@ -311,7 +310,9 @@
 
 <h3><a name="sec9.4.2">9.4.2</a>&nbsp;&nbsp;&nbsp;Kinds of relative clauses</h3>
 
-<p align="justify">In addition to characterising how integration of the internal role happens, the form of the overall clause can also vary.</p>
+<p align="justify">In addition to characterising how integration of the internal role happens, the form of the overall clause can also vary, with Table <a href="chapter9.html#table9.3">9.3</a> presenting the possible options.</p>
+
+<p><a name="table9.3">Table 9.3: Tags for different kinds of relative clause</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-REL</tt></td><td>relative clause</td></tr>
@@ -320,6 +321,8 @@
 <tr><td><tt>IP-CAR</tt></td><td>clause adjoined relative clause</td></tr>
 </table>
 <br>
+
+<p align="justify">So far we have seen relatives clauses with a topmost layer labelled <tt>IP-REL</tt>. The remainder of this section illustrates relative clauses with topmost layers involving the other tags of Table <a href="chapter9.html#table9.3">9.3</a>.</p>
 
 <h4><a name="sec9.4.2.1">9.4.2.1</a>&nbsp;&nbsp;&nbsp;Infinitive relative clauses</h4>
 
@@ -355,7 +358,7 @@
 <tt>"NP-SBJ",<font style="background-color: SandyBrown;">"IP-EOP"</font>,"NP-PRD2","NS","boys"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=118_susanne_G04@11,12" target="_blank">2#118_susanne_G04&#64;10,11</a>"</tt><br>
 
-<h4><a name="sec9.4.2.3">9.4.2.3</a>&nbsp;&nbsp;&nbsp;Clause adjoined relative clause</h4>
+<h4><a name="sec9.4.2.3">9.4.2.3</a>&nbsp;&nbsp;&nbsp;Clause adjoined relative clauses</h4>
 
 <p align="justify">A clause adjoined relative clause (<tt>IP-CAR</tt>) is a clause that is internally a relative that occurs as a sentence level element (so directly under an <tt>IP</tt> or <tt>IML</tt> node). This kind of relative clause must contain an initial relativised element that contains an overt relative word (that cannot be <i>that</i>) that serves as a bridge to connect the action of the containing clause to an internal role of the relative clause. For example, in (<a href="chapter9.html#ex9.17">9.17</a>) it is the monster facing that connects as the subject of what can be overwhelming.</p>
 
@@ -375,35 +378,15 @@
 <tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-CAR"</font>,"ADJP-PRD2","ADJ","overwhelming"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=42_A_Freedoom@23" target="_blank">42_A_Freedoom&#64;23</a>"</tt><br>
 
-<h3><a name="sec9.4.3">9.4.3</a>&nbsp;&nbsp;&nbsp;Stacking relative clauses versus relative clauses with coordination</h3>
-
-<p align="justify">Compare (<a href="chapter9.html#ex9.18">9.18</a>) with (__tspc_24_lucy_child_12_F16#7__) above. Two relative clauses each modifying a nominal element independently of the other:</p>
-
-<dl>
-  <dt>(<a name="ex9.18">9.18</a>)</dt><dd></dd>
-</dl>
-<tt>"NP","N","motion"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-SBJ","RPRO","which"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~La","is"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"ADJP-PRD2","ADJ","constant"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP","CONJ","and"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"PP-LOC","P-ROLE","in"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"PP-LOC","NP","RPRO","which"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"EX","there"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"BEP;~ex_Vpr","is"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-ESBJ","Q","no"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: SandyBrown;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-ESBJ","N","acceleration"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_lucy_student_E01@46,47,59" target="_blank">42#5_lucy_student_E01&#64;5,6,18</a>"</tt><br>
-
 <br>
 <h2><a name="sec9.5">9.5</a>&nbsp;&nbsp;&nbsp;Free relatives</h2>
 
 <p align="justify">Free relatives are also called headless relative clauses. They act externally as noun phrases and yet internally are comprised of only content for a relative clause. To reflect the external behaviour, free relatives are annotated with topmost <tt>NP</tt> labelled structure which can take the usual functional extensions of a noun phrase. This top level contains as its only element an <tt>IP-REL</tt> with the relative clause content. Most notably, there is no nominal head. The other notable property is that the relative clause must contain an initial element with an overt relative word (either: an <tt>RPRO</tt> but not <i>that</i>, or an <tt>RD</tt>, or an <tt>RADV</tt>). The range of possible relative words is broader than for an ordinary relative clauses, including the option for words with <i>ever</i>: <i>however</i>, <i>whatever</i>, <i>whenever</i>, <i>wherever</i>, <i>whichever</i>, <i>whoever</i>, and <i>whomsoever</i>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.19">9.19</a>) illustrates a free relative that externally has subject function and internally contains the <tt>RPRO</tt> word <i>Whatever</i> with object function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.18">9.18</a>) illustrates a free relative that externally has subject function and internally contains the <tt>RPRO</tt> word <i>Whatever</i> with object function.</p>
 
 <dl>
-  <dt>(<a name="ex9.19">9.19</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.18">9.18</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"IP-REL",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,<font style="background-color: SandyBrown;">"RPRO"</font>,"Whatever"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-SBJ"</font>,"IP-REL","NP-SBJ","D","a"</tt><br>
@@ -420,10 +403,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_lucy_student_E03@5,2,4" target="_blank">7_lucy_student_E03&#64;5,2,4</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.20">9.20</a>) illustrates a free relative that externally has object function and internally contains the <tt>RD</tt> word <i>What</i> of a noun phrase with object function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.19">9.19</a>) illustrates a free relative that externally has object function and internally contains the <tt>RD</tt> word <i>What</i> of a noun phrase with object function.</p>
 
 <dl>
-  <dt>(<a name="ex9.20">9.20</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.19">9.19</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,<font style="background-color: SandyBrown;">"RD"</font>,"What"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"IP-REL",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"N","knowledge"</tt><br>
@@ -436,10 +419,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=35_susanne_N06@5,2,4" target="_blank">35_susanne_N06&#64;5,2,4</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.21">9.21</a>) illustrates a free relative that externally has a directional adverbial function and internally contains the <tt>RADV</tt> word <i>where</i> of an adverb phrase with location role.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.20">9.20</a>) illustrates a free relative that externally has a directional adverbial function and internally contains the <tt>RADV</tt> word <i>where</i> of an adverb phrase with location role.</p>
 
 <dl>
-  <dt>(<a name="ex9.21">9.21</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.20">9.20</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","PUQ","&lt;ldquo&gt;"</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
@@ -462,7 +445,7 @@
 <p align="justify">The <i>than</i> or <i>as</i> of a comparative is tagged <tt>P-ROLE</tt> to act as the head of <tt>PP</tt> structure with a noun phrase complement. When the content that follows <i>than</i> or <i>as</i> is a clause, it is given the same structure as a free relative, so an <tt>IP-REL</tt> structure that is the only element of the noun phrase complement. The notable difference from free relatives is that there is no relative prounon. Rather the internal link of the contained relative clause structure is established with a trace element (<tt>*T*</tt>).</p>
 
 <dl>
-  <dt>(<a name="ex9.22">9.22</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.21">9.21</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","VBD","thought"</tt><br>
@@ -477,7 +460,7 @@
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=104_christine_T23@21,23" target="_blank">104_christine_T23&#64;21,23</a>"</tt><br>
 
 <dl>
-  <dt>(<a name="ex9.23">9.23</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.22">9.22</a>)</dt><dd></dd>
 </dl>
 <tt>"ADJP-PRD2","ADVP",<font style="background-color: SandyBrown;">"ADV"</font>,"as"</tt><br>
 <tt>"ADJP-PRD2","ADJ","poor"</tt><br>
@@ -490,7 +473,7 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Fully articulated free relative clause structure is also possible as the complement of <i>than</i>.</p>
 
 <dl>
-  <dt>(<a name="ex9.24">9.24</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.23">9.23</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","PRO","it"</tt><br>
 <tt>"IP-MAT","BEP;~Ln","&lt;apos&gt;s"</tt><br>
@@ -510,56 +493,64 @@
 <br>
 <h2><a name="sec9.7">9.7</a>&nbsp;&nbsp;&nbsp;IP-CLF (it-cleft)</h2>
 
+<p><a name="table9.4">Table 9.4: Focus element</a></p>
+
 <table border="1" cellpadding="10px">
 <tr><td><tt>-FOC</tt></td><td>tag extension marking the focus of a cleft construction</td></tr>
 </table>
 <br>
+
+<p><a name="table9.5">Table 9.5: Focus complement</a></p>
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-CLF</tt></td><td>focus complement of cleft construction</td></tr>
 </table>
 <br>
 
+<p><a name="table9.6">Table 9.6: <i>it</i> introduction</a></p>
+
 <table border="1" cellpadding="10px">
 <tr><td><tt>NP-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
 </table>
 <br>
 
-<p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>FOC</tt> tag extension. The focus complement is labelled <tt>IP-CLF</tt>.</p>
+<p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>-FOC</tt> tag extension (Table <a href="chapter9.html#table9.4">9.4</a>). The focus complement clause is labelled <tt>IP-CLF</tt> (Table <a href="chapter9.html#table9.5">9.5</a>). There also needs to be an <i>it</i> noun phrase clause as the introductory subject of a cleft construction (Table <a href="chapter9.html#table9.6">9.6</a>). Internally, the cleft complement has the form of a relative clause, which can involve an external link established with a relative pronoun, as in (<a href="chapter9.html#ex9.24">9.24</a>), or a trace, as in (<a href="chapter9.html#ex9.25">9.25</a>).</p>
 
 <dl>
-  <dt>(<a name="ex9.25">9.25</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.24">9.24</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-MAT","NP-CSBJ","PRO","it"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"BED;~cleft_V"</font>,"was"</tt><br>
-<tt>"IP-MAT","PP-FOC","P-ROLE","from"</tt><br>
-<tt>"IP-MAT","PP-FOC","ADVP","ADV","here"</tt><br>
-<tt>"IP-MAT","IP-CLF","NP-DIR","RPRO","that"</tt><br>
-<tt>"IP-MAT","IP-CLF","NP-SBJ","D","the"</tt><br>
-<tt>"IP-MAT","IP-CLF","NP-SBJ","N","firing"</tt><br>
-<tt>"IP-MAT","IP-CLF",<font style="background-color: MediumSpringGreen;">"VBD;~Ipr"</font>,"came"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=254_A_DICK_1952@9,26" target="_blank">254_A_DICK_1952&#64;9,26</a>"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-CSBJ"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","BED;~cleft_V","was"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-FOC"</font>,"P-ROLE","from"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"PP-FOC"</font>,"ADVP","ADV","here"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"NP-DIR",<font style="background-color: SandyBrown;">"RPRO"</font>,"that"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"NP-SBJ","N","firing"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"VBD;~Ipr","came"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=254_A_DICK_1952@19,6,11,17" target="_blank">254_A_DICK_1952&#64;19,6,11,17</a>"</tt><br>
 
 <p align="justify">cf.&nbsp;The firing came from here.</p>
 
 <dl>
-  <dt>(<a name="ex9.26">9.26</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.25">9.25</a>)</dt><dd></dd>
 </dl>
-<tt>"CP-QUE","IP-SUB","NP-FOC","WPRO","what"</tt><br>
-<tt>"CP-QUE","IP-SUB",<font style="background-color: SandyBrown;">"BED;~cleft_V"</font>,"was"</tt><br>
-<tt>"CP-QUE","IP-SUB","NP-CSBJ","PRO","it"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF","NP-SBJ","PRO","you"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF",<font style="background-color: MediumSpringGreen;">"BED;~La"</font>,"were"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF","ADJP-PRD2","ADVP","ADV","so"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF","ADJP-PRD2","ADJ","interested"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF","ADJP-PRD2","PP","P-ROLE","in"</tt><br>
-<tt>"CP-QUE","IP-SUB","IP-CLF","ADJP-PRD2","PP","NP","*T*"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=142_A_DICK_1952@20,29" target="_blank">15#142_A_DICK_1952&#64;6,15</a>"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"NP-FOC"</font>,"WPRO","what"</tt><br>
+<tt>"CP-QUE","IP-SUB","BED;~cleft_V","was"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"NP-CSBJ"</font>,"PRO","it"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"NP-SBJ","PRO","you"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"BED;~La","were"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"ADJP-PRD2","ADVP","ADV","so"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"ADJP-PRD2","ADJ","interested"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"ADJP-PRD2","PP","P-ROLE","in"</tt><br>
+<tt>"CP-QUE","IP-SUB",<font style="background-color: MediumSpringGreen;">"IP-CLF"</font>,"ADJP-PRD2","PP",<font style="background-color: SandyBrown;">"NP"</font>,"*T*"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=142_A_DICK_1952@40,17,22,25" target="_blank">15#142_A_DICK_1952&#64;26,3,8,11</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.27">9.27</a>) isn't an it cleft, but rather there is a provisional subject <i>it</i> and an extraposed subject that is a free relative.</p>
+<p align="justify">cf.&nbsp;What were you so interested in?</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.26">9.26</a>) isn't an <i>it</i> cleft, but rather there is a provisional subject <i>it</i> and an extraposed subject that is a free relative.</p>
 
 <dl>
-  <dt>(<a name="ex9.27">9.27</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.26">9.26</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-SUB",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it"</tt><br>
 <tt>"IP-SUB","BED;~La","was"</tt><br>
@@ -575,10 +566,10 @@
 <br>
 <h2><a name="sec9.8">9.8</a>&nbsp;&nbsp;&nbsp;Right node raising</h2>
 
-<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="chapter9.html#ex9.28">9.28</a>) illustrates right node raising internal to a noun phrase.</p>
+<p align="justify">Right node raising occurs when: (i) there is coordination, and (ii) there is an element to the right of the coordination that has a place of interpretation inside each of the conjuncts of the coordination. For example, (<a href="chapter9.html#ex9.27">9.27</a>) illustrates right node raising internal to a noun phrase.</p>
 
 <dl>
-  <dt>(<a name="ex9.28">9.28</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.27">9.27</a>)</dt><dd></dd>
 </dl>
 <tt>"NP","NML","NP","ADJP","ADJ","direct"</tt><br>
 <tt>"NP","NML","NP","N","contact"</tt><br>
@@ -591,83 +582,35 @@
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"N","food"</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","VVN","contaminated"</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","P-ROLE","by"</tt><br>
-<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","NP","N","rodent"</tt><br>
-<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP;&#64;2","NP","N","urine"</tt><br>
-<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP;&#64;3","CONJ","or"</tt><br>
-<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP;&#64;3","NP","ADJP","ADJ","fecal"</tt><br>
-<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP;&#64;3","NP","N","matter"</tt><br>
+<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","N","rodent"</tt><br>
+<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","NP","N","urine"</tt><br>
+<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP","CONJ","or"</tt><br>
+<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP","NP","ADJP","ADJ","fecal"</tt><br>
+<tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","NML","CONJP","NP","N","matter"</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","IP-PPL","VAG","containing"</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","IP-PPL","NP-OB1","N","virus"</tt><br>
 <tt>"NP",<font style="background-color: SandyBrown;">"NP-1"</font>,"IP-PPL","PP-LGS","NP","IP-PPL","NP-OB1","NS","particles"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=72_A_FACTBOOK_1_2010@34,21,32" target="_blank">10#72_A_FACTBOOK_1_2010&#64;25,12,23</a>"</tt><br>
 
-<p align="justify">Right node raising internal in a clause:</p>
+<p align="justify">Example (<a href="chapter9.html#ex9.28">9.28</a>) illustrates right node raising internal to a clause.</p>
+
+<dl>
+  <dt>(<a name="ex9.28">9.28</a>)</dt><dd></dd>
+</dl>
+<tt>"PP-SCON-ABS","IP-PPL","IML","IML","VAG","stuffing"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL","IML","IML",<font style="background-color: MediumSpringGreen;">"NP-OB1"</font>,"*ICH*-1"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","CONJ","and"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","VAG","dragging"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","PP-OBU","P-ROLE","on"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","PP-OBU",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-1"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL",<font style="background-color: SandyBrown;">"NP-1"</font>,"NP-GENV","PRO","his"</tt><br>
+<tt>"PP-SCON-ABS","IP-PPL",<font style="background-color: SandyBrown;">"NP-1"</font>,"N","pipe"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_G06@43,30,41" target="_blank">21#10_susanne_G06&#64;23,10,21</a>"</tt><br>
+
+<p align="justify">In (<a href="chapter9.html#ex9.29">9.29</a>), there is clause level coordination that will inherit multiple right-node-raised elements with different internal functions inside the conjuncts.</p>
 
 <dl>
   <dt>(<a name="ex9.29">9.29</a>)</dt><dd></dd>
-</dl>
-<tt>"PP-SCON-ABS","IP-PPL","IML","IML","ADVP-TMP","ADV","time_and_again"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","IML","VAG",<font style="background-color: MediumSpringGreen;">"stuffing"</font></tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","IML","NP-OB1","*ICH*-1"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","CONJ","and"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","VAG","dragging"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","PP-OBU","P-ROLE",<font style="background-color: MediumSpringGreen;">"on"</font></tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","IML","CONJP","IML","PP-OBU","NP","__*ICH*-1"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","NP-1","NP-GENV","PRO","his"</tt><br>
-<tt>"PP-SCON-ABS","IP-PPL","NP-1","N","pipe"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_G06@42,29,40" target="_blank">21#10_susanne_G06&#64;22,9,20</a>"</tt><br>
-
-<dl>
-  <dt>(<a name="ex9.30">9.30</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
-<tt>"IP-MAT","NP-SBJ","ADJP","ADJ","French"</tt><br>
-<tt>"IP-MAT","NP-SBJ","N","system"</tt><br>
-<tt>"IP-MAT","IML","IML","ADVP-MOD","ADV","also"</tt><br>
-<tt>"IP-MAT","IML","IML","VBP","serves"</tt><br>
-<tt>"IP-MAT","IML","IML","PP-PRD2","P-ROLE","as"</tt><br>
-<tt>"IP-MAT","IML","IML","PP-PRD2","NP","D","the"</tt><br>
-<tt>"IP-MAT","IML","IML","PP-PRD2","NP","N","basis"</tt><br>
-<tt>"IP-MAT","IML","IML","PP-PRD2","NP","PP","P-ROLE","for"</tt><br>
-<tt>"IP-MAT","IML","IML","PP-PRD2","NP","PP",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-1"</tt><br>
-<tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","CONJ","or"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","BEP;~cat_Ve","is"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","IP-PPL-CAT","VVN","mixed"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","IP-PPL-CAT","PP-COM","P-ROLE","with"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","IP-PPL-CAT","PP-COM",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-1"</tt><br>
-<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-1"</font>,"ADJP;&#64;1","ADJ","other"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-1"</font>,"ADJP;&#64;2","ADJ","legal"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-1"</font>,"NS","systems"</tt><br>
-<tt>"IP-MAT","PP-LOC","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","ADVP","ADV","approximately"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","NUM","50"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","NS","countries"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","ADVP","ADV","notably"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","NP","NPR","North"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","NP","NPR","Africa"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;3","NP","D","the"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;3","NP","ADJP","ADJ","Near"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;3","NP","N","East"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","CONJ","and"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","NP","D","the"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","NP","ADJP","ADJ","French"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","NP","NML","NP","NS","territories"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","NP","NML","CONJP","CONJ","and"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","PP","NP","NML","CONJP;&#64;5","NP","NML","CONJP","NP","NS","dependencies"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=33_A_FACTBOOK_2_2010@50,28,46" target="_blank">33_A_FACTBOOK_2_2010&#64;50,28,46</a>"</tt><br>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.31">9.31</a>) there is a coordination that will inherit the same arguments but with needing to have different functions.</p>
-
-<dl>
-  <dt>(<a name="ex9.31">9.31</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-SUB","C","that"</tt><br>
 <tt>"IP-SUB","NP-SBJ","D","an"</tt><br>
@@ -687,96 +630,75 @@
 <tt>"IP-SUB","IP-INF-176","NP-OB1","N","enlightenment"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_A_KYOTO_2@30" target="_blank">17#39_A_KYOTO_2&#64;14</a>"</tt><br>
 
-<dl>
-  <dt>(<a name="ex9.32">9.32</a>)</dt><dd></dd>
-</dl>
-<tt>"NP","NS","actions"</tt><br>
-<tt>"NP","PP","P-ROLE","of"</tt><br>
-<tt>"NP","PP","NP","NML","NP","NS","persons"</tt><br>
-<tt>"NP","PP","NP","NML","CONJP","CONJ","and"</tt><br>
-<tt>"NP","PP","NP","NML","CONJP","NP","NS","organisations"</tt><br>
-<tt>"NP","IP-PPL","IML","WQ","whether"</tt><br>
-<tt>"NP","IP-PPL","IML","IML","VVN","directed"</tt><br>
-<tt>"NP","IP-PPL","IML","IML","PP-DIR","P-ROLE","from_within"</tt><br>
-<tt>"NP","IP-PPL","IML","IML","PP-DIR",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-182"</tt><br>
-<tt>"NP","IP-PPL","IML","CONJP","CONJ","or"</tt><br>
-<tt>"NP","IP-PPL","IML","CONJP","IML","PP-DIR","P-ROLE","without"</tt><br>
-<tt>"NP","IP-PPL","IML","CONJP","IML","PP-DIR",<font style="background-color: MediumSpringGreen;">"NP"</font>,"*ICH*-182"</tt><br>
-<tt>"NP","IP-PPL",<font style="background-color: SandyBrown;">"NP-182"</font>,"D","the"</tt><br>
-<tt>"NP","IP-PPL",<font style="background-color: SandyBrown;">"NP-182"</font>,"N","country"</tt><br>
-<tt>"NP","PU","&lt;comma&gt;"</tt><br>
-<tt>"NP","IP-REL","NP-SBJ","RPRO","which"</tt><br>
-<tt>"NP","IP-REL","MD","may"</tt><br>
-<tt>"NP","IP-REL","BE;~cat_Ve","be"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","NP-LGS","*"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","VVN","judged"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","TO","to"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","BE;~La","be"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","ADJP-PRD2","ADJ","subversive"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","ADJP-PRD2","PP","P-ROLE","of"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","ADJP-PRD2","PP","NP","D","the"</tt><br>
-<tt>"NP","IP-REL","IP-PPL-CAT","IP-INF-OB1","ADJP-PRD2","PP","NP","N","State"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=48_lucy_bnc_B14@121,110,119" target="_blank">83#48_lucy_bnc_B14&#64;39,28,37</a>"</tt><br>
-
 <br>
 <h2><a name="sec9.9">9.9</a>&nbsp;&nbsp;&nbsp;Extrapositioning</h2>
 
-<p align="justify">In (<a href="chapter9.html#ex9.33">9.33</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with a provisional subject marked <tt>-PSBJ</tt>.</p>
+<p align="justify">Extrapositioning is the rightward displacement of a structural element. Indexing is not required when the displacement is part of a set construction with a provisional element, as when the displaced element is a notional subject or object. For cases that are not part of a set construction with a provisional element, rightward displacement can only be captured in the annotation with indexing.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.30">9.30</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with provisional subject <i>it</i> marked <tt>-PSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex9.33">9.33</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.30">9.30</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"NP-PSBJ"</font>,"PRO","it_#_it"</tt><br>
-<tt>"IP-MAT","BED;~La","was"</tt><br>
-<tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT","ADJP-PRD2","ADJ","funny"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"D","that"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-NSBJ"</font>,"N","day"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","P-CONN","before"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","NP-SBJ","PRO","I"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","VBD;~Ipr","went"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","P-ROLE","to"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","NP","D","the"</tt><br>
-<tt>"IP-MAT","PP-SCON-TMP","IP-ADV","PP-DIR","NP","META","{unclear}_that_ear"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=21_christine_T01@2,12" target="_blank">21_christine_T01&#64;2,12</a>"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-PSBJ"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~La","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","ADJP-PRD2","ADJ","nice"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB","see"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"NP-OB1","PRO","you"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"ADVP-TMP","ADV","again"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=137_christine_T08@10,2" target="_blank">137_christine_T08&#64;10,2</a>"</tt><br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.34">9.34</a>), <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-DSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.31">9.31</a>), <tt>-NSBJ</tt> occurs in a clause together with a provisional element that is a derived subject, marked <tt>-DSBJ</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex9.34">9.34</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.31">9.31</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-DSBJ"</font>,"PRO","they"</tt><br>
 <tt>"IP-MAT","MD","wo"</tt><br>
 <tt>"IP-MAT","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"VB;~Ip"</font>,"take"</tt><br>
+<tt>"IP-MAT","VB;~Ip","take"</tt><br>
 <tt>"IP-MAT","ADVP-TMP","ADV","long"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-INF-NSBJ"</font>,"VB;~I","defrost"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=466_christine_T18@9,2,14" target="_blank">466_christine_T18&#64;9,2,14</a>"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF-NSBJ"</font>,"VB;~I","defrost"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=466_christine_T18@14,2" target="_blank">466_christine_T18&#64;14,2</a>"</tt><br>
 
-<p align="justify">Extrapositioning</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.32">9.32</a>), tag extension <tt>-NOB1</tt> marks an extraposed object occurring in a clause with provisional object <i>it</i> marked <tt>-POB1</tt>.</p>
 
 <dl>
-  <dt>(<a name="ex9.35">9.35</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.32">9.32</a>)</dt><dd></dd>
 </dl>
-<tt>"IP-MAT","CONJ","and"</tt><br>
-<tt>"IP-MAT","NP-SBJ","PRO","he"</tt><br>
-<tt>"IP-MAT","VBD","said"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","EX","there"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","VAI;~ex_Vpr","ai"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","NEG","n&lt;apos&gt;t"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","NP-ESBJ","D","a"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","NP-ESBJ","N","bugger"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","NP-ESBJ",<font style="background-color: SandyBrown;">"IP-REL"</font>,"*ICH*-167"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","PP-LOC","P-ROLE","in"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1","PP-LOC","NP","NPR","England"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"IP-REL-167"</font>,"NP","RPRO","that"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"IP-REL-167"</font>,"BEP;~La","&lt;apos&gt;s"</tt><br>
-<tt>"IP-MAT","IP-MAT-OB1",<font style="background-color: MediumSpringGreen;">"IP-REL-167"</font>,"ADJP-PRD2","ADJ","good"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=273_christine_T38@21,29" target="_blank">273_christine_T38&#64;21,29</a>"</tt><br>
+<tt>"IP-MAT","NP-SBJ;{PETER}","NPR","Peter"</tt><br>
+<tt>"IP-MAT","VBD;~Cn.t","thought"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"NP-POB1"</font>,"PRO","it"</tt><br>
+<tt>"IP-MAT","ADJP-PRD","ADJS","best"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF2-NOB1"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF2-NOB1"</font>,"VB;~Ip","go"</tt><br>
+<tt>"IP-MAT",<font style="background-color: SandyBrown;">"IP-INF2-NOB1"</font>,"ADVP-DIR","ADV","away"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_A_POTTER_1902@13,7" target="_blank">38_A_POTTER_1902&#64;13,7</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.33">9.33</a>), the extraposed element is a relative clause introduced with the relative prounon <i>that</i>.</p>
 
 <dl>
-  <dt>(<a name="ex9.36">9.36</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.33">9.33</a>)</dt><dd></dd>
+</dl>
+<tt>"IP-MAT-OB1","EX","there"</tt><br>
+<tt>"IP-MAT-OB1","VAI;~ex_Vpr","ai"</tt><br>
+<tt>"IP-MAT-OB1","NEG","n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT-OB1","NP-ESBJ","D","a"</tt><br>
+<tt>"IP-MAT-OB1","NP-ESBJ","N","bugger"</tt><br>
+<tt>"IP-MAT-OB1","NP-ESBJ",<font style="background-color: MediumSpringGreen;">"IP-REL"</font>,"*ICH*-167"</tt><br>
+<tt>"IP-MAT-OB1","PP-LOC","P-ROLE","in"</tt><br>
+<tt>"IP-MAT-OB1","PP-LOC","NP","NPR","England"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: SandyBrown;">"IP-REL-167"</font>,"NP","RPRO","that"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: SandyBrown;">"IP-REL-167"</font>,"BEP;~La","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT-OB1",<font style="background-color: SandyBrown;">"IP-REL-167"</font>,"ADJP-PRD2","ADJ","good"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=273_christine_T38@29,21" target="_blank">9#273_christine_T38&#64;21,13</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.34">9.34</a>), the extraposed element is a relative clause introduced with the relative prounon <i>which</i>.</p>
+
+<dl>
+  <dt>(<a name="ex9.34">9.34</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","PRO","We"</tt><br>
 <tt>"IP-MAT","BEP;~cat_Vg","are"</tt><br>
@@ -797,32 +719,10 @@
 <tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_lucy_child_11_H16@15,22" target="_blank">3_lucy_child_11_H16&#64;15,22</a>"</tt><br>
 
-<dl>
-  <dt>(<a name="ex9.37">9.37</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","PRO","she"</tt><br>
-<tt>"IP-MAT","VBD","gave"</tt><br>
-<tt>"IP-MAT","NP-OB2","PRO","me"</tt><br>
-<tt>"IP-MAT","NP-OB1","D","a"</tt><br>
-<tt>"IP-MAT","NP-OB1","ADJP","ADJ","lovely"</tt><br>
-<tt>"IP-MAT","NP-OB1","N","book"</tt><br>
-<tt>"IP-MAT","NP-OB1","PP","P-ROLE","on"</tt><br>
-<tt>"IP-MAT","NP-OB1","PP","NP","ADJP","ADJ","musical"</tt><br>
-<tt>"IP-MAT","NP-OB1","PP","NP","NS","composers"</tt><br>
-<tt>"IP-MAT","NP-OB1",<font style="background-color: SandyBrown;">"IP-REL"</font>,"*ICH*-155"</tt><br>
-<tt>"IP-MAT","NP-TMP","ADJP","ADJ","last"</tt><br>
-<tt>"IP-MAT","NP-TMP","N","year"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"NP-SBJ","RPRO","which"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"MD","must"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"HV;~cat_Ve","have"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"IP-PPL-CAT","VVN","cost"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"IP-PPL-CAT","NP-OB2","PRO","her"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"IP-PPL-CAT","NP-OB1","D","a"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-155"</font>,"IP-PPL-CAT","NP-OB1","N","bomb"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=181_christine_T23@27,35" target="_blank">181_christine_T23&#64;27,35</a>"</tt><br>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.35">9.35</a>), the extraposed element is an <i>as</i>-phrase with free relative complement.</p>
 
 <dl>
-  <dt>(<a name="ex9.38">9.38</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.35">9.35</a>)</dt><dd></dd>
 </dl>
 <tt>"IML","NP-SBJ","PRO","I"</tt><br>
 <tt>"IML","VBD","went"</tt><br>
@@ -838,11 +738,13 @@
 <tt>"IML","PP-DIR","NP",<font style="background-color: MediumSpringGreen;">"PP-156"</font>,"NP","IP-REL","VBD","went"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_lucy_child_10_K59@57,61" target="_blank">42#3_lucy_child_10_K59&#64;16,20</a>"</tt><br>
 
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.36">9.36</a>), there is extrapositioning of a <i>to</i>-infinitive clause inside an extraposed relative clause.</p>
+
 <dl>
-  <dt>(<a name="ex9.39">9.39</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.36">9.36</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-SBJ","NS","Persons"</tt><br>
-<tt>"IP-MAT","NP-SBJ",<font style="background-color: SandyBrown;">"IP-REL"</font>,"*ICH*-111"</tt><br>
+<tt>"IP-MAT","NP-SBJ",<font style="background-color: MediumSpringGreen;">"IP-REL"</font>,"*ICH*-111"</tt><br>
 <tt>"IP-MAT","MD","must"</tt><br>
 <tt>"IP-MAT","BE;~La","be"</tt><br>
 <tt>"IP-MAT","ADJP-PRD2","ADJ","present"</tt><br>
@@ -854,7 +756,7 @@
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","IML","NP-PRD2","PP","P-ROLE","in"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","IML","NP-PRD2","PP","NP","D","the"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","IML","NP-PRD2","PP","NP","N","position"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","IML","NP-PRD2","PP","NP","IP-INF","*ICH*-113"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","IML","NP-PRD2","PP","NP",<font style="background-color: MediumSpringGreen;">"IP-INF"</font>,"*ICH*-113"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","PU","&lt;comma&gt;"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","CONJ","but"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","BEP;~cat_Ve","are"</tt><br>
@@ -862,47 +764,23 @@
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","IP-PPL-CAT","ADVP-MOD","ADV","also"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","IP-PPL-CAT","ADVP-MNR","ADV","economically"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","IP-PPL-CAT","VVN;~Cn.t","compelled"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","IP-PPL-CAT","IP-INF-OB1","*ICH*-113"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IML","CONJP","IML","IP-PPL-CAT",<font style="background-color: MediumSpringGreen;">"IP-INF-OB1"</font>,"*ICH*-113"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","TO","to"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","VB;~Tn","sell"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","NP-OB1","NP-GENV","PRO","their"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","NP-OB1","N","labour"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","PP-LOC","P-ROLE","on"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","PP-LOC","NP","D","the"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","PP-LOC","NP","N","market"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","PP-MNR","P-ROLE","without"</tt><br>
-<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,"IP-INF-113","PP-MNR","NP","N","restriction"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_lucy_student_E53@44,53" target="_blank">40#14_lucy_student_E53&#64;5,14</a>"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"TO","to"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"VB;~Tn","sell"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"NP-OB1","NP-GENV","PRO","their"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"NP-OB1","N","labour"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"PP-LOC","P-ROLE","on"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"PP-LOC","NP","D","the"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"PP-LOC","NP","N","market"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"PP-MNR","P-ROLE","without"</tt><br>
+<tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"IP-REL-111"</font>,<font style="background-color: SandyBrown;">"IP-INF-113"</font>,"PP-MNR","NP","N","restriction"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_lucy_student_E53@103,44,53,78,99" target="_blank">40#14_lucy_student_E53&#64;64,5,14,39,60</a>"</tt><br>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.37">9.37</a>), the extraposed element is a the conjunct of a coordination.</p>
 
 <dl>
-  <dt>(<a name="ex9.40">9.40</a>)</dt><dd></dd>
-</dl>
-<tt>"IP-MAT","NP-SBJ","NML","NP","NP-GENV","D","The"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","NP","NP-GENV","N","morning"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","NP","NP-GENV","GENM","&lt;apos&gt;s"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML","NP","NS","tabloids"</tt><br>
-<tt>"IP-MAT","NP-SBJ","NML",<font style="background-color: MediumSpringGreen;">"CONJP"</font>,"*ICH*-116"</tt><br>
-<tt>"IP-MAT","BED","were"</tt><br>
-<tt>"IP-MAT","PP-LOC","P-ROLE","on"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","D","the"</tt><br>
-<tt>"IP-MAT","PP-LOC","NP","N","counter"</tt><br>
-<tt>"IP-MAT","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"CONJ","and"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","D","a"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","N","stack"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","P-ROLE","of"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","ADJP","NP","N","dog"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","ADJP","PU","&lt;hyphen&gt;"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","ADJP","ADJ","eared"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","NP-GENV","NS","men"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","NP-GENV","GENM","&lt;apos&gt;s"</tt><br>
-<tt>"IP-MAT",<font style="background-color: SandyBrown;">"CONJP-116"</font>,"NP","PP","NP","NS","magazines"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=26_susanne_N06@28,14" target="_blank">26_susanne_N06&#64;28,14</a>"</tt><br>
-
-<dl>
-  <dt>(<a name="ex9.41">9.41</a>)</dt><dd></dd>
+  <dt>(<a name="ex9.37">9.37</a>)</dt><dd></dd>
 </dl>
 <tt>"IP-MAT","NP-TMP","NUM","One"</tt><br>
 <tt>"IP-MAT","NP-TMP","N","day"</tt><br>
@@ -920,26 +798,7 @@
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CONJP-196"</font>,"ADVP-MOD;&#64;3","ADV","also"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CONJP-196"</font>,"NP","D","the"</tt><br>
 <tt>"IP-MAT",<font style="background-color: MediumSpringGreen;">"CONJP-196"</font>,"NP","NS","pigs"</tt><br>
-<tt>"IP-MAT","PUQ","&lt;rdquo&gt;"</tt><br>
-<tt>"IP-MAT","PU","."</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=117_susanne_G12@20,32" target="_blank">117_susanne_G12&#64;20,32</a>"</tt><br>
-
-<dl>
-  <dt>(<a name="ex9.42">9.42</a>)</dt><dd></dd>
-</dl>
-<tt>"NP","N","confusion"</tt><br>
-<tt>"NP","IP-REL","NP-SBJ","RPRO","which"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NEG","not"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"ADVP-MOD;&#64;2","ADV","only"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"VBP;~Cn.g","keeps"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-OB1","NP-GENV","PRO","his"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-OB1","NS",<font style="background-color: SandyBrown;">"foes"</font></tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,<font style="background-color: MediumSpringGreen;">"IML"</font>,"IP-PPL-PRD",<font style="background-color: MediumSpringGreen;">"VAG"</font>,"guessing"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP","CONJ","but"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-OB1","NP-GENV","PRO","his"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"CONJP",<font style="background-color: MediumSpringGreen;">"IML"</font>,"NP-OB1","NS","friends"</tt><br>
-<tt>"NP","IP-REL",<font style="background-color: MediumSpringGreen;">"IML"</font>,"ADVP-MOD;&#64;5","ADV",<font style="background-color: MediumSpringGreen;">"as_well"</font></tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=40_susanne_A08@73,59,65,75,80,89" target="_blank">52#40_susanne_A08&#64;22,8,14,24,29,38</a>"</tt><br>
 
 <br>
 <br>
