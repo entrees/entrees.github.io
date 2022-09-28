@@ -3,12 +3,12 @@
 <br>
 <h2><a name="sec4.1">4.1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">A clause is a matrix clause when it is not subordinate, that is, when it is not contained within a higher phrase or clause. Instances of clause subordination were seen in chapter <a href="chapter3.html#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="chapter5.html#ch5">5</a> will present options for clause-within-clause subordination. In this chapter, section <a href="chapter4.html#sec4.2">4.2</a> gives an overview of annotation to distinguish matrix clause types. Section <a href="chapter4.html#sec4.3">4.3</a> covers options available for analysing clause function. Finally, section <a href="chapter4.html#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
+<p align="justify">Instances of clause subordination were seen in chapter <a href="chapter3.html#ch3">3</a> as modifiers and complements within phrases. Chapter <a href="chapter5.html#ch5">5</a> will present options for clause-within-clause subordination. In this chapter, section <a href="chapter4.html#sec4.2">4.2</a> gives an overview of annotation to distinguish matrix clause types. Section <a href="chapter4.html#sec4.3">4.3</a> covers options available for analysing the function of phrase components of a clause. Finally, section <a href="chapter4.html#sec4.4">4.4</a> introduces clause internal coordination with <tt>CONJP</tt> (conjunction phrase) and <tt>IML</tt> (clause intermediate) layers.</p>
 
 <br>
 <h2><a name="sec4.2">4.2</a>&nbsp;&nbsp;&nbsp;Matrix clause types</h2>
 
-<p align="justify">The internal form of a matrix clause can determine its use, and this gives rise to a basis for distinguishing the different clause types of:</p>
+<p align="justify">A clause is a matrix clause when it is not subordinate, that is, when it is not contained within a higher phrase or clause. The internal form of a matrix clause can determine its use, and this gives rise to a basis for distinguishing the different matrix clause types of:</p>
 <ul>
 <li><b>declaratives</b> (discussed in section <a href="chapter4.html#sec4.2.1">4.2.1</a>)</li>
 <li><b>interrogatives</b> (discussed in section <a href="chapter4.html#sec4.2.2">4.2.2</a>)</li>
@@ -314,6 +314,18 @@
 
 <h3><a name="sec4.3.1">4.3.1</a>&nbsp;&nbsp;&nbsp;Subject</h3>
 
+<p><a name="table4.5">Table 4.5: The full range of tag extensions related to the subject function</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
+<tr><td><tt>-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
+<tr><td><tt>-DSBJ</tt></td><td>derived subject</td></tr>
+<tr><td><tt>-ESBJ</tt></td><td>subject of a clause with existential <i>there</i></td></tr>
+<tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
+<tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
+</table>
+<br>
+
 <p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb. The subject can determine the form of the first verb instance of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he&sol;she&sol;it <b><i>is</i></b></i>, <i>we&sol;you (all)&sol;they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I&sol;we&sol;he&sol;she&sol;they</i> contrast with non-subject forms <i>me&sol;us&sol;him&sol;her&sol;them</i>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Subjects typically occur with a clause initial position. For a couple of untypical clause types, the subject can appear after an initial verb. This holds especially for interrogatives, as in examples of section <a href="chapter4.html#sec4.2.2">4.2.2</a> above. Inversion of the subject and an initial verb can also occur after a frontmost adverbial phrase with a (semi-)negative adverbial head such as <i>hardly</i>, <i>scarcely</i>, <i>little</i>, <i>never</i>, <i>seldom</i>, <i>rarely</i>), as in (<a href="chapter4.html#ex4.23">4.23</a>).</p>
@@ -362,8 +374,8 @@
 <ul>
 <li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="chapter4.html#ex4.25">4.25</a>) above</li>
 <li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="chapter4.html#ex4.26">4.26</a>)</li>
-<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="chapter4.html#ex4.27">4.27</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="chapter4.html#ex4.29">4.29</a>)</li>
-<li>The subject can also be <i>it</i> as a dummy element that has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<font style="background-color: SandyBrown;">__tspc_188_christine_T32__).</li></font>
+<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="chapter4.html#ex4.27">4.27</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="chapter4.html#ex4.28">4.28</a>)</li>
+<li>The subject can also be <i>it</i> as a dummy element that has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.29">4.29</a>).</li>
 </ul>
 
 <dl>
@@ -413,18 +425,6 @@
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VAG;~I&nbsp;raining))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=331_christine_T21@5" target="_blank">331_christine_T21&#64;5</a>))</tt><br>
 
-<p><a name="table4.5">Table 4.5: The full range of tag extensions related to the subject function</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
-<tr><td><tt>-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
-<tr><td><tt>-DSBJ</tt></td><td>derived subject</td></tr>
-<tr><td><tt>-ESBJ</tt></td><td>subject of a clause with existential <i>there</i></td></tr>
-<tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
-<tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
-</table>
-<br>
-
 <h3><a name="sec4.3.2">4.3.2</a>&nbsp;&nbsp;&nbsp;Object</h3>
 
 <p align="justify">An object can only occur when there is a transitive verb. The following properties are typical:</p>
@@ -444,6 +444,16 @@
 <p align="justify">Also, section <a href="chapter4.html#sec4.3.2.3">4.3.2.3</a> notes the <b>unspecified object</b> function for preposition phrases.</p>
 
 <h4><a name="sec4.3.2.1">4.3.2.1</a>&nbsp;&nbsp;&nbsp;Direct object</h4>
+
+<p><a name="table4.6">Table 4.6: The full range of tag extensions related to the direct object function</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
+<tr><td><tt>-DOB1</tt></td><td>derived object</td></tr>
+<tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
+<tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
+</table>
+<br>
 
 <p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="chapter4.html#table4.6">4.6</a> relate to the direct object function in particular constructions:</p>
 <ul>
@@ -516,19 +526,7 @@
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;mood))))))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=79_A_JOYCE_1914@9,15" target="_blank">3#79_A_JOYCE_1914&#64;7,13</a>))</tt><br>
 
-<p><a name="table4.6">Table 4.6: The full range of tag extensions related to the direct object function</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
-<tr><td><tt>-DOB1</tt></td><td>derived object</td></tr>
-<tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
-<tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
-</table>
-<br>
-
 <h4><a name="sec4.3.2.2">4.3.2.2</a>&nbsp;&nbsp;&nbsp;Indirect object</h4>
-
-<p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
 
 <p><a name="table4.7">Table 4.7: Extension tag for indirect object function</a></p>
 
@@ -537,7 +535,9 @@
 </table>
 <br>
 
-<p align="justify">While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="chapter4.html#ex4.34">4.34</a>).</p>
+<p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="chapter4.html#ex4.34">4.34</a>).</p>
 
 <dl>
   <dt>(<a name="ex4.34">4.34</a>)</dt><dd></dd>
@@ -552,8 +552,6 @@
 
 <h4><a name="sec4.3.2.3">4.3.2.3</a>&nbsp;&nbsp;&nbsp;Underspecified object</h4>
 
-<p align="justify">The unspecified object function of Table <a href="chapter4.html#table4.8">4.8</a> occurs only with preposition phrases that have a verb selected function.</p>
-
 <p><a name="table4.8">Table 4.8: Tag extension for unspecified object</a></p>
 
 <table border="1" cellpadding="10px">
@@ -561,13 +559,21 @@
 </table>
 <br>
 
-<p align="justify">When we look at verb codes with objects in chapter <a href="chapter7.html#ch7">7</a>, we will find that verbs selecting <tt>PP-OBU</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
+<p align="justify">The unspecified object function of Table <a href="chapter4.html#table4.8">4.8</a> occurs only with preposition phrases that have a verb selected function. When we look at verb codes with objects in chapter <a href="chapter7.html#ch7">7</a>, we will find that verbs selecting <tt>PP-OBU</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
 
 <h3><a name="sec4.3.3">4.3.3</a>&nbsp;&nbsp;&nbsp;Predicative</h3>
 
+<p><a name="table4.9">Table 4.9: Extension tags related to predicative functions</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
+<tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
+</table>
+<br>
+
 <p align="justify">A predicative can only occur as a clause element when selected by the verb. A predicative typically follows the verb and (if one is present) the direct object. All of the phrase types considered in chapter <a href="chapter3.html#ch3">3</a> are able to function as predicatives: noun phrase, adjective phrase, adverb phrase, and preposition phrase. This behaviour is in contrast to objects, which cannot be adjective phrases.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. Both types have the semantic role of characterising a preceding noun phrase:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;There are two types of predicative: the <b>subject predicative</b> and the <b>object predicative</b>. In the annotation, having <tt>2</tt> as part of the predicative tag, to give <tt>-PRD2</tt>, marks a subject predicative. Absence of <tt>2</tt>, signals an object predicative. Both types of predicative have the semantic role of characterising a preceding noun phrase:</p>
 <ul>
 <li>a subject predicative adds more information about the subject, as seen with (<a href="chapter4.html#ex4.35">4.35</a>)</li>
 <li>an object predicative does the same for its direct object, as seen with (<a href="chapter7.html#ex7.52">7.52</a>)</li>
@@ -597,19 +603,27 @@
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;interesting)))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_A_TED_talk_11@10" target="_blank">14_A_TED_talk_11&#64;10</a>))</tt><br>
 
-<p align="justify">In the annotation, having <tt>2</tt> as part of the predicative tag, to give <tt>-PRD2</tt>, marks a subject predicative. Absence of <tt>2</tt>, signals an object predicative.</p>
+<h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
 
-<p><a name="table4.9">Table 4.9: Extension tags related to predicative functions</a></p>
+<p align="justify">An adverbial is a phrase that is used to modify a verb or clause. Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="chapter4.html#table4.10">4.10</a>.</p>
+
+<p><a name="table4.10">Table 4.10: The full range of tag extensions for marking adverbial functions</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
-<tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
+<tr><td><tt>-ABS</tt></td><td>absolute</td></tr>
+<tr><td><tt>-BNF</tt></td><td>benefactive</td></tr>
+<tr><td><tt>-CNT</tt></td><td>contingency</td></tr>
+<tr><td><tt>-COM</tt></td><td>comitative</td></tr>
+<tr><td><tt>-DIR</tt></td><td>directional</td></tr>
+<tr><td><tt>-LOC</tt></td><td>locative</td></tr>
+<tr><td><tt>-MNR</tt></td><td>manner&sol;degree</td></tr>
+<tr><td><tt>-MOD</tt></td><td>modality</td></tr>
+<tr><td><tt>-RST</tt></td><td>respect</td></tr>
+<tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
 </table>
 <br>
 
-<h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;Adverbials</h3>
-
-<p align="justify">An adverbial is a phrase that is used to modify a verb or clause. It is typical for adverb phrases to be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is typical for adverb phrases to be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter4.html#ex4.37">4.37</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18</i> are all adverbials that modify <i>struck</i>.</p>
 
@@ -638,24 +652,6 @@
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_A19@7,16,24,32,38" target="_blank">10_susanne_A19&#64;7,16,24,32,38</a>))</tt><br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="chapter4.html#ex4.37">4.37</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb selects, as seen with the grammatical codes of [Ipr], [In&sol;pr], [Tn.pr], and [Dn.pr] discussed in chapter <a href="chapter7.html#ch7">7</a>.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials need to be given functional information in the annotation. The full range of extensions for marking adverbial functions is given in Table <a href="chapter4.html#table4.10">4.10</a>.</p>
-
-<p><a name="table4.10">Table 4.10: The full range of tag extensions for marking adverbial functions</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>-ABS</tt></td><td>absolute</td></tr>
-<tr><td><tt>-BNF</tt></td><td>benefactive</td></tr>
-<tr><td><tt>-CNT</tt></td><td>contingency</td></tr>
-<tr><td><tt>-COM</tt></td><td>comitative</td></tr>
-<tr><td><tt>-DIR</tt></td><td>directional</td></tr>
-<tr><td><tt>-LOC</tt></td><td>locative</td></tr>
-<tr><td><tt>-MNR</tt></td><td>manner&sol;degree</td></tr>
-<tr><td><tt>-MOD</tt></td><td>modality</td></tr>
-<tr><td><tt>-RST</tt></td><td>respect</td></tr>
-<tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
-</table>
-<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>-DIR</tt>, the adverbial functions of Table <a href="chapter4.html#table4.10">4.10</a> typically mark phrases that are not selected by the verb. Even when not selected by the verb, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
 
