@@ -26,178 +26,125 @@
 
 <h2><a name="sec1">1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">The search interface aims to give quick and simple access to the corpus content. The interface is useful for:</p>
+<p align="justify">The search interface aims to give quick and powerful access to the corpus content. The interface is useful for:</p>
+
 <dl>
-<dt>(i)</dt><dd>browsing the corpus,</dd>
-<dt>(ii)</dt><dd>accessing content by providing ID information,</dd>
-<dt>(iii)</dt><dd>searching the corpus, and</dd>
-<dt>(iv)</dt><dd>seeing visualisations of the parse analysis from three different perspectives: Tree, Word, and Graph.</dd>
+<dt>(i)</dt><dd>browsing the corpus</dd>
+<dt>(ii)</dt><dd>accessing content by providing ID information</dd>
+<dt>(iii)</dt><dd>providing summary collections from, e.g., word class analysis, verb code analysis, and function analysis</dd>
+<dt>(iv)</dt><dd>searching the corpus with the underlying search tools of (a) Grep (Magloire et al. 2021) for search based on descriptions of character strings and (b) TGrep2 (Rohde 2005) for search based on descriptions of tree nodes and relations between tree nodes</dd>
+<dt>(v)</dt><dd>seeing visualisations of the parse analysis from different perspectives: Tree, Word, and Graph</dd>
 </dl>
 
-<p align="justify">The interface gives direct access to the most up-to-date working files of the TSPC database.</p>
+<br>
+<h2><a name="sec2">2</a>&nbsp;&nbsp;&nbsp;Corpus overview page</h2>
+
+<p align="justify">The corpus overview page, shown in Figure <a href="#fig1">1</a>, is the default entry point and this is also reached by clicking the &lsquo;top&rsquo; link of any of the other pages. This lists all of the corpus files, with each list item offering details of the source and a clickable link to a context page for the corresponding file.</p>
+
+<p><a name="fig1">Figure 1: Overview page of the TSPC online interface</a></p>
+
+<img src="top_page.png" alt="Overview page of the TSPC online interface" height="280">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The corpus overview page also contains links for reaching: the Grep and TGrep2 search pages, the various overview pages, and the page for accessing discourse segmentations. There is also an ID field box. A link is also provided for changing the mode of the interface, which by default is set to show results graphically. A mode to show results with plain text is also available.</p>
+
+<h3><a name="sec2.1">2.1</a>&nbsp;&nbsp;&nbsp;Accessing content by providing ID information</h3>
+
+<p align="justify">The corpus overview page, context page, and visualisation pages of the interface all contain an ID text field box. When the corpus overview page is open, the ID box is blank by default. With a context page, as in Figure <a href="#fig2">2</a>, the ID box contains the name of the shown file.</p>
+
+<p><a name="fig2">Figure 2: Example context page of the TSPC online interface</a></p>
+
+<img src="A_Alresford.png" alt="Example context page of the TSPC online interface" height="280">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With a visualisation page (see section <a href="#sec6">6</a> below), the ID box contains the full ID name of the shown parse analysis. Multiple full ID names can be entered into the ID box when they are space separated, in which case a visualisation for all the referenced parse analysis is shown. A full ID name for a given instance of parse analysis takes the form of a number followed by an underscore character (&lsquo;_&rsquo;) and then the name of the file that contains the parse analysis.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The user is free to edit the content of the ID box, and then, by pressing the <tt>[ENTER]</tt> key, will jump to the corresponding page for the edited ID information.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If the ID text box has content and the overview page is shown, then the listing of files will be restricted to those files with names that contain the given content, ignoring case distinctions. With the corpus consisting of over four hundred files, this provides a useful way to zoom in on file collections, especially as related files have related names. If there is no match for the content of the ID text box, then the overview page is left with no listed files.</p>
 
 <br>
-<h2><a name="sec2">2</a>&nbsp;&nbsp;&nbsp;The corpus overview page and interface map</h2>
+<h2><a name="sec3">3</a>&nbsp;&nbsp;&nbsp;The underlying data format</h2>
 
-<p align="justify">The corpus overview page is the default entry point to the interface and is also reached by clicking the &lsquo;Corpus overview&rsquo; link of any of the other pages. Other possible navigations through the  interface are illustrated in Figure <a href="#fig1">1</a>. Notably, the search pages and context page are intermediate steps for reaching a tree page. From a tree page, you can toggle between the other visualisation pages, or visit&sol;return to the context page.</p>
+<p align="justify">To understand the functionality of the interface, particularly the options for search, it is helpful to know about the underlying data format used by the TSPC.</p>
 
-<p><a name="fig1">Figure 1: Map of the interface</a></p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Each corpus file is a text file containing instances of parse analysis separated by blank lines. Each analysis instance begins with a line that presents the overall word yield for the analysis, where a word yield is the extraction of the terminal nodes of the tree, but without zero elements like relative clause traces. The yield is presented between opening and closing brackets with the form: &lsquo;<tt>=N(" </tt>&rsquo; and &lsquo;<tt> ")</tt>&rsquo;.</p>
 
-<img src="map.png" alt="Map of the interface" height="380">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Following this opening line comes the parse analysis itself, with each word of the analysis placed at the end of its own line and accompanied by lemma information between curly braces with an initial semi-colon (&lsquo;<tt>;&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;). Furthermore, each analysis line presents the path information from the root layer of the parse through to the word layer. If there are distinct non-terminal nodes with the same tag and the same preceding path, then extra marking is required to ensure these nodes are uniquely distinguished when considering multiple paths. The convention followed for extra marking includes &lsquo;<tt>;&#64;n</tt>&rsquo; for the <tt>n</tt>-th sister node of a shared preceding path. The last line of a parse analysis instance is the ID node for the instance.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The corpus overview page contains links for reaching the Grep and TGrep2 pages. There is also an ID field box with the functionality described in section <a href="#sec3">3</a> below. Finally, there are grouped listings of all the corpus files, with each list item serving as a clickable link to a context page for the corresponding file. If the ID text box field has content, then the listing of files will be restricted to those files with names that contain the given content, ignoring case distinctions. With the corpus consisting of over four hundred files, this provides a useful way to zoom in on file collections, especially as related files have related names. If there is no match for the content of the ID text box, then the overview page is left with no listed files.</p>
-
-<br>
-<h2><a name="sec3">3</a>&nbsp;&nbsp;&nbsp;Accessing content by providing ID information</h2>
-
-<p align="justify">The corpus overview page, context page, and visualisation pages all contain an ID text field box. When the corpus overview page is open, the ID box is blank by default. With the context page, the ID box contains the name of the shown file. With a visualisation page, the ID box contains the full ID name of the shown parse analysis. Multiple full ID names can be entered into the ID box when they are space separated, in which case a visualisation for all the referenced parse analysis is shown.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A full ID name for a given instance of parse analysis takes the form of a number followed by an underscore character (&lsquo;_&rsquo;) and then the name of the file that contains the parse analysis.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The user is free to edit the content of the ID box, and then, by pressing the <tt>[ENTER]</tt> key, will jump to the corresponding page for the edited ID information. Note:</p>
-<ul>
-<li>If you edit the ID box to give the full ID name for an instance of parse analysis, then a visualisation for the analysis is reached. If you do this from an already open visualisation page, then the mode of visualisation (Tree, Word, or Graph) will be maintained for the reached analysis, but if you do this from the corpus overview page or context page, then you will jump to a Tree view page for the referenced analysis.</li>
-<li>If you edit the ID box to give a filename, then the context page for the file is reached.</li>
-<li>If you edit the ID box to give an ID that is not recognised as either a full ID name for analysis or the name of a file in the corpus, then the corpus overview page is entered with a display of all the filenames that contain the given ID string, ignoring case distinctions.</li>
-</ul>
-
-<br>
-<h2><a name="sec4">4</a>&nbsp;&nbsp;&nbsp;The underlying data format</h2>
-
-<p align="justify">To understand the functionality of the interface, particularly the options for search, it is helpful to know about the underlying data format used by the TSPC. Each corpus file is a text file containing instances of parse analysis separated by blank lines. Each analysis instance begins with a line that presents the overall word yield for the analysis, where a word yield is the extraction of the terminal nodes of the tree, but without zero elements like relative clause traces. The yield is presented between opening and closing brackets with the form: &lsquo;<tt>=N(" </tt>&rsquo; and &lsquo;<tt> ")</tt>&rsquo;. Following this opening line comes the parse analysis itself, with each word of the analysis placed at the end of its own line and accompanied by lemma information between curly braces with an initial semi-colon (&lsquo;<tt>;&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;). Furthermore, each analysis line presents the path information from the root layer of the parse through to the word layer. The last line of a parse analysis instance is the ID node for the instance.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As examples, (<a href="#ex1">1</a>) shows the two opening instances of parse analysis from the file <tt>classics_POTTER_1902.txt</tt>:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example, (<a href="#ex1">1</a>) shows the twenty eighth tree from the file <tt>A_DICK_1952.txt</tt>.</p>
 
 <dl>
   <dt>(<a name="ex1">1</a>)</dt><dd></dd>
 </dl>
-<tt>=N("&nbsp;THE&nbsp;TALE&nbsp;OF&nbsp;PETER&nbsp;RABBIT&nbsp;BY&nbsp;BEATRIX&nbsp;POTTER&nbsp;")</tt><br>
-<tt>"FRAG","NP","D","THE;{the}"</tt><br>
-<tt>"FRAG","NP","N","TALE;{tale}"</tt><br>
-<tt>"FRAG","NP","PP","P-ROLE","OF;{of}"</tt><br>
-<tt>"FRAG","NP","PP","NP","NPR","PETER;{PETER}"</tt><br>
-<tt>"FRAG","NP","PP","NP","N","RABBIT;{rabbit}"</tt><br>
-<tt>"FRAG","PP","P-ROLE","BY;{by}"</tt><br>
-<tt>"FRAG","PP","NP","NPR","BEATRIX;{BEATRIX}"</tt><br>
-<tt>"FRAG","PP","NP","NPR","POTTER;{POTTER}"</tt><br>
-<tt>"ID","1_classics_POTTER_1902"</tt><br>
-<tt></tt><br>
-<tt>=N("&nbsp;Once&nbsp;upon&nbsp;a&nbsp;time&nbsp;there&nbsp;were&nbsp;four&nbsp;little&nbsp;Rabbits&nbsp;&lt;comma&gt;&nbsp;and&nbsp;their&nbsp;names&nbsp;were&nbsp;&lt;mdash&gt;&nbsp;Flopsy&nbsp;&lt;comma&gt;&nbsp;Mopsy&nbsp;&lt;comma&gt;&nbsp;Cotton-tail&nbsp;&lt;comma&gt;&nbsp;and&nbsp;Peter&nbsp;.&nbsp;")</tt><br>
-<tt>"IP-MAT","IML","IML","ADVP-TMP","ADV","Once;{once}"</tt><br>
-<tt>"IP-MAT","IML","IML","ADVP-TMP","PP","P-ROLE","upon;{upon}"</tt><br>
-<tt>"IP-MAT","IML","IML","ADVP-TMP","PP","NP","D","a;{a}"</tt><br>
-<tt>"IP-MAT","IML","IML","ADVP-TMP","PP","NP","N","time;{time}"</tt><br>
-<tt>"IP-MAT","IML","IML","EX","there;{there}"</tt><br>
-<tt>"IP-MAT","IML","IML","BED;~I","were;{be}"</tt><br>
-<tt>"IP-MAT","IML","IML","NP-ESBJ;{RABBITS}","NUM","four;{four}"</tt><br>
-<tt>"IP-MAT","IML","IML","NP-ESBJ;{RABBITS}","ADJP","ADJ","little;{little}"</tt><br>
-<tt>"IP-MAT","IML","IML","NP-ESBJ;{RABBITS}","NS","Rabbits;{rabbit}"</tt><br>
+<tt>=N("&nbsp;He&nbsp;tried&nbsp;to&nbsp;smile&nbsp;&lt;comma&gt;&nbsp;but&nbsp;his&nbsp;lips&nbsp;stayed&nbsp;unmoved&nbsp;.&nbsp;")</tt><br>
+<tt>"IP-MAT","IML","IML","NP-SBJ;{FOMAR}","PRO","He;{he}"</tt><br>
+<tt>"IP-MAT","IML","IML","VBD;~It","tried;{try}"</tt><br>
+<tt>"IP-MAT","IML","IML","IP-INF-OB1","TO","to;{to}"</tt><br>
+<tt>"IP-MAT","IML","IML","IP-INF-OB1","VB;~I","smile;{smile}"</tt><br>
 <tt>"IP-MAT","IML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","CONJ","and;{and}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-SBJ","NP-GENV;{RABBITS}","PRO","their;{their}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-SBJ","NS","names;{name}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","BED;~Ln","were;{be}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","PU","&lt;mdash&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","NP","NPR","Flopsy;{Flopsy}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","CONJP;&#64;3","NP","NPR","Mopsy;{Mopsy}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","CONJP;&#64;5","NP","NPR","Cotton-tail;{Cotton_tail}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","PU","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","CONJP;&#64;7","CONJ","and;{and}"</tt><br>
-<tt>"IP-MAT","IML","CONJP","IML","NP-PRD2","NML","CONJP;&#64;7","NP","NPR","Peter;{Peter}"</tt><br>
+<tt>"IP-MAT","IML","CONJP","CONJ","but;{but}"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","NP-SBJ","NP-GENV;{FOMAR}","PRO","his;{his}"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","NP-SBJ","NS","lips;{lip}"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","VBD;~La","stayed;{stay}"</tt><br>
+<tt>"IP-MAT","IML","CONJP","IML","ADJP-PRD2","ADJ","unmoved;{unmoved}"</tt><br>
 <tt>"IP-MAT","PU","."</tt><br>
-<tt>"ID","2_classics_POTTER_1902"</tt><br>
+<tt>"ID","28_A_DICK_1952"</tt><br>
 
-<p align="justify">Note that some nodes in (<a href="#ex1">1</a>) have extra markings: <tt>"CONJP;&#64;3"</tt>, <tt>"CONJP;&#64;5"</tt>, and <tt>"CONJP;&#64;7"</tt> of <tt>2_classics_POTTER_1902</tt>. If there are distinct nodes that are non-terminal with the same tag and the same preceding path, then extra marking is required to ensure these nodes are uniquely distinguished when considering multiple paths. The convention followed for extra marking includes &lsquo;<tt>;&#64;n</tt>&rsquo; for the <tt>n</tt>-th sister node of a shared preceding path.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This parse information of (<a href="#ex1">1</a>) as a tree with the default tree visualisation page of the interface is shown in Figure <a href="#fig3">3</a>. Note that for this default tree page, the information in curly braces (word lemma and witness information) is hidden. This extra markup is shown by clicking the &lsquo;Reveal&rsquo; link. Also, the text version of (<a href="#ex1">1</a>) is shown by clicking the &lsquo;mode&rsquo; link, which changes to the interface to text mode.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The analysis of (<a href="#ex1">1</a>) demonstrates some key aspects of the annotation scheme:</p>
+<p><a name="fig3">Figure 3: Tree visualisation from the online interface of the TSPC</a></p>
+
+<img src="28_A_DICK_1952_tree.png" alt="Tree visualisation from the online interface of the TSPC" height="400">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation of (<a href="#ex1">1</a>) includes word level analysis which involves deciding on the segmentation of words together with the assignment of a word class and word lemma to each segmented word. Word segmentation is typically straightforward for English, as word spacing and punctuation can usually be followed. However, it is also pssible for a sequence of words to behave syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences are analysed as if single words, with each component separated by underscore characters in a single character string.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;From word analysis there is then the projection of groupings either in the creation of phrases or clause layers of structure. To the groupings of structure there is then the assignment of form and function information. This results in tree structure for isolated utterances, typically sentences.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;More particular aspects of the annotation scheme demonstrated by (<a href="#ex1">1</a>) are:</p>
 <ul>
-<li>words project word class nodes (<tt>D</tt>=determiner, <tt>N</tt>=noun, <tt>P-ROLE</tt>=role marking preposition, <tt>NPR</tt>=proper noun, <tt>BED</tt>=past tense <small style="font-size: 75%">BE</small>, <tt>PU</tt>=punctuation, etc.),</li>
-<li>clauses are typed (<tt>IP-MAT</tt>=declarative main clause, <tt>FRAG</tt>=sentence fragment),</li>
-<li>coordination involves <tt>CONJP</tt> projections and intermediate layers of structure (<tt>IML</tt>=clause intermediate level, <tt>NML</tt>=nominal intermediate level),</li>
-<li>clause level constituents are function marked (<tt>-ESBJ</tt>=subject of an existential construction, <tt>-SBJ</tt>=subject, <tt>-PRD2</tt>=subject predicative role, etc.),</li>
-<li>constituents contributing discourse referents have witness information (for the collection of rabbits named Flopsy, Mopsy, Cotton-tail, and Peter, there is <tt>{RABBITS}</tt>),</li>
-<li>pronouns with antecedents have resolved witness information (<tt>{RABBITS}</tt> appearing with <tt>their</tt>), and</li>
-<li>verbs have grammar pattern information (<tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected adverbial elements, <tt>~Ln</tt>=selection of clause structure where there is a linking verb with a subject predicative that is a noun phrase).</li>
+<li>words project word class nodes (<tt>PRO</tt>=pronoun, <tt>VBD</tt>=lexical verb with past tense form, <tt>TO</tt>=the <i>to</i>-infinitive clause marker, <tt>VB</tt>=lexical verb with infinitive form, <tt>PU</tt>=punctuation, <tt>CONJ</tt>=conjunction word, <tt>NS</tt>=plural noun, <tt>ADJ</tt>=adjective)</li>
+<li>clauses are typed (<tt>IP-MAT</tt>=declarative main clause, <tt>IP-INF</tt>=infinitive clause)</li>
+<li>coordination involves <tt>CONJP</tt> projections for conjuncts that are subsequent to the first conjunct and intermediate layers of structure (<tt>IML</tt>=clause intermediate level)</li>
+<li>clause level constituents are function marked (<tt>-SBJ</tt>=subject, <tt>-OB1</tt>=direct object, <tt>-PRD2</tt>=subject predicative)</li>
+<li>genitive case internal to noun phrases is function marked (<tt>-GENV</tt>)</li>
+<li>pronouns and the antecedents of pronouns have resolved witness information (<tt>;{FOMAR}</tt> appearing with <tt>NP-SBJ</tt> and <tt>NP-GENV</tt>)</li>
+<li>verbs have codes (<tt>~It</tt>=selection of clause structure where there is an intransitive verb and a selected <i>to</i>-infinitive adverbial clause, <tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected adverbial elements, <tt>~La</tt>=selection of clause structure where there is a linking verb with a subject predicative complement that is an adjective phrase)</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The data format of (<a href="#ex1">1</a>) is easy to edit, especially with a text editor capable of multi-line editing. It is notable that edits will always maintain balanced regularised tree structure. But what is most significant is that the format allows for quick and simple line and table based post-processing. As a case in point, an overview can be returned for items that have a particular word class. (This is accessed from link items that make up a listing of all tags, displayed on the Grep or TGrep2 pages when the search field is empty.) Figure <a href="#fig2">2</a> shows the result for all words in the corpus that are tagged <tt>RPRO</tt> (relative pronoun). This information is presented with the lemma of the word serving as a link to a Grep search for the lemma followed by a list within brackets of the particular attestations of the lemma with a count of instances after a colon.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This illustrates how within a single tree there is a lot of information to capture sentence coherence. In addition to the above form information, structural conventions have to be followed to ensure that control dependencies and across the board extraction dependencies are appropriately inherited. The structural conventions are a major diagnostic for choosing between whether to annotate structure that involves subordination (as seen in (<a href="#ex1">1</a>) with <tt>IP-INF-OB1</tt>) or coordination (as seen in (<a href="#ex1">1</a>) with <tt>CONJP</tt>).</p>
 
-<p><a name="fig2">Figure 2: Words marked as relative pronouns (<tt>RPRO</tt>)</a></p>
-
-<img src="word_class.png" alt="Example tree page" height="250">
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig3">3</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, etc.)&nbsp;and the lemmas of adverbs that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data (demonstrated below in section <a href="#sec6.1">6.1</a> with (<a href="#ex3">3</a>)).</p>
-
-<p><a name="fig3">Figure 3: Function marking with prepositions (<tt>P-ROLE</tt>)</a></p>
-
-<img src="prole.png" alt="Example tree page" height="380">
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;To support TGrep2 search, the TSPC native format of (<a href="#ex1">1</a>) is converted into bracketed trees with a <tt>TOP</tt> node, as in (<a href="#ex2">2</a>).</p>
-
-<dl>
-  <dt>(<a name="ex2">2</a>)</dt><dd></dd>
-</dl>
-<tt>(TOP&nbsp;(FRAG&nbsp;(NP&nbsp;(D&nbsp;THE;{the})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;TALE;{tale})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;OF;{of})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;PETER;{PETER})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;RABBIT;{rabbit}))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;BY;{by})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;BEATRIX;{BEATRIX})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;POTTER;{POTTER}))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ID&nbsp;1_classics_POTTER_1902))</tt><br>
-<tt></tt><br>
-<tt>(TOP&nbsp;(IP-MAT&nbsp;(IML&nbsp;(IML&nbsp;(ADVP-TMP&nbsp;(ADV&nbsp;Once;{once})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;upon;{upon})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;a;{a})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;time;{time}))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(EX&nbsp;there;{there})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~I&nbsp;were;{be})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-ESBJ;{RABBITS}&nbsp;(NUM&nbsp;four;{four})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;little;{little}))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;Rabbits;{rabbit})))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and;{and})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IML&nbsp;(NP-SBJ&nbsp;(NP-GENV;{RABBITS}&nbsp;(PRO&nbsp;their;{their}))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;names;{name}))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~Ln&nbsp;were;{be})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;&lt;mdash&gt;)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(NML&nbsp;(NP&nbsp;(NPR&nbsp;Flopsy;{Flopsy}))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(NP&nbsp;(NPR&nbsp;Mopsy;{Mopsy})))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(NP&nbsp;(NPR&nbsp;Cotton-tail;{Cotton_tail})))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and;{and})</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Peter;{Peter}))))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PU&nbsp;.))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ID&nbsp;2_classics_POTTER_1902))</tt><br>
-
-<p align="justify">Note that with conversion to bracketed trees, &lsquo;<tt>;&#64;n</tt>&rsquo; markings of nodes are removed, since nodes appear only once within the bracketed structure and so are always distinct.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;While not seen in (<a href="#ex1">1</a>), there can also be indexing information, but indexing is used sparingly, only being required to ensure that elements that have crossed structural levels (e.g., long distance dependencies) can be linked back to their locations of interpretation.</p>
 
 <br>
-<h2><a name="sec5">5</a>&nbsp;&nbsp;&nbsp;Context page</h2>
+<h2><a name="sec4">4</a>&nbsp;&nbsp;&nbsp;Collections of summary information</h2>
 
-<p align="justify">The context page gives a link for reaching the corpus overview page, followed by an ID field box that will contain the name of the file that is being shown. This ID field box has the functionality already described in section <a href="#sec3">3</a>. The remainder of the page consists of a table with two columns. The first column provides numbers for file content that has been given parse analysis. Each number forms a link for opening the instance of parse analysis in a tree page. The second column contains the yield content for the referenced analysis, extracted as the line content from the source data between &lsquo;<tt>=N(" </tt>&rsquo; and its closing &lsquo;<tt> ")</tt>&rsquo;, which is typically the content of a single sentence. With no processing of the source data being required to extract the yield, context pages are quick to render.</p>
+<p align="justify">The data format of (<a href="#ex1">1</a>) is easy to edit, especially with a text editor capable of multi-line editing. It is notable that edits will always maintain balanced regularised tree structure, and that tree changes can be readily observed with tools like <tt>diff</tt> (Hunt and Mcilroy 1975). But what is most significant is that the format allows for quick and simple line and table based post-processing. As a case in point, an overview can be returned for items that have a particular word class. (This is accessed from link items that make up a listing of all tags, displayed on the Grep or TGrep2 pages when the search field is empty.) Figure <a href="#fig4">4</a> shows the result for all words in the corpus that are tagged <tt>RPRO</tt> (relative pronoun). This information is presented with the lemma of the word serving as a link to a Grep search for the lemma followed by a list within brackets of the particular attestations of the lemma with a count of instances after a colon.</p>
+
+<p><a name="fig4">Figure 4: Words marked as relative pronouns (<tt>RPRO</tt>)</a></p>
+
+<img src="word_class.png" alt="Words marked as relative pronouns (RPRO)" height="350">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig5">5</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, <tt>COM</tt>=comitative, etc.)&nbsp;and the lemmas of prepositions that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data (demonstrated below in section <a href="#sec5.1">5.1</a> with (<a href="#ex2">2</a>)).</p>
+
+<p><a name="fig5">Figure 5: Function marking with prepositions (<tt>P-ROLE</tt>)</a></p>
+
+<img src="prole.png" alt="Function marking with prepositions (P-ROLE)" height="380">
 
 <br>
-<h2><a name="sec6">6</a>&nbsp;&nbsp;&nbsp;Search pages</h2>
+<h2><a name="sec5">5</a>&nbsp;&nbsp;&nbsp;Search pages</h2>
 
-<p align="justify">The interface provides two different methods for searching the corpus: the Grep page (section <a href="#sec6.1">6.1</a>) and the TGrep2 page (section <a href="#sec6.2">6.2</a>).</p>
+<p align="justify">The interface provides two different methods for searching the corpus: the Grep page (section <a href="#sec5.1">5.1</a>) and the TGrep2 page (section <a href="#sec5.2">5.2</a>).</p>
 
-<h3><a name="sec6.1">6.1</a>&nbsp;&nbsp;&nbsp;Grep page</h3>
+<h3><a name="sec5.1">5.1</a>&nbsp;&nbsp;&nbsp;Grep page</h3>
 
 <p align="justify">The Grep page gives a link for returning to the corpus overview page, and a text field box for entering a grep search pattern. There is a second field box for entering a start number (explained below). If the search text box is blank, then there are tables listing the full tag set used in the corpus. A search begins when the &lsquo;Search&rsquo; button is clicked, or after a search pattern is entered into the text field box and the <tt>[ENTER]</tt> key is pressed.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search is made using the <tt>grep</tt> command (Magloire et al. 2021) under a recursive call (<tt>grep -nr</tt>) in a directory that contains the corpus data in the native corpus format described in section <a href="#sec4">4</a>, and illustrated with (<a href="#ex1">1</a>). Aside from making changes to the search pattern, there is no other way to restrict the searched data.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search is made using the <tt>grep</tt> command (Magloire et al. 2021) under a recursive call (<tt>grep -nr</tt>) in a directory that contains the corpus data in the native corpus format described in section <a href="#sec3">3</a>, and illustrated with (<a href="#ex1">1</a>). Aside from making changes to the search pattern, there is no other way to restrict the searched data.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Figure <a href="#fig4">4</a> illustrates using the Grep page to find instances of the string <tt>against</tt> in the corpus. The results page tells us the number of lines found to match the search expression. This is followed by a display of the results in a tabled format with three columns. The first column is the hit number following corpus order, that is, with line matches taken from files following an alphanumeric sort of the corpus filenames. The second column consists of possibly coloured cells that contain the full content of a matched line from the corpus data. The third column contains information about the line number followed by an underscore character (&lsquo;_&rsquo;) and then the filename for the reported content. This line number and filename serve as a link to a tree page for the overall linked instance of parse analysis, with the terminal node for line content highlighted in the resulting tree of the reached tree page.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Figure <a href="#fig6">6</a> illustrates using the Grep page to find instances of the string <tt>against</tt> in the corpus. The results page tells us the number of lines found to match the search expression. This is followed by a display of the results in a tabled format with three columns. The first column is the hit number following corpus order, that is, with line matches taken from files following an alphanumeric sort of the corpus filenames. The second column consists of possibly coloured cells that contain the full content of a matched line from the corpus data. The third column contains information about the line number followed by an underscore character (&lsquo;_&rsquo;) and then the filename for the reported content. This line number and filename serve as a link to a tree page for the overall linked instance of parse analysis, with the terminal node for line content highlighted in the resulting tree of the reached tree page.</p>
 
-<p><a name="fig4">Figure 4: Grep search for <tt>against</tt></a></p>
+<p><a name="fig6">Figure 6: Grep search for <tt>against</tt></a></p>
 
-<img src="against1.png" alt="Example tree page" height="220">
+<img src="against1.png" alt="Grep search for against" height="220">
 
 <p align="justify">The colouring of cells in the second column depends on the cell content as follows:</p>
 <ul>
@@ -211,40 +158,40 @@
 
 <p align="justify">The colouring of cells is a notable aid for being able to easily pick up on differences in the annotation, especially as a search can bring together lines from throughout the corpus.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As figure <a href="#fig4">4</a> demonstrates, a Grep search is useful for searching through the yield lines of the annotation. Any search that involves a space character will automatically be restricted to finding its matches from only yield lines. When the matched line is a yield line from the corpus data which (as seen with (<a href="#ex1">1</a>) above) consists of a line with opening and closing brackets with the form: &lsquo;<tt>=N(" </tt>&rsquo; and &lsquo;<tt> ")</tt>&rsquo;, these opening and closing brackets are removed from the shown result and the segment of the line that matches the search expression is highlighted.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As figure <a href="#fig6">6</a> demonstrates, a Grep search is useful for searching through the yield lines of the annotation. Any search that involves a space character will automatically be restricted to finding its matches from only yield lines. When the matched line is a yield line from the corpus data which (as seen with (<a href="#ex1">1</a>) above) consists of a line with opening and closing brackets with the form: &lsquo;<tt>=N(" </tt>&rsquo; and &lsquo;<tt> ")</tt>&rsquo;, these opening and closing brackets are removed from the shown result and the segment of the line that matches the search expression is highlighted.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search pattern (<a href="#ex3">3</a>) will find instances of the lemma <tt>{against}</tt> restricted to having the <tt>P-ROLE</tt> (preposition) word class that occurs in a preposition phrase with <tt>-CNT</tt> (contingency) function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search pattern (<a href="#ex2">2</a>) will find instances of the lemma <tt>{against}</tt> restricted to having the <tt>P-ROLE</tt> (preposition) word class that occurs in a preposition phrase with <tt>-CNT</tt> (contingency) function.</p>
 
 <dl>
-  <dt>(<a name="ex3">3</a>)</dt><dd></dd>
+  <dt>(<a name="ex2">2</a>)</dt><dd></dd>
 </dl>
 <tt>PP-CNT[^-,]*,.P-ROLE[^,]*,[^,]*{against}</tt><br>
 
-<p align="justify">Note that the double quotes character (<tt>&quot;</tt>) cannot be used in grep search patterns made with the interface. In pattern (<a href="#ex3">3</a>), mention of double quote characters is avoided with use of the dot (&lsquo;<tt>.</tt>&rsquo;) character, which matches any single character. Figure <a href="#fig5">5</a> shows the top of the results page from searching with (<a href="#ex3">3</a>), with the number of matched lines now restricted to nineteen lines.</p>
+<p align="justify">Note that the double quotes character (<tt>&quot;</tt>) cannot be used in grep search patterns made with the interface. In pattern (<a href="#ex2">2</a>), mention of double quote characters is avoided with use of the dot (&lsquo;<tt>.</tt>&rsquo;) character, which matches any single character. Figure <a href="#fig7">7</a> shows the top of the results page from searching with (<a href="#ex2">2</a>), with the number of matched lines now restricted to nineteen lines.</p>
 
-<p><a name="fig5">Figure 5: Grep search for lemma <tt>{against}</tt> occuring as a preposition with contingency function</a></p>
+<p><a name="fig7">Figure 7: Grep search for lemma <tt>{against}</tt> occuring as a preposition with contingency function</a></p>
 
-<img src="against2.png" alt="Example tree page" height="210">
+<img src="against2.png" alt="Grep search for lemma against occuring as a preposition with contingency function" height="210">
 
-<p align="justify">If there are no yield results and the number of matched lines is less than 100 (as in Figure <a href="#fig5">5</a>), then a &lsquo;See all results&rsquo; link is provided for opening in a tree page a display of all results as trees.</p>
+<p align="justify">If there are no tree yields included in the results and the number of matched lines is less than 100 (as in Figure <a href="#fig7">7</a>), then a &lsquo;See all tree results&rsquo; link is provided for opening in a tree page a display of all results as trees and a &lsquo;See all word results&rsquo; link is provided for opening in a word page a display of all results.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Up to 2500 matched lines are returned following corpus order. That returned matches follow a set order is important because this allows for the potential of contextual information being seen across returned lines. Quite where in the corpus order the search results start from is established either (i) by a start number entered into the number field that is adjacent to the text field box for entering a grep search pattern, or, (ii) when the start number field is empty, through the random creation of a start number. If there are more than 2500 results, you can see a different batch of 2500 results by re-running the search with a different start number.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With returned line results following corpus order, full constituents appear as adjacent lines when the search expression matches constituent level nodes. This is demonstrated in Figure <a href="#fig6">6</a>, with its search expression finding <tt>IP-REL</tt> (relative clause) nodes. Results start from line match 43606.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With returned line results following corpus order, full constituents appear as adjacent lines when the search expression matches constituent level nodes. This is demonstrated in Figure <a href="#fig8">8</a>, with its search expression finding <tt>IP-REL</tt> (relative clause) nodes. Results start from line match 26975.</p>
 
-<p><a name="fig6">Figure 6: Search for <tt>IP-REL</tt> (relative clause)</a></p>
+<p><a name="fig8">Figure 8: Search for <tt>IP-REL</tt> (relative clause)</a></p>
 
-<img src="slice1.png" alt="Example tree page" height="290">
+<img src="slice1.png" alt="Search for IP-REL (relative clause)" height="290">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there are no yield line matches, a &lsquo;Toggle&rsquo; link appears. Clicking &lsquo;Toggle&rsquo; of Figure <a href="#fig6">6</a> opens the page of Figure <a href="#fig7">7</a>. Clicking &lsquo;Toggle&rsquo; again returns back to Figure <a href="#fig6">6</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there are no yield line matches, a &lsquo;Toggle&rsquo; link appears. Clicking &lsquo;Toggle&rsquo; of Figure <a href="#fig8">8</a> opens the page of Figure <a href="#fig9">9</a>. Clicking &lsquo;Toggle&rsquo; again returns back to Figure <a href="#fig8">8</a>.</p>
 
-<p><a name="fig7">Figure 7: Search for <tt>IP-REL</tt> (relative clause) after toggle</a></p>
+<p><a name="fig9">Figure 9: Search for <tt>IP-REL</tt> (relative clause) after toggle</a></p>
 
-<img src="slice2.png" alt="Example tree page" height="460">
+<img src="slice2.png" alt="Search for IP-REL (relative clause) after toggle" height="460">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The page of Figure <a href="#fig7">7</a> shows the same results as Figure <a href="#fig6">6</a> only as tree fragments. Tree fragments are given an ID node that consists of a line number corresponding to the last line that goes into making up the tree fragment and its filename. These ID nodes serve as a link to a tree page for the overall linked instance of parse analysis, with the terminal node for the numbered line content highlighted. Other nodes serve as links to trigger a Grep search for the node label that opens to a page displaying tree fragment results. All this functionality assists finding related examples including inconsistencies and errors in the annotation. Because the underlying search is performed with Grep, results are gathered from the source data files almost instantly.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The page of Figure <a href="#fig9">9</a> shows the same results as Figure <a href="#fig8">8</a> only as tree fragments. Tree fragments are given an ID node that consists of a line number corresponding to the last line that goes into making up the tree fragment and its filename. These ID nodes serve as a link to a tree page for the overall linked instance of parse analysis, with the terminal node for the numbered line content highlighted. Other nodes serve as links to trigger a Grep search for the node label that opens to a page displaying tree fragment results. All this functionality assists finding related examples including inconsistencies and errors in the annotation. Because the underlying search is performed with Grep, results are gathered from the source data files almost instantly.</p>
 
-<h3><a name="sec6.2">6.2</a>&nbsp;&nbsp;&nbsp;TGrep2 page</h3>
+<h3><a name="sec5.2">5.2</a>&nbsp;&nbsp;&nbsp;TGrep2 page</h3>
 
 <p align="justify">The TGrep2 page gives a link for returning to the corpus overview page, and a text field box for entering a TGrep2 search pattern. There is a second field box for entering a start number. There is also a pull-down-selector for choosing between two methods for displaying results:</p>
 <ul>
@@ -254,94 +201,80 @@
 
 <p align="justify">If the search text box is blank, then there are tables listing the full tag set used in the corpus. A search begins when the &lsquo;Search&rsquo; button is clicked, or after a search pattern is entered into the text field box and the <tt>[ENTER]</tt> key is pressed.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search is made using the <tt>tgrep2</tt> command (Rohde 2005) over all the corpus data in a binary database built from data that was first converted into the bracketed format described in section <a href="#sec4">4</a>, and illustrated with (<a href="#ex2">2</a>). Aside from making changes to the search pattern, there is no other way to restrict the searched data.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search is made using the <tt>tgrep2</tt> command (Rohde 2005) over all the corpus data in a binary database built from data that was first converted into a bracketed tree format. With conversion to bracketed trees, any &lsquo;<tt>;&#64;n</tt>&rsquo; markings of nodes added to keep nodes distinct under the native corpus format are removed, since nodes appear only once within the bracketed structure and so are always distinct.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;TGrep2 search patterns consist of expressions to match nodes and relationships defining links or negated links to other nodes. Nodes of searched trees are matched either with simple character strings, or OR'd character strings, or extended regular expressions. A complex node expression consists of a node expression (the <b>master node</b>) which is followed by relationships. Also, nodes can be assigned labels and may be referred to elsewhere in the pattern by those labels. For a full explanation of this query language, click the &lsquo;Guide&rsquo; link.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Aside from making changes to the search pattern, there is no other way to restrict the searched data.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example, consider pattern (<a href="#ex4">4</a>) which finds free relatives.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;TGrep2 search patterns consist of expressions to match nodes and relationships defining links or negated links to other nodes. Nodes of searched trees are matched either with simple character strings, or OR'd character strings, or extended regular expressions. A complex node expression consists of a node expression (the master node) which is followed by relationships. Also, nodes can be assigned labels and may be referred to elsewhere in the pattern by those labels. For a full explanation of this query language, click the &lsquo;Guide&rsquo; link.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example, consider pattern (<a href="#ex3">3</a>) which finds free relatives.</p>
 
 <dl>
-  <dt>(<a name="ex4">4</a>)</dt><dd><tt>&sol;&#94;NP&#92;b&sol;&nbsp;&lt;:&nbsp;(&sol;&#94;IP-REL&sol;=i&nbsp;&lt;&lt;&nbsp;(&sol;&#94;(RPRO|RD|RADV)&#92;b&sol;&nbsp;&lt;&nbsp;&lowbar;&lowbar;&nbsp;!&gt;&gt;&nbsp;(&sol;&#94;IP&#92;b&sol;&nbsp;&gt;&gt;&nbsp;=i)))</tt><br></dd>
+  <dt>(<a name="ex3">3</a>)</dt><dd><tt>&sol;&#94;NP&#92;b&sol;&nbsp;&lt;:&nbsp;(&sol;&#94;IP-REL&sol;=i&nbsp;&lt;&lt;&nbsp;(&sol;&#94;(RPRO|RD|RADV)&#92;b&sol;&nbsp;&lt;&nbsp;&lowbar;&lowbar;&nbsp;!&gt;&gt;&nbsp;(&sol;&#94;IP-REL&#92;b&sol;&nbsp;&gt;&gt;&nbsp;=i)))</tt><br></dd>
 </dl>
 
 <form target="_blank" action="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc_tgrep2.sh" method="post">
-  <input type="hidden" name="search" value="/^NP\b/ <: (/^IP-REL/=i << (/^(RPRO|RD|RADV)\b/ < __ !>> (/^IP\b/ >> =i)))"/>
+  <input type="hidden" name="search" value="/^NP\b/ <: (/^IP-REL/=i << (/^(RPRO|RD|RADV)\b/ < __ !>> (/^IP-REL\b/ >> =i)))"/>
   <button type="submit" name="submit_param" value="submit_value" class="btn-link">Try</button>
 </form>
 
-<p align="justify">The tree relation &lsquo;<tt>&lt;:</tt>&rsquo; of (<a href="#ex4">4</a>) states that a matched <tt>IP-REL</tt> node is the only daughter of a matched <tt>NP</tt> node. The <tt>NP</tt> node is the master node found by the overall pattern. Brackets ensure that other conditions of the pattern concern the need for the matched <tt>IP-REL</tt> node to contain a relative word (that is, a word tagged as either <tt>RPRO</tt>, <tt>RD</tt>, or <tt>RADV</tt>) without there being a distinct intervening <tt>IP</tt> layer.</p>
+<p align="justify">The tree relation &lsquo;<tt>&lt;:</tt>&rsquo; of (<a href="#ex3">3</a>) states that a matched <tt>IP-REL</tt> node is the only daughter of a matched <tt>NP</tt> node. The <tt>NP</tt> node is the master node found by the overall pattern. Brackets ensure that other conditions of the pattern concern the need for the matched <tt>IP-REL</tt> node to contain a relative word (that is, a word tagged as either <tt>RPRO</tt>, <tt>RD</tt>, or <tt>RADV</tt>) without there being a distinct intervening <tt>IP-REL</tt> layer. The condition for no distinct intervening <tt>IP-REL</tt> layer involves a link (<tt>=i</tt>) back to the node that will have been matched as the relative clause part of the free relative (<tt>&sol;^IP-REL&sol;=i</tt>).</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;After a query is made, at the top of the page, the search reports the number of hits found, and the number of texts that contain hits. There will also be a button near the top of the page for downloading the search results.</p>
+<h4><a name="sec5.2.1">5.2.1</a>&nbsp;&nbsp;&nbsp;Tree search results as tree yields</h4>
 
-<h4><a name="sec6.2.1">6.2.1</a>&nbsp;&nbsp;&nbsp;Tree search results as tree yields</h4>
+<p align="justify">Figure <a href="#fig10">10</a> illustrates the display of results as tree yields. Content corresponding to what is matched by the master node of the query is highlighted. Zero elements (e.g.&nbsp;relative clause traces) are typically not shown in tree yields, but will appear highlighted if they happen to be the matched segment. Each returned tree yield with its single highlighted segment is given a hit number. The hit number doubles as a link to the tree view page for the given tree yield. Up to five hundred yield results are shown in corpus order. If there are more than five hundred results, you can see different yields by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig10">10</a>).</p>
 
-<p align="justify">Figure <a href="#fig8">8</a> illustrates the display of results as tree yields. Content corresponding to what is matched by the master node of the query is highlighted. Zero elements (e.g.&nbsp;relative clause traces) are typically not shown in tree yields, but will appear highlighted if they happen to be the matched segment. Each returned tree yield with its single highlighted segment is given a hit number. The hit number doubles as a link to the tree view page for the given tree yield. Up to five hundred yield results are shown in corpus order. If there are more than five hundred results, you can see different yields by re-running the search after changing the number of the start number field (which is 44 in Figure <a href="#fig8">8</a>).</p>
+<p><a name="fig10">Figure 10: Example of tree search results as tree yields</a></p>
 
-<p><a name="fig8">Figure 8: Example of tree search results as tree yields</a></p>
+<img src="search_basic.png" alt="Example of tree search results as tree yields" height="300">
 
-<img src="search_basic.png" alt="Example of tree search results as tree yields" height="270">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Above the table of individually shown tree yields, frequency information about all the search results is shown. This includes a count of the overall number of hits and a count of the overall number of files to which hits apply. These hit and file numbers are followed by a breakdown of where the numbers come from in relation to the seven sources distinguished in Table tableref:[__corpuscontent__] above.</p>
 
-<h4><a name="sec6.2.2">6.2.2</a>&nbsp;&nbsp;&nbsp;Tree search results as graphical trees</h4>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the breakdown for hits, two numbers are given separated by a semi-colon: the first number is the raw number of hits, the second number is the result of calculating the number of hits per 10,000 words. In the breakdown for files, there is information about the overall number of files per source division.</p>
 
-<p align="justify">Figure <a href="#fig9">9</a> illustrates the display of results as graphical trees. Results are displayed as trees, with content that matches the master node of the search pattern highlighted. The ID node of a shown tree works as a link for accessing the same tree in a tree view page. A yield of the tree is also given with highlighted content corresponding to what is matched by the master node of the query. Up to fifty tree results are shown in corpus order. If there are more than fifty results, you can see different trees by re-running the search after changing the number of the start number field (which is 44 in Figure <a href="#fig9">9</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;These breakdowns give a rough idea about the origins of results. For example, with Figure <a href="#fig10">10</a> we can see that free relatives are most frequent with the christine (spoken BNC) dataset (85.6446 instances per 10,000 words) and that there are hits with almost every file (39 of 40). A more thorough analysis of hit origins could be undertaken by downloading all the search results.</p>
 
-<p><a name="fig9">Figure 9: Example of tree search results as tree graphical trees</a></p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to overall hit and file numbers, there is a further list that collects the labels of all the nodes matched as the master node for a search hit. Each distinct label is followed by a count result for the number of times the label matched as a master node. For Figure <a href="#fig10">10</a>, while all master node matching labels start with <tt>NP</tt> to match the initial node regular expression (<tt>&sol;^NP&#92;b&sol;</tt>) of the search expression, the breakdown is useful for telling us about the different function roles of the matched noun phrases.</p>
 
-<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="600">
+<h4><a name="sec5.2.2">5.2.2</a>&nbsp;&nbsp;&nbsp;Tree search results as graphical trees</h4>
 
-<h4><a name="sec6.2.3">6.2.3</a>&nbsp;&nbsp;&nbsp;Downloading all tree search results</h4>
+<p align="justify">Figure <a href="#fig11">11</a> illustrates the display of results as graphical trees. Results are displayed as trees, with content that matches the master node of the search pattern highlighted. The ID node of a shown tree works as a link for accessing the same tree in a tree view page. A yield of the tree is also given with highlighted content corresponding to what is matched by the master node of the query. Up to fifty tree results are shown in corpus order. If there are more than fifty results, you can see different trees by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig11">11</a>).</p>
 
-<p align="justify">You can download all TGrep2 search results by clicking the &lsquo;Download all results&rsquo; button. The download will give as many entries as there are hits reported, with a single hit per entry. Results are listed in corpus order, so a re-run of a download will give you the same download (assuming the corpus hasn't changed inbetween). There is a pull-down-selector for choosing between two methods for obtaining results:</p>
+<p><a name="fig11">Figure 11: Example of tree search results as tree graphical trees</a></p>
+
+<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="470">
+
+<h4><a name="sec5.2.3">5.2.3</a>&nbsp;&nbsp;&nbsp;Downloading all tree search results</h4>
+
+<p align="justify">You can download all TGrep2 search results by clicking the &lsquo;Download all results&rsquo; button. There is a pull-down-selector for choosing between two methods for obtaining results: either as comma-separated values or as bracketed trees. The download will give as many entries as there are hits reported, with a single hit per entry. Results are listed in corpus order, so a re-run of a download will give you the same download. There is a pull-down-selector for choosing between two methods for obtaining results:</p>
 <ul>
 <li>as comma-separated values, and</li>
 <li>as bracketed trees.</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The comma-separated values format is simple for loading into a spreadsheet program. Each entry consists of a row with four columns. The first column is the ID for the example. The second column is the yield of content before the hit. The third column is the yield of the hit. The fourth column is the yield of content after the hit. For example, pattern (<a href="#ex5">5</a>) finds indirect objects that directly contain a relative clause, which obtains the downloaded comma-separated value results of Figure <a href="#fig10">10</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The comma-separated values format is simple for loading into a spreadsheet program. Each entry consists of a row with four columns. The first column is the ID for the example. The second column is the yield of content before the hit. The third column is the yield of the hit. The fourth column is the yield of content after the hit. For example, pattern (<a href="#ex4">4</a>) finds indirect objects that directly contain a relative clause, which obtains the downloaded comma-separated value results of Figure <a href="#fig12">12</a>.</p>
 
 <dl>
-  <dt>(<a name="ex5">5</a>)</dt><dd></dd>
+  <dt>(<a name="ex4">4</a>)</dt><dd></dd>
 </dl>
 <tt>&sol;OB2&sol;&nbsp;&lt;&nbsp;&sol;REL&sol;</tt><br>
 
-<p><a name="fig10">Figure 10: An example of downloaded results in the comma-separated value format shown as a spreadsheet</a></p>
+<p><a name="fig12">Figure 12: An example of downloaded results in the comma-separated value format shown as a spreadsheet</a></p>
 
-<table border=1 cellpadding="3px">
-  <tr>
-    <th style="background-color:gray"></th><th style="background-color:#D3D3D3">A</th><th style="background-color:#D3D3D3">B</th><th style="background-color:#D3D3D3">C</th><th style="background-color:#D3D3D3">D</th>
-  </tr>
-  <tr>
-    <th style="background-color:#D3D3D3">1</th><td>113_bnc_C05</td><td>This meant that loyalty forbade her to tell</td><td>Philip &lt;mdash&gt; who would n&lt;apos&gt;t have believed her in any case</td><td>.</td>
-  </tr>
-  <tr>
-    <th style="background-color:#D3D3D3">2</th><td>125_samples_BUFFALO</td><td>I gave</td><td>the man who wanted it</td><td>the book that he asked for .</td>
-  </tr>
-  <tr>
-    <th style="background-color:#D3D3D3">3</th><td>126_samples_BUFFALO</td><td>A man who smiled gave</td><td>a woman he saw</td><td>a book that she asked for .</td>
-  </tr>
-  <tr>
-    <th style="background-color:#D3D3D3">4</th><td>78_susanne_A05</td><td>Action on a new ordinance permitting</td><td>motorists who plead guilty to minor traffic offenses</td><td>to pay fines at the local police station may be taken at Monday &lt;apos&gt;s special North Providence Town Council meeting .</td>
-  </tr>
-  <tr>
-    <th style="background-color:#D3D3D3">5</th><td>95_susanne_N13</td><td>&lt;ldquo&gt; Rheumatics worse , Pa &lt;rdquo&gt; ? Dan asked</td><td>Hez , who had limped back from his team to hold the notched &lt;hyphen&gt; stick chair braces in place while his boys swung up the tailgate and tied it tight at the ends</td><td>.</td>
-  </tr>
-</table>
+<img src="csv1.png" alt="An example of downloaded results in the comma-separated value format shown as a spreadsheet" height="60">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The trees of a bracketed download are formatted to be compatible with the CorpusSearch program (Randall 2009; <tt>http:&sol;&sol;corpussearch.sourceforge.net&sol;CS-manual&sol;YourCorpus.html</tt>). For example, pattern (<a href="#ex5">5</a>) obtains the downloaded trees of Figure <a href="#fig11">11</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The trees of a bracketed download are formatted to be compatible with the CorpusSearch program (Randall 2009; <tt>http:&sol;&sol;corpussearch.sourceforge.net&sol;CS-manual&sol;YourCorpus.html</tt>). For example, pattern (<a href="#ex4">4</a>) obtains the downloaded trees of Figure <a href="#fig13">13</a>.</p>
 
-<p><a name="fig11">Figure 11: An example of downloaded results in the bracketed format</a></p>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This;{this}))&nbsp;(VBD&nbsp;meant;{mean})&nbsp;(CP-THT-OB1&nbsp;(IP-SUB&nbsp;(C&nbsp;that;{that})&nbsp;(NP-SBJ&nbsp;(N&nbsp;loyalty;{loyalty}))&nbsp;(VBD&nbsp;forbade;{forbid})&nbsp;(NP-DOB1&nbsp;(PRO&nbsp;her;{her}))&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to;{to})&nbsp;(VB&nbsp;tell;{tell})&nbsp;(__NP-OB2&nbsp;(NPR&nbsp;Philip;{Philip})&nbsp;(PU&nbsp;&lt;mdash&gt;)&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(MD&nbsp;would;{will})&nbsp;(NEG&nbsp;n&lt;apos&gt;t;{not})&nbsp;(HV;~cat_e&nbsp;have;{have})&nbsp;(IP-PPL-CAT&nbsp;(VVN&nbsp;believed;{believe})&nbsp;(NP-OB1&nbsp;(PRO&nbsp;her;{her}))&nbsp;(PP-CNT&nbsp;(P-ROLE&nbsp;in;{in})&nbsp;(NP&nbsp;(D&nbsp;any;{any})&nbsp;(N&nbsp;case;{case})))))))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;113_bnc_C05&#64;24))</tt><br>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-DSC;{BOOK}&nbsp;(NPR&nbsp;*BOOK*))&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I;{I}))&nbsp;(VBD;~Dn.n&nbsp;gave;{give})&nbsp;(__NP-OB2;{PERSON}&nbsp;(D&nbsp;the;{the})&nbsp;(N&nbsp;man;{man})&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(VBD;~Tn&nbsp;wanted;{want})&nbsp;(NP-OB1;{BOOK}&nbsp;(PRO&nbsp;it;{it}))))&nbsp;(NP-OB1;{BOOK}&nbsp;(D&nbsp;the;{the})&nbsp;(N&nbsp;book;{book})&nbsp;(IP-REL&nbsp;(NP-1&nbsp;(RPRO&nbsp;that;{that}))&nbsp;(NP-SBJ;{PERSON}&nbsp;(PRO&nbsp;he;{he}))&nbsp;(VBD;~phr_Vpr&nbsp;asked;{ask})&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for;{for})&nbsp;(NP&nbsp;*ICH*-1))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;125_samples_BUFFALO&#64;10))</tt><br>
-<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ;{MALE}&nbsp;(D&nbsp;A;{a})&nbsp;(N&nbsp;man;{man})&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(VBD;~I&nbsp;smiled;{smile})))&nbsp;(VBD;~Dn.n&nbsp;gave;{give})&nbsp;(__NP-OB2;{FEMALE}&nbsp;(D&nbsp;a;{a})&nbsp;(N&nbsp;woman;{woman})&nbsp;(IP-REL&nbsp;(NP-OB1&nbsp;*T*)&nbsp;(NP-SBJ;{MALE}&nbsp;(PRO&nbsp;he;{he}))&nbsp;(VBD;~Tn&nbsp;saw;{see})))&nbsp;(NP-OB1&nbsp;(D&nbsp;a;{a})&nbsp;(N&nbsp;book;{book})&nbsp;(IP-REL&nbsp;(NP-1&nbsp;(RPRO&nbsp;that;{that}))&nbsp;(NP-SBJ;{FEMALE}&nbsp;(PRO&nbsp;she;{she}))&nbsp;(VBD;~phr_Vpr&nbsp;asked;{ask})&nbsp;(PP-OBU&nbsp;(P-ROLE&nbsp;for;{for})&nbsp;(NP&nbsp;*ICH*-1))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;126_samples_BUFFALO&#64;15))</tt><br>
+<p><a name="fig13">Figure 13: An example of downloaded results in the bracketed format</a></p>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(D&nbsp;This;{this}))&nbsp;(VBD&nbsp;meant;{mean})&nbsp;(CP-THT-OB1&nbsp;(IP-SUB&nbsp;(C&nbsp;that;{that})&nbsp;(NP-SBJ&nbsp;(N&nbsp;loyalty;{loyalty}))&nbsp;(VBD&nbsp;forbade;{forbid})&nbsp;(NP-DOB1&nbsp;(PRO&nbsp;her;{her}))&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to;{to})&nbsp;(VB&nbsp;tell;{tell})&nbsp;(__NP-OB2&nbsp;(NPR&nbsp;Philip;{Philip})&nbsp;(PU&nbsp;&lt;mdash&gt;)&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(MD&nbsp;would;{will})&nbsp;(NEG&nbsp;n&lt;apos&gt;t;{not})&nbsp;(HV;~cat_e&nbsp;have;{have})&nbsp;(IP-PPL-CAT&nbsp;(VVN&nbsp;believed;{believe})&nbsp;(NP-OB1&nbsp;(PRO&nbsp;her;{her}))&nbsp;(PP-CNT&nbsp;(P-ROLE&nbsp;in;{in})&nbsp;(NP&nbsp;(D&nbsp;any;{any})&nbsp;(N&nbsp;case;{case})))))))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;113_lucy_bnc_C05&#64;24))</tt><br>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(N&nbsp;Action;{action})&nbsp;(PP&nbsp;(P-ROLE&nbsp;on;{on})&nbsp;(NP&nbsp;(D&nbsp;a;{a})&nbsp;(ADJP&nbsp;(ADJ&nbsp;new;{new}))&nbsp;(N&nbsp;ordinance;{ordinance})&nbsp;(IP-PPL&nbsp;(VAG;~Dn.t&nbsp;permitting;{permit})&nbsp;(__NP-OB2&nbsp;(NS&nbsp;motorists;{motorist})&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(VBP&nbsp;plead;{plead})&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;guilty;{guilty})&nbsp;(PP&nbsp;(P-ROLE&nbsp;to;{to})&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;minor;{minor}))&nbsp;(N&nbsp;traffic;{traffic})&nbsp;(NS&nbsp;offenses;{offence}))))))&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to;{to})&nbsp;(VB&nbsp;pay;{pay})&nbsp;(NP-OB1&nbsp;(NS&nbsp;fines;{fine}))&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at;{at})&nbsp;(NP&nbsp;(D&nbsp;the;{the})&nbsp;(ADJP&nbsp;(ADJ&nbsp;local;{local}))&nbsp;(NS&nbsp;police;{police})&nbsp;(N&nbsp;station;{station}))))))))&nbsp;(MD&nbsp;may;{may})&nbsp;(BE;~cat_e&nbsp;be;{be})&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN&nbsp;taken;{take})&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at;{at})&nbsp;(NP&nbsp;(NP-GENV&nbsp;(NPR&nbsp;Monday;{Monday})&nbsp;(GENM&nbsp;&lt;apos&gt;s))&nbsp;(ADJP&nbsp;(ADJ&nbsp;special;{special}))&nbsp;(NML&nbsp;(NML&nbsp;(N&nbsp;North;{north})&nbsp;(N&nbsp;Providence;{providence}))&nbsp;(N&nbsp;Town;{town})&nbsp;(N&nbsp;Council;{council}))&nbsp;(N&nbsp;meeting;{meeting}))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;78_susanne_A05&#64;19))</tt><br>
-<tt>(&nbsp;(IP-MAT&nbsp;(PUQ&nbsp;&lt;ldquo&gt;)&nbsp;(CP-QUE-OB1&nbsp;(IP-SUB&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Rheumatics;{rheumatic}))&nbsp;(ADJP-PRD2&nbsp;(ADJR&nbsp;worse;{bad}))&nbsp;(PU&nbsp;,)&nbsp;(NP-VOC&nbsp;(N&nbsp;Pa;{pa}))))&nbsp;(PUQ&nbsp;&lt;rdquo&gt;)&nbsp;(PU&nbsp;?)&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Dan;{Dan}))&nbsp;(VBD;~Dn.w&nbsp;asked;{ask})&nbsp;(__NP-OB2&nbsp;(NPR&nbsp;Hez;{Hez})&nbsp;(PU&nbsp;,)&nbsp;(IP-REL&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;who;{who}))&nbsp;(HVD;~cat_e&nbsp;had;{have})&nbsp;(IP-PPL-CAT&nbsp;(VVN;~Ipr&nbsp;limped;{limp})&nbsp;(PP-DIR&nbsp;(ADVP-DIR&nbsp;(ADV&nbsp;back;{back}))&nbsp;(P-ROLE&nbsp;from;{from})&nbsp;(NP&nbsp;(NP-GENV&nbsp;(PRO&nbsp;his;{his}))&nbsp;(N&nbsp;team;{team})))&nbsp;(PP-SCON-CNT&nbsp;(IP-INF&nbsp;(TO&nbsp;to;{to})&nbsp;(VB&nbsp;hold;{hold})&nbsp;(NP-OB1&nbsp;(D&nbsp;the;{the})&nbsp;(NML&nbsp;(IP-PPL&nbsp;(VVN&nbsp;notched;{notch}))&nbsp;(PU&nbsp;&lt;hyphen&gt;)&nbsp;(N&nbsp;stick;{stick}))&nbsp;(N&nbsp;chair;{chair})&nbsp;(NS&nbsp;braces;{brace}))&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;in;{in})&nbsp;(NP&nbsp;(N&nbsp;place;{place})))&nbsp;(PP-SCON-TMP&nbsp;(P-CONN&nbsp;while;{while})&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(NP-GENV&nbsp;(PRO&nbsp;his;{his}))&nbsp;(NS&nbsp;boys;{boy}))&nbsp;(IML&nbsp;(IML&nbsp;(VBD&nbsp;swung;{swing})&nbsp;(ADVP-DIR&nbsp;(RP&nbsp;up;{up}))&nbsp;(NP-OB1&nbsp;(D&nbsp;the;{the})&nbsp;(N&nbsp;tailgate;{tailgate})))&nbsp;(CONJP&nbsp;(CONJ&nbsp;and;{and})&nbsp;(IML&nbsp;(VBD&nbsp;tied;{tie})&nbsp;(NP-OB1&nbsp;(PRO&nbsp;it;{it}))&nbsp;(ADVP-MNR&nbsp;(ADV&nbsp;tight;{tight}))&nbsp;(PP-LOC&nbsp;(P-ROLE&nbsp;at;{at})&nbsp;(NP&nbsp;(D&nbsp;the;{the})&nbsp;(NS&nbsp;ends;{end})))))))))))))&nbsp;(PU&nbsp;.))&nbsp;(ID&nbsp;95_susanne_N13&#64;26))</tt><br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Under CorpusSearch format, every tree has a &lsquo;wrapper&rsquo;. A wrapper is a pair of unlabelled parentheses surrounding the tree content together with an ID node. An extension consisting of the &lsquo;<tt>&#64;</tt>&rsquo; character and a number is added to the ID node of each tree. Following depth-first order, this number picks out the node that matched as the master node. In addition, the label of the picked out node is also prefixed with two underscore characters (&lsquo;__&rsquo;).</p>
 
 <br>
-<h2><a name="sec7">7</a>&nbsp;&nbsp;&nbsp;Visualisation pages</h2>
+<h2><a name="sec6">6</a>&nbsp;&nbsp;&nbsp;Visualisation pages</h2>
 
-<p align="justify">The interface provides three different modes for visualising consequences of parse analysis: the tree page (section <a href="#sec7.1">7.1</a>), the word page (section <a href="#sec7.2">7.2</a>), and the graph page (section <a href="#sec7.3">7.3</a>). These pages all have an ID text field box that will contain the full name(s) for the analysis being shown. The content of the ID box can be edited, as described in section <a href="#sec3">3</a>.</p>
+<p align="justify">The interface provides three different visualisations of parse analysis: the tree page (section <a href="#sec6.1">6.1</a>), the word page (section <a href="#sec6.2">6.2</a>), and the graph page (section <a href="#sec6.3">6.3</a>). These pages all have an ID text field box that will contain the full name(s) for the analysis being shown. The content of the ID box can be edited, as described in section <a href="#sec2.1">2.1</a>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;At the top of each page, in addition to the ID box, there is also:</p>
 <ul>
@@ -353,44 +286,50 @@
 <li>an &lsquo;Add&rsquo; link appears just before the &lsquo;previous&rsquo; link for adding the immediately preceding analysis instance to the current visualisation page (If there is no preceding instance, this &lsquo;Add&rsquo; is presented with a line through it.);</li>
 <li>a &lsquo;next&rsquo; link for jumping to a page for the immediately following analysis instance, keeping to the same mode of visualisation (If there is no following instance, then &lsquo;next&rsquo; takes you to a page with no visualisation.);</li>
 <li>an &lsquo;Add&rsquo; link appears just before the &lsquo;next&rsquo; link for adding the immediately following analysis instance to the current visualisation page;</li>
-<li>a &lsquo;Corpus overview&rsquo; link for going to the corpus overview page.</li>
+<li>a &lsquo;Top&rsquo; link for going to the corpus overview page.</li>
 </ul>
 
-<h3><a name="sec7.1">7.1</a>&nbsp;&nbsp;&nbsp;Tree page</h3>
+<h3><a name="sec6.1">6.1</a>&nbsp;&nbsp;&nbsp;Tree page</h3>
 
-<p align="justify">The tree page shows a tree visualisation of an instance of parse analysis. If multiple parse analysis IDs appear in the ID text field box, then a tree for each ID is shown. In the case of multiple trees being shown, each tree is preceded by an ID heading that works as a link for opening the same tree in a new tree view page. Nodes of a tree can be clicked and will take you to a Grep search for the clicked node element.</p>
+<p align="justify">The tree page shows a tree visualisation of an instance of parse analysis, as seen with Figure <a href="#fig3">3</a> above. If multiple parse analysis IDs appear in the ID text field box, then a tree for each ID is shown. In the case of multiple trees being shown, each tree is preceded by an ID heading that works as a link for opening the same tree in a new tree view page. Hovering the mouse over nodes will expand them, as an aid for grabbing attention to particular tree nodes in class demonstrations. Also, tree nodes can be clicked and will take you to a Grep search for the clicked node element.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Figure <a href="#fig12">12</a> illustrates the tree page with parse analysis for (<a href="#ex6">6</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If parse IDs appear with an appended <tt>&#64;</tt> symbol followed by a list of comma separated numbers, then nodes for the numbers following sequential depth-first order positions will be highlighted. The node for the first number of the list will be highlighted orange while all subsequent nodes will be highlighted green, as in Figure <a href="#fig14">14</a>. (The numbering for all nodes can be seen by clicking the &lsquo;Reveal&rsquo; link.)</p>
 
-<dl>
-  <dt>(<a name="ex6">6</a>)</dt><dd>Peter scuttered underneath the bushes.</dd>
-</dl>
+<p><a name="fig14">Figure 14: Tree visualisation of the online interface of the TSPC with highlighted node</a></p>
 
-<p><a name="fig12">Figure 12: Example tree page</a></p>
+<img src="28_A_DICK_1952_tree_highlight.png" alt="Tree visualisation of the online interface of the TSPC with highlighted node" height="380">
 
-<img src="40_classics_POTTER_1902_tree.png" alt="Example tree page" height="340">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Presence of a highlighted orange node, as in Figure <a href="#fig14">14</a>, will also create a &lsquo;Zoom&rsquo; link. If this is clicked, then the view will change to make what was the highlighted node the root of the shown tree, as in Figure <a href="#fig15">15</a>. Clicking the &lsquo;Zoom&rsquo; link again will return the view back to the full tree. This feature is especially useful for presentations with the corpus.</p>
 
-<h3><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;Word page</h3>
+<p><a name="fig15">Figure 15: Tree visualisation of the online interface of the TSPC from selected node</a></p>
 
-<p align="justify">The word page shows the word analysis of an instance of parse analysis. If multiple parse analysis IDs appear in the ID text field box, then word analysis for each ID is shown. Figure <a href="#fig13">13</a> illustrates the word page with word analysis for (<a href="#ex6">6</a>).</p>
+<img src="28_A_DICK_1952_tree_zoom.png" alt="Tree visualisation of the online interface of the TSPC from selected node" height="220">
 
-<p><a name="fig13">Figure 13: Example word page</a></p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When the tree page is entered from a TGrep2 search result, the number for the node matched as the master node by the seach pattern will be included with the parse ID and so this node will be highlighted orange.</p>
 
-<img src="40_classics_POTTER_1902_word.png" alt="Example word page" height="380">
+<h3><a name="sec6.2">6.2</a>&nbsp;&nbsp;&nbsp;Word page</h3>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As Figure <a href="#fig13">13</a> shows, word analysis is presented in a tabled format with three main columns for words. The first column is for a word as it occurs in the source sentence(s). The second column presents the word class of the word from the first column. If the word is a verb associated with a grammar pattern, then this pattern information is also presented and highlighted with yellow. The third column presents information about the word of the first column with minimally a word lemma. If the word is a lexical word then it is also given sense definitions from a dictionary database. Moreover, if the word is a verb then the grammar pattern information is used to highlight compatible sense definitions with yellow, and leave other sense definitions shaded grey. Sense definitions with grammar codes are sourced from Cowie (1989). If the word is a verb without a grammar pattern, then all the cells containing sense numbers for the associated sense definitions are coloured red (reflecting outstanding annotation work).</p>
+<p align="justify">The word page shows the word analysis of an instance of parse analysis. If multiple parse analysis IDs appear in the ID text field box, then word analysis for each ID is shown. Figure <a href="#fig16">16</a> illustrates the word page created from the same zoomed content as Figure <a href="#fig15">15</a>.</p>
 
-<h3><a name="sec7.3">7.3</a>&nbsp;&nbsp;&nbsp;Graph page</h3>
+<p><a name="fig16">Figure 16: Grammar code &sol; word sense compatibility visualisation from the online interface of the TSPC</a></p>
 
-<p align="justify">The graph page shows a graph visualisation of semantic dependencies for parse analysis produced by the Treebank Semantics evaluation system (Butler 2021). If multiple parse analysis IDs appear in the ID text field box, then a single graph is calculated from all the parse analysis of the given IDs. Figure <a href="#fig14">14</a> illustrates the graph page.</p>
+<img src="28_A_DICK_1952_word.png" alt="Grammar code / word sense compatibility visualisation from the online interface of the TSPC" height="450">
 
-<p><a name="fig14">Figure 14: Example graph page</a></p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As Figure <a href="#fig16">16</a> shows, word analysis is presented in a tabled format with three main columns for words. The first column is for a word as it occurs in the data. The second column presents the word class of the word from the first column. If the word is a verb associated with a grammar pattern, then this pattern information is also presented and highlighted with yellow. The third column presents information about the word of the first column with minimally a word lemma. If the word is a lexical word then it is also given sense definitions from a dictionary database. Moreover, if the word is a verb then the grammar pattern information is used to highlight compatible sense definitions with yellow, and leave other sense definitions shaded grey. For local use when licensing permits, sense definitions with associated verb codes can be sourced from Cowie (1989). If the word is a verb without a grammar pattern, then all the cells containing sense numbers for the associated sense definitions are coloured red (reflecting outstanding annotation work).</p>
 
-<img src="classics_DICK_1952_graph.png" alt="Example graph page" height="380">
+<h3><a name="sec6.3">6.3</a>&nbsp;&nbsp;&nbsp;Graph page</h3>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a graph, word content for source sentences is found outside of square brackets (&lsquo;<tt>[</tt>&rsquo;, &lsquo;<tt>]</tt>&rsquo;) and is always accompanied by (i) content between curly braces (&lsquo;<tt>&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;) to say the word class of the word, and (ii) numbering inside round brackets (&lsquo;<tt>(</tt>&rsquo;, &lsquo;<tt>)</tt>&rsquo;) to say the word position within the source sentence(s). Word position numbering involves two numbers separated by an underscore character (&lsquo;<tt>&lowbar;</tt>&rsquo;). The second number says which source sentence the word belongs to. The first number says the position of the word within its source sentence.</p>
+<p align="justify">The graph page shows a graph visualisation of semantic dependencies for parse analysis produced by the Treebank Semantics evaluation system (Butler 2021). This evaluation system works as an ordered collection of discourse referents (see e.g., Kamp and Reyle 1993, Dekker 2012) from input expressions and then their subsequent release across the span of the input discourse. Nodes of displayed graphs correspond to the collected discourse referents, including event referents for verb contributions, with dependencies cashing out the relationships that are calculated to hold from the dispersal of the referents as the derived information content of the discourse.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Square bracket content tells us about how words function, e.g.&nbsp;<tt>[ARG0]</tt>=logical subject, <tt>[DIR]</tt>=direction role. It is most typical for square bracket content to be part of the label for a directed arrow that connects graph nodes.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the interface, if multiple parse analysis IDs appear in the ID text field box, then a single graph is calculated from all the parse analysis of the given IDs. Figure <a href="#fig17">17</a> illustrates a dependency graph of the online interface calculated with the parse information of two sentences, including (<a href="#ex1">1</a>) as input. This depicts the anaphoric and syntactic control dependencies from (<a href="#ex1">1</a>) as resolved connections to the &ldquo;Fomar&rdquo; discourse entity node inherited from the contribution of the previous sentence.</p>
+
+<p><a name="fig17">Figure 17: Graph dependency visualisation from the online interface of the TSPC</a></p>
+
+<img src="28_A_DICK_1952_graph.png" alt="Graph dependency visualisation from the online interface of the TSPC" height="400">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a graph like Figure <a href="#fig17">17</a>, word content from source sentences is always accompanied by (i) content between curly braces (&lsquo;<tt>&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;) to say the word class of the word, and (ii) numbering inside round brackets (&lsquo;<tt>(</tt>&rsquo;, &lsquo;<tt>)</tt>&rsquo;) to say the word position within the source sentence(s). Word position numbering involves two numbers separated by an underscore character (&lsquo;<tt>&lowbar;</tt>&rsquo;). The first number says which source sentence the word belongs to. The second number says the position of the word within its source sentence.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Square bracket content tells us about how words function, e.g.&nbsp;<tt>[arg0]</tt>=logical subject, <tt>[arg0]</tt>=direct object, <tt>[prd2]</tt>=subject predicative role. It is most typical for square bracket content to be part of the label for a directed arrow that connects graph nodes.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most words from source sentences have a presence within the corresponding graph, however some words make a contribution that has to be seen in terms of consequences for graph nodes and their dependencies. Missing words include words that are used to make reference to what is talked about, with node presence capturing the reference contribution. These words can be either:</p>
 <ul>
@@ -399,7 +338,7 @@
 <li><b><i>sentence</i></b>&sol;<b><i>discourse bound pronouns</i></b> (e.g.&nbsp;<i>he</i>, <i>her</i>, <i>themselves</i>) that are links to already established referents.</li>
 </ul>
 
-<p align="justify">Note that unbound pronouns do have graph presence, as seen with <i>He</i> in Figure <a href="#fig15">15</a> below.</p>
+<p align="justify">Note that unbound pronouns do have graph presence, as seen with <i>He</i> in Figure <a href="#fig18">18</a> below.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Other words with no graph presence are:</p>
 <ul>
@@ -407,19 +346,13 @@
 <li>the <b><i>complementizer</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>).</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for graph content to involve the &lsquo;#&rsquo; symbol. This marks a word absence due to phrase head or verb elision in the source sentence. For example, consider (<a href="#ex7">7</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for graph content to involve the &lsquo;<tt>#</tt>&rsquo; symbol. This marks a word absence due to an elided phrase head or verb from the source sentence. For example, consider the graph page result of Figure <a href="#fig18">18</a>.</p>
 
-<dl>
-  <dt>(<a name="ex7">7</a>)</dt><dd>He lost one of his shoes among the cabbages, and the other shoe amongst the potatoes.</dd>
-</dl>
+<p><a name="fig18">Figure 18: An example with elided content</a></p>
 
-<p align="justify">Figure <a href="#fig15">15</a> shows the graph that is generated by the interface from a parse of (<a href="#ex7">7</a>).</p>
+<img src="15_classics_POTTER_1902.png" alt="An example with elided content" height="580">
 
-<p><a name="fig15">Figure 15: An example with elision</a></p>
-
-<img src="15_classics_POTTER_1902.png" alt="Graph for (15), a example with elision" height="580">
-
-<p align="justify">The graph of Figure <a href="#fig15">15</a> has two verbs connected by <tt>[conj1]</tt> and <tt>[conj2]</tt> arrows from <tt>and(10_15)</tt> occuring topmost in the graph. While the verb of the first conjunct is overtly realised with <tt>lost(2_15)</tt>, the content for the verb of the second conjunct is shown as <tt>#2_15</tt> to indicate the licensed absence of a verb (a lost <i>lost</i>!). One further instance of &lsquo;<tt>#</tt>&rsquo; occurs in the graph (referenced as <tt>#1_15</tt>) to indicate a nominal head absence that has <tt>[num]</tt> (numeral modifier) and &lsquo;<tt>of</tt>&rsquo; (role preposition) links. Note that the indexing with &lsquo;<tt>#</tt>&rsquo; involves two numbers without round brackets. The second number says which solution sentence the elision belongs to. The first number follows a count of the number of elision instances that occur within the sentence. This gives indexing that is distinct from the word location indexing within round brackets that accompanies each word.</p>
+<p align="justify">The graph of Figure <a href="#fig18">18</a> has two verbs connected by <tt>[conj1]</tt> and <tt>[conj2]</tt> arrows from <tt>and(15_10)</tt> occuring topmost in the graph. While the verb of the first conjunct is overt with <tt>lost(15_2)</tt>, the content for the verb of the second conjunct is shown as <tt>#15_1002</tt> to indicate the licensed absence of a verb (a lost <i>lost</i>!). One further instance of &lsquo;<tt>#</tt>&rsquo; occurs in the graph (referenced as <tt>#15_1001</tt>) to indicate a nominal head absence that has <tt>[num]</tt> (numeral modifier) and &lsquo;<tt>of</tt>&rsquo; (role preposition) links. Note that the indexing with &lsquo;<tt>#</tt>&rsquo; involves two numbers without round brackets. The first number says which solution sentence the elided content belongs to. The second number follows a count of the number of elided instances that occur within the sentence, initialised at 1000. This gives indexing that is distinct from the word location indexing within round brackets that accompanies each word.</p>
 
 <br>
 <br>
@@ -429,6 +362,12 @@
 <p><a name="Butler-2021ts">Butler, Alastair. 2021.</a> Meaning representations from treebanks. The Treebank Semantics Web Site. Available at: <tt><a href="http://www.compling.jp/ajb129/ts.html">http://www.compling.jp/ajb129/ts.html</a></tt>.</p>
 
 <p><a name="Cowie-1989">Cowie, A P. 1989.</a> <i>Oxford Advanced Learner's Dictionary, Fourth Edition</i>. Oxford: Oxford University Press.</p>
+
+<p><a name="Dekker-2012">Dekker, Paul. 2012.</a> <i>Dynamic Semantics</i>, vol. 91 of <i>Studies in Linguistics and Philosophy</i>. Dordrecht: Springer Verlag.</p>
+
+<p><a name="Hunt-and-Mcilroy-1975">Hunt, J. W. and M. D. Mcilroy. 1975.</a> An algorithm for differential file comparison. computer science. Tech. rep., Bell Laboratories Computing Science Technical Report #41.</p>
+
+<p><a name="Kamp-and-Reyle-1993">Kamp, Hans and Uwe Reyle. 1993.</a> <i>From Discourse to Logic: Introduction to Model-theoretic Semantics of Natural Language, Formal Logic and Discourse Representation Theory</i>. Dordrecht: Kluwer.</p>
 
 <p><a name="Magloire-et-al-2021">Magloire, Alain et al. 2021.</a> GNU Grep: Print lines that match patterns, version 3.7. Free Software Foundation.</p>
 
