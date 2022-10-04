@@ -43,7 +43,7 @@
 
 <p><a name="fig1">Figure 1: Overview page of the TSPC online interface</a></p>
 
-<img src="top_page.png" alt="Overview page of the TSPC online interface" height="280">
+<img src="top_page.png" alt="Overview page of the TSPC online interface" height="340">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The corpus overview page also contains links for reaching: the Grep and TGrep2 search pages, the various overview pages, and a page for accessing discourse segmentations. There is also an ID field box. A link is also provided for toggling the mode of the interface, which by default is set to show results graphically. A mode to show results with plain text is also available.</p>
 
@@ -53,7 +53,7 @@
 
 <p><a name="fig2">Figure 2: Example context page of the TSPC online interface</a></p>
 
-<img src="A_Alresford.png" alt="Example context page of the TSPC online interface" height="280">
+<img src="A_Alresford.png" alt="Example context page of the TSPC online interface" height="310">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With a visualisation page (see section <a href="#sec6">6</a> below), the ID box contains the full ID name of the shown parse analysis. Multiple full ID names can be entered into the ID box when they are space separated, in which case a visualisation for all the referenced parse analysis is shown. A full ID name for a given instance of parse analysis takes the form of a number followed by an underscore character (&lsquo;_&rsquo;) and then the name of the file that contains the parse analysis.</p>
 
@@ -93,7 +93,7 @@
 
 <p><a name="fig3">Figure 3: Tree visualisation from the online interface of the TSPC</a></p>
 
-<img src="28_A_DICK_1952_tree.png" alt="Tree visualisation from the online interface of the TSPC" height="400">
+<img src="28_A_DICK_1952_tree.png" alt="Tree visualisation from the online interface of the TSPC" height="470">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation of (<a href="#ex1">1</a>) includes word level analysis which involves deciding on the segmentation of words together with the assignment of a word class and word lemma to each segmented word. Word segmentation is typically straightforward for English, as word spacing and punctuation can usually be followed. However, it is also possible for a sequence of words to behave syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences are analysed as if single words, with each component separated by underscore characters in a single character string.</p>
 
@@ -121,13 +121,13 @@
 
 <p><a name="fig4">Figure 4: Words marked as relative pronouns (<tt>RPRO</tt>)</a></p>
 
-<img src="word_class.png" alt="Words marked as relative pronouns (RPRO)" height="350">
+<img src="word_class.png" alt="Words marked as relative pronouns (RPRO)" height="420">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig5">5</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, <tt>COM</tt>=comitative, etc.)&nbsp;and the lemmas of prepositions that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data (demonstrated below in section <a href="#sec5.1">5.1</a> with (<a href="#ex2">2</a>)).</p>
 
 <p><a name="fig5">Figure 5: Function marking with prepositions (<tt>P-ROLE</tt>)</a></p>
 
-<img src="prole.png" alt="Function marking with prepositions (P-ROLE)" height="380">
+<img src="prole.png" alt="Function marking with prepositions (P-ROLE)" height="400">
 
 <br>
 <h2><a name="sec5">5</a>&nbsp;&nbsp;&nbsp;Search pages</h2>
@@ -144,7 +144,7 @@
 
 <p><a name="fig6">Figure 6: Grep search for <tt>against</tt></a></p>
 
-<img src="against1.png" alt="Grep search for against" height="220">
+<img src="against1.png" alt="Grep search for against" height="255">
 
 <p align="justify">The colouring of cells in the second column depends on the cell content as follows:</p>
 <ul>
@@ -171,7 +171,7 @@
 
 <p><a name="fig7">Figure 7: Grep search for lemma <tt>{against}</tt> occuring as a preposition with contingency function</a></p>
 
-<img src="against2.png" alt="Grep search for lemma against occuring as a preposition with contingency function" height="210">
+<img src="against2.png" alt="Grep search for lemma against occuring as a preposition with contingency function" height="250">
 
 <p align="justify">If there are no tree yields included in the results and the number of matched lines is less than 100 (as in Figure <a href="#fig7">7</a>), then a &lsquo;See all tree results&rsquo; link is provided for opening in a tree page a display of all results as trees and a &lsquo;See all word results&rsquo; link is provided for opening in a word page a display of all results.</p>
 
@@ -181,13 +181,13 @@
 
 <p><a name="fig8">Figure 8: Search for <tt>IP-REL</tt> (relative clause)</a></p>
 
-<img src="slice1.png" alt="Search for IP-REL (relative clause)" height="290">
+<img src="slice1.png" alt="Search for IP-REL (relative clause)" height="340">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there are no yield line matches, a &lsquo;Toggle&rsquo; link appears. Clicking &lsquo;Toggle&rsquo; of Figure <a href="#fig8">8</a> opens the page of Figure <a href="#fig9">9</a>. Clicking &lsquo;Toggle&rsquo; again returns back to Figure <a href="#fig8">8</a>.</p>
 
 <p><a name="fig9">Figure 9: Search for <tt>IP-REL</tt> (relative clause) after toggle</a></p>
 
-<img src="slice2.png" alt="Search for IP-REL (relative clause) after toggle" height="460">
+<img src="slice2.png" alt="Search for IP-REL (relative clause) after toggle" height="480">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The page of Figure <a href="#fig9">9</a> shows the same results as Figure <a href="#fig8">8</a> only as tree fragments. Tree fragments are given an ID node that consists of a line number corresponding to the last line that goes into making up the tree fragment and its filename. These ID nodes serve as a link to a tree page for the overall linked instance of parse analysis, with the terminal node for the numbered line content highlighted. Other nodes serve as links to trigger a Grep search for the node label that opens to a page displaying tree fragment results. All this functionality assists finding related examples including inconsistencies and errors in the annotation. Because the underlying search is performed with Grep, results are gathered from the source data files almost instantly.</p>
 
@@ -226,7 +226,7 @@
 
 <p><a name="fig10">Figure 10: Example of tree search results as tree yields</a></p>
 
-<img src="search_basic.png" alt="Example of tree search results as tree yields" height="300">
+<img src="search_basic.png" alt="Example of tree search results as tree yields" height="360">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Above the table of individually shown tree yields, frequency information about all the search results is shown. This includes a count of the overall number of hits and a count of the overall number of files to which hits apply. These hit and file numbers are followed by a breakdown of where the numbers come from in relation to the seven sources distinguished in Table tableref:[__corpuscontent__] above.</p>
 
@@ -242,7 +242,7 @@
 
 <p><a name="fig11">Figure 11: Example of tree search results as tree graphical trees</a></p>
 
-<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="470">
+<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="530">
 
 <h4><a name="sec5.2.3">5.2.3</a>&nbsp;&nbsp;&nbsp;Downloading all tree search results</h4>
 
@@ -261,7 +261,7 @@
 
 <p><a name="fig12">Figure 12: An example of downloaded results in the comma-separated value format shown as a spreadsheet</a></p>
 
-<img src="csv1.png" alt="An example of downloaded results in the comma-separated value format shown as a spreadsheet" height="60">
+<img src="csv1.png" alt="An example of downloaded results in the comma-separated value format shown as a spreadsheet" height="64">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The trees of a bracketed download are formatted to be compatible with the CorpusSearch program (Randall 2009; <tt>http:&sol;&sol;corpussearch.sourceforge.net&sol;CS-manual&sol;YourCorpus.html</tt>). For example, pattern (<a href="#ex4">4</a>) obtains the downloaded trees of Figure <a href="#fig13">13</a>.</p>
 
@@ -297,13 +297,13 @@
 
 <p><a name="fig14">Figure 14: Tree visualisation of the online interface of the TSPC with highlighted node</a></p>
 
-<img src="28_A_DICK_1952_tree_highlight.png" alt="Tree visualisation of the online interface of the TSPC with highlighted node" height="380">
+<img src="28_A_DICK_1952_tree_highlight.png" alt="Tree visualisation of the online interface of the TSPC with highlighted node" height="480">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Presence of a highlighted orange node, as in Figure <a href="#fig14">14</a>, will also create a &lsquo;Zoom&rsquo; link. If this is clicked, then the view will change to make what was the highlighted node the root of the shown tree, as in Figure <a href="#fig15">15</a>. Clicking the &lsquo;Zoom&rsquo; link again will return the view back to the full tree. This feature is especially useful for presentations with the corpus.</p>
 
 <p><a name="fig15">Figure 15: Tree visualisation of the online interface of the TSPC from selected node</a></p>
 
-<img src="28_A_DICK_1952_tree_zoom.png" alt="Tree visualisation of the online interface of the TSPC from selected node" height="220">
+<img src="28_A_DICK_1952_tree_zoom.png" alt="Tree visualisation of the online interface of the TSPC from selected node" height="265">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When the tree page is entered from a TGrep2 search result, the number for the node matched as the master node by the seach pattern will be included with the parse ID and so this node will be highlighted orange.</p>
 
@@ -313,7 +313,7 @@
 
 <p><a name="fig16">Figure 16: Grammar code &sol; word sense compatibility visualisation from the online interface of the TSPC</a></p>
 
-<img src="28_A_DICK_1952_word.png" alt="Grammar code / word sense compatibility visualisation from the online interface of the TSPC" height="450">
+<img src="28_A_DICK_1952_word.png" alt="Grammar code / word sense compatibility visualisation from the online interface of the TSPC" height="580">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As Figure <a href="#fig16">16</a> shows, word analysis is presented in a tabled format with three main columns for words. The first column is for a word as it occurs in the data. The second column presents the word class of the word from the first column. If the word is a verb associated with a grammar pattern, then this pattern information is also presented and highlighted with yellow. The third column presents information about the word of the first column with minimally a word lemma. If the word is a lexical word then it is also given sense definitions from a dictionary database. Moreover, if the word is a verb then the grammar pattern information is used to highlight compatible sense definitions with yellow, and leave other sense definitions shaded grey. For local use when licensing permits, sense definitions with associated verb codes can be sourced from Cowie (1989). If the word is a verb without a grammar pattern, then all the cells containing sense numbers for the associated sense definitions are coloured red (reflecting outstanding annotation work).</p>
 
@@ -325,7 +325,7 @@
 
 <p><a name="fig17">Figure 17: Graph dependency visualisation from the online interface of the TSPC</a></p>
 
-<img src="28_A_DICK_1952_graph.png" alt="Graph dependency visualisation from the online interface of the TSPC" height="400">
+<img src="28_A_DICK_1952_graph.png" alt="Graph dependency visualisation from the online interface of the TSPC" height="450">
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a graph like Figure <a href="#fig17">17</a>, word content from source sentences is always accompanied by (i) content between curly braces (&lsquo;<tt>&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;) to say the word class of the word, and (ii) numbering inside round brackets (&lsquo;<tt>(</tt>&rsquo;, &lsquo;<tt>)</tt>&rsquo;) to say the word position within the source sentence(s). Word position numbering involves two numbers separated by an underscore character (&lsquo;<tt>&lowbar;</tt>&rsquo;). The first number says which source sentence the word belongs to. The second number says the position of the word within its source sentence.</p>
 
@@ -350,7 +350,7 @@
 
 <p><a name="fig18">Figure 18: An example with elided content</a></p>
 
-<img src="15_classics_POTTER_1902.png" alt="An example with elided content" height="580">
+<img src="15_classics_POTTER_1902.png" alt="An example with elided content" height="590">
 
 <p align="justify">The graph of Figure <a href="#fig18">18</a> has two verbs connected by <tt>[conj1]</tt> and <tt>[conj2]</tt> arrows from <tt>and(15_10)</tt> occuring topmost in the graph. While the verb of the first conjunct is overt with <tt>lost(15_2)</tt>, the content for the verb of the second conjunct is shown as <tt>#15_1002</tt> to indicate the licensed absence of a verb (a lost <i>lost</i>!). One further instance of &lsquo;<tt>#</tt>&rsquo; occurs in the graph (referenced as <tt>#15_1001</tt>) to indicate a nominal head absence that has <tt>[num]</tt> (numeral modifier) and &lsquo;<tt>of</tt>&rsquo; (role preposition) links. Note that the indexing with &lsquo;<tt>#</tt>&rsquo; involves two numbers without round brackets. The first number says which solution sentence the elided content belongs to. The second number follows a count of the number of elided instances that occur within the sentence, initialised at 1000. This gives indexing that is distinct from the word location indexing within round brackets that accompanies each word.</p>
 
