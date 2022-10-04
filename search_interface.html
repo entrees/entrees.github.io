@@ -95,7 +95,7 @@
 
 <img src="28_A_DICK_1952_tree.png" alt="Tree visualisation from the online interface of the TSPC" height="400">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation of (<a href="#ex1">1</a>) includes word level analysis which involves deciding on the segmentation of words together with the assignment of a word class and word lemma to each segmented word. Word segmentation is typically straightforward for English, as word spacing and punctuation can usually be followed. However, it is also pssible for a sequence of words to behave syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences are analysed as if single words, with each component separated by underscore characters in a single character string.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation of (<a href="#ex1">1</a>) includes word level analysis which involves deciding on the segmentation of words together with the assignment of a word class and word lemma to each segmented word. Word segmentation is typically straightforward for English, as word spacing and punctuation can usually be followed. However, it is also possible for a sequence of words to behave syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences are analysed as if single words, with each component separated by underscore characters in a single character string.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;From word analysis there is then the projection of groupings either in the creation of phrases or clause layers of structure. To the groupings of structure there is then the assignment of form and function information. This results in tree structure for isolated utterances, typically sentences.</p>
 
@@ -107,7 +107,7 @@
 <li>clause level constituents are function marked (<tt>-SBJ</tt>=subject, <tt>-OB1</tt>=direct object, <tt>-PRD2</tt>=subject predicative)</li>
 <li>genitive case internal to noun phrases is function marked (<tt>-GENV</tt>)</li>
 <li>pronouns and the antecedents of pronouns have resolved witness information (<tt>;{FOMAR}</tt> appearing with <tt>NP-SBJ</tt> and <tt>NP-GENV</tt>)</li>
-<li>verbs have codes (<tt>~It</tt>=selection of clause structure where there is an intransitive verb and a selected <i>to</i>-infinitive adverbial clause, <tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected adverbial elements, <tt>~La</tt>=selection of clause structure where there is a linking verb with a subject predicative complement that is an adjective phrase)</li>
+<li>verbs have codes (<tt>~It</tt>=selection of clause structure where there is an intransitive verb and a selected <i>to</i>-infinitive clause, <tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected elements other than the subject, <tt>~La</tt>=selection of clause structure where there is a linking verb with a subject predicative complement that is an adjective phrase)</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;This illustrates how within a single tree there is a lot of information to capture sentence coherence. In addition to the above form information, structural conventions have to be followed to ensure that control dependencies and across the board extraction dependencies are appropriately inherited. The structural conventions are a major diagnostic for choosing between whether to annotate structure that involves subordination (as seen in (<a href="#ex1">1</a>) with <tt>IP-INF-OB1</tt>) or coordination (as seen in (<a href="#ex1">1</a>) with <tt>CONJP</tt>).</p>
@@ -343,7 +343,7 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Other words with no graph presence are:</p>
 <ul>
 <li><b><i>relative pronouns</i></b> used at the start of a relative clause, e.g.&nbsp;<i>who</i>, <i>which</i>, <i>that</i> (<i>the girl <u>who</u> smiled</i>, <i>the house <u>which&sol;that</u> Jack built</i>), and</li>
-<li>the <b><i>complementizer</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>).</li>
+<li>the <b><i>complementiser</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>).</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for graph content to involve the &lsquo;<tt>#</tt>&rsquo; symbol. This marks a word absence due to an elided phrase head or verb from the source sentence. For example, consider the graph page result of Figure <a href="#fig18">18</a>.</p>
