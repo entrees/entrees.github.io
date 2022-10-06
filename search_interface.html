@@ -27,7 +27,6 @@
 <h2><a name="sec1">1</a>&nbsp;&nbsp;&nbsp;Introduction</h2>
 
 <p align="justify">The search interface aims to give quick and powerful access to the corpus content. The interface is useful for:</p>
-
 <dl>
 <dt>(i)</dt><dd>browsing the corpus</dd>
 <dt>(ii)</dt><dd>accessing content by providing ID information</dd>
@@ -222,7 +221,7 @@
 
 <h4><a name="sec5.2.1">5.2.1</a>&nbsp;&nbsp;&nbsp;Tree search results as tree yields</h4>
 
-<p align="justify">Figure <a href="#fig10">10</a> illustrates the display of results as tree yields. Content corresponding to what is matched by the master node of the query is highlighted. Zero elements (e.g.&nbsp;relative clause traces) are typically not shown in tree yields, but will appear highlighted if they happen to be the matched segment. Each returned tree yield with its single highlighted segment is given a hit number. The hit number doubles as a link to the tree view page for the given tree yield. Up to five hundred yield results are shown in corpus order. If there are more than five hundred results, you can see different yields by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig10">10</a>).</p>
+<p align="justify">Figure <a href="#fig10">10</a> illustrates the display of results as tree yields. Content matched by the master node of the query is highlighted. Zero elements (e.g.&nbsp;relative clause traces) are typically not shown in tree yields, but will appear highlighted if they happen to be all that is matched. Each returned tree yield with its single highlighted segment is given a hit number. The hit number doubles as a link to the tree view page for the given tree yield. Up to five hundred yield results are shown in corpus order. If there are more than five hundred results, you can see different yields by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig10">10</a>).</p>
 
 <p><a name="fig10">Figure 10: Example of tree search results as tree yields</a></p>
 
@@ -238,11 +237,11 @@
 
 <h4><a name="sec5.2.2">5.2.2</a>&nbsp;&nbsp;&nbsp;Tree search results as graphical trees</h4>
 
-<p align="justify">Figure <a href="#fig11">11</a> illustrates the display of results as graphical trees. Results are displayed as trees, with content that matches the master node of the search pattern highlighted. The ID node of a shown tree works as a link for accessing the same tree in a tree view page. A yield of the tree is also given with highlighted content corresponding to what is matched by the master node of the query. Up to fifty tree results are shown in corpus order. If there are more than fifty results, you can see different trees by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig11">11</a>).</p>
+<p align="justify">Figure <a href="#fig11">11</a> illustrates the display of results as graphical trees, with displayed trees having a highlighted node that is the match for the master node of the search pattern. There is also a link for accessing the tree in a tree view page and a yield, with content matched by the master node highlighted. Up to fifty tree results are shown in corpus order. If there are more than fifty results, you can see different trees by re-running the search after changing the number of the start number field (which is 146 in Figure <a href="#fig11">11</a>).</p>
 
 <p><a name="fig11">Figure 11: Example of tree search results as tree graphical trees</a></p>
 
-<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="530">
+<img src="search_tree.png" alt="Example of tree search results as graphical trees" height="480">
 
 <h4><a name="sec5.2.3">5.2.3</a>&nbsp;&nbsp;&nbsp;Downloading all tree search results</h4>
 
@@ -331,19 +330,19 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Square bracket content tells us about how words function, e.g.&nbsp;<tt>[arg0]</tt>=logical subject, <tt>[arg0]</tt>=direct object, <tt>[prd2]</tt>=subject predicative role. It is most typical for square bracket content to be part of the label for a directed arrow that connects graph nodes.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most words from source sentences have a presence within the corresponding graph, however the contribution of some words has to be seen in terms of consequences for graph nodes and their dependencies. Missing words include words involved with referencing what is talked about, with node presence capturing the making-reference contribution. These words can be either:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most words from source sentences have a presence within the corresponding graph, however the contribution of some words has to be seen in terms of consequences for graph nodes and their dependencies. Missing words include words that have a reference making contribution that is captured by node presence within the graph. These words can be:</p>
 <ul>
-<li><b><i>indefinites</i></b> (e.g.&nbsp;<i>a</i>, <i>an</i>, <i>some</i>) used to introduce new items for discussion (discourse referents),</li>
-<li><b><i>definites</i></b> (e.g.&nbsp;<i>the</i>, <i>these</i>, <i>this</i>) used for a familiar or unique referent of the discourse, or</li>
-<li><b><i>sentence</i></b>&sol;<b><i>discourse bound pronouns</i></b> (e.g.&nbsp;<i>he</i>, <i>her</i>, <i>themselves</i>) that are links to already established referents.</li>
+<li><b><i>indefinites</i></b> (e.g.&nbsp;<i>a</i>, <i>an</i>, <i>some</i>) used to introduce new items for discussion (discourse referents)</li>
+<li><b><i>definites</i></b> (e.g.&nbsp;<i>the</i>, <i>these</i>, <i>this</i>) used for a familiar or unique referent of the discourse</li>
+<li><b><i>sentence</i></b>&sol;<b><i>discourse bound pronouns</i></b> (e.g.&nbsp;<i>he</i>, <i>her</i>, <i>themselves</i>) that are links to already established referents</li>
 </ul>
 
 <p align="justify">Note that unbound pronouns do have graph presence, as seen with <i>He</i> in Figure <a href="#fig18">18</a> below.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Other words with no graph presence are:</p>
 <ul>
-<li><b><i>relative pronouns</i></b> used at the start of a relative clause, e.g.&nbsp;<i>who</i>, <i>which</i>, <i>that</i> (<i>the girl <u>who</u> smiled</i>, <i>the house <u>which&sol;that</u> Jack built</i>), and</li>
-<li>the <b><i>complementiser</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>).</li>
+<li><b><i>relative pronouns</i></b> used at the start of a relative clause, e.g.&nbsp;<i>who</i>, <i>which</i>, <i>that</i> (<i>the girl <u>who</u> smiled</i>, <i>the house <u>which&sol;that</u> Jack built</i>)</li>
+<li>the <b><i>complementiser</i></b> <i>that</i> used at the start of an embedded clause (<i>I think <u>that</u> she smiled</i>, <i>the claim <u>that</u> Jack built a house</i>)</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for graph content to involve the &lsquo;<tt>#</tt>&rsquo; symbol. This marks a word absence due to an elided phrase head or verb from the source sentence. For example, consider the graph page result of Figure <a href="#fig18">18</a>.</p>
