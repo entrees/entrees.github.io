@@ -5,7 +5,7 @@
 
 <p align="justify">This chapter details the range of possible <b>words</b> as the bottom layer of sentence structure, while chapter <a href="chapter3.html#ch3">3</a> considers <b>phrase</b> layers, and chapter <a href="chapter4.html#ch4">4</a> ascends to <b>clause</b> layers. This unravelling of the layers of grammatical structure will show all elements as inter-related components. Understanding of what is possible at one layer will require the integration of knowledge from the others. With this chapter, words are categorised into classes informed by how words function in phrases and clauses.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. One criteria for tagging is to identify words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="chapter2.html#sec2.2">2.2</a>; words for adjective phrases, in section <a href="chapter2.html#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="chapter2.html#sec2.4">2.4</a>. Section <a href="chapter2.html#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="chapter2.html#sec2.6">2.6</a> presents tags for verbs which are components for clause layers. Section <a href="chapter2.html#sec2.7">2.7</a> adds other word types that occur under a clause layer. Section <a href="chapter2.html#sec2.8">2.8</a> considers words that serve as connectives to combine layers. Section <a href="chapter2.html#sec2.9">2.9</a> looks at the treatment of punctuation. Section <a href="chapter2.html#sec2.10">2.10</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="chapter2.html#sec2.11">2.11</a> notes other possible elements of a parse.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING. One criteria for tagging is to identify words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="chapter2.html#sec2.2">2.2</a>; words for adjective phrases, in section <a href="chapter2.html#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="chapter2.html#sec2.4">2.4</a>. Section <a href="chapter2.html#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers. Section <a href="chapter2.html#sec2.6">2.6</a> presents tags for verbs which are components for clause layers. Section <a href="chapter2.html#sec2.8">2.8</a> adds other word types that occur under a clause layer. Section <a href="chapter2.html#sec2.9">2.9</a> considers words that serve as connectives to combine layers. Section <a href="chapter2.html#sec2.10">2.10</a> looks at the treatment of punctuation. Section <a href="chapter2.html#sec2.11">2.11</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="chapter2.html#sec2.12">2.12</a> notes other possible elements of a parse.</p>
 
 <h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;Beware: Same character string; different word class tag</h3>
 
@@ -46,15 +46,22 @@
 <dl>
   <dt>(<a name="ex2.3">2.3</a>)</dt><dd></dd>
 </dl>
-<tt>(&nbsp;(IP-IMP&nbsp;(VB;~Dn.*&nbsp;tell)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB2&nbsp;(PRO&nbsp;me))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(<font style="background-color: SandyBrown;">__P-CONN</font>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;might)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;slay)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;him)))))</tt><br>
-<tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=90_A_WILDE_2_1888@12" target="_blank">90_A_WILDE_2_1888&#64;12</a>))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ;{IDENT_2}&nbsp;(PRO&nbsp;You))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;will)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE&nbsp;be)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(VVN&nbsp;given)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-LGS&nbsp;*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1;{IDENT_223}&nbsp;(ADJP&nbsp;(ADVP&nbsp;(ADV&nbsp;so))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;much))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON&nbsp;(<font style="background-color: SandyBrown;">__P-CONN</font>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;(NP-SBJ;{IDENT_223}&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD&nbsp;will)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB&nbsp;spill)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;into)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NP-GENV;{IDENT_2}&nbsp;(PRO&nbsp;your))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;lap)))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt><br>
+<tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=84_nt_4206@22" target="_blank">84_nt_4206&#64;22</a>))</tt><br>
 
 <br>
 <h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
@@ -64,16 +71,20 @@
 <p><a name="table2.1">Table 2.1: Tags for words that can head a noun phrase</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>NS</tt></td><td>Plural common noun (e.g., <i>children</i>, <i>revelations</i>, <i>times</i>, <i>wishes</i>)</td></tr>
-<tr><td><tt>N</tt></td><td>Common noun not subclassified as <tt>NS</tt>, that is, either singular (e.g., <i>child</i>, <i>revelation</i>, <i>time</i>, <i>wish</i>), or neutral for number (e.g., <i>committee</i>, <i>fish</i>, <i>information</i>)</td></tr>
-<tr><td><tt>NPRS</tt></td><td>Plural proper noun (e.g., <i>Heathers</i>, <i>Koreas</i>)</td></tr>
-<tr><td><tt>NPR</tt></td><td>Proper noun not subclassified as <tt>NPRS</tt>, that is either singular (e.g., <i>Heather</i>, <i>Tokyo</i>), or neutral for number (e.g., <i>Andes</i>, <i>IBM</i>)</td></tr>
-<tr><td><tt>PNX</tt></td><td>Reflexive pronoun (e.g., <i>myself</i>, <i>yourself</i>, <i>itself</i>, <i>ourselves</i>), or reciprocal pronoun (e.g., <i>each&lowbar;other</i>)</td></tr>
-<tr><td><tt>PRO</tt></td><td>Personal pronoun (e.g., <i>I</i>, <i>you</i>, <i>them</i>, <i>ours</i>)</td></tr>
-<tr><td><tt>RPRO</tt></td><td>Relative pronoun (e.g., <i>which</i>, <i>who</i>, <i>whom</i>, <i>whose</i>, <i>that</i>)</td></tr>
-<tr><td><tt>WPRO</tt></td><td>Wh-pronoun (e.g., <i>what</i>, <i>who</i>, <i>whom</i>, <i>whose</i>)</td></tr>
-<tr><td><tt>Q</tt></td><td>Indefinite pronoun with quantification, which can be a compound (e.g., <i>everybody</i>, <i>nothing</i>), or a word which often occurs with the preposition <i>of</i> (e.g., <i>much</i>, <i>many</i>, <i>a_lot</i>) &mdash; note, <tt>Q</tt> is also used for quantifiers; see section <a href="chapter2.html#sec2.5">2.5</a></td></tr>
-<tr><td><tt>D</tt></td><td>Indefinite pronoun not subclassified as <tt>Q</tt> (e.g., <i>someone</i>, <i>anything</i>, <i>another</i>), and demonstrative pronoun (e.g., <i>this</i>, <i>that</i>, <i>these</i>, <i>those</i>) &mdash; note, <tt>D</tt> is also used for indefinite and definite articles&sol;determiners; see section <a href="chapter2.html#sec2.5">2.5</a></td></tr>
+<tr><td><tt>NS</tt></td><td>plural common noun (e.g., <i>children</i>, <i>revelations</i>, <i>times</i>, <i>wishes</i>)</td></tr>
+<tr><td><tt>N</tt></td><td>common noun not subclassified as <tt>NS</tt>, that is, either singular (e.g., <i>child</i>, <i>revelation</i>, <i>time</i>, <i>wish</i>), or neutral for number (e.g., <i>committee</i>, <i>fish</i>, <i>information</i>)</td></tr>
+<tr><td><tt>NPRS</tt></td><td>plural proper noun (e.g., <i>Heathers</i>, <i>Koreas</i>)</td></tr>
+<tr><td><tt>NPR</tt></td><td>proper noun not subclassified as <tt>NPRS</tt>, that is either singular (e.g., <i>Heather</i>, <i>Tokyo</i>), or neutral for number (e.g., <i>Andes</i>, <i>IBM</i>)</td></tr>
+<tr><td><tt>PNX</tt></td><td>reflexive pronoun (e.g., <i>myself</i>, <i>yourself</i>, <i>itself</i>, <i>ourselves</i>), or reciprocal pronoun (e.g., <i>each&lowbar;other</i>)</td></tr>
+<tr><td><tt>PRO</tt></td><td>personal pronoun (e.g., <i>I</i>, <i>you</i>, <i>them</i>, <i>us</i>)</td></tr>
+<tr><td><tt>PRO;_genm_</tt></td><td>possessive pronoun, pre-nominal (e.g., <i>my</i>, <i>your</i>, <i>our</i>)</td></tr>
+<tr><td><tt>PRO;_ppge_</tt></td><td>nominal possessive personal pronoun that is the only daughter of a genitive marked preposition phrase (e.g., <i>mine</i>, <i>yours</i>, <i>ours</i>)</td></tr>
+<tr><td><tt>WPRO</tt></td><td>WH-pronoun (e.g., <i>what</i>, <i>who</i>, <i>whom</i>)</td></tr>
+<tr><td><tt>WPRO;_genm_</tt></td><td>genitive WH-pronoun (<i>whose</i>)</td></tr>
+<tr><td><tt>RPRO</tt></td><td>relative pronoun (e.g., <i>which</i>, <i>who</i>, <i>whom</i>, <i>that</i>)</td></tr>
+<tr><td><tt>RPRO;_genm_</tt></td><td>genitive relative pronoun (<i>whose</i>)</td></tr>
+<tr><td><tt>Q;_nphd_</tt></td><td>Indefinite pronoun with quantification, which can be a compound (e.g., <i>everybody</i>, <i>nothing</i>), or a word which often occurs with the preposition <i>of</i> (e.g., <i>much</i>, <i>many</i>, <i>a_lot</i>)</td></tr>
+<tr><td><tt>D;_nphd_</tt></td><td>Indefinite pronoun not subclassified as <tt>Q;_nphd_</tt> (e.g., <i>someone</i>, <i>anything</i>, <i>another</i>), and demonstrative pronoun (e.g., <i>this</i>, <i>that</i>, <i>these</i>, <i>those</i>)</td></tr>
 </table>
 <br>
 
@@ -469,7 +480,7 @@
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG;_clitic_&nbsp;n&lt;apos&gt;t)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;want)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(<font style="background-color: SandyBrown;">__D;_nphd_</font>&nbsp;that)))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=558_christine_T35@12" target="_blank">558_christine_T35&#64;12</a>))</tt><br>
@@ -866,32 +877,45 @@
 <p><a name="table2.17">Table 2.17: Tag for modal verbs</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>MD</tt></td><td>Modal verbs (e.g., <i>will</i>, <i>would</i>, <i>can</i>, <i>could</i>, <i>'ll</i>, <i>'d</i>)</td></tr>
+<tr><td><tt>MD</tt></td><td>modal auxiliary verb (e.g., <i>will</i>, <i>would</i>, <i>can</i>, <i>could</i>, <i>'ll</i>, <i>'d</i>)</td></tr>
+<tr><td><tt>MD;~cat_Vt</tt></td><td>modal catenative (<i>ought</i>, <i>used</i>)</td></tr>
 </table>
 <br>
 
 <br>
-<h2><a name="sec2.7">2.7</a>&nbsp;&nbsp;&nbsp;Other clause level words</h2>
+<h2><a name="sec2.7">2.7</a>&nbsp;&nbsp;&nbsp;Subject indicating words</h2>
+
+<table border="1" cellpadding="10px">
+<tr><td><tt>EX</tt></td><td>existential <i>there</i>, i.e., <i>there</i> of the <i>there is ...</i> or <i>there are ...</i> construction co-occurring with an existential subject (<tt>NP-ESBJ</tt>)</td></tr>
+<tr><td><tt>PRO;_cleft_</tt></td><td>cleft <i>it</i> occuring as part of a cleft construction (<i>so it was you that got them together</i>)</td></tr>
+<tr><td><tt>PRO;_expletive_</tt></td><td>expletive <i>it</i> e.g., occuring in a weather construction (<i>it's raining</i>)</td></tr>
+<tr><td><tt>PRO;_provisional_</tt></td><td>provisional <i>it</i> occuring with extraposition (<i>it bothered her that she probably would never know</i>)</td></tr>
+</table>
+<br>
+
+<br>
+<h2><a name="sec2.8">2.8</a>&nbsp;&nbsp;&nbsp;Other clause level words</h2>
 
 <p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="chapter2.html#table2.18">2.18</a>.</p>
 
 <p><a name="table2.18">Table 2.18: Tags for clause level components</a></p>
 
 <table border="1" cellpadding="10px">
-<tr><td><tt>EX</tt></td><td>Existential <i>there</i>, i.e., <i>there</i> occurring in the <i>there is ...</i> or <i>there are ...</i> construction</td></tr>
-<tr><td><tt>NEG</tt></td><td>The negative particle <i>not</i> or <i>n't</i></td></tr>
+<tr><td><tt>NEG</tt></td><td>negative particle <i>not</i></td></tr>
+<tr><td><tt>NEG;_clitic_</tt></td><td>negative clitic particle <i>n't</i></td></tr>
 <tr><td><tt>TO</tt></td><td>Infinitive marker <i>to</i></td></tr>
+<tr><td><tt>CONJ;_cl_</tt></td><td>discourse coordination (e.g., <i>And</i>, <i>But</i>)</td></tr>
 </table>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see these clause level components in the annotation of (<a href="chapter2.html#ex2.36">2.36</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negation particle <i>n't</i> (<tt>NEG</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.1.5">8.1.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.36">2.36</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.1.5">8.1.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
 
 <dl>
   <dt>(<a name="ex2.36">2.36</a>)</dt><dd></dd>
 </dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(<font style="background-color: SandyBrown;">__EX</font>&nbsp;There)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~ex_cat_Vt&nbsp;were)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG</font>&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<font style="background-color: MediumSpringGreen;">___NEG;_clitic_</font>&nbsp;n&lt;apos&gt;t)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-ESBJ&nbsp;(D&nbsp;any)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;incidents))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<font style="background-color: MediumSpringGreen;">___TO</font>&nbsp;to)</tt><br>
@@ -911,7 +935,7 @@
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=33_christine_T28@4" target="_blank">33_christine_T28&#64;4</a>))</tt><br>
 
 <br>
-<h2><a name="sec2.8">2.8</a>&nbsp;&nbsp;&nbsp;Connective words</h2>
+<h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;Connective words</h2>
 
 <p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="chapter2.html#table2.19">2.19</a> that serve as the means to connect phrases and clauses.</p>
 
@@ -929,7 +953,7 @@
 <p align="justify">When phrases and clauses are connected they are said to be COMPLEX.</p>
 
 <br>
-<h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;Punctuation</h2>
+<h2><a name="sec2.10">2.10</a>&nbsp;&nbsp;&nbsp;Punctuation</h2>
 
 <p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="chapter2.html#table2.20">2.20</a>.</p>
 
@@ -947,7 +971,7 @@
 <p align="justify">This makes punctuation part of a sentence in its own right. When creating constituent structure, punctuation is placed as high as possible. For example, a full stop that ends a sentence is treated as the last constituent of the highest clause layer (<tt>IP</tt>&sol;<tt>CP</tt>&sol;<tt>FRAG</tt>).</p>
 
 <br>
-<h2><a name="sec2.10">2.10</a>&nbsp;&nbsp;&nbsp;Interjection, reaction signals, and formulaic expressions</h2>
+<h2><a name="sec2.11">2.11</a>&nbsp;&nbsp;&nbsp;Interjection, reaction signals, and formulaic expressions</h2>
 
 <p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="chapter2.html#table2.21">2.21</a>. They have a high placement in structure, typically occurring as elements of clause or fragment layers.</p>
 
@@ -975,7 +999,7 @@
 <tt>&nbsp;&nbsp;(ID&nbsp;<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_A_TED_talk_11@2" target="_blank">43_A_TED_talk_11&#64;2</a>))</tt><br>
 
 <br>
-<h2><a name="sec2.11">2.11</a>&nbsp;&nbsp;&nbsp;Other tags</h2>
+<h2><a name="sec2.12">2.12</a>&nbsp;&nbsp;&nbsp;Other tags</h2>
 
 <p align="justify">Tags for other possible elements of a parse are given in Table <a href="chapter2.html#table2.22">2.22</a>.</p>
 
