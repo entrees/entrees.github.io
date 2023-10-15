@@ -1,0 +1,681 @@
+<br><br><h1><a name="ch7">Chapter 7</a></h1>
+<h1>Main verbs</h1>
+
+<br><h2><a name="sec7.1">7.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h2>
+
+<p align="justify">The MAIN VERB is either the only verb of a clause or the last verb to occur in a sequence of verbs of the same clause. Verbs of a verb sequence that are prior to the main verb, called CATENATIVE VERBS, were the focus of chapter <a href="chapter6.html#ch6">6</a>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The main verb of a clause determines which constituents (if any, besides the subject) are required for the clause to be structurally complete. With the annotation, these clause requirements are signalled by adding a code to the word class tag of each main verb. The system of codes used to mark main verbs comes from the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989). These codes can add information that would be unavailable otherwise: Notably, they:</p>
+
+<ul>
+
+<li>signal when adverbial elements are selected items of the clause</li>
+
+<li>disambiguate the subject contribution for passivised verbs (e.g., with [Tnt] the promoted subject has <tt>-DOB1</tt> function, while with [Dn.t] it has <tt>-OB2</tt> function)</li>
+
+<li>partially establish word sense</li>
+
+</ul>
+
+<p align="justify">Also, the codes:</p>
+
+<ul>
+
+<li>provide a succinct notation to assist cataloging and searching clause structure</li>
+
+<li>offer an independent check on the validity of the clause annotation</li>
+
+</ul>
+
+<p align="justify">The chapter is organised as follows. Section <a href="chapter7.html#sec7.2">7.2</a> gives an overview of the OALD4 codes. Thereafter each code is described and illustrated, with:</p>
+
+<ul>
+
+<li>section <a href="chapter7.html#sec7.3">7.3</a> covering linking verb codes</li>
+
+<li>section <a href="chapter7.html#sec7.4">7.4</a>, intransitive verb codes</li>
+
+<li>section <a href="chapter7.html#sec7.5">7.5</a>, monotransitive verb codes</li>
+
+<li>section <a href="chapter7.html#sec7.6">7.6</a>, complex-transitive verb codes</li>
+
+<li>section <a href="chapter7.html#sec7.7">7.7</a>, ditransitive verb codes</li>
+
+</ul>
+
+<br><h2><a name="sec7.2">7.2</a>&nbsp;&nbsp;&nbsp;&nbsp;OALD4 verb codes</h2>
+
+<p align="justify">An OALD4 verb code starts with a capital letter: L, I, T, C, or D. This capital letter signals how the verb belongs to one of the verb classes of Table <a href="chapter7.html#table7.59">7.59</a>. These verb classes set requirements for the structural level of the clause: the NUMBER of elements and their FUNCTION. An element with subject function is always required in a basic clause, so mentioned elements are additional to the subject.</p>
+
+<p><a name="table7.59">Table 7.59: Capital letters L, I, T, C, and D</a></p>
+
+<table border="1" cellpadding="10px">
+  <tr>
+    <td>L</td>
+    <td colspan="2">LINKING verb</td>
+    <td>is associated with a SUBJECT PREDICATIVE (<tt>-PRD2</tt>), an element which provides information about the subject of the clause.</td>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td colspan="2">INTRANSITIVE verb</td>
+    <td>is NOT associated with a SUBJECT PREDICATIVE or an OBJECT, although it may be associated with an ADVERBIAL, an element which tells us about time, place, manner, etc of the action of the verb.</td>
+  </tr>
+  <tr>
+    <td>T</td>
+    <td rowspan="3">TRANSITIVE verb</td>
+    <td>MONOTRANSITIVE verb</td>
+    <td>is associated with a DIRECT OBJECT (<tt>-OB1</tt>), an element which often refers to the person or thing affected by the action of the verb.</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>COMPLEX-TRANSITIVE verb</td>
+    <td>is associated with both a DIRECT OBJECT (<tt>-OB1</tt>) and an OBJECT PREDICATIVE (<tt>-PRD</tt>), an element which provides more information about the direct object. Note: in the code, a dot divides information about the realisation of the direct object from information about the realisation of the object predicative.</td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>DITRANSITIVE verb</td>
+    <td>is associated with both a DIRECT OBJECT (<tt>-OB1</tt>) and an INDIRECT OBJECT (<tt>-OB2</tt>), an element which refers to a person who receives something or benefits from an action. Note: in the code, a dot divides information about the realisation of the direct object from information about the realisation of the indirect object.</td>
+  </tr>
+</table>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A complete verb code is reached when a capital letter from Table <a href="chapter7.html#table7.59">7.59</a> is possibly followed by lower case letters from Table <a href="chapter7.html#table7.60">7.60</a>.</p>
+
+<p><a name="table7.60">Table 7.60: Lower case letters a, n, p, pr, n&sol;pr, n&sol;a, t, f, w, g, and i</a></p>
+
+<table border="1" cellpadding="10px">
+<tr><td>a</td><td>adjective phrase</td></tr>
+<tr><td>n</td><td>noun phrase</td></tr>
+<tr><td>p</td><td>adverb particle</td></tr>
+<tr><td>pr</td><td>preposition phrase</td></tr>
+<tr><td>n&sol;pr</td><td>noun phrase&sol;preposition phrase</td></tr>
+<tr><td>n&sol;a</td><td><i>as</i> + noun phrase&sol;adjective phrase</td></tr>
+<tr><td>t</td><td>non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF</tt> with <i>to</i> tagged <tt>TO</tt> and verb tagged <tt>VB</tt>)</td></tr>
+<tr><td>f</td><td><i>that</i>-clause (<tt>CP-THT</tt>)</td></tr>
+<tr><td>w</td><td>finite or non-finite clause with <i>wh</i> element (<tt>CP-QUE</tt>)</td></tr>
+<tr><td>g</td><td>participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL</tt> with verb tagged <tt>VAG</tt>)</td></tr>
+<tr><td>i</td><td>non-finite clause (bare infinitive) (<tt>IP-INF</tt> with verb tagged <tt>VB</tt> but no <tt>TO</tt> tagged word)</td></tr>
+</table>
+
+<p align="justify">These lower case letters represent information about the FORM of the constituents that are used to realise the required elements that are signalled by their capital letter. For example, [La] is the code used to mark a linking verb in clause structure with the linking verb + a subject predicative constituent that is an adjective phrase. In codes with multiple lower case letters, the lower case letters can appear separated by a dot (&lsquo;.&rsquo;) character. For example, [Cn.a] is the code used to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object constituent that is a noun phrase + an object predicative constituent that is an adjective phrase.</p>
+
+<br><h2><a name="sec7.3">7.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Linking verb codes</h2>
+
+<p align="justify">This section introduces linking verb codes: [La] and [Ln].</p>
+
+<br><h3><a name="sec7.3.1">7.3.1</a>&nbsp;&nbsp;&nbsp;&nbsp;[La]</h3>
+
+<p align="justify">[La] is the code used to mark a linking verb in clause structure with the linking verb + subject predicative that is an adjective phrase (<tt>ADJP-PRD2</tt>). The subject predicative describes some quality or feature of the subject. In (<a href="chapter7.html#ex7.1">7.1</a>), <i>was</i> is a linking verb with the subject predicative <i>quite good</i> adding information about the subject, <i>the weather</i>.</p>
+
+<dl><dt>(<a name="ex7.1">7.1</a>)</dt><dd>
+<img src="__10_lucy_child_12_F27__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Co-occurrence of a provisional subject (<tt>-PSBJ</tt>) with a notational subject (<tt>-NSBJ</tt>) is possible in a clause with an [La] marked verb. In (<a href="chapter7.html#ex7.2">7.2</a>) the notational subject is a noun phrase (<tt>NP-NSBJ</tt>).</p>
+
+<dl><dt>(<a name="ex7.2">7.2</a>)</dt><dd>
+<img src="__464_christine_T13__.png">
+</dd></dl>
+
+<p align="justify">It is more typical for the notational subject to be a clause. For example, the notational subject in (<a href="chapter7.html#ex7.3">7.3</a>) is a <i>that</i>-clause.</p>
+
+<dl><dt>(<a name="ex7.3">7.3</a>)</dt><dd>
+<img src="__83_susanne_A14__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.3.2">7.3.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[Ln]</h3>
+
+<p align="justify">[Ln] is the code used to mark a linking verb in clause structure with the linking verb + subject predicative that is a noun phrase (<tt>NP-PRD2</tt>). The subject predicative gives further information about the subject. In (<a href="chapter7.html#ex7.4">7.4</a>), <i>remained</i> is a linking verb with the subject predicative <i>the problem</i> to add information about the subject, <i>the date</i>.</p>
+
+<dl><dt>(<a name="ex7.4">7.4</a>)</dt><dd>
+<img src="__51_lucy_bnc_B13__.png">
+</dd></dl>
+
+<br><h2><a name="sec7.4">7.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Intransitive verb codes</h2>
+
+<p align="justify">This section introduces intransitive verb codes: [I], [Ipr], [Ip], [In/pr], and [It].</p>
+
+<br><h3><a name="sec7.4.1">7.4.1</a>&nbsp;&nbsp;&nbsp;&nbsp;[I]</h3>
+
+<p align="justify">[I] is the code used to mark an intransitive verb in clause structure with the intransitive verb but no other post-verbal selected element. That is, the verb is not followed by an object, a subject predicative, or a closely linked adjunct. Optional adverbial phrases of location, manner, time, etc can be used. For example, the location adverbial phrase <i>here</i> in (<a href="chapter7.html#ex7.5">7.5</a>) is optional.</p>
+
+<dl><dt>(<a name="ex7.5">7.5</a>)</dt><dd>
+<img src="__332_christine_T14__.png">
+</dd></dl>
+
+<p align="justify">In (<a href="chapter7.html#ex7.6">7.6</a>) there is the optional manner preposition phrase <i>with high hopes and a mongrel puppy</i>.</p>
+
+<dl><dt>(<a name="ex7.6">7.6</a>)</dt><dd>
+<img src="__13_A_Alresford__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.4.2">7.4.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[Ipr]</h3>
+
+<p align="justify">[Ipr] is the code used to mark an intransitive verb in clause structure with the intransitive verb + a post-verbal selected preposition phrase. The verb is closely linked in grammar and meaning to the preposition phrase.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For some verbs with the [Ipr] code, the preposition phrase cannot be removed without changing the meaning of the verb or producing nonsense. For example, the preposition phrases of (<a href="chapter7.html#ex7.7">7.7</a>) and (<a href="chapter7.html#ex7.8">7.8</a>) cannot be removed.</p>
+
+<dl><dt>(<a name="ex7.7">7.7</a>)</dt><dd>
+<img src="__427_christine_T05__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.8">7.8</a>)</dt><dd>
+<img src="__56_A_FACTBOOK_1_2010__.png">
+</dd></dl>
+
+<p align="justify">After other verbs with the [Ipr] code, the preposition phrase selected by the verb can be removed freely. For example, the preposition phrase of (<a href="chapter7.html#ex7.9">7.9</a>) can be removed with no change to the verb meaning.</p>
+
+<dl><dt>(<a name="ex7.9">7.9</a>)</dt><dd>
+<img src="__3_lucy_student_E81__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Ipr] code can be made passive. The noun phrase complement of the selected preposition phrase in an active clause becomes the subject of a passive clause, with the preposition of the selected preposition phrase left stranded. For example, (<a href="chapter7.html#ex7.10">7.10</a>) illustrates an active clause with <i>paid for</i>, while (<a href="chapter7.html#ex7.11">7.11</a>) is passive.</p>
+
+<dl><dt>(<a name="ex7.10">7.10</a>)</dt><dd>
+<img src="__22_lucy_child_09_M68__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.11">7.11</a>)</dt><dd>
+<img src="__8_A_fce_0100_2000_06__.png">
+</dd></dl>
+
+<p align="justify">Note that the annotation of (<a href="chapter7.html#ex7.11">7.11</a>) makes no use of indexing to establish the link between the subject of the passive and its role with interpretation as the complement of the verb selected preposition phrase. (See chapter <a href="chapter9.html#ch9">9</a> for constructions that do require indexing.)</p>
+
+<br><h3><a name="sec7.4.3">7.4.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[Ip]</h3>
+
+<p align="justify">[Ip] is the code used to mark an intransitive verb in clause structure with the intransitive verb + a post-verbal selected adverb particle. The verb is closely linked in grammar and meaning to the adverb particle.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For some verbs with the [Ip] code, the particle cannot be removed without changing the meaning of the verb or producing nonsense. For example, the preposition phrases of (<a href="chapter7.html#ex7.12">7.12</a>) and (<a href="chapter7.html#ex7.13">7.13</a>) cannot be removed.</p>
+
+<dl><dt>(<a name="ex7.12">7.12</a>)</dt><dd>
+<img src="__233_A_TED_talk_11__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.13">7.13</a>)</dt><dd>
+<img src="__16_A_POTTER_1902__.png">
+</dd></dl>
+
+<p align="justify">After other verbs with the [Ip] code, the particle can be deleted freely. For example, the adverbial particle of (<a href="chapter7.html#ex7.14">7.14</a>) can be removed without change to the verb meaning.</p>
+
+<dl><dt>(<a name="ex7.14">7.14</a>)</dt><dd>
+<img src="__53_lucy_bnc_C03__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.4.4">7.4.4</a>&nbsp;&nbsp;&nbsp;&nbsp;[In/pr]</h3>
+
+<p align="justify">[In/pr] is the code used to mark an intransitive verb in clause structure with the intransitive verb + a post-verbal selected element that is either a noun phrase or a preposition phrase.</p>
+
+<dl><dt>(<a name="ex7.15">7.15</a>)</dt><dd>
+<img src="__12_lucy_child_10_K05__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.16">7.16</a>)</dt><dd>
+<img src="__12_lucy_child_12_F30__.png">
+</dd></dl>
+
+<p align="justify">Here, the verb is closely linked to a noun phrase or preposition phrase which indicates &lsquo;extent&rsquo; (e.g.&nbsp;how long it lasts, how much the subject costs, what it measures). The preposition can be <i>for</i> as in (___ID&#64;tspc_12_lucy_child_12_F30&#64;19,23_) or <i>by</i> as in (<a href="chapter7.html#ex7.17">7.17</a>).</p>
+
+<dl><dt>(<a name="ex7.17">7.17</a>)</dt><dd>
+<img src="__81_lucy_bnc_B09__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.4.5">7.4.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[It]</h3>
+
+<p align="justify">[It] is the code used to mark an intransitive verb in clause structure with the intransitive verb + a closely linked <i>to</i>-infinitive clause. With the annotation, the <i>to</i>-infinitive clause is function marked as being closely related (<tt>IP-INF-CLR</tt>), as in (<a href="chapter7.html#ex7.18">7.18</a>).</p>
+
+<dl><dt>(<a name="ex7.18">7.18</a>)</dt><dd>
+<img src="__341_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Verbs with the [It] code cannot be made passive.</p>
+
+<br><h2><a name="sec7.5">7.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Monotransitive verb codes</h2>
+
+<p align="justify">This section introduces monotransitive verb codes: [Tn], [Tn.pr], [Tn.p], [Tf], [Tw], [Tt], [Tnt], [Tg], [Tsg], [Tng], and [Tni].</p>
+
+<br><h3><a name="sec7.5.1">7.5.1</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tn]</h3>
+
+<p align="justify">[Tn] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>).</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Tn] code can also be used with the [I] code without a change of subject or meaning. For example, keeping the subject but removing the object of (<a href="chapter7.html#ex7.19">7.19</a>) would not change the verb meaning.</p>
+
+<dl><dt>(<a name="ex7.19">7.19</a>)</dt><dd>
+<img src="__123_X_samples_purple_basic__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Other verbs used with the [Tn] code can also be used with the [I] code only with what is the object of the [Tn] code needing to become the subject of the [I] code. For example, compare (<a href="chapter7.html#ex7.20">7.20</a>) with (<a href="chapter7.html#ex7.19">7.19</a>) above.</p>
+
+<dl><dt>(<a name="ex7.20">7.20</a>)</dt><dd>
+<img src="__77_susanne_A10__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Tn] code can be made passive, with the object of an active clause becoming the subject of a passive clause. For example, (<a href="chapter7.html#ex7.21">7.21</a>) is an active clause with <small style="font-size: 75%">CUT</small> as the [Tn] verb, while (<a href="chapter7.html#ex7.22">7.22</a>) is passive.</p>
+
+<dl><dt>(<a name="ex7.21">7.21</a>)</dt><dd>
+<img src="__37_lucy_bnc_B36__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.22">7.22</a>)</dt><dd>
+<img src="__93_lucy_bnc_B41__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.2">7.5.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tn.pr]</h3>
+
+<p align="justify">[Tn.pr] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an adverbial preposition phrase that is a selected item of the verb.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For some verbs with the [Tn.pr] code, the preposition phrase cannot be removed without changing the meaning of the verb or producing nonsense. For example, the preposition phrase of (<a href="chapter7.html#ex7.23">7.23</a>) cannot be removed.</p>
+
+<dl><dt>(<a name="ex7.23">7.23</a>)</dt><dd>
+<img src="__284_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">After other verbs with the [Tn.pr] code, the preposition phrase selected by the verb can be removed freely. For example, the preposition phrase of (<a href="chapter7.html#ex7.24">7.24</a>) can be removed with no change to the verb meaning, as in (<a href="chapter7.html#ex7.25">7.25</a>) where the verb <small style="font-size: 75%">STEAL</small> has the [Tn] code.</p>
+
+<dl><dt>(<a name="ex7.24">7.24</a>)</dt><dd>
+<img src="__3_A_ANC_wsj_1640__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.25">7.25</a>)</dt><dd>
+<img src="__20_A_ANC_wsj_1640__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Tn.pr] code can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="chapter7.html#ex7.26">7.26</a>).</p>
+
+<dl><dt>(<a name="ex7.26">7.26</a>)</dt><dd>
+<img src="__7_A_Voyager__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.3">7.5.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tn.p]</h3>
+
+<p align="justify">[Tn.p] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + a selected adverb particle.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;After some verbs, the particle cannot be removed without changing the meaning of the verb or producing nonsense:</p>
+
+<dl><dt>(<a name="ex7.27">7.27</a>)</dt><dd>
+<img src="__32_susanne_N06__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;After other verbs, the particle can be deleted freely:</p>
+
+<dl><dt>(<a name="ex7.28">7.28</a>)</dt><dd>
+<img src="__8_A_Duplex__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.29">7.29</a>)</dt><dd>
+<img src="__133_christine_T19__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When the direct object is a pronoun, it precedes the particle:</p>
+
+<dl><dt>(<a name="ex7.30">7.30</a>)</dt><dd>
+<img src="__94_susanne_N02__.png">
+</dd></dl>
+
+<p align="justify">When the direct object is a short noun phrase, it can usually either precede or follow the particle. When the direct object is a long noun phrase, it usually follows the particle:</p>
+
+<dl><dt>(<a name="ex7.31">7.31</a>)</dt><dd>
+<img src="__232_A_TED_talk_11__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Tn.p] code can be made passive. The object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_23_lucy_student_E44__">__tspc_23_lucy_student_E44__</a>).</p>
+
+<dl><dt>(<a name="ex7.32">7.32</a>)</dt><dd>
+<img src="__23_lucy_student_E44__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.4">7.5.4</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tf]</h3>
+
+<p align="justify">[Tf] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a <i>that</i>-clause (<tt>CP-THT-OB1</tt>).</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The complementizer <i>that</i> can sometimes be omitted.</p>
+
+<dl><dt>(<a name="ex7.14">7.14</a>)</dt><dd>
+<img src="__53_lucy_bnc_C03__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Tf] code can be made passive, with the direct object promoted to be the subject. It is common for the promoted subject to be realised as a notional subject in co-occurrence with a provisional subject, as in (<a href="#ex__tspc_8_lucy_student_E51__">__tspc_8_lucy_student_E51__</a>).</p>
+
+<dl><dt>(<a name="ex7.34">7.34</a>)</dt><dd>
+<img src="__8_lucy_student_E51__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A <tt>CP-THT</tt> with object function often has the complementizer (<tt>C</tt>) <i>that</i> omitted:</p>
+
+<dl><dt>(<a name="ex7.35">7.35</a>)</dt><dd>
+<img src="__57_christine_T30__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.5">7.5.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tw]</h3>
+
+<p align="justify">[Tw] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a finite or non-finite clause with <i>wh</i> (<tt>CP-QUE-OB1</tt>).</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the [Tw] code, the direct object is a finite or non-finite clause beginning with EITHER (i) A <i>wh</i>-element, which can be a pronoun (<i>who(m)</i>, <i>whose</i>, <i>which</i>, <i>what</i>), or a determiner + noun (<i>which roads</i>, <i>what time</i>), or an adverb (<i>why</i> (finite clauses only), <i>when</i>, <i>where</i>, <i>how</i>); OR (ii) One of the conjunctions <i>if</i> (finite clauses only) or <i>whether</i>.</p>
+
+<dl><dt>(<a name="ex7.36">7.36</a>)</dt><dd>
+<img src="__69_susanne_N18__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.37">7.37</a>)</dt><dd>
+<img src="__683_X_samples_kisonihongo__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.38">7.38</a>)</dt><dd>
+<img src="__400_christine_T10__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.39">7.39</a>)</dt><dd>
+<img src="__39_A_fce_0102_2000_12__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Tw] code can be made passive. (Note the construction with <i>it</i>.)</p>
+
+<dl><dt>(<a name="ex7.40">7.40</a>)</dt><dd>
+<img src="__98_susanne_G03__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.41">7.41</a>)</dt><dd>
+<img src="__93_lucy_bnc_B05__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.6">7.5.6</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tt]</h3>
+
+<p align="justify">[Tt] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF-OB1</tt>).</p>
+
+<dl><dt>(<a name="ex7.42">7.42</a>)</dt><dd>
+<img src="__289_christine_T29__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Verbs with the [Tt] code cannot be made passive.</p>
+
+<br><h3><a name="sec7.5.7">7.5.7</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tnt]</h3>
+
+<p align="justify">[Tnt] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a derived object that is a noun phrase (<tt>NP-DSBJ</tt>) + a direct object that is a <i>to</i>-infinitive clause (<tt>IP-INF-OB1</tt>). The derived object noun phrase is the subject of the <i>to</i>-infinitive clause.</p>
+
+<dl><dt>(<a name="ex7.43">7.43</a>)</dt><dd>
+<img src="__93_lucy_bnc_B13__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs with the [Tnt] code can be made passive. The derived object becomes the subject of the whole passive sentence, as in (<a href="#ex__tspc_3_A_pantomime__">__tspc_3_A_pantomime__</a>).</p>
+
+<dl><dt>(<a name="ex7.44">7.44</a>)</dt><dd>
+<img src="__3_A_pantomime__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.5.8">7.5.8</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tg]</h3>
+
+<p align="justify">[Tg] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a present participle (&lcub;ing&rcub;) clause (<tt>IP-PPL-OB1</tt>).</p>
+
+<dl><dt>(<a name="ex7.45">7.45</a>)</dt><dd>
+<img src="__69_lucy_bnc_B13__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Verbs with the [Tg] code cannot be made passive.</p>
+
+<br><h3><a name="sec7.5.9">7.5.9</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tsg]</h3>
+
+<p align="justify">[Tsg] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a present participle (&lcub;ing&rcub;) clause (<tt>IP-PPL-OB1</tt>) that contains as an initial element a noun phrase with subject function or possessive function.</p>
+
+<dl><dt>(<a name="ex7.46">7.46</a>)</dt><dd>
+<img src="__155_A_LooseChange__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.47">7.47</a>)</dt><dd>
+<img src="__151_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Verbs with the [Tsg] code cannot normally be made passive.</p>
+
+<br><h3><a name="sec7.5.10">7.5.10</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tng]</h3>
+
+<p align="justify">[Tng] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a derived object that is a noun phrase (<tt>NP-DSBJ</tt>) + a direct object that is a present participle (&lcub;ing&rcub;) clause (<tt>IP-PPL-OB1</tt>). The derived object noun phrase is the subject of the present participle (&lcub;ing&rcub;) clause.</p>
+
+<dl><dt>(<a name="ex7.48">7.48</a>)</dt><dd>
+<img src="__11_lucy_child_09_M51__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Many verbs with the [Tng] code can be made passive. The noun phrase introducing the &lcub;ing&rcub; form becomes the subject of the whole passive sentence:</p>
+
+<dl><dt>(<a name="ex7.49">7.49</a>)</dt><dd>
+<img src="__5_A_Planetoid__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Tng] code are &lsquo;perception&rsquo; verbs. Of these, <i>see</i>, <i>hear</i>, <i>feel</i>, <i>watch</i>, <i>notice</i>, <i>overhear</i> and <i>observe</i> are also used with the [Tni] code.</p>
+
+<br><h3><a name="sec7.5.11">7.5.11</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tni]</h3>
+
+<p align="justify">[Tni] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a derived object that is a noun phrase (<tt>NP-DSBJ</tt>) + a direct object that is a bare infinitive clause (<tt>IP-INF-OB1</tt>). The derived object noun phrase is the subject of the bare infinitive clause.</p>
+
+<dl><dt>(<a name="ex7.50">7.50</a>)</dt><dd>
+<img src="__68_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;All the verbs used with the [Tni] code are verbs of perception. They are <i>watch</i>, <i>hear</i>, <i>see</i>, <i>feel</i>, <i>notice</i>, <i>overhear</i> and <i>observe</i>. All are used with the [Tng] code also.</p>
+
+<br><h2><a name="sec7.6">7.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Complex-transitive verb codes</h2>
+
+<p align="justify">This section introduces complex-transitive verb codes: [Cn.a], [Cn.n], [Cn.n/a], [Cn.pr], [Cn.t], [Cn.g], and [Cn.i].</p>
+
+<br><h3><a name="sec7.6.1">7.6.1</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.a]</h3>
+
+<p align="justify">[Cn.a] is the code used to mark a complex-transitive verb in clause structure with the complex-transitive verb + direct object that is a noun phrase (<tt>NP-OB1</tt>) + object predicative that is an adjective phrase (<tt>ADJP-PRD</tt>). The adjective phrase object predicative describes a feature or quality of the direct object.</p>
+
+<dl><dt>(<a name="ex7.51">7.51</a>)</dt><dd>
+<img src="__14_A_TED_talk_11__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Many verbs with the [Cn.a] code can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_27_susanne_A20#8__">__tspc_27_susanne_A20#8__</a>).</p>
+
+<dl><dt>(<a name="ex7.52">7.52</a>)</dt><dd>
+<img src="__27_susanne_A20__.png">
+</dd></dl>
+
+<p align="justify">Introductory <i>it</i> may also be used to anticipate a following object clause where there is an intervening obligatory clause element. In this case there is no alternative to extraposition and the verb is marked with [Cn.a] code:</p>
+
+<dl><dt>(<a name="ex7.53">7.53</a>)</dt><dd>
+<img src="__79_A_JOYCE_1914__.png">
+</dd></dl>
+
+<p align="justify">In (<a href="#ex__tspc_79_A_JOYCE_1914#3__">__tspc_79_A_JOYCE_1914#3__</a>) the <tt>-NOB1</tt> clause is a CP-THT, and the POB1 is <i>it</i>. The NOB1 clause can also be an IP-INF in which case the derived object is NP-DOB1 which then acts as a controller into the IP-INF-NOB1, as in (<a href="#ex__tspc_10_lucy_bnc_C03__">__tspc_10_lucy_bnc_C03__</a>).</p>
+
+<dl><dt>(<a name="ex7.54">7.54</a>)</dt><dd>
+<img src="__10_lucy_bnc_C03__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.6.2">7.6.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.n]</h3>
+
+<p align="justify">[Cn.n] is the code used to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is a noun phrase (<tt>NP-PRD</tt>). The object predicative is a noun phrase which indicates the role, name, status, etc of the direct object.</p>
+
+<dl><dt>(<a name="ex7.55">7.55</a>)</dt><dd>
+<img src="__53_susanne_G06__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Many verbs with the [Cn.n] code can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_10_susanne_A14__">__tspc_10_susanne_A14__</a>).</p>
+
+<dl><dt>(<a name="ex7.56">7.56</a>)</dt><dd>
+<img src="__10_susanne_A14__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A main verb that takes an object predicative is called a complex-transitive verb. It is typical for an object predicative to immediately follow the direct object. For example, in (<a href="#ex__tspc_10_X_samples_ENG1100__">__tspc_10_X_samples_ENG1100__</a>) <small style="font-size: 75%">FIND</small> acts as a complex-transitive with object predicative <i>a great help</i> to add more information about the direct object, <i>her</i>. Other verbs able to act as complex-transitives &mdash; and so require an object predicative &mdash; are <small style="font-size: 75%">MAKE</small>, <small style="font-size: 75%">CONSIDER</small>, and <small style="font-size: 75%">NAME</small>.</p>
+
+<dl><dt>(<a name="ex7.57">7.57</a>)</dt><dd>
+<img src="__10_X_samples_ENG1100__.png">
+</dd></dl>
+
+<p align="justify">In contrast to (<a href="#ex__tspc_10_X_samples_ENG1100__">__tspc_10_X_samples_ENG1100__</a>), <i>a great belt</i> in (<a href="#ex__tspc_11_X_samples_ENG1100__">__tspc_11_X_samples_ENG1100__</a>) is an object. This contrast illustrates how a predicative provides additional information about another entity in the clause, while an object will refer to a different entity (when not a reflexive or reciprocal pronoun).</p>
+
+<dl><dt>(<a name="ex7.58">7.58</a>)</dt><dd>
+<img src="__11_X_samples_ENG1100__.png">
+</dd></dl>
+
+<p align="justify">This contrast also shows how verbs will have different meanings when selecting either objects or predicatives: In (<a href="#ex__tspc_10_X_samples_ENG1100__">__tspc_10_X_samples_ENG1100__</a>), <small style="font-size: 75%">FIND</small> has the meaning &lsquo;become aware of&rsquo;; In (<a href="#ex__tspc_11_X_samples_ENG1100__">__tspc_11_X_samples_ENG1100__</a>), <small style="font-size: 75%">FIND</small> has the meaning &lsquo;discover something after search&rsquo;.</p>
+
+<br><h3><a name="sec7.6.3">7.6.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.n/a]</h3>
+
+<p align="justify">[Cn.n/a] is the code used to mark a complex-transitive verb in clause structure with the complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is either: (i) a preposition phrase (<tt>PP-PRD</tt>) headed by <i>as</i> (tagged <tt>P-ROLE</tt>), or (ii) an adjective phrase (<tt>ADJP-PRD</tt>).</p>
+
+<dl><dt>(<a name="ex7.59">7.59</a>)</dt><dd>
+<img src="__54_A_Duplex__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A passive construction is possible for all verbs with the [Cn.n/a] code except <small style="font-size: 75%">HAVE</small>. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_50_A_ANC_HistoryOfGreece__">__tspc_50_A_ANC_HistoryOfGreece__</a>).</p>
+
+<dl><dt>(<a name="ex7.60">7.60</a>)</dt><dd>
+<img src="__50_A_ANC_HistoryOfGreece__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.6.4">7.6.4</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.pr]</h3>
+
+<p align="justify">[Cn.pr] is the code used to mark a complex-transitive verb in clause structure with a complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is a preposition phrase (<tt>PP-PRD</tt>).</p>
+
+<dl><dt>(<a name="ex7.61">7.61</a>)</dt><dd>
+<img src="__24_lucy_student_E74__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.6.5">7.6.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.t]</h3>
+
+<p align="justify">[Cn.t] is the code used to mark a complex-transitive verb in clause structure with a complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is a <i>to</i>-infinitive clause (<tt>IP-INF-PRD</tt>). The object predicative tells us what the object is made or helped to do or be.</p>
+
+<dl><dt>(<a name="ex7.62">7.62</a>)</dt><dd>
+<img src="__11_lucy_child_09_M12__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Cn.t] code can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_5_lucy_student_E62__">__tspc_5_lucy_student_E62__</a>).</p>
+
+<dl><dt>(<a name="ex7.63">7.63</a>)</dt><dd>
+<img src="__5_lucy_student_E62__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.6.6">7.6.6</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.g]</h3>
+
+<p align="justify">[Cn.g] is the code used to mark a complex-transitive verb in clause structure with a complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is a participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL-PRD</tt>) The object predicative tells us what the object is made to do or is kept doing.</p>
+
+<dl><dt>(<a name="ex7.64">7.64</a>)</dt><dd>
+<img src="__138_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Except for <small style="font-size: 75%">HAVE</small> and <small style="font-size: 75%">START</small>, verbs with the [Cn.g] code can be made passive. The direct object of an active verb becomes the subject of the same verb in the passive, as in (<a href="#ex__tspc_18_lucy_student_E44__">__tspc_18_lucy_student_E44__</a>).</p>
+
+<dl><dt>(<a name="ex7.65">7.65</a>)</dt><dd>
+<img src="__18_lucy_student_E44__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.6.7">7.6.7</a>&nbsp;&nbsp;&nbsp;&nbsp;[Cn.i]</h3>
+
+<p align="justify">[Cn.i] is the code used to mark a complex-transitive verb in clause structure with a complex-transitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an object predicative that is a bare infinitive (<tt>IP-INF-PRD</tt>), The object predicative tells us what the object is made or allowed to do.</p>
+
+<dl><dt>(<a name="ex7.66">7.66</a>)</dt><dd>
+<img src="__19_A_Johnson_letter__.png">
+</dd></dl>
+
+<br><h2><a name="sec7.7">7.7</a>&nbsp;&nbsp;&nbsp;&nbsp;Ditransitive verb codes</h2>
+
+<p align="justify">This section introduces ditransitive verb codes: [Dn.n], [Dpr.n], [Dn.f], [Dpr.f], [Dn.w], [Dpr.w], and [Dn.t].</p>
+
+<br><h3><a name="sec7.7.1">7.7.1</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dn.n]</h3>
+
+<p align="justify">[Dn.n] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a noun phrase (<tt>NP-OB2</tt>) + a direct object that is a noun phrase (<tt>NP-OB1</tt>).</p>
+
+<dl><dt>(<a name="ex7.67">7.67</a>)</dt><dd>
+<img src="__2_lucy_child_09_M67__.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex7.68">7.68</a>)</dt><dd>
+<img src="__45_susanne_G10__.png">
+</dd></dl>
+
+<p align="justify">Most verbs with the [Dn.n] code can be made passive, with the <i>indirect</i> object becoming the subject, as in (<a href="#ex__tspc_2_A_IBM_1401__">__tspc_2_A_IBM_1401__</a>).</p>
+
+<dl><dt>(<a name="ex7.69">7.69</a>)</dt><dd>
+<img src="__2_A_IBM_1401__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A case where the direct object is missing:</p>
+
+<dl><dt>(<a name="ex7.70">7.70</a>)</dt><dd>
+<img src="__75_susanne_N11__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.7.2">7.7.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dpr.n]</h3>
+
+<p align="justify">[Dpr.n] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + a direct object that is a noun phrase (<tt>NP-OB1</tt>) + an indirect object that is a preposition phrase (<tt>PP-OB2</tt>). The indirect object preposition phrase is typically placed at the end. It consists of a head word (tagged <tt>P-ROLE</tt>) that is <i>to</i> or <i>for</i> and a noun phrase.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When introduced by <i>to</i>, the indirect object refers to a person or people <i>receiving</i> something.</p>
+
+<dl><dt>(<a name="ex7.71">7.71</a>)</dt><dd>
+<img src="__53_A_POTTER_1902__.png">
+</dd></dl>
+
+<p align="justify">When introduced by <i>for</i>, the indirect object refers to a person or people intended to <i>benefit</i>.</p>
+
+<dl><dt>(<a name="ex7.72">7.72</a>)</dt><dd>
+<img src="__37_susanne_A14__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most verbs with the [Dpr.n] code can be made passive, with the <i>direct</i> object of an active clause becoming the subject of a passive clause, as in (<a href="#ex__tspc_1_A_Johnson_letter__">__tspc_1_A_Johnson_letter__</a>).</p>
+
+<dl><dt>(<a name="ex7.73">7.73</a>)</dt><dd>
+<img src="__1_A_Johnson_letter__.png">
+</dd></dl>
+
+<p align="justify">The noun phrase direct object can appear after the preposition phrase indirect object, typically when it has more weight, as in (XXXXXXXX).</p>
+
+<br><h3><a name="sec7.7.3">7.7.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dn.f]</h3>
+
+<p align="justify">[Dn.f] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a noun phrase (<tt>NP-OB2</tt>) + a direct object that is a <i>that</i>-clause. The indirect object refers to the person or people addressed by the subject.</p>
+
+<dl><dt>(<a name="ex7.74">7.74</a>)</dt><dd>
+<img src="__126_A_DICK_1952__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs with the [Dn.f] code can be made passive, with the indirect object of an active clause becoming the subject of a passive clause, as in (<a href="#ex__tspc_4_lucy_child_11_H16__">__tspc_4_lucy_child_11_H16__</a>).</p>
+
+<dl><dt>(<a name="ex7.75">7.75</a>)</dt><dd>
+<img src="__4_lucy_child_11_H16__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.7.4">7.7.4</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dpr.f]</h3>
+
+<p align="justify">[Dpr.f] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a preposition phrase (<tt>PP-OB2</tt>) headed by <i>to</i> (tagged <tt>P-ROLE</tt>) + a direct object that is a <i>that</i>-clause (<tt>CP-THT-OB1</tt>).</p>
+
+<dl><dt>(<a name="ex7.76">7.76</a>)</dt><dd>
+<img src="__4_lucy_child_10_K03__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.7.5">7.7.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dn.w]</h3>
+
+<p align="justify">[Dn.w] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a noun phrase (<tt>NP-OB2</tt>) + a direct object that is a finite or non-finite clause beginning with EITHER (i) A <i>wh</i>-element, which can be a pronoun (<i>who(m)</i>, <i>whose</i>, <i>which</i>, <i>what</i>), or a determiner + noun (<i>which roads</i>, <i>what time</i>), or an adverb (<i>why</i> (finite clauses only), <i>when</i>, <i>where</i>, <i>how</i>); OR (ii) One of the conjunctions <i>if</i> (finite clauses only) or <i>whether</i>.</p>
+
+<dl><dt>(<a name="ex7.77">7.77</a>)</dt><dd>
+<img src="__10_christine_T26__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Dn.w] code can be made passive, with the indirect object of an active clause becoming the subject of a passive clause, as in (<a href="#ex__tspc_7_lucy_child_11_H16#3__">__tspc_7_lucy_child_11_H16#3__</a>).</p>
+
+<dl><dt>(<a name="ex7.78">7.78</a>)</dt><dd>
+<img src="__7_lucy_child_11_H16__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.7.6">7.7.6</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dpr.w]</h3>
+
+<p align="justify">[Dpr.w] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a preposition phrase (<tt>PP-OB2</tt>) headed by <i>to</i> (tagged <tt>P-ROLE</tt>) + a direct object that is a finite or non-finite <i>wh</i>-clause (<tt>CP-QUE-OB1</tt>). The indirect object refers to the person or people addressed by the subject.</p>
+
+<dl><dt>(<a name="ex7.79">7.79</a>)</dt><dd>
+<img src="__84_susanne_N18__.png">
+</dd></dl>
+
+<br><h3><a name="sec7.7.7">7.7.7</a>&nbsp;&nbsp;&nbsp;&nbsp;[Dn.t]</h3>
+
+<p align="justify">[Dn.t] is the code used to mark a ditransitive verb in clause structure with a ditransitive verb + an indirect object that is a noun phrase (<tt>NP-OB2</tt>) + a direct object that is a <i>to</i>-infinitive clause (<tt>IP-INF-OB1</tt>).</p>
+
+<dl><dt>(<a name="ex7.80">7.80</a>)</dt><dd>
+<img src="__7_lucy_child_09_M12__.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs with the [Dn.t] code can be made passive, with the indirect object of an active clause becoming the subject of a passive clause, as in (<a href="#ex__tspc_4_A_THRUST__">__tspc_4_A_THRUST__</a>).</p>
+
+<dl><dt>(<a name="ex7.81">7.81</a>)</dt><dd>
+<img src="__4_A_THRUST__.png">
+</dd></dl>
+
+<br>
+<br>
+<br>
