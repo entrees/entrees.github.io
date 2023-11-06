@@ -53,8 +53,8 @@
 <tr><td><tt>NPR</tt></td><td>proper noun not subclassified as <tt>NPRS</tt>, that is either singular (e.g., <i>Heather</i>, <i>Tokyo</i>), or neutral for number (e.g., <i>Andes</i>, <i>IBM</i>)</td></tr>
 <tr><td><tt>PNX</tt></td><td>reflexive pronoun (e.g., <i>myself</i>, <i>yourself</i>, <i>itself</i>, <i>ourselves</i>), or reciprocal pronoun (e.g., <i>each&lowbar;other</i>)</td></tr>
 <tr><td><tt>PRO</tt></td><td>personal pronoun (e.g., <i>I</i>, <i>you</i>, <i>them</i>, <i>us</i>)</td></tr>
-<tr><td><tt>PRO;_genm_</tt></td><td>possessive pronoun, pre-nominal (e.g., <i>my</i>, <i>your</i>, <i>our</i>)</td></tr>
-<tr><td><tt>PRO;_ppge_</tt></td><td>nominal possessive personal pronoun that is the only daughter of a genitive marked preposition phrase (e.g., <i>mine</i>, <i>yours</i>, <i>ours</i>)</td></tr>
+<tr><td><tt>PRO;_genm_</tt></td><td>possessive pronoun, pre-nominal (Genitive 1 of Table <a href="chapter2.html#table2.4">2.4</a> below) (e.g., <i>my</i>, <i>your</i>, <i>our</i>)</td></tr>
+<tr><td><tt>PRO;_ppge_</tt></td><td>nominal possessive personal pronoun that is the only daughter of a genitive marked preposition phrase (Genitive 2 of Table <a href="chapter2.html#table2.4">2.4</a> below) (e.g., <i>mine</i>, <i>yours</i>, <i>ours</i>)</td></tr>
 <tr><td><tt>WPRO</tt></td><td>WH-pronoun (e.g., <i>what</i>, <i>who</i>, <i>whom</i>)</td></tr>
 <tr><td><tt>WPRO;_genm_</tt></td><td>genitive WH-pronoun (<i>whose</i>)</td></tr>
 <tr><td><tt>RPRO</tt></td><td>relative pronoun (e.g., <i>which</i>, <i>who</i>, <i>whom</i>, <i>that</i>)</td></tr>
@@ -77,13 +77,9 @@
 </dd></dl>
 
 <tt>(N&nbsp;hedgehog)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;hedgehogs)</tt><br>
-
 <tt>(N&nbsp;revelation)&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;revelations)</tt><br>
-
 <tt>(N&nbsp;time)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;times)</tt><br>
-
 <tt>(N&nbsp;wish)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;wishes)</tt><br>
-
 <tt>etc.</tt><br>
 
 <p align="justify">Such nouns are instances of COUNT nouns, so called, because they can combine with numerals (e.g., <i>three wishes</i>). A few count nouns take the irregular suffix &lcub;(r)en&rcub; in the plural:</p>
@@ -92,7 +88,6 @@
 </dd></dl>
 
 <tt>(N&nbsp;child)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;children)</tt><br>
-
 <tt>(N&nbsp;ox)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;oxen)</tt><br>
 
 <p align="justify">There are also count nouns that use the same form in the singular and plural. For example, nouns for the animal species in (<a href="chapter2.html#ex2.6">2.6</a>) look like singular nouns, and so are tagged <tt>N</tt>, but can also be used as plurals (e.g., <i>three deer</i>); while (<a href="chapter2.html#ex2.7">2.7</a>) is tagged <tt>NS</tt> for looking like a plural, but might also refer to a single pair.</p>
@@ -101,7 +96,6 @@
 </dd></dl>
 
 <tt>(N&nbsp;deer)</tt><br>
-
 <tt>(N&nbsp;fish)</tt><br>
 
 <dl><dt>(<a name="ex2.7">2.7</a>)</dt><dd>
@@ -117,7 +111,6 @@
 </dd></dl>
 
 <tt>(N&nbsp;gold)</tt><br>
-
 <tt>(N&nbsp;information)</tt><br>
 
 <p align="justify">It is possible for the same noun to belong to both count and mass categories: in <i>Her <b><i>hair</i></b> is brown</i>, <i>hair</i> is a mass noun, but in <i>I found a <b><i>hair</i></b> in my soup</i>, it is a count noun.</p>
@@ -130,7 +123,6 @@
 </dd></dl>
 
 <tt>(NPR&nbsp;Heather)</tt><br>
-
 <tt>(NPRS&nbsp;Heathers)</tt><br>
 
 <br><h3><a name="sec2.2.5">2.2.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Genitive case</h3>
@@ -220,7 +212,7 @@
     <td>them</td>
   </tr>
   <tr>
-    <td>Genitive 1 (<tt>PRO</tt>)</td>
+    <td>Genitive 1 (<tt>PRO;_genm_</tt>)</td>
     <td>my</td>
     <td>our</td>
     <td colspan="2">your</td>
@@ -229,7 +221,7 @@
     <td>their</td>
   </tr>
   <tr>
-    <td>Genitive 2 (<tt>PRO</tt>)</td>
+    <td>Genitive 2 (<tt>PRO;_ppge_</tt>)</td>
     <td>mine</td>
     <td>ours</td>
     <td colspan="2">yours</td>
@@ -327,7 +319,7 @@
 
 <ul>
 
-<li>Indefinite pronouns with quantification (tagged <tt>Q</tt> &mdash; the same tag used for quantifiers; see section <a href="chapter2.html#sec2.5">2.5</a>) come in two broad types: compounds, for example, <i>as <b><i>everyone</i></b> knows</i>, <i><b><i>nobody</i></b> knows</i>, and words which often occur with the preposition <i>of</i>, such as, <i><b><i>all</i></b> of them</i>, <i><b><i>none</i></b> of them</i>.</li>
+<li>Indefinite pronouns with quantification (tagged <tt>Q;_nphd_</tt>, while quantifiers are tagged <tt>Q</tt>; see section <a href="chapter2.html#sec2.5">2.5</a>) come in two broad types: compounds, for example, <i>as <b><i>everyone</i></b> knows</i>, <i><b><i>nobody</i></b> knows</i>, and words which often occur with the preposition <i>of</i>, such as, <i><b><i>all</i></b> of them</i>, <i><b><i>none</i></b> of them</i>.</li>
 
 </ul>
 
@@ -349,7 +341,7 @@
 
 <ul>
 
-<li>Indefinite pronouns not subclassified as <tt>Q</tt> (tagged <tt>D</tt> &mdash; the same tag used for indefinite determiners; see section <a href="chapter2.html#sec2.5">2.5</a>), for example, <i>in case <b><i>somebody</i></b> comes</i>, but also <i><b><i>some</i></b> of them</i>. The indefinite pronoun <i>one</i>, for example, <i>as <b><i>one</i></b> would expect</i>, typically occurs in formal contexts. The pronoun <i>you</i> (always tagged <tt>PRO</tt>) can also be used indefinitely, for example, <i>as <b><i>you</i></b> can see</i>.</li>
+<li>Indefinite pronouns not subclassified as <tt>Q;_nphd_</tt> (tagged <tt>D;_nphd_</tt>, while indefinite determiners are tagged <tt>D</tt>; see section <a href="chapter2.html#sec2.5">2.5</a>), for example, <i>in case <b><i>somebody</i></b> comes</i>, but also <i><b><i>some</i></b> of them</i>. The indefinite pronoun <i>one</i>, for example, <i>as <b><i>one</i></b> would expect</i>, typically occurs in formal contexts. The pronoun <i>you</i> (always tagged <tt>PRO</tt>) can also be used indefinitely, for example, <i>as <b><i>you</i></b> can see</i>.</li>
 
 </ul>
 
@@ -371,7 +363,7 @@
 
 <ul>
 
-<li>Demonstrative pronouns (tagged <tt>D</tt>; see Table <a href="chapter2.html#table2.5">2.5</a> for the full range) indicate a specific referent in terms of the distance (real or metaphorical) from the speaker, for example, <i>I don't want <b><i>that</i></b></i>. <i>I'll have <b><i>these</i></b></i>, Demonstratives are tagged <tt>D</tt>, since they can also function as definite determiners which modify nouns within a noun phrase, for example, <i><b><i>this</i></b> point</i>.</li>
+<li>Demonstrative pronouns (tagged <tt>D;_nphd_</tt>; see Table <a href="chapter2.html#table2.5">2.5</a> for the full range) indicate a specific referent in terms of the distance (real or metaphorical) from the speaker, for example, <i>I don't want <b><i>that</i></b></i>. <i>I'll have <b><i>these</i></b></i>, Demonstratives also function as definite determiners (tagged <tt>D</tt>) which modify nouns within a noun phrase, for example, <i><b><i>this</i></b> point</i> (see section <a href="chapter2.html#sec2.5">2.5</a>).</li>
 
 </ul>
 
@@ -387,7 +379,7 @@
 <img src="5_lucy_student_E16__this_0_1.png">
 </dd></dl>
 
-<p><a name="table2.5">Table 2.5: Demonstrative pronouns/determiners (<tt>D</tt>)</a></p>
+<p><a name="table2.5">Table 2.5: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a></p>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -493,7 +485,6 @@
 </dd></dl>
 
 <tt>(D&nbsp;a)&nbsp;(N&nbsp;wish)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;wish)</tt><br>
-
 <tt>(D&nbsp;some)&nbsp;(NS&nbsp;wishes)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;wishes)</tt><br>
 
 <br><h2><a name="sec2.6">2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Verbs</h2>
