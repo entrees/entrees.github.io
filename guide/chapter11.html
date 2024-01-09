@@ -79,11 +79,15 @@
 
 <br><h3><a name="sec11.3.1">11.3.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Tag questions</h3>
 
-<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use pattern (<a href="#ex__tagquestion__">__tagquestion__</a>):</p>
-
-<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="#ex__tagquestion__">__tagquestion__</a>) returns example sentences like (<a href="chapter11.html#ex11.15">11.15</a>).</p>
+<p align="justify">The annotation uses <tt>PRN</tt> in the description of tag questions. To find tag questions, you can use TGrep2 search pattern (<a href="chapter11.html#ex11.15">11.15</a>):</p>
 
 <dl><dt>(<a name="ex11.15">11.15</a>)</dt><dd>
+<tt>/^PRN/ > /^IP-MAT/ < (/^CP-QUE/ < (/^IP-SUB/ <-1 /^NP-SBJ/))</tt>
+</dd></dl>
+
+<p align="justify">This looks for a <tt>PRN</tt> node that is itself immediately under an <tt>IP-MAT</tt>, and that has immediately under it a <tt>CP-QUE</tt>. Furthermore the <tt>CP-QUE</tt> needs to immediately dominate an <tt>IP-SUB</tt> that has as its last child an <tt>NP-SBJ</tt>. Thus, (<a href="chapter11.html#ex11.15">11.15</a>) returns example sentences like (<a href="chapter11.html#ex11.16">11.16</a>).</p>
+
+<dl><dt>(<a name="ex11.16">11.16</a>)</dt><dd>
 <img src="33_A_TED_talk_11__marvel_7_5.png">
 </dd></dl>
 
@@ -95,7 +99,7 @@
 <tr><td><tt>multi-sentence</tt></td><td>embedded discourse</td></tr>
 </table>
 
-<dl><dt>(<a name="ex11.16">11.16</a>)</dt><dd>
+<dl><dt>(<a name="ex11.17">11.17</a>)</dt><dd>
 <img src="66_A_SAINT_EXUPERY_1943__answered_1_14.png">
 </dd></dl>
 <br>
