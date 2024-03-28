@@ -1,3 +1,10 @@
+<style>
+body { background-color: #FFFFFF; color: #111111; margin: 15px auto; padding: 0 10px; }
+@media (min-width: 800px) { body { max-width: 95%; } }
+mark { background-color: Wheat; }
+highlight { background-color: palegreen; }
+</style>
+
 <br><br><h1><a name="ch1">Chapter 1</a></h1>
 <h1>Grammar and Parsing</h1>
 
@@ -5,13 +12,15 @@
 
 <p align="justify">The term GRAMMAR refers to the system (mechanism or otherwise) for building language expressions. When something is built, there is the natural impulse to want to take it apart. Taking apart language is known as PARSING. With care, we can put dismantled parts back together, and while doing so we can also add trails of instructions known as <b>annotations</b>. Such enhancements to language data act as handles to access the structural analysis revealed by parsing. This book is focused on introducing the annotation approach of the Treebank Semantics Parsed Corpus (TSPC). The TSPC is a corpus of English for general use with hand worked analysis for approaching half-a-million words.</p>
 
-<br><h3><a name="sec1.1.1">1.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;A hierarchy of layers</h3>
+<br><h2><a name="sec1.2">1.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A hierarchy of layers</h2>
 
 <p align="justify">With parsing being the activity of taking apart language expressions, the aim is to reach smaller and smaller layers of grammatical analysis. To start, let's consider layers of structure introduced in terms of following possible paths through Figure <a href="#figure1.1">1.1</a> from the highest sentence layer through to the lowest word layers, via clause and possibly phrase layers, with the arrow X &xrarr; Y interpreted: &lsquo;X immediately contains Y&rsquo;.</p>
 
 <p><a name="fig1.1">Figure 1.1: Paths through layers of grammatical analysis</a></p>
 
 <img src="https://ajb129.github.io/paths.gif" alt="Paths through layers of grammatical analysis">
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an intermediate layer in the hierarchy, a <tt>CLAUSE</tt> is reached from the sentence layer, and subsequently a <tt>PHRASE</tt> can be reached from a clause layer. In addition, clauses can occur within clauses, phrases can occur within phrases, and clauses can occur within phrases.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A SENTENCE is at the top of the hierarchy, so it is the largest unit considered. (A discourse grammar would look above the sentence layer.) A WORD is at the other end of the hierarchy. (It is possible to go inside words to consider <b>morphology</b>, that is, the components from which words are made, which would be lower in the hierarchy of structure.) Chapter <a href="chapter2.html#sec2">2</a> will detail the range of possible words, but for considering the hierarchy, it is helpful to start from an outlook where words are of two kinds:</p>
 
@@ -23,9 +32,7 @@
 
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an intermediate layer in the hierarchy of Figure <a href="#figure1.1">1.1</a>, a <tt>CLAUSE</tt> is reached from the sentence layer, and subsequently a <tt>PHRASE</tt> can be reached from a clause layer. In addition, clauses can occur within clauses, phrases can occur within phrases, and clauses can occur within phrases.</p>
-
-<br><h3><a name="sec1.1.2">1.1.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Identifying sentence and word layers</h3>
+<br><h3><a name="sec1.2.1">1.2.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Identifying sentence and word layers</h3>
 
 <p align="justify">Sentence and word layers are fairly easily identified by conventions of the English writing system. Sentences are delimited by an initial capital letter and a final full-stop (or question-mark or exclamation-mark). Words are created with single character strings that are delimited by a space on each side (or punctuation mark other than a hyphen or apostrophe). But these conventions are not always followed. An important exception is when a sequence of words behaves syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences will be analysed as if single words, with each component separated by underscore characters in a single character string, as in (<a href="chapter1.html#ex1.1">1.1</a>).</p>
 
@@ -37,7 +44,7 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;To allow for integration into the parse analysis, punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words; see section <a href="chapter2.html#sec2.10">2.10</a> for details.</p>
 
-<br><h2><a name="sec1.2">1.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A simple sentence</h2>
+<br><h3><a name="sec1.2.2">1.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A simple sentence</h3>
 
 <p align="justify">A simple sentence consists of one clause, so Figure <a href="#figure1.1">1.1</a> paths will start: <tt>"SENTENCE","CLAUSE"</tt>. This initial clause layer is known as the MATRIX clause, which is symbolised most generally with <tt>IP-MAT</tt>. <tt>IP</tt> is an abbreviation for Inflectional Phrase, which is another way to say &lsquo;clause&rsquo;. A clause contains minimally a verb. Consider the simple sentence (<a href="chapter1.html#ex1.2">1.2</a>), which is comprised of a single verb contained within a single clause.</p>
 
@@ -71,7 +78,7 @@ Look!
 
 <p align="justify">With (<a href="chapter1.html#ex1.4">1.4</a>), each word of the parse comes at the end of its own line, with each line presenting path information from the root (<tt>IP-MAT</tt>) layer through to a word layer. The last line is the ID node for the parse.</p>
 
-<br><h2><a name="sec1.3">1.3</a>&nbsp;&nbsp;&nbsp;&nbsp;A complex sentence</h2>
+<br><h3><a name="sec1.2.3">1.2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;A complex sentence</h3>
 
 <p align="justify">Consider (<a href="chapter1.html#ex1.5">1.5</a>) as an example of the interplay between intermediate clause and phrase layers.</p>
 
@@ -119,11 +126,11 @@ He wanted to show what happened to anyone who tried to start trouble.
 <tt>"IP-MAT","-VERB","."</tt><br>
 <tt>"ID","154_susanne_n12"</tt><br>
 
-<p align="justify">Notably, the paths of (<a href="chapter1.html#ex1.7">1.7</a>) conform to Figure <a href="#figure1.1">1.1</a>. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
+<p align="justify">Notably, the paths of (<a href="chapter1.html#ex1.7">1.7</a>) conform to Figure <a href="#figure1.1">1.1</a> above. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
 
-<br><h2><a name="sec1.4">1.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Orientation</h2>
+<br><h2><a name="sec1.3">1.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Outlook</h2>
 
-<p align="justify">Each of the units of structure that label the brackets of (<a href="chapter1.html#ex1.3">1.3</a>) and (<a href="chapter1.html#ex1.6">1.6</a>), and paths of (<a href="chapter1.html#ex1.4">1.4</a>) and (<a href="chapter1.html#ex1.7">1.7</a>), is either a clause or a phrase. It is typical to refer to such units as CONSTITUENTS.</p>
+<p align="justify">Each of the units of structure that label the brackets of (<a href="chapter1.html#ex1.3">1.3</a>) and (<a href="chapter1.html#ex1.6">1.6</a>) above, and paths of (<a href="chapter1.html#ex1.4">1.4</a>) and (<a href="chapter1.html#ex1.7">1.7</a>) above, is either a clause or a phrase. It is typical to refer to such units as CONSTITUENTS.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We have so far categorised words into being either:</p>
 
@@ -179,7 +186,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapter <a href="chapter9.html#ch9">9</a> extends coverage to constructions with displacements where full analysis can require indexing. Chapter <a href="chapter10.html#ch10">10</a> discusses exceptional sope, control, and anaphora. Chapter <a href="chapter11.html#ch11">11</a> clear up loose ends.</p>
 
-<br><h3><a name="sec1.4.1">1.4.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Notational conventions</h3>
+<br><h3><a name="sec1.3.1">1.3.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Notational conventions</h3>
 
 <p align="justify">Table <a href="chapter1.html#table1.1">1.1</a> details useful notational conventions used in this book.</p>
 
@@ -211,7 +218,7 @@ He wanted to show what happened to anyone who tried to start trouble.
   </tr>
 </table>
 
-<br><h2><a name="sec1.5">1.5</a>&nbsp;&nbsp;&nbsp;&nbsp;About the annotation approach</h2>
+<br><h3><a name="sec1.3.2">1.3.2</a>&nbsp;&nbsp;&nbsp;&nbsp;About the annotation approach</h3>
 
 <p align="justify">This book's annotation approach builds on alternative annotation schemes for English. A central goal has been to consolidate strengths of existing methods in a single annotation scheme with a high degree of normalised structure. Ideas were taken from the following annotation schemes:</p>
 
@@ -219,9 +226,9 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <li>The SUSANNE Corpus and Analytic Scheme (Sampson 1995)</li>
 
-<li>The ICE Parsing Scheme (Nelson, Wallis commaand Aarts 2002)</li>
+<li>The ICE Parsing Scheme (Nelson, Wallis and Aarts 2002)</li>
 
-<li>The Penn Treebank Scheme (Marcus, Santorini commaand Marcinkiewicz 1993)</li>
+<li>The Penn Treebank Scheme (Marcus, Santorini and Marcinkiewicz 1993)</li>
 
 <li>The Penn Historical Parsed Corpora Scheme (Santorini 2016)</li>
 
@@ -263,7 +270,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <p align="justify">These intermediate layers are required when their corresponding levels of structure include <tt>CONJP</tt> layers.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a>. The codes of chapter <a href="chapter6.html#ch6">6</a> classify catenative verbs; cf.&nbsp;Huddleston and Pullum (2002, p.1220). These are verbs of a verb sequence that are prior to the main verb of a clause, and this type of verb is further supported in the annotation by the layering of intermediate clause structure (<tt>IP-PPL-CAT</tt>). Additional codes of chapter <a href="chapter6.html#ch6">6</a> with very particular distributions are included from Hornby (1975). The verb codes for main verbs in chapter <a href="chapter7.html#ch7">7</a> are from the mnemonic system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a>. The codes of chapter <a href="chapter6.html#ch6">6</a> classify catenative verbs; cf.&nbsp;Huddleston and Pullum (2002, p.1220). These are verbs of a verb sequence that are prior to the main verb of a clause, and this type of verb is further supported in the annotation by (<tt>IP-PPL-CAT</tt>) intermediate clause structure. Additional codes of chapter <a href="chapter6.html#ch6">6</a> with very particular distributions are included from Hornby (1975). The verb codes for main verbs in chapter <a href="chapter7.html#ch7">7</a> are from the mnemonic system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic-based meaning representations. While the annotation seldom includes indexing, results calculated with Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies. It is sometimes especially helpful to see meaning representations from Treebank Semantics as dependency graphs (e.g., from the on-line corpus interface) to make visually apparent connections that the design of the annotation captures.</p>
 

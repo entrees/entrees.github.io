@@ -1,3 +1,10 @@
+<style>
+body { background-color: #FFFFFF; color: #111111; margin: 15px auto; padding: 0 10px; }
+@media (min-width: 800px) { body { max-width: 95%; } }
+mark { background-color: Wheat; }
+highlight { background-color: palegreen; }
+</style>
+
 <br><br><h1><a name="ch2">Chapter 2</a></h1>
 <h1>Words</h1>
 
@@ -11,9 +18,9 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Section <a href="chapter2.html#sec2.6">2.6</a> presents tags for verbs which are minimal components for clause layers. Section <a href="chapter2.html#sec2.8">2.8</a> adds other word types that occur under a clause layer. Section <a href="chapter2.html#sec2.9">2.9</a> considers words that serve as connectives to combine layers. Section <a href="chapter2.html#sec2.10">2.10</a> looks at the treatment of punctuation. Section <a href="chapter2.html#sec2.11">2.11</a> deals with interjection, reaction signals, and formulaic expressions. Section <a href="chapter2.html#sec2.12">2.12</a> notes other possible elements of a parse.</p>
 
-<br><h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Beware: Same character string; different word class tag</h3>
+<br><h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Beware: Same character string in a different context with a different tag</h3>
 
-<p align="justify">Section <a href="chapter1.html#sec1.1.2">1.1.2</a> identifies words through the conventions of the English writing system as character strings delimited by a space on each side, while noting exceptions. Word identification is not a complete word analysis: The same character string might be used as a word in different ways in different contexts. Tagging completes the word analysis. For example, <i>down</i> in (<a href="chapter2.html#ex2.1">2.1</a>) occurs as a noun (<tt>N</tt>), adjective (<tt>ADJ</tt>), verb (<tt>VB</tt>), adverb particle (<tt>RP</tt>), and preposition (<tt>P-ROLE</tt>).</p>
+<p align="justify">Section <a href="chapter1.html#sec1.2.1">1.2.1</a> identifies words through the conventions of the English writing system as character strings delimited by a space on each side, while noting exceptions. Word identification is not a complete word analysis: The same character string might be used as a word in different ways in different contexts. Tagging completes the word analysis. For example, <i>down</i> in (<a href="chapter2.html#ex2.1">2.1</a>) occurs as a noun (<tt>N</tt>), adjective (<tt>ADJ</tt>), verb (<tt>VB</tt>), adverb particle (<tt>RP</tt>), and preposition (<tt>P-ROLE</tt>).</p>
 
 <dl><dt>(<a name="ex2.1">2.1</a>)</dt><dd>
 </dd></dl>
@@ -35,13 +42,30 @@
 <p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.2">2.2</a>) occurs as a complementizer (<tt>C</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>), relative pronoun (<tt>RPRO</tt>), and demonstrative (<tt>D;_nphd_</tt>).</p>
 
 <dl><dt>(<a name="ex2.2">2.2</a>)</dt><dd>
-<img src="202_x_buffalo__hope_1_9.png">
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBP;~Tf","hope"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB",<mark>C</mark>,"that"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ",<highlight>D</highlight>,"that"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ",<highlight>N</highlight>,"that"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ","IP-REL","NP-OB1",<highlight>RPRO</highlight>,"that"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ","IP-REL","NP-SBJ",<highlight>D;_nphd_</highlight>,"that"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","NP-SBJ","IP-REL","VBD;~Tn","started"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","MD;~cat_Vi","will"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","IP-INF-CAT","BED;~I","end"</tt><br>
+<tt>"IP-MAT","CP-THT-OB1","IP-SUB","IP-INF-CAT","ADVP-TMP","ADV","soon"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=202_x_buffalo" target="_blank">202_x_buffalo</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">Yet another possible tag for <i>that</i> is as a subordinating conjunction word (<tt>P-CONN</tt>), as seen in (<a href="chapter2.html#ex2.3">2.3</a>).</p>
 
 <dl><dt>(<a name="ex2.3">2.3</a>)</dt><dd>
-<img src="90_a_wilde_2_1888__that_3_2.png">
+<tt>"IP-IMP","VB;~Dn.*","tell"</tt><br>
+<tt>"IP-IMP","NP-OB2","PRO","me"</tt><br>
+<tt>"IP-IMP","PUNC","&lt;comma&gt;"</tt><br>
+<tt>"IP-IMP","PP-SCON-CNT",<mark>P-CONN</mark>,"that"</tt><br>
+<tt>"IP-IMP","PP-SCON-CNT","IP-ADV","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-IMP","PP-SCON-CNT","IP-ADV","MD;~cat_Vi","might"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=90_a_wilde_2_1888" target="_blank">90_a_wilde_2_1888</a>"</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
@@ -136,17 +160,31 @@
 <p align="justify">This marker is placed leftmost under an <tt>NP-GENV</tt> projection that comprises the genitive content. For example:</p>
 
 <dl><dt>(<a name="ex2.10">2.10</a>)</dt><dd>
-<img src="100_lucy_bnc_b33__Wendy_0_2.png">
+<tt>"NP-SBJ",<highlight>NP-GENV</highlight>,"NPR","Wendy"</tt><br>
+<tt>"NP-SBJ",<highlight>NP-GENV</highlight>,<mark>GENM</mark>,"&lt;apos&gt;s"</tt><br>
+<tt>"NP-SBJ","N","boyfriend"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=100_lucy_bnc_b33" target="_blank">100_lucy_bnc_b33</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.11">2.11</a>)</dt><dd>
-<img src="212_christine_t37__hours_3_2.png">
+<tt>"NP-OB1",<highlight>NP-GENV</highlight>,"D","a"</tt><br>
+<tt>"NP-OB1",<highlight>NP-GENV</highlight>,"N","couple"</tt><br>
+<tt>"NP-OB1",<highlight>NP-GENV</highlight>,"PP","P-ROLE","of"</tt><br>
+<tt>"NP-OB1",<highlight>NP-GENV</highlight>,"PP","NP","NS","hours"</tt><br>
+<tt>"NP-OB1",<highlight>NP-GENV</highlight>,<mark>GENM</mark>,"&lt;apos&gt;"</tt><br>
+<tt>"NP-OB1","N","work"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=212_christine_t37" target="_blank">212_christine_t37</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as in (<a href="chapter2.html#ex2.12">2.12</a>).</p>
 
 <dl><dt>(<a name="ex2.12">2.12</a>)</dt><dd>
-<img src="249_christine_t29__Scott_3_1.png">
+<tt>"NP-NSBJ","D","that"</tt><br>
+<tt>"NP-NSBJ","N","microphone"</tt><br>
+<tt>"NP-NSBJ",<highlight>PP-GENV</highlight>,"P-ROLE","of"</tt><br>
+<tt>"NP-NSBJ",<highlight>PP-GENV</highlight>,"NP","NPR","Scott"</tt><br>
+<tt>"NP-NSBJ",<highlight>PP-GENV</highlight>,"NP",<mark>GENM</mark>,"&lt;apos&gt;s"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=249_christine_t29" target="_blank">249_christine_t29</a>"</tt><br>
 </dd></dl>
 
 <br><h3><a name="sec2.2.6">2.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Reciprocal, reflexive, and personal pronouns</h3>
@@ -232,19 +270,32 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each&lowbar;other</i> and <i>one&lowbar;another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.13">2.13</a>).</p>
 
 <dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
-<img src="133_x_blue_book__love_3_1.png">
+<tt>"IP-MAT","NP-SBJ","NLYR","NP","NPR","John"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NLYR","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT","NP-SBJ","NLYR","CONJP","NP","NPR","Mary"</tt><br>
+<tt>"IP-MAT",<mark>VBP;~Tn</mark>,"love"</tt><br>
+<tt>"IP-MAT","NP-OB1",<highlight>PNX</highlight>,"each_other"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=133_x_blue_book" target="_blank">133_x_blue_book</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">Reflexive personal pronouns can indicate that the subject and object are the same entity, as in (<a href="chapter2.html#ex2.14">2.14</a>).</p>
 
 <dl><dt>(<a name="ex2.14">2.14</a>)</dt><dd>
-<img src="322_a_dick_1952__fires_1_1.png">
+<tt>"IP-MAT",<highlight>NP-SBJ;{GUN}</highlight>,"PRO","It"</tt><br>
+<tt>"IP-MAT","VBP;~Tn","fires"</tt><br>
+<tt>"IP-MAT",<highlight>NP-OB1;{GUN}</highlight>,<mark>PNX</mark>,"itself"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=322_a_dick_1952" target="_blank">322_a_dick_1952</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.15">2.15</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
 
 <dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
-<img src="2_lucy_child_09_m73__myself_4_0.png">
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","VBD;~Tn","made"</tt><br>
+<tt>"IP-MAT","NP-OB1","PRO","it"</tt><br>
+<tt>"IP-MAT","ADVP-MNR","ADV","all"</tt><br>
+<tt>"IP-MAT",<highlight>NP-RFL</highlight>,<mark>PNX</mark>,"myself"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=2_lucy_child_09_m73" target="_blank">2_lucy_child_09_m73</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look across the columns of Table <a href="chapter2.html#table2.4">2.4</a> shows that the category of &lsquo;person&rsquo; is useful in differentiating the various reflexive and personal pronouns. The first person refers to the speaker(s), the second person refers to the hearer(s), and the third person refers to other entities. Person is further distinguished into singular and plural reference. Further distinction is possible with third person singular pronouns (reflexive and personal), since they inflect for gender: This gives: masculine <i>he</i>/<i>him(self)</i>/<i>his</i>, feminine <i>she</i>/<i>her(self)</i>/<i>hers</i>, and neuter <i>it(self)</i>/<i>its</i>.</p>
@@ -252,11 +303,16 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look down the rows of Table <a href="chapter2.html#table2.4">2.4</a> shows that pronouns are marked for more grammatical cases than common nouns or proper nouns. In addition to genitive case, pronouns are marked for nominative case (marking the subject of the clause: <i><b><i>I</i></b> shrugged</i>), and accusative case (marking the object acted on by the verb: <i>James tickled <b><i>me</i></b></i>).</p>
 
 <dl><dt>(<a name="ex2.16">2.16</a>)</dt><dd>
-<img src="50_a_loosechange__shrugged_1_0.png">
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,<mark>PRO</mark>,"I"</tt><br>
+<tt>"IP-MAT","VBD;~I","shrugged"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=50_a_loosechange" target="_blank">50_a_loosechange</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.17">2.17</a>)</dt><dd>
-<img src="91_christine_t03__tickled_1_1.png">
+<tt>"IP-MAT","NP-SBJ","NPR","James"</tt><br>
+<tt>"IP-MAT","VBD;~Tn","tickled"</tt><br>
+<tt>"IP-MAT",<highlight>NP-OB1</highlight>,<mark>PRO</mark>,"me"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=91_christine_t03" target="_blank">91_christine_t03</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Genitive pronouns can be either:</p>
@@ -268,7 +324,9 @@
 </ul>
 
 <dl><dt>(<a name="ex2.18">2.18</a>)</dt><dd>
-<img src="10_lucy_child_09_m51__our_0_1.png">
+<tt>"NP",<highlight>NP-GENV</highlight>,<mark>PRO;_genm_</mark>,"our"</tt><br>
+<tt>"NP","NS","friends"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_lucy_child_09_m51" target="_blank">10_lucy_child_09_m51</a>"</tt><br>
 </dd></dl>
 
 <ul>
@@ -278,7 +336,10 @@
 </ul>
 
 <dl><dt>(<a name="ex2.19">2.19</a>)</dt><dd>
-<img src="468_christine_t13__theirs_2_0.png">
+<tt>"IP-MAT","NP-SBJ","PRO","it"</tt><br>
+<tt>"IP-MAT","BEP;~Ln","&lt;apos&gt;s"</tt><br>
+<tt>"IP-MAT","NP-PRD2",<highlight>NP-GENV</highlight>,<mark>PRO;_ppge_</mark>,"theirs"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=468_christine_t13" target="_blank">468_christine_t13</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">As shown by examples (<a href="chapter2.html#ex2.18">2.18</a>) and (<a href="chapter2.html#ex2.19">2.19</a>), with parsing, a genitive pronoun (dependent (<tt>PRO;_genm_</tt>) or independent (<tt>PRO;_ppge_</tt>)) is the only element of an <tt>NP-GENV</tt> layer. Furthermore, for <tt>PRO;_ppge_</tt>, the <tt>NP-GENV</tt> layer is the only element of the containing noun phrase.</p>
@@ -294,11 +355,19 @@
 </ul>
 
 <dl><dt>(<a name="ex2.20">2.20</a>)</dt><dd>
-<img src="712_x_kisonihongo__Who_0_2.png">
+<tt>"CP-QUE","IP-SUB",<highlight>NP-SBJ</highlight>,<mark>WPRO</mark>,"Who"</tt><br>
+<tt>"CP-QUE","IP-SUB","VBD;~I","came"</tt><br>
+<tt>"CP-QUE","PUNC","?"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=712_x_kisonihongo" target="_blank">712_x_kisonihongo</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.21">2.21</a>)</dt><dd>
-<img src="131_susanne_n14__What_0_4.png">
+<tt>"CP-QUE","IP-SUB",<highlight>NP-OB1</highlight>,<mark>WPRO</mark>,"What"</tt><br>
+<tt>"CP-QUE","IP-SUB","DOD","did"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","it"</tt><br>
+<tt>"CP-QUE","IP-SUB","VB;~Tn","mean"</tt><br>
+<tt>"CP-QUE","PUNC","?"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=131_susanne_n14" target="_blank">131_susanne_n14</a>"</tt><br>
 </dd></dl>
 
 <ul>
@@ -308,11 +377,21 @@
 </ul>
 
 <dl><dt>(<a name="ex2.22">2.22</a>)</dt><dd>
-<img src="88_christine_t29__that_1_2.png">
+<tt>"NP","Q;_nphd_","anything"</tt><br>
+<tt>"NP","IP-REL",<highlight>NP-SBJ</highlight>,<mark>RPRO</mark>,"that"</tt><br>
+<tt>"NP","IP-REL","BEP;~La","&lt;apos&gt;s"</tt><br>
+<tt>"NP","IP-REL","ADJP-PRD2","ADJ","relevant"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=88_christine_t29" target="_blank">88_christine_t29</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.23">2.23</a>)</dt><dd>
-<img src="38_susanne_n12__which_3_2.png">
+<tt>"NP-SBJ","D","an"</tt><br>
+<tt>"NP-SBJ","N","iron"</tt><br>
+<tt>"NP-SBJ","N;@3","hook"</tt><br>
+<tt>"NP-SBJ","IP-REL",<highlight>NP-OB1</highlight>,<mark>RPRO</mark>,"which"</tt><br>
+<tt>"NP-SBJ","IP-REL","NP-SBJ","PRO","he"</tt><br>
+<tt>"NP-SBJ","IP-REL","VBD;~Tn","unfastened"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_susanne_n12" target="_blank">38_susanne_n12</a>"</tt><br>
 </dd></dl>
 
 <ul>
@@ -322,19 +401,30 @@
 </ul>
 
 <dl><dt>(<a name="ex2.24">2.24</a>)</dt><dd>
-<img src="80_susanne_g17__everyone_1_1.png">
+<tt>"PP-SCON","P-CONN","as"</tt><br>
+<tt>"PP-SCON","IP-ADV","NP-SBJ",<mark>Q;_nphd_</mark>,"everyone"</tt><br>
+<tt>"PP-SCON","IP-ADV","VBP;~I","knows"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=80_susanne_g17" target="_blank">80_susanne_g17</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.25">2.25</a>)</dt><dd>
-<img src="51_a_ted_talk_11__nobody_0_1.png">
+<tt>"IP-MAT","NP-SBJ",<mark>Q;_nphd_</mark>,"nobody"</tt><br>
+<tt>"IP-MAT","VBP;~Tf","knows"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=51_a_ted_talk_11" target="_blank">51_a_ted_talk_11</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.26">2.26</a>)</dt><dd>
-<img src="90_a_ibm_1401__all_0_2.png">
+<tt>"NP-OB1",<mark>Q;_nphd_</mark>,"all"</tt><br>
+<tt>"NP-OB1","PP","P-ROLE","of"</tt><br>
+<tt>"NP-OB1","PP","NP;{SERVICES}","PRO","them"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=90_a_ibm_1401" target="_blank">90_a_ibm_1401</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.27">2.27</a>)</dt><dd>
-<img src="499_christine_t03__none_0_2.png">
+<tt>"NP-SBJ",<mark>Q;_nphd_</mark>,"none"</tt><br>
+<tt>"NP-SBJ","PP","P-ROLE","of"</tt><br>
+<tt>"NP-SBJ","PP","NP","PRO","them"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=499_christine_t03" target="_blank">499_christine_t03</a>"</tt><br>
 </dd></dl>
 
 <ul>
@@ -344,19 +434,33 @@
 </ul>
 
 <dl><dt>(<a name="ex2.28">2.28</a>)</dt><dd>
-<img src="57_christine_t28__somebody_1_1.png">
+<tt>"PP-SCON-CNT","P-CONN","in_case"</tt><br>
+<tt>"PP-SCON-CNT","IP-ADV","NP-SBJ",<mark>D;_nphd_</mark>,"somebody"</tt><br>
+<tt>"PP-SCON-CNT","IP-ADV","VBP;~I","comes"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=57_christine_t28" target="_blank">57_christine_t28</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.29">2.29</a>)</dt><dd>
-<img src="26_susanne_a12__them_2_0.png">
+<tt>"NP-SBJ",<mark>D;_nphd_</mark>,"some"</tt><br>
+<tt>"NP-SBJ","PP","P-ROLE","of"</tt><br>
+<tt>"NP-SBJ","PP","NP","PRO","them"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=26_susanne_a12" target="_blank">26_susanne_a12</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.30">2.30</a>)</dt><dd>
-<img src="27_susanne_g12__one_1_2.png">
+<tt>"PP-SCON","P-CONN","as"</tt><br>
+<tt>"PP-SCON","IP-ADV","NP-SBJ",<mark>D;_nphd_</mark>,"one"</tt><br>
+<tt>"PP-SCON","IP-ADV","MD;~cat_Vi","would"</tt><br>
+<tt>"PP-SCON","IP-ADV","IP-INF-CAT","VB;~I","expect"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=27_susanne_g12" target="_blank">27_susanne_g12</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.31">2.31</a>)</dt><dd>
-<img src="217_a_ted_talk_11__you_1_2.png">
+<tt>"PP-SCON-MOD","P-CONN","as"</tt><br>
+<tt>"PP-SCON-MOD","IP-ADV","NP-SBJ",<mark>PRO</mark>,"you"</tt><br>
+<tt>"PP-SCON-MOD","IP-ADV","MD;~cat_Vi","can"</tt><br>
+<tt>"PP-SCON-MOD","IP-ADV","IP-INF-CAT","VB;~I","see"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=217_a_ted_talk_11" target="_blank">217_a_ted_talk_11</a>"</tt><br>
 </dd></dl>
 
 <ul>
@@ -366,15 +470,26 @@
 </ul>
 
 <dl><dt>(<a name="ex2.32">2.32</a>)</dt><dd>
-<img src="558_christine_t35__that_4_0.png">
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","DOP","do"</tt><br>
+<tt>"IP-MAT","NEG;_clitic_","n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT","VB;~Tn","want"</tt><br>
+<tt>"IP-MAT","NP-OB1",<mark>D;_nphd_</mark>,"that"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=558_christine_t35" target="_blank">558_christine_t35</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.33">2.33</a>)</dt><dd>
-<img src="172_christine_t16__these_3_0.png">
+<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT","MD;~cat_Vi","&lt;apos&gt;ll"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","HV;~Tn","have"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT",<mark>NP-OB1</mark>,"D;_nphd_","these"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=172_christine_t16" target="_blank">172_christine_t16</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.34">2.34</a>)</dt><dd>
-<img src="5_lucy_student_e16__this_0_1.png">
+<tt>"NP-OB1",<mark>D</mark>,"this"</tt><br>
+<tt>"NP-OB1","N","point"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_lucy_student_e16" target="_blank">5_lucy_student_e16</a>"</tt><br>
 </dd></dl>
 
 <p><a name="table2.5">Table 2.5: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a></p>
@@ -786,13 +901,27 @@
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.36">2.36</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.2.5">8.2.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
 
 <dl><dt>(<a name="ex2.36">2.36</a>)</dt><dd>
-<img src="143_lucy_bnc_c08__incidents_4_5.png">
+<tt>"IP-MAT",<mark>EX</mark>,"There"</tt><br>
+<tt>"IP-MAT","BED;~ex_cat_Vt","were"</tt><br>
+<tt>"IP-MAT",<highlight>NEG;_clitic_</highlight>,"n&lt;apos&gt;t"</tt><br>
+<tt>"IP-MAT","NP-ESBJ","Q","any"</tt><br>
+<tt>"IP-MAT","NP-ESBJ","NS","incidents"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT",<highlight>TO</highlight>,"to"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","VB;~Ipr","get"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","PP-LOC","P-ROLE","in"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","PP-LOC","NP","D","the"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","PP-LOC","NP","N","way"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=143_lucy_bnc_c08" target="_blank">143_lucy_bnc_c08</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a word tagged <tt>RP</tt> to occur as a clause level component. The <tt>RP</tt> tag is used to mark adverbial particles (e.g., <i>up</i>, <i>off</i>, <i>out</i>) and was seen in section <a href="chapter2.html#sec2.4">2.4</a> as the tag for a word that can head an adverb phrase. When an <tt>RP</tt> tagged word occurs as a clause level component it is part of a phrasal verb, as in (<a href="chapter2.html#ex2.37">2.37</a>).</p>
 
 <dl><dt>(<a name="ex2.37">2.37</a>)</dt><dd>
-<img src="33_christine_t28__on_1_2.png">
+<tt>"IP-MAT","VBP;~phr_Vp","hold"</tt><br>
+<tt>"IP-MAT",<mark>RP</mark>,"on"</tt><br>
+<tt>"IP-MAT","NP-TMP","D","a"</tt><br>
+<tt>"IP-MAT","NP-TMP","N","second"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=33_christine_t28" target="_blank">33_christine_t28</a>"</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;&nbsp;Connective words</h2>
@@ -840,11 +969,20 @@
 </table>
 
 <dl><dt>(<a name="ex2.38">2.38</a>)</dt><dd>
-<img src="19_lucy_bnc_b19__no_2_3.png">
+<tt>"FRAG",<mark>INTJ</mark>,"Well"</tt><br>
+<tt>"FRAG","PUNC","&lt;comma&gt;"</tt><br>
+<tt>"FRAG",<highlight>REACT</highlight>,"no"</tt><br>
+<tt>"FRAG","PUNC","&lt;comma&gt;"</tt><br>
+<tt>"FRAG","ADVP-MOD","ADV","of_course"</tt><br>
+<tt>"FRAG","NEG","not"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_lucy_bnc_b19" target="_blank">19_lucy_bnc_b19</a>"</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.39">2.39</a>)</dt><dd>
-<img src="43_a_ted_talk_11__Thank_you_0_2.png">
+<tt>"FRAG",<mark>FRM</mark>,"Thank_you"</tt><br>
+<tt>"FRAG","NP-MNR","ADJP","ADVP","ADV","very"</tt><br>
+<tt>"FRAG","NP-MNR","ADJP","ADJ","much"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_a_ted_talk_11" target="_blank">43_a_ted_talk_11</a>"</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.12">2.12</a>&nbsp;&nbsp;&nbsp;&nbsp;Other tags</h2>
