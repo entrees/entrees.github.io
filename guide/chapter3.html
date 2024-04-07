@@ -356,9 +356,35 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=107_lucy_bnc_b41" target="_blank">107_lucy_bnc_b41</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">Another example of (i) is (<a href="chapter3.html#ex3.20">3.20</a>), with its preposition phrase modifier <i>in aid</i> of the nominal modifier <i>grant</i>.</p>
+<p align="justify">Another example of (i) is (<a href="chapter3.html#ex3.20">3.20</a>) where a noun modifier occurs before an adjective phrase modifier:</p>
 
 <dl><dt>(<a name="ex3.20">3.20</a>)</dt><dd>
+<tt>"NP-SBJ","D","The"</tt><br>
+<tt>"NP-SBJ",<mark>NLYR</mark>,"N","e"</tt><br>
+<tt>"NP-SBJ",<mark>NLYR</mark>,"PUNC","&lt;hyphen&gt;"</tt><br>
+<tt>"NP-SBJ",<mark>NLYR</mark>,"N","commerce"</tt><br>
+<tt>"NP-SBJ","ADJP","ADJ","free"</tt><br>
+<tt>"NP-SBJ","N","zone"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=8_a_artb_4_a1_e1" target="_blank">8_a_artb_4_a1_e1</a>"</tt><br>
+</dd></dl>
+
+<p align="justify">Another example of (i) is (<a href="#ex__ID&#64;98_a_alresford&#64;4,7__">__ID&#64;98_a_alresford&#64;4,7__</a>) which has multiple noun modifiers that are nouns under <tt>NLYR</tt> layers:</p>
+
+<dl><dt>(<a name="ex3.21">3.21</a>)</dt><dd>
+<tt>"NP-OB1","D","an"</tt><br>
+<tt>"NP-OB1",<mark>NLYR</mark>,"N","International"</tt><br>
+<tt>"NP-OB1",<highlight>NLYR</highlight>,"N","TV"</tt><br>
+<tt>"NP-OB1",<highlight>NLYR</highlight>,"N;@2","Movie"</tt><br>
+<tt>"NP-OB1","N","Award"</tt><br>
+<tt>"NP-OB1","PP","P-ROLE","for"</tt><br>
+<tt>"NP-OB1","PP","NP","NPR","Best"</tt><br>
+<tt>"NP-OB1","PP","NP","NPR;@2","Drama"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=98_a_alresford" target="_blank">98_a_alresford</a>"</tt><br>
+</dd></dl>
+
+<p align="justify">Yet another example of (i) is (<a href="chapter3.html#ex3.22">3.22</a>), with its preposition phrase modifier <i>in aid</i> of the nominal modifier <i>grant</i>.</p>
+
+<dl><dt>(<a name="ex3.22">3.22</a>)</dt><dd>
 <tt>"NP","D","a"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,"N","grant"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,"PP","P-ROLE","in"</tt><br>
@@ -369,7 +395,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">This use of <tt>NLYR</tt> can be recursive:</p>
 
-<dl><dt>(<a name="ex3.21">3.21</a>)</dt><dd>
+<dl><dt>(<a name="ex3.23">3.23</a>)</dt><dd>
 <tt>"NP","D","the"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NUM","2"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"PUNC","&lt;hyphen&gt;"</tt><br>
@@ -380,7 +406,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=62_susanne_a13" target="_blank">62_susanne_a13</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.22">3.22</a>)</dt><dd>
+<dl><dt>(<a name="ex3.24">3.24</a>)</dt><dd>
 <tt>"NP-OB1",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"ADJP","AJLYR","ADJP","ADJ","middle"</tt><br>
 <tt>"NP-OB1",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"ADJP","AJLYR","PUNC","&lt;mdash&gt;"</tt><br>
 <tt>"NP-OB1",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"ADJP","AJLYR","CONJP","CONJ","and"</tt><br>
@@ -392,9 +418,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=56_susanne_j22" target="_blank">56_susanne_j22</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">Further scenarios for (i) are (<a href="chapter3.html#ex3.23">3.23</a>) and (<a href="chapter3.html#ex3.24">3.24</a>). These illustrate how an <tt>NLYR</tt> layer can be used to isolate noun phrase content for modification by a quantifier.</p>
+<p align="justify">Further scenarios for (i) are (<a href="chapter3.html#ex3.25">3.25</a>) and (<a href="chapter3.html#ex3.26">3.26</a>). These illustrate how an <tt>NLYR</tt> layer can be used to isolate noun phrase content for modification by a quantifier.</p>
 
-<dl><dt>(<a name="ex3.23">3.23</a>)</dt><dd>
+<dl><dt>(<a name="ex3.25">3.25</a>)</dt><dd>
 <tt>"NP-PRD2","NUM","one"</tt><br>
 <tt>"NP-PRD2","PP","P-ROLE","in"</tt><br>
 <tt>"NP-PRD2","PP","NP","Q;_nphd_","every"</tt><br>
@@ -403,7 +429,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=27_a_duplex" target="_blank">27_a_duplex</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.24">3.24</a>)</dt><dd>
+<dl><dt>(<a name="ex3.26">3.26</a>)</dt><dd>
 <tt>"NP-PRD2",<mark>Q;_nphd_</mark>,"all"</tt><br>
 <tt>"NP-PRD2","NLYR","D","the"</tt><br>
 <tt>"NP-PRD2","NLYR","ADJP","ADVP","ADV","really"</tt><br>
@@ -414,7 +440,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Another example of <tt>NLYR</tt> use:</p>
 
-<dl><dt>(<a name="ex3.25">3.25</a>)</dt><dd>
+<dl><dt>(<a name="ex3.27">3.27</a>)</dt><dd>
 <tt>"NP","D","the"</tt><br>
 <tt>"NP","ADJP","ADJ","main"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,"NPR","Swafford"</tt><br>
@@ -424,7 +450,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=2_a_maptext" target="_blank">2_a_maptext</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.26">3.26</a>)</dt><dd>
+<dl><dt>(<a name="ex3.28">3.28</a>)</dt><dd>
 <tt>"NP-OB1","D","the"</tt><br>
 <tt>"NP-OB1","PULQ","&lt;lsquo&gt;"</tt><br>
 <tt>"NP-OB1",<mark>NLYR</mark>,"ADVP","ADV","Back"</tt><br>
@@ -438,7 +464,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_lucy_student_e95" target="_blank">13_lucy_student_e95</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.27">3.27</a>)</dt><dd>
+<dl><dt>(<a name="ex3.29">3.29</a>)</dt><dd>
 <tt>"NP",<highlight>NLYR</highlight>,"N","State"</tt><br>
 <tt>"NP",<highlight>NLYR</highlight>,"N;@2","Highway"</tt><br>
 <tt>"NP",<highlight>NLYR</highlight>,"N","Department"</tt><br>
@@ -448,7 +474,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=49_susanne_a01" target="_blank">49_susanne_a01</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.28">3.28</a>)</dt><dd>
+<dl><dt>(<a name="ex3.30">3.30</a>)</dt><dd>
 <tt>"NP","D","the"</tt><br>
 <tt>"NP","NUM","first"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,"NUM","two"</tt><br>
@@ -468,9 +494,9 @@ highlight { background-color: palegreen; }
 <tr><td><tt>CONJP</tt></td><td>conjunction phrase</td></tr>
 </table>
 
-<p align="justify"><tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as illustrated in (<a href="chapter3.html#ex3.29">3.29</a>).</p>
+<p align="justify"><tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as illustrated in (<a href="chapter3.html#ex3.31">3.31</a>).</p>
 
-<dl><dt>(<a name="ex3.29">3.29</a>)</dt><dd>
+<dl><dt>(<a name="ex3.31">3.31</a>)</dt><dd>
 <tt>"NP","NUM","four"</tt><br>
 <tt>"NP","NS","rooms"</tt><br>
 <tt>"NP","ADVP-LOC","ADV","downstairs"</tt><br>
@@ -494,11 +520,11 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=8_lucy_child_09_m59" target="_blank">8_lucy_child_09_m59</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">Example (<a href="chapter3.html#ex3.29">3.29</a>) also shows how conjuncts can themselves contain conjuncts. Such LAYERED conjunction is easiest to identify when different coordinators are used at each level, as with <i>and</i> and <i>or</i> in (<a href="chapter3.html#ex3.29">3.29</a>). Placement choices with layered conjunction will have consequences for the meaning captured by the annotation when different coordinators are involved.</p>
+<p align="justify">Example (<a href="chapter3.html#ex3.31">3.31</a>) also shows how conjuncts can themselves contain conjuncts. Such LAYERED conjunction is easiest to identify when different coordinators are used at each level, as with <i>and</i> and <i>or</i> in (<a href="chapter3.html#ex3.31">3.31</a>). Placement choices with layered conjunction will have consequences for the meaning captured by the annotation when different coordinators are involved.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If there is a <tt>CONJ</tt> that starts the sequence of conjunctions, then this initial <tt>CONJ</tt> is placed at the <tt>NLYR</tt> layer, as illustrated in (<a href="chapter3.html#ex3.30">3.30</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If there is a <tt>CONJ</tt> that starts the sequence of conjunctions, then this initial <tt>CONJ</tt> is placed at the <tt>NLYR</tt> layer, as illustrated in (<a href="chapter3.html#ex3.32">3.32</a>).</p>
 
-<dl><dt>(<a name="ex3.30">3.30</a>)</dt><dd>
+<dl><dt>(<a name="ex3.32">3.32</a>)</dt><dd>
 <tt>"IP-PPL-CAT","VAG","entrusting"</tt><br>
 <tt>"IP-PPL-CAT","NP-OB1","NLYR",<mark>NEG</mark>,"not"</tt><br>
 <tt>"IP-PPL-CAT","NP-OB1","NLYR",<highlight>ADVP-MOD</highlight>,"ADV","only"</tt><br>
@@ -513,9 +539,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_a_lob_n01" target="_blank">3_a_lob_n01</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">Example (<a href="chapter3.html#ex3.30">3.30</a>) also shows how an <tt>ADVP-MOD</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-MOD</tt> or <tt>ADVP-CNT</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="chapter3.html#ex3.31">3.31</a>) and (<a href="chapter3.html#ex3.32">3.32</a>),</p>
+<p align="justify">Example (<a href="chapter3.html#ex3.32">3.32</a>) also shows how an <tt>ADVP-MOD</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-MOD</tt> or <tt>ADVP-CNT</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="chapter3.html#ex3.33">3.33</a>) and (<a href="chapter3.html#ex3.34">3.34</a>),</p>
 
-<dl><dt>(<a name="ex3.31">3.31</a>)</dt><dd>
+<dl><dt>(<a name="ex3.33">3.33</a>)</dt><dd>
 <tt>"NLYR","NP","D","The"</tt><br>
 <tt>"NLYR","NP","N","volume"</tt><br>
 <tt>"NLYR","CONJP",<mark>CONJ</mark>,"and"</tt><br>
@@ -533,7 +559,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=34_susanne_j12" target="_blank">34_susanne_j12</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.32">3.32</a>)</dt><dd>
+<dl><dt>(<a name="ex3.34">3.34</a>)</dt><dd>
 <tt>"PP-CLR","P-ROLE","in"</tt><br>
 <tt>"PP-CLR","NP","NLYR","NP","D","a"</tt><br>
 <tt>"PP-CLR","NP","NLYR","NP","ADJP","ADVP","ADVR","more"</tt><br>
@@ -550,9 +576,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lucy_student_e93" target="_blank">6_lucy_student_e93</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the cases of <tt>NLYR</tt> with coordination seen so far the <tt>NLYR</tt> itself forms the head of the overall noun phrase that contains it, with nothing else outside this complex head. It is also possible for a complex head involving coordination to itself be modified, as (<a href="chapter3.html#ex3.33">3.33</a>) demonstrates.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the cases of <tt>NLYR</tt> with coordination seen so far the <tt>NLYR</tt> itself forms the head of the overall noun phrase that contains it, with nothing else outside this complex head. It is also possible for a complex head involving coordination to itself be modified, as (<a href="chapter3.html#ex3.35">3.35</a>) demonstrates.</p>
 
-<dl><dt>(<a name="ex3.33">3.33</a>)</dt><dd>
+<dl><dt>(<a name="ex3.35">3.35</a>)</dt><dd>
 <tt>"NP","D","the"</tt><br>
 <tt>"NP","ADJP","ADJ","environmental"</tt><br>
 <tt>"NP",<mark>NLYR</mark>,"NP","NS","issues"</tt><br>
@@ -565,9 +591,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1_lucy_student_e13" target="_blank">1_lucy_student_e13</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The modifier of a head noun can itself involve noun phrase coordination internally, as (<a href="chapter3.html#ex3.34">3.34</a>) and (<a href="chapter3.html#ex3.36">3.36</a>) illustrate. In such cases there is an NLYR layer to introduce the modifier that immediately contains as its only daughter an NLYR layer that contains the coordination.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The modifier of a head noun can itself involve noun phrase coordination internally, as (<a href="chapter3.html#ex3.36">3.36</a>) and (<a href="chapter3.html#ex3.38">3.38</a>) illustrate. In such cases there is an NLYR layer to introduce the modifier that immediately contains as its only daughter an NLYR layer that contains the coordination.</p>
 
-<dl><dt>(<a name="ex3.34">3.34</a>)</dt><dd>
+<dl><dt>(<a name="ex3.36">3.36</a>)</dt><dd>
 <tt>"NP-SBJ","D","a"</tt><br>
 <tt>"NP-SBJ",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NP","N","mouse"</tt><br>
 <tt>"NP-SBJ",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"CONJP","CONJ","and"</tt><br>
@@ -576,7 +602,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=22_a_freedoom" target="_blank">22_a_freedoom</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.35">3.35</a>)</dt><dd>
+<dl><dt>(<a name="ex3.37">3.37</a>)</dt><dd>
 <tt>"NLYR","NP","ADVP","ADV","about"</tt><br>
 <tt>"NLYR","NP","N","number"</tt><br>
 <tt>"NLYR","NP",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NP","NUM","two"</tt><br>
@@ -589,7 +615,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=365_christine_t08" target="_blank">365_christine_t08</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.36">3.36</a>)</dt><dd>
+<dl><dt>(<a name="ex3.38">3.38</a>)</dt><dd>
 <tt>"NP-SBJ",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NP","ADJP","ADVP","ADVP","ADV","Even"</tt><br>
 <tt>"NP-SBJ",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NP","ADJP","ADVP","ADVR","more"</tt><br>
 <tt>"NP-SBJ",<mark>NLYR</mark>,<highlight>NLYR</highlight>,"NP","ADJP","ADJ","complex"</tt><br>
@@ -605,11 +631,11 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_susanne_j17" target="_blank">4_susanne_j17</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note how the conjuncts of the internal noun phrase coordination that is a head noun modifier in (<a href="chapter3.html#ex3.36">3.36</a>) actually contain respectively: only (i) an adjective phrase, and (ii) a participial clause. The level of noun phrase for these conjuncts is motivated by the need for all conjuncts of a conjunction to be phrases of the same type.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note how the conjuncts of the internal noun phrase coordination that is a head noun modifier in (<a href="chapter3.html#ex3.38">3.38</a>) actually contain respectively: only (i) an adjective phrase, and (ii) a participial clause. The level of noun phrase for these conjuncts is motivated by the need for all conjuncts of a conjunction to be phrases of the same type.</p>
 
 <br><h3><a name="sec3.2.5">3.2.5</a>&nbsp;&nbsp;&nbsp;&nbsp;PRN inside noun phrases</h3>
 
-<dl><dt>(<a name="ex3.37">3.37</a>)</dt><dd>
+<dl><dt>(<a name="ex3.39">3.39</a>)</dt><dd>
 <tt>"NP-SBJ","NP-GENV","PRO;_genm_","its"</tt><br>
 <tt>"NP-SBJ","N","coverage"</tt><br>
 <tt>"NP-SBJ","PUNC","&lt;mdash&gt;"</tt><br>
@@ -628,7 +654,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=82_lucy_bnc_b07" target="_blank">82_lucy_bnc_b07</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.38">3.38</a>)</dt><dd>
+<dl><dt>(<a name="ex3.40">3.40</a>)</dt><dd>
 <tt>"NP","NUM","ones"</tt><br>
 <tt>"NP","PP","P-ROLE","in"</tt><br>
 <tt>"NP","PP","NP","NLYR","NLYR","NP","N","export"</tt><br>
@@ -645,9 +671,9 @@ highlight { background-color: palegreen; }
 
 <br><h3><a name="sec3.2.6">3.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;NP functions</h3>
 
-<p align="justify">The notion of function helps to establish how a given <tt>NP</tt> acts as a single unit (constituent) regardless of size. Thus, the large (<a href="chapter3.html#ex3.2">3.2</a>) above can be seen as a subject (<tt>NP-SBJ</tt>) in (<a href="chapter3.html#ex3.39">3.39</a>) or object (<tt>NP-OB1</tt>) in (<a href="chapter3.html#ex3.41">3.41</a>) in a similar way to a <tt>NP</tt> with fewer elements, e.g, a head noun with definite article, or a pronoun as the single phrase element.</p>
+<p align="justify">The notion of function helps to establish how a given <tt>NP</tt> acts as a single unit (constituent) regardless of size. Thus, the large (<a href="chapter3.html#ex3.2">3.2</a>) above can be seen as a subject (<tt>NP-SBJ</tt>) in (<a href="chapter3.html#ex3.41">3.41</a>) or object (<tt>NP-OB1</tt>) in (<a href="chapter3.html#ex3.43">3.43</a>) in a similar way to a <tt>NP</tt> with fewer elements, e.g, a head noun with definite article, or a pronoun as the single phrase element.</p>
 
-<dl><dt>(<a name="ex3.39">3.39</a>)</dt><dd>
+<dl><dt>(<a name="ex3.41">3.41</a>)</dt><dd>
 
 <dl>
 
@@ -660,7 +686,7 @@ highlight { background-color: palegreen; }
 </dl>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.41">3.41</a>)</dt><dd>
+<dl><dt>(<a name="ex3.43">3.43</a>)</dt><dd>
 
 <dl>
 
@@ -673,9 +699,9 @@ highlight { background-color: palegreen; }
 </dl>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The examples of (<a href="chapter3.html#ex3.43">3.43</a>) show that the same noun phrase (<i>that way</i>) is able to take on various different functions depending on its contribution to the containing clause.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The examples of (<a href="chapter3.html#ex3.45">3.45</a>) show that the same noun phrase (<i>that way</i>) is able to take on various different functions depending on its contribution to the containing clause.</p>
 
-<dl><dt>(<a name="ex3.43">3.43</a>)</dt><dd>
+<dl><dt>(<a name="ex3.45">3.45</a>)</dt><dd>
 
 <dl>
 
@@ -702,7 +728,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>NP-GENV</tt></td><td>genitive noun phrase</td></tr>
 </table>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might be a vocative with the tag of Table <a href="chapter3.html#table3.29">3.29</a>, as in (<a href="chapter3.html#ex3.45">3.45</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might be a vocative with the tag of Table <a href="chapter3.html#table3.29">3.29</a>, as in (<a href="chapter3.html#ex3.47">3.47</a>).</p>
 
 <p><a name="table3.29">Table 3.29: Tag for vocative noun phrase</a></p>
 
@@ -710,9 +736,9 @@ highlight { background-color: palegreen; }
 <tr><td><tt>NP-VOC</tt></td><td>vocative noun phrase</td></tr>
 </table>
 
-<p align="justify">A vocative noun phrase is a noun phrase which directly addresses someone, e.g., <i>Summers</i> in (<a href="chapter3.html#ex3.45">3.45</a>) and <i>Rebecca</i> in (<a href="chapter3.html#ex3.46">3.46</a>).</p>
+<p align="justify">A vocative noun phrase is a noun phrase which directly addresses someone, e.g., <i>Summers</i> in (<a href="chapter3.html#ex3.47">3.47</a>) and <i>Rebecca</i> in (<a href="chapter3.html#ex3.48">3.48</a>).</p>
 
-<dl><dt>(<a name="ex3.45">3.45</a>)</dt><dd>
+<dl><dt>(<a name="ex3.47">3.47</a>)</dt><dd>
 <tt>"FRAG","NP","NUM","One"</tt><br>
 <tt>"FRAG","NP","N","thing"</tt><br>
 <tt>"FRAG","PUNC","&lt;comma&gt;"</tt><br>
@@ -720,7 +746,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_susanne_n12" target="_blank">12_susanne_n12</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.46">3.46</a>)</dt><dd>
+<dl><dt>(<a name="ex3.48">3.48</a>)</dt><dd>
 <tt>"IP-MAT","ADVP-CNT","ADV","so"</tt><br>
 <tt>"IP-MAT",<mark>NP-VOC;{REBECCA}</mark>,"NPR","Rebecca"</tt><br>
 <tt>"IP-MAT",<mark>NP-VOC;{REBECCA}</mark>,"NPR;@2","&lt;name&gt;"</tt><br>
@@ -734,7 +760,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">See section <a href="chapter4.html#sec4.2.3">4.2.3</a> for discussion on <tt>NP-VOC</tt> in imperative sentences.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Finally, an <tt>NP</tt> might be a reflexive with the tag of Table <a href="chapter3.html#table3.30">3.30</a>, as in (<a href="chapter3.html#ex3.47">3.47</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Finally, an <tt>NP</tt> might be a reflexive with the tag of Table <a href="chapter3.html#table3.30">3.30</a>, as in (<a href="chapter3.html#ex3.49">3.49</a>).</p>
 
 <p><a name="table3.30">Table 3.30: Tag for reflexive noun phrase</a></p>
 
@@ -742,7 +768,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>NP-RFL</tt></td><td>reflexive noun phrase</td></tr>
 </table>
 
-<dl><dt>(<a name="ex3.47">3.47</a>)</dt><dd>
+<dl><dt>(<a name="ex3.49">3.49</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","PRO","we"</tt><br>
 <tt>"IP-MAT","BEP;~cat_Vg","&lt;apos&gt;re"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","VAG;~cat_Vt","gon"</tt><br>
@@ -791,13 +817,13 @@ highlight { background-color: palegreen; }
 
 </ul>
 
-<dl><dt>(<a name="ex3.48">3.48</a>)</dt><dd>
+<dl><dt>(<a name="ex3.50">3.50</a>)</dt><dd>
 <tt>"ADJP-PRD2",<highlight>ADVP</highlight>,"ADV","so"</tt><br>
 <tt>"ADJP-PRD2",<mark>ADJ</mark>,"important"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_a_goodwill" target="_blank">4_a_goodwill</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.49">3.49</a>)</dt><dd>
+<dl><dt>(<a name="ex3.51">3.51</a>)</dt><dd>
 <tt>"ADJP-PRD2",<mark>ADJ</mark>,"easy"</tt><br>
 <tt>"ADJP-PRD2",<highlight>ADVP</highlight>,"ADV","enough"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=152_a_wilde_1_1888" target="_blank">152_a_wilde_1_1888</a>"</tt><br>
@@ -809,7 +835,7 @@ highlight { background-color: palegreen; }
 
 </ul>
 
-<dl><dt>(<a name="ex3.50">3.50</a>)</dt><dd>
+<dl><dt>(<a name="ex3.52">3.52</a>)</dt><dd>
 <tt>"ADJP",<highlight>ADVP</highlight>,"ADV","very"</tt><br>
 <tt>"ADJP",<highlight>ADVP;@2</highlight>,"ADV","very"</tt><br>
 <tt>"ADJP",<mark>ADJ</mark>,"rude"</tt><br>
@@ -822,13 +848,13 @@ highlight { background-color: palegreen; }
 
 </ul>
 
-<dl><dt>(<a name="ex3.51">3.51</a>)</dt><dd>
+<dl><dt>(<a name="ex3.53">3.53</a>)</dt><dd>
 <tt>"ADJP",<highlight>NP</highlight>,"Q;_nphd_","a_bit"</tt><br>
 <tt>"ADJP",<mark>ADJR</mark>,"more"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=114_christine_t25" target="_blank">114_christine_t25</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.52">3.52</a>)</dt><dd>
+<dl><dt>(<a name="ex3.54">3.54</a>)</dt><dd>
 <tt>"ADJP",<mark>ADJ</mark>,"aged"</tt><br>
 <tt>"ADJP",<highlight>NP</highlight>,"NUM","sixty_&lt;hyphen&gt;_five"</tt><br>
 <tt>"ADJP",<highlight>NP</highlight>,"NS","years"</tt><br>
@@ -841,22 +867,22 @@ highlight { background-color: palegreen; }
 
 </ul>
 
-<dl><dt>(<a name="ex3.53">3.53</a>)</dt><dd>
+<dl><dt>(<a name="ex3.55">3.55</a>)</dt><dd>
 <tt>"ADJP-PRD2",<mark>ADJ</mark>,"free"</tt><br>
 <tt>"ADJP-PRD2",<highlight>PP</highlight>,"P-ROLE","from"</tt><br>
 <tt>"ADJP-PRD2",<highlight>PP</highlight>,"NP","N","difficulty"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=56_lucy_bnc_b28" target="_blank">56_lucy_bnc_b28</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.54">3.54</a>)</dt><dd>
-<tt>"ADJP-PRD2",<mark>ADJ</mark>,"able"</tt><br>
+<dl><dt>(<a name="ex3.56">3.56</a>)</dt><dd>
+<tt>"ADJP-PRD2",<mark>ADJ;_cat_</mark>,"able"</tt><br>
 <tt>"ADJP-PRD2",<highlight>IP-INF</highlight>,"TO","to"</tt><br>
 <tt>"ADJP-PRD2",<highlight>IP-INF</highlight>,"DO;~Tn","do"</tt><br>
 <tt>"ADJP-PRD2",<highlight>IP-INF</highlight>,"NP-OB1","D;_nphd_","that"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=53_lucy_bnc_b17" target="_blank">53_lucy_bnc_b17</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.55">3.55</a>)</dt><dd>
+<dl><dt>(<a name="ex3.57">3.57</a>)</dt><dd>
 <tt>"ADJP-PRD2",<mark>ADJ</mark>,"unaware"</tt><br>
 <tt>"ADJP-PRD2",<highlight>CP-THT</highlight>,"IP-SUB","C","that"</tt><br>
 <tt>"ADJP-PRD2",<highlight>CP-THT</highlight>,"IP-SUB","NP-SBJ","ADJP","ADJ","certain"</tt><br>
@@ -872,7 +898,7 @@ highlight { background-color: palegreen; }
 
 </ul>
 
-<dl><dt>(<a name="ex3.56">3.56</a>)</dt><dd>
+<dl><dt>(<a name="ex3.58">3.58</a>)</dt><dd>
 <tt>"ADJP",<highlight>PP</highlight>,"P-ROLE","for"</tt><br>
 <tt>"ADJP",<highlight>PP</highlight>,"NP","D","the"</tt><br>
 <tt>"ADJP",<highlight>PP</highlight>,"NP","ADVP","ADVS","most"</tt><br>
@@ -883,9 +909,9 @@ highlight { background-color: palegreen; }
 
 <br><h3><a name="sec3.3.3">3.3.3</a>&nbsp;&nbsp;&nbsp;&nbsp;ADJP conjunction</h3>
 
-<p align="justify">When the content of an adjective phrase involves conjunction, all conjuncts, except the first, receive a <tt>CONJP</tt> projection. This gives structure parallel to the conjoined <tt>NP</tt> structure of section <a href="chapter3.html#sec3.2.4">3.2.4</a>, but with <tt>CONJP</tt> projections adjoined to the first conjunct under an <tt>AJLYR</tt> layer. <tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as in (<a href="chapter3.html#ex3.57">3.57</a>).</p>
+<p align="justify">When the content of an adjective phrase involves conjunction, all conjuncts, except the first, receive a <tt>CONJP</tt> projection. This gives structure parallel to the conjoined <tt>NP</tt> structure of section <a href="chapter3.html#sec3.2.4">3.2.4</a>, but with <tt>CONJP</tt> projections adjoined to the first conjunct under an <tt>AJLYR</tt> layer. <tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as in (<a href="chapter3.html#ex3.59">3.59</a>).</p>
 
-<dl><dt>(<a name="ex3.57">3.57</a>)</dt><dd>
+<dl><dt>(<a name="ex3.59">3.59</a>)</dt><dd>
 <tt>"IP-REL","BEP;~La","is"</tt><br>
 <tt>"IP-REL","ADJP-PRD2","AJLYR",<mark>ADJP</mark>,"ADJ","majestic"</tt><br>
 <tt>"IP-REL","ADJP-PRD2","AJLYR","PUNC","&lt;comma&gt;"</tt><br>
@@ -895,7 +921,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=183_a_hedgehog" target="_blank">183_a_hedgehog</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.58">3.58</a>)</dt><dd>
+<dl><dt>(<a name="ex3.60">3.60</a>)</dt><dd>
 <tt>"IP-REL","BED;~La","was"</tt><br>
 <tt>"IP-REL","ADJP-PRD2","AJLYR",<mark>ADJP</mark>,"NP","Q;_nphd_","all"</tt><br>
 <tt>"IP-REL","ADJP-PRD2","AJLYR",<mark>ADJP</mark>,"AJLYR","ADJP","ADJ","well"</tt><br>
@@ -909,7 +935,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=63_a_paulfellows" target="_blank">63_a_paulfellows</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.59">3.59</a>)</dt><dd>
+<dl><dt>(<a name="ex3.61">3.61</a>)</dt><dd>
 <tt>"NP","NP-GENV","PRO;_genm_","his"</tt><br>
 <tt>"NP","ADJP","AJLYR","ADJP","ADJ","craggy"</tt><br>
 <tt>"NP","ADJP","AJLYR","CONJP",<mark>ADVP-CNT</mark>,"ADV","yet"</tt><br>
@@ -918,9 +944,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=109_lucy_bnc_c08" target="_blank">109_lucy_bnc_c08</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AJLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.60">3.60</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AJLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.62">3.62</a>).</p>
 
-<dl><dt>(<a name="ex3.60">3.60</a>)</dt><dd>
+<dl><dt>(<a name="ex3.62">3.62</a>)</dt><dd>
 <tt>"IP-MAT","BED;~La","was"</tt><br>
 <tt>"IP-MAT","ADJP-PRD2","AJLYR",<mark>ADJP</mark>,"ADJ","wide"</tt><br>
 <tt>"IP-MAT","ADJP-PRD2","AJLYR","CONJP","CONJ","and"</tt><br>
@@ -932,16 +958,16 @@ highlight { background-color: palegreen; }
 
 <br><h3><a name="sec3.3.4">3.3.4</a>&nbsp;&nbsp;&nbsp;&nbsp;ADJP functions</h3>
 
-<p align="justify"><tt>ADJP</tt> can act as modifiers of a noun phrase head. In doing so, they are said to have ATTRIBUTIVE function. With the annotation, an attributive <tt>ADJP</tt> occurs without a tag extension, as in (<a href="chapter3.html#ex3.61">3.61</a>) and (<a href="chapter3.html#ex3.62">3.62</a>), since placement under <tt>NP</tt> unambiguously captures the attributive function.</p>
+<p align="justify"><tt>ADJP</tt> can act as modifiers of a noun phrase head. In doing so, they are said to have ATTRIBUTIVE function. With the annotation, an attributive <tt>ADJP</tt> occurs without a tag extension, as in (<a href="chapter3.html#ex3.63">3.63</a>) and (<a href="chapter3.html#ex3.64">3.64</a>), since placement under <tt>NP</tt> unambiguously captures the attributive function.</p>
 
-<dl><dt>(<a name="ex3.61">3.61</a>)</dt><dd>
+<dl><dt>(<a name="ex3.63">3.63</a>)</dt><dd>
 <tt>"NP-PRD2","D","a"</tt><br>
 <tt>"NP-PRD2",<mark>ADJP</mark>,"ADJ","good"</tt><br>
 <tt>"NP-PRD2","N","swimmer"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1_lucy_child_12_f32" target="_blank">1_lucy_child_12_f32</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.62">3.62</a>)</dt><dd>
+<dl><dt>(<a name="ex3.64">3.64</a>)</dt><dd>
 <tt>"NP-PRD2","D","a"</tt><br>
 <tt>"NP-PRD2",<mark>ADJP</mark>,"ADVP","ADV","very"</tt><br>
 <tt>"NP-PRD2",<mark>ADJP</mark>,"ADJ","good"</tt><br>
@@ -989,7 +1015,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Conjunction with an <tt>ADVP</tt> is the same as with an <tt>ADJP</tt>. With the annotation, <tt>CONJP</tt> projections are adjoined to the first <tt>CONJP</tt>-less conjunct under an <tt>AVLYR</tt> layer.</p>
 
-<dl><dt>(<a name="ex3.63">3.63</a>)</dt><dd>
+<dl><dt>(<a name="ex3.65">3.65</a>)</dt><dd>
 <tt>"ADJP-PRD2","ADVP","ADVP","ADV","just"</tt><br>
 <tt>"ADJP-PRD2","ADVP","WADV","how"</tt><br>
 <tt>"ADJP-PRD2",<mark>AJLYR</mark>,"ADJP","ADJ","rich"</tt><br>
@@ -998,9 +1024,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=53_nt_5101" target="_blank">53_nt_5101</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AVLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.64">3.64</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AVLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.66">3.66</a>).</p>
 
-<dl><dt>(<a name="ex3.64">3.64</a>)</dt><dd>
+<dl><dt>(<a name="ex3.66">3.66</a>)</dt><dd>
 <tt>"NP","D;_nphd_","those"</tt><br>
 <tt>"NP","IP-REL","NP-SBJ","RPRO","who"</tt><br>
 <tt>"NP","IP-REL","HVP;~cat_Ve","have"</tt><br>
@@ -1019,7 +1045,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_susanne_a04" target="_blank">5_susanne_a04</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.65">3.65</a>)</dt><dd>
+<dl><dt>(<a name="ex3.67">3.67</a>)</dt><dd>
 <tt>"IP-PPL-CAT","VAG","referring"</tt><br>
 <tt>"IP-PPL-CAT","PP-CLR","NEG","not"</tt><br>
 <tt>"IP-PPL-CAT","PP-CLR","PP-CLR","ADVP-MOD","ADV","only"</tt><br>
@@ -1042,19 +1068,19 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Adverb phrases are able to modify adjectives (e.g.&nbsp;<i><b><i>totally</i></b> disgusting</i>), and verbs (e.g.&nbsp;<i><b><i>strongly</i></b> supported</i>). Adverb phrases can also modify preposition phrases (e.g.&nbsp;<i><b><i>far</i></b> up the valley</i>), noun phrases (e.g.&nbsp;<i><b><i>nearly</i></b> a decade</i>), adverb phrases (e.g.&nbsp;<i><b><i>Quite</i></b> often</i>), and clauses (e.g.&nbsp;<i><b><i>of_course</i></b> you can</i>).</p>
 
-<dl><dt>(<a name="ex3.66">3.66</a>)</dt><dd>
+<dl><dt>(<a name="ex3.68">3.68</a>)</dt><dd>
 <tt>"ADJP-PRD",<mark>ADVP</mark>,"ADV","totally"</tt><br>
 <tt>"ADJP-PRD","ADJ","disgusting"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=89_christine_t19" target="_blank">89_christine_t19</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.67">3.67</a>)</dt><dd>
+<dl><dt>(<a name="ex3.69">3.69</a>)</dt><dd>
 <tt>"IP-PPL","ADVP-MNR","ADV",<mark>strongly</mark></tt><br>
 <tt>"IP-PPL","VVN;~Tn","supported"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=71_susanne_n11" target="_blank">71_susanne_n11</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.68">3.68</a>)</dt><dd>
+<dl><dt>(<a name="ex3.70">3.70</a>)</dt><dd>
 <tt>"PP-LOC",<mark>ADVP-DIR</mark>,"ADV","Far"</tt><br>
 <tt>"PP-LOC","P-ROLE","up"</tt><br>
 <tt>"PP-LOC","NP","D","the"</tt><br>
@@ -1062,7 +1088,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_susanne_n04" target="_blank">116_susanne_n04</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.69">3.69</a>)</dt><dd>
+<dl><dt>(<a name="ex3.71">3.71</a>)</dt><dd>
 <tt>"PP-CNT",<mark>ADVP-MOD</mark>,"AVLYR","ADVP","ADV","purely"</tt><br>
 <tt>"PP-CNT",<mark>ADVP-MOD</mark>,"AVLYR","CONJP","CONJ","and"</tt><br>
 <tt>"PP-CNT",<mark>ADVP-MOD</mark>,"AVLYR","CONJP","ADVP","ADV","simply"</tt><br>
@@ -1072,29 +1098,29 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=491_christine_t29" target="_blank">491_christine_t29</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.70">3.70</a>)</dt><dd>
+<dl><dt>(<a name="ex3.72">3.72</a>)</dt><dd>
 <tt>"NP",<mark>ADVP</mark>,"ADV","nearly"</tt><br>
 <tt>"NP","D","a"</tt><br>
 <tt>"NP","N","decade"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=81_lucy_bnc_b37" target="_blank">81_lucy_bnc_b37</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.71">3.71</a>)</dt><dd>
+<dl><dt>(<a name="ex3.73">3.73</a>)</dt><dd>
 <tt>"ADVP-TMP",<mark>ADVP</mark>,"ADV","Quite"</tt><br>
 <tt>"ADVP-TMP","ADV","often"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=18_susanne_j10" target="_blank">18_susanne_j10</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.72">3.72</a>)</dt><dd>
+<dl><dt>(<a name="ex3.74">3.74</a>)</dt><dd>
 <tt>"IP-MAT",<mark>ADVP-MOD</mark>,"ADV","of_course"</tt><br>
 <tt>"IP-MAT","NP-SBJ","PRO","you"</tt><br>
 <tt>"IP-MAT","MD;~cat_Vi","can"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=258_christine_t04" target="_blank">258_christine_t04</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.73">3.73</a>) has directional function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.75">3.75</a>) has directional function.</p>
 
-<dl><dt>(<a name="ex3.73">3.73</a>)</dt><dd>
+<dl><dt>(<a name="ex3.75">3.75</a>)</dt><dd>
 <tt>"IP-INF-CAT","VB;~Ip",<highlight>go</highlight></tt><br>
 <tt>"IP-INF-CAT","ADVP-DIR","ADVP","ADVP","RP","on"</tt><br>
 <tt>"IP-INF-CAT","ADVP-DIR","ADVP","RP",<mark>up</mark></tt><br>
@@ -1104,7 +1130,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials can occur with selected functions <tt>-OB1</tt> (direct object) and <tt>-PRD</tt>(<tt>2</tt>) (predicative).</p>
 
-<dl><dt>(<a name="ex3.74">3.74</a>)</dt><dd>
+<dl><dt>(<a name="ex3.76">3.76</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","PRO","it"</tt><br>
 <tt>"IP-MAT","VBP","takes"</tt><br>
 <tt>"IP-MAT",<mark>NP-OB1</mark>,"ADVP","ADVP","ADV","so"</tt><br>
@@ -1112,7 +1138,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=99_christine_t04" target="_blank">99_christine_t04</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.75">3.75</a>)</dt><dd>
+<dl><dt>(<a name="ex3.77">3.77</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","game"</tt><br>
 <tt>"IP-MAT","BEP","&lt;apos&gt;s"</tt><br>
@@ -1130,9 +1156,9 @@ highlight { background-color: palegreen; }
 
 <br><h3><a name="sec3.5.2">3.5.2</a>&nbsp;&nbsp;&nbsp;&nbsp;PP dependents</h3>
 
-<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a COMPLEMENT. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.76">3.76</a>).</p>
+<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a COMPLEMENT. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.78">3.78</a>).</p>
 
-<dl><dt>(<a name="ex3.76">3.76</a>)</dt><dd>
+<dl><dt>(<a name="ex3.78">3.78</a>)</dt><dd>
 <tt>"PP-DIR",<mark>P-ROLE</mark>,"out_of"</tt><br>
 <tt>"PP-DIR","NP","D","the"</tt><br>
 <tt>"PP-DIR","NP","N","box"</tt><br>
@@ -1149,7 +1175,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Instances of <tt>PP</tt> are conjoined at the top level of their structure.</p>
 
-<dl><dt>(<a name="ex3.77">3.77</a>)</dt><dd>
+<dl><dt>(<a name="ex3.79">3.79</a>)</dt><dd>
 <tt>"IP-MAT",<mark>PP-NIM</mark>,<highlight>PP-DIR</highlight>,"P-ROLE","Across"</tt><br>
 <tt>"IP-MAT",<mark>PP-NIM</mark>,<highlight>PP-DIR</highlight>,"NP","D","the"</tt><br>
 <tt>"IP-MAT",<mark>PP-NIM</mark>,<highlight>PP-DIR</highlight>,"NP","NPR","Commonwealth"</tt><br>
@@ -1161,7 +1187,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=11_a_queen_broadcast" target="_blank">11_a_queen_broadcast</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.78">3.78</a>)</dt><dd>
+<dl><dt>(<a name="ex3.80">3.80</a>)</dt><dd>
 <tt>"ADJP-PRD2","ADJ","skilled"</tt><br>
 <tt>"ADJP-PRD2",<mark>PP</mark>,"NEG","not"</tt><br>
 <tt>"ADJP-PRD2",<mark>PP</mark>,"ADVP-MOD","ADV","merely"</tt><br>
@@ -1174,7 +1200,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=70_susanne_j22" target="_blank">70_susanne_j22</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.79">3.79</a>)</dt><dd>
+<dl><dt>(<a name="ex3.81">3.81</a>)</dt><dd>
 <tt>"IP-INF","PUNC","&lt;comma&gt;"</tt><br>
 <tt>"IP-INF",<mark>PP-NIM</mark>,<highlight>PP-CNT</highlight>,"P-ROLE","in"</tt><br>
 <tt>"IP-INF",<mark>PP-NIM</mark>,<highlight>PP-CNT</highlight>,"NP","NS","cases"</tt><br>
@@ -1194,7 +1220,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=2_lucy_bnc_b34" target="_blank">2_lucy_bnc_b34</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.80">3.80</a>)</dt><dd>
+<dl><dt>(<a name="ex3.82">3.82</a>)</dt><dd>
 <tt>"IP-MAT","PUNC",";"</tt><br>
 <tt>"IP-MAT",<mark>PP-NIM</mark>,"CONJ","either"</tt><br>
 <tt>"IP-MAT",<mark>PP-NIM</mark>,<highlight>PP-RST</highlight>,"ADVP-MOD","ADV","for_example"</tt><br>
@@ -1205,7 +1231,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_lucy_student_e08" target="_blank">10_lucy_student_e08</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex3.81">3.81</a>)</dt><dd>
+<dl><dt>(<a name="ex3.83">3.83</a>)</dt><dd>
 <tt>"IP-SUB","NP-SBJ","PRO","they"</tt><br>
 <tt>"IP-SUB","VBD;~Ipr","went"</tt><br>
 <tt>"IP-SUB",<mark>PP-NIM</mark>,<highlight>PP-DIR</highlight>,"P-ROLE","to"</tt><br>

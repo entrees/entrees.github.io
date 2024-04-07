@@ -325,11 +325,8 @@ highlight { background-color: palegreen; }
 
 <table border="1" cellpadding="10px">
 <tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
-<tr><td><tt>-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
-<tr><td><tt>-DSBJ</tt></td><td>derived subject</td></tr>
 <tr><td><tt>-ESBJ</tt></td><td>subject of a clause with existential <i>there</i></td></tr>
 <tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
-<tr><td><tt>-PSBJ</tt></td><td>provisional subject <i>it</i> noun phrase</td></tr>
 </table>
 
 <p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb. The subject can determine the form of the first verb instance of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he/she/it <b><i>is</i></b></i>, <i>we/you (all)/they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I/we/he/she/they</i> contrast with non-subject forms <i>me/us/him/her/them</i>.</p>
@@ -391,16 +388,14 @@ highlight { background-color: palegreen; }
 
 <li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="chapter4.html#ex4.25">4.25</a>) above</li>
 
-<li>tag extension <tt>-CSBJ</tt> marks the subject <i>it</i> noun phrase of an it-cleft construction, as in (<a href="chapter4.html#ex4.26">4.26</a>)</li>
-
-<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i>, marked <tt>-PSBJ</tt>, as in (<a href="chapter4.html#ex4.27">4.27</a>); or (ii) a derived subject, marked <tt>-DSBJ</tt>, as in (<a href="chapter4.html#ex4.29">4.29</a>)</li>
+<li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i> tagged <tt>PRO;_provisional_</tt>, as in (<a href="chapter4.html#ex4.27">4.27</a>); or (ii) a derived subject marked <tt>-SBJ</tt> and so not distinguished independently of the construction, as in (<a href="chapter4.html#ex4.29">4.29</a>)</li>
 
 <li>The subject can also be <i>it</i> as a dummy element that has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.30">4.30</a>).</li>
 
 </ul>
 
 <dl><dt>(<a name="ex4.26">4.26</a>)</dt><dd>
-<tt>"IP-MAT",<mark>NP-CSBJ</mark>,"PRO;_cleft_","it"</tt><br>
+<tt>"IP-MAT",<mark>NP-SBJ</mark>,"PRO;_cleft_","it"</tt><br>
 <tt>"IP-MAT","BEP;~cleft_V","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","NP-FOC","D","that"</tt><br>
 <tt>"IP-MAT","NP-FOC","N","kind"</tt><br>
@@ -413,7 +408,7 @@ highlight { background-color: palegreen; }
 </dd></dl>
 
 <dl><dt>(<a name="ex4.27">4.27</a>)</dt><dd>
-<tt>"IP-MAT",<mark>NP-PSBJ</mark>,"PRO;_provisional_","it"</tt><br>
+<tt>"IP-MAT",<mark>NP-SBJ</mark>,"PRO;_provisional_","it"</tt><br>
 <tt>"IP-MAT","BEP;~La","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","NEG","not"</tt><br>
 <tt>"IP-MAT","ADJP-PRD2","ADJ","right"</tt><br>
@@ -422,7 +417,7 @@ highlight { background-color: palegreen; }
 </dd></dl>
 
 <dl><dt>(<a name="ex4.28">4.28</a>)</dt><dd>
-<tt>"IP-MAT",<highlight>NP-PSBJ</highlight>,"PRO;_provisional_","It"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"PRO;_provisional_","It"</tt><br>
 <tt>"IP-MAT","MD;~cat_Vi","will"</tt><br>
 <tt>"IP-MAT","NEG","not"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","ADVP","ADV","really"</tt><br>
@@ -433,16 +428,16 @@ highlight { background-color: palegreen; }
 </dd></dl>
 
 <dl><dt>(<a name="ex4.29">4.29</a>)</dt><dd>
-<tt>"ILYR",<mark>NP-DSBJ</mark>,"D","The"</tt><br>
-<tt>"ILYR",<mark>NP-DSBJ</mark>,"N","breaststroke"</tt><br>
+<tt>"ILYR",<mark>NP-SBJ</mark>,"D","The"</tt><br>
+<tt>"ILYR",<mark>NP-SBJ</mark>,"N","breaststroke"</tt><br>
 <tt>"ILYR","BEP;~La","is"</tt><br>
 <tt>"ILYR","ADJP-PRD2","ADVP","ADV","very"</tt><br>
 <tt>"ILYR","ADJP-PRD2","ADJ","hard"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"NP-LGS","*"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"TO","to"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"VB;~Tn.pr","explain"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"PP-CLR-MNR","P-ROLE","in"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"PP-CLR-MNR","NP","NS","words"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"NP-LGS","*"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"TO","to"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"VB;~Tn.pr","explain"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"PP-CLR-MNR","P-ROLE","in"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"PP-CLR-MNR","NP","NS","words"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_a_stories_09_m14" target="_blank">3_a_stories_09_m14</a>"</tt><br>
 </dd></dl>
 
@@ -490,7 +485,6 @@ highlight { background-color: palegreen; }
 <tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
 <tr><td><tt>-DOB1</tt></td><td>derived object</td></tr>
 <tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
-<tr><td><tt>-POB1</tt></td><td>provisional direct object <i>it</i> noun phrase</td></tr>
 </table>
 
 <p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="chapter4.html#table4.39">4.39</a> relate to the direct object function in particular constructions:</p>
@@ -499,7 +493,7 @@ highlight { background-color: palegreen; }
 
 <li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt>, as with (<a href="chapter4.html#ex4.31">4.31</a>) and (<a href="chapter4.html#ex4.32">4.32</a>)</li>
 
-<li>tag extension <tt>-NOB1</tt> marks a notional direct object that occurs in a clause with a provisional direct object <i>it</i>, marked <tt>-POB1</tt>, as with (<a href="chapter4.html#ex4.33">4.33</a>) and (<a href="chapter4.html#ex4.34">4.34</a>)</li>
+<li>tag extension <tt>-NOB1</tt> marks a notional direct object that occurs in a clause with a provisional direct object <i>it</i>, tagged <tt>PRO;_provisional_</tt>, as with (<a href="chapter4.html#ex4.33">4.33</a>) and (<a href="chapter4.html#ex4.34">4.34</a>)</li>
 
 </ul>
 
@@ -530,7 +524,7 @@ highlight { background-color: palegreen; }
 <dl><dt>(<a name="ex4.33">4.33</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
 <tt>"IP-MAT","VBP;~Tn.pr","leave"</tt><br>
-<tt>"IP-MAT",<mark>NP-POB1</mark>,"PRO;_provisional_","it"</tt><br>
+<tt>"IP-MAT",<mark>NP-OB1</mark>,"PRO;_provisional_","it"</tt><br>
 <tt>"IP-MAT","PP-CLR","P-ROLE","to"</tt><br>
 <tt>"IP-MAT","PP-CLR","NP","PRO","you"</tt><br>
 <tt>"IP-MAT","PP-CLR","NP","PUNC","&lt;comma&gt;"</tt><br>
@@ -552,7 +546,7 @@ highlight { background-color: palegreen; }
 <dl><dt>(<a name="ex4.34">4.34</a>)</dt><dd>
 <tt>"ILYR","NP-SBJ","PRO","I"</tt><br>
 <tt>"ILYR","VBD;~Cn.a","found"</tt><br>
-<tt>"ILYR",<mark>NP-POB1</mark>,"PRO;_provisional_","it"</tt><br>
+<tt>"ILYR",<mark>NP-OB1</mark>,"PRO;_provisional_","it"</tt><br>
 <tt>"ILYR","ADJP-PRD","ADJ","strange"</tt><br>
 <tt>"ILYR",<highlight>CP-THT-NOB1</highlight>,"IP-SUB","C","that"</tt><br>
 <tt>"ILYR",<highlight>CP-THT-NOB1</highlight>,"IP-SUB","NP-SBJ","NLYR","CONJ","neither"</tt><br>

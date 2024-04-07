@@ -146,7 +146,7 @@ highlight { background-color: palegreen; }
 </dd></dl>
 
 <dl><dt>(<a name="ex10.8">10.8</a>)</dt><dd>
-<tt>"ILYR","NP-PSBJ",<mark>PRO;_provisional_</mark>,"It"</tt><br>
+<tt>"ILYR","NP-SBJ",<mark>PRO;_provisional_</mark>,"It"</tt><br>
 <tt>"ILYR",<highlight>BEP;~La</highlight>,"is"</tt><br>
 <tt>"ILYR","ADJP-PRD2","ADJ","hard"</tt><br>
 <tt>"ILYR","IP-INF-NSBJ","TO","to"</tt><br>
@@ -178,7 +178,7 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;When there is clause-within-clause subordination, the possibility arises of an element from the main clause making a direct contribution to the subordinate clause while being left with unclear status in the main clause. One notable scenario of this involves derived subjects. (The other notable scenario involves derived objects.)</p>
 
 <dl><dt>(<a name="ex10.10">10.10</a>)</dt><dd>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"D;_nphd_","these"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"D;_nphd_","these"</tt><br>
 <tt>"IP-ADV","BEP;~La","are"</tt><br>
 <tt>"IP-ADV","ADJP-PRD2","ADVP","ADVR","more"</tt><br>
 <tt>"IP-ADV","ADJP-PRD2","ADJ","likely"</tt><br>
@@ -188,12 +188,12 @@ highlight { background-color: palegreen; }
 </dd></dl>
 
 <dl><dt>(<a name="ex10.11">10.11</a>)</dt><dd>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"D","the"</tt><br>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"NS","problems"</tt><br>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"PP","P-ROLE","of"</tt><br>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"PP","NP","D","the"</tt><br>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"PP","NP","N","reform"</tt><br>
-<tt>"IP-ADV",<highlight>NP-DSBJ</highlight>,"PP","NP","N;@3","programme"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"D","the"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"NS","problems"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"PP","P-ROLE","of"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"PP","NP","D","the"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"PP","NP","N","reform"</tt><br>
+<tt>"IP-ADV",<highlight>NP-SBJ</highlight>,"PP","NP","N;@3","programme"</tt><br>
 <tt>"IP-ADV","VBD;~La","became"</tt><br>
 <tt>"IP-ADV","ADJP-PRD2","ADVP","ADVR","more"</tt><br>
 <tt>"IP-ADV","ADJP-PRD2","ADJ","difficult"</tt><br>
@@ -266,11 +266,49 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=72_nt_4012" target="_blank">72_nt_4012</a>"</tt><br>
 </dd></dl>
 
-<br><h2><a name="sec10.5">10.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Preventing control</h2>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Control into a adverbial clause prior to the main clause subject and containing a tough-construction:</p>
 
-<p align="justify">Prevention of subject control is achieved by adding &lsquo;<tt>3</tt>&rsquo; to the label of the highest level of the clause into which control needs to be blocked. For example, (<a href="chapter10.html#ex10.16">10.16</a>) has <tt>IP-PPL3-OB1</tt> to prevent the <i>clouds</i> from being the subject of <i>bombing</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.16">10.16</a>) illustrates conjuncts with no control, control with a tough-construction, and control with catenative <i>seems</i>.</p>
 
 <dl><dt>(<a name="ex10.16">10.16</a>)</dt><dd>
+<tt>"IP-MAT","NP-SBJ","D","the"</tt><br>
+<tt>"IP-MAT","NP-SBJ","N","approach"</tt><br>
+<tt>"IP-MAT","ILYR","ILYR","BEP;~La","is"</tt><br>
+<tt>"IP-MAT","ILYR","ILYR","ADJP-PRD2","ADJ","plausible"</tt><br>
+<tt>"IP-MAT","ILYR","PUNC","&lt;comma&gt;"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP","ILYR","ADJP-PRD2","ADJ","easy"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP","ILYR",<mark>IP-INF-NSBJ</mark>,"NP-LGS","*"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP","ILYR",<mark>IP-INF-NSBJ</mark>,"TO","to"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP","ILYR",<mark>IP-INF-NSBJ</mark>,"VB;~Tn","apply"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP;@4","CONJ","and"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP;@4","ILYR","VBP;~cat_Vt","seems"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP;@4","ILYR",<highlight>IP-INF-CAT</highlight>,"TO","to"</tt><br>
+<tt>"IP-MAT","ILYR","CONJP;@4","ILYR",<highlight>IP-INF-CAT</highlight>,"VB;~I","work"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_lucy_bnc_b29" target="_blank">41_lucy_bnc_b29</a>"</tt><br>
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.17">10.17</a>) has control into a notional object.</p>
+
+<dl><dt>(<a name="ex10.17">10.17</a>)</dt><dd>
+<tt>"ILYR","NP-SBJ","PRO","I"</tt><br>
+<tt>"ILYR","VBP","leave"</tt><br>
+<tt>"ILYR","NP-OB1","PRO;_provisional_","it"</tt><br>
+<tt>"ILYR",<highlight>PP-CLR</highlight>,"P-ROLE","to"</tt><br>
+<tt>"ILYR",<highlight>PP-CLR</highlight>,"NP","D","the"</tt><br>
+<tt>"ILYR",<highlight>PP-CLR</highlight>,"NP","NS","statisticians"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"TO","to"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"VB","say"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"CP-QUE-OB1","IP-SUB","NP-PRD2","WPRO","what"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"CP-QUE-OB1","IP-SUB","NP-SBJ","PRO","they"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"CP-QUE-OB1","IP-SUB","BED;~Ln","were"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_susanne_g17" target="_blank">3_susanne_g17</a>"</tt><br>
+</dd></dl>
+
+<br><h2><a name="sec10.5">10.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Preventing control</h2>
+
+<p align="justify">Prevention of subject control is achieved by adding &lsquo;<tt>3</tt>&rsquo; to the label of the highest level of the clause into which control needs to be blocked. For example, (<a href="chapter10.html#ex10.18">10.18</a>) has <tt>IP-PPL3-OB1</tt> to prevent the <i>clouds</i> from being the subject of <i>bombing</i>.</p>
+
+<dl><dt>(<a name="ex10.18">10.18</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","D","The"</tt><br>
 <tt>"IP-MAT","NP-SBJ","ADJP","ADJ","low"</tt><br>
 <tt>"IP-MAT","NP-SBJ","NS","clouds"</tt><br>
@@ -280,9 +318,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=64_susanne_n15" target="_blank">64_susanne_n15</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.17">10.17</a>) has instances of <tt>IP-PPL3</tt> to prevent control from the subject <i>These</i> into the complements of <i>from</i> and <i>to</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.19">10.19</a>) has instances of <tt>IP-PPL3</tt> to prevent control from the subject <i>These</i> into the complements of <i>from</i> and <i>to</i>.</p>
 
-<dl><dt>(<a name="ex10.17">10.17</a>)</dt><dd>
+<dl><dt>(<a name="ex10.19">10.19</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ;{ISSUES}","D;_nphd_","These"</tt><br>
 <tt>"IP-MAT","ILYR","ILYR","VBD;~Ipr","ranged"</tt><br>
 <tt>"IP-MAT","ILYR","ILYR","PP-CLR-DIR","P-ROLE","from"</tt><br>
@@ -307,9 +345,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=61_a_alresford" target="_blank">61_a_alresford</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.18">10.18</a>) contains an adverbial participle clause that contains a subject and so as is tagged <tt>IP-PPL3</tt> (under <tt>PP-SCON-MNR</tt> function information) to ensure there is no control to disrupt the internal subject.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.20">10.20</a>) contains an adverbial participle clause that contains a subject and so as is tagged <tt>IP-PPL3</tt> (under <tt>PP-SCON-MNR</tt> function information) to ensure there is no control to disrupt the internal subject.</p>
 
-<dl><dt>(<a name="ex10.18">10.18</a>)</dt><dd>
+<dl><dt>(<a name="ex10.20">10.20</a>)</dt><dd>
 <tt>"ILYR","NP-SBJ","D","a"</tt><br>
 <tt>"ILYR","NP-SBJ","NUM","second"</tt><br>
 <tt>"ILYR","NP-SBJ","N","tier"</tt><br>
@@ -341,9 +379,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_a_beeton_1861" target="_blank">39_a_beeton_1861</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Compare (<a href="chapter10.html#ex10.19">10.19</a>) where control is blocked because there is <tt>IP-PPL3</tt> with (<a href="chapter10.html#ex10.4">10.4</a>) above where control happens because there is <tt>IP-PPL2</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Compare (<a href="chapter10.html#ex10.21">10.21</a>) where control is blocked because there is <tt>IP-PPL3</tt> with (<a href="chapter10.html#ex10.4">10.4</a>) above where control happens because there is <tt>IP-PPL2</tt>.</p>
 
-<dl><dt>(<a name="ex10.19">10.19</a>)</dt><dd>
+<dl><dt>(<a name="ex10.21">10.21</a>)</dt><dd>
 <tt>"IP-MAT","PP-SCON-CNT-CND",<mark>IP-PPL3</mark>,"VVN;~Cn.a","left"</tt><br>
 <tt>"IP-MAT","PP-SCON-CNT-CND",<mark>IP-PPL3</mark>,"ADJP-PRD","ADJ","untreated"</tt><br>
 <tt>"IP-MAT","PUNC","&lt;comma&gt;"</tt><br>
@@ -356,9 +394,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_a_factbook_1_2010" target="_blank">19_a_factbook_1_2010</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For (<a href="chapter10.html#ex10.20">10.20</a>) control needs to be blocked with <tt>IP-PPL3</tt> so that it can be an elided marriage that is arranged and not <i>Edward</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;For (<a href="chapter10.html#ex10.22">10.22</a>) control needs to be blocked with <tt>IP-PPL3</tt> so that it can be an elided marriage that is arranged and not <i>Edward</i>.</p>
 
-<dl><dt>(<a name="ex10.20">10.20</a>)</dt><dd>
+<dl><dt>(<a name="ex10.22">10.22</a>)</dt><dd>
 <tt>"IP-MAT","PP-SCON-ABS",<mark>IP-PPL3</mark>,<highlight>VVN;~Tn</highlight>,"Arranged"</tt><br>
 <tt>"IP-MAT","PP-SCON-ABS",<mark>IP-PPL3</mark>,"PP-LGS","P-ROLE","by"</tt><br>
 <tt>"IP-MAT","PP-SCON-ABS",<mark>IP-PPL3</mark>,"PP-LGS","NP","NP-GENV;{EDWARD+LEONORA}","PRO;_genm_","their"</tt><br>
@@ -373,7 +411,7 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_lucy_student_e72" target="_blank">12_lucy_student_e72</a>"</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex10.21">10.21</a>)</dt><dd>
+<dl><dt>(<a name="ex10.23">10.23</a>)</dt><dd>
 <tt>"ILYR","NP-SBJ;{IDENT_23}","PRO","He"</tt><br>
 <tt>"ILYR","VBD","told"</tt><br>
 <tt>"ILYR",<mark>NP-OB2;{IDENT_26}</mark>,"PRO","them"</tt><br>
@@ -395,7 +433,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Control with <tt>PP-CLR</tt> as the controller:</p>
 
-<dl><dt>(<a name="ex10.22">10.22</a>)</dt><dd>
+<dl><dt>(<a name="ex10.24">10.24</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","D","This"</tt><br>
 <tt>"IP-MAT","NP-SBJ","N","group"</tt><br>
 <tt>"IP-MAT","VBP;~Ipr","pleads"</tt><br>
@@ -415,9 +453,9 @@ highlight { background-color: palegreen; }
 
 <p align="justify">The annotation includes coreference information by adding witness information to the tag of a noun phrase (<tt>NP</tt>) level constituent. For a non-anaphoric noun phrase, the witness information provides type information for the discourse referent that the noun phrase serves to introduce. Witness information can can also be given to clause layers in which case it is used to type the discourse referent introduced by the local clause event. An anaphoric noun phrase that also has witness information can then be associated with any accessible discourse referent that has the same witness information.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.23">10.23</a>) illustrates <i>one</i> anaphora with the witness information of <tt>;{POSTCARDS}</tt></p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.25">10.25</a>) illustrates <i>one</i> anaphora with the witness information of <tt>;{POSTCARDS}</tt></p>
 
-<dl><dt>(<a name="ex10.23">10.23</a>)</dt><dd>
+<dl><dt>(<a name="ex10.25">10.25</a>)</dt><dd>
 <tt>"IP-MAT","PP-RST","P-ROLE","In"</tt><br>
 <tt>"IP-MAT","PP-RST","IP-PPL3","VAG;~Tn","requesting"</tt><br>
 <tt>"IP-MAT","PP-RST","IP-PPL3",<mark>NP-OB1;{POSTCARDS}</mark>,"NS","postcards"</tt><br>
@@ -438,9 +476,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=880_x_kisonihongo" target="_blank">880_x_kisonihongo</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.24">10.24</a>) has pronoun <i>it</i> with the witness information of <tt>;{DISAPPOINTMENT}</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.26">10.26</a>) has pronoun <i>it</i> with the witness information of <tt>;{DISAPPOINTMENT}</tt>.</p>
 
-<dl><dt>(<a name="ex10.24">10.24</a>)</dt><dd>
+<dl><dt>(<a name="ex10.26">10.26</a>)</dt><dd>
 <tt>"ILYR","NP-SBJ","PRO","they"</tt><br>
 <tt>"ILYR","ILYR","ILYR","BED;~cat_Ve_passive_","were"</tt><br>
 <tt>"ILYR","ILYR","ILYR",<mark>IP-PPL-CAT;{DISAPPOINTMENT}</mark>,"VVN;~Tn","disappointed"</tt><br>
@@ -454,9 +492,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=139_susanne_n05" target="_blank">139_susanne_n05</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.25">10.25</a>) has pronoun <i>it</i> with the witness information of <tt>;{LISTEN}</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.27">10.27</a>) has pronoun <i>it</i> with the witness information of <tt>;{LISTEN}</tt>.</p>
 
-<dl><dt>(<a name="ex10.25">10.25</a>)</dt><dd>
+<dl><dt>(<a name="ex10.27">10.27</a>)</dt><dd>
 <tt>"ILYR",<mark>ILYR;{LISTEN}</mark>,"NP-SBJ","PRO","you"</tt><br>
 <tt>"ILYR",<mark>ILYR;{LISTEN}</mark>,"MD;~cat_Vi","could"</tt><br>
 <tt>"ILYR",<mark>ILYR;{LISTEN}</mark>,"IP-INF-CAT","VB","listen"</tt><br>
@@ -476,9 +514,9 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=138_christine_t37" target="_blank">138_christine_t37</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.26">10.26</a>) has demonstrative pronoun <i>this</i> with the witness information of <tt>;{MOVEMENTS}</tt>. There is annotation to construct a discourse referent with <tt>NP-DSC</tt> (<tt>DSC</tt>=discourse element) built from the projection of three zero pronoun elements that link to prior clause layer witnesses: <tt>;{MOVE1}</tt>=an event for the first <i>move</i>, <tt>;{KICK}</tt>=an event for <tt>kick</tt>, and <tt>;{MOVE2}</tt>=an event for the second <i>move</i>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter10.html#ex10.28">10.28</a>) has demonstrative pronoun <i>this</i> with the witness information of <tt>;{MOVEMENTS}</tt>. There is annotation to construct a discourse referent with <tt>NP-DSC</tt> (<tt>DSC</tt>=discourse element) built from the projection of three zero pronoun elements that link to prior clause layer witnesses: <tt>;{MOVE1}</tt>=an event for the first <i>move</i>, <tt>;{KICK}</tt>=an event for <tt>kick</tt>, and <tt>;{MOVE2}</tt>=an event for the second <i>move</i>.</p>
 
-<dl><dt>(<a name="ex10.26">10.26</a>)</dt><dd>
+<dl><dt>(<a name="ex10.28">10.28</a>)</dt><dd>
 <tt>"ILYR","ILYR","NP-SBJ","PRO","you"</tt><br>
 <tt>"ILYR","ILYR","ILYR;{MOVEMENTS}","ILYR","VBP;~Tn.p","move"</tt><br>
 <tt>"ILYR","ILYR","ILYR;{MOVEMENTS}","ILYR","NP-OB1",<highlight>NP-GENV</highlight>,"PRO;_genm_","your"</tt><br>

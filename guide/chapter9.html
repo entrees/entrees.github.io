@@ -623,16 +623,10 @@ highlight { background-color: palegreen; }
 <tr><td><tt>IP-CLF</tt></td><td>focus complement of cleft construction</td></tr>
 </table>
 
-<p><a name="table9.66">Table 9.66: <i>it</i> introduction</a></p>
-
-<table border="1" cellpadding="10px">
-<tr><td><tt>NP-CSBJ</tt></td><td>cleft <i>it</i> noun phrase</td></tr>
-</table>
-
-<p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>-FOC</tt> tag extension (Table <a href="chapter9.html#table9.64">9.64</a>). The focus complement clause is labelled <tt>IP-CLF</tt> (Table <a href="chapter9.html#table9.65">9.65</a>). There also needs to be an <i>it</i> noun phrase clause as the introductory subject of a cleft construction (Table <a href="chapter9.html#table9.66">9.66</a>). Internally, the cleft complement has the form of a relative clause, which can involve an external link established with a relative pronoun, as in (<a href="chapter9.html#ex9.27">9.27</a>), or a trace, as in (<a href="chapter9.html#ex9.28">9.28</a>).</p>
+<p align="justify">A clause can be clefted, i.e.&nbsp;divided into two parts, each with its own verb. The focus of a cleft construction is labeled with the <tt>-FOC</tt> tag extension (Table <a href="chapter9.html#table9.64">9.64</a>). The focus complement clause is labelled <tt>IP-CLF</tt> (Table <a href="chapter9.html#table9.65">9.65</a>). There also needs to be an <i>it</i> tagged <tt>PRO;_cleft_</tt> as the introductory subject of a cleft construction. Internally, the cleft complement has the form of a relative clause, which can involve an external link established with a relative pronoun, as in (<a href="chapter9.html#ex9.27">9.27</a>), or a trace, as in (<a href="chapter9.html#ex9.28">9.28</a>).</p>
 
 <dl><dt>(<a name="ex9.27">9.27</a>)</dt><dd>
-<tt>"IP-MAT",<highlight>NP-CSBJ</highlight>,"PRO;_cleft_","it"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"PRO;_cleft_","it"</tt><br>
 <tt>"IP-MAT",<mark>BED;~cleft_Vpr</mark>,"was"</tt><br>
 <tt>"IP-MAT",<highlight>PP-FOC</highlight>,"P-ROLE","from"</tt><br>
 <tt>"IP-MAT",<highlight>PP-FOC</highlight>,"ADVP","ADV","here"</tt><br>
@@ -648,7 +642,7 @@ highlight { background-color: palegreen; }
 <dl><dt>(<a name="ex9.28">9.28</a>)</dt><dd>
 <tt>"CP-QUE","IP-SUB",<highlight>NP-FOC</highlight>,"WPRO","what"</tt><br>
 <tt>"CP-QUE","IP-SUB","BED;~cleft_Vn","was"</tt><br>
-<tt>"CP-QUE","IP-SUB",<highlight>NP-CSBJ</highlight>,"PRO;_cleft_","it"</tt><br>
+<tt>"CP-QUE","IP-SUB",<highlight>NP-SBJ</highlight>,"PRO;_cleft_","it"</tt><br>
 <tt>"CP-QUE","IP-SUB",<highlight>IP-CLF</highlight>,"NP-SBJ;{FOMAR}","PRO","you"</tt><br>
 <tt>"CP-QUE","IP-SUB",<highlight>IP-CLF</highlight>,"BED;~La","were"</tt><br>
 <tt>"CP-QUE","IP-SUB",<highlight>IP-CLF</highlight>,"ADJP-PRD2","ADVP","ADV","so"</tt><br>
@@ -664,7 +658,7 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.29">9.29</a>) isn't an <i>it</i> cleft, but rather there is a provisional subject <i>it</i> and an extraposed subject that is an embedded question clause.</p>
 
 <dl><dt>(<a name="ex9.29">9.29</a>)</dt><dd>
-<tt>"IP-SUB",<mark>NP-PSBJ</mark>,"PRO;_provisional_","it"</tt><br>
+<tt>"IP-SUB",<mark>NP-SBJ</mark>,"PRO;_provisional_","it"</tt><br>
 <tt>"IP-SUB","BED;~La","was"</tt><br>
 <tt>"IP-SUB","ADJP-PRD2","ADJ","funny"</tt><br>
 <tt>"IP-SUB","PUNC","&lt;comma&gt;"</tt><br>
@@ -733,10 +727,10 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Extrapositioning is the rightward displacement of a structural element. Indexing is not required when the displacement is part of a set construction with a provisional element, as when the displaced element is a notional subject or object. For cases that are not part of a set construction with a provisional element, rightward displacement can only be captured in the annotation with indexing.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.33">9.33</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with provisional subject <i>it</i> marked <tt>-PSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.33">9.33</a>), tag extension <tt>-NSBJ</tt> marks an extraposed subject occurring in a clause with provisional subject <i>it</i> tagged <tt>PRO;_provisional_</tt>.</p>
 
 <dl><dt>(<a name="ex9.33">9.33</a>)</dt><dd>
-<tt>"IP-MAT",<highlight>NP-PSBJ</highlight>,"PRO;_provisional_","it"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"PRO;_provisional_","it"</tt><br>
 <tt>"IP-MAT","BEP;~La","&lt;apos&gt;s"</tt><br>
 <tt>"IP-MAT","ADJP-PRD2","ADJ","nice"</tt><br>
 <tt>"IP-MAT",<mark>IP-INF-NSBJ</mark>,"TO","to"</tt><br>
@@ -746,10 +740,10 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=137_christine_t08" target="_blank">137_christine_t08</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.34">9.34</a>), <tt>-NSBJ</tt> occurs in a clause together with a provisional element that is a derived subject, marked <tt>-DSBJ</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.34">9.34</a>), <tt>-NSBJ</tt> occurs in a clause together with a provisional element that is a derived subject marked <tt>-SBJ</tt> and so not distinguished independently of the construction.</p>
 
 <dl><dt>(<a name="ex9.34">9.34</a>)</dt><dd>
-<tt>"IP-MAT",<highlight>NP-DSBJ</highlight>,"PRO","they"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"PRO","they"</tt><br>
 <tt>"IP-MAT","MD;~cat_Vi","wo"</tt><br>
 <tt>"IP-MAT","NEG;_clitic_","n&lt;apos&gt;t"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","VB;~Ip","take"</tt><br>
@@ -759,20 +753,20 @@ highlight { background-color: palegreen; }
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=466_christine_t18" target="_blank">466_christine_t18</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.35">9.35</a>), tag extension <tt>-NOB1</tt> marks an extraposed object occurring in a clause with provisional object <i>it</i> marked <tt>-POB1</tt>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.35">9.35</a>), tag extension <tt>-NOB1</tt> marks an extraposed object occurring in a clause with provisional object <i>it</i> tagged <tt>PRO;_provisional_</tt>.</p>
 
 <dl><dt>(<a name="ex9.35">9.35</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ;{PETER}","NPR","Peter"</tt><br>
 <tt>"IP-MAT","VBD;~Cn.t","thought"</tt><br>
-<tt>"IP-MAT",<highlight>NP-POB1</highlight>,"PRO;_provisional_","it"</tt><br>
+<tt>"IP-MAT",<highlight>NP-OB1</highlight>,"PRO;_provisional_","it"</tt><br>
 <tt>"IP-MAT","ADJP-PRD","ADJS","best"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"TO","to"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"VB;~Ip","go"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"ADVP-CLR-DIR","ADV","away"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"PP-CNT","P-ROLE","without"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"PP-CNT","IP-PPL2","VAG;~Ipr","speaking"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF2-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","NP;{WHITE_CAT}","PRO","her"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"TO","to"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"VB;~Ip","go"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"ADVP-CLR-DIR","ADV","away"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","P-ROLE","without"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","VAG;~Ipr","speaking"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","P-ROLE","to"</tt><br>
+<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","NP;{WHITE_CAT}","PRO","her"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_a_potter_1902" target="_blank">38_a_potter_1902</a>"</tt><br>
 </dd></dl>
 
@@ -892,6 +886,24 @@ highlight { background-color: palegreen; }
 <tt>"IP-MAT","IP-INF-CAT","CONJP-196","NP","D","the"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","CONJP-196","NP","NS","pigs"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=117_susanne_g12" target="_blank">117_susanne_g12</a>"</tt><br>
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another example:</p>
+
+<dl><dt>(<a name="ex9.41">9.41</a>)</dt><dd>
+<tt>"IP-ADV","ILYR","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-ADV","ILYR","VBD;~Tn.pr","took"</tt><br>
+<tt>"IP-ADV","ILYR",<highlight>NP-OB1;{THING}</highlight>,"PRO","it"</tt><br>
+<tt>"IP-ADV","ILYR","PP-CLR-DIR","P-ROLE","out_of"</tt><br>
+<tt>"IP-ADV","ILYR","PP-CLR-DIR","NP","NP-GENV;{FATHER}","NP-GENV","PRO;_genm_","my"</tt><br>
+<tt>"IP-ADV","ILYR","PP-CLR-DIR","NP","NP-GENV;{FATHER}","N","dad"</tt><br>
+<tt>"IP-ADV","ILYR","PP-CLR-DIR","NP","NP-GENV;{FATHER}","GENM","&lt;apos&gt;s"</tt><br>
+<tt>"IP-ADV","ILYR","PP-CLR-DIR","NP","N","pocket"</tt><br>
+<tt>"IP-ADV",<mark>NP-EXT-DSC;{THING}</mark>,"IP-PEL","NP-OB1","RPRO","what"</tt><br>
+<tt>"IP-ADV",<mark>NP-EXT-DSC;{THING}</mark>,"IP-PEL","NP-SBJ;{FATHER}","PRO","he"</tt><br>
+<tt>"IP-ADV",<mark>NP-EXT-DSC;{THING}</mark>,"IP-PEL","VBP","gives"</tt><br>
+<tt>"IP-ADV",<mark>NP-EXT-DSC;{THING}</mark>,"IP-PEL","NP-OB2","PRO","me"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=694_christine_t06" target="_blank">694_christine_t06</a>"</tt><br>
 </dd></dl>
 
 <br>
