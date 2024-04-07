@@ -64,10 +64,10 @@ highlight { background-color: palegreen; }
 
 <dl><dt>(<a name="ex4.3">4.3</a>)</dt><dd>
 <tt>"IP-MAT","CONJ;_cl_","And"</tt><br>
-<tt>"IP-MAT","NP-SBJ;{FORREST}","PRO","he"</tt><br>
+<tt>"IP-MAT","NP-SBJ","PRO","he"</tt><br>
 <tt>"IP-MAT",<mark>DOD</mark>,"did"</tt><br>
 <tt>"IP-MAT",<highlight>VB;~Tn</highlight>,"kiss"</tt><br>
-<tt>"IP-MAT","NP-OB1;{BERYL}","PRO","me"</tt><br>
+<tt>"IP-MAT","NP-OB1","PRO","me"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=73_a_lob_n02" target="_blank">73_a_lob_n02</a>"</tt><br>
 </dd></dl>
 
@@ -139,7 +139,7 @@ highlight { background-color: palegreen; }
 <tt>"CP-QUE","IP-SUB",<mark>BEP;~Ln</mark>,"Is"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-SBJ","P-ROLE","that"</tt><br>
 <tt>"CP-QUE","IP-SUB","ADVP-TMP","ADV","still"</tt><br>
-<tt>"CP-QUE","IP-SUB","NP-PRD2","NP-GENV;{JOHNSON}","PRO;_genm_","his"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-PRD2","NP-GENV","PRO;_genm_","his"</tt><br>
 <tt>"CP-QUE","IP-SUB","NP-PRD2","N","position"</tt><br>
 <tt>"CP-QUE","PUNC","?"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=22_a_major_case" target="_blank">22_a_major_case</a>"</tt><br>
@@ -164,7 +164,7 @@ highlight { background-color: palegreen; }
 <dl><dt>(<a name="ex4.11">4.11</a>)</dt><dd>
 <tt>"CP-QUE","IP-SUB",<mark>NP-OB1</mark>,"WPRO","What"</tt><br>
 <tt>"CP-QUE","IP-SUB","DOP","do"</tt><br>
-<tt>"CP-QUE","IP-SUB","NP-SBJ;{DORLE}","PRO","you"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","you"</tt><br>
 <tt>"CP-QUE","IP-SUB","VB;~Tn","mean"</tt><br>
 <tt>"CP-QUE","PUNC","?"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=321_a_dick_1952" target="_blank">321_a_dick_1952</a>"</tt><br>
@@ -204,7 +204,7 @@ highlight { background-color: palegreen; }
 <tt>"CP-QUE","IP-SUB",<mark>PP-126</mark>,"NP","WD","what"</tt><br>
 <tt>"CP-QUE","IP-SUB",<mark>PP-126</mark>,"NP","NS","ways"</tt><br>
 <tt>"CP-QUE","IP-SUB","MD;~cat_Vi","might"</tt><br>
-<tt>"CP-QUE","IP-SUB","NP-SBJ;{HOMES}","PRO","they"</tt><br>
+<tt>"CP-QUE","IP-SUB","NP-SBJ","PRO","they"</tt><br>
 <tt>"CP-QUE","IP-SUB","IP-INF-CAT",<highlight>PP-MNR</highlight>,"*ICH*-126"</tt><br>
 <tt>"CP-QUE","IP-SUB","IP-INF-CAT","ADVP-TMP","ADV","still"</tt><br>
 <tt>"CP-QUE","IP-SUB","IP-INF-CAT","BE;~Ln","be"</tt><br>
@@ -390,8 +390,6 @@ highlight { background-color: palegreen; }
 
 <li>tag extension <tt>-NSBJ</tt> marks a notional subject that co-occurs in a clause with: (i) a provisional subject <i>it</i> tagged <tt>PRO;_provisional_</tt>, as in (<a href="chapter4.html#ex4.27">4.27</a>); or (ii) a derived subject marked <tt>-SBJ</tt> and so not distinguished independently of the construction, as in (<a href="chapter4.html#ex4.29">4.29</a>)</li>
 
-<li>The subject can also be <i>it</i> as a dummy element that has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.30">4.30</a>).</li>
-
 </ul>
 
 <dl><dt>(<a name="ex4.26">4.26</a>)</dt><dd>
@@ -422,7 +420,7 @@ highlight { background-color: palegreen; }
 <tt>"IP-MAT","NEG","not"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","ADVP","ADV","really"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","BE",<mark>be</mark></tt><br>
-<tt>"IP-MAT","IP-INF-CAT","NP-NSBJ;{IDENT_23}","PRO","you"</tt><br>
+<tt>"IP-MAT","IP-INF-CAT","NP-NSBJ","PRO","you"</tt><br>
 <tt>"IP-MAT","IP-INF-CAT","IP-PPL-CAT","VAG","speaking"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=28_nt_4113" target="_blank">28_nt_4113</a>"</tt><br>
 </dd></dl>
@@ -433,13 +431,15 @@ highlight { background-color: palegreen; }
 <tt>"ILYR","BEP;~La","is"</tt><br>
 <tt>"ILYR","ADJP-PRD2","ADVP","ADV","very"</tt><br>
 <tt>"ILYR","ADJP-PRD2","ADJ","hard"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"NP-LGS","*"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"TO","to"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"VB;~Tn.pr","explain"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"PP-CLR-MNR","P-ROLE","in"</tt><br>
-<tt>"ILYR",<highlight>IP-INF-NSBJ;{EXPLAIN}</highlight>,"PP-CLR-MNR","NP","NS","words"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"NP-LGS","*"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"TO","to"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"VB;~Tn.pr","explain"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"PP-CLR-MNR","P-ROLE","in"</tt><br>
+<tt>"ILYR",<highlight>IP-INF-NSBJ</highlight>,"PP-CLR-MNR","NP","NS","words"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_a_stories_09_m14" target="_blank">3_a_stories_09_m14</a>"</tt><br>
 </dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The subject can also be <i>it</i> as a dummy element tagged <tt>PRO;_expletive_</tt> which has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.30">4.30</a>).</p>
 
 <dl><dt>(<a name="ex4.30">4.30</a>)</dt><dd>
 <tt>"IP-SUB","BEP;~cat_Vg","is"</tt><br>
@@ -528,9 +528,9 @@ highlight { background-color: palegreen; }
 <tt>"IP-MAT","PP-CLR","P-ROLE","to"</tt><br>
 <tt>"IP-MAT","PP-CLR","NP","PRO","you"</tt><br>
 <tt>"IP-MAT","PP-CLR","NP","PUNC","&lt;comma&gt;"</tt><br>
-<tt>"IP-MAT","PP-CLR","NP","PRN","NP;{LAING}","NPR","Madam"</tt><br>
-<tt>"IP-MAT","PP-CLR","NP","PRN","NP;{LAING}","NPR;@2","Deputy"</tt><br>
-<tt>"IP-MAT","PP-CLR","NP","PRN","NP;{LAING}","NPR","Speaker"</tt><br>
+<tt>"IP-MAT","PP-CLR","NP","PRN","NP","NPR","Madam"</tt><br>
+<tt>"IP-MAT","PP-CLR","NP","PRN","NP","NPR;@2","Deputy"</tt><br>
+<tt>"IP-MAT","PP-CLR","NP","PRN","NP","NPR","Speaker"</tt><br>
 <tt>"IP-MAT","PUNC","&lt;comma&gt;"</tt><br>
 <tt>"IP-MAT",<highlight>IP-INF-NOB1</highlight>,"TO","to"</tt><br>
 <tt>"IP-MAT",<highlight>IP-INF-NOB1</highlight>,"VB;~Tw","decide"</tt><br>
@@ -564,10 +564,10 @@ highlight { background-color: palegreen; }
 
 <dl><dt>(<a name="ex4.35">4.35</a>)</dt><dd>
 <tt>"PP-SCON-CNT","P-CONN","because"</tt><br>
-<tt>"PP-SCON-CNT","IP-ADV","NP-SBJ","NP-GENV;{IDENT_47}","PRO","my"</tt><br>
+<tt>"PP-SCON-CNT","IP-ADV","NP-SBJ","NP-GENV","PRO","my"</tt><br>
 <tt>"PP-SCON-CNT","IP-ADV","NP-SBJ","N","lie"</tt><br>
 <tt>"PP-SCON-CNT","IP-ADV","VBP","makes"</tt><br>
-<tt>"PP-SCON-CNT","IP-ADV",<mark>NP-DOB1</mark>,"NP-GENV;{IDENT_10}","PRO","his"</tt><br>
+<tt>"PP-SCON-CNT","IP-ADV",<mark>NP-DOB1</mark>,"NP-GENV","PRO","his"</tt><br>
 <tt>"PP-SCON-CNT","IP-ADV",<mark>NP-DOB1</mark>,"N","truth"</tt><br>
 <tt>"PP-SCON-CNT","IP-ADV","ADJP-PRD","ADJR","easier"</tt><br>
 <tt>"PP-SCON-CNT","IP-ADV",<highlight>IP-INF-OB1</highlight>,"NP-LGS","*"</tt><br>
