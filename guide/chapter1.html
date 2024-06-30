@@ -37,10 +37,10 @@ highlight { background-color: palegreen; }
 <p align="justify">Sentence and word layers are fairly easily identified by conventions of the English writing system. Sentences are delimited by an initial capital letter and a final full-stop (or question-mark or exclamation-mark). Words are created with single character strings that are delimited by a space on each side (or punctuation mark other than a hyphen or apostrophe). But these conventions are not always followed. An important exception is when a sequence of words behaves syntactically in an idiomatic way (e.g.&nbsp;&lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences will be analysed as if single words, with each component separated by underscore characters in a single character string, as in (<a href="chapter1.html#ex1.1">1.1</a>).</p>
 
 <dl><dt>(<a name="ex1.1">1.1</a>)</dt><dd>
-</dd></dl>
 <tt>as_long_as</tt><br>
 <tt>with_regard_to</tt><br>
 <tt>by_the_way</tt><br>
+</dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;To allow for integration into the parse analysis, punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words; see section <a href="chapter2.html#sec2.10">2.10</a> for details.</p>
 
@@ -61,20 +61,20 @@ Look!
 <p align="justify">The parse information of Figure <a href="#figure1.2">1.2</a> can be represented with bracketed notation as in (<a href="chapter1.html#ex1.3">1.3</a>), which follows CorpusSearch format (Randall 2009).</p>
 
 <dl><dt>(<a name="ex1.3">1.3</a>)</dt><dd>
-</dd></dl>
 <tt>(&nbsp;(IP-MAT&nbsp;(VERB&nbsp;Look)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;!))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;101_a_saint_exupery_1943))</tt><br>
+</dd></dl>
 
 <p align="justify">With CorpusSearch format, every tree has a &ldquo;wrapper&rdquo;. A wrapper is a pair of unlabelled parentheses surrounding the tree content together with an <tt>ID</tt> node. Furthermore, for the TSPC, an <tt>ID</tt> node contains a character string that begins with a number corresponding to the number of the tree in its corpus file. This tree number is followed by an underscore (&lsquo;<tt>_</tt>&rsquo;) and then by the name of the corpus file (minus any extension). Other character string material may follow the filename, provided there is an intervening semicolon (&lsquo;<tt>;</tt>&rsquo;).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another way to present the parse information from sentence layer to words is with (<a href="chapter1.html#ex1.4">1.4</a>).</p>
 
 <dl><dt>(<a name="ex1.4">1.4</a>)</dt><dd>
-</dd></dl>
 <tt>"IP-MAT","VERB","Look"</tt><br>
 <tt>"IP-MAT","-VERB","!"</tt><br>
 <tt>"ID","101_a_saint_exupery_1943"</tt><br>
+</dd></dl>
 
 <p align="justify">With (<a href="chapter1.html#ex1.4">1.4</a>), each word of the parse comes at the end of its own line, with each line presenting path information from the root (<tt>IP-MAT</tt>) layer through to a word layer. The last line is the ID node for the parse.</p>
 
@@ -180,7 +180,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The dual concern for form and function in chapters <a href="chapter2.html#ch2">2</a> and <a href="chapter3.html#ch3">3</a> will be carried over to an exploration of clause constituents in chapter <a href="chapter4.html#ch4">4</a>. Chapter <a href="chapter5.html#ch5">5</a> details options available for realising complex sentences with clause-within-clause subordination.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The parsing practise developed over chapters 3, 4, and 5 will involve specifying form and function for the constituents named <tt>PHRASE</tt> and <tt>CLAUSE</tt> above. <tt>IP-MAT</tt> as a constituent name may also need further specification. For example, the annotation of (<a href="chapter1.html#ex1.3">1.3</a>) / (<a href="chapter1.html#ex1.4">1.4</a>) above can be further refined with <tt>IP-IMP</tt> replacing <tt>IP-MAT</tt> to identify sentence (<a href="chapter1.html#ex1.2">1.2</a>) as an imperative.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The parsing practise developed over chapters 3, 4, and 5 will involve specifying form and function for the constituents named <tt>PHRASE</tt> and <tt>CLAUSE</tt> above. <tt>IP-MAT</tt> as a constituent name may also need further specification. For example, the annotation of (<a href="chapter1.html#ex1.3">1.3</a>)/(<a href="chapter1.html#ex1.4">1.4</a>) above will be further refined so that <tt>IP-IMP</tt> replaces <tt>IP-MAT</tt> to identify sentence (<a href="chapter1.html#ex1.2">1.2</a>) as an imperative.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a>, and <a href="chapter8.html#ch8">8</a> integrate verb codes that signal the clause requirements of verbs.</p>
 
@@ -270,7 +270,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <p align="justify">These intermediate layers are required when their corresponding levels of structure include <tt>CONJP</tt> layers.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a>. The codes of chapter <a href="chapter6.html#ch6">6</a> classify catenative verbs; cf.&nbsp;Huddleston and Pullum (2002, p.1220). These are verbs of a verb sequence that are prior to the main verb of a clause, and this type of verb is further supported in the annotation by (<tt>IP-PPL-CAT</tt>) intermediate clause structure. Additional codes of chapter <a href="chapter6.html#ch6">6</a> with very particular distributions are included from Hornby (1975). The verb codes for main verbs in chapter <a href="chapter7.html#ch7">7</a> are from the mnemonic system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a>. The codes of chapter <a href="chapter6.html#ch6">6</a> classify catenative verbs; cf.&nbsp;Huddleston and Pullum (2002, p.1220). These are verbs of a verb sequence that are prior to the main verb of a clause and intermediate clause structure in the annotation (<tt>IP-PPL-CAT</tt>) further supports this type of verb. Additional codes of chapter <a href="chapter6.html#ch6">6</a> with very particular distributions are included from Hornby (1975). The verb codes for main verbs in chapter <a href="chapter7.html#ch7">7</a> are from the mnemonic system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic-based meaning representations. While the annotation seldom includes indexing, results calculated with Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies. It is sometimes especially helpful to see meaning representations from Treebank Semantics as dependency graphs (e.g., from the on-line corpus interface) to make visually apparent connections that the design of the annotation captures.</p>
 

@@ -70,7 +70,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>*ICH*</tt></td><td>abbreviation mnemonic for &lsquo;interpret constituent here&rsquo;</td></tr>
 </table>
 
-<p align="justify">If displacement crosses structural layers, then indexing with <tt>*ICH*</tt> of Table <a href="chapter9.html#table9.61">9.61</a> is needed to mark the point where the function contribution is needed. For example, (<a href="chapter9.html#ex9.2">9.2</a>) has a sentence initial displaced object with indexing.</p>
+<p align="justify">If displacement crosses structural layers, then indexing with <tt>*ICH*</tt> of Table <a href="chapter9.html#table9.61">9.61</a> is needed to mark the point where the function contribution is needed. For example, (<a href="#ex__ID&#64;tspc_691_x_blue_book&#64;2,28__">__ID&#64;tspc_691_x_blue_book&#64;2,28__</a>) has a sentence initial displaced object with indexing.</p>
 
 <dl><dt>(<a name="ex9.2">9.2</a>)</dt><dd>
 <tt>"IP-MAT",<mark>NP-143</mark>,"D","The"</tt><br>
@@ -86,10 +86,10 @@ highlight { background-color: palegreen; }
 <tt>"IP-MAT","IP-PPL-CAT","VVN;~Tn","written"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","PP-TMP","P-ROLE","before"</tt><br>
 <tt>"IP-MAT","IP-PPL-CAT","PP-TMP","NP","NUM","1910"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=691_x_blue_book" target="_blank">691_x_blue_book</a>"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=692_x_blue_book" target="_blank">692_x_blue_book</a>"</tt><br>
 </dd></dl>
 
-<p align="justify">While the displaced object of (<a href="chapter9.html#ex9.2">9.2</a>) occurs internally to a sentence with a single clause, this clause contains a verb sequence that places the main verb inside a distinct <tt>IP-PPL-CAT</tt> layer. Annotation for the object role contribution needs to occur at the layer of the main ([Tn]) verb: This is accomplished with the placement of the object role information within the <tt>IP-PPL-CAT</tt> layer together with an instance of <tt>*ICH*</tt> that shares an index with the displaced object. The displaced object carries no function information itself, but rather its function marking resides directly above the <tt>*ICH*</tt> with which it shares its index.</p>
+<p align="justify">While the displaced object of (<a href="#ex__ID&#64;tspc_691_x_blue_book&#64;2,28__">__ID&#64;tspc_691_x_blue_book&#64;2,28__</a>) occurs internally to a sentence with a single clause, this clause contains a verb sequence that places the main verb inside a distinct <tt>IP-PPL-CAT</tt> layer. Annotation for the object role contribution needs to occur at the layer of the main ([Tn]) verb: This is accomplished with the placement of the object role information within the <tt>IP-PPL-CAT</tt> layer together with an instance of <tt>*ICH*</tt> that shares an index with the displaced object. The displaced object carries no function information itself, but rather its function marking resides directly above the <tt>*ICH*</tt> with which it shares its index.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Example (<a href="chapter9.html#ex9.3">9.3</a>) illustrates an initial noun phrase that contributes the complement of a preposition phrase that is within an embedded clause. A clause boundary is crossed, making this a long-distance displacement, a dependency that can only be captured through annotation with indexing due to its parts needing to be in distinct clause layers.</p>
 
@@ -146,7 +146,7 @@ highlight { background-color: palegreen; }
 
 <br><h3><a name="sec9.2.3">9.2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Indexing with subjects</h3>
 
-<p align="justify">Note that the subject of (<a href="chapter9.html#ex9.2">9.2</a>), while also occurring outside the <tt>IP-PPL-CAT</tt> layer, does not require indexing in the way that the object does. This is because the subject contribution of a main verb in a verb sequence is automatically inherited from the configuration of control (see section <a href="chapter10.html#sec10.4">10.4</a> below for a discussion of how control works). While typically subjects will not need indexing, this is not always the case. For example, (<a href="chapter9.html#ex9.6">9.6</a>) contains a matrix subject (<i>the Fool</i>) that has undergone subject-verb inversion but needs to have its content contribution indicated with indexing at a point that is above the <i>and</i> conjunction.</p>
+<p align="justify">Note that the subject of (<a href="#ex__ID&#64;tspc_691_x_blue_book&#64;2,28__">__ID&#64;tspc_691_x_blue_book&#64;2,28__</a>), while also occurring outside the <tt>IP-PPL-CAT</tt> layer, does not require indexing in the way that the object does. This is because the subject contribution of a main verb in a verb sequence is automatically inherited from the configuration of control (see section <a href="chapter10.html#sec10.5">10.5</a> below for a discussion of how control works). While typically subjects will not need indexing, this is not always the case. For example, (<a href="chapter9.html#ex9.6">9.6</a>) contains a matrix subject (<i>the Fool</i>) that has undergone subject-verb inversion but needs to have its content contribution indicated with indexing at a point that is above the <i>and</i> conjunction.</p>
 
 <dl><dt>(<a name="ex9.6">9.6</a>)</dt><dd>
 <tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"*ICH*-161"</tt><br>
@@ -398,7 +398,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>NP-DSC</tt></td><td>make accessible a discourse referent</td></tr>
 </table>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Having <tt>-DSC</tt> allows annotation like (<a href="chapter9.html#ex9.16">9.16</a>), where there is a relative pronoun to send the head referent content to the discourse context, and a resumptive pronoun to pick up the established antecedent, with resolution of the pronoun assured by the presence of witness information (see section <a href="chapter10.html#sec10.6">10.6</a> where anaphora resolution is discussed).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Having <tt>-DSC</tt> allows annotation like (<a href="chapter9.html#ex9.16">9.16</a>), where there is a relative pronoun to send the head referent content to the discourse context, and a resumptive pronoun to pick up the established antecedent, with resolution of the pronoun assured by the presence of witness information (see section <a href="chapter10.html#sec10.7">10.7</a> where anaphora resolution is discussed).</p>
 
 <dl><dt>(<a name="ex9.16">9.16</a>)</dt><dd>
 <tt>"IP-MAT","EX","There"</tt><br>
@@ -756,17 +756,17 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter9.html#ex9.35">9.35</a>), tag extension <tt>-NOB1</tt> marks an extraposed object occurring in a clause with provisional object <i>it</i> tagged <tt>PRO;_provisional_</tt>.</p>
 
 <dl><dt>(<a name="ex9.35">9.35</a>)</dt><dd>
-<tt>"IP-MAT","NP-SBJ","NPR","Peter"</tt><br>
-<tt>"IP-MAT","VBD;~Cn.t","thought"</tt><br>
-<tt>"IP-MAT",<highlight>NP-OB1</highlight>,"PRO;_provisional_","it"</tt><br>
-<tt>"IP-MAT","ADJP-PRD","ADJS","best"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"TO","to"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"VB;~Ip","go"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"ADVP-CLR-DIR","ADV","away"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","P-ROLE","without"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","VAG;~Ipr","speaking"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","P-ROLE","to"</tt><br>
-<tt>"IP-MAT",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","NP","PRO","her"</tt><br>
+<tt>"ILYR","NP-SBJ","NPR","Peter"</tt><br>
+<tt>"ILYR","VBD;~Cn.t","thought"</tt><br>
+<tt>"ILYR",<highlight>NP-OB1</highlight>,"PRO;_provisional_","it"</tt><br>
+<tt>"ILYR","ADJP-PRD","ADJS","best"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"TO","to"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"VB;~Ip","go"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"ADVP-CLR-DIR","ADV","away"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"PP-CNT","P-ROLE","without"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","VAG;~Ipr","speaking"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","P-ROLE","to"</tt><br>
+<tt>"ILYR",<mark>IP-INF-NOB1</mark>,"PP-CNT","IP-PPL2","PP-CLR","NP","PRO","her"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_a_potter_1902" target="_blank">38_a_potter_1902</a>"</tt><br>
 </dd></dl>
 
