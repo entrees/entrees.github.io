@@ -33,7 +33,7 @@ highlight { background-color: palegreen; }
 </dl>
 </dd></dl>
 
-<p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="#ex__ID&#64;tspc_212_x_buffalo&#64;9,12,14,18,21__">__ID&#64;tspc_212_x_buffalo&#64;9,12,14,18,21__</a>) occurs as a complementizer (<tt>C</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>), relative pronoun (<tt>RPRO</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
+<p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.2">2.2</a>) occurs as a complementizer (<tt>C</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>), relative pronoun (<tt>RPRO</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
 
 <dl><dt>(<a name="ex2.2">2.2</a>)</dt><dd>
 <tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
@@ -264,11 +264,11 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each&lowbar;other</i> and <i>one&lowbar;another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.13">2.13</a>).</p>
 
 <dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
-<tt>"IP-MAT","NP-SBJ;{JOHN+MARY}","NLYR","NP","NPR","John"</tt><br>
-<tt>"IP-MAT","NP-SBJ;{JOHN+MARY}","NLYR","CONJP","CONJ","and"</tt><br>
-<tt>"IP-MAT","NP-SBJ;{JOHN+MARY}","NLYR","CONJP","NP","NPR","Mary"</tt><br>
-<tt>"IP-MAT",<mark>VBP;~Tn</mark>,"love"</tt><br>
-<tt>"IP-MAT","NP-OB1;{JOHN+MARY}",<highlight>PNX</highlight>,"each_other"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ;{JOHN+MARY}</highlight>,"NLYR","NP","NPR","John"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ;{JOHN+MARY}</highlight>,"NLYR","CONJP","CONJ","and"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ;{JOHN+MARY}</highlight>,"NLYR","CONJP","NP","NPR","Mary"</tt><br>
+<tt>"IP-MAT","VBP;~Tn","love"</tt><br>
+<tt>"IP-MAT",<highlight>NP-OB1;{JOHN+MARY}</highlight>,<mark>PNX</mark>,"each_other"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=133_x_blue_book" target="_blank">133_x_blue_book</a>"</tt><br>
 </dd></dl>
 
@@ -284,7 +284,7 @@ highlight { background-color: palegreen; }
 <p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.15">2.15</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
 
 <dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
-<tt>"IP-MAT","NP-SBJ","PRO","I"</tt><br>
+<tt>"IP-MAT",<highlight>NP-SBJ</highlight>,"PRO","I"</tt><br>
 <tt>"IP-MAT","VBD;~Tn","made"</tt><br>
 <tt>"IP-MAT","NP-OB1","PRO","it"</tt><br>
 <tt>"IP-MAT","ADVP-MNR","ADV","all"</tt><br>
