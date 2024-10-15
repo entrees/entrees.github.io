@@ -193,8 +193,8 @@ highlight { background-color: palegreen; }
 
 <dl><dt>(<a name="ex3.8">3.8</a>)</dt><dd>
 <tt>"NP-OB1","<highlight>IP-PPL</highlight>","NP-LGS","*"</tt><br>
-<tt>"NP-OB1","<highlight>IP-PPL</highlight>","VVN;~Tn","<mark>validated</mark>"</tt><br>
-<tt>"NP-OB1","N","data"</tt><br>
+<tt>"NP-OB1","<highlight>IP-PPL</highlight>","VVN;~Tn","validated"</tt><br>
+<tt>"NP-OB1","<mark>N</mark>","data"</tt><br>
 <tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=92_lucy_bnc_b35" target="_blank">92_lucy_bnc_b35</a>"</tt><br>
 </dd></dl>
 
@@ -965,12 +965,14 @@ highlight { background-color: palegreen; }
 <p align="justify">Conjunction with an <tt>ADVP</tt> is the same as with an <tt>ADJP</tt>. With the annotation, <tt>CONJP</tt> projections are adjoined to the first <tt>CONJP</tt>-less conjunct under an <tt>AVLYR</tt> layer.</p>
 
 <dl><dt>(<a name="ex3.62">3.62</a>)</dt><dd>
-<tt>"ADJP-PRD2","ADVP","ADVP","ADV","just"</tt><br>
-<tt>"ADJP-PRD2","ADVP","WADV","how"</tt><br>
-<tt>"ADJP-PRD2","<mark>AJLYR</mark>","ADJP","ADJ","rich"</tt><br>
-<tt>"ADJP-PRD2","<mark>AJLYR</mark>","CONJP","CONJ","and"</tt><br>
-<tt>"ADJP-PRD2","<mark>AJLYR</mark>","CONJP","ADJP","ADJ","glorious"</tt><br>
-<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=53_nt_5101" target="_blank">53_nt_5101</a>"</tt><br>
+<tt>"ILYR","NP-SBJ","PRO","I"</tt><br>
+<tt>"ILYR","VBD","used"</tt><br>
+<tt>"ILYR","NP-OB1","PRO","it"</tt><br>
+<tt>"ILYR","ADVP-TMP","ADVP","ADV","about"</tt><br>
+<tt>"ILYR","ADVP-TMP","<mark>AVLYR</mark>","<highlight>ADVP</highlight>","ADV","once"</tt><br>
+<tt>"ILYR","ADVP-TMP","<mark>AVLYR</mark>","CONJP","CONJ","or"</tt><br>
+<tt>"ILYR","ADVP-TMP","<mark>AVLYR</mark>","CONJP","<highlight>ADVP</highlight>","ADV","twice"</tt><br>
+<tt>"ID","<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=548_christine_t27" target="_blank">548_christine_t27</a>"</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AVLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.63">3.63</a>).</p>
