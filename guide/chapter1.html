@@ -43,7 +43,7 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec1.2.2">1.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A simple sentence</h3>
 
-<p align="justify">A simple sentence consists of one clause, so Figure <a href="#figure1.1">1.1</a> paths will start: <tt>"SENTENCE","CLAUSE"</tt>. This initial clause layer is known as the MATRIX clause, which is symbolised most generally with <tt>IP-MAT</tt>. <tt>IP</tt> is an abbreviation for Inflectional Phrase, which is another way to say &lsquo;clause&rsquo;. A clause contains minimally a verb. Consider the simple sentence (<a href="chapter1.html#ex1.2">1.2</a>), which is comprised of a single verb contained within a single clause.</p>
+<p align="justify">A simple sentence consists of one clause, so Figure <a href="#figure1.1">1.1</a> paths will start: <tt>SENTENCE,CLAUSE</tt>. This initial clause layer is known as the MATRIX clause, which is symbolised most generally with <tt>IP-MAT</tt>. <tt>IP</tt> is an abbreviation for Inflectional Phrase, which is another way to say &lsquo;clause&rsquo;. A clause contains minimally a verb. Consider the simple sentence (<a href="chapter1.html#ex1.2">1.2</a>), which is comprised of a single verb contained within a single clause.</p>
 
 <dl><dt>(<a name="ex1.2">1.2</a>)</dt><dd>
 Look!
@@ -68,9 +68,9 @@ Look!
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another way to present the parse information from sentence layer to words is with (<a href="chapter1.html#ex1.4">1.4</a>).</p>
 
 <dl><dt>(<a name="ex1.4">1.4</a>)</dt><dd>
-<tt>"IP-MAT","+VERB","Look"</tt><br>
-<tt>"IP-MAT","-VERB","!"</tt><br>
-<tt>"ID","101_a_saint_exupery_1943"</tt><br>
+<tt>IP-MAT,+VERB,Look</tt><br>
+<tt>IP-MAT,-VERB,!</tt><br>
+<tt>ID,101_a_saint_exupery_1943</tt><br>
 </dd></dl>
 
 <p align="justify">With (<a href="chapter1.html#ex1.4">1.4</a>), each word of the parse comes at the end of its own line, with each line presenting path information from the root (<tt>IP-MAT</tt>) layer through to a word layer. The last line is the ID node for the parse.</p>
@@ -106,21 +106,21 @@ He wanted to show what happened to anyone who tried to start trouble.
 <p align="justify">When viewed in terms of paths from sentence layer to words, the analysis seen with (<a href="chapter1.html#ex1.6">1.6</a>) becomes (<a href="chapter1.html#ex1.7">1.7</a>).</p>
 
 <dl><dt>(<a name="ex1.7">1.7</a>)</dt><dd>
-<tt>"IP-MAT","PHRASE","-VERB","He"</tt><br>
-<tt>"IP-MAT","+VERB","wanted"</tt><br>
-<tt>"IP-MAT","CLAUSE","-VERB","to"</tt><br>
-<tt>"IP-MAT","CLAUSE","+VERB","show"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","-VERB","what"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","+VERB","happened"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","-VERB","to"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","-VERB","anyone"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","CLAUSE","PHRASE","-VERB","who"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","CLAUSE","+VERB","tried"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","CLAUSE","CLAUSE","-VERB","to"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","CLAUSE","CLAUSE","+VERB","start"</tt><br>
-<tt>"IP-MAT","CLAUSE","CLAUSE","PHRASE","PHRASE","CLAUSE","CLAUSE","PHRASE","-VERB","trouble"</tt><br>
-<tt>"IP-MAT","-VERB","."</tt><br>
-<tt>"ID","154_susanne_n12"</tt><br>
+<tt>IP-MAT,PHRASE,-VERB,He</tt><br>
+<tt>IP-MAT,+VERB,wanted</tt><br>
+<tt>IP-MAT,CLAUSE,-VERB,to</tt><br>
+<tt>IP-MAT,CLAUSE,+VERB,show</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,-VERB,what</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,+VERB,happened</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,-VERB,to</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,-VERB,anyone</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,PHRASE,-VERB,who</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,+VERB,tried</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,-VERB,to</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,+VERB,start</tt><br>
+<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,PHRASE,-VERB,trouble</tt><br>
+<tt>IP-MAT,-VERB,.</tt><br>
+<tt>ID,154_susanne_n12</tt><br>
 </dd></dl>
 
 <p align="justify">Notably, the paths of (<a href="chapter1.html#ex1.7">1.7</a>) conform to Figure <a href="#figure1.1">1.1</a> above. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
