@@ -58,18 +58,6 @@ highlight { background-color: palegreen; }
 <p align="justify">[cat_Vt] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>.</p>
 
 <dl><dt>(<a name="ex6.1">6.1</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,D;_nphd_,This</tt><br>
-<tt>ILYR,MD;~cat_Vi,may</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,VB;~cat_Vt,<highlight>appear</highlight>,</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,IP-INF-CAT,TO,to</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,IP-INF-CAT,BE;~cat_Vg,be</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,IP-INF-CAT,IP-PPL-CAT,VAG;~Tn,missing</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,IP-INF-CAT,IP-PPL-CAT,NP-OB1,D,the</tt><br>
-<tt>ILYR,<mark>IP-INF-CAT</mark>,IP-INF-CAT,IP-PPL-CAT,NP-OB1,N,point</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lucy_student_e12" target="_blank">6_lucy_student_e12</a></tt><br>
-</dd></dl>
-
-<dl><dt>(<a name="ex6.2">6.2</a>)</dt><dd>
 <tt>IP-MAT,NP-SBJ,D,A</tt><br>
 <tt>IP-MAT,NP-SBJ,N,drawing</tt><br>
 <tt>IP-MAT,NP-SBJ,PP,P-ROLE,of</tt><br>
@@ -84,6 +72,18 @@ highlight { background-color: palegreen; }
 <tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,PP-LOC,NP,N,reference</tt><br>
 <tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,PP-LOC,NP,NUM,6</tt><br>
 <tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_j04" target="_blank">41_susanne_j04</a></tt><br>
+</dd></dl>
+
+<dl><dt>(<a name="ex6.2">6.2</a>)</dt><dd>
+<tt>ILYR,NP-SBJ,D;_nphd_,This</tt><br>
+<tt>ILYR,MD;~cat_Vi,may</tt><br>
+<tt>ILYR,IP-INF-CAT,<mark>VB;~cat_Vt</mark>,appear</tt><br>
+<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
+<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,BE;~cat_Vg,be</tt><br>
+<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,VAG;~Tn,missing</tt><br>
+<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,NP-OB1,D,the</tt><br>
+<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,NP-OB1,N,point</tt><br>
+<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lucy_student_e12" target="_blank">6_lucy_student_e12</a></tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.3">6.3</a>)</dt><dd>
@@ -341,7 +341,7 @@ Mr.&nbsp;Yamada went to Tokyo
 <dl><dt>(<a name="ex6.19">6.19</a>)</dt><dd>
 <tt>IP-MAT,NP-SBJ,PRO,She</tt><br>
 <tt>IP-MAT,<highlight>HVP;~cat_Ve</highlight>,has</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~Dpr.n</mark>,given</tt><br>
+<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~Dn.pr</mark>,given</tt><br>
 <tt>IP-MAT,IP-PPL-CAT,NP-OB1,D,a</tt><br>
 <tt>IP-MAT,IP-PPL-CAT,NP-OB1,ADJP,ADJ,new</tt><br>
 <tt>IP-MAT,IP-PPL-CAT,NP-OB1,N,outfit</tt><br>
@@ -572,28 +572,6 @@ Mr.&nbsp;Yamada went to Tokyo
 <tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,NP-LGS,*</tt><br>
 <tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,VVN;~Tn,cut</tt><br>
 <tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=131_christine_t14" target="_blank">131_christine_t14</a></tt><br>
-</dd></dl>
-
-<br><h2><a name="sec6.12">6.12</a>&nbsp;&nbsp;&nbsp;&nbsp;Catenative adjectives</h2>
-
-<p align="justify">For example <i>near</i> and <i>ready</i> in 58_susanne_a01. Also, there is <i>clear</i> in (<a href="chapter6.html#ex6.35">6.35</a>).</p>
-
-<dl><dt>(<a name="ex6.35">6.35</a>)</dt><dd>
-<tt>IP-ADV,PP-TMP,P-ROLE,in</tt><br>
-<tt>IP-ADV,PP-TMP,NP,N,time</tt><br>
-<tt>IP-ADV,NP-SBJ,NP-GENV,PRO;_genm_,their</tt><br>
-<tt>IP-ADV,NP-SBJ,ADJP,ADJ,comparative</tt><br>
-<tt>IP-ADV,NP-SBJ,N,lack</tt><br>
-<tt>IP-ADV,NP-SBJ,PP,P-ROLE,of</tt><br>
-<tt>IP-ADV,NP-SBJ,PP,NP,N,progress</tt><br>
-<tt>IP-ADV,MD;~cat_Vi,will</tt><br>
-<tt>IP-ADV,IP-INF-CAT,VB;~La,become</tt><br>
-<tt>IP-ADV,IP-INF-CAT,ADJP-PRD2,<mark>ADJ;_cat_</mark>,clear</tt><br>
-<tt>IP-ADV,IP-INF-CAT,ADJP-PRD2,IP-INF,P-CONN,for</tt><br>
-<tt>IP-ADV,IP-INF-CAT,ADJP-PRD2,IP-INF,NP-LGS,Q;_nphd_,all</tt><br>
-<tt>IP-ADV,IP-INF-CAT,ADJP-PRD2,IP-INF,TO,to</tt><br>
-<tt>IP-ADV,IP-INF-CAT,ADJP-PRD2,IP-INF,VB,see</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=28_susanne_j22" target="_blank">28_susanne_j22</a></tt><br>
 </dd></dl>
 
 <br>
