@@ -36,38 +36,38 @@ highlight { background-color: palegreen; }
 <p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.2">2.2</a>) occurs as a complementizer (<tt>C</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>), relative pronoun (<tt>RPRO</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
 
 <dl><dt>(<a name="ex2.2">2.2</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,VBP;~Tf,hope</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,<mark>C</mark>,that</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,NP-SBJ,<highlight>D</highlight>,that</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,NP-SBJ,<highlight>N</highlight>,that</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,NP-SBJ,IP-REL,NP-OB1,<highlight>RPRO</highlight>,that</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,NP-SBJ,IP-REL,NP-SBJ,<highlight>D;_nphd_</highlight>,that</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,NP-SBJ,IP-REL,VBD;~Tn,started</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,MD;~cat_Vi,will</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,IP-INF-CAT,VB;~I,end</tt><br>
-<tt>IP-MAT,CP-THT-OB1,IP-SUB,IP-INF-CAT,ADVP-TMP,ADV,soon</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=215_x_buffalo" target="_blank">215_x_buffalo</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tf&nbsp;hope)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CP-THT-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;(<mark>C</mark>&nbsp;that)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<highlight>D</highlight>&nbsp;that)&nbsp;(<highlight>N</highlight>&nbsp;that)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(<highlight>RPRO</highlight>&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<highlight>D;_nphd_</highlight>&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Tn&nbsp;started)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;will)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;end)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;soon))))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Yet another possible tag for <i>that</i> is as a subordinating conjunction word (<tt>P-CONN</tt>), as seen in (<a href="chapter2.html#ex2.3">2.3</a>).</p>
 
 <dl><dt>(<a name="ex2.3">2.3</a>)</dt><dd>
-<tt>IP-IMP,VB;~Dn.*,tell</tt><br>
-<tt>IP-IMP,NP-OB2,PRO,me</tt><br>
-<tt>IP-IMP,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-IMP,PP-SCON-CNT,<mark>P-CONN</mark>,that</tt><br>
-<tt>IP-IMP,PP-SCON-CNT,IP-ADV,NP-SBJ,PRO,I</tt><br>
-<tt>IP-IMP,PP-SCON-CNT,IP-ADV,MD;~cat_Vi,might</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=90_a_wilde_2_1888" target="_blank">90_a_wilde_2_1888</a></tt><br>
+<tt>(IP-IMP&nbsp;(VB;~Dn.*&nbsp;tell)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB2&nbsp;(PRO&nbsp;me))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(<mark>P-CONN</mark>&nbsp;that)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;might))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
 
 <p align="justify">Certain words form the minimal component required for the phrase layers that immediately contain them. Such a minimal component is called the HEAD of the phrase. The word class tags of Table <a href="chapter2.html#table2.2">2.2</a> distinguish words that can head a noun phrase (<tt>NP</tt>; see section <a href="chapter3.html#sec3.2">3.2</a>).</p>
 
-<p><a name="table2.2">Table 2.2: Tags for words that can head a noun phrase</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>NS</tt></td><td>plural common noun (e.g., <i>children</i>, <i>revelations</i>, <i>times</i>, <i>wishes</i>)</td></tr>
 <tr><td><tt>N</tt></td><td>common noun not subclassified as <tt>NS</tt>, that is, either singular (e.g., <i>child</i>, <i>revelation</i>, <i>time</i>, <i>wish</i>), or neutral for number (e.g., <i>committee</i>, <i>fish</i>, <i>information</i>)</td></tr>
@@ -84,6 +84,10 @@ highlight { background-color: palegreen; }
 <tr><td><tt>Q;_nphd_</tt></td><td>Indefinite pronoun with quantification, which can be a compound (e.g., <i>everybody</i>, <i>nothing</i>), or a word which often occurs with the preposition <i>of</i> (e.g., <i>much</i>, <i>many</i>, <i>a_lot</i>)</td></tr>
 <tr><td><tt>D;_nphd_</tt></td><td>Indefinite pronoun not subclassified as <tt>Q;_nphd_</tt> (e.g., <i>someone</i>, <i>anything</i>, <i>another</i>), and demonstrative pronoun (e.g., <i>this</i>, <i>that</i>, <i>these</i>, <i>those</i>)</td></tr>
 </table>
+<br>
+<a name="table2.2"><b>Table 2.2</b>: Tags for words that can head a noun phrase</a>
+</center>
+<br>
 
 <p align="justify">The rest of this section describes morphosyntactic properties for identifying the words of Table <a href="chapter2.html#table2.2">2.2</a>.</p>
 
@@ -145,47 +149,45 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Both proper nouns and common nouns can be case marked &mdash; but only for genitive case &mdash; by the genitive suffix &lcub;'s&rcub; (or &lcub;'&rcub; if the noun already has the plural suffix &lcub;s&rcub;). For parsing, the genitive marking is made to form a distinct word that is tagged <tt>GENM</tt>:</p>
 
-<p><a name="table2.3">Table 2.3: Tag for genitive marker</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>GENM</tt></td><td>The genitive marker &lcub;'s&rcub; or &lcub;'&rcub;</td></tr>
 </table>
+<br>
+<a name="table2.3"><b>Table 2.3</b>: Tag for genitive marker</a>
+</center>
+<br>
 
 <p align="justify">This marker is placed leftmost under an <tt>NP-GENV</tt> projection that comprises the genitive content. For example:</p>
 
 <dl><dt>(<a name="ex2.10">2.10</a>)</dt><dd>
-<tt>NP-SBJ,<highlight>NP-GENV</highlight>,NPR,Wendy</tt><br>
-<tt>NP-SBJ,<highlight>NP-GENV</highlight>,<mark>GENM</mark>,&lt;apos&gt;s</tt><br>
-<tt>NP-SBJ,N,boyfriend</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=100_lucy_bnc_b33" target="_blank">100_lucy_bnc_b33</a></tt><br>
+<tt>(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(NPR&nbsp;Wendy)&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(N&nbsp;boyfriend))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.11">2.11</a>)</dt><dd>
-<tt>NP-OB1,<highlight>NP-GENV</highlight>,D,a</tt><br>
-<tt>NP-OB1,<highlight>NP-GENV</highlight>,N,couple</tt><br>
-<tt>NP-OB1,<highlight>NP-GENV</highlight>,PP,P-ROLE,of</tt><br>
-<tt>NP-OB1,<highlight>NP-GENV</highlight>,PP,NP,NS,hours</tt><br>
-<tt>NP-OB1,<highlight>NP-GENV</highlight>,<mark>GENM</mark>,&lt;apos&gt;</tt><br>
-<tt>NP-OB1,N,work</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=212_christine_t37" target="_blank">212_christine_t37</a></tt><br>
+<tt>(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;couple)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;hours)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(N&nbsp;work))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as in (<a href="chapter2.html#ex2.12">2.12</a>).</p>
 
 <dl><dt>(<a name="ex2.12">2.12</a>)</dt><dd>
-<tt>NP-NSBJ,D,that</tt><br>
-<tt>NP-NSBJ,N,microphone</tt><br>
-<tt>NP-NSBJ,<highlight>PP-GENV</highlight>,P-ROLE,of</tt><br>
-<tt>NP-NSBJ,<highlight>PP-GENV</highlight>,NP,NPR,Scott</tt><br>
-<tt>NP-NSBJ,<highlight>PP-GENV</highlight>,NP,<mark>GENM</mark>,&lt;apos&gt;s</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=249_christine_t29" target="_blank">249_christine_t29</a></tt><br>
+<tt>(NP-NSBJ&nbsp;(D&nbsp;that)&nbsp;(N&nbsp;microphone)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-GENV</highlight>&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Scott)&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec2.2.6">2.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Reciprocal, reflexive, and personal pronouns</h3>
 
 <p align="justify">This section presents an overview of reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>). Such words are understood in the context of their occurrence, often by taking already mentioned noun phrases as antecedents. They can appear in full noun phrase positions, with the range of grammatical markings detailed in Table <a href="chapter2.html#table2.4">2.4</a>.</p>
 
-<p><a name="table2.4">Table 2.4: Reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>)</a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -260,36 +262,42 @@ highlight { background-color: palegreen; }
     <td>theirs</td>
   </tr>
 </table>
+<br>
+<a name="table2.4"><b>Table 2.4</b>: Reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>)</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each&lowbar;other</i> and <i>one&lowbar;another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.13">2.13</a>).</p>
 
 <dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
-<tt>IP-MAT,<highlight>NP-SBJ</highlight>,NLYR,NP,NPR,John</tt><br>
-<tt>IP-MAT,<highlight>NP-SBJ</highlight>,NLYR,CONJP,CONJ,and</tt><br>
-<tt>IP-MAT,<highlight>NP-SBJ</highlight>,NLYR,CONJP,NP,NPR,Mary</tt><br>
-<tt>IP-MAT,VBP;~Tn,love</tt><br>
-<tt>IP-MAT,<highlight>NP-OB1</highlight>,<mark>PNX</mark>,each_other</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=133_x_blue_book" target="_blank">133_x_blue_book</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;John))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;Mary)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tn&nbsp;love)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>PNX</mark>&nbsp;each_other)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Reflexive personal pronouns can indicate that the subject and object are the same entity, as in (<a href="chapter2.html#ex2.14">2.14</a>).</p>
 
 <dl><dt>(<a name="ex2.14">2.14</a>)</dt><dd>
-<tt>IP-MAT,<highlight>NP-SBJ;{GUN}</highlight>,PRO,It</tt><br>
-<tt>IP-MAT,VBP;~Tn,fires</tt><br>
-<tt>IP-MAT,<highlight>NP-OB1;{GUN}</highlight>,<mark>PNX</mark>,itself</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=322_a_dick_1952" target="_blank">322_a_dick_1952</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-SBJ;{GUN}</highlight>&nbsp;(PRO&nbsp;It))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tn&nbsp;fires)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-OB1;{GUN}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;itself)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.15">2.15</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
 
 <dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
-<tt>IP-MAT,<highlight>NP-SBJ</highlight>,PRO,I</tt><br>
-<tt>IP-MAT,VBD;~Tn,made</tt><br>
-<tt>IP-MAT,NP-OB1,PRO,it</tt><br>
-<tt>IP-MAT,ADVP-MNR,ADV,all</tt><br>
-<tt>IP-MAT,<highlight>NP-RFL</highlight>,<mark>PNX</mark>,myself</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=2_lucy_child_09_m73" target="_blank">2_lucy_child_09_m73</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBD;~Tn&nbsp;made)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-NIM-MNR&nbsp;(ADV&nbsp;all))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-RFL</highlight>&nbsp;(<mark>PNX</mark>&nbsp;myself)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look across the columns of Table <a href="chapter2.html#table2.4">2.4</a> shows that the &lsquo;person&rsquo; category is useful when differentiating the various reflexive and personal pronouns. The first person refers to the speaker(s), the second person refers to the hearer(s), and the third person refers to other entities. Person is further distinguished into singular and plural reference. Further distinction is possible with third person singular pronouns (reflexive and personal), since they inflect for gender: This gives: masculine <i>he</i>/<i>him(self)</i>/<i>his</i>, feminine <i>she</i>/<i>her(self)</i>/<i>hers</i>, and neuter <i>it(self)</i>/<i>its</i>.</p>
@@ -297,16 +305,16 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look down the rows of Table <a href="chapter2.html#table2.4">2.4</a> shows that pronouns are marked for more grammatical cases than common nouns or proper nouns. In addition to genitive case, pronouns are marked for nominative case (marking the subject of the clause: <i><b><i>I</i></b> shrugged</i>), and accusative case (marking the object acted on by the verb: <i>James tickled <b><i>me</i></b></i>).</p>
 
 <dl><dt>(<a name="ex2.16">2.16</a>)</dt><dd>
-<tt>IP-MAT,<highlight>NP-SBJ</highlight>,<mark>PRO</mark>,I</tt><br>
-<tt>IP-MAT,VBD;~I,shrugged</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=50_a_loosechange" target="_blank">50_a_loosechange</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>PRO</mark>&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBD;~I&nbsp;shrugged))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.17">2.17</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,NPR,James</tt><br>
-<tt>IP-MAT,VBD;~Tn,tickled</tt><br>
-<tt>IP-MAT,<highlight>NP-OB1</highlight>,<mark>PRO</mark>,me</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=91_christine_t03" target="_blank">91_christine_t03</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;James))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBD;~Tn&nbsp;tickled)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>PRO</mark>&nbsp;me)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Genitive pronouns can be either:</p>
@@ -316,9 +324,9 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.18">2.18</a>)</dt><dd>
-<tt>NP,<highlight>NP-GENV</highlight>,<mark>PRO;_genm_</mark>,our</tt><br>
-<tt>NP,NS,friends</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_lucy_child_09_m51" target="_blank">10_lucy_child_09_m51</a></tt><br>
+<tt>(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(<mark>PRO;_genm_</mark>&nbsp;our))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NS&nbsp;friends))&nbsp;</tt><br>
 </dd></dl>
 
 <ul>
@@ -326,10 +334,11 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.19">2.19</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,it</tt><br>
-<tt>IP-MAT,BEP;~Ln,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,NP-PRD2,<highlight>NP-GENV</highlight>,<mark>PRO;_ppge_</mark>,theirs</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=468_christine_t13" target="_blank">468_christine_t13</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(<mark>PRO;_ppge_</mark>&nbsp;theirs))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">As shown by examples (<a href="chapter2.html#ex2.18">2.18</a>) and (<a href="chapter2.html#ex2.19">2.19</a>), with parsing, a genitive pronoun (dependent (<tt>PRO;_genm_</tt>) or independent (<tt>PRO;_ppge_</tt>)) is the only element of an <tt>NP-GENV</tt> layer. Furthermore, for <tt>PRO;_ppge_</tt>, the <tt>NP-GENV</tt> layer is the only element of the containing noun phrase.</p>
@@ -343,19 +352,21 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.20">2.20</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<highlight>NP-SBJ</highlight>,<mark>WPRO</mark>,Who</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VBD;~I,came</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=712_x_textbook_kisonihongo" target="_blank">712_x_textbook_kisonihongo</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;Who))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~I&nbsp;came))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.21">2.21</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<highlight>NP-OB1</highlight>,<mark>WPRO</mark>,What</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,DOD,did</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,it</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VB;~Tn,mean</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=131_susanne_n14" target="_blank">131_susanne_n14</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;What))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;mean))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <ul>
@@ -363,21 +374,19 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.22">2.22</a>)</dt><dd>
-<tt>NP,D;_nphd_,anything</tt><br>
-<tt>NP,IP-REL,<highlight>NP-SBJ</highlight>,<mark>RPRO</mark>,that</tt><br>
-<tt>NP,IP-REL,BEP;~La,&lt;apos&gt;s</tt><br>
-<tt>NP,IP-REL,ADJP-PRD2,ADJ,relevant</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=88_christine_t29" target="_blank">88_christine_t29</a></tt><br>
+<tt>(NP&nbsp;(D;_nphd_&nbsp;anything)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;relevant))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.23">2.23</a>)</dt><dd>
-<tt>NP-ESBJ,D,an</tt><br>
-<tt>NP-ESBJ,N,iron</tt><br>
-<tt>NP-ESBJ,N;@3,hook</tt><br>
-<tt>NP-ESBJ,IP-REL,<highlight>NP-OB1</highlight>,<mark>RPRO</mark>,which</tt><br>
-<tt>NP-ESBJ,IP-REL,NP-SBJ,PRO,he</tt><br>
-<tt>NP-ESBJ,IP-REL,VBD;~Tn,unfastened</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_susanne_n12" target="_blank">38_susanne_n12</a></tt><br>
+<tt>(NP-ESBJ&nbsp;(D&nbsp;an)&nbsp;(N&nbsp;iron)&nbsp;(N&nbsp;hook)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;which))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{CURT}&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Tn&nbsp;unfastened)))&nbsp;</tt><br>
 </dd></dl>
 
 <ul>
@@ -385,30 +394,28 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.24">2.24</a>)</dt><dd>
-<tt>PP-SCON,P-CONN,as</tt><br>
-<tt>PP-SCON,IP-ADV,NP-SBJ,<mark>Q;_nphd_</mark>,everyone</tt><br>
-<tt>PP-SCON,IP-ADV,VBP;~I,knows</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=80_susanne_g17" target="_blank">80_susanne_g17</a></tt><br>
+<tt>(PP-SCON&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;everyone))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~I&nbsp;knows)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.25">2.25</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,<mark>Q;_nphd_</mark>,nobody</tt><br>
-<tt>IP-MAT,VBP;~Tf,knows</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=51_a_ted_talk_11" target="_blank">51_a_ted_talk_11</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;nobody))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tf&nbsp;knows))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.26">2.26</a>)</dt><dd>
-<tt>NP-OB1,<mark>Q;_nphd_</mark>,all</tt><br>
-<tt>NP-OB1,PP,P-ROLE,of</tt><br>
-<tt>NP-OB1,PP,NP,PRO,them</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=90_a_ibm_1401" target="_blank">90_a_ibm_1401</a></tt><br>
+<tt>(NP-OB1&nbsp;(<mark>Q;_nphd_</mark>&nbsp;all)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.27">2.27</a>)</dt><dd>
-<tt>NP-SBJ,<mark>Q;_nphd_</mark>,none</tt><br>
-<tt>NP-SBJ,PP,P-ROLE,of</tt><br>
-<tt>NP-SBJ,PP,NP,PRO,them</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=499_christine_t03" target="_blank">499_christine_t03</a></tt><br>
+<tt>(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;none)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
 </dd></dl>
 
 <ul>
@@ -416,33 +423,32 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.28">2.28</a>)</dt><dd>
-<tt>PP-SCON-CNT,P-CONN,in_case</tt><br>
-<tt>PP-SCON-CNT,IP-ADV,NP-SBJ,<mark>D;_nphd_</mark>,somebody</tt><br>
-<tt>PP-SCON-CNT,IP-ADV,VBP;~I,comes</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=57_christine_t28" target="_blank">57_christine_t28</a></tt><br>
+<tt>(PP-SCON-CNT&nbsp;(P-CONN&nbsp;in_case)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;somebody))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~I&nbsp;comes)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.29">2.29</a>)</dt><dd>
-<tt>NP-SBJ,<mark>D;_nphd_</mark>,some</tt><br>
-<tt>NP-SBJ,PP,P-ROLE,of</tt><br>
-<tt>NP-SBJ,PP,NP,PRO,them</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=26_susanne_a12" target="_blank">26_susanne_a12</a></tt><br>
+<tt>(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;some)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.30">2.30</a>)</dt><dd>
-<tt>PP-SCON,P-CONN,as</tt><br>
-<tt>PP-SCON,IP-ADV,NP-SBJ,<mark>D;_nphd_</mark>,one</tt><br>
-<tt>PP-SCON,IP-ADV,MD;~cat_Vi,would</tt><br>
-<tt>PP-SCON,IP-ADV,IP-INF-CAT,VB;~I,expect</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=27_susanne_g12" target="_blank">27_susanne_g12</a></tt><br>
+<tt>(PP-SCON&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;one))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;would)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;expect))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.31">2.31</a>)</dt><dd>
-<tt>PP-SCON-MOD,P-CONN,as</tt><br>
-<tt>PP-SCON-MOD,IP-ADV,NP-SBJ,<mark>PRO</mark>,you</tt><br>
-<tt>PP-SCON-MOD,IP-ADV,MD;~cat_Vi,can</tt><br>
-<tt>PP-SCON-MOD,IP-ADV,IP-INF-CAT,VB;~I,see</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=217_a_ted_talk_11" target="_blank">217_a_ted_talk_11</a></tt><br>
+<tt>(PP-SCON-MOD&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>PRO</mark>&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;can)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;see))))&nbsp;</tt><br>
 </dd></dl>
 
 <ul>
@@ -450,29 +456,27 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.32">2.32</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,DOP,do</tt><br>
-<tt>IP-MAT,NEG;_clitic_,n&lt;apos&gt;t</tt><br>
-<tt>IP-MAT,VB;~Tn,want</tt><br>
-<tt>IP-MAT,NP-OB1,<mark>D;_nphd_</mark>,that</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=558_christine_t35" target="_blank">558_christine_t35</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(DOP&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NEG;_clitic_&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VB;~Tn&nbsp;want)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(<mark>D;_nphd_</mark>&nbsp;that)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.33">2.33</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,MD;~cat_Vi,&lt;apos&gt;ll</tt><br>
-<tt>IP-MAT,IP-INF-CAT,HV;~Tn,have</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<mark>NP-OB1</mark>,D;_nphd_,these</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=172_christine_t16" target="_blank">172_christine_t16</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;&lt;apos&gt;ll)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(HV;~Tn&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(D;_nphd_&nbsp;these))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.34">2.34</a>)</dt><dd>
-<tt>NP-OB1,<mark>D</mark>,this</tt><br>
-<tt>NP-OB1,N,point</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_lucy_student_e16" target="_blank">5_lucy_student_e16</a></tt><br>
+<tt>(NP-OB1&nbsp;(<mark>D</mark>&nbsp;this)&nbsp;(N&nbsp;point))&nbsp;</tt><br>
 </dd></dl>
 
-<p><a name="table2.5">Table 2.5: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -491,22 +495,29 @@ highlight { background-color: palegreen; }
     <td>those</td>
   </tr>
 </table>
+<br>
+<a name="table2.5"><b>Table 2.5</b>: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a>
+</center>
+<br>
 
 <br><h2><a name="sec2.3">2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head an adjective phrase</h2>
 
 <p align="justify">For a word to be an adjective, it must be able to function as the head of an adjective phrase (<tt>ADJP</tt>; see section <a href="chapter3.html#sec3.3">3.3</a>), often as the only element of the phrase. Adjectives are tagged as in Table <a href="chapter2.html#table2.6">2.6</a> to distinguish comparative and superlative forms from general forms.</p>
 
-<p><a name="table2.6">Table 2.6: Tags for words that can head an adjective phrase</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>ADJ</tt></td><td>General adjective: an adjective not subclassified as <tt>ADJR</tt> or <tt>ADJS</tt> (e.g., <i>old</i>, <i>good</i>, <i>male</i>)</td></tr>
 <tr><td><tt>ADJR</tt></td><td>Comparative adjective (e.g., <i>older</i>, <i>better</i>)</td></tr>
 <tr><td><tt>ADJS</tt></td><td>Superlative adjective (e.g., <i>oldest</i>, <i>best</i>)</td></tr>
 </table>
+<br>
+<a name="table2.6"><b>Table 2.6</b>: Tags for words that can head an adjective phrase</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The comparative form of an adjective is typically indicated by the suffix &lcub;er&rcub;, whereas the superlative form is typically indicated by the suffix &lcub;est&rcub;; see Table <a href="chapter2.html#table2.7">2.7</a>.</p>
 
-<p><a name="table2.7">Table 2.7: Forms of adjectives</a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -532,13 +543,16 @@ highlight { background-color: palegreen; }
     <td colspan="2" style="background-color:#D3D3D3"></td>
   </tr>
 </table>
+<br>
+<a name="table2.7"><b>Table 2.7</b>: Forms of adjectives</a>
+</center>
+<br>
 
 <br><h2><a name="sec2.4">2.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head an adverb phrase</h2>
 
 <p align="justify">For a word to be an adverb, it must be able to function as the head of an adverb phrase (<tt>ADVP</tt>; see section <a href="chapter3.html#sec3.4">3.4</a>), often as the only element of the phrase. Adverbs are tagged as in Table <a href="chapter2.html#table2.8">2.8</a> to distinguish comparative, superlative, and WH froms from general forms.</p>
 
-<p><a name="table2.8">Table 2.8: Tags for words that can head an adverb phrase</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>ADV</tt></td><td>General adverb: an adverb not subclassified as <tt>ADVR</tt>, <tt>ADVS</tt>, <tt>RADV</tt>, or <tt>WADV</tt> (e.g., <i>often</i>, <i>well</i>, <i>really</i>).</td></tr>
 <tr><td><tt>ADVR</tt></td><td>Comparative adverb (e.g., <i>more</i>, <i>less</i>, <i>farther</i>)</td></tr>
@@ -547,13 +561,16 @@ highlight { background-color: palegreen; }
 <tr><td><tt>WADV</tt></td><td>Wh-adverb (e.g., <i>how</i>, <i>when</i>, <i>where</i>, <i>why</i>)</td></tr>
 <tr><td><tt>RP</tt></td><td>Adverbial particle (e.g., <i>up</i>, <i>off</i>, <i>out</i>)</td></tr>
 </table>
+<br>
+<a name="table2.8"><b>Table 2.8</b>: Tags for words that can head an adverb phrase</a>
+</center>
+<br>
 
 <br><h2><a name="sec2.5">2.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Other noun phrase level words</h2>
 
 <p align="justify">Section <a href="chapter2.html#sec2.2">2.2</a> above has already discussed words that can head a noun phrase. Table <a href="chapter2.html#table2.9">2.9</a> gives tags for other words that can be immediate components of a noun phrase, but that can't be a noun phrase head. Rather, these words precede the head within noun phrases and function to modify the head in terms of definiteness, item under question, or quantity.</p>
 
-<p><a name="table2.9">Table 2.9: Tags for words that can be immediate components of a noun phrase</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>D</tt></td><td>Determiner, which includes articles (e.g., <i>a</i>, <i>the</i>) and demonstratives (e.g., <i>this</i>, <i>that</i>)</td></tr>
 <tr><td><tt>RD</tt></td><td>Wh-determiner that is the relative determiner of a relative clause (e.g., <i>what</i>, <i>whatever</i>)</td></tr>
@@ -561,6 +578,10 @@ highlight { background-color: palegreen; }
 <tr><td><tt>NUM</tt></td><td>Numeral (e.g., <i>one</i>, <i>1975</i>)</td></tr>
 <tr><td><tt>Q</tt></td><td>Quantifier (e.g., <i>every</i>, <i>no</i>)</td></tr>
 </table>
+<br>
+<a name="table2.9"><b>Table 2.9</b>: Tags for words that can be immediate components of a noun phrase</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Prototypical nouns can take one of two articles:</p>
 
@@ -604,8 +625,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The distinctions in verb forms just sketched are captured in the tags for lexical verbs of Table <a href="chapter2.html#table2.10">2.10</a>.</p>
 
-<p><a name="table2.10">Table 2.10: Tags for lexical verbs</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>VBP</tt></td><td>present tense form of lexical verbs (e.g., <i>reaches</i>, <i>supports</i>, <i>writes</i>, <i>sinks</i>, <i>puts</i>, <i>reach</i>, <i>support</i>, <i>write</i>, <i>sink</i>, <i>put</i>)</td></tr>
 <tr><td><tt>VBD</tt></td><td>past tense form of lexical verbs (e.g., <i>reached</i>, <i>supported</i>, <i>wrote</i>, <i>sank</i>, <i>put</i>)</td></tr>
@@ -613,10 +633,14 @@ highlight { background-color: palegreen; }
 <tr><td><tt>VAG</tt></td><td>present participle (&lcub;ing&rcub;) form of lexical verbs (used in the progressive construction) (e.g., <i>reaching</i>, <i>supporting</i>, <i>writing</i>, <i>sinking</i>, <i>putting</i>)</td></tr>
 <tr><td><tt>VVN</tt></td><td>past participle (&lcub;ed&rcub;&sol;&lcub;en&rcub;) form of lexical verbs (used in the perfect construction and the passive construction) (e.g., <i>reached</i>, <i>supported</i>, <i>written</i>, <i>sunk</i>, <i>put</i>)</td></tr>
 </table>
+<br>
+<a name="table2.10"><b>Table 2.10</b>: Tags for lexical verbs</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Table <a href="chapter2.html#table2.11">2.11</a> further illustrates with examples the distinctions between the different lexical verb forms. This includes examples of <b>irregular verbs</b> that do not have a regular past tense inflection.</p>
 
-<p><a name="table2.11">Table 2.11: Forms of lexical verb</a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -682,13 +706,16 @@ highlight { background-color: palegreen; }
     <td>put</td>
   </tr>
 </table>
+<br>
+<a name="table2.11"><b>Table 2.11</b>: Forms of lexical verb</a>
+</center>
+<br>
 
 <h3><a name="sec2.6.2">2.6.2</a>&nbsp;&nbsp;&nbsp;&nbsp;HAVE</h3>
 
 <p align="justify">The forms of <small style="font-size: 75%">HAVE</small> are tagged as in Table <a href="chapter2.html#table2.12">2.12</a>.</p>
 
-<p><a name="table2.12">Table 2.12: Tags for <small style="font-size: 75%">HAVE</small></a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>HVP</tt></td><td>present tense forms of the verb <small style="font-size: 75%">HAVE</small>: <i>have</i>, <i>'ve</i>, <i>has</i>, <i>'s</i></td></tr>
 <tr><td><tt>HVD</tt></td><td>past tense form of the verb <small style="font-size: 75%">HAVE</small>: <i>had</i>, <i>'d</i></td></tr>
@@ -696,10 +723,14 @@ highlight { background-color: palegreen; }
 <tr><td><tt>HAG</tt></td><td>present participle form of the verb <small style="font-size: 75%">HAVE</small>: <i>having</i></td></tr>
 <tr><td><tt>HVN</tt></td><td>past participle form of the verb <small style="font-size: 75%">HAVE</small>: <i>had</i></td></tr>
 </table>
+<br>
+<a name="table2.12"><b>Table 2.12</b>: Tags for <small style="font-size: 75%">HAVE</small></a>
+</center>
+<br>
 
 <p align="justify"><small style="font-size: 75%">HAVE</small> has the non-contracted inflections of Table <a href="chapter2.html#table2.13">2.13</a>.</p>
 
-<p><a name="table2.13">Table 2.13: Forms of <small style="font-size: 75%">HAVE</small></a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -730,13 +761,16 @@ highlight { background-color: palegreen; }
     <td>had</td>
   </tr>
 </table>
+<br>
+<a name="table2.13"><b>Table 2.13</b>: Forms of <small style="font-size: 75%">HAVE</small></a>
+</center>
+<br>
 
 <h3><a name="sec2.6.3">2.6.3</a>&nbsp;&nbsp;&nbsp;&nbsp;BE</h3>
 
 <p align="justify">The forms of <small style="font-size: 75%">BE</small> are tagged as in Table <a href="chapter2.html#table2.14">2.14</a>.</p>
 
-<p><a name="table2.14">Table 2.14: Tags for <small style="font-size: 75%">BE</small></a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>BEP</tt></td><td>present tense forms of the verb <small style="font-size: 75%">BE</small>: <i>is</i>, <i>am</i>, <i>are</i>, <i>'m</i>, <i>'re</i>, <i>'s</i></td></tr>
 <tr><td><tt>BED</tt></td><td>past tense forms of the verb <small style="font-size: 75%">BE</small>: <i>was</i>, <i>were</i></td></tr>
@@ -744,10 +778,14 @@ highlight { background-color: palegreen; }
 <tr><td><tt>BAG</tt></td><td>present participle form of the verb <small style="font-size: 75%">BE</small>: <i>being</i></td></tr>
 <tr><td><tt>BEN</tt></td><td>past participle form of the verb <small style="font-size: 75%">BE</small>: <i>been</i></td></tr>
 </table>
+<br>
+<a name="table2.14"><b>Table 2.14</b>: Tags for <small style="font-size: 75%">BE</small></a>
+</center>
+<br>
 
 <p align="justify">Table <a href="chapter2.html#table2.15">2.15</a> presents an overview of the eight different non-contracted forms of <small style="font-size: 75%">BE</small>. This is the widest range of distinct forms for the same verb lexme in English, with extra person-number contrasts in the past and present tenses.</p>
 
-<p><a name="table2.15">Table 2.15: Forms of <small style="font-size: 75%">BE</small></a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -783,13 +821,16 @@ highlight { background-color: palegreen; }
     <td>been</td>
   </tr>
 </table>
+<br>
+<a name="table2.15"><b>Table 2.15</b>: Forms of <small style="font-size: 75%">BE</small></a>
+</center>
+<br>
 
 <h3><a name="sec2.6.4">2.6.4</a>&nbsp;&nbsp;&nbsp;&nbsp;DO</h3>
 
 <p align="justify">The forms of <small style="font-size: 75%">DO</small> are tagged as in Table <a href="chapter2.html#table2.16">2.16</a>.</p>
 
-<p><a name="table2.16">Table 2.16: Tags for <small style="font-size: 75%">DO</small></a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>DOP</tt></td><td>present tense forms of the verb <small style="font-size: 75%">DO</small>: <i>do</i>, <i>does</i>, <i>'s</i></td></tr>
 <tr><td><tt>DOD</tt></td><td>past tense form of the verb <small style="font-size: 75%">DO</small>: <i>did</i></td></tr>
@@ -797,10 +838,14 @@ highlight { background-color: palegreen; }
 <tr><td><tt>DAG</tt></td><td>present participle form of the verb <small style="font-size: 75%">DO</small>: <i>doing</i></td></tr>
 <tr><td><tt>DON</tt></td><td>past participle form of the verb <small style="font-size: 75%">DO</small>: <i>done</i></td></tr>
 </table>
+<br>
+<a name="table2.16"><b>Table 2.16</b>: Tags for <small style="font-size: 75%">DO</small></a>
+</center>
+<br>
 
 <p align="justify"><small style="font-size: 75%">DO</small> has the the non-contracted inflections of Table <a href="chapter2.html#table2.17">2.17</a>.</p>
 
-<p><a name="table2.17">Table 2.17: Forms of <small style="font-size: 75%">DO</small></a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -831,72 +876,77 @@ highlight { background-color: palegreen; }
     <td>done</td>
   </tr>
 </table>
+<br>
+<a name="table2.17"><b>Table 2.17</b>: Forms of <small style="font-size: 75%">DO</small></a>
+</center>
+<br>
 
 <h3><a name="sec2.6.5">2.6.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Modal verbs</h3>
 
 <p align="justify">Modal verbs express meanings such as certainty, ability, or obligation. The main modal verbs are <small style="font-size: 75%">WILL</small>, <small style="font-size: 75%">WOULD</small>, <small style="font-size: 75%">CAN</small>, <small style="font-size: 75%">COULD</small>, <small style="font-size: 75%">MAY</small>, <small style="font-size: 75%">MIGHT</small>, <small style="font-size: 75%">SHALL</small>, <small style="font-size: 75%">SHOULD</small>, <small style="font-size: 75%">MUST</small> and <small style="font-size: 75%">OUGHT</small>. A modal verb only has finite forms and has no suffixes (e.g., <i>I sing</i>&nbsp;&mdash;&nbsp;<i>he sings</i>, but <i>I must</i>&nbsp;&mdash;&nbsp;<i>he must</i>). Modal verbs are tagged as in Table <a href="chapter2.html#table2.18">2.18</a>.</p>
 
-<p><a name="table2.18">Table 2.18: Tag for modal verbs</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>MD;~cat_Vi</tt></td><td>modal auxiliary verb (e.g., <i>will</i>, <i>would</i>, <i>can</i>, <i>could</i>, <i>'ll</i>, <i>'d</i>)</td></tr>
 <tr><td><tt>MD;~cat_Vt</tt></td><td>modal catenative (<i>ought</i>, <i>used</i>)</td></tr>
 </table>
+<br>
+<a name="table2.18"><b>Table 2.18</b>: Tags for modal verbs</a>
+</center>
+<br>
 
 <br><h2><a name="sec2.7">2.7</a>&nbsp;&nbsp;&nbsp;&nbsp;Subject indicating words</h2>
 
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>EX</tt></td><td>existential <i>there</i>, i.e., <i>there</i> of the <i>there is ...</i> or <i>there are ...</i> construction co-occurring with an existential subject (<tt>NP-ESBJ</tt>)</td></tr>
 <tr><td><tt>PRO;_cleft_</tt></td><td>cleft <i>it</i> occuring as part of a cleft construction (<i>so it was you that got them together</i>)</td></tr>
 <tr><td><tt>PRO;_expletive_</tt></td><td>expletive <i>it</i> e.g., occuring in a weather construction (<i>it's raining</i>)</td></tr>
 <tr><td><tt>PRO;_provisional_</tt></td><td>provisional <i>it</i> occuring with extraposition (<i>it bothered her that she probably would never know</i>)</td></tr>
 </table>
+<br>
+<a name="table2.19"><b>Table 2.19</b>: Tags for subject indicating words</a>
+</center>
+<br>
 
 <br><h2><a name="sec2.8">2.8</a>&nbsp;&nbsp;&nbsp;&nbsp;Other clause level words</h2>
 
-<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="chapter2.html#table2.19">2.19</a>.</p>
+<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="chapter2.html#table2.20">2.20</a>.</p>
 
-<p><a name="table2.19">Table 2.19: Tags for clause level components</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>NEG</tt></td><td>negative particle <i>not</i></td></tr>
 <tr><td><tt>NEG;_clitic_</tt></td><td>negative clitic particle <i>n't</i></td></tr>
 <tr><td><tt>TO</tt></td><td>Infinitive marker <i>to</i></td></tr>
 <tr><td><tt>CONJ;_cl_</tt></td><td>discourse coordination (e.g., <i>And</i>, <i>But</i>)</td></tr>
 </table>
+<br>
+<a name="table2.20"><b>Table 2.20</b>: Tags for clause level components</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.36">2.36</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.2.5">8.2.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
 
 <dl><dt>(<a name="ex2.36">2.36</a>)</dt><dd>
-<tt>IP-MAT,<mark>EX</mark>,There</tt><br>
-<tt>IP-MAT,BED;~ex_cat_Vt,were</tt><br>
-<tt>IP-MAT,<highlight>NEG;_clitic_</highlight>,n&lt;apos&gt;t</tt><br>
-<tt>IP-MAT,NP-ESBJ,D,any</tt><br>
-<tt>IP-MAT,NP-ESBJ,NS,incidents</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>TO</highlight>,to</tt><br>
-<tt>IP-MAT,IP-INF-CAT,VB;~Ipr,get</tt><br>
-<tt>IP-MAT,IP-INF-CAT,PP-CLR-LOC,P-ROLE,in</tt><br>
-<tt>IP-MAT,IP-INF-CAT,PP-CLR-LOC,NP,D,the</tt><br>
-<tt>IP-MAT,IP-INF-CAT,PP-CLR-LOC,NP,N,way</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=143_lucy_bnc_c08" target="_blank">143_lucy_bnc_c08</a></tt><br>
+<tt>(IP-MAT&nbsp;(<mark>EX</mark>&nbsp;There)&nbsp;(BED;~ex_cat_Vt&nbsp;were)&nbsp;(<highlight>NEG;_clitic_</highlight>&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-ESBJ&nbsp;(D&nbsp;any)&nbsp;(NS&nbsp;incidents))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<highlight>TO</highlight>&nbsp;to)&nbsp;(VB;~Ipr&nbsp;get)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-LOC&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;way)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a word tagged <tt>RP</tt> to occur as a clause level component. The <tt>RP</tt> tag is used to mark adverbial particles (e.g., <i>up</i>, <i>off</i>, <i>out</i>) and was seen in section <a href="chapter2.html#sec2.4">2.4</a> as the tag for a word that can head an adverb phrase. When an <tt>RP</tt> tagged word occurs as a clause level component it is part of a phrasal verb, as in (<a href="chapter2.html#ex2.37">2.37</a>).</p>
 
 <dl><dt>(<a name="ex2.37">2.37</a>)</dt><dd>
-<tt>IP-MAT,VBP;~phr_Vp,hold</tt><br>
-<tt>IP-MAT,<mark>RP</mark>,on</tt><br>
-<tt>IP-MAT,NP-TMP,D,a</tt><br>
-<tt>IP-MAT,NP-TMP,N,second</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=33_christine_t28" target="_blank">33_christine_t28</a></tt><br>
+<tt>(IP-MAT&nbsp;(VBP;~phr_Vp&nbsp;hold)&nbsp;(<mark>RP</mark>&nbsp;on)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-NIM-TMP&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;second)))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;&nbsp;Connective words</h2>
 
-<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="chapter2.html#table2.20">2.20</a> that serve as the means to connect phrases and clauses.</p>
+<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="chapter2.html#table2.21">2.21</a> that serve as the means to connect phrases and clauses.</p>
 
-<p><a name="table2.20">Table 2.20: Tags for connective words</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>CONJ</tt></td><td>Coordinating conjunction (e.g., <i>and</i>, <i>or</i>, <i>but</i>)</td></tr>
 <tr><td><tt>C</tt></td><td>The complementizer <i>that</i></td></tr>
@@ -904,15 +954,18 @@ highlight { background-color: palegreen; }
 <tr><td><tt>P-CONN</tt></td><td>Subordinating conjunction (e.g., <i>although</i>, <i>when</i>)</td></tr>
 <tr><td><tt>P-ROLE</tt></td><td>Role preposition (e.g., <i>in</i>, <i>of</i>, <i>under</i>)</td></tr>
 </table>
+<br>
+<a name="table2.21"><b>Table 2.21</b>: Tags for connective words</a>
+</center>
+<br>
 
 <p align="justify">When phrases and clauses are connected they are said to be COMPLEX.</p>
 
 <br><h2><a name="sec2.10">2.10</a>&nbsp;&nbsp;&nbsp;&nbsp;Punctuation</h2>
 
-<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="chapter2.html#table2.21">2.21</a>.</p>
+<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="chapter2.html#table2.22">2.22</a>.</p>
 
-<p><a name="table2.21">Table 2.21: Tags for punctuation</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>PUNC</tt></td><td>Punctuation: general separating mark &mdash; i.e., <i>.</i> <i>,</i> <i>!</i> <i>:</i> <i>;</i> <i>-</i> or <i>?</i></td></tr>
 <tr><td><tt>PULB</tt></td><td>Punctuation: left bracket &mdash; i.e., <i>(</i> or <i>[</i></td></tr>
@@ -920,50 +973,57 @@ highlight { background-color: palegreen; }
 <tr><td><tt>PULQ</tt></td><td>Punctuation: left quotation mark &mdash; i.e., <i>&lsquo;</i> or <i>&ldquo;</i></td></tr>
 <tr><td><tt>PURQ</tt></td><td>Punctuation: right quotation mark &mdash; i.e., <i>&rsquo;</i> or <i>&rdquo;</i></td></tr>
 </table>
+<br>
+<a name="table2.22"><b>Table 2.22</b>: Tags for punctuation</a>
+</center>
+<br>
 
 <p align="justify">This makes punctuation part of a sentence in its own right. When creating constituent structure, punctuation is placed as high as possible. For example, a full stop that ends a sentence is treated as the last constituent of the highest clause layer (<tt>IP</tt>&sol;<tt>CP</tt>&sol;<tt>FRAG</tt>).</p>
 
 <br><h2><a name="sec2.11">2.11</a>&nbsp;&nbsp;&nbsp;&nbsp;Interjection, reaction signals, and formulaic expressions</h2>
 
-<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="chapter2.html#table2.22">2.22</a>. They have a high placement in structure, typically occurring as elements of clause or fragment layers.</p>
+<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="chapter2.html#table2.23">2.23</a>. They have a high placement in structure, typically occurring as elements of clause or fragment layers.</p>
 
-<p><a name="table2.22">Table 2.22: Tags for interjection, reaction signals, and formulaic expressions</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>INTJ</tt></td><td>Interjection (e.g., <i>aah</i>, <i>eh</i>, <i>ummmmm</i>)</td></tr>
 <tr><td><tt>REACT</tt></td><td>Reaction signal (e.g., <i>good_grief</i>, <i>really</i>, <i>yes</i>, <i>wow</i>)</td></tr>
 <tr><td><tt>FRM</tt></td><td>Formulaic expression (e.g., <i>good_afternoon</i>, <i>you_see</i>, <i>thank_you</i>)</td></tr>
 </table>
+<br>
+<a name="table2.23"><b>Table 2.23</b>: Tags for interjection, reaction signals, and formulaic expressions</a>
+</center>
+<br>
 
 <dl><dt>(<a name="ex2.38">2.38</a>)</dt><dd>
-<tt>FRAG,<mark>INTJ</mark>,Well</tt><br>
-<tt>FRAG,PUNC,&lt;comma&gt;</tt><br>
-<tt>FRAG,<highlight>REACT</highlight>,no</tt><br>
-<tt>FRAG,PUNC,&lt;comma&gt;</tt><br>
-<tt>FRAG,ADVP-MOD,ADV,of_course</tt><br>
-<tt>FRAG,NEG,not</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=19_lucy_bnc_b19" target="_blank">19_lucy_bnc_b19</a></tt><br>
+<tt>(FRAG&nbsp;(<mark>INTJ</mark>&nbsp;Well)&nbsp;(PUNC&nbsp;,)&nbsp;(<highlight>REACT</highlight>&nbsp;no)&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;of_course))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NEG&nbsp;not))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.39">2.39</a>)</dt><dd>
-<tt>FRAG,<mark>FRM</mark>,Thank_you</tt><br>
-<tt>FRAG,NP-MNR,ADJP,ADVP,ADV,very</tt><br>
-<tt>FRAG,NP-MNR,ADJP,ADJ,much</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_a_ted_talk_11" target="_blank">43_a_ted_talk_11</a></tt><br>
+<tt>(FRAG&nbsp;(<mark>FRM</mark>&nbsp;Thank_you)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-MNR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;much))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec2.12">2.12</a>&nbsp;&nbsp;&nbsp;&nbsp;Other tags</h2>
 
-<p align="justify">Tags for other possible elements of a parse are given in Table <a href="chapter2.html#table2.23">2.23</a>.</p>
+<p align="justify">Tags for other possible elements of a parse are given in Table <a href="chapter2.html#table2.24">2.24</a>.</p>
 
-<p><a name="table2.23">Table 2.23: Other tags</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>FO</tt></td><td>Formula</td></tr>
 <tr><td><tt>FW</tt></td><td>Foreign word</td></tr>
 <tr><td><tt>LS</tt></td><td>List item (e.g., <i>1</i>, <i>a</i>, <i>i</i>)</td></tr>
 <tr><td><tt>SYM</tt></td><td>Symbol</td></tr>
 </table>
+<br>
+<a name="table2.24"><b>Table 2.24</b>: Other tags</a>
+</center>
+<br>
 
 <br>
 <br>

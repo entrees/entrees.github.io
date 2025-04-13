@@ -25,86 +25,92 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec4.2.1">4.2.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Declaratives</h3>
 
-<p><a name="table4.34">Table 4.34: Tag for matrix clause</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-MAT</tt></td><td>matrix clause</td></tr>
 </table>
+<br>
+<a name="table4.35"><b>Table 4.35</b>: Tag for matrix clause</a>
+</center>
+<br>
 
-<p align="justify">A basic matrix clause with the tag of Table <a href="chapter4.html#table4.34">4.34</a> is a declarative clause. A basic matrix clause requires a finite verb. For example, (<a href="chapter4.html#ex4.1">4.1</a>) has the past tense verb <i>cried</i>.</p>
+<p align="justify">A basic matrix clause with the tag of Table <a href="chapter4.html#table4.35">4.35</a> is a declarative clause. A basic matrix clause requires a finite verb. For example, (<a href="chapter4.html#ex4.1">4.1</a>) has the past tense verb <i>cried</i>.</p>
 
 <dl><dt>(<a name="ex4.1">4.1</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,<mark>VBD;~Tn.p</mark>,cried</tt><br>
-<tt>IP-MAT,NP-OB1,NP-GENV,PRO;_genm_,my</tt><br>
-<tt>IP-MAT,NP-OB1,NS,eyes</tt><br>
-<tt>IP-MAT,ADVP-DIR,RP,out</tt><br>
-<tt>IP-MAT,PP-CNT,P-ROLE,at</tt><br>
-<tt>IP-MAT,PP-CNT,NP,D;_nphd_,that</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=106_christine_t27" target="_blank">106_christine_t27</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~Tn.p</mark>&nbsp;cried)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;my))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;eyes))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-NIM-DIR&nbsp;(RP&nbsp;out))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-NIM-CNT&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D;_nphd_&nbsp;that))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Modal verbs only have finite forms. The short form <i>'ll</i> of <small style="font-size: 75%">WILL</small> occurs as the finte verb of (<a href="chapter4.html#ex4.2">4.2</a>), with <i>cry</i> as a following infinitive lexical verb.</p>
 
 <dl><dt>(<a name="ex4.2">4.2</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,<mark>MD;~cat_Vi</mark>,&lt;apos&gt;ll</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>VB;~I</highlight>,cry</tt><br>
-<tt>IP-MAT,IP-INF-CAT,NP-MNR,D;_nphd_,some</tt><br>
-<tt>IP-MAT,IP-INF-CAT,NP-MNR,ADJP,ADJR,more</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=431_christine_t21" target="_blank">431_christine_t21</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>MD;~cat_Vi</mark>&nbsp;&lt;apos&gt;ll)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<highlight>VB;~I</highlight>&nbsp;cry)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-NIM-MNR&nbsp;(D;_nphd_&nbsp;some)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJR&nbsp;more)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">A finite <small style="font-size: 75%">DO</small> can also occur with an infinitive lexical verb, as in (<a href="chapter4.html#ex4.3">4.3</a>), with <i>did</i> as past tense <small style="font-size: 75%">DO</small> acting to emphasise the <i>kiss</i>.</p>
 
 <dl><dt>(<a name="ex4.3">4.3</a>)</dt><dd>
-<tt>IP-MAT,CONJ;_cl_,And</tt><br>
-<tt>IP-MAT,NP-SBJ,PRO,he</tt><br>
-<tt>IP-MAT,<mark>DOD</mark>,did</tt><br>
-<tt>IP-MAT,<highlight>VB;~Tn</highlight>,kiss</tt><br>
-<tt>IP-MAT,NP-OB1,PRO,me</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=73_a_lob_n02" target="_blank">73_a_lob_n02</a></tt><br>
+<tt>(IP-MAT&nbsp;(CONJ;_cl_&nbsp;And)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>DOD</mark>&nbsp;did)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>VB;~Tn</highlight>&nbsp;kiss)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;me)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Basic declarative clauses have positive polarity. The polarity of a matrix clause is inverted by adding negation, either as the full form <i>not</i> (e.g., (<a href="chapter4.html#ex4.4">4.4</a>)) or the contracted <i>n't</i> (e.g., (<a href="chapter4.html#ex4.5">4.5</a>) and (<a href="chapter4.html#ex4.6">4.6</a>)). Both forms need a preceding (immediately preceding when there is contraction) modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>.</p>
 
 <dl><dt>(<a name="ex4.4">4.4</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D;_nphd_,This</tt><br>
-<tt>IP-MAT,<highlight>BEP;~Ln</highlight>,is</tt><br>
-<tt>IP-MAT,<mark>NEG</mark>,not</tt><br>
-<tt>IP-MAT,NP-PRD2,D,an</tt><br>
-<tt>IP-MAT,NP-PRD2,ADJP,ADJ,acceptable</tt><br>
-<tt>IP-MAT,NP-PRD2,N,turnover</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=112_lucy_bnc_b41" target="_blank">112_lucy_bnc_b41</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D;_nphd_&nbsp;This))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>BEP;~Ln</highlight>&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NEG</mark>&nbsp;not)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;an)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;acceptable))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;turnover)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.5">4.5</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,<highlight>MD;~cat_Vi</highlight>,wo</tt><br>
-<tt>IP-MAT,<mark>NEG;_clitic_</mark>,n&lt;apos&gt;t</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>VB;~I</highlight>,cry</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=466_christine_t21" target="_blank">466_christine_t21</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>MD;~cat_Vi</highlight>&nbsp;wo)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NEG;_clitic_</mark>&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<highlight>VB;~I</highlight>&nbsp;cry)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.6">4.6</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,N,People</tt><br>
-<tt>IP-MAT,<highlight>DOP</highlight>,do</tt><br>
-<tt>IP-MAT,<mark>NEG;_clitic_</mark>,n&lt;apos&gt;t</tt><br>
-<tt>IP-MAT,PUNC,&lt;bital&gt;</tt><br>
-<tt>IP-MAT,<highlight>DO;~Tn</highlight>,do</tt><br>
-<tt>IP-MAT,PUNC,&lt;eital&gt;</tt><br>
-<tt>IP-MAT,NP-OB1,D;_nphd_,that</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=147_lucy_bnc_c02" target="_blank">147_lucy_bnc_c02</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;People))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>DOP</highlight>&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NEG;_clitic_</mark>&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;&lt;bital&gt;)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>DO;~Tn</highlight>&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;&lt;eital&gt;)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(D;_nphd_&nbsp;that)))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec4.2.2">4.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Interrogatives</h3>
 
-<p><a name="table4.35">Table 4.35: Tags for interrogative clause</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>CP-QUE-MAT</tt></td><td>top layer of matrix interrogative clause</td></tr>
 <tr><td><tt>IP-SUB</tt></td><td>finite clause complement of <tt>CP</tt></td></tr>
 </table>
+<br>
+<a name="table4.36"><b>Table 4.36</b>: Tags for interrogative clause</a>
+</center>
+<br>
 
 <p align="justify">Annotation for a matrix interrogative clause involves an <tt>IP-SUB</tt> clause layer that: (i) contains all of the clause content (except end punctuation), and (ii) projects a <tt>CP-QUE-MAT</tt> layer. A matrix interrogative is formed by having an initial clause component that is either:</p>
 
@@ -117,179 +123,188 @@ highlight { background-color: palegreen; }
 <p align="justify">A clause with (i) or (ii) is called a yes/no question. A clause with (iii) is called a constituent question. For matrix constituent questions where the initial clause component is a non-subject, before the clause subject occurs, there needs to have occurred a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small>, as seen with (<a href="chapter4.html#ex4.11">4.11</a>) &ndash; (<a href="chapter4.html#ex4.15">4.15</a>).</p>
 
 <dl><dt>(<a name="ex4.7">4.7</a>)</dt><dd>
-<tt>IP-SUB,<mark>MD;~cat_Vi</mark>,shall</tt><br>
-<tt>IP-SUB,NP-SBJ,PRO,we</tt><br>
-<tt>IP-SUB,IP-INF-CAT,VBP;~Ipr,go</tt><br>
-<tt>IP-SUB,IP-INF-CAT,PP-CLR-DIR,P-ROLE,in</tt><br>
-<tt>IP-SUB,IP-INF-CAT,PP-CLR-DIR,NP,NP-GENV,NPR,Tesco</tt><br>
-<tt>IP-SUB,IP-INF-CAT,PP-CLR-DIR,NP,NP-GENV,GENM,&lt;apos&gt;s</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=173_christine_t36" target="_blank">173_christine_t36</a></tt><br>
+<tt>(IP-SUB&nbsp;(<mark>MD;~cat_Vi</mark>&nbsp;shall)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VBP;~Ipr&nbsp;go)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-DIR&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(NPR&nbsp;Tesco)&nbsp;(GENM&nbsp;&lt;apos&gt;s))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.8">4.8</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>BEP;~Ln</mark>,Is</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,P-ROLE,that</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,ADVP-TMP,ADV,still</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-PRD2,NP-GENV,PRO;_genm_,his</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-PRD2,N,position</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=22_a_major_case" target="_blank">22_a_major_case</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;(<mark>BEP;~Ln</mark>&nbsp;Is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(P-ROLE&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;still))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;his))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;position)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.9">4.9</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>DOP</mark>,Does</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,it</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VB;~I,work</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=73_lucy_bnc_b17" target="_blank">73_lucy_bnc_b17</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;(<mark>DOP</mark>&nbsp;Does)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VB;~I&nbsp;work))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.10">4.10</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>NP-SBJ</mark>,WPRO,who</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VBD;~Tn,smacked</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-OB1,PRO,you</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=188_christine_t33" target="_blank">188_christine_t33</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(WPRO&nbsp;who))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Tn&nbsp;smacked)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;you)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.11">4.11</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>NP-OB1</mark>,WPRO,What</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,DOP,do</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,you</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VB;~Tn,mean</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=321_a_dick_1952" target="_blank">321_a_dick_1952</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(WPRO&nbsp;What))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;mean))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.12">4.12</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>NP-PRD2</mark>,NP-GENV,WPRO;_genm_,whose</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>NP-PRD2</mark>,N,turn</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,BEP;~Ln,is</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,it</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=213_christine_t09" target="_blank">213_christine_t09</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-PRD2</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(WPRO;_genm_&nbsp;whose))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;turn))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.13">4.13</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ADVP-CNT</mark>,WADV,why</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,DOD,did</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,you</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,DOP;~Tn,do</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-OB1,D;_nphd_,that</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=158_christine_t35" target="_blank">158_christine_t35</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ADVP-NIM-CNT</mark>&nbsp;(WADV&nbsp;why))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOP;~Tn&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D;_nphd_&nbsp;that)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.14">4.14</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ADVP-MNR</mark>,WADV,how</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,DOP,do</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,I</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,VB;~Tn,spell</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-OB1,WPRO,what</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=22_christine_t34" target="_blank">22_christine_t34</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ADVP-NIM-MNR</mark>&nbsp;(WADV&nbsp;how))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;spell)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(WPRO&nbsp;what)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.15">4.15</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>PP-126</mark>,P-ROLE,In</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>PP-126</mark>,NP,WD,what</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>PP-126</mark>,NP,NS,ways</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,MD;~cat_Vi,might</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,NP-SBJ,PRO,they</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,IP-INF-CAT,<highlight>PP-MNR</highlight>,*ICH*-126</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,IP-INF-CAT,ADVP-TMP,ADV,still</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,IP-INF-CAT,BE;~Ln,be</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,IP-INF-CAT,NP-PRD2,D,the</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,IP-INF-CAT,NP-PRD2,ADJP,ADJ,same</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=20_a_fce_0100_2000_12" target="_blank">20_a_fce_0100_2000_12</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>PP-126</mark>&nbsp;(P-ROLE&nbsp;In)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(WD&nbsp;what)&nbsp;(NS&nbsp;ways)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;might)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<highlight>PP-NIM-MNR</highlight>&nbsp;*ICH*-126)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;still))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BE;~Ln&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;same)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec4.2.3">4.2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Imperatives</h3>
 
-<p><a name="table4.36">Table 4.36: Tag for imperative clause</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-IMP</tt></td><td>imperative clause</td></tr>
 </table>
+<br>
+<a name="table4.37"><b>Table 4.37</b>: Tag for imperative clause</a>
+</center>
+<br>
 
 <p align="justify">An imperative clause requires a verb in the imperative form. The imperative form is a finite form of the verb that is typically equivalent to the infinitive form, and so the verb is tagged in the same way as an infinitive. It is appearance under an <tt>IP-IMP</tt> layer that distinguishes the verb as having imperative form.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another property that marks the imperative clause as a distinct matrix clause type is the typical absence of a subject constituent. Presence of a constituent with vocative function is one way open for the construction to have a referenced &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; for the verb, as in (<a href="chapter4.html#ex4.16">4.16</a>) and (<a href="chapter4.html#ex4.17">4.17</a>).</p>
 
 <dl><dt>(<a name="ex4.16">4.16</a>)</dt><dd>
-<tt>IP-IMP,VB;~I,Stop</tt><br>
-<tt>IP-IMP,<mark>NP-VOC</mark>,N,thief</tt><br>
-<tt>IP-IMP,PUNC,!</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=13_a_potter_1902" target="_blank">13_a_potter_1902</a></tt><br>
+<tt>(IP-IMP&nbsp;(VB;~I&nbsp;Stop)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-VOC</mark>&nbsp;(N&nbsp;thief))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;!))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.17">4.17</a>)</dt><dd>
-<tt>IP-IMP,<mark>NP-VOC</mark>,PRO,You</tt><br>
-<tt>IP-IMP,VB;~phr_Vp,shut</tt><br>
-<tt>IP-IMP,RP,up</tt><br>
-<tt>IP-IMP,PUNC,!</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_n09" target="_blank">10_susanne_n09</a></tt><br>
+<tt>(IP-IMP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-VOC</mark>&nbsp;(PRO&nbsp;You))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VB;~phr_Vp&nbsp;shut)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(RP&nbsp;up)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;!))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec4.2.4">4.2.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Sentence fragments</h3>
 
-<p align="justify">Presence of either (i) a subject and a finite verb, or (ii) an imperative verb warrants marking the enclosing structure as a clause (<tt>IP</tt>). When there is not enough material in an utterance to create an <tt>IP</tt>, the utterance is marked as a sentence fragment with the tag of Table <a href="chapter4.html#table4.37">4.37</a>.</p>
+<p align="justify">Presence of either (i) a subject and a finite verb, or (ii) an imperative verb warrants marking the enclosing structure as a clause (<tt>IP</tt>). When there is not enough material in an utterance to create an <tt>IP</tt>, the utterance is marked as a sentence fragment with the tag of Table <a href="chapter4.html#table4.38">4.38</a>.</p>
 
-<p><a name="table4.37">Table 4.37: Tag for sentence fragment</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>FRAG</tt></td><td>sentence fragment</td></tr>
 </table>
+<br>
+<a name="table4.38"><b>Table 4.38</b>: Tag for sentence fragment</a>
+</center>
+<br>
 
 <p align="justify">Examples (<a href="chapter4.html#ex4.18">4.18</a>) &ndash; (<a href="chapter4.html#ex4.22">4.22</a>) are illustrative of possible <tt>FRAG</tt> utterances.</p>
 
 <dl><dt>(<a name="ex4.18">4.18</a>)</dt><dd>
-<tt><mark>FRAG</mark>,ADVP-MOD,ADV,just</tt><br>
-<tt><mark>FRAG</mark>,META,{pause}</tt><br>
-<tt><mark>FRAG</mark>,PP-DIR,P-ROLE,up</tt><br>
-<tt><mark>FRAG</mark>,PP-DIR,NP,D,the</tt><br>
-<tt><mark>FRAG</mark>,PP-DIR,NP,NS,stairs</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=71_christine_t40" target="_blank">71_christine_t40</a></tt><br>
+<tt>(<mark>FRAG</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;just))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(META&nbsp;{pause})&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-DIR&nbsp;(P-ROLE&nbsp;up)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;stairs))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.19">4.19</a>)</dt><dd>
-<tt><mark>FRAG</mark>,NP-SBJ,Q;_nphd_,all</tt><br>
-<tt><mark>FRAG</mark>,NP-SBJ,IP-REL,NP-SBJ,PRO,you</tt><br>
-<tt><mark>FRAG</mark>,NP-SBJ,IP-REL,VBP;~cat_Vt,seem</tt><br>
-<tt><mark>FRAG</mark>,NP-SBJ,IP-REL,IP-INF-CAT,NP-OB1,*T*</tt><br>
-<tt><mark>FRAG</mark>,NP-SBJ,IP-REL,IP-INF-CAT,TO,to</tt><br>
-<tt><mark>FRAG</mark>,NP-SBJ,IP-REL,IP-INF-CAT,VB;~I,think</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-SBJ,PRO,it</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,BEP;~Ln,&lt;apos&gt;s</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-PRD2,FLJ,bloody</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-PRD2,N,Hallowe&lt;apos&gt;en</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-PRD2,IP-PPL,VVN;~Ip,come</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-PRD2,IP-PPL,ADVP-CLR-DIR,ADV,back</tt><br>
-<tt><mark>FRAG</mark>,CP-THT-PRD2,IP-SUB,NP-PRD2,IP-PPL,ADVP-TMP,ADV,again</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=458_christine_t04" target="_blank">458_christine_t04</a></tt><br>
+<tt>(<mark>FRAG</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(Q;_nphd_&nbsp;all)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~cat_Vt&nbsp;seem)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(NP-OB1&nbsp;*T*)&nbsp;(TO&nbsp;to)&nbsp;(VB;~I&nbsp;think))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CP-THT-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(FLJ&nbsp;bloody)&nbsp;(N&nbsp;Hallowe&lt;apos&gt;en)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(VVN;~Ip&nbsp;come)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-CLR-DIR&nbsp;(ADV&nbsp;back))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;again)))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.20">4.20</a>)</dt><dd>
-<tt><mark>FRAG</mark>,ADVP-MNR,ADV,sadly</tt><br>
-<tt><mark>FRAG</mark>,ADVP-TMP,NP,Q;_nphd_,no</tt><br>
-<tt><mark>FRAG</mark>,ADVP-TMP,ADVR,longer</tt><br>
-<tt><mark>FRAG</mark>,PP-CLR-PRD2,P-ROLE,with</tt><br>
-<tt><mark>FRAG</mark>,PP-CLR-PRD2,NP,PRO,us</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=59_a_paulfellows" target="_blank">59_a_paulfellows</a></tt><br>
+<tt>(<mark>FRAG</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-MNR&nbsp;(ADV&nbsp;sadly))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-TMP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(Q;_nphd_&nbsp;no))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVR&nbsp;longer))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-CLR-PRD2&nbsp;(P-ROLE&nbsp;with)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;us))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.21">4.21</a>)</dt><dd>
-<tt><mark>ILYR</mark>,ILYR,REACT,yes</tt><br>
-<tt><mark>ILYR</mark>,CONJP,CONJ,or</tt><br>
-<tt><mark>ILYR</mark>,CONJP,ILYR,REACT,no</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=208_christine_t09" target="_blank">208_christine_t09</a></tt><br>
+<tt>(<mark>ILYR</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ILYR&nbsp;(REACT&nbsp;yes))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(REACT&nbsp;no))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.22">4.22</a>)</dt><dd>
-<tt><mark>FRAG</mark>,REACT,Really</tt><br>
-<tt><mark>FRAG</mark>,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=198_a_dick_1952" target="_blank">198_a_dick_1952</a></tt><br>
+<tt>(<mark>FRAG</mark>&nbsp;(REACT&nbsp;Really)&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Note how (<a href="chapter4.html#ex4.21">4.21</a>) involves clause internal coordination, with the inclusion of <tt>CONJP</tt> and <tt>ILYR</tt> projections, as explained below in section <a href="chapter4.html#sec4.4">4.4</a>.</p>
@@ -307,68 +322,69 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec4.3.1">4.3.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Subject</h3>
 
-<p><a name="table4.38">Table 4.38: The full range of tag extensions related to the subject function</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-SBJ</tt></td><td>subject</td></tr>
 <tr><td><tt>-ESBJ</tt></td><td>subject of a clause with existential <i>there</i></td></tr>
 <tr><td><tt>-NSBJ</tt></td><td>notional subject</td></tr>
 </table>
+<br>
+<a name="table4.39"><b>Table 4.39</b>: The full range of tag extensions related to the subject function</a>
+</center>
+<br>
 
 <p align="justify">A subject is always required in a basic clause. The subject is typically the noun phrase corresponding to the &lsquo;do-er&rsquo; or &lsquo;be-er&rsquo; or &lsquo;have-er&rsquo; of the verb. The subject can determine the form of the first verb instance of the clause (e.g.&nbsp;<i>I <b><i>am</i></b></i>, <i>he/she/it <b><i>is</i></b></i>, <i>we/you (all)/they <b><i>are</i></b></i>). Also, with regards to form, pronoun subject forms <i>I/we/he/she/they</i> contrast with non-subject forms <i>me/us/him/her/them</i>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Subjects typically occur with a clause initial position. For a couple of untypical clause types, the subject can appear after an initial verb. This holds especially for interrogatives, as in examples of section <a href="chapter4.html#sec4.2.2">4.2.2</a> above. Inversion of the subject and an initial verb can also occur after a frontmost adverbial phrase with a (semi-)negative adverbial head such as <i>hardly</i>, <i>scarcely</i>, <i>little</i>, <i>never</i>, <i>seldom</i>, <i>rarely</i>), as in (<a href="chapter4.html#ex4.23">4.23</a>).</p>
 
 <dl><dt>(<a name="ex4.23">4.23</a>)</dt><dd>
-<tt>IP-MAT,ADVP-TMP,ADV,Never</tt><br>
-<tt>IP-MAT,ADVP-TMP,PP,P-ROLE,at</tt><br>
-<tt>IP-MAT,ADVP-TMP,PP,NP,D,any</tt><br>
-<tt>IP-MAT,ADVP-TMP,PP,NP,N,time</tt><br>
-<tt>IP-MAT,<highlight>DOP</highlight>,does</tt><br>
-<tt>IP-MAT,<mark>NP-SBJ</mark>,D,the</tt><br>
-<tt>IP-MAT,<mark>NP-SBJ</mark>,N,user</tt><br>
-<tt>IP-MAT,VB;~La,feel</tt><br>
-<tt>IP-MAT,ADJP-PRD2,ADJ,constrained</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=28_lucy_student_e82" target="_blank">28_lucy_student_e82</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;Never)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;any)&nbsp;(N&nbsp;time))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>DOP</highlight>&nbsp;does)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;user))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VB;~La&nbsp;feel)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;constrained)))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Inversion of the subject with a modal verb or finite form of <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">HAVE</small>, or <small style="font-size: 75%">DO</small> also happens with <i>and so</i> reduced clauses:</p>
 
 <dl><dt>(<a name="ex4.24">4.24</a>)</dt><dd>
-<tt>ILYR,ILYR,PP-TMP,P-ROLE,By</tt><br>
-<tt>ILYR,ILYR,PP-TMP,ADVP,ADV,then</tt><br>
-<tt>ILYR,ILYR,NP-SBJ,NPR,Hez</tt><br>
-<tt>ILYR,ILYR,MD;~cat_Vi,could</tt><br>
-<tt>ILYR,ILYR,IP-INF-CAT,VB;~I,see</tt><br>
-<tt>ILYR,ILYR,IP-INF-CAT,PP-BNF,P-ROLE,for</tt><br>
-<tt>ILYR,ILYR,IP-INF-CAT,PP-BNF,NP,PNX,himself</tt><br>
-<tt>ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>ILYR,CONJP,CONJ,and</tt><br>
-<tt>ILYR,CONJP,ILYR,ADVP-MNR,ADV,so</tt><br>
-<tt>ILYR,CONJP,ILYR,<highlight>MD;~cat_Vi</highlight>,could</tt><br>
-<tt>ILYR,CONJP,ILYR,<mark>NP-SBJ</mark>,D,the</tt><br>
-<tt>ILYR,CONJP,ILYR,<mark>NP-SBJ</mark>,NS,others</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_n13" target="_blank">41_susanne_n13</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-TMP&nbsp;(P-ROLE&nbsp;By)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;then)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Hez))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;could)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;see)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-BNF&nbsp;(P-ROLE&nbsp;for)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PNX&nbsp;himself)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-MNR&nbsp;(ADV&nbsp;so))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>MD;~cat_Vi</highlight>&nbsp;could)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;others)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Also, the subject occurs after the verb in clauses with existential <i>there</i>.</p>
 
 <dl><dt>(<a name="ex4.25">4.25</a>)</dt><dd>
-<tt>IP-MAT,EX,There</tt><br>
-<tt>IP-MAT,<highlight>VBP;~ex_cat_Vt</highlight>,remain</tt><br>
-<tt>IP-MAT,<mark>NP-ESBJ</mark>,ADJP,ADJ,many</tt><br>
-<tt>IP-MAT,<mark>NP-ESBJ</mark>,ADJP;@2,AJLYR,ADJP,ADJ,political</tt><br>
-<tt>IP-MAT,<mark>NP-ESBJ</mark>,ADJP;@2,AJLYR,CONJP,CONJ,and</tt><br>
-<tt>IP-MAT,<mark>NP-ESBJ</mark>,ADJP;@2,AJLYR,CONJP,ADJP,ADJ,administrative</tt><br>
-<tt>IP-MAT,<mark>NP-ESBJ</mark>,NS,problems</tt><br>
-<tt>IP-MAT,IP-INF-CAT,TO,to</tt><br>
-<tt>IP-MAT,IP-INF-CAT,BE;~cat_Ve_passive_,be</tt><br>
-<tt>IP-MAT,IP-INF-CAT,IP-PPL-CAT,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-INF-CAT,IP-PPL-CAT,VVN;~Tn,solved</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_susanne_j22" target="_blank">54_susanne_j22</a></tt><br>
+<tt>(IP-MAT&nbsp;(EX&nbsp;There)&nbsp;(<highlight>VBP;~ex_cat_Vt</highlight>&nbsp;remain)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-ESBJ</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;many))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AJLYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AJLYR&nbsp;(ADJ&nbsp;political))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(AJLYR&nbsp;(ADJ&nbsp;administrative)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;problems))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(TO&nbsp;to)&nbsp;(BE;~cat_Ve_passive_&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;solved))))&nbsp;</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings in table <a href="chapter4.html#table4.38">4.38</a> relate to the subject function in particular constructions:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the annotation, <tt>-SBJ</tt> is the basic tag extension for marking a subject. Other more specialised markings in table <a href="chapter4.html#table4.39">4.39</a> relate to the subject function in particular constructions:</p>
 
 <ul>
 <li>tag extension <tt>-ESBJ</tt> marks the subject of a clause with existential <i>there</i>, as in (<a href="chapter4.html#ex4.25">4.25</a>) above</li>
@@ -376,49 +392,47 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex4.26">4.26</a>)</dt><dd>
-<tt>IP-MAT,<mark>NP-SBJ</mark>,PRO;_cleft_,it</tt><br>
-<tt>IP-MAT,BEP;~cleft_V,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,NP-FOC,D,that</tt><br>
-<tt>IP-MAT,NP-FOC,N,kind</tt><br>
-<tt>IP-MAT,NP-FOC,PP,P-ROLE,of</tt><br>
-<tt>IP-MAT,NP-FOC,PP,NP,N,smell</tt><br>
-<tt>IP-MAT,IP-CLF,NP-SBJ,PRO,he</tt><br>
-<tt>IP-MAT,IP-CLF,BEP,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,IP-CLF,PP-LOC,P-ROLE,into</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=5_christine_t37" target="_blank">5_christine_t37</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(PRO;_cleft_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~cleft_V&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-FOC&nbsp;(D&nbsp;that)&nbsp;(N&nbsp;kind)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;smell))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-CLF&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-LOC&nbsp;(P-ROLE&nbsp;into))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.27">4.27</a>)</dt><dd>
-<tt>IP-MAT,<mark>NP-SBJ</mark>,PRO;_provisional_,it</tt><br>
-<tt>IP-MAT,BEP;~La,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,NEG,not</tt><br>
-<tt>IP-MAT,ADJP-PRD2,ADJ,right</tt><br>
-<tt>IP-MAT,<highlight>NP-NSBJ</highlight>,D;_nphd_,this</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=280_christine_t38" target="_blank">280_christine_t38</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(PRO;_provisional_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~La&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NEG&nbsp;not)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;right))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-NSBJ</highlight>&nbsp;(D;_nphd_&nbsp;this)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.28">4.28</a>)</dt><dd>
-<tt>ILYR,<mark>NP-SBJ</mark>,D,The</tt><br>
-<tt>ILYR,<mark>NP-SBJ</mark>,N,breaststroke</tt><br>
-<tt>ILYR,BEP;~La,is</tt><br>
-<tt>ILYR,ADJP-PRD2,ADVP,ADV,very</tt><br>
-<tt>ILYR,ADJP-PRD2,ADJ,hard</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,NP-LGS,*</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,TO,to</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,VB;~Tn.pr,explain</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,PP-CLR-MNR,P-ROLE,in</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,PP-CLR-MNR,NP,NS,words</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_a_stories_09_m14" target="_blank">3_a_stories_09_m14</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(D&nbsp;The)&nbsp;(N&nbsp;breaststroke))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~La&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;hard))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-NSBJ</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(TO&nbsp;to)&nbsp;(VB;~Tn.pr&nbsp;explain)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-MNR&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;words)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The subject can also be <i>it</i> as a dummy element tagged <tt>PRO;_expletive_</tt> which has nothing else to relate to in the clause and essentially fills the role of licensing a contentless subject, as in (<a href="chapter4.html#ex4.29">4.29</a>).</p>
 
 <dl><dt>(<a name="ex4.29">4.29</a>)</dt><dd>
-<tt>IP-SUB,BEP;~cat_Vg,is</tt><br>
-<tt>IP-SUB,NP-SBJ,<mark>PRO;_expletive_</mark>,it</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,ADVP-TMP,ADV,still</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,VAG;~I,raining</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=331_christine_t21" target="_blank">331_christine_t21</a></tt><br>
+<tt>(IP-SUB&nbsp;(BEP;~cat_Vg&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>PRO;_expletive_</mark>&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;still))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VAG;~I&nbsp;raining)))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec4.3.2">4.3.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Object</h3>
@@ -443,15 +457,18 @@ highlight { background-color: palegreen; }
 
 <h4><a name="sec4.3.2.1">4.3.2.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Direct object</h4>
 
-<p><a name="table4.39">Table 4.39: The full range of tag extensions related to the direct object function</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OB1</tt></td><td>direct object</td></tr>
 <tr><td><tt>-DOB1</tt></td><td>derived object</td></tr>
 <tr><td><tt>-NOB1</tt></td><td>notional direct object</td></tr>
 </table>
+<br>
+<a name="table4.40"><b>Table 4.40</b>: The full range of tag extensions related to the direct object function</a>
+</center>
+<br>
 
-<p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="chapter4.html#table4.39">4.39</a> relate to the direct object function in particular constructions:</p>
+<p align="justify">A direct object generally follows immediately after its transitive verb, except where an indirect object intervenes. In the annotation, <tt>-OB1</tt> is the basic tag extension for marking a direct object. Other more specialised markings seen in table <a href="chapter4.html#table4.40">4.40</a> relate to the direct object function in particular constructions:</p>
 
 <ul>
 <li>a derived direct object marked <tt>-DOB1</tt> occurs in a clause alongside a non-finite embedded clause marked <tt>-OB1</tt>, as with (<a href="chapter4.html#ex4.30">4.30</a>) and (<a href="chapter4.html#ex4.31">4.31</a>)</li>
@@ -459,123 +476,131 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex4.30">4.30</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,We</tt><br>
-<tt>IP-MAT,VBP;~Tnt,want</tt><br>
-<tt>IP-MAT,<mark>NP-DOB1</mark>,NS,children</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-OB1</highlight>,TO,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-OB1</highlight>,VB;~Tn,fulfil</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-OB1</highlight>,NP-OB1,NP-GENV,PRO;_genm_,their</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-OB1</highlight>,NP-OB1,N,potential</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=30_lucy_bnc_b41" target="_blank">30_lucy_bnc_b41</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;We))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tnt&nbsp;want)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-DOB1</mark>&nbsp;(NS&nbsp;children))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-OB1</highlight>&nbsp;(TO&nbsp;to)&nbsp;(VB;~Tn&nbsp;fulfil)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;their))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;potential))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.31">4.31</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,MD;~cat_Vi,could</tt><br>
-<tt>IP-MAT,IP-INF-CAT,VB;~Tng,see</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<mark>NP-DOB1</mark>,D,the</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<mark>NP-DOB1</mark>,N,blood</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>IP-PPL-OB1</highlight>,VAG;~Ipr,running</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>IP-PPL-OB1</highlight>,PP-CLR-DIR,P-ROLE,down</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>IP-PPL-OB1</highlight>,PP-CLR-DIR,NP,NP-GENV,PRO;_genm_,his</tt><br>
-<tt>IP-MAT,IP-INF-CAT,<highlight>IP-PPL-OB1</highlight>,PP-CLR-DIR,NP,N,chest</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=132_susanne_n04" target="_blank">132_susanne_n04</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;could)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~Tng&nbsp;see)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-DOB1</mark>&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;blood))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-OB1</highlight>&nbsp;(VAG;~Ipr&nbsp;running)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-DIR&nbsp;(P-ROLE&nbsp;down)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;his))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;chest))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.32">4.32</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,VBP;~Tn.pr,leave</tt><br>
-<tt>IP-MAT,<mark>NP-OB1</mark>,PRO;_provisional_,it</tt><br>
-<tt>IP-MAT,PP-CLR,P-ROLE,to</tt><br>
-<tt>IP-MAT,PP-CLR,NP,PRO,you</tt><br>
-<tt>IP-MAT,PP-CLR,NP,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,PP-CLR,NP,PRN,NP,NPR,Madam</tt><br>
-<tt>IP-MAT,PP-CLR,NP,PRN,NP,NPR;@2,Deputy</tt><br>
-<tt>IP-MAT,PP-CLR,NP,PRN,NP,NPR,Speaker</tt><br>
-<tt>IP-MAT,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,TO,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,VB;~Tw,decide</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,NP-OB1,WPRO,which</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,NP-OB1,PP,P-ROLE,of</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,NP-OB1,PP,NP,D,those</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,NP-OB1,PP,NP,NS,traits</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,CP-QUE-OB1,IP-SUB,VBP;~Tn,share</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_a_hedgehog" target="_blank">9_a_hedgehog</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tn.pr&nbsp;leave)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(PRO;_provisional_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;you)&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PRN&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Madam)&nbsp;(NPR&nbsp;Deputy)&nbsp;(NPR&nbsp;Speaker)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-NOB1</highlight>&nbsp;(TO&nbsp;to)&nbsp;(VB;~Tw&nbsp;decide)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CP-QUE-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(WPRO&nbsp;which)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;those)&nbsp;(NS&nbsp;traits))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~Tn&nbsp;share)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.33">4.33</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,PRO,I</tt><br>
-<tt>ILYR,VBD;~Cn.a,found</tt><br>
-<tt>ILYR,<mark>NP-OB1</mark>,PRO;_provisional_,it</tt><br>
-<tt>ILYR,ADJP-PRD,ADJ,strange</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,C,that</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,NP-SBJ,NLYR,CONJ,neither</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,NP-SBJ,NLYR,NP,PRO,I</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,NP-SBJ,NLYR,CONJP,CONJ,nor</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,NP-SBJ,NLYR,CONJP,NP,D,the</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,NP-SBJ,NLYR,CONJP,NP,N,day</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,VBD;~Ipr,seemed</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,PP-CLR-MNR,P-ROLE,in</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,PP-CLR-MNR,NP,D,a</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,PP-CLR-MNR,NP,ADJP,ADJ,mourning</tt><br>
-<tt>ILYR,<highlight>CP-THT-NOB1</highlight>,IP-SUB,PP-CLR-MNR,NP,N,mood</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=79_a_joyce_1914" target="_blank">79_a_joyce_1914</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBD;~Cn.a&nbsp;found)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(PRO;_provisional_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD&nbsp;(ADJ&nbsp;strange))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>CP-THT-NOB1</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;(C&nbsp;that)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(CONJ&nbsp;neither)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;nor)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;day)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Ipr&nbsp;seemed)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-MNR&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;mourning))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;mood))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.34">4.34</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,VBP;~Cn.a,find</tt><br>
-<tt>IP-MAT,<mark>NP-OB1</mark>,D;_nphd_,this</tt><br>
-<tt>IP-MAT,ADJP-PRD,ADJ,difficult</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,TO,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-NOB1</highlight>,VB,believe</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_lucy_student_e12" target="_blank">9_lucy_student_e12</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Cn.a&nbsp;find)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(D;_nphd_&nbsp;this))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD&nbsp;(ADJ&nbsp;difficult))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-NOB1</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(TO&nbsp;to)&nbsp;(VB&nbsp;believe)))&nbsp;</tt><br>
 </dd></dl>
 
 <h4><a name="sec4.3.2.2">4.3.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Indirect object</h4>
 
-<p><a name="table4.40">Table 4.40: Extension tag for indirect object function</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-OB2</tt></td><td>indirect object</td></tr>
 </table>
+<br>
+<a name="table4.41"><b>Table 4.41</b>: Extension tag for indirect object function</a>
+</center>
+<br>
 
 <p align="justify">An indirect object occurs after ditransitive verbs such as <small style="font-size: 75%">GIVE</small> and <small style="font-size: 75%">TELL</small>, and comes before the direct object. It conforms to the other criteria for objects, including the formation of passives.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;While rare, it is possible for the indirect object to be the only object present in the clause, as in (<a href="chapter4.html#ex4.35">4.35</a>).</p>
 
 <dl><dt>(<a name="ex4.35">4.35</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D;_nphd_,that</tt><br>
-<tt>IP-MAT,BEP;~equ_Vw,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,CP-QUE-PRD2,IP-SUB,ADVP-CNT,WADV,why</tt><br>
-<tt>IP-MAT,CP-QUE-PRD2,IP-SUB,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,CP-QUE-PRD2,IP-SUB,<highlight>VBD;~Dn.*</highlight>,asked</tt><br>
-<tt>IP-MAT,CP-QUE-PRD2,IP-SUB,<mark>NP-OB2</mark>,PRO,you</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=300_christine_t16" target="_blank">300_christine_t16</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D;_nphd_&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~equ_Vw&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CP-QUE-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-CNT&nbsp;(WADV&nbsp;why))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>VBD;~Dn.*</highlight>&nbsp;asked)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-OB2</mark>&nbsp;(PRO&nbsp;you)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">The indirect object function can also occur with preposition phrases that are selected by a verb with [Dn.pr] code, discussed in chapter <a href="chapter7.html#ch7">7</a>.</p>
 
 <h4><a name="sec4.3.2.3">4.3.2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Closely related element</h4>
 
-<p><a name="table4.41">Table 4.41: Tag extension for closely related element</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-CLR</tt></td><td>closely related element</td></tr>
 </table>
+<br>
+<a name="table4.42"><b>Table 4.42</b>: Tag extension for closely related element</a>
+</center>
+<br>
 
-<p align="justify">The closely related function of Table <a href="chapter4.html#table4.41">4.41</a> occurs only with preposition phrases that have a verb selected function. When we look at verb codes with objects in chapter <a href="chapter7.html#ch7">7</a>, we will find that verbs selecting <tt>PP-CLR</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
+<p align="justify">The closely related function of Table <a href="chapter4.html#table4.42">4.42</a> occurs only with preposition phrases that have a verb selected function. When we look at verb codes with objects in chapter <a href="chapter7.html#ch7">7</a>, we will find that verbs selecting <tt>PP-CLR</tt> involve a code with pr, e.g., [Ipr], [Tn.pr], etc.</p>
 
 <h3><a name="sec4.3.3">4.3.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Predicative</h3>
 
-<p><a name="table4.42">Table 4.42: Extension tags related to predicative functions</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-PRD</tt></td><td>object predicative</td></tr>
 <tr><td><tt>-PRD2</tt></td><td>subject predicative</td></tr>
 </table>
+<br>
+<a name="table4.43"><b>Table 4.43</b>: Extension tags related to predicative functions</a>
+</center>
+<br>
 
 <p align="justify">A predicative can only occur as a clause element when selected by the verb. A predicative typically follows the verb and (if one is present) the direct object. All of the phrase types considered in chapter <a href="chapter3.html#ch3">3</a> are able to function as predicatives: noun phrase, adjective phrase, adverb phrase, and preposition phrase. This behaviour is in contrast to objects, which cannot be adjective phrases.</p>
 
@@ -587,33 +612,32 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex4.36">4.36</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D,The</tt><br>
-<tt>IP-MAT,NP-SBJ,N,Skipjack</tt><br>
-<tt>IP-MAT,VBD;~Ln,became</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,D,the</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,ADJP,ADJS,fastest</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,N,submarine</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,IP-PPL,NP-LGS,*</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,IP-PPL,ADVP-TMP,ADV,ever</tt><br>
-<tt>IP-MAT,<mark>NP-PRD2</mark>,IP-PPL,VVN;~Tn,built</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_susanne_a20" target="_blank">46_susanne_a20</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)&nbsp;(N&nbsp;Skipjack))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBD;~Ln&nbsp;became)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-PRD2</mark>&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJS&nbsp;fastest))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;submarine)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(NP-LGS&nbsp;*)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;ever))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VVN;~Tn&nbsp;built))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.37">4.37</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,VBP;~Cn.a,find</tt><br>
-<tt>IP-MAT,NP-OB1,D;_nphd_,this</tt><br>
-<tt>IP-MAT,<mark>ADJP-PRD</mark>,ADVP,ADV,very</tt><br>
-<tt>IP-MAT,<mark>ADJP-PRD</mark>,ADJ,interesting</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_a_ted_talk_11" target="_blank">14_a_ted_talk_11</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Cn.a&nbsp;find)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(D;_nphd_&nbsp;this))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>ADJP-PRD</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;interesting)))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec4.3.4">4.3.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Adverbials</h3>
 
-<p align="justify">An adverbial is a phrase that is used to modify a verb or clause. Adverbials need to be given functional information in the annotation. Following the coding system for adverbial function from the SUSANNE Corpus and Analytic Scheme (Sampson 1995), the full range of extensions for marking adverbial functions is given in Table <a href="chapter4.html#table4.43">4.43</a>.</p>
+<p align="justify">An adverbial is a phrase that is used to modify a verb or clause. Adverbials need to be given functional information in the annotation. Following the coding system for adverbial function from the SUSANNE Corpus and Analytic Scheme (Sampson 1995), the full range of extensions for marking adverbial functions is given in Table <a href="chapter4.html#table4.44">4.44</a>.</p>
 
-<p><a name="table4.43">Table 4.43: The full range of tag extensions for marking adverbial functions</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>-ABS</tt></td><td>absolute</td></tr>
 <tr><td><tt>-BNF</tt></td><td>benefactive</td></tr>
@@ -626,178 +650,170 @@ highlight { background-color: palegreen; }
 <tr><td><tt>-RST</tt></td><td>respect</td></tr>
 <tr><td><tt>-TMP</tt></td><td>temporal</td></tr>
 </table>
+<br>
+<a name="table4.44"><b>Table 4.44</b>: The full range of tag extensions for marking adverbial functions</a>
+</center>
+<br>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is typical for adverb phrases to be used as adverbials, but also many other types of phrases can be used in this way, including noun phrases, preposition phrases, and subordinate clauses.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (<a href="chapter4.html#ex4.38">4.38</a>), the preposition phrases <i>in the face</i> and <i>with a pistol</i>, the noun phrase <i>last night</i>, and the subordinate clause <i>after robbing him of &dollar;18</i> are all adverbials that modify <i>struck</i>.</p>
 
 <dl><dt>(<a name="ex4.38">4.38</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D,A</tt><br>
-<tt>IP-MAT,NP-SBJ,N,thug</tt><br>
-<tt>IP-MAT,<mark>VBD;~Tn.pr</mark>,struck</tt><br>
-<tt>IP-MAT,NP-OB1,D,a</tt><br>
-<tt>IP-MAT,NP-OB1,N,cab</tt><br>
-<tt>IP-MAT,NP-OB1,N;@3,driver</tt><br>
-<tt>IP-MAT,<highlight>PP-LOC</highlight>,P-ROLE,in</tt><br>
-<tt>IP-MAT,<highlight>PP-LOC</highlight>,NP,D,the</tt><br>
-<tt>IP-MAT,<highlight>PP-LOC</highlight>,NP,N,face</tt><br>
-<tt>IP-MAT,<highlight>PP-MNR</highlight>,P-ROLE,with</tt><br>
-<tt>IP-MAT,<highlight>PP-MNR</highlight>,NP,D,a</tt><br>
-<tt>IP-MAT,<highlight>PP-MNR</highlight>,NP,N,pistol</tt><br>
-<tt>IP-MAT,<highlight>NP-TMP</highlight>,ADJP,ADJ,last</tt><br>
-<tt>IP-MAT,<highlight>NP-TMP</highlight>,N,night</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-TMP</highlight>,P-CONN,after</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-TMP</highlight>,IP-PPL,VAG;~Tn.pr,robbing</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-TMP</highlight>,IP-PPL,NP-OB1,PRO,him</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=10_susanne_a19" target="_blank">10_susanne_a19</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;A)&nbsp;(N&nbsp;thug))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~Tn.pr</mark>&nbsp;struck)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;cab)&nbsp;(N&nbsp;driver))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-LOC</highlight>&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;face)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-MNR</highlight>&nbsp;(P-ROLE&nbsp;with)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;pistol)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-NIM-TMP</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;last))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;night))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-SCON-TMP</highlight>&nbsp;(P-CONN&nbsp;after)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL&nbsp;(VAG;~Tn.pr&nbsp;robbing)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;him)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The adverbials of (<a href="chapter4.html#ex4.38">4.38</a>) are all optional elements of clause structure. But also, on a verb specific basis, adverbials may have clause presence as required elements when expressing a particular semantic relation that the verb selects, as seen with the grammatical codes of [Ipr], [In/pr], [Tn.pr], and [Dn.pr] discussed in chapter <a href="chapter7.html#ch7">7</a>.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>-DIR</tt>, the adverbial functions of Table <a href="chapter4.html#table4.43">4.43</a> typically mark phrases that are not selected by the verb. Even when not selected by the verb, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>-DIR</tt>, the adverbial functions of Table <a href="chapter4.html#table4.44">4.44</a> typically mark phrases that are not selected by the verb. Even when not selected by the verb, adverbials still need to make a meaning contribution that is compatible with the meaning of the verb.</p>
 
 <dl><dt>(<a name="ex4.39">4.39</a>)</dt><dd>
-<tt>ILYR,<highlight>PP-TMP</highlight>,P-ROLE,For</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,D,a</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,N,time</tt><br>
-<tt>ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>ILYR,NP-SBJ,PRO,I</tt><br>
-<tt>ILYR,<highlight>ADVP-TMP</highlight>,ADV,still</tt><br>
-<tt>ILYR,<mark>VBD;~I</mark>,worked</tt><br>
-<tt>ILYR,<highlight>NP-TMP</highlight>,D,a</tt><br>
-<tt>ILYR,<highlight>NP-TMP</highlight>,N,couple</tt><br>
-<tt>ILYR,<highlight>NP-TMP</highlight>,PP,P-ROLE,of</tt><br>
-<tt>ILYR,<highlight>NP-TMP</highlight>,PP,NP,NS,afternoons</tt><br>
-<tt>ILYR,<highlight>NP-MNR</highlight>,N,supply</tt><br>
-<tt>ILYR,<highlight>NP-MNR</highlight>,N;@2,teaching</tt><br>
-<tt>ILYR,<highlight>PP-LOC</highlight>,P-ROLE,at</tt><br>
-<tt>ILYR,<highlight>PP-LOC</highlight>,NP,NPR,Perins</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=40_a_alresford" target="_blank">40_a_alresford</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-TMP</highlight>&nbsp;(P-ROLE&nbsp;For)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;time)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>ADVP-NIM-TMP</highlight>&nbsp;(ADV&nbsp;still))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~I</mark>&nbsp;worked)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-NIM-TMP</highlight>&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;couple)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;afternoons))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>NP-NIM-MNR</highlight>&nbsp;(N&nbsp;supply)&nbsp;(N&nbsp;teaching))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-LOC</highlight>&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Perins))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.40">4.40</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,D,the</tt><br>
-<tt>ILYR,NP-SBJ,ADJP,ADJ,visual</tt><br>
-<tt>ILYR,NP-SBJ,N,aspect</tt><br>
-<tt>ILYR,BEP;~Ln,is</tt><br>
-<tt>ILYR,NP-PRD2,ADVP-MOD,ADV,much</tt><br>
-<tt>ILYR,NP-PRD2,D,the</tt><br>
-<tt>ILYR,NP-PRD2,ADJP,ADJ,same</tt><br>
-<tt>ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>ILYR,<mark>PP-COM</mark>,ADVP-MOD,ADV,even</tt><br>
-<tt>ILYR,<mark>PP-COM</mark>,P-ROLE,with</tt><br>
-<tt>ILYR,<mark>PP-COM</mark>,NP,ADJP,ADJ,major</tt><br>
-<tt>ILYR,<mark>PP-COM</mark>,NP,NS,changes</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=94_a_alresford" target="_blank">94_a_alresford</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;visual))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;aspect))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;much))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;same)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>PP-NIM-COM</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;even))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(P-ROLE&nbsp;with)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;major))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;changes))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.41">4.41</a>)</dt><dd>
-<tt>ILYR,<highlight>PP-TMP</highlight>,P-ROLE,In</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,D,the</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,N,summer</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,PP,P-ROLE,of</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,PP,NP,NPR,1979</tt><br>
-<tt>ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>ILYR,NP-SBJ,D,the</tt><br>
-<tt>ILYR,NP-SBJ,NPR,ITV</tt><br>
-<tt>ILYR,NP-SBJ,N,channel</tt><br>
-<tt>ILYR,<mark>VBD;~I</mark>,disappeared</tt><br>
-<tt>ILYR,PP-DIR,P-ROLE,from</tt><br>
-<tt>ILYR,PP-DIR,NP,D,the</tt><br>
-<tt>ILYR,PP-DIR,NP,ADJP,ADJ,national</tt><br>
-<tt>ILYR,PP-DIR,NP,NS,screens</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,P-ROLE,for</tt><br>
-<tt>ILYR,<highlight>PP-TMP</highlight>,NP,NS,months</tt><br>
-<tt>ILYR,<highlight>PP-CNT</highlight>,P-ROLE,due_to</tt><br>
-<tt>ILYR,<highlight>PP-CNT</highlight>,NP,ADJP,ADJ,industrial</tt><br>
-<tt>ILYR,<highlight>PP-CNT</highlight>,NP,N,action</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=87_a_alresford" target="_blank">87_a_alresford</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-TMP</highlight>&nbsp;(P-ROLE&nbsp;In)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;summer)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;1979)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)&nbsp;(NPR&nbsp;ITV)&nbsp;(N&nbsp;channel))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~I</mark>&nbsp;disappeared)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-NIM-DIR&nbsp;(P-ROLE&nbsp;from)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;national))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;screens)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-TMP</highlight>&nbsp;(P-ROLE&nbsp;for)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;months)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-CNT</highlight>&nbsp;(P-ROLE&nbsp;due_to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;industrial))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;action))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.42">4.42</a>)</dt><dd>
-<tt>ILYR,VB;~phr_Vp.pr,head</tt><br>
-<tt>ILYR,<mark>RP</mark>,straight</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,P-ROLE,across</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,NP,D,the</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,NP,NS,swells</tt><br>
-<tt>ILYR,PP-DIR,P-ROLE,for</tt><br>
-<tt>ILYR,PP-DIR,NP,N,Antler</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=116_susanne_n14" target="_blank">116_susanne_n14</a></tt><br>
+<tt>(ILYR&nbsp;(VB;~phr_Vp.pr&nbsp;head)&nbsp;(<mark>RP</mark>&nbsp;straight)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-CLR-DIR</highlight>&nbsp;(P-ROLE&nbsp;across)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;swells)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-NIM-DIR&nbsp;(P-ROLE&nbsp;for)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;Antler))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.43">4.43</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,HVP;~cat_Ve,&lt;apos&gt;ve</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,VVN;~Tn,watched</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,PRO,them</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>PP-TMP</mark>,ADVP-MOD,ADV,all</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>PP-TMP</mark>,P-ROLE,through</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>PP-TMP</mark>,NP,D,the</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>PP-TMP</mark>,NP,N,week</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=46_christine_t11" target="_blank">46_christine_t11</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(HVP;~cat_Ve&nbsp;&lt;apos&gt;ve)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(VVN;~Tn&nbsp;watched)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;them))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>PP-NIM-TMP</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;all))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(P-ROLE&nbsp;through)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;week)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.44">4.44</a>)</dt><dd>
-<tt>ILYR,VBD;~Ipr,went</tt><br>
-<tt>ILYR,<mark>PP-DIR</mark>,P-ROLE,through</tt><br>
-<tt>ILYR,<mark>PP-DIR</mark>,NP,D,the</tt><br>
-<tt>ILYR,<mark>PP-DIR</mark>,NP,N,wood</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,P-ROLE,to</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,NP,NP-GENV,D,the</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,NP,NP-GENV,N,baker</tt><br>
-<tt>ILYR,<highlight>PP-CLR-DIR</highlight>,NP,NP-GENV,GENM,&lt;apos&gt;s</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_a_potter_1902" target="_blank">7_a_potter_1902</a></tt><br>
+<tt>(ILYR&nbsp;(VBD;~Ipr&nbsp;went)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>PP-NIM-DIR</mark>&nbsp;(P-ROLE&nbsp;through)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;wood)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-CLR-DIR</highlight>&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;baker)&nbsp;(GENM&nbsp;&lt;apos&gt;s)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex4.45">4.45</a>)</dt><dd>
-<tt>IP-ADV,NP-SBJ,PRO,I</tt><br>
-<tt>IP-ADV,<mark>VBP;~Ip</mark>,arrive</tt><br>
-<tt>IP-ADV,<highlight>ADVP-CLR-DIR</highlight>,ADV,home</tt><br>
-<tt>IP-ADV,<highlight>PP-DIR</highlight>,P-ROLE,from</tt><br>
-<tt>IP-ADV,<highlight>PP-DIR</highlight>,NP,N,school</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,P-ROLE,in</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,NP,D,the</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,NP,N,evening</tt><br>
-<tt>IP-ADV,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,P-ROLE,at</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,NP,ADVP,ADV,about</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,NP,NUM,four</tt><br>
-<tt>IP-ADV,<highlight>PP-TMP</highlight>,NP,ADVP,ADV,o&lt;apos&gt;clock</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1_lucy_child_12_f37" target="_blank">1_lucy_child_12_f37</a></tt><br>
+<tt>(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBP;~Ip</mark>&nbsp;arrive)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>ADVP-CLR-DIR</highlight>&nbsp;(ADV&nbsp;home))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-DIR</highlight>&nbsp;(P-ROLE&nbsp;from)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;school)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-TMP</highlight>&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;evening)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-NIM-TMP</highlight>&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;about))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NUM&nbsp;four)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;o&lt;apos&gt;clock)))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec4.4">4.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Clause internal coordination</h2>
 
-<p><a name="table4.44">Table 4.44: Tag for clause internal layer</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>ILYR</tt></td><td>clause internal layer</td></tr>
 </table>
+<br>
+<a name="table4.45"><b>Table 4.45</b>: Tag for clause internal layer</a>
+</center>
+<br>
 
 <p align="justify">Coordination joins together two or more constituents which are outside of each other and of &lsquo;equal status&rsquo;. For example, content for three clauses become one clause through coordination in (<a href="chapter4.html#ex4.46">4.46</a>).</p>
 
 <dl><dt>(<a name="ex4.46">4.46</a>)</dt><dd>
-<tt>IP-MAT,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-SBJ,N,Mr</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-SBJ,NPR,G</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,<highlight>ILYR</highlight>,BEP;~Ln,is</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-PRD2,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-PRD2,N,headmaster</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-SBJ,N,Miss</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-SBJ,NPR,K</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,BEP;~Ln,is</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-PRD2,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-PRD2,N,deputy</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-PRD2,N;@3,head</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,CONJ,and</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,NP-SBJ,N,Mrs</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,NP-SBJ,NPR,V</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,BEP;~Ln,is</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,NP-PRD2,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,NP-PRD2,N,school</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP;@4,<highlight>ILYR</highlight>,NP-PRD2,N;@3,secretary</tt><br>
-<tt>IP-MAT,PUNC,.</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_lucy_child_11_h11" target="_blank">3_lucy_child_11_h11</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>ILYR</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mr)&nbsp;(NPR&nbsp;G))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;headmaster)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;Miss)&nbsp;(NPR&nbsp;K))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;deputy)&nbsp;(N&nbsp;head))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mrs)&nbsp;(NPR&nbsp;V))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;school)&nbsp;(N&nbsp;secretary)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;.))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">The overall coordinated structure of (<a href="chapter4.html#ex4.46">4.46</a>) is gathered under a single <tt>ILYR</tt> (clause internal layer) projection with the external behaviour of a single clause. Each <b>conjunct</b> of the coordinated structure is an <tt>ILYR</tt> that is either:</p>
@@ -810,97 +826,110 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordinated structure can itself form the conjunct of larger coordinated structure. Such layered coordination is easiest to identify when different coordinators are used at each level, as in (<a href="chapter4.html#ex4.47">4.47</a>).</p>
 
 <dl><dt>(<a name="ex4.47">4.47</a>)</dt><dd>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,NP-SBJ,N,Mrs</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,NP-SBJ,NPR,G</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,BED;~Ln,was</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,NP-PRD2,N,headmistress</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,PP-SCON-TMP,P-CONN,when</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,PP-SCON-TMP,IP-ADV,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,ILYR,PP-SCON-TMP,IP-ADV,VBD;~I,came</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,<mark>CONJ</mark>,but</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,FS,NP-SBJ,PRO,she</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,FS,VBD,left</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,FS,META,#</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,ADVP-TMP,ADVP,ADV,soon</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,ADVP-TMP,ADV,after</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,IP-ADV,NP-SBJ,PRO,she</tt><br>
-<tt>IP-MAT,ILYR,ILYR,ILYR,CONJP,ILYR,IP-ADV,VBD;~I,left</tt><br>
-<tt>IP-MAT,ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,ILYR,CONJP,<highlight>CONJ</highlight>,and</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,ILYR,NP-SBJ,D,a</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,ILYR,NP-SBJ,ADJP,ADJ,new</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,ILYR,NP-SBJ,N,headmistress</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,ILYR,VBD;~I,came</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,PUNC,_*&lt;comma&gt;*_</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,CONJP,ILYR,NP-SBJ,NP-GENV,PRO;_genm_,her</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,CONJP,ILYR,NP-SBJ,N,name</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,CONJP,ILYR,BEP;~Ln,is</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,CONJP,ILYR,NP-PRD2,N,Miss</tt><br>
-<tt>IP-MAT,ILYR,CONJP,ILYR,ILYR,CONJP,ILYR,NP-PRD2,NPR,B</tt><br>
-<tt>IP-MAT,PUNC,.</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=4_lucy_child_11_h04" target="_blank">4_lucy_child_11_h04</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mrs)&nbsp;(NPR&nbsp;G))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;~Ln&nbsp;was)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(N&nbsp;headmistress))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-SCON-TMP&nbsp;(P-CONN&nbsp;when)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~I&nbsp;came))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(<mark>CONJ</mark>&nbsp;but)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(FS&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;left)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;#))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;soon))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADV&nbsp;after))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~I&nbsp;left))))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(<highlight>CONJ</highlight>&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;new))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;headmistress))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~I&nbsp;came))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;_*,*_)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;her))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;name))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(N&nbsp;Miss)&nbsp;(NPR&nbsp;B))))))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;.))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Coordination can happen at different levels of clause structure. In (<a href="chapter4.html#ex4.48">4.48</a>) coordination occurs at the highest level of clause structure, so that the front placement of <i>is</i> (i.e.&nbsp;marking for an interrogative clause) is required for both conjuncts.</p>
 
 <dl><dt>(<a name="ex4.48">4.48</a>)</dt><dd>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,<highlight>ILYR</highlight>,BEP;~Ln,is</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-SBJ,PRO,he</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-PRD2,D,a</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,<highlight>ILYR</highlight>,NP-PRD2,N,manager</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,CONJ,or</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,BEP;~La,is</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,NP-SBJ,PRO,he</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,ADJP-PRD2,ADJ,unemployed</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,PP-TMP,P-ROLE,at</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,PP-TMP,NP,D,the</tt><br>
-<tt>CP-QUE-MAT,IP-SUB,<mark>ILYR</mark>,CONJP,<highlight>ILYR</highlight>,PP-TMP,NP,N,moment</tt><br>
-<tt>CP-QUE-MAT,PUNC,?</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=497_christine_t14" target="_blank">497_christine_t14</a></tt><br>
+<tt>(CP-QUE-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ILYR</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;(BEP;~Ln&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;manager)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;(BEP;~La&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;unemployed))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-TMP&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;moment)))))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">In (<a href="chapter4.html#ex4.49">4.49</a>) the coordination is within the syntactic scope of the subject.</p>
 
 <dl><dt>(<a name="ex4.49">4.49</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,They</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,NEG,not</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ADVP-MOD,ADV,only</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,VBP,look</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,P-ROLE,at</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,NP,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,NP,N,inside</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,NP,PP,P-ROLE,of</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,NP,PP,NP,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-CLR,NP,PP,NP,N,apartment</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,CONJ,but</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,ADVP-MOD,ADV,also</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,VBP,look</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,PP-CLR,P-ROLE,at</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,PP-CLR,NP,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,PP-CLR,NP,NS,surroundings</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=14_lucy_student_e40" target="_blank">14_lucy_student_e40</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;They))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>ILYR</mark>&nbsp;(NEG&nbsp;not)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-MOD&nbsp;(ADV&nbsp;only))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(VBP&nbsp;look)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;inside)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;apartment))))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;but)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-MOD&nbsp;(ADV&nbsp;also))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;look)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;at)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;surroundings)))))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">In (<a href="chapter4.html#ex4.50">4.50</a>) we can see coordination occurring within the clause at two distinct levels: (i) at a level that is just under the syntactic scope of the overall subject, and (ii) at a level that is under the syntactic scope of an object.</p>
 
 <dl><dt>(<a name="ex4.50">4.50</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D,the</tt><br>
-<tt>IP-MAT,NP-SBJ,NUM,fourth</tt><br>
-<tt>IP-MAT,NP-SBJ,N,year</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,VBP;~Ip,go</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,ADVP-CLR-DIR,RP,out</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-LOC,P-ROLE,on_to</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-LOC,NP,D,the</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,ILYR,PP-LOC,NP,N,field</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,CONJ,and</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,<highlight>ILYR</highlight>,ILYR,VBP;~Tn,practise</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,<highlight>ILYR</highlight>,CONJP,CONJ,or</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,<highlight>ILYR</highlight>,CONJP,ILYR,VBP;~Tn,play</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,NP-OB1,NLYR,NP,N,cricket</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,NP-OB1,NLYR,CONJP,CONJ,or</tt><br>
-<tt>IP-MAT,<mark>ILYR</mark>,CONJP,ILYR,NP-OB1,NLYR,CONJP,NP,NS,rounders</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_lucy_child_10_k12" target="_blank">3_lucy_child_10_k12</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;the)&nbsp;(NUM&nbsp;fourth)&nbsp;(N&nbsp;year))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>ILYR</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(VBP;~Ip&nbsp;go)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-CLR-DIR&nbsp;(RP&nbsp;out))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-LOC&nbsp;(P-ROLE&nbsp;on_to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;field))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ILYR</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(VBP;~Tn&nbsp;practise))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(VBP;~Tn&nbsp;play))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(N&nbsp;cricket))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NS&nbsp;rounders)))))))))&nbsp;</tt><br>
 </dd></dl>
 
 <br>

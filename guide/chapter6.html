@@ -14,27 +14,33 @@ highlight { background-color: palegreen; }
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With annotation, a catenative verb occurs at a level of clause structure alongside a clause layer with the <tt>-CAT</tt> extension that essentially acts as a clasue internal layer. This clause internal layer is the selected complement of the catenative verb.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Full tags for <tt>-CAT</tt> layers are listed in Table <a href="chapter6.html#table6.56">6.56</a>. The full tag for a <tt>-CAT</tt> layer is determined by the form of the directly contained verb.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Full tags for <tt>-CAT</tt> layers are listed in Table <a href="chapter6.html#table6.57">6.57</a>. The full tag for a <tt>-CAT</tt> layer is determined by the form of the directly contained verb.</p>
 
-<p><a name="table6.56">Table 6.56: Tags for marking a layer selected as the complement of a catenative verb</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>IP-INF-CAT</tt></td><td>layer with infinitive verb introduced by a catenative verb</td></tr>
 <tr><td><tt>IP-PPL-CAT</tt></td><td>layer with participle verb introduced by a catenative verb</td></tr>
 </table>
+<br>
+<a name="table6.57"><b>Table 6.57</b>: Tags for marking a layer selected as the complement of a catenative verb</a>
+</center>
+<br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation marks each catenative verb with a catenative verb code, and sections <a href="chapter6.html#sec6.2">6.2</a> to <a href="chapter6.html#sec6.8">6.8</a> will provide examples to illustrate all of the possible codes. Codes differ because they indicate the form of the <tt>-CAT</tt> marked complement following Table <a href="chapter6.html#table6.57">6.57</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation marks each catenative verb with a catenative verb code, and sections <a href="chapter6.html#sec6.2">6.2</a> to <a href="chapter6.html#sec6.8">6.8</a> will provide examples to illustrate all of the possible codes. Codes differ because they indicate the form of the <tt>-CAT</tt> marked complement following Table <a href="chapter6.html#table6.58">6.58</a>.</p>
 
-<p><a name="table6.57">Table 6.57: Lower case letters e, g, t, and i</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td>t</td><td>non-finite clause (<i>to</i>-infinitive) (<tt>IP-INF-CAT</tt> with <i>to</i> tagged <tt>TO</tt> and verb tagged <tt>VB</tt>)</td></tr>
 <tr><td>i</td><td>non-finite clause (bare infinitive) (<tt>IP-INF-CAT</tt> with verb tagged <tt>VB</tt> but no <tt>TO</tt> tagged word)</td></tr>
 <tr><td>e</td><td>participial clause (&lcub;ed&rcub;&sol;&lcub;en&rcub; form) (<tt>IP-PPL-CAT</tt> with verb tagged <tt>VVN</tt>)</td></tr>
 <tr><td>g</td><td>participial clause (&lcub;ing&rcub; form) (<tt>IP-PPL-CAT</tt> with verb tagged <tt>VAG</tt>)</td></tr>
 </table>
+<br>
+<a name="table6.58"><b>Table 6.58</b>: Lower case letters e, g, t, and i</a>
+</center>
+<br>
 
-<p align="justify">A complete verb code is reached when cat_V is followed by a lower case letter from Table <a href="chapter6.html#table6.57">6.57</a>. There are also codes with an added lowercase &lsquo;p&rsquo; to indicate the presence of an adverb particle selected by the verb in addition to the <tt>-CAT</tt> marked complement. The list of catenative codes is as follows:</p>
+<p align="justify">A complete verb code is reached when cat_V is followed by a lower case letter from Table <a href="chapter6.html#table6.58">6.58</a>. There are also codes with an added lowercase &lsquo;p&rsquo; to indicate the presence of an adverb particle selected by the verb in addition to the <tt>-CAT</tt> marked complement. The list of catenative codes is as follows:</p>
 
 <ul>
 <li>[cat_Vt] (section <a href="chapter6.html#sec6.2">6.2</a>)</li>
@@ -58,57 +64,48 @@ highlight { background-color: palegreen; }
 <p align="justify">[cat_Vt] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>.</p>
 
 <dl><dt>(<a name="ex6.1">6.1</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D,A</tt><br>
-<tt>IP-MAT,NP-SBJ,N,drawing</tt><br>
-<tt>IP-MAT,NP-SBJ,PP,P-ROLE,of</tt><br>
-<tt>IP-MAT,NP-SBJ,PP,NP,D,the</tt><br>
-<tt>IP-MAT,NP-SBJ,PP,NP,N,structure</tt><br>
-<tt>IP-MAT,<mark>BEP;~cat_Vt</mark>,is</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,BE;~cat_Ve_passive_,be</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,VVN;~Tn,found</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,PP-LOC,P-ROLE,in</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,PP-LOC,NP,N,reference</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,PP-LOC,NP,NUM,6</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=41_susanne_j04" target="_blank">41_susanne_j04</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;A)&nbsp;(N&nbsp;drawing)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;structure))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>BEP;~cat_Vt</mark>&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;to)&nbsp;(BE;~cat_Ve_passive_&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;found)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-LOC&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;reference)&nbsp;(NUM&nbsp;6))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.2">6.2</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,D;_nphd_,This</tt><br>
-<tt>ILYR,MD;~cat_Vi,may</tt><br>
-<tt>ILYR,IP-INF-CAT,<mark>VB;~cat_Vt</mark>,appear</tt><br>
-<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
-<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,BE;~cat_Vg,be</tt><br>
-<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,VAG;~Tn,missing</tt><br>
-<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,NP-OB1,D,the</tt><br>
-<tt>ILYR,IP-INF-CAT,<highlight>IP-INF-CAT</highlight>,IP-PPL-CAT,NP-OB1,N,point</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=6_lucy_student_e12" target="_blank">6_lucy_student_e12</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D;_nphd_&nbsp;This))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;may)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<mark>VB;~cat_Vt</mark>&nbsp;appear)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;to)&nbsp;(BE;~cat_Vg&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(VAG;~Tn&nbsp;missing)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;point))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.3">6.3</a>)</dt><dd>
-<tt>IP-SUB,NP-SBJ,PRO;_expletive_,it</tt><br>
-<tt>IP-SUB,BED;~cat_Vg,was</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<mark>VAG;~cat_Vt</mark>,going</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,BE;~Ln,be</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,NP-PRD2,D,a</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,NP-PRD2,ADJP,ADVP,ADV,very</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,NP-PRD2,ADJP,ADJ,special</tt><br>
-<tt>IP-SUB,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,NP-PRD2,N,day</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=31_a_fce_0100_2001_06" target="_blank">31_a_fce_0100_2001_06</a></tt><br>
+<tt>(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO;_expletive_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BED;~cat_Vg&nbsp;was)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VAG;~cat_Vt</mark>&nbsp;going)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;to)&nbsp;(BE;~Ln&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-PRD2&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;special))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;day)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.4">6.4</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,we</tt><br>
-<tt>IP-MAT,BEP;~cat_Vg,&lt;apos&gt;re</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VAG;~cat_Vt</mark>,gon</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,TO,na</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,<highlight>HV;~cat_Vt</highlight>,have</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-INF-CAT</highlight>,VB;~Tn,share</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-INF-CAT</highlight>,NP-OB1,PRO,them</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=267_christine_t09" target="_blank">267_christine_t09</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~cat_Vg&nbsp;&lt;apos&gt;re)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VAG;~cat_Vt</mark>&nbsp;gon)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;na)&nbsp;(<highlight>HV;~cat_Vt</highlight>&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;to)&nbsp;(VB;~Tn&nbsp;share)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;them))))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.3">6.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[cat_Vp.t]</h2>
@@ -116,14 +113,12 @@ highlight { background-color: palegreen; }
 <p align="justify">[cat_Vp.t] is the code to mark a catenative phrasal verb with particle and an <tt>IP-INF-CAT</tt> complement that directly contains an infinitive verb with <i>to</i>. In (<a href="chapter6.html#ex6.5">6.5</a>), <i>turned</i> has <i>out</i> as its required particle to form a phrasal verb with <i>to be excellent</i> as the <tt>IP-INF-CAT</tt> complement.</p>
 
 <dl><dt>(<a name="ex6.5">6.5</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,D,The</tt><br>
-<tt>IP-MAT,NP-SBJ,N,arrangement</tt><br>
-<tt>IP-MAT,<mark>VBD;~cat_Vp.t</mark>,turned</tt><br>
-<tt>IP-MAT,<highlight>RP</highlight>,out</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,TO,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,BE;~La,be</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,ADJP-PRD2,ADJ,excellent</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_susanne_n18" target="_blank">9_susanne_n18</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(D&nbsp;The)&nbsp;(N&nbsp;arrangement))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~cat_Vp.t</mark>&nbsp;turned)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>RP</highlight>&nbsp;out)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(TO&nbsp;to)&nbsp;(BE;~La&nbsp;be)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;excellent))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.4">6.4</a>&nbsp;&nbsp;&nbsp;&nbsp;[cat_Vi]</h2>
@@ -131,16 +126,14 @@ highlight { background-color: palegreen; }
 <p align="justify">[cat_Vi] is the code to mark a catenative verb with an <tt>IP-INF-CAT</tt> complement that directly contains a bare infinitive verb.</p>
 
 <dl><dt>(<a name="ex6.6">6.6</a>)</dt><dd>
-<tt>IP-MAT,DOP,do</tt><br>
-<tt>IP-MAT,NEG;_clitic_,n&lt;apos&gt;t</tt><br>
-<tt>IP-MAT,NP-SBJ,PRO,you</tt><br>
-<tt>IP-MAT,<mark>VB;~cat_Vi</mark>,dare</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,VB,talk</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,PP-CLR,P-ROLE,to</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,PP-CLR,NP,PRO,me</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,PP-MNR,P-ROLE,like</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,PP-MNR,NP,D;_nphd_,that</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=523_christine_t06" target="_blank">523_christine_t06</a></tt><br>
+<tt>(IP-MAT&nbsp;(DOP&nbsp;do)&nbsp;(NEG;_clitic_&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VB;~cat_Vi</mark>&nbsp;dare)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(VB&nbsp;talk)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;me)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-MNR&nbsp;(P-ROLE&nbsp;like)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D;_nphd_&nbsp;that)))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.5">6.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[cat_Ve_passive_]</h2>
@@ -148,33 +141,34 @@ highlight { background-color: palegreen; }
 <p align="justify">[cat_Ve_passive_] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a passive past participle (&lcub;ed&rcub;&sol;&lcub;en&rcub;) verb form. Example (<a href="chapter6.html#ex6.7">6.7</a>) illustrates the [cat_Ve_passive_] verb <i>appeared</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>struck</i> as a passive verb.</p>
 
 <dl><dt>(<a name="ex6.7">6.7</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,NLYR,NP,NS,engages</tt><br>
-<tt>IP-MAT,NP-SBJ,NLYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,NP-SBJ,NLYR,CONJP,NP,NS,cooks</tt><br>
-<tt>IP-MAT,NP-SBJ,NLYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,NP-SBJ,NLYR,CONJP,NP,NS,voyageurs</tt><br>
-<tt>IP-MAT,<mark>VBD;~cat_Ve_passive_</mark>,appeared</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VVN;~Cn.a,struck</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,ADJP-PRD,ADJ,dumb</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=15_susanne_n04" target="_blank">15_susanne_n04</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NS&nbsp;engages))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NS&nbsp;cooks)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NS&nbsp;voyageurs)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~cat_Ve_passive_</mark>&nbsp;appeared)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Cn.a&nbsp;struck)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD&nbsp;(ADJ&nbsp;dumb))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">Example (<a href="chapter6.html#ex6.8">6.8</a>) illustrates the [cat_Ve_passive_] verb <i>grown</i> with selection of an <tt>IP-PPL-CAT</tt> complement with past participle <i>accustomed</i> as a passive verb.</p>
 
 <dl><dt>(<a name="ex6.8">6.8</a>)</dt><dd>
-<tt>NP,NS,eyes</tt><br>
-<tt>NP,IP-REL,NP-SBJ,RPRO,that</tt><br>
-<tt>NP,IP-REL,HVD;~cat_Ve,had</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<mark>VVN;~cat_Ve_passive_</mark>,grown</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,VVN;~Tn.pr,accustomed</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR,P-ROLE,to</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR,NP,D,the</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR,NP,N,absence</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR,NP,PP,P-ROLE,of</tt><br>
-<tt>NP,IP-REL,IP-PPL-CAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR,NP,PP,NP,N,light</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=108_susanne_n02" target="_blank">108_susanne_n02</a></tt><br>
+<tt>(NP&nbsp;(NS&nbsp;eyes)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(RPRO&nbsp;that))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(HVD;~cat_Ve&nbsp;had)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~cat_Ve_passive_</mark>&nbsp;grown)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn.pr&nbsp;accustomed)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;absence)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;light)))))))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The [cat_Ve_passive_] verbs <i>appeared</i> of (<a href="chapter6.html#ex6.7">6.7</a>) and <i>grown</i> of (<a href="chapter6.html#ex6.8">6.8</a>) bring about a passive interpretation for the past participle (&lcub;ed&rcub;&sol;&lcub;en&rcub;) verb of their <tt>-CAT</tt> complement. Most typically, it is [cat_Ve_passive_] <small style="font-size: 75%">BE</small> that is used to create the environment for a passive <tt>-CAT</tt> complement to occur, discussed in section <a href="chapter6.html#sec6.10">6.10</a> below. Also, [cat_Ve_passive_] <small style="font-size: 75%">GET</small> is another notable trigger for a passive.</p>
@@ -191,13 +185,12 @@ highlight { background-color: palegreen; }
 <p align="justify">This places multiple verbs in sequence, giving an <tt>IP-PPL-CAT</tt> layer in the annotation, as seen in (<a href="chapter6.html#ex6.9">6.9</a>).</p>
 
 <dl><dt>(<a name="ex6.9">6.9</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,N,Mr&lt;dot&gt;</tt><br>
-<tt>IP-MAT,NP-SBJ,NPR,Yamada</tt><br>
-<tt>IP-MAT,<mark>HVP;~cat_Ve</mark>,has</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VVN;~Ipr,gone</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR-DIR,P-ROLE,to</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR-DIR,NP,NPR,Tokyo</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=1366_x_textbook_kisonihongo" target="_blank">1366_x_textbook_kisonihongo</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(N&nbsp;Mr&lt;dot&gt;)&nbsp;(NPR&nbsp;Yamada))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>HVP;~cat_Ve</mark>&nbsp;has)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(VVN;~Ipr&nbsp;gone)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-DIR&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Tokyo)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">The perfect form of a verb generally calls attention to the consequences of a prior event; for example, (<a href="chapter6.html#ex6.9">6.9</a>) implies that Mr.&nbsp;Yamada is still away, in contrast with (<a href="chapter6.html#ex6.10">6.10</a>).</p>
@@ -211,10 +204,10 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">[cat_Vg] is the code to mark a catenative verb with an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form.</p>
 
 <dl><dt>(<a name="ex6.11">6.11</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,He</tt><br>
-<tt>IP-MAT,<mark>VBD;~cat_Vg</mark>,kept</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VAG;~I,going</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=52_susanne_n03" target="_blank">52_susanne_n03</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;He))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~cat_Vg</mark>&nbsp;kept)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(VAG;~I&nbsp;going)))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.7.1">6.7.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Progressive construction</h3>
@@ -222,55 +215,55 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">The progressive (also known as the &lsquo;continuous&rsquo;) form of a verb generally describes events in progress. It is formed by combining a verb's present participle (&lcub;ing&rcub;) verb form (e.g., <i>watching</i>) with an instance of <small style="font-size: 75%">BE</small> that is a catenative [cat_Vg] verb, e.g., <i>was watching</i> in (<a href="chapter6.html#ex6.12">6.12</a>).</p>
 
 <dl><dt>(<a name="ex6.12">6.12</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,<highlight>BED;~cat_Vg</highlight>,was</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VAG</mark>,watching</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,D,the</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,NS,fire_&lt;hyphen&gt;_engines</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=391_christine_t40" target="_blank">391_christine_t40</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>BED;~cat_Vg</highlight>&nbsp;was)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VAG</mark>&nbsp;watching)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;fire_&lt;hyphen&gt;_engines))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction (see section <a href="chapter6.html#sec6.6">6.6</a>), as with <i>been watching</i> in (<a href="chapter6.html#ex6.13">6.13</a>).</p>
 
 <dl><dt>(<a name="ex6.13">6.13</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ;{BILL},NPR,Bill</tt><br>
-<tt>IP-MAT,<highlight>HVP;~cat_Ve</highlight>,has</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>BEN;~cat_Vg</highlight>,been</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,<mark>VAG</mark>,watching</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,NP-OB1,ADJP,ADJ,little</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,NP-OB1,NPR,Alice</tt><br>
-<tt>IP-MAT,PP-SCON-TMP,ADVP-MOD,ADV,ever</tt><br>
-<tt>IP-MAT,PP-SCON-TMP,P-CONN,since</tt><br>
-<tt>IP-MAT,PP-SCON-TMP,IP-ADV,NP-SBJ;{MARY},NPR,Mary</tt><br>
-<tt>IP-MAT,PP-SCON-TMP,IP-ADV,VBD,left</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=448_x_blue_book" target="_blank">448_x_blue_book</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ;{BILL}&nbsp;(NPR&nbsp;Bill))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>HVP;~cat_Ve</highlight>&nbsp;has)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<highlight>BEN;~cat_Vg</highlight>&nbsp;been)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VAG</mark>&nbsp;watching)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;little))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NPR&nbsp;Alice))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PP-SCON-TMP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;ever))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(P-CONN&nbsp;since)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{MARY}&nbsp;(NPR&nbsp;Mary))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;left))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be used to introduce the passive construction (see section <a href="chapter6.html#sec6.10">6.10</a>), as with <i>is getting</i> in (<a href="chapter6.html#ex6.14">6.14</a>).</p>
 
 <dl><dt>(<a name="ex6.14">6.14</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,NPR,Britain</tt><br>
-<tt>IP-MAT,<highlight>BEP;~cat_Vg</highlight>,is</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VAG;~cat_Ve_passive_</mark>,getting</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,<highlight>VVN</highlight>,left</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-CAT,ADVP-LOC,ADV,behind</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=43_lucy_bnc_b41" target="_blank">43_lucy_bnc_b41</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Britain))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>BEP;~cat_Vg</highlight>&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VAG;~cat_Ve_passive_</mark>&nbsp;getting)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(<highlight>VVN</highlight>&nbsp;left)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-LOC&nbsp;(ADV&nbsp;behind)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The progressive construction can be introduced by the perfect construction and introduce the passive construction, as with <i>been being</i> in (<a href="chapter6.html#ex6.15">6.15</a>).</p>
 
 <dl><dt>(<a name="ex6.15">6.15</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,He</tt><br>
-<tt>IP-MAT,MD;~cat_Vi,might</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,HV;~cat_Ve,have</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,BEN;~cat_Vg,been</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,<mark>IP-PPL-CAT</mark>,BAG;~cat_Ve_passive_,being</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,<mark>IP-PPL-CAT</mark>,<highlight>IP-PPL-CAT</highlight>,VVN;~Tn,questioned</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,<mark>IP-PPL-CAT</mark>,<highlight>IP-PPL-CAT</highlight>,PP-LGS,P-ROLE,by</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,<mark>IP-PPL-CAT</mark>,<highlight>IP-PPL-CAT</highlight>,PP-LGS,NP,D,the</tt><br>
-<tt>IP-MAT,<highlight>IP-INF-CAT</highlight>,<highlight>IP-PPL-CAT</highlight>,<mark>IP-PPL-CAT</mark>,<highlight>IP-PPL-CAT</highlight>,PP-LGS,NP,NS,police</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=173_x_buffalo" target="_blank">173_x_buffalo</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;He))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;might)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-CAT</highlight>&nbsp;(HV;~cat_Ve&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(BEN;~cat_Vg&nbsp;been)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>IP-PPL-CAT</mark>&nbsp;(BAG;~cat_Ve_passive_&nbsp;being)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(VVN;~Tn&nbsp;questioned)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LGS&nbsp;(P-ROLE&nbsp;by)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;police))))))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.8">6.8</a>&nbsp;&nbsp;&nbsp;&nbsp;[cat_Vp.g]</h2>
@@ -278,12 +271,12 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">[cat_Vp.g] is the code to mark a catenative phrasal verb with required particle and an <tt>IP-PPL-CAT</tt> complement that directly contains a present participial (&lcub;ing&rcub;) verb form. In (<a href="chapter6.html#ex6.16">6.16</a>), <i>keep</i> has <i>on</i> as its required particle to form a phrasal verb with <i>drinking</i> as the <tt>IP-PPL-CAT</tt> complement.</p>
 
 <dl><dt>(<a name="ex6.16">6.16</a>)</dt><dd>
-<tt>PP-SCON-CNT-CND,P-CONN,if</tt><br>
-<tt>PP-SCON-CNT-CND,IP-ADV,NP-SBJ,PRO,you</tt><br>
-<tt>PP-SCON-CNT-CND,IP-ADV,<mark>VBP;~cat_Vp.g</mark>,keep</tt><br>
-<tt>PP-SCON-CNT-CND,IP-ADV,<highlight>RP</highlight>,on</tt><br>
-<tt>PP-SCON-CNT-CND,IP-ADV,<highlight>IP-PPL-CAT</highlight>,VAG,drinking</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=370_christine_t26" target="_blank">370_christine_t26</a></tt><br>
+<tt>(PP-SCON-CNT-CND&nbsp;(P-CONN&nbsp;if)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VBP;~cat_Vp.g</mark>&nbsp;keep)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>RP</highlight>&nbsp;on)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(VAG&nbsp;drinking))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.9">6.9</a>&nbsp;&nbsp;&nbsp;&nbsp;Coordination with the complements of catenative verbs</h2>
@@ -291,26 +284,30 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">In addition to matching catenative verb code commitments, having <tt>-CAT</tt> layers provides the structural isolation needed for coordination, which is possible when there are clause internal layers. For example, there are multiple <tt>-CAT</tt> layers in (<a href="chapter6.html#ex6.17">6.17</a>), with coordination occurring with the higher layer.</p>
 
 <dl><dt>(<a name="ex6.17">6.17</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,NS,Phones</tt><br>
-<tt>IP-MAT,BED;~cat_Vg,were</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,ILYR,BAG;~cat_Ve_passive_,being</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,ILYR,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,ILYR,<highlight>IP-PPL-CAT</highlight>,VVN;~Tn,tapped</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,CONJP,CONJ,and</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,CONJP,ILYR,VAG;~Ipr,going</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,CONJP,ILYR,PP-CLR,P-ROLE,out_of</tt><br>
-<tt>IP-MAT,<mark>IP-PPL-CAT</mark>,ILYR,CONJP,ILYR,PP-CLR,NP,N,action</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=54_a_lob_a02" target="_blank">54_a_lob_a02</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NS&nbsp;Phones))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BED;~cat_Vg&nbsp;were)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>IP-PPL-CAT</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(BAG;~cat_Ve_passive_&nbsp;being)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;tapped)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;(VAG;~Ipr&nbsp;going)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;out_of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;action))))))))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.10">6.10</a>&nbsp;&nbsp;&nbsp;&nbsp;Passive voice</h2>
 
-<p><a name="table6.58">Table 6.58: Tags for marking a logical subject</a></p>
-
+<center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>NP-LGS</tt></td><td>logical subject noun phrase</td></tr>
 <tr><td><tt>PP-LGS</tt></td><td>logical subject preposition phrase</td></tr>
 </table>
+<br>
+<a name="table6.59"><b>Table 6.59</b>: Tags for marking a logical subject</a>
+</center>
+<br>
 
 <p align="justify">The ACTIVE VOICE is the basic, unmarked form of the clause.</p>
 
@@ -326,65 +323,68 @@ Mr.&nbsp;Yamada went to Tokyo
 </ul>
 
 <dl><dt>(<a name="ex6.18">6.18</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,She</tt><br>
-<tt>IP-MAT,<highlight>BED;~cat_Ve_passive_</highlight>,was</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~Dn.n</mark>,given</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,D,a</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,ADJP,ADJ,new</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,N,outfit</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-LGS</highlight>,P-ROLE,by</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-LGS</highlight>,NP,NP-GENV,PRO;_genm_,her</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-LGS</highlight>,NP,N,boyfriend</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=39_x_eng1100" target="_blank">39_x_eng1100</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;She))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>BED;~cat_Ve_passive_</highlight>&nbsp;was)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~Dn.n</mark>&nbsp;given)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;new))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;outfit))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-LGS</highlight>&nbsp;(P-ROLE&nbsp;by)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;her))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;boyfriend)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.19">6.19</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,She</tt><br>
-<tt>IP-MAT,<highlight>HVP;~cat_Ve</highlight>,has</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~Dn.pr</mark>,given</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,D,a</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,ADJP,ADJ,new</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,N,outfit</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-OB2</highlight>,P-ROLE,to</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-OB2</highlight>,NP,NP-GENV,PRO;_genm_,her</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<highlight>PP-OB2</highlight>,NP,N,boyfriend</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=38_x_eng1100" target="_blank">38_x_eng1100</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;She))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>HVP;~cat_Ve</highlight>&nbsp;has)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~Dn.pr</mark>&nbsp;given)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;new))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;outfit))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-OB2</highlight>&nbsp;(P-ROLE&nbsp;to)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;her))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;boyfriend)))))&nbsp;</tt><br>
 </dd></dl>
 
 <p align="justify"><small style="font-size: 75%">GET</small> can be used in place of <small style="font-size: 75%">BE</small> as a [cat_Ve] verb to form passives.</p>
 
 <dl><dt>(<a name="ex6.20">6.20</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,NPR,ARX</tt><br>
-<tt>ILYR,<mark>VBD;~cat_Ve_passive_</mark>,got</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,<highlight>VVN;~Tn</highlight>,cancelled</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,NP-TMP,D,the</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,NP-TMP,ADJP,ADJ,next</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,NP-TMP,N,day</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=74_a_paulfellows" target="_blank">74_a_paulfellows</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;ARX))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~cat_Ve_passive_</mark>&nbsp;got)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(<highlight>VVN;~Tn</highlight>&nbsp;cancelled)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-NIM-TMP&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;next))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;day))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.10.1">6.10.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Passives with adverbial clauses</h3>
 
 <dl><dt>(<a name="ex6.21">6.21</a>)</dt><dd>
-<tt>IP-MAT,<mark>PP-SCON-CNT</mark>,IP-PPL2,NP-LGS,*</tt><br>
-<tt>IP-MAT,<mark>PP-SCON-CNT</mark>,IP-PPL2,<highlight>VVN;~Tn</highlight>,Seated</tt><br>
-<tt>IP-MAT,<mark>PP-SCON-CNT</mark>,IP-PPL2,PP-LOC,P-ROLE,beside</tt><br>
-<tt>IP-MAT,<mark>PP-SCON-CNT</mark>,IP-PPL2,PP-LOC,NP,NPR,Alastair</tt><br>
-<tt>IP-MAT,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,<highlight>VVN;~Tn</highlight>,lulled</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,P-ROLE,by</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,D,the</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,ADJP,ADJ,uncanny</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,N,silence</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,PP,P-ROLE,of</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,PP,NP,ADJP,ADJ,supersonic</tt><br>
-<tt>IP-MAT,<highlight>PP-SCON-CNT</highlight>,IP-PPL2,PP-LGS,NP,PP,NP,N,flight</tt><br>
-<tt>IP-MAT,PUNC,&lt;comma&gt;</tt><br>
-<tt>IP-MAT,NP-SBJ,NPR,Geoffrey</tt><br>
-<tt>IP-MAT,MD;~cat_Vi,could</tt><br>
-<tt>IP-MAT,IP-INF-CAT,VB;~Cn.pr,imagine</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=17_a_lob_n01" target="_blank">17_a_lob_n01</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>PP-SCON-CNT</mark>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL2&nbsp;(NP-LGS&nbsp;*)&nbsp;(<highlight>VVN;~Tn</highlight>&nbsp;Seated)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-LOC&nbsp;(P-ROLE&nbsp;beside)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Alastair)))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>PP-SCON-CNT</highlight>&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL2&nbsp;(<highlight>VVN;~Tn</highlight>&nbsp;lulled)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-LGS&nbsp;(P-ROLE&nbsp;by)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;uncanny))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;silence)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;supersonic))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;flight)))))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;Geoffrey))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;could)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~Cn.pr&nbsp;imagine)))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.10.2">6.10.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[cat_Vg_passive_] Concealed passives</h3>
@@ -392,30 +392,28 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">After <small style="font-size: 75%">NEED</small> and <small style="font-size: 75%">WANT</small> with [cat_Vg_passive_] code the <tt>IP-PPL-CAT</tt> complement with {ing} participle has a passive meaning.</p>
 
 <dl><dt>(<a name="ex6.22">6.22</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,NP-GENV,PRO;_genm_,His</tt><br>
-<tt>IP-MAT,NP-SBJ,NS,wounds</tt><br>
-<tt>IP-MAT,<mark>VBP;~cat_Vg_passive_</mark>,need</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VAG;~Tn,dressing</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,ADVP-TMP,ADV,now</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=7_susanne_n13" target="_blank">7_susanne_n13</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;His))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;wounds))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBP;~cat_Vg_passive_</mark>&nbsp;need)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VAG;~Tn&nbsp;dressing)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;now))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.23">6.23</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,he</tt><br>
-<tt>IP-MAT,<mark>VBP;~cat_Vg_passive_</mark>,wants</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VAG;~Tn,loving</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=421_christine_t29" target="_blank">421_christine_t29</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBP;~cat_Vg_passive_</mark>&nbsp;wants)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VAG;~Tn&nbsp;loving)))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.24">6.24</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,you</tt><br>
-<tt>IP-MAT,<mark>VBP;~cat_Vg_passive_</mark>,want</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,VAG;~Ipr,looking</tt><br>
-<tt>IP-MAT,<highlight>IP-PPL-CAT</highlight>,PP-CLR-DIR,P-ROLE,at</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=64_christine_t14" target="_blank">64_christine_t14</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;you))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBP;~cat_Vg_passive_</mark>&nbsp;want)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VAG;~Ipr&nbsp;looking)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-DIR&nbsp;(P-ROLE&nbsp;at))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.10.3">6.10.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Other cases with -LGS</h3>
@@ -423,53 +421,48 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">In (<a href="chapter6.html#ex6.25">6.25</a>) <tt>-NSBJ</tt> occurs in a clause together with a derived subject, marked <tt>-SBJ</tt> and so not distinguished independently of the construction, in a construction that is also mentioned in section <a href="chapter9.html#sec9.9">9.9</a>.</p>
 
 <dl><dt>(<a name="ex6.25">6.25</a>)</dt><dd>
-<tt>ILYR,<mark>NP-SBJ</mark>,D,The</tt><br>
-<tt>ILYR,<mark>NP-SBJ</mark>,N,breaststroke</tt><br>
-<tt>ILYR,BEP;~La,is</tt><br>
-<tt>ILYR,ADJP-PRD2,ADVP,ADV,very</tt><br>
-<tt>ILYR,ADJP-PRD2,ADJ,hard</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,NP-LGS,*</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,TO,to</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,VB;~Tn.pr,explain</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,PP-MNR,P-ROLE,in</tt><br>
-<tt>ILYR,<highlight>IP-INF-NSBJ</highlight>,PP-MNR,NP,NS,words</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=3_lucy_child_09_m14" target="_blank">3_lucy_child_09_m14</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>NP-SBJ</mark>&nbsp;(D&nbsp;The)&nbsp;(N&nbsp;breaststroke))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(BEP;~La&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADJP-PRD2&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;hard))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-INF-NSBJ</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(TO&nbsp;to)&nbsp;(VB;~Tn.pr&nbsp;explain)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-MNR&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;words)))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.10.4">6.10.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Adjectival passives</h3>
 
 <dl><dt>(<a name="ex6.26">6.26</a>)</dt><dd>
-<tt>ILYR,ILYR,NP-SBJ,ADJP,ADJR,more</tt><br>
-<tt>ILYR,ILYR,NP-SBJ,PP,P-ROLE,of</tt><br>
-<tt>ILYR,ILYR,NP-SBJ,PP,NP,D,the</tt><br>
-<tt>ILYR,ILYR,NP-SBJ,PP,NP,N,therapy</tt><br>
-<tt>ILYR,ILYR,NP-SBJ,PP,NP,N;@3,group</tt><br>
-<tt>ILYR,ILYR,<mark>BED;~La</mark>,were</tt><br>
-<tt>ILYR,ILYR,<highlight>ADJP-PRD2</highlight>,ADJ,married</tt><br>
-<tt>ILYR,PUNC,&lt;comma&gt;</tt><br>
-<tt>ILYR,CONJP,CONJ,and</tt><br>
-<tt>ILYR,CONJP,ILYR,NP-SBJ,ADJP,ADJ,married</tt><br>
-<tt>ILYR,CONJP,ILYR,NP-SBJ,NS,people</tt><br>
-<tt>ILYR,CONJP,ILYR,NP-SBJ,PP,P-ROLE,with</tt><br>
-<tt>ILYR,CONJP,ILYR,NP-SBJ,PP,NP,N,cancer</tt><br>
-<tt>ILYR,CONJP,ILYR,BEP;~cat_Ve_passive_,are</tt><br>
-<tt>ILYR,CONJP,ILYR,IP-PPL-CAT,NP-LGS,*</tt><br>
-<tt>ILYR,CONJP,ILYR,IP-PPL-CAT,VVN;~Cn.t,known</tt><br>
-<tt>ILYR,CONJP,ILYR,IP-PPL-CAT,IP-INF-OB1,TO,to</tt><br>
-<tt>ILYR,CONJP,ILYR,IP-PPL-CAT,IP-INF-OB1,VB;~I,survive</tt><br>
-<tt>ILYR,CONJP,ILYR,IP-PPL-CAT,IP-INF-OB1,ADVP-TMP,ADVR,longer</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=69_lucy_bnc_b05" target="_blank">69_lucy_bnc_b05</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJR&nbsp;more))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;therapy)&nbsp;(N&nbsp;group))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>BED;~La</mark>&nbsp;were)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ADJP-PRD2</highlight>&nbsp;(ADJ&nbsp;married)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;married))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;people)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;with)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(N&nbsp;cancer))))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_Ve_passive_&nbsp;are)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Cn.t&nbsp;known)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to)&nbsp;(VB;~I&nbsp;survive)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADVR&nbsp;longer)))))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.27">6.27</a>)</dt><dd>
-<tt>ILYR,NP-TMP,D,the</tt><br>
-<tt>ILYR,NP-TMP,NUM,next</tt><br>
-<tt>ILYR,NP-TMP,N,day</tt><br>
-<tt>ILYR,NP-SBJ,PRO,they</tt><br>
-<tt>ILYR,<mark>BED;~cat_Ve_passive_</mark>,were</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,NP-LGS,*</tt><br>
-<tt>ILYR,<highlight>IP-PPL-CAT</highlight>,VVN;~Tn,married</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=12_lucy_child_09_m72" target="_blank">12_lucy_child_09_m72</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-NIM-TMP&nbsp;(D&nbsp;the)&nbsp;(NUM&nbsp;next)&nbsp;(N&nbsp;day))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;they))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>BED;~cat_Ve_passive_</mark>&nbsp;were)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<highlight>IP-PPL-CAT</highlight>&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;married)))&nbsp;</tt><br>
 </dd></dl>
 
 <br><h2><a name="sec6.11">6.11</a>&nbsp;&nbsp;&nbsp;&nbsp;VP24 codes</h2>
@@ -481,42 +474,39 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">[VP24A] is the code when the verb is not <small style="font-size: 75%">GET</small> with the [VP24C] meaning or <small style="font-size: 75%">HAVE</small>.</p>
 
 <dl><dt>(<a name="ex6.28">6.28</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,we</tt><br>
-<tt>IP-MAT,<mark>VBD;~VP24A</mark>,found</tt><br>
-<tt>IP-MAT,NP-OB1,NPR,Eliza</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,VVN;~Tn,seated</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,PP-LOC,P-ROLE,in</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,PP-LOC,NP,NP-GENV,PRO;_genm_,his</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,PP-LOC,NP,N,arm_&lt;hyphen&gt;_chair</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=111_a_joyce_1914" target="_blank">111_a_joyce_1914</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;we))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>VBD;~VP24A</mark>&nbsp;found)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(NPR&nbsp;Eliza))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;seated)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-NIM-LOC&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;his))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;arm_&lt;hyphen&gt;_chair)))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.29">6.29</a>)</dt><dd>
-<tt>ILYR,NP-SBJ,PRO,I</tt><br>
-<tt>ILYR,HVP;~cat_Ve,have</tt><br>
-<tt>ILYR,IP-PPL-CAT,<mark>VVN;~VP24A</mark>,seen</tt><br>
-<tt>ILYR,IP-PPL-CAT,NP-OB1,Q;_nphd_,both</tt><br>
-<tt>ILYR,IP-PPL-CAT,NP-OB1,NLYR,D;_nphd_,these</tt><br>
-<tt>ILYR,IP-PPL-CAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>ILYR,IP-PPL-CAT,IP-PPL-PRD,VVN;~Tn,played</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=11_lucy_child_12_f15" target="_blank">11_lucy_child_12_f15</a></tt><br>
+<tt>(ILYR&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(HVP;~cat_Ve&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~VP24A</mark>&nbsp;seen)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(Q;_nphd_&nbsp;both)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(D;_nphd_&nbsp;these)))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;played))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.30">6.30</a>)</dt><dd>
-<tt>IP-MAT,HVP;~cat_Ve,has</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~VP24A</mark>,made</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,PRO;_provisional_,it</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,VVN;~Tn,known</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,NP-SBJ,PRO,he</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,BEP;~cat_Ve_passive_,is</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,IP-PPL-CAT,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,IP-PPL-CAT,VVN;~Tn.pr,concerned</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,IP-PPL-CAT,PP-CLR,P-ROLE,about</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,IP-PPL-CAT,PP-CLR,NP,D,the</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,CP-THT-NOB1,IP-SUB,IP-PPL-CAT,PP-CLR,NP,N,case</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=45_lucy_bnc_b05" target="_blank">45_lucy_bnc_b05</a></tt><br>
+<tt>(IP-MAT&nbsp;(HVP;~cat_Ve&nbsp;has)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~VP24A</mark>&nbsp;made)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(PRO;_provisional_&nbsp;it))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;known))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CP-THT-NOB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~cat_Ve_passive_&nbsp;is)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn.pr&nbsp;concerned)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR&nbsp;(P-ROLE&nbsp;about)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;case))))))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.11.2">6.11.2</a>&nbsp;&nbsp;&nbsp;&nbsp;[VP24B]</h3>
@@ -524,28 +514,26 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">[VP24B] is the code when the main verb is <small style="font-size: 75%">HAVE</small> used to indicate what the subject of the sentence experiences, undergoes, or suffers, as in (<a href="chapter6.html#ex6.31">6.31</a>). [VP24B] also marks <small style="font-size: 75%">HAVE</small> used to indicate what is held or possessed, as in (<a href="chapter6.html#ex6.32">6.32</a>).</p>
 
 <dl><dt>(<a name="ex6.31">6.31</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,They</tt><br>
-<tt>IP-MAT,ADVP-TMP,ADV,always</tt><br>
-<tt>IP-MAT,VBP;~Tt,need</tt><br>
-<tt>IP-MAT,IP-INF-OB1,TO,to</tt><br>
-<tt>IP-MAT,IP-INF-OB1,<mark>HV;~VP24B</mark>,have</tt><br>
-<tt>IP-MAT,IP-INF-OB1,NP-OB1,NS,things</tt><br>
-<tt>IP-MAT,IP-INF-OB1,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-INF-OB1,IP-PPL-PRD,VVN;~Tn,explained</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=17_a_saint_exupery_1943" target="_blank">17_a_saint_exupery_1943</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;They))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;always))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(VBP;~Tt&nbsp;need)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-INF-OB1&nbsp;(TO&nbsp;to)&nbsp;(<mark>HV;~VP24B</mark>&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(NS&nbsp;things))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;explained))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.32">6.32</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,I</tt><br>
-<tt>IP-MAT,HVP;~cat_Ve,have</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,ADVP-MOD,ADV,just</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>HVN;~VP24B</mark>,had</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,D,a</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,ADJP,ADJ,new</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,N,bicycle</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,VVN;~Tn,bought</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=9_lucy_child_12_f31" target="_blank">9_lucy_child_12_f31</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(HVP;~cat_Ve&nbsp;have)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-MOD&nbsp;(ADV&nbsp;just))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>HVN;~VP24B</mark>&nbsp;had)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;a)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;new))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;bicycle))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;bought))))&nbsp;</tt><br>
 </dd></dl>
 
 <h3><a name="sec6.11.3">6.11.3</a>&nbsp;&nbsp;&nbsp;&nbsp;[VP24C]</h3>
@@ -553,25 +541,23 @@ Mr.&nbsp;Yamada went to Tokyo
 <p align="justify">[VP24C] is the code when the main verb is <small style="font-size: 75%">HAVE</small> or <small style="font-size: 75%">GET</small> meaning &lsquo;cause to be&rsquo;.</p>
 
 <dl><dt>(<a name="ex6.33">6.33</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,We</tt><br>
-<tt>IP-MAT,<mark>HVD;~VP24C</mark>,had</tt><br>
-<tt>IP-MAT,NP-OB1,D,the</tt><br>
-<tt>IP-MAT,NP-OB1,N,place</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,VVN,crammed</tt><br>
-<tt>IP-MAT,IP-PPL-PRD,ADVP-MNR,ADV,full</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=63_a_ted_talk_11" target="_blank">63_a_ted_talk_11</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;We))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(<mark>HVD;~VP24C</mark>&nbsp;had)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;place))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN&nbsp;crammed)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-MNR&nbsp;(ADV&nbsp;full))))&nbsp;</tt><br>
 </dd></dl>
 
 <dl><dt>(<a name="ex6.34">6.34</a>)</dt><dd>
-<tt>IP-MAT,NP-SBJ,PRO,she</tt><br>
-<tt>IP-MAT,HVP;~cat_Ve,&lt;apos&gt;s</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,<mark>VVN;~VP24C</mark>,got</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,NP-GENV,PRO;_genm_,her</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,NP-OB1,N,hair</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,NP-LGS,*</tt><br>
-<tt>IP-MAT,IP-PPL-CAT,IP-PPL-PRD,VVN;~Tn,cut</tt><br>
-<tt>ID,<a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/tspc.sh?tree=131_christine_t14" target="_blank">131_christine_t14</a></tt><br>
+<tt>(IP-MAT&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;she))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(HVP;~cat_Ve&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;(IP-PPL-CAT&nbsp;(<mark>VVN;~VP24C</mark>&nbsp;got)&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-GENV&nbsp;(PRO;_genm_&nbsp;her))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;hair))&nbsp;</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-PPL-PRD&nbsp;(NP-LGS&nbsp;*)&nbsp;(VVN;~Tn&nbsp;cut))))&nbsp;</tt><br>
 </dd></dl>
 
 <br>

@@ -16,9 +16,13 @@ highlight { background-color: palegreen; }
 
 <p align="justify">With parsing being the activity of taking apart language expressions, the aim is to reach smaller and smaller layers of grammatical analysis. To start, let's consider layers of structure introduced in terms of following possible paths through Figure <a href="#figure1.1">1.1</a> from the highest sentence layer through to the lowest word layers, via clause and possibly phrase layers, with the arrow X &xrarr; Y interpreted: &lsquo;X immediately contains Y&rsquo;. Dashed arrows indicate optionality.</p>
 
-<p><a name="fig1.1">Figure 1.1: Paths through layers of grammatical analysis</a></p>
+<center>
 
 <img src="https://ajb129.github.io/paths.gif" alt="Paths through layers of grammatical analysis" width="500">
+<br>
+<br>
+<a name="fig1.1"><b>Figure 1.1</b>: Paths through layers of grammatical analysis</a>
+</center>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an internal layer in the hierarchy, a <tt>CLAUSE</tt> is reached from the outermost sentence layer, and subsequently a <tt>PHRASE</tt> can be reached from a clause layer. In addition, clauses can occur within clauses, phrases can occur within phrases, and clauses can occur within phrases.</p>
 
@@ -39,7 +43,7 @@ highlight { background-color: palegreen; }
 <tt>by_the_way</tt><br>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;To allow for integration into the parse analysis, punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words; see section <a href="chapter2.html#sec2.10">2.10</a> for details.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;To allow for integration into the parse analysis, punctuation points, quotation marks, and brackets (&lsquo;<tt>.</tt>&rsquo; &lsquo;<tt>?</tt>&rsquo; &lsquo;<tt>!</tt>&rsquo; &lsquo;<tt>:</tt>&rsquo; &lsquo;<tt>;</tt>&rsquo; &lsquo;<tt>,</tt>&rsquo; &lsquo;<tt>-</tt>&rsquo; &lsquo;<tt>(</tt>&rsquo; &lsquo;<tt>)</tt>&rsquo; etc.) are treated as words; see section <a href="chapter2.html#sec2.10">2.10</a> for details.</p>
 
 <h3><a name="sec1.2.2">1.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A simple sentence</h3>
 
@@ -51,15 +55,18 @@ Look!
 
 <p align="justify">This can be given the paths of Figure <a href="#figure1.2">1.2</a> from sentence layer to words, with the punctuation treated as a word.</p>
 
-<p><a name="fig1.2">Figure 1.2: Paths through &lsquo;Look!&rsquo;</a></p>
+<center>
 
 <img src="https://ajb129.github.io/look_paths.gif" alt="example paths" width="300">
+<br>
+<br>
+<a name="fig1.2"><b>Figure 1.2</b>: Paths through &lsquo;Look!&rsquo;</a>
+</center>
 
 <p align="justify">The parse information of Figure <a href="#figure1.2">1.2</a> can be represented with bracketed notation as in (<a href="chapter1.html#ex1.3">1.3</a>), which follows CorpusSearch format (Randall 2009).</p>
 
 <dl><dt>(<a name="ex1.3">1.3</a>)</dt><dd>
-<tt>(&nbsp;(IP-MAT&nbsp;(+VERB&nbsp;Look)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;!))</tt><br>
+<tt>(&nbsp;(IP-MAT&nbsp;(+VERB&nbsp;Look)&nbsp;(-VERB&nbsp;!))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;101_a_saint_exupery_1943))</tt><br>
 </dd></dl>
 
@@ -86,20 +93,21 @@ He wanted to show what happened to anyone who tried to start trouble.
 <p align="justify">Analysis of (<a href="chapter1.html#ex1.5">1.5</a>) leads to the bracketed structure of (<a href="chapter1.html#ex1.6">1.6</a>).</p>
 
 <dl><dt>(<a name="ex1.6">1.6</a>)</dt><dd>
-<tt>(&nbsp;(IP-MAT&nbsp;(PHRASE&nbsp;(-VERB&nbsp;He))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;wanted)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;show)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(PHRASE&nbsp;(-VERB&nbsp;what))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;happened)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;anyone)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(PHRASE&nbsp;(-VERB&nbsp;who))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;tried)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;start)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;trouble))))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;.))</tt><br>
+<tt>(&nbsp;(IP-MAT</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;He))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;wanted)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)&nbsp;(+VERB&nbsp;show)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;what))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;happened)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;anyone)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;who))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;tried)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)&nbsp;(+VERB&nbsp;start)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;trouble))))))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;154_susanne_n12))</tt><br>
 </dd></dl>
 
@@ -173,7 +181,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 
 <p align="justify">Table <a href="chapter1.html#table1.1">1.1</a> details useful notational conventions used in this book.</p>
 
-<p><a name="table1.1">Table 1.1: Notational conventions</a></p>
+<center>
 
 <table border="1" cellpadding="10px">
   <tr>
@@ -200,6 +208,10 @@ He wanted to show what happened to anyone who tried to start trouble.
     <td>the matrix clause tag label <tt>IP-MAT</tt></td>
   </tr>
 </table>
+<br>
+<a name="table1.1"><b>Table 1.1</b>: Notational conventions</a>
+</center>
+<br>
 
 <br><h2><a name="sec1.4">1.4</a>&nbsp;&nbsp;&nbsp;&nbsp;About the annotation approach</h2>
 
