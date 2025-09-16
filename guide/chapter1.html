@@ -6,27 +6,26 @@ highlight { background-color: palegreen; }
 </style>
 
 <br><br><h1><a name="ch1">Chapter 1</a></h1>
-<h1>Grammar and Parsing</h1>
+<h1>Parsing and Annotation</h1>
 
 <br><h2><a name="sec1.1">1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h2>
 
-<p align="justify">The term GRAMMAR refers to the system (mechanism or otherwise) for building language expressions. When something is built, there is the natural impulse to want to take it apart. Taking apart language is known as PARSING. With care, we can put dismantled parts back together, and while doing so we can also add trails of instructions known as <b>annotations</b>. Such enhancements to language data act as handles to access the structural analysis revealed by parsing. This book is focused on introducing the annotation approach of the Treebank Semantics Parsed Corpus (TSPC). The TSPC is a corpus of English for general use with hand worked analysis for approaching half-a-million words.</p>
+<p align="justify">In order to gain understanding about how something works, a natural impulse is to dismantle it. Taking language utterances apart is known as <b>parsing</b>. With care, reassemblage regains the initial utterance, while allowing trails of instructions to be left, known as <b>annotations</b>. Thereafter, such data enhancements act as handles to access the structural analysis parsing revealed. This book is focused on introducing the annotation approach of the Treebank Semantics Parsed Corpus (TSPC). The TSPC is a corpus of English for general use with hand worked analysis for approaching half-a-million words.</p>
 
 <br><h2><a name="sec1.2">1.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A hierarchy of layers</h2>
 
-<p align="justify">With parsing being the activity of taking apart language expressions, the aim is to reach smaller and smaller layers of grammatical analysis. To start, let's consider layers of structure introduced in terms of following possible paths through Figure <a href="#figure1.1">1.1</a> from the highest sentence layer through to the lowest word layers, via clause and possibly phrase layers, with the arrow X &xrarr; Y interpreted: &lsquo;X immediately contains Y&rsquo;. Dashed arrows indicate optionality.</p>
+<p align="justify">Parsing as the activity of taking language utterances apart aims to reach smaller and smaller layers of structure. To start, let's consider layers introduced in terms of following possible paths through figure <a href="#figure1.1">1.1</a> from the highest sentence layer through to the lowest word layers, via clause and possibly phrase layers, with the arrow X &xrarr; Y interpreted: &lsquo;X immediately contains Y&rsquo;. Dashed arrows indicate optionality.</p>
 
 <center>
-
-<img src="https://ajb129.github.io/paths.gif" alt="Paths through layers of grammatical analysis" width="500">
+<img src="https://ajb129.github.io/paths.gif" alt="Paths through layers of structural analysis" width="500">
 <br>
 <br>
-<a name="fig1.1"><b>Figure 1.1</b>: Paths through layers of grammatical analysis</a>
+<a name="figure1.1"><b>Figure 1.1</b>: Paths through layers of structural analysis</a>
 </center>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an internal layer in the hierarchy, a <tt>CLAUSE</tt> is reached from the outermost sentence layer, and subsequently a <tt>PHRASE</tt> can be reached from a clause layer. In addition, clauses can occur within clauses, phrases can occur within phrases, and clauses can occur within phrases.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an internal layer in the hierarchy, a <tt>CLAUSE</tt> is reached from the outermost sentence layer, and subsequently a <tt>PHRASE</tt> can be reached from a clause layer. In addition, clauses can occur within clauses, phrases can occur within phrases and clauses can occur within phrases.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A SENTENCE is at the top of the hierarchy, so it is the largest unit considered. (A discourse grammar would look above the sentence layer.) A WORD is at the other end of the hierarchy. (It is possible to go inside words to consider <b>morphology</b>, that is, the components from which words are made, which would be lower in the hierarchy of structure.) Chapter <a href="chapter2.html#sec2">2</a> will detail the range of possible words, but for considering the hierarchy, it is helpful to start from an outlook where words are of two kinds:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A <b>sentence</b> is at the top of the hierarchy, so it is the largest unit considered. (A discourse grammar would look above the sentence layer.) A <b>word</b> is at the other end of the hierarchy. (It is possible to go inside words to consider <b>morphology</b>, that is, the components from which words are made, which would be lower in the hierarchy of structure.) Chapter <a href="chapter2.html#sec2">2</a> will detail the range of possible words, but for considering the hierarchy, it is helpful to start from an outlook where words are of two kinds:</p>
 
 <ul>
 <li><tt>+VERB</tt> words (and so immediately contained within a clause layer)</li>
@@ -47,26 +46,26 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec1.2.2">1.2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;A simple sentence</h3>
 
-<p align="justify">A simple sentence consists of one clause, so Figure <a href="#figure1.1">1.1</a> paths will start: <tt>SENTENCE,CLAUSE</tt>. This initial clause layer is known as the MATRIX clause, which is symbolised most generally with <tt>IP-MAT</tt>. <tt>IP</tt> is an abbreviation for Inflectional Phrase, which is another way to say &lsquo;clause&rsquo;. A clause contains minimally a verb. Consider the simple sentence (<a href="chapter1.html#ex1.2">1.2</a>), which is comprised of a single verb contained within a single clause.</p>
+<p align="justify">A simple sentence consists of one clause, so figure <a href="#figure1.1">1.1</a> paths will start: <tt>SENTENCE,CLAUSE</tt>. This initial clause layer is known as the <b>matrix</b> clause, which is symbolised most generally with <tt>IP-MAT</tt>. <tt>IP</tt> is an abbreviation for Inflectional Phrase, which is another way to say &lsquo;clause&rsquo;. A clause contains minimally a verb. Consider the simple sentence (<a href="chapter1.html#ex1.2">1.2</a>), which is comprised of a single verb contained within a single clause.</p>
 
 <dl><dt>(<a name="ex1.2">1.2</a>)</dt><dd>
 Look!
 </dd></dl>
 
-<p align="justify">This can be given the paths of Figure <a href="#figure1.2">1.2</a> from sentence layer to words, with the punctuation treated as a word.</p>
+<p align="justify">This can be given the paths of figure <a href="#figure1.2">1.2</a> from sentence layer to words, with the punctuation treated as a word.</p>
 
 <center>
-
 <img src="https://ajb129.github.io/look_paths.gif" alt="example paths" width="300">
 <br>
 <br>
-<a name="fig1.2"><b>Figure 1.2</b>: Paths through &lsquo;Look!&rsquo;</a>
+<a name="figure1.2"><b>Figure 1.2</b>: Paths through &lsquo;Look!&rsquo;</a>
 </center>
 
-<p align="justify">The parse information of Figure <a href="#figure1.2">1.2</a> can be represented with bracketed notation as in (<a href="chapter1.html#ex1.3">1.3</a>), which follows CorpusSearch format (Randall 2009).</p>
+<p align="justify">The parse information of figure <a href="#figure1.2">1.2</a> can be represented with bracketed notation as in (<a href="chapter1.html#ex1.3">1.3</a>), which follows CorpusSearch format (Randall 2009).</p>
 
 <dl><dt>(<a name="ex1.3">1.3</a>)</dt><dd>
-<tt>(&nbsp;(IP-MAT&nbsp;(+VERB&nbsp;Look)&nbsp;(-VERB&nbsp;!))</tt><br>
+<tt>(&nbsp;(IP-&#8288;MAT&nbsp;(+VERB&nbsp;Look)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-&#8288;VERB&nbsp;!))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;101_a_saint_exupery_1943))</tt><br>
 </dd></dl>
 
@@ -75,8 +74,8 @@ Look!
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another way to present the parse information from sentence layer to words is with (<a href="chapter1.html#ex1.4">1.4</a>).</p>
 
 <dl><dt>(<a name="ex1.4">1.4</a>)</dt><dd>
-<tt>IP-MAT,+VERB,Look</tt><br>
-<tt>IP-MAT,-VERB,!</tt><br>
+<tt>IP-&#8288;MAT,+VERB,Look</tt><br>
+<tt>IP-&#8288;MAT,-&#8288;VERB,!</tt><br>
 <tt>ID,101_a_saint_exupery_1943</tt><br>
 </dd></dl>
 
@@ -93,49 +92,48 @@ He wanted to show what happened to anyone who tried to start trouble.
 <p align="justify">Analysis of (<a href="chapter1.html#ex1.5">1.5</a>) leads to the bracketed structure of (<a href="chapter1.html#ex1.6">1.6</a>).</p>
 
 <dl><dt>(<a name="ex1.6">1.6</a>)</dt><dd>
-<tt>(&nbsp;(IP-MAT</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;He))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;wanted)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)&nbsp;(+VERB&nbsp;show)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;what))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;happened)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;anyone)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;who))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;tried)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-VERB&nbsp;to)&nbsp;(+VERB&nbsp;start)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-VERB&nbsp;trouble))))))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(-VERB&nbsp;.))</tt><br>
+<tt>(&nbsp;(IP-&#8288;MAT&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;He))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;wanted)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-&#8288;VERB&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;show)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;what))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;happened)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;anyone)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;who))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;tried)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CLAUSE&nbsp;(-&#8288;VERB&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(+VERB&nbsp;start)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PHRASE&nbsp;(-&#8288;VERB&nbsp;trouble))))))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(-&#8288;VERB&nbsp;.))</tt><br>
 <tt>&nbsp;&nbsp;(ID&nbsp;154_susanne_n12))</tt><br>
 </dd></dl>
 
 <p align="justify">When viewed in terms of paths from sentence layer to words, the analysis seen with (<a href="chapter1.html#ex1.6">1.6</a>) becomes (<a href="chapter1.html#ex1.7">1.7</a>).</p>
 
 <dl><dt>(<a name="ex1.7">1.7</a>)</dt><dd>
-<tt>IP-MAT,PHRASE,-VERB,He</tt><br>
-<tt>IP-MAT,+VERB,wanted</tt><br>
-<tt>IP-MAT,CLAUSE,-VERB,to</tt><br>
-<tt>IP-MAT,CLAUSE,+VERB,show</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,-VERB,what</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,+VERB,happened</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,-VERB,to</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,-VERB,anyone</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,PHRASE,-VERB,who</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,+VERB,tried</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,-VERB,to</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,+VERB,start</tt><br>
-<tt>IP-MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,PHRASE,-VERB,trouble</tt><br>
-<tt>IP-MAT,-VERB,.</tt><br>
+<tt>IP-&#8288;MAT,PHRASE,-&#8288;VERB,He</tt><br>
+<tt>IP-&#8288;MAT,+VERB,wanted</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,-&#8288;VERB,to</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,+VERB,show</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,-&#8288;VERB,what</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,+VERB,happened</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,-&#8288;VERB,to</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,-&#8288;VERB,anyone</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,PHRASE,-&#8288;VERB,who</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,+VERB,tried</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,-&#8288;VERB,to</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,+VERB,start</tt><br>
+<tt>IP-&#8288;MAT,CLAUSE,CLAUSE,PHRASE,PHRASE,CLAUSE,CLAUSE,PHRASE,-&#8288;VERB,trouble</tt><br>
+<tt>IP-&#8288;MAT,-&#8288;VERB,.</tt><br>
 <tt>ID,154_susanne_n12</tt><br>
 </dd></dl>
 
-<p align="justify">Notably, the paths of (<a href="chapter1.html#ex1.7">1.7</a>) conform to Figure <a href="#figure1.1">1.1</a> above. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
+<p align="justify">Notably, the paths of (<a href="chapter1.html#ex1.7">1.7</a>) conform to figure <a href="#figure1.1">1.1</a> above. They start with a sentence and clause layer (<tt>IP-MAT</tt>), and then can have clauses within clauses, phrases within clauses, phrases within phrases, clauses within phrases, verbs with occasional non-verb words within clauses, and non-verb words within phrases.</p>
 
 <br><h2><a name="sec1.3">1.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Outlook</h2>
 
-<p align="justify">Each of the units of structure that label the brackets of (<a href="chapter1.html#ex1.3">1.3</a>) and (<a href="chapter1.html#ex1.6">1.6</a>) above, and paths of (<a href="chapter1.html#ex1.4">1.4</a>) and (<a href="chapter1.html#ex1.7">1.7</a>) above, is either a clause or a phrase. It is typical to refer to such units as CONSTITUENTS.</p>
+<p align="justify">Each of the units of structure that label the brackets of (<a href="chapter1.html#ex1.3">1.3</a>) and (<a href="chapter1.html#ex1.6">1.6</a>) above, and paths of (<a href="chapter1.html#ex1.4">1.4</a>) and (<a href="chapter1.html#ex1.7">1.7</a>) above, is either a clause or a phrase. It is typical to refer to such units as <b>constituents</b>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We have so far categorised words into being either:</p>
 
@@ -167,7 +165,7 @@ He wanted to show what happened to anyone who tried to start trouble.
 <li><b>adverb phrases</b> (<tt>ADVP</tt>) that minimally contain an <b>adverb</b></li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Establishing the range of word classes is the aim of chapter <a href="chapter2.html#ch2">2</a>. Looking at phrase classes in detail is pursued in chapter <a href="chapter3.html#ch3">3</a>. A big part of chapters <a href="chapter2.html#ch2">2</a> and <a href="chapter3.html#ch3">3</a> will be to raise and answer questions of FORM, that is, how words and constituents look &mdash; their shape or appearance, and what their internal structure happens to be. But form is not the full story required for parsing: In order to gain motivation for having structure, we will often need to be equally concerned to explore the FUNCTION that words and constituents perform in the larger structures which contain them.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Establishing the range of word classes is the aim of chapter <a href="chapter2.html#ch2">2</a>. Looking at phrase classes in detail is pursued in chapter <a href="chapter3.html#ch3">3</a>. A big part of chapters <a href="chapter2.html#ch2">2</a> and <a href="chapter3.html#ch3">3</a> will be to raise and answer questions of <b>form</b>, that is, how words and constituents look &mdash; their shape or appearance, and what their internal structure happens to be. But form is not the full story required for parsing: In order to gain motivation for having structure, we will often need to be equally concerned to explore the <b>function</b> that words and constituents perform in the larger structures which contain them.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The dual concern for form and function in chapters <a href="chapter2.html#ch2">2</a> and <a href="chapter3.html#ch3">3</a> will be carried over to an exploration of clause constituents in chapter <a href="chapter4.html#ch4">4</a>. Chapter <a href="chapter5.html#ch5">5</a> details options available for realising complex sentences with clause-within-clause subordination.</p>
 
@@ -182,7 +180,6 @@ He wanted to show what happened to anyone who tried to start trouble.
 <p align="justify">Table <a href="chapter1.html#table1.1">1.1</a> details useful notational conventions used in this book.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th>Notation</th><th>Unit</th><th>Example</th>
@@ -254,6 +251,24 @@ He wanted to show what happened to anyone who tried to start trouble.
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Another area of innovation is the verb code integration of chapters <a href="chapter6.html#ch6">6</a>, <a href="chapter7.html#ch7">7</a> and <a href="chapter8.html#ch8">8</a>. The codes of chapter <a href="chapter6.html#ch6">6</a> classify catenative verbs; cf.&nbsp;Huddleston and Pullum (2002, p.1220). These are verbs of a verb sequence that are prior to the main verb of a clause and structure internal to the clause annotation (<tt>IP-PPL-CAT</tt>) further supports this type of verb. Additional codes of chapter <a href="chapter6.html#ch6">6</a> with very particular distributions are included from Hornby (1975). The verb codes for main verbs in chapter <a href="chapter7.html#ch7">7</a> are from the mnemonic system of the fourth edition of the <i>Oxford Advanced Learner's Dictionary</i> (OALD4; Cowie 1989).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The most innovative aspect of the annotation gives the TSPC its name: It can be fed to the Treebank Semantics evaluation system (Butler 2021). Treebank Semantics processes constituency tree annotations and returns logic-based meaning representations. While the annotation seldom includes indexing, results calculated with Treebank Semantics resolve both inter and intra clause dependencies, including cross sentential anaphoric dependencies. It is sometimes especially helpful to see meaning representations from Treebank Semantics as dependency graphs (e.g., from the on-line corpus interface) to make visually apparent connections that the design of the annotation captures.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of what sending the parse structures of this book to the calculation routine of Treebank Semantics can achieve, consider the annotated sentence (1.8) and its result from Treebank Semantics, seen presented as a dependency graph in (1.9).</p>
+
+<dl><dt>(<a name="ex1.8">1.8</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(NPR&nbsp;John))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~La&nbsp;is)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADJ&nbsp;easy))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;NSBJ&nbsp;(NP-&#8288;LGS&nbsp;*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Tn&nbsp;deceive))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex1.9">1.9</a>)</dt><dd>
+<img src="1johneasydeceive.png">
+</dd></dl>
+
+<p align="justify">Most notably, <i>John</i> is the surface subject of the main clause in (1.8), while appearing as a logical object (<tt>[arg1]</tt>) for <i>deceive</i> in (1.9). Such results from Treebank Semantics unlock a fuller story of the information content that the parsed annotation encodes.</p>
 
 <br>
 <br>

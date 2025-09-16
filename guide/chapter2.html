@@ -12,7 +12,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">This chapter details the range of possible <b>words</b> as the bottom layer of sentence structure, while chapter <a href="chapter3.html#ch3">3</a> considers <b>phrase</b> layers, and chapter <a href="chapter4.html#ch4">4</a> ascends to <b>clause</b> layers. This unravelling of the layers of grammatical structure will show all elements as inter-related components. Consequently, understanding of what is possible at one layer really requires the integration of knowledge from all of the other layers. But discovery of structure has to start somewhere, hence the focus here on words as foundational components.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With this chapter, words are categorised into classes informed by how words function in phrases and clauses. Word analysis involves saying with a TAG the WORD CLASS to which a given word in context belongs. This task is known as TAGGING.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With this chapter, words are categorised into classes informed by how words function in phrases and clauses. Word analysis involves saying with a <b>tag</b> the <b>word class</b> to which a given word in context belongs. This task is known as <b>tagging</b>.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;One criteria for tagging is to identify words that can be minimal components for phrase layers: words for noun phrases are discussed in section <a href="chapter2.html#sec2.2">2.2</a>; words for adjective phrases, in section <a href="chapter2.html#sec2.3">2.3</a>; and words for adverb phrases, in section <a href="chapter2.html#sec2.4">2.4</a>. Section <a href="chapter2.html#sec2.5">2.5</a> covers other word types that appear under a noun phrase as modifiers.</p>
 
@@ -20,52 +20,76 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec2.1.1">2.1.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Beware: Same character string in a different context with a different tag</h3>
 
-<p align="justify">Section <a href="chapter1.html#sec1.2.1">1.2.1</a> identifies words through the conventions of the English writing system as character strings delimited by a space on each side, while noting exceptions. Word identification is not a complete word analysis: The same character string might be used as a word in different ways in different contexts. Tagging completes the word analysis. For example, <i>down</i> in (<a href="chapter2.html#ex2.1">2.1</a>) occurs as a noun (<tt>N</tt>), adjective (<tt>ADJ</tt>), verb (<tt>VB</tt>), adverb particle (<tt>RP</tt>), and preposition (<tt>P-ROLE</tt>).</p>
+<p align="justify">Section <a href="chapter1.html#sec1.2.1">1.2.1</a> identifies words through the conventions of the English writing system as character strings delimited by a space on each side, while noting exceptions. Word identification is not a complete word analysis: The same character string might be used as a word in different ways in different contexts. Tagging completes the word analysis. For example, <i>down</i> occurs as a noun (<tt>N</tt>) in (<a href="chapter2.html#ex2.1">2.1</a>), an adjective (<tt>ADJ</tt>) in (<a href="chapter2.html#ex2.2">2.2</a>), a verb (<tt>VB</tt>) in (<a href="chapter2.html#ex2.3">2.3</a>), an adverb particle (<tt>RP</tt>) in (<a href="chapter2.html#ex2.4">2.4</a>), and a preposition (<tt>P-ROLE</tt>) in (<a href="chapter2.html#ex2.5">2.5</a>).</p>
 
 <dl><dt>(<a name="ex2.1">2.1</a>)</dt><dd>
-
-<dl>
-<dt>a.</dt><dd><tt>(VBP;~Ipr filled) (P-ROLE with) (ADJ pure) (<u>N down</u>)</tt></dd>
-<dt>b.</dt><dd><tt>(PRO she) (BED;~La was) (ADV very) (<u>ADJ down</u>)</tt></dd>
-<dt>c.</dt><dd><tt>(PRO he) (VBD;~cat_Vt started) (TO to) (<u>VB;~Tn down</u>) (D the) (N whisky)</tt></dd>
-<dt>d.</dt><dd><tt>(VB;~Tn.p tear) (<u>RP down</u>) (D that) (N wall)</tt></dd>
-<dt>e.</dt><dd><tt>(PRO You) (MD;~cat_Vi may) (VB;~Ipr look) (ADV back) (<u>P-ROLE down</u>) (D the) (N mountain)</tt></dd>
-</dl>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(D&nbsp;The)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;pillow))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~cat_Ve_passive_&nbsp;was)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL-&#8288;CAT&nbsp;(NP-&#8288;LGS&nbsp;*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VVN;&#8288;~Tn.pr&nbsp;filled)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(P-&#8288;ROLE&nbsp;with)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;pure))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>N</mark>&nbsp;down))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
 </dd></dl>
-
-<p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.2">2.2</a>) occurs as a complementizer (<tt>C</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>), relative pronoun (<tt>RPRO</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
 
 <dl><dt>(<a name="ex2.2">2.2</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBP;~Tf&nbsp;hope)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(CP-THT-OB1&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-SUB&nbsp;(<mark>C</mark>&nbsp;that)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<highlight>D</highlight>&nbsp;that)&nbsp;(<highlight>N</highlight>&nbsp;that)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-OB1&nbsp;(<highlight>RPRO</highlight>&nbsp;that))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<highlight>D;_nphd_</highlight>&nbsp;that))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Tn&nbsp;started)))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;will)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;end)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-NIM-TMP&nbsp;(ADV&nbsp;soon))))))&nbsp;</tt><br>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;She))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~La&nbsp;was)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ADJ</mark>&nbsp;down))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
 </dd></dl>
 
-<p align="justify">Yet another possible tag for <i>that</i> is as a subordinating conjunction word (<tt>P-CONN</tt>), as seen in (<a href="chapter2.html#ex2.3">2.3</a>).</p>
-
 <dl><dt>(<a name="ex2.3">2.3</a>)</dt><dd>
-<tt>(IP-IMP&nbsp;(VB;~Dn.*&nbsp;tell)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-OB2&nbsp;(PRO&nbsp;me))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PP-SCON-CNT&nbsp;(<mark>P-CONN</mark>&nbsp;that)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;might))))&nbsp;</tt><br>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;He))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~cat_Vt&nbsp;started)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(TO&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VB;&#8288;~Tn</mark>&nbsp;down)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;whisky)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.4">2.4</a>)</dt><dd>
+<tt>(IP-&#8288;IMP&nbsp;(VB;&#8288;~Tn.p&nbsp;Tear)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;CLR&nbsp;(<mark>RP</mark>&nbsp;down))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(D&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;wall))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;!))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.5">2.5</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;He))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Ipr&nbsp;looked)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(<mark>P-&#8288;ROLE</mark>&nbsp;down)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;mountain)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+</dd></dl>
+
+<p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>)&ndash;(<a href="chapter2.html#ex2.5">2.5</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.6">2.6</a>) occurs as a subordinating conjunction (<tt>P-CONN</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>) complementizer (<tt>C</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
+
+<dl><dt>(<a name="ex2.6">2.6</a>)</dt><dd>
+<tt>(IP-&#8288;IMP&nbsp;(VB;&#8288;~Dn.*&nbsp;Tell)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB2&nbsp;(PRO&nbsp;me))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;SCON&nbsp;(<mark>P-&#8288;CONN</mark>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<highlight>D</highlight>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>N</highlight>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>C</highlight>&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;*T*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(<highlight>D;&#8288;_nphd_</highlight>&nbsp;that))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;started)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;might)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;end))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;!))</tt>
 </dd></dl>
 
 <br><h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
 
-<p align="justify">Certain words form the minimal component required for the phrase layers that immediately contain them. Such a minimal component is called the HEAD of the phrase. The word class tags of Table <a href="chapter2.html#table2.2">2.2</a> distinguish words that can head a noun phrase (<tt>NP</tt>; see section <a href="chapter3.html#sec3.2">3.2</a>).</p>
+<p align="justify">Certain words form the minimal component required for the phrase layers that immediately contain them. Such a minimal component is called the <b>head</b> of the phrase. The word class tags of Table <a href="chapter2.html#table2.1">2.1</a> distinguish words that can head a noun phrase (<tt>NP</tt>; see section <a href="chapter3.html#sec3.2">3.2</a>).</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -73,23 +97,23 @@ highlight { background-color: palegreen; }
 <tr><td><tt>N</tt></td><td>common noun not subclassified as <tt>NS</tt>, that is, either singular (e.g., <i>child</i>, <i>revelation</i>, <i>time</i>, <i>wish</i>), or neutral for number (e.g., <i>committee</i>, <i>fish</i>, <i>information</i>)</td></tr>
 <tr><td><tt>NPRS</tt></td><td>plural proper noun (e.g., <i>Heathers</i>, <i>Koreas</i>)</td></tr>
 <tr><td><tt>NPR</tt></td><td>proper noun not subclassified as <tt>NPRS</tt>, that is either singular (e.g., <i>Heather</i>, <i>Tokyo</i>), or neutral for number (e.g., <i>Andes</i>, <i>IBM</i>)</td></tr>
-<tr><td><tt>PNX</tt></td><td>reflexive pronoun (e.g., <i>myself</i>, <i>yourself</i>, <i>itself</i>, <i>ourselves</i>), or reciprocal pronoun (e.g., <i>each&lowbar;other</i>)</td></tr>
+<tr><td><tt>PNX</tt></td><td>reflexive pronoun (e.g., <i>myself</i>, <i>yourself</i>, <i>itself</i>, <i>ourselves</i>), or reciprocal pronoun (e.g., <i>each_other</i>)</td></tr>
 <tr><td><tt>PRO</tt></td><td>personal pronoun (e.g., <i>I</i>, <i>you</i>, <i>them</i>, <i>us</i>)</td></tr>
-<tr><td><tt>PRO;_genm_</tt></td><td>possessive pronoun, pre-nominal (Genitive 1 of Table <a href="chapter2.html#table2.4">2.4</a> below) (e.g., <i>my</i>, <i>your</i>, <i>our</i>)</td></tr>
-<tr><td><tt>PRO;_ppge_</tt></td><td>nominal possessive personal pronoun that is the only daughter of a genitive marked preposition phrase (Genitive 2 of Table <a href="chapter2.html#table2.4">2.4</a> below) (e.g., <i>mine</i>, <i>yours</i>, <i>ours</i>)</td></tr>
+<tr><td><tt>PRO;_genm_</tt></td><td>possessive pronoun, pre-nominal (Genitive 1 of Table <a href="chapter2.html#table2.3">2.3</a> below) (e.g., <i>my</i>, <i>your</i>, <i>our</i>)</td></tr>
+<tr><td><tt>PRO;_ppge_</tt></td><td>nominal possessive personal pronoun that is the only daughter of a genitive marked preposition phrase (Genitive 2 of Table <a href="chapter2.html#table2.3">2.3</a> below) (e.g., <i>mine</i>, <i>yours</i>, <i>ours</i>)</td></tr>
 <tr><td><tt>WPRO</tt></td><td>WH-pronoun (e.g., <i>what</i>, <i>who</i>, <i>whom</i>)</td></tr>
 <tr><td><tt>WPRO;_genm_</tt></td><td>genitive WH-pronoun (<i>whose</i>)</td></tr>
-<tr><td><tt>RPRO</tt></td><td>relative pronoun (e.g., <i>which</i>, <i>who</i>, <i>whom</i>, <i>that</i>)</td></tr>
+<tr><td><tt>RPRO</tt></td><td>relative pronoun (e.g., <i>which</i>, <i>who</i>, <i>whom</i>)</td></tr>
 <tr><td><tt>RPRO;_genm_</tt></td><td>genitive relative pronoun (<i>whose</i>)</td></tr>
 <tr><td><tt>Q;_nphd_</tt></td><td>Indefinite pronoun with quantification, which can be a compound (e.g., <i>everybody</i>, <i>nothing</i>), or a word which often occurs with the preposition <i>of</i> (e.g., <i>much</i>, <i>many</i>, <i>a_lot</i>)</td></tr>
 <tr><td><tt>D;_nphd_</tt></td><td>Indefinite pronoun not subclassified as <tt>Q;_nphd_</tt> (e.g., <i>someone</i>, <i>anything</i>, <i>another</i>), and demonstrative pronoun (e.g., <i>this</i>, <i>that</i>, <i>these</i>, <i>those</i>)</td></tr>
 </table>
 <br>
-<a name="table2.2"><b>Table 2.2</b>: Tags for words that can head a noun phrase</a>
+<a name="table2.1"><b>Table 2.1</b>: Tags for words that can head a noun phrase</a>
 </center>
 <br>
 
-<p align="justify">The rest of this section describes morphosyntactic properties for identifying the words of Table <a href="chapter2.html#table2.2">2.2</a>.</p>
+<p align="justify">The rest of this section describes morphosyntactic properties for identifying the words of Table <a href="chapter2.html#table2.1">2.1</a>.</p>
 
 <h3><a name="sec2.2.1">2.2.1</a>&nbsp;&nbsp;&nbsp;&nbsp;Suffixes that derive nouns</h3>
 
@@ -99,7 +123,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Many nouns take the suffix &lcub;(e)s&rcub; when they refer to plural items:</p>
 
-<dl><dt>(<a name="ex2.4">2.4</a>)</dt><dd>
+<dl><dt>(<a name="ex2.7">2.7</a>)</dt><dd>
 <tt>(N&nbsp;hedgehog)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;hedgehogs)</tt><br>
 <tt>(N&nbsp;revelation)&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;revelations)</tt><br>
 <tt>(N&nbsp;time)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;times)</tt><br>
@@ -107,29 +131,29 @@ highlight { background-color: palegreen; }
 <tt>etc.</tt><br>
 </dd></dl>
 
-<p align="justify">Such nouns are instances of COUNT nouns, so called, because they can combine with numerals (e.g., <i>three wishes</i>). A few count nouns take the irregular suffix &lcub;(r)en&rcub; in the plural:</p>
+<p align="justify">Such nouns are instances of <b>count</b> nouns, so called, because they can combine with numerals (e.g., <i>three wishes</i>). A few count nouns take the irregular suffix &lcub;(r)en&rcub; in the plural:</p>
 
-<dl><dt>(<a name="ex2.5">2.5</a>)</dt><dd>
+<dl><dt>(<a name="ex2.8">2.8</a>)</dt><dd>
 <tt>(N&nbsp;child)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;children)</tt><br>
 <tt>(N&nbsp;ox)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;oxen)</tt><br>
 </dd></dl>
 
-<p align="justify">There are also count nouns that use the same form in the singular and plural. For example, nouns for the animal species in (<a href="chapter2.html#ex2.6">2.6</a>) look like singular nouns, and so are tagged <tt>N</tt>, but can also be used as plurals (e.g., <i>three deer</i>); while (<a href="chapter2.html#ex2.7">2.7</a>) is tagged <tt>NS</tt> for looking like a plural, but might also refer to a single pair.</p>
+<p align="justify">There are also count nouns that use the same form in the singular and plural. For example, nouns for the animal species in (<a href="chapter2.html#ex2.9">2.9</a>) look like singular nouns, and so are tagged <tt>N</tt>, but can also be used as plurals (e.g., <i>three deer</i>); while (<a href="chapter2.html#ex2.10">2.10</a>) is tagged <tt>NS</tt> for looking like a plural, but might also refer to a single pair.</p>
 
-<dl><dt>(<a name="ex2.6">2.6</a>)</dt><dd>
+<dl><dt>(<a name="ex2.9">2.9</a>)</dt><dd>
 <tt>(N&nbsp;deer)</tt><br>
 <tt>(N&nbsp;fish)</tt><br>
 </dd></dl>
 
-<dl><dt>(<a name="ex2.7">2.7</a>)</dt><dd>
+<dl><dt>(<a name="ex2.10">2.10</a>)</dt><dd>
 <tt>(NS&nbsp;scissors)</tt><br>
 </dd></dl>
 
 <h3><a name="sec2.2.3">2.2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Mass nouns</h3>
 
-<p align="justify">In contrast to count nouns, there are MASS (or noncount) nouns that can neither combine with numerals nor inflect for number. For example:</p>
+<p align="justify">In contrast to count nouns, there are <b>mass</b> (or noncount) nouns that can neither combine with numerals nor inflect for number. For example:</p>
 
-<dl><dt>(<a name="ex2.8">2.8</a>)</dt><dd>
+<dl><dt>(<a name="ex2.11">2.11</a>)</dt><dd>
 <tt>(N&nbsp;gold)</tt><br>
 <tt>(N&nbsp;information)</tt><br>
 </dd></dl>
@@ -140,7 +164,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Proper nouns are written with an initial capital letter. Inflection for number is rare, but is possible in talk about more than one entity with the same name, e.g., <i>There are two <b><i>Heathers</i></b> in my class.</i></p>
 
-<dl><dt>(<a name="ex2.9">2.9</a>)</dt><dd>
+<dl><dt>(<a name="ex2.12">2.12</a>)</dt><dd>
 <tt>(NPR&nbsp;Heather)</tt><br>
 <tt>(NPRS&nbsp;Heathers)</tt><br>
 </dd></dl>
@@ -154,41 +178,42 @@ highlight { background-color: palegreen; }
 <tr><td><tt>GENM</tt></td><td>The genitive marker &lcub;'s&rcub; or &lcub;'&rcub;</td></tr>
 </table>
 <br>
-<a name="table2.3"><b>Table 2.3</b>: Tag for genitive marker</a>
+<a name="table2.2"><b>Table 2.2</b>: Tag for genitive marker</a>
 </center>
 <br>
 
-<p align="justify">This marker is placed leftmost under an <tt>NP-GENV</tt> projection that comprises the genitive content. For example:</p>
+<p align="justify">This marker is placed leftmost under an <tt>NP-GEN</tt> projection that comprises the genitive content. For example:</p>
 
-<dl><dt>(<a name="ex2.10">2.10</a>)</dt><dd>
-<tt>(NP-SBJ&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(NPR&nbsp;Wendy)&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(N&nbsp;boyfriend))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
+<tt>(NP-&#8288;SBJ&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(NPR&nbsp;Wendy)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;boyfriend))</tt>
 </dd></dl>
 
-<dl><dt>(<a name="ex2.11">2.11</a>)</dt><dd>
-<tt>(NP-OB1&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;couple)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;hours)))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(N&nbsp;work))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.14">2.14</a>)</dt><dd>
+<tt>(NP-&#8288;OB1&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;couple)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;hours)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;work))</tt>
 </dd></dl>
 
-<p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as in (<a href="chapter2.html#ex2.12">2.12</a>).</p>
+<p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as in (<a href="chapter2.html#ex2.15">2.15</a>).</p>
 
-<dl><dt>(<a name="ex2.12">2.12</a>)</dt><dd>
-<tt>(NP-NSBJ&nbsp;(D&nbsp;that)&nbsp;(N&nbsp;microphone)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>PP-GENV</highlight>&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Scott)&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
+<tt>(NP-&#8288;NSBJ&nbsp;(D&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;microphone)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-&#8288;GEN</highlight>&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Scott)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))))</tt>
 </dd></dl>
 
 <h3><a name="sec2.2.6">2.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Reciprocal, reflexive, and personal pronouns</h3>
 
-<p align="justify">This section presents an overview of reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>). Such words are understood in the context of their occurrence, often by taking already mentioned noun phrases as antecedents. They can appear in full noun phrase positions, with the range of grammatical markings detailed in Table <a href="chapter2.html#table2.4">2.4</a>.</p>
+<p align="justify">This section presents an overview of reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>). Such words are understood in the context of their occurrence, often by taking already mentioned noun phrases as antecedents. They can appear in full noun phrase positions, with the range of grammatical markings detailed in Table <a href="chapter2.html#table2.3">2.3</a>.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th rowspan="3" style="background-color:#D3D3D3"></th>
@@ -263,85 +288,75 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.4"><b>Table 2.4</b>: Reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>)</a>
+<a name="table2.3"><b>Table 2.3</b>: Reciprocal and reflexive pronouns (<tt>PNX</tt>), and personal pronouns (<tt>PRO</tt>)</a>
 </center>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each&lowbar;other</i> and <i>one&lowbar;another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.13">2.13</a>).</p>
-
-<dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;John))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;Mary)))))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBP;~Tn&nbsp;love)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>PNX</mark>&nbsp;each_other)))&nbsp;</tt><br>
-</dd></dl>
-
-<p align="justify">Reflexive personal pronouns can indicate that the subject and object are the same entity, as in (<a href="chapter2.html#ex2.14">2.14</a>).</p>
-
-<dl><dt>(<a name="ex2.14">2.14</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-SBJ;{GUN}</highlight>&nbsp;(PRO&nbsp;It))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBP;~Tn&nbsp;fires)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-OB1;{GUN}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;itself)))&nbsp;</tt><br>
-</dd></dl>
-
-<p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.15">2.15</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
-
-<dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBD;~Tn&nbsp;made)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(ADVP-NIM-MNR&nbsp;(ADV&nbsp;all))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-RFL</highlight>&nbsp;(<mark>PNX</mark>&nbsp;myself)))&nbsp;</tt><br>
-</dd></dl>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look across the columns of Table <a href="chapter2.html#table2.4">2.4</a> shows that the &lsquo;person&rsquo; category is useful when differentiating the various reflexive and personal pronouns. The first person refers to the speaker(s), the second person refers to the hearer(s), and the third person refers to other entities. Person is further distinguished into singular and plural reference. Further distinction is possible with third person singular pronouns (reflexive and personal), since they inflect for gender: This gives: masculine <i>he</i>/<i>him(self)</i>/<i>his</i>, feminine <i>she</i>/<i>her(self)</i>/<i>hers</i>, and neuter <i>it(self)</i>/<i>its</i>.</p>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look down the rows of Table <a href="chapter2.html#table2.4">2.4</a> shows that pronouns are marked for more grammatical cases than common nouns or proper nouns. In addition to genitive case, pronouns are marked for nominative case (marking the subject of the clause: <i><b><i>I</i></b> shrugged</i>), and accusative case (marking the object acted on by the verb: <i>James tickled <b><i>me</i></b></i>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each_other</i> and <i>one_another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.16">2.16</a>).</p>
 
 <dl><dt>(<a name="ex2.16">2.16</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>PRO</mark>&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBD;~I&nbsp;shrugged))&nbsp;</tt><br>
+<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ;&#8288;{JOHN+MARY}</highlight>&nbsp;(NLYR&nbsp;(NLYR&nbsp;(NPR&nbsp;John))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;Mary)))))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tn&nbsp;love)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1;&#8288;{JOHN+MARY}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;each_other)))</tt>
 </dd></dl>
 
+<p align="justify">Reflexive personal pronouns can indicate that the subject and object are the same entity, as in (<a href="chapter2.html#ex2.17">2.17</a>).</p>
+
 <dl><dt>(<a name="ex2.17">2.17</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(NPR&nbsp;James))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBD;~Tn&nbsp;tickled)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>PRO</mark>&nbsp;me)))&nbsp;</tt><br>
+<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ;&#8288;{GUN}</highlight>&nbsp;(PRO&nbsp;It))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tn&nbsp;fires)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1;&#8288;{GUN}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;itself)))</tt>
+</dd></dl>
+
+<p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.18">2.18</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
+
+<dl><dt>(<a name="ex2.18">2.18</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;made)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;all))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;RFL</highlight>&nbsp;(<mark>PNX</mark>&nbsp;myself)))</tt>
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look across the columns of Table <a href="chapter2.html#table2.3">2.3</a> shows that the &lsquo;person&rsquo; category is useful when differentiating the various reflexive and personal pronouns. The first person refers to the speaker(s), the second person refers to the hearer(s), and the third person refers to other entities. Person is further distinguished into singular and plural reference. Further distinction is possible with third person singular pronouns (reflexive and personal), since they inflect for gender: This gives: masculine <i>he</i>/<i>him(self)</i>/<i>his</i>, feminine <i>she</i>/<i>her(self)</i>/<i>hers</i>, and neuter <i>it(self)</i>/<i>its</i>.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look down the rows of Table <a href="chapter2.html#table2.3">2.3</a> shows that pronouns are marked for more grammatical cases than common nouns or proper nouns. In addition to genitive case, pronouns are marked for nominative case (marking the subject of the clause: <i><b><i>I</i></b> shrugged</i>), and accusative case (marking the object acted on by the verb: <i>James tickled <b><i>me</i></b></i>).</p>
+
+<dl><dt>(<a name="ex2.19">2.19</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(<mark>PRO</mark>&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~I&nbsp;shrugged))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.20">2.20</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(NPR&nbsp;James))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;tickled)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>PRO</mark>&nbsp;me)))</tt>
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Genitive pronouns can be either:</p>
 
 <ul>
-<li>dependent (Genitive 1 of Table <a href="chapter2.html#table2.4">2.4</a>), i.e., standing for the possessor only, and appearing with a following noun (for example, <i><b><i>our</i></b> friends</i>)</li>
+<li>dependent (Genitive 1 of Table <a href="chapter2.html#table2.3">2.3</a>), i.e., standing for the possessor only, and appearing with a following noun (for example, <i><b><i>our</i></b> friends</i>)</li>
 </ul>
 
-<dl><dt>(<a name="ex2.18">2.18</a>)</dt><dd>
-<tt>(NP&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(<mark>PRO;_genm_</mark>&nbsp;our))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NS&nbsp;friends))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.21">2.21</a>)</dt><dd>
+<tt>(NP&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(<mark>PRO;&#8288;_genm_</mark>&nbsp;our))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;friends))</tt>
 </dd></dl>
 
 <ul>
-<li>independent (Genitive 2 of Table <a href="chapter2.html#table2.4">2.4</a>), i.e., standing for the whole NP, so occurring without a following noun (for example, <i>it is <b><i>theirs</i></b></i>)</li>
+<li>independent (Genitive 2 of Table <a href="chapter2.html#table2.3">2.3</a>), i.e., standing for the whole <tt>NP</tt>, so occurring without a following noun (for example, <i>it is <b><i>theirs</i></b></i>)</li>
 </ul>
 
-<dl><dt>(<a name="ex2.19">2.19</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(BEP;~Ln&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-PRD2&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-GENV</highlight>&nbsp;(<mark>PRO;_ppge_</mark>&nbsp;theirs))))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.22">2.22</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~Ln&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;PRD&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(<mark>PRO;&#8288;_ppge_</mark>&nbsp;theirs))))</tt>
 </dd></dl>
 
-<p align="justify">As shown by examples (<a href="chapter2.html#ex2.18">2.18</a>) and (<a href="chapter2.html#ex2.19">2.19</a>), with parsing, a genitive pronoun (dependent (<tt>PRO;_genm_</tt>) or independent (<tt>PRO;_ppge_</tt>)) is the only element of an <tt>NP-GENV</tt> layer. Furthermore, for <tt>PRO;_ppge_</tt>, the <tt>NP-GENV</tt> layer is the only element of the containing noun phrase.</p>
+<p align="justify">As shown by examples (<a href="chapter2.html#ex2.21">2.21</a>) and (<a href="chapter2.html#ex2.22">2.22</a>), with parsing, a genitive pronoun (dependent (<tt>PRO;_genm_</tt>) or independent (<tt>PRO;_ppge_</tt>)) is the only element of an <tt>NP-GEN</tt> layer. Furthermore, for <tt>PRO;_ppge_</tt>, the <tt>NP-GEN</tt> layer is the only element of the containing noun phrase.</p>
 
 <h3><a name="sec2.2.7">2.2.7</a>&nbsp;&nbsp;&nbsp;&nbsp;Other types of pronouns</h3>
 
@@ -351,133 +366,123 @@ highlight { background-color: palegreen; }
 <li>Interrogative pronouns (tagged <tt>WPRO</tt>) are used in questions, and stand for the entity under question, for example, <i><b><i>Who</i></b> came?</i>, <i><b><i>What</i></b> did it mean?</i></li>
 </ul>
 
-<dl><dt>(<a name="ex2.20">2.20</a>)</dt><dd>
-<tt>(CP-QUE-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;Who))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~I&nbsp;came))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.23">2.23</a>)</dt><dd>
+<tt>(CP-&#8288;QUE-&#8288;MAT&nbsp;(IP-&#8288;SUB&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;Who))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~I&nbsp;came))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;?))</tt>
 </dd></dl>
 
-<dl><dt>(<a name="ex2.21">2.21</a>)</dt><dd>
-<tt>(CP-QUE-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-SUB&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;What))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;it))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VB;~Tn&nbsp;mean))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PUNC&nbsp;?))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.24">2.24</a>)</dt><dd>
+<tt>(CP-&#8288;QUE-&#8288;MAT&nbsp;(IP-&#8288;SUB&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;What))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;it))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Tn&nbsp;mean))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;?))</tt>
 </dd></dl>
 
 <ul>
 <li>Relative pronouns (tagged <tt>RPRO</tt>) introduce a relative clause, for example, <i>anything <b><i>that</i></b>'s relevant</i>, <i>an iron hook <b><i>which</i></b> he unfastened</i>.</li>
 </ul>
 
-<dl><dt>(<a name="ex2.22">2.22</a>)</dt><dd>
-<tt>(NP&nbsp;(D;_nphd_&nbsp;anything)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-SBJ</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;that))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(BEP;~La&nbsp;&lt;apos&gt;s)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-PRD2&nbsp;(ADJ&nbsp;relevant))))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.25">2.25</a>)</dt><dd>
+<tt>(NP&nbsp;(D;&#8288;_nphd_&nbsp;anything)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>C</highlight>&nbsp;<mark>that</mark>)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;*T*)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~La&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADJ&nbsp;relevant))))</tt>
 </dd></dl>
 
-<dl><dt>(<a name="ex2.23">2.23</a>)</dt><dd>
-<tt>(NP-ESBJ&nbsp;(D&nbsp;an)&nbsp;(N&nbsp;iron)&nbsp;(N&nbsp;hook)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-REL&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-OB1</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;which))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ;{CURT}&nbsp;(PRO&nbsp;he))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBD;~Tn&nbsp;unfastened)))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.26">2.26</a>)</dt><dd>
+<tt>(NP-&#8288;ESBJ&nbsp;(D&nbsp;an)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;iron)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;hook)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;which))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;he))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;unfastened)))</tt>
 </dd></dl>
 
 <ul>
 <li>Indefinite pronouns with quantification (tagged <tt>Q;_nphd_</tt>, while quantifiers are tagged <tt>Q</tt>; see section <a href="chapter2.html#sec2.5">2.5</a>) come in two broad types: compounds, for example, <i>as <b><i>everyone</i></b> knows</i>, <i><b><i>nobody</i></b> knows</i>, and words which often occur with the preposition <i>of</i>, such as, <i><b><i>all</i></b> of them</i>, <i><b><i>none</i></b> of them</i>.</li>
 </ul>
 
-<dl><dt>(<a name="ex2.24">2.24</a>)</dt><dd>
-<tt>(PP-SCON&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;everyone))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~I&nbsp;knows)))&nbsp;</tt><br>
-</dd></dl>
-
-<dl><dt>(<a name="ex2.25">2.25</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;nobody))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VBP;~Tf&nbsp;knows))&nbsp;</tt><br>
-</dd></dl>
-
-<dl><dt>(<a name="ex2.26">2.26</a>)</dt><dd>
-<tt>(NP-OB1&nbsp;(<mark>Q;_nphd_</mark>&nbsp;all)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
-</dd></dl>
-
 <dl><dt>(<a name="ex2.27">2.27</a>)</dt><dd>
-<tt>(NP-SBJ&nbsp;(<mark>Q;_nphd_</mark>&nbsp;none)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
+<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;everyone))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~I&nbsp;knows)))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.28">2.28</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;nobody))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tf&nbsp;knows))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.29">2.29</a>)</dt><dd>
+<tt>(NP-&#8288;OB1&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;all)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.30">2.30</a>)</dt><dd>
+<tt>(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;none)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
 </dd></dl>
 
 <ul>
 <li>Indefinite pronouns not subclassified as <tt>Q;_nphd_</tt> (tagged <tt>D;_nphd_</tt>, while indefinite determiners are tagged <tt>D</tt>; see section <a href="chapter2.html#sec2.5">2.5</a>), for example, <i>in case <b><i>somebody</i></b> comes</i>, but also <i><b><i>some</i></b> of them</i>. The indefinite pronoun <i>one</i>, for example, <i>as <b><i>one</i></b> would expect</i>, typically occurs in formal contexts. The pronoun <i>you</i> (always tagged <tt>PRO</tt>) can also be used indefinitely, for example, <i>as <b><i>you</i></b> can see</i>.</li>
 </ul>
 
-<dl><dt>(<a name="ex2.28">2.28</a>)</dt><dd>
-<tt>(PP-SCON-CNT&nbsp;(P-CONN&nbsp;in_case)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;somebody))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(VBP;~I&nbsp;comes)))&nbsp;</tt><br>
-</dd></dl>
-
-<dl><dt>(<a name="ex2.29">2.29</a>)</dt><dd>
-<tt>(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;some)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(PP&nbsp;(P-ROLE&nbsp;of)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))&nbsp;</tt><br>
-</dd></dl>
-
-<dl><dt>(<a name="ex2.30">2.30</a>)</dt><dd>
-<tt>(PP-SCON&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>D;_nphd_</mark>&nbsp;one))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;would)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;expect))))&nbsp;</tt><br>
-</dd></dl>
-
 <dl><dt>(<a name="ex2.31">2.31</a>)</dt><dd>
-<tt>(PP-SCON-MOD&nbsp;(P-CONN&nbsp;as)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-ADV&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NP-SBJ&nbsp;(<mark>PRO</mark>&nbsp;you))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(MD;~cat_Vi&nbsp;can)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-INF-CAT&nbsp;(VB;~I&nbsp;see))))&nbsp;</tt><br>
+<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;in_case)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;somebody))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~I&nbsp;comes)))</tt>
 </dd></dl>
-
-<ul>
-<li>Demonstrative pronouns (tagged <tt>D;_nphd_</tt>; see Table <a href="chapter2.html#table2.5">2.5</a> for the full range) indicate a specific referent in terms of the distance (real or metaphorical) from the speaker, for example, <i>I don't want <b><i>that</i></b></i>. <i>I'll have <b><i>these</i></b></i>, Demonstratives also function as definite determiners (tagged <tt>D</tt>) which modify nouns within a noun phrase, for example, <i><b><i>this</i></b> point</i> (see section <a href="chapter2.html#sec2.5">2.5</a>).</li>
-</ul>
 
 <dl><dt>(<a name="ex2.32">2.32</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(DOP&nbsp;do)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NEG;_clitic_&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(VB;~Tn&nbsp;want)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-OB1&nbsp;(<mark>D;_nphd_</mark>&nbsp;that)))&nbsp;</tt><br>
+<tt>(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;some)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.33">2.33</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-SBJ&nbsp;(PRO&nbsp;I))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(MD;~cat_Vi&nbsp;&lt;apos&gt;ll)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(HV;~Tn&nbsp;have)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-OB1</mark>&nbsp;(D;_nphd_&nbsp;these))))&nbsp;</tt><br>
+<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;one))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;would)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;expect))))</tt>
 </dd></dl>
 
 <dl><dt>(<a name="ex2.34">2.34</a>)</dt><dd>
-<tt>(NP-OB1&nbsp;(<mark>D</mark>&nbsp;this)&nbsp;(N&nbsp;point))&nbsp;</tt><br>
+<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>PRO</mark>&nbsp;you))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;can)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;see))))</tt>
+</dd></dl>
+
+<ul>
+<li>Demonstrative pronouns (tagged <tt>D;_nphd_</tt>; see Table <a href="chapter2.html#table2.4">2.4</a> for the full range) indicate a specific referent in terms of the distance (real or metaphorical) from the speaker, for example, <i>I don't want <b><i>that</i></b></i>. <i>I'll have <b><i>these</i></b></i>, Demonstratives also function as definite determiners (tagged <tt>D</tt>) which modify nouns within a noun phrase, for example, <i><b><i>this</i></b> point</i> (see section <a href="chapter2.html#sec2.5">2.5</a>).</li>
+</ul>
+
+<dl><dt>(<a name="ex2.35">2.35</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG;&#8288;_clitic_&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Tn&nbsp;want)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;that)))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.36">2.36</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;&lt;apos&gt;ll)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(HV;&#8288;~Tn&nbsp;have)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-&#8288;OB1</mark>&nbsp;(D;&#8288;_nphd_&nbsp;these))))</tt>
+</dd></dl>
+
+<dl><dt>(<a name="ex2.37">2.37</a>)</dt><dd>
+<tt>(NP-&#8288;OB1&nbsp;(<mark>D</mark>&nbsp;this)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;point))</tt>
 </dd></dl>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th style="background-color:#D3D3D3"></th>
@@ -496,13 +501,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.5"><b>Table 2.5</b>: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a>
+<a name="table2.4"><b>Table 2.4</b>: Demonstrative pronouns (<tt>D;_nphd_</tt>)&sol;determiners (<tt>D</tt>)</a>
 </center>
 <br>
 
 <br><h2><a name="sec2.3">2.3</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head an adjective phrase</h2>
 
-<p align="justify">For a word to be an adjective, it must be able to function as the head of an adjective phrase (<tt>ADJP</tt>; see section <a href="chapter3.html#sec3.3">3.3</a>), often as the only element of the phrase. Adjectives are tagged as in Table <a href="chapter2.html#table2.6">2.6</a> to distinguish comparative and superlative forms from general forms.</p>
+<p align="justify">For a word to be an adjective, it must be able to function as the head of an adjective phrase (<tt>ADJP</tt>; see section <a href="chapter3.html#sec3.3">3.3</a>), often as the only element of the phrase. Adjectives are tagged as in Table <a href="chapter2.html#table2.5">2.5</a> to distinguish comparative and superlative forms from general forms.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -511,14 +516,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>ADJS</tt></td><td>Superlative adjective (e.g., <i>oldest</i>, <i>best</i>)</td></tr>
 </table>
 <br>
-<a name="table2.6"><b>Table 2.6</b>: Tags for words that can head an adjective phrase</a>
+<a name="table2.5"><b>Table 2.5</b>: Tags for words that can head an adjective phrase</a>
 </center>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The comparative form of an adjective is typically indicated by the suffix &lcub;er&rcub;, whereas the superlative form is typically indicated by the suffix &lcub;est&rcub;; see Table <a href="chapter2.html#table2.7">2.7</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The comparative form of an adjective is typically indicated by the suffix &lcub;er&rcub;, whereas the superlative form is typically indicated by the suffix &lcub;est&rcub;; see Table <a href="chapter2.html#table2.6">2.6</a>.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th style="background-color:#D3D3D3"></th>
@@ -544,13 +548,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.7"><b>Table 2.7</b>: Forms of adjectives</a>
+<a name="table2.6"><b>Table 2.6</b>: Forms of adjectives</a>
 </center>
 <br>
 
 <br><h2><a name="sec2.4">2.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head an adverb phrase</h2>
 
-<p align="justify">For a word to be an adverb, it must be able to function as the head of an adverb phrase (<tt>ADVP</tt>; see section <a href="chapter3.html#sec3.4">3.4</a>), often as the only element of the phrase. Adverbs are tagged as in Table <a href="chapter2.html#table2.8">2.8</a> to distinguish comparative, superlative, and WH froms from general forms.</p>
+<p align="justify">For a word to be an adverb, it must be able to function as the head of an adverb phrase (<tt>ADVP</tt>; see section <a href="chapter3.html#sec3.4">3.4</a>), often as the only element of the phrase. Adverbs are tagged as in Table <a href="chapter2.html#table2.7">2.7</a> to distinguish comparative, superlative, and WH froms from general forms.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -562,13 +566,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>RP</tt></td><td>Adverbial particle (e.g., <i>up</i>, <i>off</i>, <i>out</i>)</td></tr>
 </table>
 <br>
-<a name="table2.8"><b>Table 2.8</b>: Tags for words that can head an adverb phrase</a>
+<a name="table2.7"><b>Table 2.7</b>: Tags for words that can head an adverb phrase</a>
 </center>
 <br>
 
 <br><h2><a name="sec2.5">2.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Other noun phrase level words</h2>
 
-<p align="justify">Section <a href="chapter2.html#sec2.2">2.2</a> above has already discussed words that can head a noun phrase. Table <a href="chapter2.html#table2.9">2.9</a> gives tags for other words that can be immediate components of a noun phrase, but that can't be a noun phrase head. Rather, these words precede the head within noun phrases and function to modify the head in terms of definiteness, item under question, or quantity.</p>
+<p align="justify">Section <a href="chapter2.html#sec2.2">2.2</a> above has already discussed words that can head a noun phrase. Table <a href="chapter2.html#table2.8">2.8</a> gives tags for other words that can be immediate components of a noun phrase, but that can't be a noun phrase head. Rather, these words precede the head within noun phrases and function to modify the head in terms of definiteness, item under question, or quantity.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -579,7 +583,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>Q</tt></td><td>Quantifier (e.g., <i>every</i>, <i>no</i>)</td></tr>
 </table>
 <br>
-<a name="table2.9"><b>Table 2.9</b>: Tags for words that can be immediate components of a noun phrase</a>
+<a name="table2.8"><b>Table 2.8</b>: Tags for words that can be immediate components of a noun phrase</a>
 </center>
 <br>
 
@@ -590,9 +594,9 @@ highlight { background-color: palegreen; }
 <li><i>some</i> or <i>the</i> in the plural</li>
 </ul>
 
-<p align="justify">Articles for the singular head noun <i>wish</i> and the plural head noun <i>wishes</i> are seen in (<a href="chapter2.html#ex2.35">2.35</a>).</p>
+<p align="justify">Articles for the singular head noun <i>wish</i> and the plural head noun <i>wishes</i> are seen in (<a href="chapter2.html#ex2.38">2.38</a>).</p>
 
-<dl><dt>(<a name="ex2.35">2.35</a>)</dt><dd>
+<dl><dt>(<a name="ex2.38">2.38</a>)</dt><dd>
 <tt>(D&nbsp;a)&nbsp;(N&nbsp;wish)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;wish)</tt><br>
 <tt>(D&nbsp;some)&nbsp;(NS&nbsp;wishes)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(D&nbsp;the)&nbsp;(NS&nbsp;wishes)</tt><br>
 </dd></dl>
@@ -623,7 +627,7 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Note that participle forms are tenseless despite their full names! Infinitive forms occur in infinitive clauses, often preceded by the infinitive marker <i>to</i> (e.g., <i>John happened to <b><i>support</i></b> Peter.</i>). Present participles are used in the progressive construction (e.g., <i>John is <b><i>supporting</i></b> Peter</i>). Past participles are used in the perfect construction (e.g., <i>John has <b><i>supported</i></b> Peter</i>) and the passive construction (e.g., <i>Peter is <b><i>supported</i></b> by John</i>).</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The distinctions in verb forms just sketched are captured in the tags for lexical verbs of Table <a href="chapter2.html#table2.10">2.10</a>.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The distinctions in verb forms just sketched are captured in the tags for lexical verbs of Table <a href="chapter2.html#table2.9">2.9</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -634,14 +638,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>VVN</tt></td><td>past participle (&lcub;ed&rcub;&sol;&lcub;en&rcub;) form of lexical verbs (used in the perfect construction and the passive construction) (e.g., <i>reached</i>, <i>supported</i>, <i>written</i>, <i>sunk</i>, <i>put</i>)</td></tr>
 </table>
 <br>
-<a name="table2.10"><b>Table 2.10</b>: Tags for lexical verbs</a>
+<a name="table2.9"><b>Table 2.9</b>: Tags for lexical verbs</a>
 </center>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Table <a href="chapter2.html#table2.11">2.11</a> further illustrates with examples the distinctions between the different lexical verb forms. This includes examples of <b>irregular verbs</b> that do not have a regular past tense inflection.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Table <a href="chapter2.html#table2.10">2.10</a> further illustrates with examples the distinctions between the different lexical verb forms. This includes examples of <b>irregular verbs</b> that do not have a regular past tense inflection.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th rowspan="4" style="background-color:#D3D3D3"></th>
@@ -707,13 +710,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.11"><b>Table 2.11</b>: Forms of lexical verb</a>
+<a name="table2.10"><b>Table 2.10</b>: Forms of lexical verb</a>
 </center>
 <br>
 
 <h3><a name="sec2.6.2">2.6.2</a>&nbsp;&nbsp;&nbsp;&nbsp;HAVE</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">HAVE</small> are tagged as in Table <a href="chapter2.html#table2.12">2.12</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">HAVE</small> are tagged as in Table <a href="chapter2.html#table2.11">2.11</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -724,14 +727,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>HVN</tt></td><td>past participle form of the verb <small style="font-size: 75%">HAVE</small>: <i>had</i></td></tr>
 </table>
 <br>
-<a name="table2.12"><b>Table 2.12</b>: Tags for <small style="font-size: 75%">HAVE</small></a>
+<a name="table2.11"><b>Table 2.11</b>: Tags for <small style="font-size: 75%">HAVE</small></a>
 </center>
 <br>
 
-<p align="justify"><small style="font-size: 75%">HAVE</small> has the non-contracted inflections of Table <a href="chapter2.html#table2.13">2.13</a>.</p>
+<p align="justify"><small style="font-size: 75%">HAVE</small> has the non-contracted inflections of Table <a href="chapter2.html#table2.12">2.12</a>.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th colspan="3">Tensed forms</th>
@@ -762,13 +764,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.13"><b>Table 2.13</b>: Forms of <small style="font-size: 75%">HAVE</small></a>
+<a name="table2.12"><b>Table 2.12</b>: Forms of <small style="font-size: 75%">HAVE</small></a>
 </center>
 <br>
 
 <h3><a name="sec2.6.3">2.6.3</a>&nbsp;&nbsp;&nbsp;&nbsp;BE</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">BE</small> are tagged as in Table <a href="chapter2.html#table2.14">2.14</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">BE</small> are tagged as in Table <a href="chapter2.html#table2.13">2.13</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -779,14 +781,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>BEN</tt></td><td>past participle form of the verb <small style="font-size: 75%">BE</small>: <i>been</i></td></tr>
 </table>
 <br>
-<a name="table2.14"><b>Table 2.14</b>: Tags for <small style="font-size: 75%">BE</small></a>
+<a name="table2.13"><b>Table 2.13</b>: Tags for <small style="font-size: 75%">BE</small></a>
 </center>
 <br>
 
-<p align="justify">Table <a href="chapter2.html#table2.15">2.15</a> presents an overview of the eight different non-contracted forms of <small style="font-size: 75%">BE</small>. This is the widest range of distinct forms for the same verb lexme in English, with extra person-number contrasts in the past and present tenses.</p>
+<p align="justify">Table <a href="chapter2.html#table2.14">2.14</a> presents an overview of the eight different non-contracted forms of <small style="font-size: 75%">BE</small>. This is the widest range of distinct forms for the same verb lexme in English, with extra person-number contrasts in the past and present tenses.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th colspan="5">Tensed forms</th>
@@ -822,13 +823,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.15"><b>Table 2.15</b>: Forms of <small style="font-size: 75%">BE</small></a>
+<a name="table2.14"><b>Table 2.14</b>: Forms of <small style="font-size: 75%">BE</small></a>
 </center>
 <br>
 
 <h3><a name="sec2.6.4">2.6.4</a>&nbsp;&nbsp;&nbsp;&nbsp;DO</h3>
 
-<p align="justify">The forms of <small style="font-size: 75%">DO</small> are tagged as in Table <a href="chapter2.html#table2.16">2.16</a>.</p>
+<p align="justify">The forms of <small style="font-size: 75%">DO</small> are tagged as in Table <a href="chapter2.html#table2.15">2.15</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -839,14 +840,13 @@ highlight { background-color: palegreen; }
 <tr><td><tt>DON</tt></td><td>past participle form of the verb <small style="font-size: 75%">DO</small>: <i>done</i></td></tr>
 </table>
 <br>
-<a name="table2.16"><b>Table 2.16</b>: Tags for <small style="font-size: 75%">DO</small></a>
+<a name="table2.15"><b>Table 2.15</b>: Tags for <small style="font-size: 75%">DO</small></a>
 </center>
 <br>
 
-<p align="justify"><small style="font-size: 75%">DO</small> has the the non-contracted inflections of Table <a href="chapter2.html#table2.17">2.17</a>.</p>
+<p align="justify"><small style="font-size: 75%">DO</small> has the the non-contracted inflections of Table <a href="chapter2.html#table2.16">2.16</a>.</p>
 
 <center>
-
 <table border="1" cellpadding="10px">
   <tr>
     <th colspan="3">Tensed forms</th>
@@ -877,13 +877,13 @@ highlight { background-color: palegreen; }
   </tr>
 </table>
 <br>
-<a name="table2.17"><b>Table 2.17</b>: Forms of <small style="font-size: 75%">DO</small></a>
+<a name="table2.16"><b>Table 2.16</b>: Forms of <small style="font-size: 75%">DO</small></a>
 </center>
 <br>
 
 <h3><a name="sec2.6.5">2.6.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Modal verbs</h3>
 
-<p align="justify">Modal verbs express meanings such as certainty, ability, or obligation. The main modal verbs are <small style="font-size: 75%">WILL</small>, <small style="font-size: 75%">WOULD</small>, <small style="font-size: 75%">CAN</small>, <small style="font-size: 75%">COULD</small>, <small style="font-size: 75%">MAY</small>, <small style="font-size: 75%">MIGHT</small>, <small style="font-size: 75%">SHALL</small>, <small style="font-size: 75%">SHOULD</small>, <small style="font-size: 75%">MUST</small> and <small style="font-size: 75%">OUGHT</small>. A modal verb only has finite forms and has no suffixes (e.g., <i>I sing</i>&nbsp;&mdash;&nbsp;<i>he sings</i>, but <i>I must</i>&nbsp;&mdash;&nbsp;<i>he must</i>). Modal verbs are tagged as in Table <a href="chapter2.html#table2.18">2.18</a>.</p>
+<p align="justify">Modal verbs express meanings such as certainty, ability, or obligation. The main modal verbs are <small style="font-size: 75%">WILL</small>, <small style="font-size: 75%">WOULD</small>, <small style="font-size: 75%">CAN</small>, <small style="font-size: 75%">COULD</small>, <small style="font-size: 75%">MAY</small>, <small style="font-size: 75%">MIGHT</small>, <small style="font-size: 75%">SHALL</small>, <small style="font-size: 75%">SHOULD</small>, <small style="font-size: 75%">MUST</small> and <small style="font-size: 75%">OUGHT</small>. A modal verb only has finite forms and has no suffixes (e.g., <i>I sing</i>&nbsp;&mdash;&nbsp;<i>he sings</i>, but <i>I must</i>&nbsp;&mdash;&nbsp;<i>he must</i>). Modal verbs are tagged as in Table <a href="chapter2.html#table2.17">2.17</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -891,7 +891,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>MD;~cat_Vt</tt></td><td>modal catenative (<i>ought</i>, <i>used</i>)</td></tr>
 </table>
 <br>
-<a name="table2.18"><b>Table 2.18</b>: Tags for modal verbs</a>
+<a name="table2.17"><b>Table 2.17</b>: Tags for modal verbs</a>
 </center>
 <br>
 
@@ -900,18 +900,17 @@ highlight { background-color: palegreen; }
 <center>
 <table border="1" cellpadding="10px">
 <tr><td><tt>EX</tt></td><td>existential <i>there</i>, i.e., <i>there</i> of the <i>there is ...</i> or <i>there are ...</i> construction co-occurring with an existential subject (<tt>NP-ESBJ</tt>)</td></tr>
-<tr><td><tt>PRO;_cleft_</tt></td><td>cleft <i>it</i> occuring as part of a cleft construction (<i>so it was you that got them together</i>)</td></tr>
 <tr><td><tt>PRO;_expletive_</tt></td><td>expletive <i>it</i> e.g., occuring in a weather construction (<i>it's raining</i>)</td></tr>
-<tr><td><tt>PRO;_provisional_</tt></td><td>provisional <i>it</i> occuring with extraposition (<i>it bothered her that she probably would never know</i>)</td></tr>
+<tr><td><tt>PRO;_provisional_</tt></td><td>provisional <i>it</i> occuring with extraposition (<i>it bothered her that she probably would never know</i>) or a cleft construction (<i>so it was you that got them together</i>)</td></tr>
 </table>
 <br>
-<a name="table2.19"><b>Table 2.19</b>: Tags for subject indicating words</a>
+<a name="table2.18"><b>Table 2.18</b>: Tags for subject indicating words</a>
 </center>
 <br>
 
 <br><h2><a name="sec2.8">2.8</a>&nbsp;&nbsp;&nbsp;&nbsp;Other clause level words</h2>
 
-<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="chapter2.html#table2.20">2.20</a>.</p>
+<p align="justify">Besides verbs, other clause level components are words with the tags of Table <a href="chapter2.html#table2.19">2.19</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -921,30 +920,37 @@ highlight { background-color: palegreen; }
 <tr><td><tt>CONJ;_cl_</tt></td><td>discourse coordination (e.g., <i>And</i>, <i>But</i>)</td></tr>
 </table>
 <br>
-<a name="table2.20"><b>Table 2.20</b>: Tags for clause level components</a>
+<a name="table2.19"><b>Table 2.19</b>: Tags for clause level components</a>
 </center>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.36">2.36</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.2.5">8.2.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.39">2.39</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.2.5">8.2.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
 
-<dl><dt>(<a name="ex2.36">2.36</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;(<mark>EX</mark>&nbsp;There)&nbsp;(BED;~ex_cat_Vt&nbsp;were)&nbsp;(<highlight>NEG;_clitic_</highlight>&nbsp;n&lt;apos&gt;t)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-ESBJ&nbsp;(D&nbsp;any)&nbsp;(NS&nbsp;incidents))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(IP-INF-CAT&nbsp;(<highlight>TO</highlight>&nbsp;to)&nbsp;(VB;~Ipr&nbsp;get)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(PP-CLR-LOC&nbsp;(P-ROLE&nbsp;in)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)&nbsp;(N&nbsp;way)))))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.39">2.39</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(<mark>EX</mark>&nbsp;There)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~ex_cat_Vt&nbsp;were)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NEG;&#8288;_clitic_</highlight>&nbsp;n&lt;apos&gt;t)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;ESBJ&nbsp;(D&nbsp;any)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;incidents))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(<highlight>TO</highlight>&nbsp;to)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Ipr&nbsp;get)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(P-&#8288;ROLE&nbsp;in)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;way)))))</tt>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a word tagged <tt>RP</tt> to occur as a clause level component. The <tt>RP</tt> tag is used to mark adverbial particles (e.g., <i>up</i>, <i>off</i>, <i>out</i>) and was seen in section <a href="chapter2.html#sec2.4">2.4</a> as the tag for a word that can head an adverb phrase. When an <tt>RP</tt> tagged word occurs as a clause level component it is part of a phrasal verb, as in (<a href="chapter2.html#ex2.37">2.37</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a word tagged <tt>RP</tt> to occur as a clause level component. The <tt>RP</tt> tag is used to mark adverbial particles (e.g., <i>up</i>, <i>off</i>, <i>out</i>) and was seen in section <a href="chapter2.html#sec2.4">2.4</a> as the tag for a word that can head an adverb phrase. When an <tt>RP</tt> tagged word occurs as a clause level component it is part of a phrasal verb, as in (<a href="chapter2.html#ex2.40">2.40</a>).</p>
 
-<dl><dt>(<a name="ex2.37">2.37</a>)</dt><dd>
-<tt>(IP-MAT&nbsp;(VBP;~phr_Vp&nbsp;hold)&nbsp;(<mark>RP</mark>&nbsp;on)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-NIM-TMP&nbsp;(D&nbsp;a)&nbsp;(N&nbsp;second)))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.40">2.40</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(VBP;&#8288;~phr_Vp&nbsp;hold)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>RP</mark>&nbsp;on)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;NIM&nbsp;(D&nbsp;a)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;second)))</tt>
 </dd></dl>
 
 <br><h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;&nbsp;Connective words</h2>
 
-<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="chapter2.html#table2.21">2.21</a> that serve as the means to connect phrases and clauses.</p>
+<p align="justify">So far we have considered words that serve as components of either phrases or clauses. There is a further class of words with the tags of Table <a href="chapter2.html#table2.20">2.20</a> that serve as the means to connect phrases and clauses.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -955,15 +961,15 @@ highlight { background-color: palegreen; }
 <tr><td><tt>P-ROLE</tt></td><td>Role preposition (e.g., <i>in</i>, <i>of</i>, <i>under</i>)</td></tr>
 </table>
 <br>
-<a name="table2.21"><b>Table 2.21</b>: Tags for connective words</a>
+<a name="table2.20"><b>Table 2.20</b>: Tags for connective words</a>
 </center>
 <br>
 
-<p align="justify">When phrases and clauses are connected they are said to be COMPLEX.</p>
+<p align="justify">When phrases and clauses are connected they are said to be <b>complex</b>.</p>
 
 <br><h2><a name="sec2.10">2.10</a>&nbsp;&nbsp;&nbsp;&nbsp;Punctuation</h2>
 
-<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="chapter2.html#table2.22">2.22</a>.</p>
+<p align="justify">Punctuation points, quotation marks, and brackets (&lsquo;.&rsquo; &lsquo;?&rsquo; &lsquo;!&rsquo; &lsquo;:&rsquo; &lsquo;;&rsquo; &lsquo;,&rsquo; &lsquo;-&rsquo; &lsquo;(&rsquo; &lsquo;)&rsquo; etc.) are treated as words for the purposes of word tagging with the tags of Table <a href="chapter2.html#table2.21">2.21</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -974,7 +980,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>PURQ</tt></td><td>Punctuation: right quotation mark &mdash; i.e., <i>&rsquo;</i> or <i>&rdquo;</i></td></tr>
 </table>
 <br>
-<a name="table2.22"><b>Table 2.22</b>: Tags for punctuation</a>
+<a name="table2.21"><b>Table 2.21</b>: Tags for punctuation</a>
 </center>
 <br>
 
@@ -982,7 +988,7 @@ highlight { background-color: palegreen; }
 
 <br><h2><a name="sec2.11">2.11</a>&nbsp;&nbsp;&nbsp;&nbsp;Interjection, reaction signals, and formulaic expressions</h2>
 
-<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="chapter2.html#table2.23">2.23</a>. They have a high placement in structure, typically occurring as elements of clause or fragment layers.</p>
+<p align="justify">Interjections, reaction signals, and formulaic expressions are treated as single words with the tags of Table <a href="chapter2.html#table2.22">2.22</a>. They have a high placement in structure, typically occurring as elements of clause or fragment layers.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -991,27 +997,28 @@ highlight { background-color: palegreen; }
 <tr><td><tt>FRM</tt></td><td>Formulaic expression (e.g., <i>good_afternoon</i>, <i>you_see</i>, <i>thank_you</i>)</td></tr>
 </table>
 <br>
-<a name="table2.23"><b>Table 2.23</b>: Tags for interjection, reaction signals, and formulaic expressions</a>
+<a name="table2.22"><b>Table 2.22</b>: Tags for interjection, reaction signals, and formulaic expressions</a>
 </center>
 <br>
 
-<dl><dt>(<a name="ex2.38">2.38</a>)</dt><dd>
-<tt>(FRAG&nbsp;(<mark>INTJ</mark>&nbsp;Well)&nbsp;(PUNC&nbsp;,)&nbsp;(<highlight>REACT</highlight>&nbsp;no)&nbsp;(PUNC&nbsp;,)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(ADVP-MOD&nbsp;(ADV&nbsp;of_course))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NEG&nbsp;not))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.41">2.41</a>)</dt><dd>
+<tt>(FRAG&nbsp;(<mark>INTJ</mark>&nbsp;Well)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>REACT</highlight>&nbsp;no)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;of_course))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG&nbsp;not))</tt>
 </dd></dl>
 
-<dl><dt>(<a name="ex2.39">2.39</a>)</dt><dd>
-<tt>(FRAG&nbsp;(<mark>FRM</mark>&nbsp;Thank_you)&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;(NP-MNR&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP&nbsp;(ADV&nbsp;very))&nbsp;</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;much))))&nbsp;</tt><br>
+<dl><dt>(<a name="ex2.42">2.42</a>)</dt><dd>
+<tt>(FRAG&nbsp;(<mark>FRM</mark>&nbsp;Thank_you)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;NIM&nbsp;(ADJP&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;much))))</tt>
 </dd></dl>
 
 <br><h2><a name="sec2.12">2.12</a>&nbsp;&nbsp;&nbsp;&nbsp;Other tags</h2>
 
-<p align="justify">Tags for other possible elements of a parse are given in Table <a href="chapter2.html#table2.24">2.24</a>.</p>
+<p align="justify">Tags for other possible elements of a parse are given in Table <a href="chapter2.html#table2.23">2.23</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -1021,7 +1028,7 @@ highlight { background-color: palegreen; }
 <tr><td><tt>SYM</tt></td><td>Symbol</td></tr>
 </table>
 <br>
-<a name="table2.24"><b>Table 2.24</b>: Other tags</a>
+<a name="table2.23"><b>Table 2.23</b>: Other tags</a>
 </center>
 <br>
 
