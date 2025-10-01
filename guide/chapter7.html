@@ -531,20 +531,28 @@ highlight { background-color: palegreen; }
 
 <p align="justify">[Tf] is the code used to mark a monotransitive verb in clause structure with the monotransitive verb + a direct object that is a <i>that</i>-clause (<tt>CP-THT-OB1</tt>).</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The complementizer <i>that</i> can sometimes be omitted.</p>
-
-<dl><dt>(<a name="ex7.14">7.14</a>)</dt><dd>
+<dl><dt>(<a name="ex7.33">7.33</a>)</dt><dd>
 <tt>(ILYR&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VBD;&#8288;~Tf</mark>&nbsp;thought)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>CP-&#8288;THT-&#8288;OB1</highlight>&nbsp;(IP-&#8288;SUB&nbsp;(C&nbsp;that)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>VBD;&#8288;~Tf</highlight>&nbsp;thought)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CP-&#8288;THT-&#8288;OB1&nbsp;(IP-&#8288;SUB&nbsp;(<mark>C</mark>&nbsp;that)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~La&nbsp;was)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADJ&nbsp;clear)))))</tt>
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Tf] code can be made passive, with the direct object promoted to be the subject. It is common for the promoted subject to be realised as a notional subject in co-occurrence with a provisional subject, as in (<a href="chapter7.html#ex7.34">7.34</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A <tt>CP-THT</tt> with object function often has the complementizer (<tt>C</tt>) <i>that</i> omitted:</p>
 
 <dl><dt>(<a name="ex7.34">7.34</a>)</dt><dd>
+<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VBD</mark>&nbsp;thought)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>CP-&#8288;THT-&#8288;OB1</highlight>&nbsp;(IP-&#8288;SUB&nbsp;(NP-&#8288;SBJ&nbsp;(D;&#8288;_nphd_&nbsp;that))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED&nbsp;was)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;quite_{unclear}))))</tt>
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Some verbs used with the [Tf] code can be made passive, with the direct object promoted to be the subject. It is common for the promoted subject to be realised as a notional subject in co-occurrence with a provisional subject, as in (<a href="chapter7.html#ex7.35">7.35</a>).</p>
+
+<dl><dt>(<a name="ex7.35">7.35</a>)</dt><dd>
 <tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO;&#8288;_provisional_&nbsp;It))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(HVP;&#8288;~cat_Ve&nbsp;has)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL-&#8288;CAT&nbsp;(BEN;&#8288;~cat_Ve_passive_&nbsp;been)</tt><br>
@@ -560,16 +568,6 @@ highlight { background-color: palegreen; }
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(IP-&#8288;REL&nbsp;(NP-&#8288;OB1&nbsp;*T*)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;we))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP;&#8288;~Tn&nbsp;do)))))))))))</tt>
-</dd></dl>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A <tt>CP-THT</tt> with object function often has the complementizer (<tt>C</tt>) <i>that</i> omitted:</p>
-
-<dl><dt>(<a name="ex7.35">7.35</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VBD</mark>&nbsp;thought)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>CP-&#8288;THT-&#8288;OB1</highlight>&nbsp;(IP-&#8288;SUB&nbsp;(NP-&#8288;SBJ&nbsp;(D;&#8288;_nphd_&nbsp;that))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(META&nbsp;quite_{unclear}))))</tt>
 </dd></dl>
 
 <h3><a name="sec7.5.5">7.5.5</a>&nbsp;&nbsp;&nbsp;&nbsp;[Tw]</h3>
