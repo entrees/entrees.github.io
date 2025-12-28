@@ -1,5 +1,5 @@
 #headline1 {
-  background: #A7D8DE;
+  background: MediumPurple;
   padding-left: 20px;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -23,7 +23,7 @@ ul.navbar li.active {
   border-right: 1em solid black;
 }
 ul.navbar li {
-  background: #A7D8DE;
+  background: Thistle;
   margin: 0.2em 0;
   padding: 0.2em;
   border-right: 1em solid gray;
