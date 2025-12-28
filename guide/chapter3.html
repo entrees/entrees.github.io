@@ -26,13 +26,13 @@ highlight { background-color: palegreen; }
     <th>preposition</th>
   </tr>
   <tr>
-    <td rowspan="7">clause level</td>
+    <td rowspan="6">clause level</td>
     <td colspan="2">subject (<tt>-SBJ</tt>)</td>
     <td>&star;</td>
     <td></td>
     <td></td>
     <td></td>
-    <td rowspan="6">selected</td>
+    <td rowspan="5">selected</td>
   </tr>
   <tr>
     <td rowspan="2">object</td>
@@ -50,15 +50,7 @@ highlight { background-color: palegreen; }
     <td>&star;</td>
   </tr>
   <tr>
-    <td rowspan="2">predicative</td>
-    <td>subject (<tt>-PRD</tt>)</td>
-    <td>&star;</td>
-    <td>&star;</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>object (<tt>-PRD</tt>)</td>
+    <td colspan="2">predicative (<tt>-PRD</tt>)</td>
     <td>&star;</td>
     <td>&star;</td>
     <td></td>
@@ -66,14 +58,14 @@ highlight { background-color: palegreen; }
   </tr>
   <tr>
     <td rowspan="2">adverbial</td>
-    <td>closely related (<tt>-CLR</tt>)</td>
+    <td><tt>-CLR</tt></td>
     <td>&star;</td>
     <td></td>
     <td>&star;</td>
     <td>&star;</td>
   </tr>
   <tr>
-    <td>not important (<tt>-NIM</tt>)</td>
+    <td><tt>-NIM</tt></td>
     <td>&star;</td>
     <td></td>
     <td>&star;</td>
@@ -269,7 +261,7 @@ highlight { background-color: palegreen; }
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>CP-&#8288;THT</highlight>&nbsp;(IP-&#8288;SUB&nbsp;(C&nbsp;that)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(D;&#8288;_nphd_&nbsp;one))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;can)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB&nbsp;eliminate)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~&nbsp;eliminate)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(N&nbsp;fear))))))</tt>
 </dd></dl>
 
@@ -501,7 +493,7 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If there is a <tt>CONJ</tt> that starts the sequence of conjunctions, then this initial <tt>CONJ</tt> is placed at the <tt>NLYR</tt> layer that contains the conjuncts, as illustrated in (<a href="chapter3.html#ex3.32">3.32</a>).</p>
 
 <dl><dt>(<a name="ex3.32">3.32</a>)</dt><dd>
-<tt>(IP-&#8288;PPL-&#8288;CAT&nbsp;(VAG&nbsp;entrusting)</tt><br>
+<tt>(IP-&#8288;PPL-&#8288;CAT&nbsp;(VAG;&#8288;~Tn.pr&nbsp;entrusting)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(NLYR&nbsp;(<mark>NEG</mark>&nbsp;not)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ADVP-&#8288;NIM</highlight>&nbsp;(ADV&nbsp;only))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NP-&#8288;GEN&nbsp;(NP-&#8288;GEN&nbsp;(PRO;&#8288;_genm_&nbsp;his))</tt><br>
@@ -514,7 +506,7 @@ highlight { background-color: palegreen; }
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>ADVP-&#8288;NIM</highlight>&nbsp;(ADV&nbsp;as_well))))))</tt>
 </dd></dl>
 
-<p align="justify">Example (<a href="chapter3.html#ex3.32">3.32</a>) also shows how an <tt>ADVP-MOD</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-MOD</tt> or <tt>ADVP-CNT</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="chapter3.html#ex3.33">3.33</a>) and (<a href="chapter3.html#ex3.34">3.34</a>),</p>
+<p align="justify">Example (<a href="chapter3.html#ex3.32">3.32</a>) also shows how an <tt>ADVP-NIM</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-NIM</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="chapter3.html#ex3.33">3.33</a>) and (<a href="chapter3.html#ex3.34">3.34</a>),</p>
 
 <dl><dt>(<a name="ex3.33">3.33</a>)</dt><dd>
 <tt>(NLYR&nbsp;(NLYR&nbsp;(D&nbsp;The)</tt><br>
@@ -677,8 +669,8 @@ highlight { background-color: palegreen; }
 <dt>a.</dt><dd><tt>(NP-SBJ That way) is completely wrong .</tt> [subject]</dd>
 <dt>b.</dt><dd><tt>Someone will discover (NP-OB1 that way) .</tt> [direct object]</dd>
 <dt>c.</dt><dd><tt>They will keep it (NP-PRD that way) .</tt> [predicative]</dd>
-<dt>d.</dt><dd><tt>He hurried (NP-DIR that way) .</tt> [directional]</dd>
-<dt>e.</dt><dd><tt>Just hold it (NP-MNR that way) .</tt> [manner]</dd>
+<dt>d.</dt><dd><tt>He hurried (NP-NIM that way) .</tt> [directional adverbial]</dd>
+<dt>e.</dt><dd><tt>Just hold it (NP-NIM that way) .</tt> [manner adverbial]</dd>
 </dl>
 </dd></dl>
 
@@ -957,7 +949,7 @@ highlight { background-color: palegreen; }
 
 <dl><dt>(<a name="ex3.63">3.63</a>)</dt><dd>
 <tt>(ILYR&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD&nbsp;used)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~&nbsp;used)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(PRO&nbsp;it))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;NIM&nbsp;(ADVP&nbsp;(ADV&nbsp;about))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>AVLYR</mark>&nbsp;(<highlight>AVLYR</highlight>&nbsp;(ADV&nbsp;once))</tt><br>
@@ -980,13 +972,13 @@ highlight { background-color: palegreen; }
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP&nbsp;(ADJ&nbsp;long))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;time))))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL-&#8288;CAT&nbsp;(HVN&nbsp;had)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL-&#8288;CAT&nbsp;(HVN;&#8288;~&nbsp;had)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(ADJP&nbsp;(ADJ;&#8288;_such_&nbsp;such))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;problems)))))</tt>
 </dd></dl>
 
 <dl><dt>(<a name="ex3.65">3.65</a>)</dt><dd>
-<tt>(IP-&#8288;PPL-&#8288;CAT&nbsp;(VAG&nbsp;referring)</tt><br>
+<tt>(IP-&#8288;PPL-&#8288;CAT&nbsp;(VAG;&#8288;~&nbsp;referring)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(NEG&nbsp;not)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;only))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(P-&#8288;ROLE&nbsp;to)</tt><br>
@@ -1063,7 +1055,7 @@ highlight { background-color: palegreen; }
 
 <dl><dt>(<a name="ex3.74">3.74</a>)</dt><dd>
 <tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP&nbsp;takes)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~&nbsp;takes)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-&#8288;OB1</mark>&nbsp;(ADVP&nbsp;(ADVP&nbsp;(ADV&nbsp;so))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADV&nbsp;long))))</tt>
 </dd></dl>
@@ -1071,7 +1063,7 @@ highlight { background-color: palegreen; }
 <dl><dt>(<a name="ex3.75">3.75</a>)</dt><dd>
 <tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(D&nbsp;the)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;game))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP&nbsp;&lt;apos&gt;s)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~&nbsp;&lt;apos&gt;s)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ADVP-&#8288;CLR</mark>&nbsp;(RP&nbsp;over)))</tt>
 </dd></dl>
 
@@ -1133,7 +1125,7 @@ highlight { background-color: palegreen; }
 <tt>(IP-&#8288;INF&nbsp;(PUNC&nbsp;,)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>PP-&#8288;NIM</mark>&nbsp;(<highlight>PP-&#8288;NIM</highlight>&nbsp;(P-&#8288;ROLE&nbsp;in)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;cases)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL&nbsp;(VAG&nbsp;involving)</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL&nbsp;(VAG;&#8288;~&nbsp;involving)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(ADJP&nbsp;(ADJ&nbsp;imprisonable))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;offences)))))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
@@ -1153,9 +1145,9 @@ highlight { background-color: palegreen; }
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>PP-&#8288;NIM</mark>&nbsp;(CONJ&nbsp;either)</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-&#8288;NIM</highlight>&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;for_example))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(P-&#8288;ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL&nbsp;(VAG&nbsp;building)))</tt><br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL&nbsp;(VAG;&#8288;~&nbsp;building)))</tt><br>
 <tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;or)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-&#8288;NIM</highlight>&nbsp;(IP-&#8288;PPL&nbsp;(VAG&nbsp;farming))))))</tt>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-&#8288;NIM</highlight>&nbsp;(IP-&#8288;PPL&nbsp;(VAG;&#8288;~&nbsp;farming))))))</tt>
 </dd></dl>
 
 <dl><dt>(<a name="ex3.81">3.81</a>)</dt><dd>
