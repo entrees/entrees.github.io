@@ -23,68 +23,29 @@ highlight { background-color: palegreen; }
 <p align="justify">Section <a href="chapter1.html#sec1.1.1">1.1.1</a> identifies words through the conventions of the English writing system as character strings delimited by a space on each side, while noting exceptions. Word identification is not a complete word analysis: The same character string might be used as a word in different ways in different contexts. Tagging completes the word analysis. For example, <i>down</i> occurs as a noun (<tt>N</tt>) in (<a href="chapter2.html#ex2.1">2.1</a>), an adjective (<tt>ADJ</tt>) in (<a href="chapter2.html#ex2.2">2.2</a>), a verb (<tt>VB</tt>) in (<a href="chapter2.html#ex2.3">2.3</a>), an adverb particle (<tt>RP</tt>) in (<a href="chapter2.html#ex2.4">2.4</a>), and a preposition (<tt>P-ROLE</tt>) in (<a href="chapter2.html#ex2.5">2.5</a>).</p>
 
 <dl><dt>(<a name="ex2.1">2.1</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(D&nbsp;The)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;pillow))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~cat_Ve_passive_&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;PPL-&#8288;CAT&nbsp;(NP-&#8288;LGS&nbsp;*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VVN;&#8288;~Tn.pr&nbsp;filled)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(P-&#8288;ROLE&nbsp;with)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(ADJP&nbsp;(ADJ&nbsp;pure))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>N</mark>&nbsp;down))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+<img src="pillowdown.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.2">2.2</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;She))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~La&nbsp;was)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>ADJ</mark>&nbsp;down))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+<img src="wasverydown.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.3">2.3</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;He))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~cat_Vt&nbsp;started)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(TO&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>VB;&#8288;~Tn</mark>&nbsp;down)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;whisky)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+<img src="startedtodown.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.4">2.4</a>)</dt><dd>
-<tt>(IP-&#8288;IMP&nbsp;(VB;&#8288;~Tn.p&nbsp;Tear)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;CLR&nbsp;(<mark>RP</mark>&nbsp;down))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(D&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;wall))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;!))</tt>
+<img src="teardown.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.5">2.5</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;He))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Ipr&nbsp;looked)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(<mark>P-&#8288;ROLE</mark>&nbsp;down)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;mountain)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;.))</tt>
+<img src="lookdown.png">
 </dd></dl>
 
 <p align="justify">The examples of (<a href="chapter2.html#ex2.1">2.1</a>)&ndash;(<a href="chapter2.html#ex2.5">2.5</a>) show how there might be different tags for what are different instances in different contexts of the same character string. Tag differences due to context can happen even within the same sentence. For example, <i>that</i> in (<a href="chapter2.html#ex2.6">2.6</a>) occurs as a subordinating conjunction (<tt>P-CONN</tt>), determiner (<tt>D</tt>), noun (<tt>N</tt>) complementizer (<tt>C</tt>), and demonstrative pronoun (<tt>D;_nphd_</tt>).</p>
 
 <dl><dt>(<a name="ex2.6">2.6</a>)</dt><dd>
-<tt>(IP-&#8288;IMP&nbsp;(VB;&#8288;~Dn.*&nbsp;Tell)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB2&nbsp;(PRO&nbsp;me))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;SCON&nbsp;(<mark>P-&#8288;CONN</mark>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<highlight>D</highlight>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>N</highlight>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>C</highlight>&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;*T*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(<highlight>D;&#8288;_nphd_</highlight>&nbsp;that))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;started)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;might)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;end))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;!))</tt>
+<img src="IDtspc221xbuffalo10p14p16p19p24.png">
 </dd></dl>
 
 <br><h2><a name="sec2.2">2.2</a>&nbsp;&nbsp;&nbsp;&nbsp;Words that can head a noun phrase</h2>
@@ -185,28 +146,17 @@ highlight { background-color: palegreen; }
 <p align="justify">This marker is placed leftmost under an <tt>NP-GEN</tt> projection that comprises the genitive content. For example:</p>
 
 <dl><dt>(<a name="ex2.13">2.13</a>)</dt><dd>
-<tt>(NP-&#8288;SBJ&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(NPR&nbsp;Wendy)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;boyfriend))</tt>
+<img src="IDtspc100lucybncb335p2.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.14">2.14</a>)</dt><dd>
-<tt>(NP-&#8288;OB1&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(D&nbsp;a)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;couple)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NS&nbsp;hours)))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;work))</tt>
+<img src="IDtspc212christinet3713p2.png">
 </dd></dl>
 
 <p align="justify">Double marking of a genitive is possible when the content of the genitive has both a following genitive marker and a preceding <i>of</i> preposition, as in (<a href="chapter2.html#ex2.15">2.15</a>).</p>
 
 <dl><dt>(<a name="ex2.15">2.15</a>)</dt><dd>
-<tt>(NP-&#8288;NSBJ&nbsp;(D&nbsp;that)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;microphone)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>PP-&#8288;GEN</highlight>&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(NPR&nbsp;Scott)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>GENM</mark>&nbsp;&lt;apos&gt;s))))</tt>
+<img src="IDtspc249christinet2912p6.png">
 </dd></dl>
 
 <h3><a name="sec2.2.6">2.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;Reciprocal, reflexive, and personal pronouns</h3>
@@ -295,29 +245,19 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The reciprocal pronouns <i>each_other</i> and <i>one_another</i> are used to indicate a relationship between conjoined nouns, for example, the <i>love</i> relationship in (<a href="chapter2.html#ex2.16">2.16</a>).</p>
 
 <dl><dt>(<a name="ex2.16">2.16</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ;&#8288;{JOHN+MARY}</highlight>&nbsp;(NLYR&nbsp;(NLYR&nbsp;(NPR&nbsp;John))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(CONJP&nbsp;(CONJ&nbsp;and)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NLYR&nbsp;(NPR&nbsp;Mary)))))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tn&nbsp;love)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1;&#8288;{JOHN+MARY}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;each_other)))</tt>
+<img src="IDtspc133xbluebook16p2p15.png">
 </dd></dl>
 
 <p align="justify">Reflexive personal pronouns can indicate that the subject and object are the same entity, as in (<a href="chapter2.html#ex2.17">2.17</a>).</p>
 
 <dl><dt>(<a name="ex2.17">2.17</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ;&#8288;{GUN}</highlight>&nbsp;(PRO&nbsp;It))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tn&nbsp;fires)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1;&#8288;{GUN}</highlight>&nbsp;(<mark>PNX</mark>&nbsp;itself)))</tt>
+<img src="IDtspc328adick19528p7p2.png">
 </dd></dl>
 
 <p align="justify">Reflexive forms are also used for emphasis, as seen with (<a href="chapter2.html#ex2.18">2.18</a>), where <i>myself</i> is annotated as an adverbial noun phrase with reflexive function (<tt>NP-RFL</tt>).</p>
 
 <dl><dt>(<a name="ex2.18">2.18</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;made)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;all))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;RFL</highlight>&nbsp;(<mark>PNX</mark>&nbsp;myself)))</tt>
+<img src="IDtspc2lucychild09m7314p2p13.png">
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look across the columns of Table <a href="chapter2.html#table2.3">2.3</a> shows that the &lsquo;person&rsquo; category is useful when differentiating the various reflexive and personal pronouns. The first person refers to the speaker(s), the second person refers to the hearer(s), and the third person refers to other entities. Person is further distinguished into singular and plural reference. Further distinction is possible with third person singular pronouns (reflexive and personal), since they inflect for gender: This gives: masculine <i>he</i>/<i>him(self)</i>/<i>his</i>, feminine <i>she</i>/<i>her(self)</i>/<i>hers</i>, and neuter <i>it(self)</i>/<i>its</i>.</p>
@@ -325,14 +265,11 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;A look down the rows of Table <a href="chapter2.html#table2.3">2.3</a> shows that pronouns are marked for more grammatical cases than common nouns or proper nouns. In addition to genitive case, pronouns are marked for nominative case (marking the subject of the clause: <i><b><i>I</i></b> shrugged</i>), and accusative case (marking the object acted on by the verb: <i>James tickled <b><i>me</i></b></i>).</p>
 
 <dl><dt>(<a name="ex2.19">2.19</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(<mark>PRO</mark>&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~I&nbsp;shrugged))</tt>
+<img src="IDtspc50aloosechange3p2.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.20">2.20</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(NPR&nbsp;James))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;tickled)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>PRO</mark>&nbsp;me)))</tt>
+<img src="IDtspc91christinet038p7.png">
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Genitive pronouns can be either:</p>
@@ -342,8 +279,7 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.21">2.21</a>)</dt><dd>
-<tt>(NP&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(<mark>PRO;&#8288;_genm_</mark>&nbsp;our))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;friends))</tt>
+<img src="IDtspc10lucychild09m513p2.png">
 </dd></dl>
 
 <ul>
@@ -351,9 +287,7 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.22">2.22</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~Ln&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;PRD&nbsp;(<highlight>NP-&#8288;GEN</highlight>&nbsp;(<mark>PRO;&#8288;_ppge_</mark>&nbsp;theirs))))</tt>
+<img src="IDtspc468christinet139p8.png">
 </dd></dl>
 
 <p align="justify">As shown by examples (<a href="chapter2.html#ex2.21">2.21</a>) and (<a href="chapter2.html#ex2.22">2.22</a>), with parsing, a genitive pronoun (dependent (<tt>PRO;_genm_</tt>) or independent (<tt>PRO;_ppge_</tt>)) is the only element of an <tt>NP-GEN</tt> layer. Furthermore, for <tt>PRO;_ppge_</tt>, the <tt>NP-GEN</tt> layer is the only element of the containing noun phrase.</p>
@@ -367,17 +301,11 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.23">2.23</a>)</dt><dd>
-<tt>(CP-&#8288;QUE-&#8288;MAT&nbsp;(IP-&#8288;SUB&nbsp;(<highlight>NP-&#8288;SBJ</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;Who))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~I&nbsp;came))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;?))</tt>
+<img src="IDtspc712xtextbookkisonihongo4p3.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.24">2.24</a>)</dt><dd>
-<tt>(CP-&#8288;QUE-&#8288;MAT&nbsp;(IP-&#8288;SUB&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>WPRO</mark>&nbsp;What))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOD&nbsp;did)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;it))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Tn&nbsp;mean))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;?))</tt>
+<img src="IDtspc131susannen144p3.png">
 </dd></dl>
 
 <ul>
@@ -385,20 +313,11 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.25">2.25</a>)</dt><dd>
-<tt>(NP&nbsp;(D;&#8288;_nphd_&nbsp;anything)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>C</highlight>&nbsp;<mark>that</mark>)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;*T*)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BEP;&#8288;~La&nbsp;&lt;apos&gt;s)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJP-&#8288;PRD&nbsp;(ADJ&nbsp;relevant))))</tt>
+<img src="IDtspc88christinet296p5.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.26">2.26</a>)</dt><dd>
-<tt>(NP-&#8288;ESBJ&nbsp;(D&nbsp;an)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;iron)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;hook)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;REL&nbsp;(<highlight>NP-&#8288;OB1</highlight>&nbsp;(<mark>RPRO</mark>&nbsp;which))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;he))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBD;&#8288;~Tn&nbsp;unfastened)))</tt>
+<img src="IDtspc38susannen1210p9.png">
 </dd></dl>
 
 <ul>
@@ -406,26 +325,19 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.27">2.27</a>)</dt><dd>
-<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;everyone))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~I&nbsp;knows)))</tt>
+<img src="IDtspc80susanneg176.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.28">2.28</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;nobody))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~Tf&nbsp;knows))</tt>
+<img src="IDtspc51atedtalk113.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.29">2.29</a>)</dt><dd>
-<tt>(NP-&#8288;OB1&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;all)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
+<img src="IDtspc90aibm14012.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.30">2.30</a>)</dt><dd>
-<tt>(NP-&#8288;SBJ&nbsp;(<mark>Q;&#8288;_nphd_</mark>&nbsp;none)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
+<img src="IDtspc499christinet032.png">
 </dd></dl>
 
 <ul>
@@ -433,29 +345,19 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.31">2.31</a>)</dt><dd>
-<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;in_case)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;somebody))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VBP;&#8288;~I&nbsp;comes)))</tt>
+<img src="IDtspc57christinet286.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.32">2.32</a>)</dt><dd>
-<tt>(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;some)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP&nbsp;(P-&#8288;ROLE&nbsp;of)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(PRO&nbsp;them))))</tt>
+<img src="IDtspc26susannea122.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.33">2.33</a>)</dt><dd>
-<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;one))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;would)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;expect))))</tt>
+<img src="IDtspc27susanneg126.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.34">2.34</a>)</dt><dd>
-<tt>(PP-&#8288;SCON&nbsp;(P-&#8288;CONN&nbsp;as)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;ADV&nbsp;(NP-&#8288;SBJ&nbsp;(<mark>PRO</mark>&nbsp;you))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;can)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(VB;&#8288;~I&nbsp;see))))</tt>
+<img src="IDtspc216atedtalk116.png">
 </dd></dl>
 
 <ul>
@@ -463,23 +365,15 @@ highlight { background-color: palegreen; }
 </ul>
 
 <dl><dt>(<a name="ex2.35">2.35</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(DOP&nbsp;do)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG;&#8288;_clitic_&nbsp;n&lt;apos&gt;t)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Tn&nbsp;want)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;OB1&nbsp;(<mark>D;&#8288;_nphd_</mark>&nbsp;that)))</tt>
+<img src="IDtspc558christinet3512.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.36">2.36</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(NP-&#8288;SBJ&nbsp;(PRO&nbsp;I))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(MD;&#8288;~cat_Vi&nbsp;&lt;apos&gt;ll)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(HV;&#8288;~Tn&nbsp;have)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>NP-&#8288;OB1</mark>&nbsp;(D;&#8288;_nphd_&nbsp;these))))</tt>
+<img src="IDtspc172christinet1610.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.37">2.37</a>)</dt><dd>
-<tt>(NP-&#8288;OB1&nbsp;(<mark>D</mark>&nbsp;this)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;point))</tt>
+<img src="IDtspc5lucystudente162.png">
 </dd></dl>
 
 <center>
@@ -927,25 +821,13 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;We can see some of these clause level components in the annotation of (<a href="chapter2.html#ex2.39">2.39</a>). This begins with <i>there</i> (<tt>EX</tt>) to create an existential construction, and includes the negative clitic particle <i>n't</i> (<tt>NEG;_clitic_</tt>). The <tt>IP-INF-CAT</tt> as selected complement of the existential verb (<tt>BED;~ex_cat_Vt</tt>; see section <a href="chapter8.html#sec8.2.5">8.2.5</a>) includes infinitive marker <i>to</i> (<tt>TO</tt>).</p>
 
 <dl><dt>(<a name="ex2.39">2.39</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(<mark>EX</mark>&nbsp;There)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(BED;&#8288;~ex_cat_Vt&nbsp;were)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>NEG;&#8288;_clitic_</highlight>&nbsp;n&lt;apos&gt;t)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;ESBJ&nbsp;(D&nbsp;any)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NS&nbsp;incidents))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(IP-&#8288;INF-&#8288;CAT&nbsp;(<highlight>TO</highlight>&nbsp;to)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VB;&#8288;~Ipr&nbsp;get)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PP-&#8288;CLR&nbsp;(P-&#8288;ROLE&nbsp;in)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP&nbsp;(D&nbsp;the)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;way)))))</tt>
+<img src="IDtspc143lucybncc082p6p14.png">
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a word tagged <tt>RP</tt> to occur as a clause level component. The <tt>RP</tt> tag is used to mark adverbial particles (e.g., <i>up</i>, <i>off</i>, <i>out</i>) and was seen in section <a href="chapter2.html#sec2.4">2.4</a> as the tag for a word that can head an adverb phrase. When an <tt>RP</tt> tagged word occurs as a clause level component it is part of a phrasal verb, as in (<a href="chapter2.html#ex2.40">2.40</a>).</p>
 
 <dl><dt>(<a name="ex2.40">2.40</a>)</dt><dd>
-<tt>(IP-&#8288;MAT&nbsp;(VBP;&#8288;~phr_Vp&nbsp;hold)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<mark>RP</mark>&nbsp;on)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;NIM&nbsp;(D&nbsp;a)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(N&nbsp;second)))</tt>
+<img src="IDtspc33christinet284.png">
 </dd></dl>
 
 <br><h2><a name="sec2.9">2.9</a>&nbsp;&nbsp;&nbsp;&nbsp;Connective words</h2>
@@ -1002,18 +884,11 @@ highlight { background-color: palegreen; }
 <br>
 
 <dl><dt>(<a name="ex2.41">2.41</a>)</dt><dd>
-<tt>(FRAG&nbsp;(<mark>INTJ</mark>&nbsp;Well)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(<highlight>REACT</highlight>&nbsp;no)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(PUNC&nbsp;,)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADVP-&#8288;NIM&nbsp;(ADV&nbsp;of_course))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NEG&nbsp;not))</tt>
+<img src="IDtspc19lucybncb192p6.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex2.42">2.42</a>)</dt><dd>
-<tt>(FRAG&nbsp;(<mark>FRM</mark>&nbsp;Thank_you)</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(NP-&#8288;NIM&nbsp;(ADJP&nbsp;(ADVP&nbsp;(ADV&nbsp;very))</tt><br>
-<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ADJ&nbsp;much))))</tt>
+<img src="IDtspc43atedtalk112.png">
 </dd></dl>
 
 <br><h2><a name="sec2.12">2.12</a>&nbsp;&nbsp;&nbsp;&nbsp;Other tags</h2>
