@@ -27,11 +27,11 @@ highlight { background-color: palegreen; }
 <li><tt>PP-SCON</tt> (section <a href="chapter5.html#sec5.6">5.6</a>)</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>CP-QUE</tt> (seen in section <a href="chapter4.html#sec4.2.2">4.2.2</a>), the other tags are used to label clauses that are incapable of standing alone as the main clause of a sentence. When a subordinate clause is all the content of an utterance, then it is the only element of a <tt>FRAG</tt> layer.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;With the exception of <tt>CP-QUE</tt> (seen in section <a href="chapter4.html#sec4.2.2">4.2.2</a> with the <tt>-MAT</tt> label extension), the other tags are used to label clauses that are incapable of standing alone as the main clause of a sentence. When a subordinate clause is all the content of an utterance, then it is the only element of a <tt>FRAG</tt> layer.</p>
 
 <br><h2><a name="sec5.2">5.2</a>&nbsp;&nbsp;&nbsp;&nbsp;IP-INF (infinitive clause)</h2>
 
-<p align="justify">Infinitive clauses are clauses that contain a verb in the infinitive form without a finite element like an operator <small style="font-size: 75%">DO</small> or modal verb at the same clause layer (as seen with matrix clauses in section <a href="chapter4.html#sec4.2.1">4.2.1</a>). Infinitive clauses have a maximal constituent with the tag of Table <a href="chapter5.html#table5.1">5.1</a>.</p>
+<p align="justify">Infinitive clauses are clauses that contain a verb in the infinitive form without a finite <small style="font-size: 75%">DO</small> at the same clause layer (as seen with matrix clauses in section <a href="chapter4.html#sec4.2.1">4.2.1</a>). Infinitive clauses have a maximal constituent with the tag of Table <a href="chapter5.html#table5.1">5.1</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -49,11 +49,10 @@ highlight { background-color: palegreen; }
 <li>those that lack the infinitive marker <i>to</i>, called <b>bare</b> infinitive clauses</li>
 </ul>
 
-<p align="justify">When occurring directly within a clause, the syntactic tag <tt>IP-INF</tt> needs a function extension. Possibilities are listed in Table <a href="chapter5.html#table5.2">5.2</a>.</p>
+<p align="justify">When occurring directly within a clause, the syntactic tag <tt>IP-INF</tt> marking an embedded clause needs a function extension. Possibilities are listed in Table <a href="chapter5.html#table5.2">5.2</a>.</p>
 
 <center>
 <table border="1" cellpadding="10px">
-<tr><td><tt>IP-INF-CAT</tt></td><td>catenative complement</td></tr>
 <tr><td><tt>IP-INF-</tt>(<tt>N</tt>)<tt>SBJ</tt></td><td>(notional) subject</td></tr>
 <tr><td><tt>IP-INF-</tt>(<tt>N</tt>)<tt>OB1</tt></td><td>(notional) direct object</td></tr>
 <tr><td><tt>IP-INF-PRD</tt></td><td>predicative</td></tr>
@@ -69,32 +68,28 @@ highlight { background-color: palegreen; }
 <img src="IDtspc134susannen092.png">
 </dd></dl>
 
-<p align="justify">It is typical for an infinitive clause with subject function to occur as an extraposed notional subject (<tt>-NSBJ</tt>). A notional subject occurs in combination with: (i) a provisional subject noun phrase comprised of <i>it</i>, tagged <tt>PRO;_provisional_</tt>, as in (<a href="chapter5.html#ex5.2">5.2</a>); or (ii) a derived subject marked <tt>-SBJ</tt> and so not distinguished independently of the construction, as in (<a href="chapter5.html#ex5.3">5.3</a>).</p>
+<p align="justify">It is typical for an infinitive clause with subject function to occur as an extraposed notional subject (<tt>-NSBJ</tt>). A notional subject co-occurs in a clause with a noun phrase marked <tt>-SBJ</tt> that typical consists of a provisional subject <i>it</i> tagged <tt>PRO;_provisional_</tt>, as in (<a href="chapter5.html#ex5.2">5.2</a>), but can also be a contentful subject noun phrase, as in (<a href="chapter5.html#ex5.3">5.3</a>).</p>
 
 <dl><dt>(<a name="ex5.2">5.2</a>)</dt><dd>
 <img src="IDtspc431christinet4013p2.png">
 </dd></dl>
 
 <dl><dt>(<a name="ex5.3">5.3</a>)</dt><dd>
-<img src="IDtspc13lucystudente1213p2.png">
+<img src="IDtspc75lucybncb0113p2.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, infinitive clauses with the infinitive marker <i>to</i> can have:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, embedded infinitive clauses with the infinitive marker <i>to</i> can have:</p>
 
 <ul>
-<li><b>catenative complement</b> function (<tt>IP-INF-CAT</tt>); see codes [cat_Vt] (section <a href="chapter6.html#sec6.2">6.2</a>), [cat_Vp.t] (section <a href="chapter6.html#sec6.3">6.3</a>), and [ex_cat_Vt] (section <a href="chapter8.html#sec8.2.5">8.2.5</a>)</li>
-<li><b>direct object</b> function (<tt>IP-INF-OB1</tt>); see codes [Tt] (section <a href="chapter7.html#sec7.5.6">7.5.6</a>), [Tnt] (section <a href="chapter7.html#sec7.5.7">7.5.7</a>), and [Dn.t] (section <a href="chapter7.html#sec7.7.7">7.7.7</a>)</li>
-<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see code [Cn.t] (section <a href="chapter7.html#sec7.6.5">7.6.5</a>)</li>
-<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see code [equ_Vt] (section <a href="chapter8.html#sec8.3.1">8.3.1</a>)</li>
+<li><b>direct object</b> function (<tt>IP-INF-OB1</tt>); see codes [Tt] (section <a href="chapter7.html#sec7.5.6">7.5.6</a>), [Tnt] (section <a href="chapter7.html#sec7.5.7">7.5.7</a>) and [Dn.t] (section <a href="chapter7.html#sec7.7.7">7.7.7</a>)</li>
+<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see codes [Cn.t] (section <a href="chapter7.html#sec7.6.5">7.6.5</a>) and [equ_Vt] (section <a href="chapter8.html#sec8.3.1">8.3.1</a>)</li>
 </ul>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Bare infinitive clauses can have:</p>
 
 <ul>
-<li><b>catenative complement</b> function (<tt>IP-INF-CAT</tt>); see code [cat_Vi] (section <a href="chapter6.html#sec6.4">6.4</a>)</li>
 <li><b>direct object</b> function (<tt>IP-INF-OB1</tt>); see code [Tni] (section <a href="chapter7.html#sec7.5.11">7.5.11</a>)</li>
-<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see code [Cn.i] (section <a href="chapter7.html#sec7.6.7">7.6.7</a>)</li>
-<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see code [equ_Vi] (section <a href="chapter8.html#sec8.3.2">8.3.2</a>)</li>
+<li><b>predicative</b> function (<tt>IP-INF-PRD</tt>); see codes [Cn.i] (section <a href="chapter7.html#sec7.6.7">7.6.7</a>) and [equ_Vi] (section <a href="chapter8.html#sec8.3.2">8.3.2</a>)</li>
 </ul>
 
 <br><h2><a name="sec5.3">5.3</a>&nbsp;&nbsp;&nbsp;&nbsp;IP-PPL (participial clause)</h2>
@@ -121,7 +116,6 @@ highlight { background-color: palegreen; }
 
 <center>
 <table border="1" cellpadding="10px">
-<tr><td><tt>IP-PPL-CAT</tt></td><td>catenative complement</td></tr>
 <tr><td><tt>IP-PPL-</tt>(<tt>N</tt>)<tt>SBJ</tt></td><td>clause (notional) subject</td></tr>
 <tr><td><tt>IP-PPL-OB1</tt></td><td>direct object</td></tr>
 <tr><td><tt>IP-PPL-PRD</tt></td><td>predicative</td></tr>
@@ -143,19 +137,16 @@ highlight { background-color: palegreen; }
 <img src="IDtspc17susannen1219p2.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, participial clauses with a present participial (&lcub;ing&rcub;) verb can have:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, embedded participial clauses with a present participial (&lcub;ing&rcub;) verb can have:</p>
 
 <ul>
-<li><b>catenative complement</b> function (<tt>IP-PPL-CAT</tt>); see codes [cat_Vg] (section <a href="chapter6.html#sec6.7">6.7</a>), [cat_Vp.g] (section <a href="chapter6.html#sec6.8">6.8</a>), and [ex_cat_Vg] (section <a href="chapter8.html#sec8.2.7">8.2.7</a>)</li>
-<li><b>direct object</b> function (<tt>IP-PPL-OB1</tt>); see codes [Tg] (section <a href="chapter7.html#sec7.5.8">7.5.8</a>), [Tsg] (section <a href="chapter7.html#sec7.5.9">7.5.9</a>), and [Tng] (section <a href="chapter7.html#sec7.5.10">7.5.10</a>)</li>
-<li><b>predicative</b> function (<tt>IP-PPL-PRD</tt>); see code [Cn.g] (section <a href="chapter7.html#sec7.6.6">7.6.6</a>)</li>
-<li><b>predicative</b> function (<tt>IP-PPL-PRD</tt>); see code [equ_Vg] (section <a href="chapter8.html#sec8.3.3">8.3.3</a>)</li>
+<li><b>direct object</b> function (<tt>IP-PPL-OB1</tt>); see codes [Tg] (section <a href="chapter7.html#sec7.5.8">7.5.8</a>), [Tsg] (section <a href="chapter7.html#sec7.5.9">7.5.9</a>) and [Tng] (section <a href="chapter7.html#sec7.5.10">7.5.10</a>)</li>
+<li><b>predicative</b> function (<tt>IP-PPL-PRD</tt>); see codes [Cn.g] (section <a href="chapter7.html#sec7.6.6">7.6.6</a>) and [equ_Vg] (section <a href="chapter8.html#sec8.3.3">8.3.3</a>)</li>
 </ul>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Participial clauses with a &lcub;ed&rcub;&sol;&lcub;en&rcub; verb form can have:</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Embedded participial clauses with a &lcub;ed&rcub;&sol;&lcub;en&rcub; verb form can have:</p>
 
 <ul>
-<li><b>catenative complement</b> function (<tt>IP-PPL-CAT</tt>); see codes [cat_Ve] (section <a href="chapter6.html#sec6.6">6.6</a>) and [ex_cat_Ve] (section <a href="chapter8.html#sec8.2.6">8.2.6</a>)</li>
 <li><b>predicative</b> function (<tt>IP-PPL-PRD</tt>); see codes [VP24A, VP24B, VP24C] (section <a href="chapter6.html#sec6.11">6.11</a>)</li>
 </ul>
 
@@ -200,7 +191,7 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, <i>that</i>-clauses can have:</p>
 
 <ul>
-<li><b>direct object</b> function (<tt>CP-THT-OB1</tt>); see codes [Tf] (section <a href="chapter7.html#sec7.5.4">7.5.4</a>), [Dn.f] (section <a href="chapter7.html#sec7.7.3">7.7.3</a>), and [Dpr.f] (section <a href="chapter7.html#sec7.7.4">7.7.4</a>)</li>
+<li><b>direct object</b> function (<tt>CP-THT-OB1</tt>); see codes [Tf] (section <a href="chapter7.html#sec7.5.4">7.5.4</a>), [Dn.f] (section <a href="chapter7.html#sec7.7.3">7.7.3</a>) and [Dpr.f] (section <a href="chapter7.html#sec7.7.4">7.7.4</a>)</li>
 <li><b>predicative</b> function (<tt>CP-THT-PRD</tt>); see code [equ_Vf] (section <a href="chapter8.html#sec8.3.4">8.3.4</a>)</li>
 </ul>
 
@@ -242,7 +233,7 @@ highlight { background-color: palegreen; }
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to subject function, embedded question clauses can have:</p>
 
 <ul>
-<li><b>direct object</b> function (<tt>CP-QUE-OB1</tt>); see codes [Tw] (section <a href="chapter7.html#sec7.5.5">7.5.5</a>), [Dn.w] (section <a href="chapter7.html#sec7.7.5">7.7.5</a>), and [Dpr.w] (section <a href="chapter7.html#sec7.7.6">7.7.6</a>)</li>
+<li><b>direct object</b> function (<tt>CP-QUE-OB1</tt>); see codes [Tw] (section <a href="chapter7.html#sec7.5.5">7.5.5</a>), [Dn.w] (section <a href="chapter7.html#sec7.7.5">7.7.5</a>) and [Dpr.w] (section <a href="chapter7.html#sec7.7.6">7.7.6</a>)</li>
 <li><b>predicative</b> function (<tt>CP-QUE-PRD</tt>); see code [equ_Vw] (section <a href="chapter8.html#sec8.3.5">8.3.5</a>)</li>
 </ul>
 
