@@ -316,7 +316,7 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec3.2.4">3.2.4</a>&nbsp;&nbsp;&nbsp;&nbsp;NP conjunction</h3>
 
-<p align="justify">When the content of a noun phrase involves conjunction, all conjuncts, except the first, receive a <tt>CONJP</tt> projection. These <tt>CONJP</tt> projections are adjoined to the first conjunct under an <tt>NLYR</tt> layer.</p>
+<p align="justify">When the content of a noun phrase involves conjunction, all conjuncts are <tt>NLYR</tt> layers. Moreover, all conjuncts, except the first, occur directly under a <tt>CONJP</tt> projection. These <tt>CONJP</tt> projections are sisters to the first conjunct, all of which is placed under an <tt>NLYR</tt> layer.</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -327,106 +327,61 @@ highlight { background-color: palegreen; }
 </center>
 <br>
 
-<p align="justify"><tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as illustrated in (<a href="chapter3.html#ex3.31">3.31</a>).</p>
+<p align="justify">Example (<a href="chapter3.html#ex3.31">3.31</a>) shows how there are <tt>CONJP</tt> layers for conjuncts subsequent to the first irrespective of the presence of an overt <tt>CONJ</tt> head, and how conjuncts can themselves contain conjuncts to give instances of layered conjunction.</p>
 
 <dl><dt>(<a name="ex3.31">3.31</a>)</dt><dd>
-<img src="IDtspc8lucychild09m5912p19p27p37.png">
+<img src="IDtspc100alawh15a11923p34.png">
 </dd></dl>
-
-<p align="justify">Example (<a href="chapter3.html#ex3.31">3.31</a>) also shows how conjuncts can themselves contain conjuncts to give instances of layered conjunction. Layered conjunction is easiest to identify when different coordinators are used at each level, as with <i>and</i> and <i>or</i> in (<a href="chapter3.html#ex3.31">3.31</a>). Placement choices with layered conjunction will have consequences for the meaning captured by the annotation when different coordinators are involved.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;If there is a <tt>CONJ</tt> that starts the sequence of conjunctions, then this initial <tt>CONJ</tt> is placed at the <tt>NLYR</tt> layer that contains the conjuncts, as illustrated in (<a href="chapter3.html#ex3.32">3.32</a>).</p>
 
 <dl><dt>(<a name="ex3.32">3.32</a>)</dt><dd>
-<img src="IDtspc3alobn016p8p24p32.png">
+<img src="IDtspc24lucybncb294p10p2p3.png">
 </dd></dl>
 
-<p align="justify">Example (<a href="chapter3.html#ex3.32">3.32</a>) also shows how an <tt>ADVP-NIM</tt> element can occur at the end of a conjunction sequence, in which case it occurs at the level of the prior conjuncts. An <tt>ADVP-NIM</tt> can also occur before a conjunct, in which case it occurs at the <tt>CONJP</tt> layer of the conjunct it precedes, as illustrated in (<a href="chapter3.html#ex3.33">3.33</a>) and (<a href="chapter3.html#ex3.34">3.34</a>),</p>
+<p align="justify">Example (<a href="chapter3.html#ex3.32">3.32</a>) also shows how the modifier of a head noun can involve noun phrase coordination internally. Note how there is an <tt>NLYR</tt> layer to introduce the modifier that immediately contains as its only daughter the <tt>NLYR</tt> layer that contains the conjuncts.</p>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;It is also possible for a complex head involving coordination to itself be modified, as (<a href="chapter3.html#ex3.33">3.33</a>) demonstrates.</p>
 
 <dl><dt>(<a name="ex3.33">3.33</a>)</dt><dd>
-<img src="IDtspc34susannej128p12p17.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.34">3.34</a>)</dt><dd>
-<img src="IDtspc6lucystudente9328.png">
-</dd></dl>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In the cases of <tt>NLYR</tt> with coordination seen so far the <tt>NLYR</tt> itself forms the head of the overall noun phrase that contains it, with nothing else outside this complex head. It is also possible for a complex head involving coordination to itself be modified, as (<a href="chapter3.html#ex3.35">3.35</a>) demonstrates.</p>
-
-<dl><dt>(<a name="ex3.35">3.35</a>)</dt><dd>
-<img src="IDtspc1lucystudente137p2p4.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.36">3.36</a>)</dt><dd>
 <img src="IDtspc48ahedgehog10p2p7.png">
-</dd></dl>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The modifier of a head noun can itself involve noun phrase coordination internally, as (<a href="chapter3.html#ex3.37">3.37</a>) and (<a href="chapter3.html#ex3.39">3.39</a>) illustrate. In such cases there is an <tt>NLYR</tt> layer to introduce the modifier that immediately contains as its only daughter the <tt>NLYR</tt> layer that contains the conjuncts.</p>
-
-<dl><dt>(<a name="ex3.37">3.37</a>)</dt><dd>
-<img src="IDtspc23afreedoom5p4p6p12.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.38">3.38</a>)</dt><dd>
-<img src="IDtspc365christinet089p8p10p16.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.39">3.39</a>)</dt><dd>
-<img src="IDtspc4susannej173p2p4p17.png">
-</dd></dl>
-
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note how the conjuncts of the internal noun phrase coordination that is a head noun modifier in (<a href="chapter3.html#ex3.39">3.39</a>) actually contain respectively: only (i) an adjective phrase, and (ii) a participial clause. The level of noun phrase for these conjuncts is motivated by the need for all conjuncts of a conjunction to be phrases of the same type.</p>
-
-<dl><dt>(<a name="ex3.40">3.40</a>)</dt><dd>
-<img src="IDtspc24lucybncb296p7p10.png">
 </dd></dl>
 
 <h3><a name="sec3.2.5">3.2.5</a>&nbsp;&nbsp;&nbsp;&nbsp;PRN inside noun phrases</h3>
 
-<dl><dt>(<a name="ex3.41">3.41</a>)</dt><dd>
+<dl><dt>(<a name="ex3.34">3.34</a>)</dt><dd>
 <img src="IDtspc82lucybncb079.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.42">3.42</a>)</dt><dd>
+<dl><dt>(<a name="ex3.35">3.35</a>)</dt><dd>
 <img src="IDtspc71lucybncb2627.png">
 </dd></dl>
 
 <h3><a name="sec3.2.6">3.2.6</a>&nbsp;&nbsp;&nbsp;&nbsp;NP functions</h3>
 
-<p align="justify">The notion of function helps to establish how a given noun phrase acts as a single unit (constituent) regardless of its size. For example, as a noun phrase whose head word has multiple modifiers, (<a href="chapter3.html#ex3.2">3.2</a>) above occurs as a subject (<tt>NP-SBJ</tt>) in (<a href="chapter3.html#ex3.43">3.43</a>a) and as an object (<tt>NP-OB1</tt>) in (<a href="chapter3.html#ex3.44">3.44</a>a) in the same way as noun phrases with fewer elements are also able to occur with these functions, e.g, a noun phrase consisting of a head noun with definite article in (<a href="chapter3.html#ex3.43">3.43</a>b) and (<a href="chapter3.html#ex3.44">3.44</a>b), or a pronoun as the single phrase element in (<a href="chapter3.html#ex3.43">3.43</a>c) and (<a href="chapter3.html#ex3.44">3.44</a>c).</p>
+<p align="justify">The notion of function helps to establish how a given noun phrase acts as a single unit (constituent). The examples of (<a href="chapter3.html#ex3.36">3.36</a>)&ndash;(<a href="chapter3.html#ex3.40">3.40</a>) show that the same noun phrase (<i>that way</i>) is able to take on various different functions depending on its contribution to the containing clause.</p>
 
-<dl><dt>(<a name="ex3.43">3.43</a>)</dt><dd>
-
-<dl>
-<dt>a.</dt><dd><tt>(NP-SBJ The healthy vegetable pizza that I made) was delicious .</tt></dd>
-<dt>b.</dt><dd><tt>(NP-SBJ The pizza) was delicious .</tt></dd>
-<dt>c.</dt><dd><tt>(NP-SBJ It) was delicious .</tt></dd>
-</dl>
+<dl><dt>(<a name="ex3.36">3.36</a>)</dt><dd>
+<img src="waywrong.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.44">3.44</a>)</dt><dd>
-
-<dl>
-<dt>a.</dt><dd><tt>They loved (NP-OB1 the healthy vegetable pizza that I made) .</tt></dd>
-<dt>b.</dt><dd><tt>They loved (NP-OB1 the pizza) .</tt></dd>
-<dt>c.</dt><dd><tt>They loved (NP-OB1 it) .</tt></dd>
-</dl>
+<dl><dt>(<a name="ex3.37">3.37</a>)</dt><dd>
+<img src="discoverway.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The examples of (<a href="chapter3.html#ex3.45">3.45</a>) show that the same noun phrase (<i>that way</i>) is able to take on various different functions depending on its contribution to the containing clause.</p>
-
-<dl><dt>(<a name="ex3.45">3.45</a>)</dt><dd>
-
-<dl>
-<dt>a.</dt><dd><tt>(NP-SBJ That way) is completely wrong .</tt> [subject]</dd>
-<dt>b.</dt><dd><tt>Someone will discover (NP-OB1 that way) .</tt> [direct object]</dd>
-<dt>c.</dt><dd><tt>They will keep it (NP-PRD that way) .</tt> [predicative]</dd>
-<dt>d.</dt><dd><tt>He hurried (NP-NIM that way) .</tt> [directional adverbial]</dd>
-<dt>e.</dt><dd><tt>Just hold it (NP-NIM that way) .</tt> [manner adverbial]</dd>
-</dl>
+<dl><dt>(<a name="ex3.38">3.38</a>)</dt><dd>
+<img src="keepway.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> and <tt>-COM</tt> can be used with <tt>NP</tt>. An <tt>NP</tt> can also take an adverbial function from occurring as complement of a preposition (such as <i>of</i>, <i>to</i>, <i>with</i>, <i>at</i>, <i>by</i>, etc.) (see section <a href="chapter3.html#sec3.5.4">3.5.4</a>).</p>
+<dl><dt>(<a name="ex3.39">3.39</a>)</dt><dd>
+<img src="walkedway.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.40">3.40</a>)</dt><dd>
+<img src="holdway.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In (3.39), <i>that way</i> has a selected adverbial function, and, in (3.40), <i>that way</i> has an unselected adverbial function. A noun phrase can also take an adverbial function from occurring as complement of a preposition (such as <i>of</i>, <i>to</i>, <i>with</i>, <i>at</i>, <i>by</i>, etc.) (see section <a href="chapter3.html#sec3.5.4">3.5.4</a>).</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might also occur in the genitive construction, seen in section <a href="chapter2.html#sec2.3.5">2.3.5</a>, with the tag of Table <a href="chapter3.html#table3.5">3.5</a>.</p>
 
@@ -439,7 +394,7 @@ highlight { background-color: palegreen; }
 </center>
 <br>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might be a vocative with the tag of Table <a href="chapter3.html#table3.6">3.6</a>, as in (<a href="chapter3.html#ex3.46">3.46</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;An <tt>NP</tt> might be a vocative with the tag of Table <a href="chapter3.html#table3.6">3.6</a>, as in (<a href="chapter3.html#ex3.41">3.41</a>).</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -450,19 +405,19 @@ highlight { background-color: palegreen; }
 </center>
 <br>
 
-<p align="justify">A vocative noun phrase is a noun phrase which directly addresses someone, e.g., <i>Summers</i> in (<a href="chapter3.html#ex3.46">3.46</a>) and <i>Rebecca</i> in (<a href="chapter3.html#ex3.47">3.47</a>).</p>
+<p align="justify">A vocative noun phrase is a noun phrase which directly addresses someone, e.g., <i>Summers</i> in (<a href="chapter3.html#ex3.41">3.41</a>) and <i>Rebecca</i> in (<a href="chapter3.html#ex3.42">3.42</a>).</p>
 
-<dl><dt>(<a name="ex3.46">3.46</a>)</dt><dd>
+<dl><dt>(<a name="ex3.41">3.41</a>)</dt><dd>
 <img src="IDtspc12susannen129.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.47">3.47</a>)</dt><dd>
+<dl><dt>(<a name="ex3.42">3.42</a>)</dt><dd>
 <img src="IDtspc419christinet065p10.png">
 </dd></dl>
 
 <p align="justify">See section <a href="chapter4.html#sec4.2.3">4.2.3</a> for discussion on <tt>NP-VOC</tt> in imperative sentences.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Finally, an <tt>NP</tt> might be a reflexive with the tag of Table <a href="chapter3.html#table3.7">3.7</a>, as in (<a href="chapter3.html#ex3.48">3.48</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Finally, an <tt>NP</tt> might be a reflexive with the tag of Table <a href="chapter3.html#table3.7">3.7</a>, as in (<a href="chapter3.html#ex3.43">3.43</a>).</p>
 
 <center>
 <table border="1" cellpadding="10px">
@@ -473,7 +428,7 @@ highlight { background-color: palegreen; }
 </center>
 <br>
 
-<dl><dt>(<a name="ex3.48">3.48</a>)</dt><dd>
+<dl><dt>(<a name="ex3.43">3.43</a>)</dt><dd>
 <img src="IDtspc267christinet0923.png">
 </dd></dl>
 
@@ -508,11 +463,11 @@ highlight { background-color: palegreen; }
 <li>Adverbs modify the head to provide information about degree and commonly occur before the head (e.g.&nbsp;<i><b><i>so</i></b> <u>important</u></i>), although a few occur after (e.g.&nbsp;<i><u>easy</u> <b><i>enough</i></b></i>).</li>
 </ul>
 
-<dl><dt>(<a name="ex3.49">3.49</a>)</dt><dd>
+<dl><dt>(<a name="ex3.44">3.44</a>)</dt><dd>
 <img src="IDtspc4agoodwill5p2.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.50">3.50</a>)</dt><dd>
+<dl><dt>(<a name="ex3.45">3.45</a>)</dt><dd>
 <img src="IDtspc152awilde118882p4.png">
 </dd></dl>
 
@@ -520,7 +475,7 @@ highlight { background-color: palegreen; }
 <li>Some adverbs as premodifiers, especially <i>very</i> and <i>really</i>, can be repeated (e.g.&nbsp;<i><b><i>very</i></b> <b><i>very</i></b> <u>rude</u></i>).</li>
 </ul>
 
-<dl><dt>(<a name="ex3.51">3.51</a>)</dt><dd>
+<dl><dt>(<a name="ex3.46">3.46</a>)</dt><dd>
 <img src="IDtspc455christinet218p2p5.png">
 </dd></dl>
 
@@ -528,11 +483,11 @@ highlight { background-color: palegreen; }
 <li>An <tt>NP</tt> can also act as a modifier in an <tt>ADJP</tt> (e.g.&nbsp;<i><b><i>a bit</i></b> <u>more</u></i>, <i><u>aged</u> <b><i>sixty five years</i></b></i>). Such an <tt>NP</tt> takes no function marking itself.</li>
 </ul>
 
-<dl><dt>(<a name="ex3.52">3.52</a>)</dt><dd>
+<dl><dt>(<a name="ex3.47">3.47</a>)</dt><dd>
 <img src="IDtspc114christinet255p2.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.53">3.53</a>)</dt><dd>
+<dl><dt>(<a name="ex3.48">3.48</a>)</dt><dd>
 <img src="IDtspc71ajoyce19142p4.png">
 </dd></dl>
 
@@ -540,15 +495,15 @@ highlight { background-color: palegreen; }
 <li>Dependents which typically occur after the head of an <tt>ADJP</tt> are <tt>PP</tt> (e.g.&nbsp;<i><u>free</u> <b><i>from difficulty</i></b></i>) and clauses (e.g.&nbsp;<i><u>able</u> <b><i>to do that</i></b></i>, <i><u>unaware</u> <b><i>that certain information actually exists</i></b></i>).</li>
 </ul>
 
-<dl><dt>(<a name="ex3.54">3.54</a>)</dt><dd>
+<dl><dt>(<a name="ex3.49">3.49</a>)</dt><dd>
 <img src="IDtspc56lucybncb282p4.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.55">3.55</a>)</dt><dd>
+<dl><dt>(<a name="ex3.50">3.50</a>)</dt><dd>
 <img src="IDtspc53lucybncb172p4.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.56">3.56</a>)</dt><dd>
+<dl><dt>(<a name="ex3.51">3.51</a>)</dt><dd>
 <img src="IDtspc91lucybncb352p4.png">
 </dd></dl>
 
@@ -556,45 +511,57 @@ highlight { background-color: palegreen; }
 <li><tt>PP</tt> can also act as premodifiers in an <tt>ADJP</tt> (e.g.&nbsp;<i><b><i>for the most part</i></b> <u>unproductive</u></i>).</li>
 </ul>
 
-<dl><dt>(<a name="ex3.57">3.57</a>)</dt><dd>
+<dl><dt>(<a name="ex3.52">3.52</a>)</dt><dd>
 <img src="IDtspc52susanneg1313p2.png">
 </dd></dl>
 
 <h3><a name="sec3.3.3">3.3.3</a>&nbsp;&nbsp;&nbsp;&nbsp;ADJP conjunction</h3>
 
-<p align="justify">When the content of an adjective phrase involves conjunction, all conjuncts, except the first, receive a <tt>CONJP</tt> projection. This gives structure parallel to the conjoined <tt>NP</tt> structure of section <a href="chapter3.html#sec3.2.4">3.2.4</a>, but with <tt>CONJP</tt> projections adjoined to the first conjunct under an <tt>AJLYR</tt> layer. <tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as in (<a href="chapter3.html#ex3.58">3.58</a>).</p>
+<p align="justify">When the content of an adjective phrase involves conjunction, all conjuncts, except the first, receive a <tt>CONJP</tt> projection. This gives structure parallel to the conjoined <tt>NP</tt> structure of section <a href="chapter3.html#sec3.2.4">3.2.4</a>, but with <tt>CONJP</tt> projections adjoined to the first conjunct under an <tt>AJLYR</tt> layer. <tt>CONJP</tt> layers exist irrespective of the presence of an overt <tt>CONJ</tt> head, as in (<a href="chapter3.html#ex3.53">3.53</a>).</p>
 
-<dl><dt>(<a name="ex3.58">3.58</a>)</dt><dd>
+<dl><dt>(<a name="ex3.53">3.53</a>)</dt><dd>
 <img src="IDtspc183ahedgehog6p11p15.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.59">3.59</a>)</dt><dd>
+<dl><dt>(<a name="ex3.54">3.54</a>)</dt><dd>
 <img src="IDtspc63apaulfellows6p20.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.60">3.60</a>)</dt><dd>
+<dl><dt>(<a name="ex3.55">3.55</a>)</dt><dd>
 <img src="IDtspc109lucybncc0811.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AJLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.61">3.61</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AJLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.56">3.56</a>).</p>
 
-<dl><dt>(<a name="ex3.61">3.61</a>)</dt><dd>
+<dl><dt>(<a name="ex3.56">3.56</a>)</dt><dd>
 <img src="IDtspc10susannea116p12.png">
 </dd></dl>
 
 <h3><a name="sec3.3.4">3.3.4</a>&nbsp;&nbsp;&nbsp;&nbsp;ADJP functions</h3>
 
-<p align="justify"><tt>ADJP</tt> can act as modifiers of a noun phrase head. In doing so, they are said to have <b>attributive</b> function. With the annotation, an attributive <tt>ADJP</tt> occurs without a tag extension, as in (<a href="chapter3.html#ex3.62">3.62</a>) and (<a href="chapter3.html#ex3.63">3.63</a>), since placement under <tt>NP</tt> unambiguously captures the attributive function.</p>
+<p align="justify"><tt>ADJP</tt> can act as modifiers of a noun phrase head. In doing so, they are said to have <b>attributive</b> function. With the annotation, an attributive <tt>ADJP</tt> occurs without a tag extension, as in (<a href="chapter3.html#ex3.57">3.57</a>) and (<a href="chapter3.html#ex3.58">3.58</a>), since placement under <tt>NP</tt> unambiguously captures the attributive function.</p>
 
-<dl><dt>(<a name="ex3.62">3.62</a>)</dt><dd>
+<dl><dt>(<a name="ex3.57">3.57</a>)</dt><dd>
 <img src="IDtspc1lucychild12f324.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.63">3.63</a>)</dt><dd>
+<dl><dt>(<a name="ex3.58">3.58</a>)</dt><dd>
 <img src="IDtspc9lucychild10k114.png">
 </dd></dl>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a clause, an <tt>ADJP</tt> will typically have a <b>predicative</b> function, marked with the tag extension <tt>-PRD</tt>(<tt>2</tt>) (see section <a href="chapter4.html#sec4.3.3">4.3.3</a>), and with a <b>predicate position</b> after verbs that include <small style="font-size: 75%">BE</small>, <small style="font-size: 75%">APPEAR</small>, <small style="font-size: 75%">SEEM</small>, <small style="font-size: 75%">SOUND</small>, <small style="font-size: 75%">MAKE</small> (e.g.&nbsp;<i>The cookbook is <b><i>practical</i></b></i>, <i>This description sounds <b><i>familiar</i></b></i>, <i>It makes me <b><i>uneasy</i></b></i>).</p>
+
+<dl><dt>(<a name="ex3.59">3.59</a>)</dt><dd>
+<img src="ispractical.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.60">3.60</a>)</dt><dd>
+<img src="soundsfamiliar.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.61">3.61</a>)</dt><dd>
+<img src="makesuneasy.png">
+</dd></dl>
 
 <br><h2><a name="sec3.4">3.4</a>&nbsp;&nbsp;&nbsp;&nbsp;Adverb phrase (ADVP)</h2>
 
@@ -630,66 +597,66 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Conjunction with an <tt>ADVP</tt> is the same as with an <tt>ADJP</tt>. With the annotation, <tt>CONJP</tt> projections are adjoined to the first <tt>CONJP</tt>-less conjunct under an <tt>AVLYR</tt> layer.</p>
 
-<dl><dt>(<a name="ex3.64">3.64</a>)</dt><dd>
+<dl><dt>(<a name="ex3.62">3.62</a>)</dt><dd>
 <img src="IDtspc548christinet2714p15p21.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AVLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.65">3.65</a>).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Note that it is possible for a conjunct under <tt>AVLYR</tt> to be a <tt>PP</tt>, as in (<a href="chapter3.html#ex3.63">3.63</a>).</p>
 
-<dl><dt>(<a name="ex3.65">3.65</a>)</dt><dd>
-<img src="IDtspc5susannea0411p12p22.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.66">3.66</a>)</dt><dd>
-<img src="IDtspc91susanneg1730.png">
+<dl><dt>(<a name="ex3.63">3.63</a>)</dt><dd>
+<img src="IDtspc5susannea0411p12p20.png">
 </dd></dl>
 
 <h3><a name="sec3.4.4">3.4.4</a>&nbsp;&nbsp;&nbsp;&nbsp;ADVP functions</h3>
 
-<p align="justify">Adverb phrases are able to modify adjectives (e.g.&nbsp;<i><b><i>totally</i></b> disgusting</i>), and verbs (e.g.&nbsp;<i><b><i>strongly</i></b> supported</i>). Adverb phrases can also modify preposition phrases (e.g.&nbsp;<i><b><i>far</i></b> up the valley</i>), noun phrases (e.g.&nbsp;<i><b><i>nearly</i></b> a decade</i>), adverb phrases (e.g.&nbsp;<i><b><i>Quite</i></b> often</i>), and clauses (e.g.&nbsp;<i><b><i>of_course</i></b> you can</i>).</p>
+<p align="justify">Adverb phrases without function marking are able to modify adjectives (e.g.&nbsp;<i><b><i>totally</i></b> disgusting</i>), adverbs (e.g.&nbsp;<i><b><i>Quite</i></b> often</i>) and noun phrases (e.g.&nbsp;<i><b><i>nearly</i></b> a decade</i>).</p>
 
-<dl><dt>(<a name="ex3.67">3.67</a>)</dt><dd>
+<dl><dt>(<a name="ex3.64">3.64</a>)</dt><dd>
 <img src="IDtspc89christinet192.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.68">3.68</a>)</dt><dd>
-<img src="IDtspc71susannen114.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.69">3.69</a>)</dt><dd>
-<img src="IDtspc116susannen042.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.70">3.70</a>)</dt><dd>
-<img src="IDtspc491christinet292.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.71">3.71</a>)</dt><dd>
-<img src="IDtspc81lucybncb372.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.72">3.72</a>)</dt><dd>
+<dl><dt>(<a name="ex3.65">3.65</a>)</dt><dd>
 <img src="IDtspc18susannej102.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.73">3.73</a>)</dt><dd>
+<dl><dt>(<a name="ex3.66">3.66</a>)</dt><dd>
+<img src="IDtspc81lucybncb372.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverb phrases function marked <tt>-NIM</tt> can modify prepositions (e.g.&nbsp;<i><b><i>far</i></b> up the valley</i>, <i><b><i>purely and simply</i></b> for the money</i>), verbs (e.g.&nbsp;<i><b><i>strongly</i></b> supported</i>) and clauses (e.g.&nbsp;<i><b><i>of_course</i></b> you can</i>).</p>
+
+<dl><dt>(<a name="ex3.67">3.67</a>)</dt><dd>
+<img src="IDtspc116susannen042.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.68">3.68</a>)</dt><dd>
+<img src="IDtspc491christinet292.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.69">3.69</a>)</dt><dd>
+<img src="IDtspc71susannen114.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.70">3.70</a>)</dt><dd>
 <img src="IDtspc258christinet042.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> function in the clause as adverbials. Section <a href="chapter4.html#sec4.3.4">4.3.4</a> lists node label extensions that indicate adverbial functions, all of which except <tt>-BNF</tt> can be used with <tt>ADVP</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.74">3.74</a>) has directional function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Instances of <tt>ADVP</tt> can function in the clause as selected adverbials marked <tt>-CLR</tt>. For example, the adverb phrase in (<a href="chapter3.html#ex3.71">3.71</a>) has selected direction function. The direction function is not explicitly marked and must be inferred from the verb <small style="font-size: 75%">GO</small> with verb code [Ip].</p>
 
-<dl><dt>(<a name="ex3.74">3.74</a>)</dt><dd>
-<img src="IDtspc302christinet4010p3.png">
+<dl><dt>(<a name="ex3.71">3.71</a>)</dt><dd>
+<img src="IDtspc302christinet404p2.png">
 </dd></dl>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Adverbials can occur with selected functions <tt>-OB1</tt> (direct object) and <tt>-PRD</tt>(<tt>2</tt>) (predicative).</p>
+<p align="justify">The adverb phrase in (<a href="chapter3.html#ex3.72">3.72</a>) has selected predicative function. The predicative function is not explicitly marked and must be inferred from the verb <small style="font-size: 75%">BE</small> with verb code [Ip].</p>
 
-<dl><dt>(<a name="ex3.75">3.75</a>)</dt><dd>
-<img src="IDtspc99christinet047.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.76">3.76</a>)</dt><dd>
+<dl><dt>(<a name="ex3.72">3.72</a>)</dt><dd>
 <img src="IDtspc404christinet249.png">
+</dd></dl>
+
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Exceptionally, the adverb phrase in (<a href="chapter3.html#ex3.73">3.73</a>) has direct object (<tt>-OB1</tt>) function and so is placed as the full content of an object function marked noun phrase.</p>
+
+<dl><dt>(<a name="ex3.73">3.73</a>)</dt><dd>
+<img src="IDtspc99christinet047.png">
 </dd></dl>
 
 <br><h2><a name="sec3.5">3.5</a>&nbsp;&nbsp;&nbsp;&nbsp;Preposition phrase (PP)</h2>
@@ -702,9 +669,9 @@ highlight { background-color: palegreen; }
 
 <h3><a name="sec3.5.2">3.5.2</a>&nbsp;&nbsp;&nbsp;&nbsp;PP dependents</h3>
 
-<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a <b>complement</b>. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.77">3.77</a>).</p>
+<p align="justify">The other phrase types of this chapter (<tt>NP</tt>, <tt>ADJP</tt>, and <tt>ADVP</tt>) can contain only the head word. A preposition phrase (<tt>PP</tt>) is different: There is normally a dependent. This happens because prepositions generally require a following noun phrase (<tt>NP</tt>) or clause (<tt>IP</tt>). When the dependent of a phrase is a necessary presence, the dependent is called a <b>complement</b>. For example, the <tt>PP</tt> <i>out_of the box</i> contains the preposition head word <i>out_of</i> and the <tt>NP</tt> complement <i>the box</i>, to give the structure of (<a href="chapter3.html#ex3.74">3.74</a>).</p>
 
-<dl><dt>(<a name="ex3.77">3.77</a>)</dt><dd>
+<dl><dt>(<a name="ex3.74">3.74</a>)</dt><dd>
 <img src="IDtspc215xtextbookkisonihongo2.png">
 </dd></dl>
 
@@ -721,29 +688,21 @@ highlight { background-color: palegreen; }
 
 <p align="justify">Instances of <tt>PP</tt> are conjoined at the top level of their structure.</p>
 
-<dl><dt>(<a name="ex3.78">3.78</a>)</dt><dd>
+<dl><dt>(<a name="ex3.75">3.75</a>)</dt><dd>
 <img src="IDtspc11aqueenbroadcast2p3p14.png">
 </dd></dl>
 
-<dl><dt>(<a name="ex3.79">3.79</a>)</dt><dd>
-<img src="IDtspc70susannej224p5p19.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.80">3.80</a>)</dt><dd>
-<img src="IDtspc2lucybncb344p5p25.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.81">3.81</a>)</dt><dd>
-<img src="IDtspc10lucystudente084p7p19.png">
-</dd></dl>
-
-<dl><dt>(<a name="ex3.82">3.82</a>)</dt><dd>
+<dl><dt>(<a name="ex3.76">3.76</a>)</dt><dd>
 <img src="IDtspc19lucybncc057p8p27.png">
+</dd></dl>
+
+<dl><dt>(<a name="ex3.77">3.77</a>)</dt><dd>
+<img src="IDtspc70susannej224p5p19.png">
 </dd></dl>
 
 <h3><a name="sec3.5.4">3.5.4</a>&nbsp;&nbsp;&nbsp;&nbsp;PP functions</h3>
 
-<p align="justify">In the clause, a <tt>PP</tt> typically acts as an adverbial. Either of the two possible adverbial markings discussed in section <a href="chapter4.html#sec4.3.4">4.3.4</a>, <tt>-CLR</tt> or <tt>-NIM</tt>, can be used with <tt>PP</tt>, as the examples of (<a href="chapter3.html#ex3.77">3.77</a>)&ndash;(<a href="chapter3.html#ex3.82">3.82</a>) above illustrate. In addition, <tt>PP-OB2</tt> is possible to make an indirect object, which gains the content of its role from being a verb selected element.</p>
+<p align="justify">In the clause, a <tt>PP</tt> typically acts as an adverbial. Either of the two possible adverbial markings discussed in section <a href="chapter4.html#sec4.3.4">4.3.4</a>, <tt>-NIM</tt> or <tt>-CLR</tt>, can be used with <tt>PP</tt>, as examples (<a href="chapter3.html#ex3.75">3.75</a>) and (<a href="chapter3.html#ex3.76">3.76</a>) above illustrate. In addition, <tt>PP-OB2</tt> is possible to make an indirect object, which gains the content of its role from being a verb selected element (see examples with codes [Dn.pr] in section <a href="chapter7.html#sec7.7.2">7.7.2</a>, [Dpr.f] in section <a href="chapter7.html#sec7.7.4">7.7.4</a> and [Dpr.w] in section <a href="chapter7.html#sec7.7.6">7.7.6</a>).</p>
 
 <br>
 <br>
