@@ -85,7 +85,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('VBP', ';_I_', 'Smiles'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>Smile[VB;_I_] .[PUNC]</tt>
+<tt>Smiles[VBP;_I_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(1.10)</dt><dd>
 <tt>tphrase_set_string([w('DOD', '', 'Did'), w('PRO', '', 'he'), w('VB', ';_I_', 'smile'), w('PUNC', '', '?')]), parse(sentence).</tt>
@@ -110,13 +110,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('DOD', '', 'Did'), w('PRO', '', 'he'), w('VB', ';_I_', 'smile'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>he[PRO] did[DOD] smile[VB;_I_] ?[PUNC]</tt>
+<tt>Did[DOD] he[PRO] smile[VB;_I_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(1.14)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('VB', ';_I_', 'smile'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>he[PRO] did[DOD] smile[VB;_I_] ?[PUNC]</tt>
+<tt>he[PRO] did[DOD] smile[VB;_I_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(1.15)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('VB', ';_I_', 'smile'), w('PUNC', '', '?')]), parse(sentence).</tt>
@@ -151,9 +151,6 @@ and then the tag label for the word (including extensions and codes) followed by
 <h3>2.2&nbsp;&nbsp;&nbsp;&nbsp;Noun words</h3>
 <dl><dt>(2.2)</dt><dd>
 <tt>tphrase_set_string([w('NS', '', 'boys')]), parse(noun).</tt>
-<br>
-<br>
-<tt>Beware[VB;_I_] ![PUNC] His[PRO;_genm_] flashing[ADJ] eyes[NS] ![PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.5)</dt><dd>
 <tt>tphrase_set_string([w('PRO', ';_ppge_', 'Theirs'), w('BEP', ';_La_', 'is'), w('ADJ', '', 'large'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -164,99 +161,51 @@ and then the tag label for the word (including extensions and codes) followed by
 <h4>2.2.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
 <dl><dt>(2.6)</dt><dd>
 <tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('non_privileged')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.7)</dt><dd>
 <tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('established')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.8)</dt><dd>
 <tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('interrogative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.9)</dt><dd>
 <tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('relative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.10)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('non_privileged')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.11)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('established')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.12)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('interrogative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.13)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('relative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.14)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('non_privileged')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.15)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('established')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.16)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('interrogative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.17)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('relative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.18)</dt><dd>
 <tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('non_privileged')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.19)</dt><dd>
 <tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('established')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.20)</dt><dd>
 <tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('interrogative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(2.21)</dt><dd>
 <tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('relative')).</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <h3>2.3&nbsp;&nbsp;&nbsp;&nbsp;Determiner words</h3>
 <h3>2.4&nbsp;&nbsp;&nbsp;&nbsp;Genitive markers</h3>
@@ -269,9 +218,6 @@ and then the tag label for the word (including extensions and codes) followed by
 <h4>2.8.3&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
 <dl><dt>(2.31)</dt><dd>
 <tt>tphrase_set_string([Word]), parse(verb(Infl, Code)), fail.</tt>
-<br>
-<br>
-<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
 </dd></dl>
 <h4>2.8.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
 <dl><dt>(2.32)</dt><dd>
@@ -291,13 +237,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('PRO', '', 'He'), w('VBD', ';_Tn_', 'fires'), w('PRO', '', 'it'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>Itself[PNX] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
+<tt>He[PRO] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(3.3)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'It'), w('VBD', ';_Tn_', 'fires'), w('PNX', '', 'itself'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>Itself[PNX] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
+<tt>It[PRO] fires[VBD;_Tn_] itself[PNX] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(3.4)</dt><dd>
 <tt>tphrase_set_string([w('PNX', '', 'Itself'), w('VBD', ';_Tn_', 'fires'), w('PRO', '', 'it'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -314,9 +260,6 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <dl><dt>(3.8)</dt><dd>
 <tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
-<br>
-<br>
-<tt>who[WPRO]</tt>
 </dd></dl>
 <h4>3.2.2&nbsp;&nbsp;&nbsp;&nbsp;Initial noun phrase layers</h4>
 <dl><dt>(3.11)</dt><dd>
@@ -330,13 +273,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'you'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
 <br>
 <br>
-<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+<tt>both[CONJ;_phrase_] you[PRO] and[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
 </dd></dl>
 <dl><dt>(3.14)</dt><dd>
 <tt>tphrase_set_string([w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'you'), w('PUNC', '', ','), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
 <br>
 <br>
-<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+<tt>both[CONJ;_phrase_] you[PRO] ,[PUNC] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
 </dd></dl>
 <dl><dt>(3.15)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'you'), w('CONJ', ';_phrase_', 'and'), w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
@@ -348,7 +291,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('PRO', '', 'you'), w('PUNC', '', ','), w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
 <br>
 <br>
-<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+<tt>you[PRO] ,[PUNC] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
 </dd></dl>
 <h4>3.2.4&nbsp;&nbsp;&nbsp;&nbsp;Internal noun phrase layers</h4>
 <dl><dt>(3.23)</dt><dd>
@@ -1306,7 +1249,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('PRO', ';_genm_', 'His'), w('N', '', 'expression'), w('HVD', ';_cat_Ve_', 'had'), w('VVN', ';_Tn_', 'changed'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>His[PRO;_genm_] expression[N] was[BED;_cat_VePASS_] changed[VVN;_I_] .[PUNC]</tt>
+<tt>His[PRO;_genm_] expression[N] had[HVD;_cat_Ve_] changed[VVN;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.340)</dt><dd>
 <tt>tphrase_set_string([w('PRO', ';_genm_', 'His'), w('N', '', 'expression'), w('BED', ';_cat_VePASS_', 'was'), w('VVN', ';_I_', 'changed'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -1414,31 +1357,31 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('WPRO', '', 'Who'), w('DOD', ';_Tn_', 'did'), w('WPRO', '', 'what'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+<tt>Who[WPRO] did[DOD;_Tn_] what[WPRO] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.39)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'Who'), w('VBD', ';_I_', 'went'), w('WADV', '', 'where'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+<tt>Who[WPRO] went[VBD;_I_] where[WADV] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.40)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'What'), w('DOD', '', 'did'), w('WPRO', '', 'who'), w('DO', ';_Tn_', 'do'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+<tt>What[WPRO] did[DOD] who[WPRO] do[DO;_Tn_] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.41)</dt><dd>
 <tt>tphrase_set_string([w('WADV', '', 'Where'), w('DOD', '', 'did'), w('WPRO', '', 'who'), w('VB', ';_I_', 'go'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+<tt>Where[WADV] did[DOD] who[WPRO] go[VB;_I_] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.42)</dt><dd>
 <tt>tphrase_set_string([w('WADV', '', 'Where'), w('DOD', '', 'did'), w('PRO', '', 'you'), w('VB', ';_Tn_', 'buy'), w('WPRO', '', 'what'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+<tt>Where[WADV] did[DOD] you[PRO] buy[VB;_Tn_] what[WPRO] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.43)</dt><dd>
 <tt>tphrase_set_string([w('WPRO', '', 'What'), w('DOD', '', 'did'), w('PRO', '', 'you'), w('VB', ';_Tn_', 'buy'), w('WADV', '', 'where'), w('PUNC', '', '?')]), parse(sentence).</tt>
@@ -1451,13 +1394,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Vt_] to[TO] have[HV;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
+<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.45)</dt><dd>
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_cat_Ve_', 'had'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Vt_] to[TO] have[HV;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
+<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.46)</dt><dd>
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_cat_Vt_', 'had'), w('TO', '', 'to'), w('HV', ';_cat_Ve_', 'have'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -1470,25 +1413,25 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('DO', '', 'Do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+<tt>Do[DO] n<apos>t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.48)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.49)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'I'), w('HVP', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+<tt>I[PRO] have[HVP;_cat_Ve_] been[BEN;_La_] busy[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.50)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_cat_Ve_] been[BEN;_La_] busy[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.51)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_Tn_', 'have'), w('D', '', 'any'), w('N', '', 'money'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -1541,13 +1484,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('PRO', '', 'they'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>They[PRO] know[VBP;_Tw_] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] who[WPRO] .[PUNC]</tt>
+<tt>They[PRO] know[VBP;_Tw_] who[WPRO] they[PRO] should[MD;_cat_Vi_] invite[VB;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(6.18)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('WPRO', '', 'who'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>They[PRO] know[VBP;_Tw_] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] who[WPRO] .[PUNC]</tt>
+<tt>They[PRO] know[VBP;_Tw_] who[WPRO] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(6.19)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('WPRO', '', 'who'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -1664,13 +1607,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_cat_Vg_', 'was'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>John[NPR] was[BED;_La_] happy[ADJ] _*_[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
+<tt>John[NPR] was[BED;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(6.56)</dt><dd>
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_cat_Vg_', 'was'), w('HAG', ';_cat_Ve_', 'having'), w('BEN', ';_cat_Vg_', 'been'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>John[NPR] was[BED;_La_] happy[ADJ] _*_[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
+<tt>John[NPR] was[BED;_cat_Vg_] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(6.57)</dt><dd>
 <tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_La_', 'was'), w('ADJ', '', 'happy'), w('P-CONN', '', '_*_'), w('HAG', ';_cat_Ve_', 'having'), w('BEN', ';_cat_Vg_', 'been'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
