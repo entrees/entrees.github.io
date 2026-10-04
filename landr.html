@@ -94,10 +94,10 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>Did[DOD] he[PRO] smile[VB;_I_] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(1.11)</dt><dd>
-<tt>tphrase_set_string([w('PRO', '', 'He'), w('MD', ';_cat_Vi_', 'might'), w('VB', ';_I_', 'smile'), w('PUNC', '', ','), w('MD', ';_cat_Vi_', 'might'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'he'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('MD', ';_cat_Vi_', 'might'), w('VB', ';_I_', 'smile'), w('PUNC', '', ','), w('MD', ';_cat_Vi_', 'might'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('PRO', '', 'he'), w('PUNC', '', '?')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>He[PRO] might[MD;_cat_Vi_] smile[VB;_I_] ,[PUNC] might[MD;_cat_Vi_] n<apos>t[NEG;_clitic_] he[PRO] ?[PUNC]</tt>
+<tt>He[PRO] might[MD;_cat_Vi_] smile[VB;_I_] ,[PUNC] might[MD;_cat_Vi_] n&lt;apos&gt;t[NEG;_clitic_] he[PRO] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(1.12)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'He'), w('VBP', ';_I_', 'smiles'), w('CONJ', '', 'and'), w('ADV', '', 'so'), w('DOP', '', 'does'), w('PRO', '', 'she'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -315,10 +315,10 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <h4>3.2.6&nbsp;&nbsp;&nbsp;&nbsp;Genitive noun phrase layer</h4>
 <dl><dt>(3.34)</dt><dd>
-<tt>tphrase_set_string([w('D', ';_nphd_', 'someone'), w('GENM', '', '<apos>s'), w('N', '', 'cash'), w('N', '', 'offer')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<tt>tphrase_set_string([w('D', ';_nphd_', 'someone'), w('GENM', '', '&lt;apos&gt;s'), w('N', '', 'cash'), w('N', '', 'offer')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
 <br>
 <br>
-<tt>someone[D;_nphd_] <apos>s[GENM] cash[N] offer[N]</tt>
+<tt>someone[D;_nphd_] &lt;apos&gt;s[GENM] cash[N] offer[N]</tt>
 </dd></dl>
 <h3>3.3&nbsp;&nbsp;&nbsp;&nbsp;Adverb phrases</h3>
 <h3>3.4&nbsp;&nbsp;&nbsp;&nbsp;Adjective phrases</h3>
@@ -516,13 +516,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Tn.p_', store([advp(node('*ICH*', '', index(105), []))], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('N', '', 'treasure')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] wonder[VBP;_Tw_] where[WADV] she[PRO] <apos>s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] the[D] treasure[N] .[PUNC]</tt>
+<tt>I[PRO] wonder[VBP;_Tw_] where[WADV] she[PRO] &lt;apos&gt;s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] the[D] treasure[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.68)</dt><dd>
 <tt>verb_complements_by_code(';_Tn.p_', store([advp(node('*ICH*', '', index(105), [])), np(node('*ICH*', '', index(101), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] wonder[VBP;_Tw_] how[WADV] she[PRO] acquired[VBD;_Tn_] and[CONJ] where[WADV] she[PRO] <apos>s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] ,[PUNC] the[D] treasure[N] .[PUNC]</tt>
+<tt>I[PRO] wonder[VBP;_Tw_] how[WADV] she[PRO] acquired[VBD;_Tn_] and[CONJ] where[WADV] she[PRO] &lt;apos&gt;s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] ,[PUNC] the[D] treasure[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.70)</dt><dd>
 <tt>verb_complements_by_code(';_Tn.p_', store([], []), filled_sbj, lgs_passive, [], _R, [w('RP', '', 'off')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -615,20 +615,20 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Tw_', store([], []), filled_sbj, active, [], _R, [w('WPRO', '', 'what'), w('TO', '', 'to'), w('DO', ';_Tn_', 'do')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] know[VB;_Tw_] what[WPRO] to[TO] do[DO;_Tn_] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n&lt;apos&gt;t[NEG;_clitic_] know[VB;_Tw_] what[WPRO] to[TO] do[DO;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <h4>4.4.6&nbsp;&nbsp;&nbsp;&nbsp;;_Tr_</h4>
 <dl><dt>(4.104)</dt><dd>
-<tt>verb_complements_by_code(';_Tr_', store([], []), filled_sbj, active, [], _R, [w('PULQ', '', '<ldquo>'), w('PRO', '', 'I'), w('BEP', ';_cat_Vg_', '<apos>m'), w('VAG', ';_Ipr_', 'going'), w('P-ROLE', '', 'to'), w('N', '', 'bed'), w('PUNC', '', '.'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<tt>verb_complements_by_code(';_Tr_', store([], []), filled_sbj, active, [], _R, [w('PULQ', '', '&lt;ldquo&gt;'), w('PRO', '', 'I'), w('BEP', ';_cat_Vg_', '&lt;apos&gt;m'), w('VAG', ';_Ipr_', 'going'), w('P-ROLE', '', 'to'), w('N', '', 'bed'), w('PUNC', '', '.'), w('PURQ', '', '&lt;rdquo&gt;')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] said[VBD;_Tr_] <ldquo>[PULQ] I[PRO] <apos>m[BEP;_cat_Vg_] going[VAG;_Ipr_] to[P-ROLE] bed[N] .[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+<tt>I[PRO] said[VBD;_Tr_] &lt;ldquo&gt;[PULQ] I[PRO] &lt;apos&gt;m[BEP;_cat_Vg_] going[VAG;_Ipr_] to[P-ROLE] bed[N] .[PUNC] &lt;rdquo&gt;[PURQ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.106)</dt><dd>
 <tt>verb_complements_by_code(';_Tr_', store([utterance(node('*ICH*', '', index(103), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt><ldquo>[PULQ] A[D] paradox[N] .[PUNC] <rdquo>[PURQ] ,[PUNC] Nasha[NPR] said[VBD;_Tr_] .[PUNC]</tt>
+<tt>&lt;ldquo&gt;[PULQ] A[D] paradox[N] .[PUNC] &lt;rdquo&gt;[PURQ] ,[PUNC] Nasha[NPR] said[VBD;_Tr_] .[PUNC]</tt>
 </dd></dl>
 <h4>4.4.7&nbsp;&nbsp;&nbsp;&nbsp;;_Tt_</h4>
 <dl><dt>(4.109)</dt><dd>
@@ -698,7 +698,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Tni_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('N', '', 'blood'), w('VB', ';_Ipr_', 'run'), w('P-ROLE', '', 'from'), w('PRO', ';_genm_', 'their'), w('N', '', 'face')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>You[PRO] can[MD;_cat_Vi_] see[VB;_Tni_] the[D] blood[N] run[VB;_Ipr_] from[P-ROLE] their;<PEOPLE>[PRO;_genm_] face[N] .[PUNC]</tt>
+<tt>You[PRO] can[MD;_cat_Vi_] see[VB;_Tni_] the[D] blood[N] run[VB;_Ipr_] from[P-ROLE] their;&lt;PEOPLE&gt;[PRO;_genm_] face[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.134)</dt><dd>
 <tt>verb_complements_by_code(';_Tni_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('VB', ';_Tn_', 'answer'), w('D', '', 'the'), w('N', '', 'phone')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -737,13 +737,13 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Tsg_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_genm_', 'my'), w('VAG', ';_Dn.*_', 'telling'), w('PRO', '', 'you')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>Do[DOP] n<apos>t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] my[PRO;_genm_] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
+<tt>Do[DOP] n&lt;apos&gt;t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] my[PRO;_genm_] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.149)</dt><dd>
 <tt>verb_complements_by_code(';_Tsg_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('VAG', ';_Dn.*_', 'telling'), w('PRO', '', 'you')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>Do[DOP] n<apos>t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] me[PRO] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
+<tt>Do[DOP] n&lt;apos&gt;t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] me[PRO] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
 </dd></dl>
 <h3>4.5&nbsp;&nbsp;&nbsp;&nbsp;Ditransitive verbs</h3>
 <h4>4.5.1&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.n_</h4>
@@ -763,7 +763,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Dn.n_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('PNX', '', 'himself')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>the[D] task[N] he;<PERSON>[PRO] set[VBD;_Dn.n_] himself;<PERSON>[PNX]</tt>
+<tt>the[D] task[N] he;&lt;PERSON&gt;[PRO] set[VBD;_Dn.n_] himself;&lt;PERSON&gt;[PNX]</tt>
 </dd></dl>
 <dl><dt>(4.158)</dt><dd>
 <tt>verb_complements_by_code(';_Dn.n_', store([], []), filled_sbj, lgs_passive, [], _R, [w('N', '', 'two'), w('NS', '', 'recordings')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -805,16 +805,16 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <h4>4.5.4&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.r_</h4>
 <dl><dt>(4.173)</dt><dd>
-<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('NPR', '', 'Prime'), w('NPR', '', 'Minister'), w('PULQ', '', '<ldquo>'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('NPR', '', 'Prime'), w('NPR', '', 'Minister'), w('PULQ', '', '&lt;ldquo&gt;'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '&lt;rdquo&gt;')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>She[PRO] asked[VBD;_Dn.r_] the[D] Prime[NPR] Minister[NPR] <ldquo>[PULQ] Is[BEP;_La_] it;<CLAIM>[PRO] true[ADJ] ?[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+<tt>She[PRO] asked[VBD;_Dn.r_] the[D] Prime[NPR] Minister[NPR] &lt;ldquo&gt;[PULQ] Is[BEP;_La_] it;&lt;CLAIM&gt;[PRO] true[ADJ] ?[PUNC] &lt;rdquo&gt;[PURQ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.175)</dt><dd>
-<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, lgs_passive, [], _R, [w('PULQ', '', '<ldquo>'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, lgs_passive, [], _R, [w('PULQ', '', '&lt;ldquo&gt;'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '&lt;rdquo&gt;')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>The[D] Prime[NPR] Minister[NPR] was[BED;_cat_VePASS_] asked[VVN;_Dn.r_] <ldquo>[PULQ] Is[BEP;_La_] it;<CLAIM>[PRO] true[ADJ] ?[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+<tt>The[D] Prime[NPR] Minister[NPR] was[BED;_cat_VePASS_] asked[VVN;_Dn.r_] &lt;ldquo&gt;[PULQ] Is[BEP;_La_] it;&lt;CLAIM&gt;[PRO] true[ADJ] ?[PUNC] &lt;rdquo&gt;[PURQ] .[PUNC]</tt>
 </dd></dl>
 <h4>4.5.5&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.t_</h4>
 <dl><dt>(4.178)</dt><dd>
@@ -890,14 +890,14 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Dpr.f_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('D', '', 'the'), w('N', '', 'man'), w('C', '', 'that'), w('PRO', '', 'we'), w('BED', ';_La_', 'were'), w('ADJ', '', 'sorry')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>We[PRO] did[DOD] n<apos>t[NEG;_clitic_] say[VB;_Dpr.f_] to[P-ROLE] the[D] man[N] that[C] we[PRO] were[BED;_La_] sorry[ADJ] .[PUNC]</tt>
+<tt>We[PRO] did[DOD] n&lt;apos&gt;t[NEG;_clitic_] say[VB;_Dpr.f_] to[P-ROLE] the[D] man[N] that[C] we[PRO] were[BED;_La_] sorry[ADJ] .[PUNC]</tt>
 </dd></dl>
 <h4>4.5.9&nbsp;&nbsp;&nbsp;&nbsp;;_Dpr.r_</h4>
 <dl><dt>(4.206)</dt><dd>
-<tt>verb_complements_by_code(';_Dpr.r_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('PRO', '', 'me'), w('PULQ', '', '<ldquo>'), w('VB', ';_Ip_', 'Get'), w('RP', '', 'up'), w('PUNC', '', '!'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<tt>verb_complements_by_code(';_Dpr.r_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('PRO', '', 'me'), w('PULQ', '', '&lt;ldquo&gt;'), w('VB', ';_Ip_', 'Get'), w('RP', '', 'up'), w('PUNC', '', '!'), w('PURQ', '', '&lt;rdquo&gt;')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>She[PRO] said[VBD;_Dpr.r_] to[P-ROLE] me[PRO] <ldquo>[PULQ] Get[VB;_Ip_] up[RP] ![PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+<tt>She[PRO] said[VBD;_Dpr.r_] to[P-ROLE] me[PRO] &lt;ldquo&gt;[PULQ] Get[VB;_Ip_] up[RP] ![PUNC] &lt;rdquo&gt;[PURQ] .[PUNC]</tt>
 </dd></dl>
 <h3>4.6&nbsp;&nbsp;&nbsp;&nbsp;Complex-transitive verbs</h3>
 <h4>4.6.1&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.a_</h4>
@@ -1010,7 +1010,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Cn.pr_', store([], []), filled_sbj, active, [], _R, [w('PNX', '', 'himself'), w('P-ROLE', '', 'in'), w('D', '', 'an'), w('ADJ', '', 'upper'), w('N', '', 'gallery')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>Geoffrey;<GEOFFREY>[NPR] could[MD;_cat_Vi_] imagine[VB;_Cn.pr_] himself;<GEOFFREY>[PNX] in[P-ROLE] an[D] upper[ADJ] gallery[N] .[PUNC]</tt>
+<tt>Geoffrey;&lt;GEOFFREY&gt;[NPR] could[MD;_cat_Vi_] imagine[VB;_Cn.pr_] himself;&lt;GEOFFREY&gt;[PNX] in[P-ROLE] an[D] upper[ADJ] gallery[N] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.248)</dt><dd>
 <tt>verb_complements_by_code(';_Cn.pr_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'in'), w('ADJ', '', 'parallel'), w('N', '', 'computing')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -1029,7 +1029,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Cn.t_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('DO', ';_Tn_', 'do'), w('PRO', ';_genm_', 'my'), w('ADJ', '', 'dirty'), w('N', '', 'work')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>the[D] person[N] that[C] I[PRO] <apos>ll[MD;_cat_Vi_] get[VB;_Cn.t_] to[TO] do[DO;_Tn_] my[PRO;_genm_] dirty[ADJ] work[N]</tt>
+<tt>the[D] person[N] that[C] I[PRO] &lt;apos&gt;ll[MD;_cat_Vi_] get[VB;_Cn.t_] to[TO] do[DO;_Tn_] my[PRO;_genm_] dirty[ADJ] work[N]</tt>
 </dd></dl>
 <dl><dt>(4.255)</dt><dd>
 <tt>verb_complements_by_code(';_Cn.t_', store([], []), filled_sbj, lgs_passive, [], _R, [w('TO', '', 'to'), w('BE', ';_Ln_', 'be'), w('NS', '', 'neurons')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -1049,7 +1049,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_Cn.g_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('ADJ', '', 'ticking'), w('N', '', 'clock'), w('VAG', ';_I_', 'running')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>So[ADV] they[PRO] <apos>d[HVD;_cat_Ve_] got[VVN;_Cn.g_] a[D] ticking[ADJ] clock[N] running[VAG;_I_] .[PUNC]</tt>
+<tt>So[ADV] they[PRO] &lt;apos&gt;d[HVD;_cat_Ve_] got[VVN;_Cn.g_] a[D] ticking[ADJ] clock[N] running[VAG;_I_] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.263)</dt><dd>
 <tt>verb_complements_by_code(';_Cn.g_', store([], []), filled_sbj, lgs_passive, [], _R, [w('VAG', ';_I_', 'working')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -1076,14 +1076,14 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_VP24B_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'novel'), w('VVN', ';_Tn_', 'published')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] <apos>d[HVD;_cat_Ve_] had[HVN;_VP24B_] a[D] novel[N] published[VVN;_Tn_] .[PUNC]</tt>
+<tt>I[PRO] &lt;apos&gt;d[HVD;_cat_Ve_] had[HVN;_VP24B_] a[D] novel[N] published[VVN;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <h4>4.7.3&nbsp;&nbsp;&nbsp;&nbsp;;_VP24C_</h4>
 <dl><dt>(4.274)</dt><dd>
 <tt>verb_complements_by_code(';_VP24C_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_genm_', 'my'), w('N', '', 'hair'), w('VVN', ';_Tn_', 'cut')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>I[PRO] <apos>ve[HVP;_cat_Ve_] got[VVN;_VP24C_] my[PRO;_genm_] hair[N] cut[VVN;_Tn_] .[PUNC]</tt>
+<tt>I[PRO] &lt;apos&gt;ve[HVP;_cat_Ve_] got[VVN;_VP24C_] my[PRO;_genm_] hair[N] cut[VVN;_Tn_] .[PUNC]</tt>
 </dd></dl>
 <h3>4.8&nbsp;&nbsp;&nbsp;&nbsp;Existential verbs</h3>
 <h4>4.8.1&nbsp;&nbsp;&nbsp;&nbsp;;_ex_V_</h4>
@@ -1104,7 +1104,7 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_ex_Vp_', store([], []), there_sbj, active, [], _R, [w('Q', ';_nphd_', 'nothing'), w('RP', '', 'there')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>There[EX] <apos>s[BEP;_ex_Vp_] nothing[Q;_nphd_] there[RP] .[PUNC]</tt>
+<tt>There[EX] &lt;apos&gt;s[BEP;_ex_Vp_] nothing[Q;_nphd_] there[RP] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(4.284)</dt><dd>
 <tt>verb_complements_by_code(';_ex_Vp_', store([np(node('*ICH*', '', index(102), []))], []), there_sbj, active, [], _R, [w('RP', '', 'here')], []), say_parse([node('', '', nt, _R)]).</tt>
@@ -1138,14 +1138,14 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>verb_complements_by_code(';_ex_cat_Vg_', store([], []), there_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'bear'), w('VAG', ';_Ipr_', 'sitting'), w('P-ROLE', '', 'in'), w('D', '', 'the'), w('N', '', 'corner')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>There[EX] <apos>s[BEP;_ex_cat_Vg_] a[D] bear[N] sitting[VAG;_Ipr_] in[P-ROLE] the[D] corner[N] .[PUNC]</tt>
+<tt>There[EX] &lt;apos&gt;s[BEP;_ex_cat_Vg_] a[D] bear[N] sitting[VAG;_Ipr_] in[P-ROLE] the[D] corner[N] .[PUNC]</tt>
 </dd></dl>
 <h4>4.8.7&nbsp;&nbsp;&nbsp;&nbsp;;_ex_cat_VePASS_</h4>
 <dl><dt>(4.299)</dt><dd>
 <tt>verb_complements_by_code(';_ex_cat_VePASS_', store([], []), there_sbj, active, [], _R, [w('D', ';_nphd_', 'something'), w('VVN', ';_Tn.pr_', 'inscribed'), w('P-ROLE', '', 'on'), w('D', ';_nphd_', 'this')], []), say_parse([node('', '', nt, _R)]).</tt>
 <br>
 <br>
-<tt>There[EX] <apos>s[BEP;_ex_cat_VePASS_] something[D;_nphd_] inscribed[VVN;_Tn.pr_] on[P-ROLE] this[D;_nphd_] .[PUNC]</tt>
+<tt>There[EX] &lt;apos&gt;s[BEP;_ex_cat_VePASS_] something[D;_nphd_] inscribed[VVN;_Tn.pr_] on[P-ROLE] this[D;_nphd_] .[PUNC]</tt>
 </dd></dl>
 <h3>4.9&nbsp;&nbsp;&nbsp;&nbsp;Equative verbs</h3>
 <h4>4.9.1&nbsp;&nbsp;&nbsp;&nbsp;;_equ_Vf_</h4>
@@ -1279,10 +1279,10 @@ and then the tag label for the word (including extensions and codes) followed by
 <h3>5.3&nbsp;&nbsp;&nbsp;&nbsp;Matrix interrogatives</h3>
 <h4>5.3.1&nbsp;&nbsp;&nbsp;&nbsp;DO operator layer</h4>
 <dl><dt>(5.11)</dt><dd>
-<tt>tphrase_set_string([w('WADV', '', 'Why'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'you'), w('VB', ';_I_', 'go')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<tt>tphrase_set_string([w('WADV', '', 'Why'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('PRO', '', 'you'), w('VB', ';_I_', 'go')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
 <br>
 <br>
-<tt>Why[WADV] did[DOD] n<apos>t[NEG;_clitic_] you[PRO] go[VB;_I_] ?[PUNC]</tt>
+<tt>Why[WADV] did[DOD] n&lt;apos&gt;t[NEG;_clitic_] you[PRO] go[VB;_I_] ?[PUNC]</tt>
 </dd></dl>
 <h4>5.3.2&nbsp;&nbsp;&nbsp;&nbsp;HAVE, BE or modal verb finite layers</h4>
 <dl><dt>(5.14)</dt><dd>
@@ -1307,10 +1307,10 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <h4>5.4.2&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive complements</h4>
 <dl><dt>(5.20)</dt><dd>
-<tt>tphrase_set_string([w('MD', ';_cat_Vt_', 'Ought'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'he'), w('TO', '', 'to'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<tt>tphrase_set_string([w('MD', ';_cat_Vt_', 'Ought'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('PRO', '', 'he'), w('TO', '', 'to'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
 <br>
 <br>
-<tt>Ought[MD;_cat_Vt_] n<apos>t[NEG;_clitic_] he[PRO] to[TO] stand[VB;_Ip_] up[RP] ?[PUNC]</tt>
+<tt>Ought[MD;_cat_Vt_] n&lt;apos&gt;t[NEG;_clitic_] he[PRO] to[TO] stand[VB;_Ip_] up[RP] ?[PUNC]</tt>
 </dd></dl>
 <h4>5.4.3&nbsp;&nbsp;&nbsp;&nbsp;Active past participle clause complements</h4>
 <dl><dt>(5.23)</dt><dd>
@@ -1335,10 +1335,10 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <h3>5.5&nbsp;&nbsp;&nbsp;&nbsp;Clause middle layers</h3>
 <dl><dt>(5.33)</dt><dd>
-<tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
 <br>
 <br>
-<tt>He[PRO] did[DOD] n<apos>t[NEG;_clitic_] stand[VB;_Ip_] up[RP] .[PUNC]</tt>
+<tt>He[PRO] did[DOD] n&lt;apos&gt;t[NEG;_clitic_] stand[VB;_Ip_] up[RP] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.35)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'he'), w('ADV', '', 'really'), w('MD', ';_cat_Vt_', 'ought'), w('TO', '', 'to'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
@@ -1410,16 +1410,16 @@ and then the tag label for the word (including extensions and codes) followed by
 </dd></dl>
 <h4>5.5.3&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
 <dl><dt>(5.47)</dt><dd>
-<tt>tphrase_set_string([w('DO', '', 'Do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('DO', '', 'Do'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>Do[DO] n<apos>t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
+<tt>Do[DO] n&lt;apos&gt;t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.48)</dt><dd>
-<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n&lt;apos&gt;t[NEG;_clitic_] be[BE;_La_] afraid[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.49)</dt><dd>
 <tt>tphrase_set_string([w('PRO', '', 'I'), w('HVP', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
@@ -1428,16 +1428,16 @@ and then the tag label for the word (including extensions and codes) followed by
 <tt>I[PRO] have[HVP;_cat_Ve_] been[BEN;_La_] busy[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.50)</dt><dd>
-<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_cat_Ve_] been[BEN;_La_] busy[ADJ] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n&lt;apos&gt;t[NEG;_clitic_] have[HV;_cat_Ve_] been[BEN;_La_] busy[ADJ] .[PUNC]</tt>
 </dd></dl>
 <dl><dt>(5.51)</dt><dd>
-<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_Tn_', 'have'), w('D', '', 'any'), w('N', '', 'money'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('HV', ';_Tn_', 'have'), w('D', '', 'any'), w('N', '', 'money'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+<tt>I[PRO] do[DOP] n&lt;apos&gt;t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
 </dd></dl>
 <h4>5.5.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
 <h3>5.6&nbsp;&nbsp;&nbsp;&nbsp;Existential there</h3>
@@ -1521,10 +1521,10 @@ and then the tag label for the word (including extensions and codes) followed by
 <h3>6.5&nbsp;&nbsp;&nbsp;&nbsp;Provisional it and a notional subject</h3>
 <h4>6.5.1&nbsp;&nbsp;&nbsp;&nbsp;That-clause notional subjects</h4>
 <dl><dt>(6.28)</dt><dd>
-<tt>tphrase_set_string([w('PRO', ';_provisional_', 'It'), w('BED', ';_La_', 'was'), w('ADJ', '', 'good'), w('C', '', 'that'), w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('VB', ';_I_', 'come'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<tt>tphrase_set_string([w('PRO', ';_provisional_', 'It'), w('BED', ';_La_', 'was'), w('ADJ', '', 'good'), w('C', '', 'that'), w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n&lt;apos&gt;t'), w('VB', ';_I_', 'come'), w('PUNC', '', '.')]), parse(sentence).</tt>
 <br>
 <br>
-<tt>It[PRO;_provisional_] was[BED;_La_] good[ADJ] that[C] he[PRO] did[DOD] n<apos>t[NEG;_clitic_] come[VB;_I_] .[PUNC]</tt>
+<tt>It[PRO;_provisional_] was[BED;_La_] good[ADJ] that[C] he[PRO] did[DOD] n&lt;apos&gt;t[NEG;_clitic_] come[VB;_I_] .[PUNC]</tt>
 </dd></dl>
 <h4>6.5.2&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive clause notional subjects</h4>
 <dl><dt>(6.32)</dt><dd>
