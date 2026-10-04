@@ -1,0 +1,1763 @@
+<html>
+<h1>Exploring Layers and Ripples support page</h1>
+<h2>About this page</h2>
+<p align="justify">
+This page provides support materials for the book
+<i>Exploring Layers and Ripples:
+Studying English with Computer Parsing</i>
+(<a href="https://www.collegepublications.co.uk/other/?00044">978-1-84890-522-1</a>)
+by Alastair Butler
+published by College Publications.
+This page links to versions of the parser described in the book that you can download.
+This page also lists examples to parse from the book.
+This is given as help to the reader
+who might copy and paste listed examples
+into one of the available versions of the parser
+to experience parsing the book discusses.
+</p>
+<p>For additional assistance and for reporting mistakes found in the book,
+please contact the author at <tt>ajb129 __AT__ hirosaki-u __DOT__ ac __DOT__ jp</tt></p>
+<img src="https://collegepublications.co.uk/images/otr00044.jpg" alt="Cover picture for 978-1-84890-522-1">
+<h2>Available versions of the parser</h2>
+<p align="justify">
+There are three versions of the parser available:
+</p>
+<ul>
+<li>There is an <a href="https://oncoj.orinst.ox.ac.uk/cgi-bin/parse_dcg.sh">on-line version</a> you can use through a web based portal when connected to the internet. This version has links to further examples with links to click to see parse results.</li>
+</ul>
+<ul>
+<li>There is a precompiled windows executable made with the Mercury compiler.
+To use this version, you should <a href="https://oncoj.orinst.ox.ac.uk/landr_parser.exe">download the executable</a> onto a 64 bit version of windows and double click the executable whereupon you will be able to enter examples and see parse results.</li>
+</ul>
+<ul>
+<li>There is the source Prolog version that is given in the book. You can obtain <a href="https://github.com/entrees/landr_prolog_parser/releases/tag/book_version">a download of this code</a>. The download contains a README.txt file with details of how to load the program into <a href="https://xsb.sourceforge.net/">the XSB Tabling Prolog system</a> that you will need to have installed on your local computer.</li>
+</ul>
+<p align="justify">
+<span style="color: red;">Note:</span>
+How content to parse is entered depends on which version of the parser is being used.
+Details of the appropriate format are given in the next section.
+</p>
+<h2>A listing of content from the book</h2>
+<p align="justify">
+The following lists chapter and section headings from the book
+together with the content of examples to be parsed.
+Information for undertaking a parse is given in two formats:
+</p>
+<ul>
+<li>The first is the version that appears in the book
+and is the content that should be entered at a Prolog interpreter prompt
+that has the Prolog version of the parser code preloaded.</li>
+</ul>
+<ul>
+<li>The second is a version not listed in the book that
+presents word analysis with an inline format used by
+both
+the on-line version of the parser
+and
+the windows executable version of the parser that is compiled by Mercury.
+With this inline format,
+words are given followed by an open square bracket character (&lsquo;<tt>[</tt>&rsquo;)
+and then the tag label for the word (including extensions and codes) followed by a closing bracket character (&lsquo;<tt>]</tt>&rsquo;), e.g.:<br><tt>A[D] man[N] smiled[VBD;_I_] .[PUNC]</tt>
+</li>
+</ul>
+<h2>Chapter 1: Introduction</h2>
+<h3>1.1&nbsp;&nbsp;&nbsp;&nbsp;Encircling layers</h3>
+<h3>1.2&nbsp;&nbsp;&nbsp;&nbsp;Phrase structure rules</h3>
+<h4>1.2.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h3>1.3&nbsp;&nbsp;&nbsp;&nbsp;Computer parsing</h3>
+<h3>1.4&nbsp;&nbsp;&nbsp;&nbsp;Representing layered structure</h3>
+<h3>1.5&nbsp;&nbsp;&nbsp;&nbsp;Structural analysis and labelling</h3>
+<h3>1.6&nbsp;&nbsp;&nbsp;&nbsp;Orientation</h3>
+<h3>1.7&nbsp;&nbsp;&nbsp;&nbsp;Sentences</h3>
+<dl><dt>(1.7)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('VBP', ';_I_', 'smiles'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>He[PRO] smiles[VBP;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.8)</dt><dd>
+<tt>tphrase_set_string([w('VB', ';_I_', 'Smile'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Smile[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.9)</dt><dd>
+<tt>tphrase_set_string([w('VBP', ';_I_', 'Smiles'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Smile[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.10)</dt><dd>
+<tt>tphrase_set_string([w('DOD', '', 'Did'), w('PRO', '', 'he'), w('VB', ';_I_', 'smile'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Did[DOD] he[PRO] smile[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.11)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('MD', ';_cat_Vi_', 'might'), w('VB', ';_I_', 'smile'), w('PUNC', '', ','), w('MD', ';_cat_Vi_', 'might'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'he'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>He[PRO] might[MD;_cat_Vi_] smile[VB;_I_] ,[PUNC] might[MD;_cat_Vi_] n<apos>t[NEG;_clitic_] he[PRO] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.12)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('VBP', ';_I_', 'smiles'), w('CONJ', '', 'and'), w('ADV', '', 'so'), w('DOP', '', 'does'), w('PRO', '', 'she'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>He[PRO] smiles[VBP;_I_] and[CONJ] so[ADV] does[DOP] she[PRO] .[PUNC]</tt>
+</dd></dl>
+<h4>1.7.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(1.13)</dt><dd>
+<tt>tphrase_set_string([w('DOD', '', 'Did'), w('PRO', '', 'he'), w('VB', ';_I_', 'smile'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>he[PRO] did[DOD] smile[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.14)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('VB', ';_I_', 'smile'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>he[PRO] did[DOD] smile[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(1.15)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('VB', ';_I_', 'smile'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>he[PRO] did[DOD] smile[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>1.7.2&nbsp;&nbsp;&nbsp;&nbsp;Right node raising</h4>
+<dl><dt>(1.18)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('BEP', ';_cat_Vg_', 'am'), w('VAG', ';_Ipr_', 'talking'), w('P-ROLE', '', 'about'), w('CONJ', '', 'and'), w('VAG', ';_Ipr_', 'campaigning'), w('P-ROLE', '', 'for'), w('PUNC', '', ','), w('D', '', 'the'), w('N', '', 'hedgehog'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] am[BEP;_cat_Vg_] talking[VAG;_Ipr_] about[P-ROLE] and[CONJ] campaigning[VAG;_Ipr_] for[P-ROLE] ,[PUNC] the[D] hedgehog[N] .[PUNC]</tt>
+</dd></dl>
+<h3>1.8&nbsp;&nbsp;&nbsp;&nbsp;Fragments and utterances</h3>
+<dl><dt>(1.23)</dt><dd>
+<tt>tphrase_set_string([w('VB', ';_I_', 'Beware'), w('PUNC', '', '!'), w('PRO', ';_genm_', 'His'), w('ADJ', '', 'flashing'), w('NS', '', 'eyes'), w('PUNC', '', '!')]), parse(utterance('', nt)).</tt>
+<br>
+<br>
+<tt>Beware[VB;_I_] ![PUNC] His[PRO;_genm_] flashing[ADJ] eyes[NS] ![PUNC]</tt>
+</dd></dl>
+<h3>1.9&nbsp;&nbsp;&nbsp;&nbsp;About Prolog</h3>
+<h4>1.9.1&nbsp;&nbsp;&nbsp;&nbsp;Variables</h4>
+<h4>1.9.2&nbsp;&nbsp;&nbsp;&nbsp;Atoms</h4>
+<h4>1.9.3&nbsp;&nbsp;&nbsp;&nbsp;Compound terms</h4>
+<h4>1.9.4&nbsp;&nbsp;&nbsp;&nbsp;Lists</h4>
+<h4>1.9.5&nbsp;&nbsp;&nbsp;&nbsp;Incomplete lists</h4>
+<h4>1.9.6&nbsp;&nbsp;&nbsp;&nbsp;Pretty printing trees</h4>
+<h4>1.9.7&nbsp;&nbsp;&nbsp;&nbsp;The parse routine</h4>
+<h2>Chapter 2: Words</h2>
+<h3>2.1&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h3>
+<h3>2.2&nbsp;&nbsp;&nbsp;&nbsp;Noun words</h3>
+<dl><dt>(2.2)</dt><dd>
+<tt>tphrase_set_string([w('NS', '', 'boys')]), parse(noun).</tt>
+<br>
+<br>
+<tt>Beware[VB;_I_] ![PUNC] His[PRO;_genm_] flashing[ADJ] eyes[NS] ![PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.5)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_ppge_', 'Theirs'), w('BEP', ';_La_', 'is'), w('ADJ', '', 'large'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h4>2.2.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(2.6)</dt><dd>
+<tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('non_privileged')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.7)</dt><dd>
+<tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('established')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.8)</dt><dd>
+<tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('interrogative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.9)</dt><dd>
+<tt>tphrase_set_string([w('PNX', '', 'itself')]), parse(noun_head_full('relative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.10)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('non_privileged')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.11)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('established')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.12)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('interrogative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.13)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'it')]), parse(noun_head_full('relative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.14)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('non_privileged')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.15)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('established')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.16)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('interrogative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.17)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_head_full('relative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.18)</dt><dd>
+<tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('non_privileged')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.19)</dt><dd>
+<tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('established')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.20)</dt><dd>
+<tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('interrogative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(2.21)</dt><dd>
+<tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_head_full('relative')).</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h3>2.3&nbsp;&nbsp;&nbsp;&nbsp;Determiner words</h3>
+<h3>2.4&nbsp;&nbsp;&nbsp;&nbsp;Genitive markers</h3>
+<h3>2.5&nbsp;&nbsp;&nbsp;&nbsp;Subject indicating words</h3>
+<h3>2.6&nbsp;&nbsp;&nbsp;&nbsp;Adverb words</h3>
+<h3>2.7&nbsp;&nbsp;&nbsp;&nbsp;Adjective words</h3>
+<h3>2.8&nbsp;&nbsp;&nbsp;&nbsp;Verb words</h3>
+<h4>2.8.1&nbsp;&nbsp;&nbsp;&nbsp;Verb classes</h4>
+<h4>2.8.2&nbsp;&nbsp;&nbsp;&nbsp;Verb codes</h4>
+<h4>2.8.3&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(2.31)</dt><dd>
+<tt>tphrase_set_string([Word]), parse(verb(Infl, Code)), fail.</tt>
+<br>
+<br>
+<tt>Theirs[PRO;_ppge_] is[BEP;_La_] large[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h4>2.8.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(2.32)</dt><dd>
+<tt>tphrase_set_string([w('N', '', 'Business'), w('NS', '', 'people'), w('VBP', Y, 'make'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Business[N] people[NS] make[VBP;_I_] .[PUNC]</tt>
+</dd></dl>
+<h3>2.9&nbsp;&nbsp;&nbsp;&nbsp;Modal verbs</h3>
+<h3>2.10&nbsp;&nbsp;&nbsp;&nbsp;Other clause level words</h3>
+<h3>2.11&nbsp;&nbsp;&nbsp;&nbsp;Connective words</h3>
+<h3>2.12&nbsp;&nbsp;&nbsp;&nbsp;Punctuation</h3>
+<h2>Chapter 3: Phrase layers</h2>
+<h3>3.1&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h3>
+<h3>3.2&nbsp;&nbsp;&nbsp;&nbsp;Noun phrases</h3>
+<dl><dt>(3.2)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('VBD', ';_Tn_', 'fires'), w('PRO', '', 'it'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Itself[PNX] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(3.3)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'It'), w('VBD', ';_Tn_', 'fires'), w('PNX', '', 'itself'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Itself[PNX] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(3.4)</dt><dd>
+<tt>tphrase_set_string([w('PNX', '', 'Itself'), w('VBD', ';_Tn_', 'fires'), w('PRO', '', 'it'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Itself[PNX] fires[VBD;_Tn_] it[PRO] .[PUNC]</tt>
+</dd></dl>
+<h4>3.2.1&nbsp;&nbsp;&nbsp;&nbsp;The noun phrase top rule</h4>
+<dl><dt>(3.6)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'who')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>who[WPRO]</tt>
+</dd></dl>
+<dl><dt>(3.8)</dt><dd>
+<tt>tphrase_set_string([w('RPRO', '', 'who')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>who[WPRO]</tt>
+</dd></dl>
+<h4>3.2.2&nbsp;&nbsp;&nbsp;&nbsp;Initial noun phrase layers</h4>
+<dl><dt>(3.11)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'you'), w('PUNC', '', ','), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
+<br>
+<br>
+<tt>you[PRO] ,[PUNC] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+</dd></dl>
+<h4>3.2.3&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(3.13)</dt><dd>
+<tt>tphrase_set_string([w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'you'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
+<br>
+<br>
+<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+</dd></dl>
+<dl><dt>(3.14)</dt><dd>
+<tt>tphrase_set_string([w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'you'), w('PUNC', '', ','), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
+<br>
+<br>
+<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+</dd></dl>
+<dl><dt>(3.15)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'you'), w('CONJ', ';_phrase_', 'and'), w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
+<br>
+<br>
+<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+</dd></dl>
+<dl><dt>(3.16)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'you'), w('PUNC', '', ','), w('CONJ', ';_phrase_', 'both'), w('PRO', '', 'he'), w('CONJ', ';_phrase_', 'and'), w('PRO', '', 'I')]), parse(noun_phrase('-SBJ', nt, 'established')).</tt>
+<br>
+<br>
+<tt>you[PRO] and[CONJ;_phrase_] both[CONJ;_phrase_] he[PRO] and[CONJ;_phrase_] I[PRO]</tt>
+</dd></dl>
+<h4>3.2.4&nbsp;&nbsp;&nbsp;&nbsp;Internal noun phrase layers</h4>
+<dl><dt>(3.23)</dt><dd>
+<tt>tphrase_set_string([w('NS', '', 'boys')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>boys[NS]</tt>
+</dd></dl>
+<h4>3.2.5&nbsp;&nbsp;&nbsp;&nbsp;Determiner layer</h4>
+<dl><dt>(3.26)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'application'), w('CONJ', ';_phrase_', 'and'), w('NS', '', 'results')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] application[N] and[CONJ;_phrase_] results[N]</tt>
+</dd></dl>
+<dl><dt>(3.30)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'application'), w('CONJ', ';_phrase_', 'and'), w('D', '', 'a'), w('N', '', 'result')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] application[N] and[CONJ;_phrase_] a[D] result[N]</tt>
+</dd></dl>
+<h4>3.2.6&nbsp;&nbsp;&nbsp;&nbsp;Genitive noun phrase layer</h4>
+<dl><dt>(3.34)</dt><dd>
+<tt>tphrase_set_string([w('D', ';_nphd_', 'someone'), w('GENM', '', '<apos>s'), w('N', '', 'cash'), w('N', '', 'offer')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>someone[D;_nphd_] <apos>s[GENM] cash[N] offer[N]</tt>
+</dd></dl>
+<h3>3.3&nbsp;&nbsp;&nbsp;&nbsp;Adverb phrases</h3>
+<h3>3.4&nbsp;&nbsp;&nbsp;&nbsp;Adjective phrases</h3>
+<dl><dt>(3.42)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'one'), w('ADV', '', 'especially'), w('ADJ', '', 'important'), w('ADJ', '', 'difficult'), w('N', '', 'area')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>one[D] especially[ADV] important[ADJ] difficult[ADJ] area[N]</tt>
+</dd></dl>
+<h3>3.5&nbsp;&nbsp;&nbsp;&nbsp;Preposition phrases</h3>
+<dl><dt>(3.50)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'ascent'), w('P-ROLE', ';_phrase_', 'of'), w('D', '', 'a'), w('ADJ', '', 'human'), w('N', '', 'figure'), w('P-ROLE', ';_phrase_', 'from'), w('D', '', 'the'), w('N', '', 'direction'), w('P-ROLE', ';_phrase_', 'of'), w('D', '', 'the'), w('ADJ', '', 'distant'), w('N', '', 'town')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] ascent[N] of[P-ROLE;_phrase_] a[D] human[ADJ] figure[N] from[P-ROLE;_phrase_] the[D] direction[N] of[P-ROLE;_phrase_] the[D] distant[ADJ] town[N]</tt>
+</dd></dl>
+<h2>Chapter 4: Verb complements</h2>
+<h3>4.1&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h3>
+<h3>4.2&nbsp;&nbsp;&nbsp;&nbsp;Linking verbs</h3>
+<h4>4.2.1&nbsp;&nbsp;&nbsp;&nbsp;;_La_</h4>
+<dl><dt>(4.5)</dt><dd>
+<tt>verb_complements_by_code(';_La_', store([], []), filled_sbj, active, [], _R, [w('ADJ', '', 'tall')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] appeared[VBD;_La_] tall[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.7)</dt><dd>
+<tt>verb_complements_by_code(';_La_', store([], []), filled_sbj, active, [], _R, [w('ADJ', '', 'cold')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>It[PRO;_expletive_] is[BEP;_La_] cold[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.9)</dt><dd>
+<tt>verb_complements_by_code(';_La_', store([], []), filled_sbj, active, [], _R, [w('ADJ', ';_cat_', 'unable'), w('TO', '', 'to'), w('VB', ';_I_', 'move')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] was[BED;_La_] unable[ADJ;_cat_] to[TO] move[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.11)</dt><dd>
+<tt>verb_complements_by_code(';_La_', store([adjp(node('*ICH*', '', index(102), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>How[WADV] annoying[ADJ] would[MD;_cat_Vi_] that[D;_nphd_] be[BE;_La_] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.2.2&nbsp;&nbsp;&nbsp;&nbsp;;_Ln_</h4>
+<dl><dt>(4.14)</dt><dd>
+<tt>verb_complements_by_code(';_Ln_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'burglar')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] thought[VBD;_Tf_] you[PRO] were[BED;_Ln_] a[D] burglar[N] ![PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.16)</dt><dd>
+<tt>verb_complements_by_code(';_Ln_', store([], []), filled_sbj, active, [], _R, [w('N', '', 'night')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>It[PRO;_expletive_] was[BED;_Ln_] night[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.18)</dt><dd>
+<tt>verb_complements_by_code(';_Ln_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] man[N] I[PRO] thought[VBD;_Tf_] you[PRO] were[BED;_Ln_]</tt>
+</dd></dl>
+<h3>4.3&nbsp;&nbsp;&nbsp;&nbsp;Intransitive verbs</h3>
+<h4>4.3.1&nbsp;&nbsp;&nbsp;&nbsp;;_I_</h4>
+<dl><dt>(4.21)</dt><dd>
+<tt>verb_complements_by_code(';_I_', store([], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] smiled[VBD;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.23)</dt><dd>
+<tt>verb_complements_by_code(';_I_', store([], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>It[PRO;_expletive_] rained[VBD;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.3.2&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(4.24)</dt><dd>
+<tt>tphrase_set_string([w('EX', '', 'There'), w('VBD', ';_I_', 'rained'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>There[EX] rained[VBD;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.3.3&nbsp;&nbsp;&nbsp;&nbsp;;_Ip_</h4>
+<dl><dt>(4.27)</dt><dd>
+<tt>verb_complements_by_code(';_Ip_', store([], []), filled_sbj, active, [], _R, [w('RP', '', 'back')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Nasha[NPR] looked[VBD;_Ip_] back[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.29)</dt><dd>
+<tt>verb_complements_by_code(';_Ip_', store([advp(node('*ICH*', '', index(111), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] place[N] where[RADV] you[PRO] are[BEP;_cat_Vg_] standing[VAG;_Ip_]</tt>
+</dd></dl>
+<h4>4.3.4&nbsp;&nbsp;&nbsp;&nbsp;;_Ipr_</h4>
+<dl><dt>(4.32)</dt><dd>
+<tt>verb_complements_by_code(';_Ipr_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('N', '', 'bed')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>They[PRO] went[VBD;_Ipr_] to[P-ROLE] bed[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.34)</dt><dd>
+<tt>verb_complements_by_code(';_Ipr_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>a[D] place[N] that[C] they[PRO] all[ADV] went[VBD;_Ipr_] to[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(4.36)</dt><dd>
+<tt>verb_complements_by_code(';_Ipr_', store([pp(node('*ICH*', '', index(109), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>leaks[NS] through[P-ROLE] which[RPRO] the[D] precious[ADJ] air[N] was[BED;_cat_Vg_] rushing[VAG;_Ipr_]</tt>
+</dd></dl>
+<dl><dt>(4.38)</dt><dd>
+<tt>verb_complements_by_code(';_Ipr_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'after')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>These[D;_nphd_] are[BEP;_cat_VePASS_] looked[VVN;_Ipr_] after[P-ROLE] .[PUNC]</tt>
+</dd></dl>
+<h4>4.3.5&nbsp;&nbsp;&nbsp;&nbsp;;_In/pr_</h4>
+<dl><dt>(4.41)</dt><dd>
+<tt>verb_complements_by_code(';_In/pr_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'fortnight')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] stayed[VBD;_In/pr_] a[D] fortnight[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.43)</dt><dd>
+<tt>verb_complements_by_code(';_In/pr_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'for'), w('D', '', 'a'), w('N', '', 'fortnight')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] stayed[VBD;_In/pr_] for[P-ROLE] a[D] fortnight[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.3.6&nbsp;&nbsp;&nbsp;&nbsp;;_It_</h4>
+<dl><dt>(4.46)</dt><dd>
+<tt>verb_complements_by_code(';_It_', store([], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('VB', ';_I_', 'conquer')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>They[PRO] came[VBD;_It_] to[TO] conquer[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.48)</dt><dd>
+<tt>verb_complements_by_code(';_It_', store([], []), filled_sbj, active, [], _R, [w('P-CONN', '', 'for'), w('PRO', ';_expletive_', 'it'), w('TO', '', 'to'), w('VB', ';_I_', 'rain')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] waited[VBD;_It_] for[P-CONN] it[PRO;_expletive_] to[TO] rain[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<h3>4.4&nbsp;&nbsp;&nbsp;&nbsp;Mono-transitive verbs</h3>
+<h4>4.4.1&nbsp;&nbsp;&nbsp;&nbsp;;_Tn_</h4>
+<dl><dt>(4.51)</dt><dd>
+<tt>verb_complements_by_code(';_Tn_', store([], []), filled_sbj, active, [], _R, [w('NPR', '', 'John')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] teacher[N] scolded[VBD;_Tn_] John[NPR] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.53)</dt><dd>
+<tt>verb_complements_by_code(';_Tn_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>a[D] student[N] who[RPRO] the[D] teacher[N] scolded[VBD;_Tn_]</tt>
+</dd></dl>
+<dl><dt>(4.55)</dt><dd>
+<tt>verb_complements_by_code(';_Tn_', store([], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>John[NPR] was[BED;_cat_VePASS_] scolded[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.57)</dt><dd>
+<tt>verb_complements_by_code(';_Tn_', store([], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>John[NPR] was[BED;_cat_VePASS_] scolded[VVN;_Tn_] by[P-ROLE;_lgs_] the[D] teacher[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.2&nbsp;&nbsp;&nbsp;&nbsp;;_Tn.p_</h4>
+<dl><dt>(4.60)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('N', '', 'gas'), w('RP', '', 'on')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Susan[NPR] turned[VBD;_Tn.p_] the[D] gas[N] on[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.62)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([], []), filled_sbj, active, [], _R, [w('RP', '', 'in'), w('PRO', ';_genm_', 'my'), w('N', '', 'breath')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] sucked[VBD;_Tn.p_] in[RP] my[PRO;_genm_] breath[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.64)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('RP', '', 'in')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>more[ADJR] stuff[N] to[TO] put[VB;_Tn.p_] in[RP]</tt>
+</dd></dl>
+<dl><dt>(4.66)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([advp(node('*ICH*', '', index(105), []))], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('N', '', 'treasure')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] wonder[VBP;_Tw_] where[WADV] she[PRO] <apos>s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] the[D] treasure[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.68)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([advp(node('*ICH*', '', index(105), [])), np(node('*ICH*', '', index(101), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] wonder[VBP;_Tw_] how[WADV] she[PRO] acquired[VBD;_Tn_] and[CONJ] where[WADV] she[PRO] <apos>s[HVP;_cat_Ve_] hidden[VVN;_Tn.p_] ,[PUNC] the[D] treasure[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.70)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([], []), filled_sbj, lgs_passive, [], _R, [w('RP', '', 'off')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] straw[N] was[BED;_cat_VePASS_] peeled[VVN;_Tn.p_] off[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.72)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.p_', store([advp(node('*ICH*', '', index(105), []))], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] wonder[VBP;_Tw_] where[WADV] the[D] treasure[N] was[BED;_cat_VePASS_] hidden[VVN;_Tn.p_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.3&nbsp;&nbsp;&nbsp;&nbsp;;_Tn.pr_</h4>
+<dl><dt>(4.75)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('P-ROLE', '', 'with'), w('N', '', 'fear')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>It[PRO] filled[VBD;_Tn.pr_] me[PRO] with[P-ROLE] fear[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.77)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'in'), w('D', '', 'a'), w('N', '', 'taskwindow'), w('D', '', 'an'), w('N', '', 'executable')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>taskW[NPR] runs[VBP;_Tn.pr_] in[P-ROLE] a[D] taskwindow[N] an[D] executable[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.79)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_provisional_', 'it'), w('P-ROLE', '', 'to'), w('PRO', '', 'you'), w('TO', '', 'to'), w('VB', ';_I_', 'decide')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] leave[VBP;_Tn.pr_] it[PRO;_provisional_] to[P-ROLE] you[PRO] to[TO] decide[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.81)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('N', '', 'items'), w('P-ROLE', '', 'over_to')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] people[NS] who[RPRO] I[PRO] take[VBP;_Tn.pr_] items[N] over_to[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(4.83)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([pp(node('*ICH*', '', index(109), []))], []), filled_sbj, active, [], _R, [w('N', '', 'items')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] people[NS] over_to[P-ROLE] who[RPRO] I[PRO] take[VBP;_Tn.pr_] items[N]</tt>
+</dd></dl>
+<dl><dt>(4.85)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'over_to'), w('PRO', ';_genm_', 'my'), w('N', '', 'mother')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>items[NS] which[RPRO] I[PRO] take[VBP;_Tn.pr_] over_to[P-ROLE] my[PRO;_genm_] mother[N]</tt>
+</dd></dl>
+<dl><dt>(4.87)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'on'), w('D', '', 'the'), w('N', '', 'wall')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Two[N] certificates[NS] are[BEP;_cat_VePASS_] pinned[VVN;_Tn.pr_] on[P-ROLE] the[D] wall[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.89)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([np(node('*T*', '', filler, []))], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'on')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] diet[N] he[PRO] was[BED;_cat_VePASS_] put[VVN;_Tn.pr_] on[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(4.91)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([pp(node('*ICH*', '', index(109), []))], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] diet[N] on[P-ROLE] which[RPRO] he[PRO] was[BED;_cat_VePASS_] put[VVN;_Tn.pr_]</tt>
+</dd></dl>
+<dl><dt>(4.93)</dt><dd>
+<tt>verb_complements_by_code(';_Tn.pr_', store([], []), filled_sbj, passive, [], _R, [w('P-ROLE', ';_lgs_', 'by'), w('D', '', 'the'), w('N', '', 'doctor'), w('P-ROLE', '', 'on'), w('D', '', 'a'), w('N', '', 'diet')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] was[BED;_cat_VePASS_] put[VVN;_Tn.pr_] by[P-ROLE;_lgs_] the[D] doctor[N] on[P-ROLE] a[D] diet[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.4&nbsp;&nbsp;&nbsp;&nbsp;;_Tf_</h4>
+<dl><dt>(4.96)</dt><dd>
+<tt>verb_complements_by_code(';_Tf_', store([np(node('*ICH*', '', index(102), []))], []), filled_sbj, active, [], _R, [w('D', '', 'an'), w('N', '', 'exploring_party'), w('MD', ';_cat_Vi_', 'would'), w('VB', ';_Tn_', 'find')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>What[WPRO] do[DOP] you[PRO] suppose[VB;_Tf_] an[D] exploring_party[N] would[MD;_cat_Vi_] find[VB;_Tn_] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.4.5&nbsp;&nbsp;&nbsp;&nbsp;;_Tw_</h4>
+<dl><dt>(4.99)</dt><dd>
+<tt>verb_complements_by_code(';_Tw_', store([], []), filled_sbj, active, [], _R, [w('WADV', '', 'how'), w('N', '', 'information'), w('VBP', ';_Ipr_', 'flows'), w('P-ROLE', '', 'through'), w('N', '', 'structure')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>A[D] parse[N] tells[VBP;_Tw_] how[WADV] information[N] flows[VBP;_Ipr_] through[P-ROLE] structure[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.101)</dt><dd>
+<tt>verb_complements_by_code(';_Tw_', store([], []), filled_sbj, active, [], _R, [w('WPRO', '', 'what'), w('TO', '', 'to'), w('DO', ';_Tn_', 'do')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] know[VB;_Tw_] what[WPRO] to[TO] do[DO;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.6&nbsp;&nbsp;&nbsp;&nbsp;;_Tr_</h4>
+<dl><dt>(4.104)</dt><dd>
+<tt>verb_complements_by_code(';_Tr_', store([], []), filled_sbj, active, [], _R, [w('PULQ', '', '<ldquo>'), w('PRO', '', 'I'), w('BEP', ';_cat_Vg_', '<apos>m'), w('VAG', ';_Ipr_', 'going'), w('P-ROLE', '', 'to'), w('N', '', 'bed'), w('PUNC', '', '.'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] said[VBD;_Tr_] <ldquo>[PULQ] I[PRO] <apos>m[BEP;_cat_Vg_] going[VAG;_Ipr_] to[P-ROLE] bed[N] .[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.106)</dt><dd>
+<tt>verb_complements_by_code(';_Tr_', store([utterance(node('*ICH*', '', index(103), []))], []), filled_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt><ldquo>[PULQ] A[D] paradox[N] .[PUNC] <rdquo>[PURQ] ,[PUNC] Nasha[NPR] said[VBD;_Tr_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.7&nbsp;&nbsp;&nbsp;&nbsp;;_Tt_</h4>
+<dl><dt>(4.109)</dt><dd>
+<tt>verb_complements_by_code(';_Tt_', store([], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('VB', ';_I_', 'meet')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] had[HVD;_cat_Ve_] planned[VVN;_Tt_] to[TO] meet[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.8&nbsp;&nbsp;&nbsp;&nbsp;;_Tnt_</h4>
+<dl><dt>(4.112)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, active, [], _R, [w('Q', '', 'no'), w('N', '', 'building'), w('TO', '', 'to'), w('BE', ';_cat_VePASS_', 'be'), w('VVN', ';_Tn_', 'erected')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>They[PRO] allowed[VBD;_Tnt_] no[Q] building[N] to[TO] be[BE;_cat_VePASS_] erected[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.114)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_expletive_', 'it'), w('TO', '', 'to'), w('VB', ';_I_', 'rain')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>John[NPR] needed[VBD;_Tnt_] it[PRO;_expletive_] to[TO] rain[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.116)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('BE', ';_La_', 'be'), w('ADJ', '', 'correct')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>something[D;_nphd_] which[RPRO] he[PRO] believes[VBP;_Tnt_] to[TO] be[BE;_La_] correct[ADJ]</tt>
+</dd></dl>
+<dl><dt>(4.118)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, lgs_passive, [], _R, [w('TO', '', 'to'), w('BE', ';_cat_VePASS_', 'be'), w('VVN', ';_Tn_', 'erected')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>No[Q] building[N] was[BED;_cat_VePASS_] allowed[VVN;_Tnt_] to[TO] be[BE;_cat_VePASS_] erected[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.120)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, passive, [], _R, [w('P-ROLE', ';_lgs_', 'by'), w('D', '', 'the'), w('NS', '', 'pirates'), w('TO', '', 'to'), w('BE', ';_La_', 'be'), w('ADJ', '', 'safe')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>This[D] place[N] is[BEP;_cat_VePASS_] believed[VVN;_Tnt_] by[P-ROLE;_lgs_] the[D] pirates[NS] to[TO] be[BE;_La_] safe[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.122)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_provisional_', 'it'), w('TO', '', 'to'), w('BE', ';_La_', 'be'), w('ADJ', '', 'easy'), w('TO', '', 'to'), w('VB', ';_Tn_', 'impress'), w('NPR', '', 'Sandy')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Kim[NPR] expected[VBD;_Tnt_] it[PRO;_provisional_] to[TO] be[BE;_La_] easy[ADJ] to[TO] impress[VB;_Tn_] Sandy[NPR] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.124)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), filled_sbj, active, [], _R, [w('EX', '', 'there'), w('TO', '', 'to'), w('BE', ';_ex_Vpr_', 'be'), w('N', '', 'oil'), w('P-ROLE', '', 'in'), w('NPR', '', 'Brooklyn')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Some[D] geologists[NS] believe[VBP;_Tnt_] there[EX] to[TO] be[BE;_ex_Vpr_] oil[N] in[P-ROLE] Brooklyn[NPR] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.126)</dt><dd>
+<tt>verb_complements_by_code(';_Tnt_', store([], []), there_sbj, lgs_passive, [], _R, [w('TO', '', 'to'), w('BE', ';_ex_Vpr_', 'be'), w('N', '', 'oil'), w('P-ROLE', '', 'in'), w('NPR', '', 'Brooklyn')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] is[BEP;_cat_VePASS_] believed[VVN;_Tnt_] by[P-ROLE;_lgs_] some[D] geologists[NS] to[TO] be[BE;_ex_Vpr_] oil[N] in[P-ROLE] Brooklyn[NPR] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.9&nbsp;&nbsp;&nbsp;&nbsp;;_Tprt_</h4>
+<dl><dt>(4.129)</dt><dd>
+<tt>verb_complements_by_code(';_Tprt_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'on'), w('PRO', '', 'you'), w('TO', '', 'to'), w('VB', ';_I_', 'come')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] depend[VBP;_Tprt_] on[P-ROLE] you[PRO] to[TO] come[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.10&nbsp;&nbsp;&nbsp;&nbsp;;_Tni_</h4>
+<dl><dt>(4.132)</dt><dd>
+<tt>verb_complements_by_code(';_Tni_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('N', '', 'blood'), w('VB', ';_Ipr_', 'run'), w('P-ROLE', '', 'from'), w('PRO', ';_genm_', 'their'), w('N', '', 'face')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>You[PRO] can[MD;_cat_Vi_] see[VB;_Tni_] the[D] blood[N] run[VB;_Ipr_] from[P-ROLE] their;<PEOPLE>[PRO;_genm_] face[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.134)</dt><dd>
+<tt>verb_complements_by_code(';_Tni_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('VB', ';_Tn_', 'answer'), w('D', '', 'the'), w('N', '', 'phone')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] is[BEP;_ex_V_] someone[D;_nphd_] whom[RPRO] Helen[NPR] saw[VBD;_Tni_] answer[VB;_Tn_] the[D] phone[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.11&nbsp;&nbsp;&nbsp;&nbsp;;_Tg_</h4>
+<dl><dt>(4.137)</dt><dd>
+<tt>verb_complements_by_code(';_Tg_', store([], []), filled_sbj, active, [], _R, [w('VAG', ';_I_', 'shouting')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Stop[VB;_Tg_] shouting[VAG;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.12&nbsp;&nbsp;&nbsp;&nbsp;;_Tng_</h4>
+<dl><dt>(4.140)</dt><dd>
+<tt>verb_complements_by_code(';_Tng_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_expletive_', 'it'), w('VAG', ';_I_', 'raining')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>She[PRO] could[MD;_cat_Vi_] feel[VB;_Tng_] it[PRO;_expletive_] raining[VAG;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.142)</dt><dd>
+<tt>verb_complements_by_code(';_Tng_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('VAG', ';_Tn_', 'hoeing'), w('NS', '', 'onions')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] is[BEP;_ex_V_] someone[D;_nphd_] whom[RPRO] Helen[NPR] saw[VBD;_Tng_] hoeing[VAG;_Tn_] onions[NS] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.144)</dt><dd>
+<tt>verb_complements_by_code(';_Tng_', store([], []), filled_sbj, lgs_passive, [], _R, [w('VAG', ';_Ipr_', 'hovering'), w('P-ROLE', '', 'around'), w('D', '', 'the'), w('N', '', 'surface')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] raiders[NS] can[MD;_cat_Vi_] be[BE;_cat_VePASS_] seen[VVN;_Tng_] hovering[VAG;_Ipr_] around[P-ROLE] the[D] surface[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.4.13&nbsp;&nbsp;&nbsp;&nbsp;;_Tsg_</h4>
+<dl><dt>(4.147)</dt><dd>
+<tt>verb_complements_by_code(';_Tsg_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_genm_', 'my'), w('VAG', ';_Dn.*_', 'telling'), w('PRO', '', 'you')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Do[DOP] n<apos>t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] my[PRO;_genm_] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.149)</dt><dd>
+<tt>verb_complements_by_code(';_Tsg_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('VAG', ';_Dn.*_', 'telling'), w('PRO', '', 'you')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Do[DOP] n<apos>t[NEG;_clitic_] you[PRO] remember[VB;_Tsg_] me[PRO] telling[VAG;_Dn.*_] you[PRO] ?[PUNC]</tt>
+</dd></dl>
+<h3>4.5&nbsp;&nbsp;&nbsp;&nbsp;Ditransitive verbs</h3>
+<h4>4.5.1&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.n_</h4>
+<dl><dt>(4.152)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.n_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'it'), w('PRO', '', 'her')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] gave[VBD;_Dn.n_] it[PRO] her[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.154)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.n_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('D', '', 'a'), w('ADJ', '', 'new'), w('N', '', 'bike')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Daddy[N] bought[VBD;_Dn.n_] me[PRO] a[D] new[ADJ] bike[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.156)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.n_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('PNX', '', 'himself')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] task[N] he;<PERSON>[PRO] set[VBD;_Dn.n_] himself;<PERSON>[PNX]</tt>
+</dd></dl>
+<dl><dt>(4.158)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.n_', store([], []), filled_sbj, lgs_passive, [], _R, [w('N', '', 'two'), w('NS', '', 'recordings')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] were[BED;_cat_VePASS_] played[VVN;_Dn.n_] two[N] recordings[NS] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.160)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.n_', store([np(node('*T*', '', filler, []))], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>everything[Q;_nphd_] everyone[Q;_nphd_] has[HVP;_cat_Ve_] been[BEN;_cat_VePASS_] taught[VVN;_Dn.n_]</tt>
+</dd></dl>
+<h4>4.5.2&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.f_</h4>
+<dl><dt>(4.163)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.f_', store([np(node('*ICH*', '', index(104), []))], []), filled_sbj, active, [], _R, [w('PRO', '', 'us'), w('PRO', '', 'we'), w('MD', ';_cat_Vi_', 'must'), w('DO', ';_Tn_', 'do')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>That[D;_nphd_] is[BEP;_equ_Vw_] what[WPRO] the[D] advice[N] tells[VBP;_Dn.f_] us[PRO] we[PRO] must[MD;_cat_Vi_] do[DO;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.165)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.f_', store([], []), filled_sbj, lgs_passive, [], _R, [w('C', '', 'that'), w('D', '', 'the'), w('N', '', 'laser'), w('MD', ';_cat_Vi_', 'can'), w('VB', ';_Ipr_', 'cut'), w('P-ROLE', '', 'through'), w('N', '', 'concrete')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] got[VBD;_cat_VePASS_] told[VVN;_Dn.f_] that[C] the[D] laser[N] can[MD;_cat_Vi_] cut[VB;_Ipr_] through[P-ROLE] concrete[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.3&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.w_</h4>
+<dl><dt>(4.168)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.w_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('WADV', '', 'how'), w('TO', '', 'to'), w('VB', ';_Tn_', 'milk'), w('D', '', 'the'), w('NS', '', 'cows')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>My[PRO;_genm_] uncle[N] showed[VBD;_Dn.w_] me[PRO] how[WADV] to[TO] milk[VB;_Tn_] the[D] cows[NS] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.170)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.w_', store([], []), filled_sbj, lgs_passive, [], _R, [w('WQ', '', 'if'), w('PRO', '', 'we'), w('VBD', ';_Tn_', 'believed'), w('D', '', 'the'), w('N', '', 'report')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] were[BED;_cat_VePASS_] asked[VVN;_Dn.w_] if[WQ] we[PRO] believed[VBD;_Tn_] the[D] report[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.4&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.r_</h4>
+<dl><dt>(4.173)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('NPR', '', 'Prime'), w('NPR', '', 'Minister'), w('PULQ', '', '<ldquo>'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>She[PRO] asked[VBD;_Dn.r_] the[D] Prime[NPR] Minister[NPR] <ldquo>[PULQ] Is[BEP;_La_] it;<CLAIM>[PRO] true[ADJ] ?[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.175)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.r_', store([], []), filled_sbj, lgs_passive, [], _R, [w('PULQ', '', '<ldquo>'), w('BEP', ';_La_', 'Is'), w('PRO', '', 'it'), w('ADJ', '', 'true'), w('PUNC', '', '?'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] Prime[NPR] Minister[NPR] was[BED;_cat_VePASS_] asked[VVN;_Dn.r_] <ldquo>[PULQ] Is[BEP;_La_] it;<CLAIM>[PRO] true[ADJ] ?[PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.5&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.t_</h4>
+<dl><dt>(4.178)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.t_', store([], []), filled_sbj, active, [], _R, [w('NPR', '', 'Andrew'), w('TO', '', 'to'), w('HV', ';_Tn_', 'have'), w('D', '', 'a'), w('N', '', 'go')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] asked[VBD;_Dn.t_] Andrew[NPR] to[TO] have[HV;_Tn_] a[D] go[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.180)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.t_', store([], []), filled_sbj, lgs_passive, [], _R, [w('TO', '', 'to'), w('VB', ';_Tn_', 'make'), w('D', ';_nphd_', 'anything')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] have[HVP;_cat_Ve_] been[BEN;_cat_VePASS_] forbidden[VVN;_Dn.t_] to[TO] make[VB;_Tn_] anything[D;_nphd_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.6&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.*_</h4>
+<dl><dt>(4.183)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.*_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'you')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] did[DOD] tell[VB;_Dn.*_] you[PRO] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.7&nbsp;&nbsp;&nbsp;&nbsp;;_Dn.pr_</h4>
+<dl><dt>(4.186)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('ADJ', '', 'new'), w('N', '', 'bike'), w('P-ROLE', '', 'for'), w('PRO', '', 'me')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Daddy[N] bought[VBD;_Dn.pr_] a[D] new[ADJ] bike[N] for[P-ROLE] me[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.188)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('PRO', '', 'you'), w('D', ';_nphd_', 'something')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] want[VBP;_Tt_] to[TO] say[VB;_Dn.pr_] to[P-ROLE] you[PRO] something[D;_nphd_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.190)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('D', '', 'a'), w('N', '', 'project')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] maximum[ADJ] loan[N] that[C] the[D] state[N] could[MD;_cat_Vi_] make[VB;_Dn.pr_] to[P-ROLE] a[D] project[N]</tt>
+</dd></dl>
+<dl><dt>(4.192)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([pp(node('*ICH*', '', index(109), []))], []), filled_sbj, active, [], _R, [w('N', '', 'advice')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>developers[NS] to[P-ROLE] who[RPRO] a[D] company[N] gives[VBP;_Dn.pr_] advice[N]</tt>
+</dd></dl>
+<dl><dt>(4.194)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('N', '', 'advice'), w('P-ROLE', '', 'to')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>developers[NS] that[C] a[D] company[N] gives[VBP;_Dn.pr_] advice[N] to[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(4.196)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'to'), w('N', '', 'Head'), w('N', '', 'Office')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Details[NS] are[BEP;_cat_VePASS_] sent[VVN;_Dn.pr_] to[P-ROLE] Head[N] Office[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.198)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([pp(node('*ICH*', '', index(109), []))], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>developers[NS] to[P-ROLE] who[RPRO] advice[N] was[BED;_cat_VePASS_] given[VVN;_Dn.pr_]</tt>
+</dd></dl>
+<dl><dt>(4.200)</dt><dd>
+<tt>verb_complements_by_code(';_Dn.pr_', store([np(node('*T*', '', filler, []))], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'to')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>developers[NS] advice[N] was[BED;_cat_VePASS_] given[VVN;_Dn.pr_] to[P-ROLE]</tt>
+</dd></dl>
+<h4>4.5.8&nbsp;&nbsp;&nbsp;&nbsp;;_Dpr.f_</h4>
+<dl><dt>(4.203)</dt><dd>
+<tt>verb_complements_by_code(';_Dpr.f_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('D', '', 'the'), w('N', '', 'man'), w('C', '', 'that'), w('PRO', '', 'we'), w('BED', ';_La_', 'were'), w('ADJ', '', 'sorry')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>We[PRO] did[DOD] n<apos>t[NEG;_clitic_] say[VB;_Dpr.f_] to[P-ROLE] the[D] man[N] that[C] we[PRO] were[BED;_La_] sorry[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h4>4.5.9&nbsp;&nbsp;&nbsp;&nbsp;;_Dpr.r_</h4>
+<dl><dt>(4.206)</dt><dd>
+<tt>verb_complements_by_code(';_Dpr.r_', store([], []), filled_sbj, active, [], _R, [w('P-ROLE', '', 'to'), w('PRO', '', 'me'), w('PULQ', '', '<ldquo>'), w('VB', ';_Ip_', 'Get'), w('RP', '', 'up'), w('PUNC', '', '!'), w('PURQ', '', '<rdquo>')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>She[PRO] said[VBD;_Dpr.r_] to[P-ROLE] me[PRO] <ldquo>[PULQ] Get[VB;_Ip_] up[RP] ![PUNC] <rdquo>[PURQ] .[PUNC]</tt>
+</dd></dl>
+<h3>4.6&nbsp;&nbsp;&nbsp;&nbsp;Complex-transitive verbs</h3>
+<h4>4.6.1&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.a_</h4>
+<dl><dt>(4.209)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('ADJ', '', 'western'), w('N', '', 'sky'), w('ADJ', '', 'red')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] setting[ADJ] sun[N] painted[VBD;_Cn.a_] the[D] western[ADJ] sky[N] red[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.211)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, active, [], _R, [w('ADJ', '', 'open'), w('D', '', 'the'), w('N', '', 'canopy')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>He[PRO] flung[VBD;_Cn.a_] open[ADJ] the[D] canopy[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.213)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('ADJ', '', 'annoying')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>her[PRO;_genm_] habits[NS] that[C] most[Q;_nphd_] would[MD;_cat_Vi_] find[VB;_Cn.a_] annoying[ADJ]</tt>
+</dd></dl>
+<dl><dt>(4.215)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_provisional_', 'it'), w('ADJR', '', 'easier'), w('TO', '', 'to'), w('VB', ';_Tn_', 'find'), w('PRO', ';_genm_', 'your'), w('N', '', 'way')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>A[D] map[N] makes[VBP;_Cn.a_] it[PRO;_provisional_] easier[ADJR] to[TO] find[VB;_Tn_] your[PRO;_genm_] way[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.217)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_genm_', 'your'), w('N', '', 'way'), w('ADJR', '', 'easier'), w('TO', '', 'to'), w('VB', ';_Tn_', 'find')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>A[D] map[N] makes[VBP;_Cn.a_] your[PRO;_genm_] way[N] easier[ADJR] to[TO] find[VB;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.219)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([np(node('*ICH*', '', index(102), []))], []), filled_sbj, active, [], _R, [w('ADJ', '', 'difficult'), w('TO', '', 'to'), w('VB', ';_Tn_', 'believe')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] find[VB;_Cn.a_] difficult[ADJ] to[TO] believe[VB;_Tn_] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.221)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, lgs_passive, [], _R, [w('ADJ', '', 'red')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] western[ADJ] sky[N] was[BED;_cat_VePASS_] painted[VVN;_Cn.a_] red[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.223)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.a_', store([], []), filled_sbj, lgs_passive, [], _R, [w('ADJ', '', 'difficult'), w('TO', '', 'to'), w('VB', ';_Tn_', 'believe')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>This[D;_nphd_] was[BED;_cat_VePASS_] found[VVN;_Cn.a_] difficult[ADJ] to[TO] believe[VB;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.6.2&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.n_</h4>
+<dl><dt>(4.226)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'it'), w('PRO', ';_ppge_', 'mine')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] have[HVP;_cat_Ve_] made[VVN;_Cn.n_] it[PRO] mine[PRO;_ppge_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.228)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_provisional_', 'it'), w('D', '', 'a'), w('N', '', 'rule'), w('TO', '', 'to'), w('VB', ';_Ip_', 'get'), w('RP', '', 'up')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Make[VB;_Cn.n_] it[PRO;_provisional_] a[D] rule[N] to[TO] get[VB;_Ip_] up[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.230)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n_', store([np(node('*ICH*', '', index(108), []))], []), filled_sbj, active, [], _R, [w('NPR', '', 'Ruffels')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>a[D] kitten[N] who[RPRO] we[PRO] called[VBD;_Cn.n_] Ruffels[NPR]</tt>
+</dd></dl>
+<dl><dt>(4.232)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n_', store([], []), filled_sbj, lgs_passive, [], _R, [w('NPR', '', 'Ruffels')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] kitten[N] was[BED;_cat_VePASS_] called[VVN;_Cn.n_] Ruffels[NPR] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.234)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n_', store([np(node('*ICH*', '', index(102), []))], []), filled_sbj, lgs_passive, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>What[WPRO] was[BED;_cat_VePASS_] the[D] city[N] called[VVN;_Cn.n_] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.6.3&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.n/a_</h4>
+<dl><dt>(4.237)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n/a_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'it'), w('P-ROLE', '', 'as'), w('D', '', 'a'), w('ADJ', '', 'natural'), w('N', '', 'thing')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>They[PRO] accepted[VBD;_Cn.n/a_] it[PRO] as[P-ROLE] a[D] natural[ADJ] thing[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.239)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n/a_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'the'), w('NS', '', 'rates'), w('P-ROLE', '', 'as'), w('ADJ', '', 'low')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Solicitors[NS] regarded[VBD;_Cn.n/a_] the[D] rates[NS] as[P-ROLE] low[ADJ] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.241)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n/a_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'as'), w('D', '', 'the'), w('NPR', '', 'Delian'), w('NPR', '', 'League')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] alliance[N] became[VBD;_cat_VePASS_] known[VVN;_Cn.n/a_] as[P-ROLE] the[D] Delian[NPR] League[NPR] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.243)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.n/a_', store([], []), filled_sbj, passive, [], _R, [w('P-ROLE', ';_lgs_', 'by'), w('NS', '', 'solicitors'), w('P-ROLE', '', 'as'), w('ADJ', '', 'low')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] rates[NS] are[BEP;_cat_VePASS_] regarded[VVN;_Cn.n/a_] by[P-ROLE;_lgs_] solicitors[NS] as[P-ROLE] low[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h4>4.6.4&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.pr_</h4>
+<dl><dt>(4.246)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.pr_', store([], []), filled_sbj, active, [], _R, [w('PNX', '', 'himself'), w('P-ROLE', '', 'in'), w('D', '', 'an'), w('ADJ', '', 'upper'), w('N', '', 'gallery')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Geoffrey;<GEOFFREY>[NPR] could[MD;_cat_Vi_] imagine[VB;_Cn.pr_] himself;<GEOFFREY>[PNX] in[P-ROLE] an[D] upper[ADJ] gallery[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.248)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.pr_', store([], []), filled_sbj, lgs_passive, [], _R, [w('P-ROLE', '', 'in'), w('ADJ', '', 'parallel'), w('N', '', 'computing')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Thorn[NPR] is[BEP;_cat_VePASS_] involved[VVN;_Cn.pr_] in[P-ROLE] parallel[ADJ] computing[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.6.5&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.t_</h4>
+<dl><dt>(4.251)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.t_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'it'), w('TO', '', 'to'), w('VB', ';_Ipr_', 'get'), w('P-ROLE', '', 'off'), w('PRO', '', 'me')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] persuaded[VBD;_Cn.t_] it[PRO] to[TO] get[VB;_Ipr_] off[P-ROLE] me[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.253)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.t_', store([np(node('*T*', '', filler, []))], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('DO', ';_Tn_', 'do'), w('PRO', ';_genm_', 'my'), w('ADJ', '', 'dirty'), w('N', '', 'work')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>the[D] person[N] that[C] I[PRO] <apos>ll[MD;_cat_Vi_] get[VB;_Cn.t_] to[TO] do[DO;_Tn_] my[PRO;_genm_] dirty[ADJ] work[N]</tt>
+</dd></dl>
+<dl><dt>(4.255)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.t_', store([], []), filled_sbj, lgs_passive, [], _R, [w('TO', '', 'to'), w('BE', ';_Ln_', 'be'), w('NS', '', 'neurons')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Such[ADJ] receptors[NS] are[BEP;_cat_VePASS_] thought[VVN;_Cn.t_] to[TO] be[BE;_Ln_] neurons[NS] .[PUNC]</tt>
+</dd></dl>
+<h4>4.6.6&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.i_</h4>
+<dl><dt>(4.258)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.i_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'me'), w('HV', ';_Tn_', 'have'), w('D', '', 'a'), w('N', '', 'go')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Let[VB;_Cn.i_] me[PRO] have[HV;_Tn_] a[D] go[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.6.7&nbsp;&nbsp;&nbsp;&nbsp;;_Cn.g_</h4>
+<dl><dt>(4.261)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.g_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('ADJ', '', 'ticking'), w('N', '', 'clock'), w('VAG', ';_I_', 'running')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>So[ADV] they[PRO] <apos>d[HVD;_cat_Ve_] got[VVN;_Cn.g_] a[D] ticking[ADJ] clock[N] running[VAG;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.263)</dt><dd>
+<tt>verb_complements_by_code(';_Cn.g_', store([], []), filled_sbj, lgs_passive, [], _R, [w('VAG', ';_I_', 'working')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] unit[N] was[BED;_cat_VePASS_] assumed[VVN;_Cn.g_] working[VAG;_I_] .[PUNC]</tt>
+</dd></dl>
+<h3>4.7&nbsp;&nbsp;&nbsp;&nbsp;VP24 verbs</h3>
+<h4>4.7.1&nbsp;&nbsp;&nbsp;&nbsp;;_VP24A_</h4>
+<dl><dt>(4.266)</dt><dd>
+<tt>verb_complements_by_code(';_VP24A_', store([], []), filled_sbj, active, [], _R, [w('PRO', '', 'him'), w('VVN', ';_Tn.pr_', 'obliged'), w('P-ROLE', '', 'to'), w('PRO', '', 'me')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] made[VBD;_VP24A_] him[PRO] obliged[VVN;_Tn.pr_] to[P-ROLE] me[PRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.268)</dt><dd>
+<tt>verb_complements_by_code(';_VP24A_', store([], []), filled_sbj, lgs_passive, [], _R, [w('VVN', ';_Cn.a_', 'shot'), w('ADJ', '', 'dead')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>A[D] prominent[ADJ] journalist[N] was[BED;_cat_VePASS_] found[VVN;_VP24A_] shot[VVN;_Cn.a_] dead[ADJ] .[PUNC]</tt>
+</dd></dl>
+<h4>4.7.2&nbsp;&nbsp;&nbsp;&nbsp;;_VP24B_</h4>
+<dl><dt>(4.271)</dt><dd>
+<tt>verb_complements_by_code(';_VP24B_', store([], []), filled_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'novel'), w('VVN', ';_Tn_', 'published')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] <apos>d[HVD;_cat_Ve_] had[HVN;_VP24B_] a[D] novel[N] published[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.7.3&nbsp;&nbsp;&nbsp;&nbsp;;_VP24C_</h4>
+<dl><dt>(4.274)</dt><dd>
+<tt>verb_complements_by_code(';_VP24C_', store([], []), filled_sbj, active, [], _R, [w('PRO', ';_genm_', 'my'), w('N', '', 'hair'), w('VVN', ';_Tn_', 'cut')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] <apos>ve[HVP;_cat_Ve_] got[VVN;_VP24C_] my[PRO;_genm_] hair[N] cut[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h3>4.8&nbsp;&nbsp;&nbsp;&nbsp;Existential verbs</h3>
+<h4>4.8.1&nbsp;&nbsp;&nbsp;&nbsp;;_ex_V_</h4>
+<dl><dt>(4.277)</dt><dd>
+<tt>verb_complements_by_code(';_ex_V_', store([], []), there_sbj, active, [], _R, [w('ADJ', '', 'other'), w('NS', '', 'complications')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] are[BEP;_ex_V_] other[ADJ] complications[NS] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.279)</dt><dd>
+<tt>verb_complements_by_code(';_ex_V_', store([np(node('*ICH*', '', index(102), []))], []), there_sbj, active, [], _R, [], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>How[WADV] many[ADJ] flats[NS] are[BEP;_ex_V_] there[EX] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.8.2&nbsp;&nbsp;&nbsp;&nbsp;;_ex_Vp_</h4>
+<dl><dt>(4.282)</dt><dd>
+<tt>verb_complements_by_code(';_ex_Vp_', store([], []), there_sbj, active, [], _R, [w('Q', ';_nphd_', 'nothing'), w('RP', '', 'there')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] <apos>s[BEP;_ex_Vp_] nothing[Q;_nphd_] there[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.284)</dt><dd>
+<tt>verb_complements_by_code(';_ex_Vp_', store([np(node('*ICH*', '', index(102), []))], []), there_sbj, active, [], _R, [w('RP', '', 'here')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>How[WADV] many[ADJ] flats[NS] are[BEP;_ex_Vp_] there[EX] here[RP] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.8.3&nbsp;&nbsp;&nbsp;&nbsp;;_ex_Vpr_</h4>
+<dl><dt>(4.287)</dt><dd>
+<tt>verb_complements_by_code(';_ex_Vpr_', store([], []), there_sbj, active, [], _R, [w('ADJ', '', 'open'), w('N', '', 'mockery'), w('P-ROLE', '', 'in'), w('PRO', ';_genm_', 'his'), w('N', '', 'tone')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] was[BED;_ex_Vpr_] open[ADJ] mockery[N] in[P-ROLE] his[PRO;_genm_] tone[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.8.4&nbsp;&nbsp;&nbsp;&nbsp;;_ex_cat_Vt_</h4>
+<dl><dt>(4.290)</dt><dd>
+<tt>verb_complements_by_code(';_ex_cat_Vt_', store([], []), there_sbj, active, [], _R, [w('Q', '', 'no'), w('N', '', 'evidence'), w('TO', '', 'to'), w('VB', ';_Tf_', 'prove'), w('NPR', '', 'Hollis'), w('BED', ';_Ln_', 'was'), w('D', '', 'a'), w('ADJ', '', 'Russian'), w('N', '', 'mole')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] is[BEP;_ex_cat_Vt_] no[Q] evidence[N] to[TO] prove[VB;_Tf_] Hollis[NPR] was[BED;_Ln_] a[D] Russian[ADJ] mole[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.8.5&nbsp;&nbsp;&nbsp;&nbsp;;_ex_cat_VtPASS_</h4>
+<dl><dt>(4.293)</dt><dd>
+<tt>verb_complements_by_code(';_ex_cat_VtPASS_', store([np(node('*ICH*', '', index(102), []))], []), there_sbj, active, [], _R, [w('P-CONN', '', 'for'), w('PRO', '', 'her'), w('TO', '', 'to'), w('DO', ';_Tn_', 'do')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>What[WPRO] is[BEP;_ex_cat_VtPASS_] there[EX] for[P-CONN] her[PRO] to[TO] do[DO;_Tn_] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.8.6&nbsp;&nbsp;&nbsp;&nbsp;;_ex_cat_Vg_</h4>
+<dl><dt>(4.296)</dt><dd>
+<tt>verb_complements_by_code(';_ex_cat_Vg_', store([], []), there_sbj, active, [], _R, [w('D', '', 'a'), w('N', '', 'bear'), w('VAG', ';_Ipr_', 'sitting'), w('P-ROLE', '', 'in'), w('D', '', 'the'), w('N', '', 'corner')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] <apos>s[BEP;_ex_cat_Vg_] a[D] bear[N] sitting[VAG;_Ipr_] in[P-ROLE] the[D] corner[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.8.7&nbsp;&nbsp;&nbsp;&nbsp;;_ex_cat_VePASS_</h4>
+<dl><dt>(4.299)</dt><dd>
+<tt>verb_complements_by_code(';_ex_cat_VePASS_', store([], []), there_sbj, active, [], _R, [w('D', ';_nphd_', 'something'), w('VVN', ';_Tn.pr_', 'inscribed'), w('P-ROLE', '', 'on'), w('D', ';_nphd_', 'this')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>There[EX] <apos>s[BEP;_ex_cat_VePASS_] something[D;_nphd_] inscribed[VVN;_Tn.pr_] on[P-ROLE] this[D;_nphd_] .[PUNC]</tt>
+</dd></dl>
+<h3>4.9&nbsp;&nbsp;&nbsp;&nbsp;Equative verbs</h3>
+<h4>4.9.1&nbsp;&nbsp;&nbsp;&nbsp;;_equ_Vf_</h4>
+<dl><dt>(4.302)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vf_', store([], []), filled_sbj, active, [], _R, [w('C', '', 'that'), w('PRO', '', 'I'), w('HVD', ';_Tn_', 'had'), w('NS', '', 'lessons')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>My[PRO;_genm_] excuse[N] was[BED;_equ_Vf_] that[C] I[PRO] had[HVD;_Tn_] lessons[NS] .[PUNC]</tt>
+</dd></dl>
+<h4>4.9.2&nbsp;&nbsp;&nbsp;&nbsp;;_equ_Vw_</h4>
+<dl><dt>(4.305)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vw_', store([], []), filled_sbj, active, [], _R, [w('WADV', '', 'how'), w('PRO', '', 'I'), w('VBD', ';_Tt_', 'learnt'), w('TO', '', 'to'), w('VB', ';_I_', 'ride')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>That[D;_nphd_] is[BEP;_equ_Vw_] how[WADV] I[PRO] learnt[VBD;_Tt_] to[TO] ride[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.307)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vw_', store([], []), filled_sbj, active, [], _R, [w('WPRO', '', 'what'), w('TO', '', 'to'), w('VB', ';_Tn.pr_', 'say'), w('P-ROLE', '', 'to'), w('N', '', 'people')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>Is[BEP;_equ_Vw_] that[D;_nphd_] what[WPRO] to[TO] say[VB;_Tn.pr_] to[P-ROLE] people[N] ?[PUNC]</tt>
+</dd></dl>
+<h4>4.9.3&nbsp;&nbsp;&nbsp;&nbsp;;_equ_Vt_</h4>
+<dl><dt>(4.310)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vt_', store([], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('VB', ';_Dn.n_', 'give'), w('D', '', 'the'), w('N', '', 'application'), w('D', '', 'an'), w('N', '', 'iconbar'), w('N', '', 'menu')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>This[D;_nphd_] is[BEP;_equ_Vt_] to[TO] give[VB;_Dn.n_] the[D] application[N] an[D] iconbar[N] menu[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.9.4&nbsp;&nbsp;&nbsp;&nbsp;;_equ_Vg_</h4>
+<dl><dt>(4.313)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vg_', store([], []), filled_sbj, active, [], _R, [w('VAG', ';_cat_Vt_', 'trying'), w('TO', '', 'to'), w('VB', ';_Tn_', 'debug'), w('D', '', 'the'), w('N', '', 'interface')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>One[D;_nphd_] of[P-ROLE;_phrase_] my[PRO;_genm_] funny[ADJ] stories[NS] is[BEP;_equ_Vg_] trying[VAG;_cat_Vt_] to[TO] debug[VB;_Tn_] the[D] interface[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.315)</dt><dd>
+<tt>verb_complements_by_code(';_equ_Vg_', store([], []), filled_sbj, active, [], _R, [w('N', '', 'Mr.'), w('NPR', '', 'McGregor'), w('VAG', ';_Tn_', 'hoeing'), w('NS', '', 'onions')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] first[ADJ] thing[N] he[PRO] saw[VBD;_Tn_] was[BED;_equ_Vg_] Mr.[N] McGregor[NPR] hoeing[VAG;_Tn_] onions[NS] .[PUNC]</tt>
+</dd></dl>
+<h3>4.10&nbsp;&nbsp;&nbsp;&nbsp;Catenative verbs</h3>
+<h4>4.10.1&nbsp;&nbsp;&nbsp;&nbsp;;_cat_Vt_</h4>
+<dl><dt>(4.318)</dt><dd>
+<tt>verb_complements_by_code(';_cat_Vt_', store([], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('VB', ';_Ipr_', 'go'), w('P-ROLE', '', 'to'), w('NPR', '', 'Leeds')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>I[PRO] had[HVD;_cat_Vt_] to[TO] go[VB;_Ipr_] to[P-ROLE] Leeds[NPR] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.2&nbsp;&nbsp;&nbsp;&nbsp;;_cat_VtPASS_</h4>
+<dl><dt>(4.321)</dt><dd>
+<tt>verb_complements_by_code(';_cat_VtPASS_', store([], []), filled_sbj, active, [], _R, [w('TO', '', 'to'), w('VB', ';_Tn_', 'blame')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>The[D] government[N] is[BEP;_cat_VtPASS_] to[TO] blame[VB;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.323)</dt><dd>
+<tt>verb_complements_by_code(';_cat_VtPASS_', store([], []), filled_sbj, active, [], _R, [w('P-CONN', '', 'for'), w('PRO', '', 'them'), w('TO', '', 'to'), w('VB', ';_Tn_', 'sign'), w('CONJ', '', 'and'), w('VB', ';_Tn.p_', 'send'), w('RP', '', 'back')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>One[D;_nphd_] is[BEP;_cat_VtPASS_] for[P-CONN] them[PRO] to[TO] sign[VB;_Tn_] and[CONJ] send[VB;_Tn.p_] back[RP] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.3&nbsp;&nbsp;&nbsp;&nbsp;;_cat_Vi_</h4>
+<dl><dt>(4.326)</dt><dd>
+<tt>verb_complements_by_code(';_cat_Vi_', store([], []), filled_sbj, active, [], _R, [w('VB', ';_Tn_', 'cut'), w('D', '', 'the'), w('N', '', 'cost')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>It[PRO] helped[VBD;_cat_Vi_] cut[VB;_Tn_] the[D] cost[N] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.4&nbsp;&nbsp;&nbsp;&nbsp;;_cat_Vg_</h4>
+<dl><dt>(4.329)</dt><dd>
+<tt>verb_complements_by_code(';_cat_Vg_', store([], []), filled_sbj, active, [], _R, [w('VAG', ';_I_', 'walking')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>They[PRO] stopped[VBD;_cat_Vg_] walking[VAG;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.5&nbsp;&nbsp;&nbsp;&nbsp;;_cat_VgPASS_</h4>
+<dl><dt>(4.332)</dt><dd>
+<tt>verb_complements_by_code(';_cat_VgPASS_', store([], []), filled_sbj, active, [], _R, [w('VAG', ';_Tn_', 'dressing')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>His[PRO;_genm_] wounds[NS] need[VBP;_cat_VgPASS_] dressing[VAG;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.6&nbsp;&nbsp;&nbsp;&nbsp;;_cat_Ve_</h4>
+<dl><dt>(4.335)</dt><dd>
+<tt>verb_complements_by_code(';_cat_Ve_', store([], []), filled_sbj, active, [], _R, [w('VVN', ';_I_', 'changed')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>His[PRO;_genm_] expression[N] had[HVD;_cat_Ve_] changed[VVN;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.7&nbsp;&nbsp;&nbsp;&nbsp;;_cat_VePASS_</h4>
+<dl><dt>(4.338)</dt><dd>
+<tt>verb_complements_by_code(';_cat_VePASS_', store([], []), filled_sbj, active, [], _R, [w('VVN', ';_Tn_', 'changed')], []), say_parse([node('', '', nt, _R)]).</tt>
+<br>
+<br>
+<tt>His[PRO;_genm_] expression[N] was[BED;_cat_VePASS_] changed[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>4.10.8&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(4.339)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_genm_', 'His'), w('N', '', 'expression'), w('HVD', ';_cat_Ve_', 'had'), w('VVN', ';_Tn_', 'changed'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>His[PRO;_genm_] expression[N] was[BED;_cat_VePASS_] changed[VVN;_I_] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(4.340)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_genm_', 'His'), w('N', '', 'expression'), w('BED', ';_cat_VePASS_', 'was'), w('VVN', ';_I_', 'changed'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>His[PRO;_genm_] expression[N] was[BED;_cat_VePASS_] changed[VVN;_I_] .[PUNC]</tt>
+</dd></dl>
+<h2>Chapter 5: Clause layers</h2>
+<h3>5.1&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h3>
+<h3>5.2&nbsp;&nbsp;&nbsp;&nbsp;Initial clause structure</h3>
+<h4>5.2.1&nbsp;&nbsp;&nbsp;&nbsp;Non-recursive clause top rules</h4>
+<h4>5.2.2&nbsp;&nbsp;&nbsp;&nbsp;Recursive clause top rules</h4>
+<dl><dt>(5.5)</dt><dd>
+<tt>tphrase_set_string([w('P-ROLE', '', 'Only_after'), w('ADJ', '', 'prolonged'), w('NS', '', 'discussions'), w('DOD', '', 'did'), w('PRO', '', 'they'), w('VB', ';_Ipr_', 'come'), w('P-ROLE', '', 'to'), w('D', '', 'an'), w('N', '', 'agreement')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<br>
+<br>
+<tt>Only_after[P-ROLE] prolonged[ADJ] discussions[NS] did[DOD] they[PRO] come[VB;_Ipr_] to[P-ROLE] an[D] agreement[N] .[PUNC]</tt>
+</dd></dl>
+<h4>5.2.3&nbsp;&nbsp;&nbsp;&nbsp;Verb phrase layer rules</h4>
+<h4>5.2.4&nbsp;&nbsp;&nbsp;&nbsp;An example with full clause structure</h4>
+<dl><dt>(5.8)</dt><dd>
+<tt>tphrase_set_string([w('FRM', '', 'Please'), w('VB', ';_I_', 'smile')]), parse(clause_top_layer('imperative_clause', store([], []))).</tt>
+<br>
+<br>
+<tt>Please[FRM] smile[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<h3>5.3&nbsp;&nbsp;&nbsp;&nbsp;Matrix interrogatives</h3>
+<h4>5.3.1&nbsp;&nbsp;&nbsp;&nbsp;DO operator layer</h4>
+<dl><dt>(5.11)</dt><dd>
+<tt>tphrase_set_string([w('WADV', '', 'Why'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'you'), w('VB', ';_I_', 'go')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Why[WADV] did[DOD] n<apos>t[NEG;_clitic_] you[PRO] go[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.3.2&nbsp;&nbsp;&nbsp;&nbsp;HAVE, BE or modal verb finite layers</h4>
+<dl><dt>(5.14)</dt><dd>
+<tt>tphrase_set_string([w('HVP', ';_Tn_', 'Has'), w('PRO', '', 'he'), w('D', '', 'a'), w('N', '', 'fever')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Has[HVP;_Tn_] he[PRO] a[D] fever[N] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.16)</dt><dd>
+<tt>tphrase_set_string([w('WADV', '', 'How'), w('ADJ', '', 'important'), w('BEP', ';_La_', 'is'), w('PRO', '', 'it')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>How[WADV] important[ADJ] is[BEP;_La_] it[PRO] ?[PUNC]</tt>
+</dd></dl>
+<h3>5.4&nbsp;&nbsp;&nbsp;&nbsp;Clause structure with catenative verbs</h3>
+<h4>5.4.1&nbsp;&nbsp;&nbsp;&nbsp;Bare infinitive complements</h4>
+<dl><dt>(5.18)</dt><dd>
+<tt>tphrase_set_string([w('MD', ';_cat_Vi_', 'Can'), w('PRO', '', 'I'), w('VB', ';_I_', 'help')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Can[MD;_cat_Vi_] I[PRO] help[VB;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.4.2&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive complements</h4>
+<dl><dt>(5.20)</dt><dd>
+<tt>tphrase_set_string([w('MD', ';_cat_Vt_', 'Ought'), w('NEG', ';_clitic_', 'n<apos>t'), w('PRO', '', 'he'), w('TO', '', 'to'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Ought[MD;_cat_Vt_] n<apos>t[NEG;_clitic_] he[PRO] to[TO] stand[VB;_Ip_] up[RP] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.4.3&nbsp;&nbsp;&nbsp;&nbsp;Active past participle clause complements</h4>
+<dl><dt>(5.23)</dt><dd>
+<tt>tphrase_set_string([w('HVP', ';_cat_Ve_', 'Has'), w('PRO', '', 'he'), w('VVN', ';_I_', 'gone')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Has[HVP;_cat_Ve_] he[PRO] gone[VVN;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.4.4&nbsp;&nbsp;&nbsp;&nbsp;Present participle clause complements</h4>
+<dl><dt>(5.25)</dt><dd>
+<tt>tphrase_set_string([w('BEP', ';_cat_Vg_', 'Is'), w('PRO', '', 'he'), w('VAG', ';_I_', 'going')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Is[BEP;_cat_Vg_] he[PRO] going[VAG;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.4.5&nbsp;&nbsp;&nbsp;&nbsp;Passive past participle clause complements</h4>
+<dl><dt>(5.29)</dt><dd>
+<tt>tphrase_set_string([w('BED', ';_cat_VePASS_', 'Was'), w('PRO', '', 'he'), w('VVN', ';_Tn_', 'scolded')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Was[BED;_cat_VePASS_] he[PRO] scolded[VVN;_Tn_] ?[PUNC]</tt>
+</dd></dl>
+<h3>5.5&nbsp;&nbsp;&nbsp;&nbsp;Clause middle layers</h3>
+<dl><dt>(5.33)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<br>
+<br>
+<tt>He[PRO] did[DOD] n<apos>t[NEG;_clitic_] stand[VB;_Ip_] up[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.35)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'he'), w('ADV', '', 'really'), w('MD', ';_cat_Vt_', 'ought'), w('TO', '', 'to'), w('VB', ';_Ip_', 'stand'), w('RP', '', 'up')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<br>
+<br>
+<tt>He[PRO] really[ADV] ought[MD;_cat_Vt_] to[TO] stand[VB;_Ip_] up[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.37)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'A'), w('N', '', 'ship'), w('MD', ';_cat_Vi_', 'may'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_cat_Vg_', 'been'), w('BAG', ';_cat_VePASS_', 'being'), w('VVN', ';_Tn_', 'sunk')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<br>
+<br>
+<tt>A[D] ship[N] may[MD;_cat_Vi_] have[HV;_cat_Ve_] been[BEN;_cat_Vg_] being[BAG;_cat_VePASS_] sunk[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>5.5.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(5.38)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'Who'), w('DOD', ';_Tn_', 'did'), w('WPRO', '', 'what'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.39)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'Who'), w('VBD', ';_I_', 'went'), w('WADV', '', 'where'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.40)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'What'), w('DOD', '', 'did'), w('WPRO', '', 'who'), w('DO', ';_Tn_', 'do'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.41)</dt><dd>
+<tt>tphrase_set_string([w('WADV', '', 'Where'), w('DOD', '', 'did'), w('WPRO', '', 'who'), w('VB', ';_I_', 'go'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.42)</dt><dd>
+<tt>tphrase_set_string([w('WADV', '', 'Where'), w('DOD', '', 'did'), w('PRO', '', 'you'), w('VB', ';_Tn_', 'buy'), w('WPRO', '', 'what'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.43)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'What'), w('DOD', '', 'did'), w('PRO', '', 'you'), w('VB', ';_Tn_', 'buy'), w('WADV', '', 'where'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>What[WPRO] did[DOD] you[PRO] buy[VB;_Tn_] where[WADV] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.5.2&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(5.44)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Vt_] to[TO] have[HV;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.45)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_cat_Ve_', 'had'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Vt_] to[TO] have[HV;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.46)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('HVD', ';_cat_Ve_', 'had'), w('HVN', ';_cat_Vt_', 'had'), w('TO', '', 'to'), w('HV', ';_cat_Ve_', 'have'), w('HVN', ';_Tn_', 'had'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] had[HVD;_cat_Ve_] had[HVN;_cat_Vt_] to[TO] have[HV;_cat_Ve_] had[HVN;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<h4>5.5.3&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(5.47)</dt><dd>
+<tt>tphrase_set_string([w('DO', '', 'Do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.48)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('BE', ';_La_', 'be'), w('ADJ', '', 'afraid'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.49)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('HVP', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.50)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_La_', 'been'), w('ADJ', '', 'busy'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.51)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('DOP', '', 'do'), w('NEG', ';_clitic_', 'n<apos>t'), w('HV', ';_Tn_', 'have'), w('D', '', 'any'), w('N', '', 'money'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] do[DOP] n<apos>t[NEG;_clitic_] have[HV;_Tn_] any[D] money[N] .[PUNC]</tt>
+</dd></dl>
+<h4>5.5.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h3>5.6&nbsp;&nbsp;&nbsp;&nbsp;Existential there</h3>
+<dl><dt>(5.56)</dt><dd>
+<tt>tphrase_set_string([w('BEP', ';_ex_V_', 'Is'), w('EX', '', 'there'), w('D', '', 'a'), w('N', '', 'doctor')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Is[BEP;_ex_V_] there[EX] a[D] doctor[N] ?[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.58)</dt><dd>
+<tt>tphrase_set_string([w('EX', '', 'there'), w('MD', ';_cat_Vt_', 'ought'), w('TO', '', 'to'), w('HV', ';_cat_Ve_', 'have'), w('BEN', ';_ex_V_', 'been'), w('D', '', 'a'), w('N', '', 'doctor')]), parse(clause_top_layer('statement_order', store([], []))).</tt>
+<br>
+<br>
+<tt>There[EX] ought[MD;_cat_Vt_] to[TO] have[HV;_cat_Ve_] been[BEN;_ex_V_] a[D] doctor[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(5.60)</dt><dd>
+<tt>tphrase_set_string([w('BEP', ';_ex_cat_Vg_', 'Is'), w('EX', '', 'there'), w('Q', ';_nphd_', 'nobody_else'), w('VAG', ';_I_', 'coming')]), parse(clause_top_layer('matrix_interrogative', store([], []))).</tt>
+<br>
+<br>
+<tt>Is[BEP;_ex_cat_Vg_] there[EX] nobody_else[Q;_nphd_] coming[VAG;_I_] ?[PUNC]</tt>
+</dd></dl>
+<h4>5.6.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h2>Chapter 6: Clause subordination</h2>
+<h3>6.1&nbsp;&nbsp;&nbsp;&nbsp;Introduction</h3>
+<h3>6.2&nbsp;&nbsp;&nbsp;&nbsp;That-clauses</h3>
+<dl><dt>(6.4)</dt><dd>
+<tt>tphrase_set_string([w('WPRO', '', 'Who'), w('DOP', '', 'do'), w('PRO', '', 'you'), w('VB', ';_Tf_', 'think'), w('MD', ';_cat_Vi_', 'will'), w('VB', ';_Ip_', 'arrive'), w('RP', '', 'early'), w('PUNC', '', '?')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Who[WPRO] do[DOP] you[PRO] think[VB;_Tf_] will[MD;_cat_Vi_] arrive[VB;_Ip_] early[RP] ?[PUNC]</tt>
+</dd></dl>
+<h4>6.2.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h3>6.3&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive clauses</h3>
+<h3>6.4&nbsp;&nbsp;&nbsp;&nbsp;Embedded question clauses</h3>
+<h4>6.4.1&nbsp;&nbsp;&nbsp;&nbsp;Finite embedded question clauses</h4>
+<dl><dt>(6.15)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'He'), w('VBD', ';_Dn.w_', 'asked'), w('PRO', '', 'her'), w('WQ', '', 'whether'), w('PRO', '', 'she'), w('MD', ';_cat_Vi_', 'would'), w('VB', ';_Ip_', 'arrive'), w('RP', '', 'early'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>He[PRO] asked[VBD;_Dn.w_] her[PRO] whether[WQ] she[PRO] would[MD;_cat_Vi_] arrive[VB;_Ip_] early[RP] .[PUNC]</tt>
+</dd></dl>
+<h4>6.4.2&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(6.17)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('PRO', '', 'they'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>They[PRO] know[VBP;_Tw_] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] who[WPRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.18)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('WPRO', '', 'who'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>They[PRO] know[VBP;_Tw_] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] who[WPRO] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.19)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'They'), w('VBP', ';_Tw_', 'know'), w('WPRO', '', 'who'), w('MD', ';_cat_Vi_', 'should'), w('VB', ';_Tn_', 'invite'), w('WPRO', '', 'who'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>They[PRO] know[VBP;_Tw_] who[WPRO] should[MD;_cat_Vi_] invite[VB;_Tn_] who[WPRO] .[PUNC]</tt>
+</dd></dl>
+<h4>6.4.3&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive embedded question clauses</h4>
+<dl><dt>(6.21)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'She'), w('VBD', ';_Tw_', 'wondered'), w('WPRO', '', 'what'), w('TO', '', 'to'), w('DO', ';_Tn_', 'do'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>She[PRO] wondered[VBD;_Tw_] what[WPRO] to[TO] do[DO;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>6.4.4&nbsp;&nbsp;&nbsp;&nbsp;Embedded questions as preposition complements</h4>
+<dl><dt>(6.23)</dt><dd>
+<tt>tphrase_set_string([w('ADJ', '', 'concerned'), w('P-ROLE', ';_phrase_', 'with'), w('WADV', '', 'how'), w('PRO', '', 'we'), w('MD', ';_cat_Vi_', 'can'), w('VB', ';_Tn_', 'save'), w('NS', '', 'hedgehogs')]), parse(adjective_phrase('-PRD', nt, store([], []), 'non_privileged')).</tt>
+<br>
+<br>
+<tt>concerned[ADJ] with[P-ROLE;_phrase_] how[WADV] we[PRO] can[MD;_cat_Vi_] save[VB;_Tn_] hedgehogs[NS]</tt>
+</dd></dl>
+<dl><dt>(6.24)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'choice'), w('P-ROLE', ';_phrase_', 'of'), w('WADV', '', 'where'), w('TO', '', 'to'), w('VB', ';_Tn_', 'buy'), w('PRO', ';_genm_', 'my'), w('N', '', 'home')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] choice[N] of[P-ROLE;_phrase_] where[WADV] to[TO] buy[VB;_Tn_] my[PRO;_genm_] next[ADJ] home[N]</tt>
+</dd></dl>
+<h3>6.5&nbsp;&nbsp;&nbsp;&nbsp;Provisional it and a notional subject</h3>
+<h4>6.5.1&nbsp;&nbsp;&nbsp;&nbsp;That-clause notional subjects</h4>
+<dl><dt>(6.28)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_provisional_', 'It'), w('BED', ';_La_', 'was'), w('ADJ', '', 'good'), w('C', '', 'that'), w('PRO', '', 'he'), w('DOD', '', 'did'), w('NEG', ';_clitic_', 'n<apos>t'), w('VB', ';_I_', 'come'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>It[PRO;_provisional_] was[BED;_La_] good[ADJ] that[C] he[PRO] did[DOD] n<apos>t[NEG;_clitic_] come[VB;_I_] .[PUNC]</tt>
+</dd></dl>
+<h4>6.5.2&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive clause notional subjects</h4>
+<dl><dt>(6.32)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_provisional_', 'It'), w('BED', ';_cat_VePASS_', 'was'), w('VVN', ';_Tn_', 'attempted'), w('TO', '', 'to'), w('VB', ';_Tn_', 'form'), w('D', '', 'a'), w('ADJ', '', 'new'), w('N', '', 'plan'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>It[PRO;_provisional_] was[BED;_cat_VePASS_] attempted[VVN;_Tn_] to[TO] form[VB;_Tn_] a[D] new[ADJ] plan[N] .[PUNC]</tt>
+</dd></dl>
+<h3>6.6&nbsp;&nbsp;&nbsp;&nbsp;Derived and notional subjects</h3>
+<h4>6.6.1&nbsp;&nbsp;&nbsp;&nbsp;A double passive</h4>
+<dl><dt>(6.35)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'A'), w('ADJ', '', 'new'), w('N', '', 'plan'), w('BED', ';_cat_VePASS_', 'was'), w('VVN', ';_Tn_', 'attempted'), w('TO', '', 'to'), w('BE', ';_cat_VePASS_', 'be'), w('VVN', ';_Tn_', 'formed'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>A[D] new[ADJ] plan[N] was[BED;_cat_VePASS_] attempted[VVN;_Tn_] to[TO] be[BE;_cat_VePASS_] formed[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>6.6.2&nbsp;&nbsp;&nbsp;&nbsp;The tough-construction</h4>
+<dl><dt>(6.37)</dt><dd>
+<tt>tphrase_set_string( [w('D', '', 'The'), w('N', '', 'breaststroke'), w('BEP', ';_La_', 'is'), w('ADJ', '', 'hard'), w('P-CONN', '', 'for'), w('PRO', '', 'me'), w('TO', '', 'to'), w('VB', ';_Tn_', 'explain'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>The[D] breaststroke[N] is[BEP;_La_] hard[ADJ] for[P-CONN] me[PRO] to[TO] explain[VB;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h3>6.7&nbsp;&nbsp;&nbsp;&nbsp;The catenative adjective construction</h3>
+<dl><dt>(6.39)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'Voyager'), w('BEP', ';_La_', 'is'), w('ADJ', ';_cat_', 'likely'), w('TO', '', 'to'), w('VB', ';_In/pr_', 'survive'), w('D', '', 'a'), w('ADJ', '', 'billion'), w('NS', '', 'years'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Voyager[NPR] is[BEP;_La_] likely[ADJ;_cat_] to[TO] survive[VB;_In/pr_] a[D] billion[ADJ] years[NS] .[PUNC]</tt>
+</dd></dl>
+<h4>6.7.1&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h3>6.8&nbsp;&nbsp;&nbsp;&nbsp;Subordinate conjunction</h3>
+<h4>6.8.1&nbsp;&nbsp;&nbsp;&nbsp;Finite clause subordinate conjunction</h4>
+<dl><dt>(6.44)</dt><dd>
+<tt>tphrase_set_string([w('VB', ';_I_', 'Tread'), w('ADV', '', 'softly'), w('P-CONN', '', 'because'), w('PRO', '', 'you'), w('VBP', ';_Ipr_', 'tread'), w('P-ROLE', '', 'on'), w('PRO', ';_genm_', 'my'), w('NS', '', 'dreams'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Tread[VB;_I_] softly[ADV] because[P-CONN] you[PRO] tread[VBP;_Ipr_] on[P-ROLE] my[PRO;_genm_] dreams[NS] .[PUNC]</tt>
+</dd></dl>
+<h4>6.8.2&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive clause subordinate conjunction</h4>
+<dl><dt>(6.46)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('VBP', ';_Tt_', 'need'), w('TO', '', 'to'), w('VB', ';_Tn_', 'spread'), w('PRO', ';_genm_', 'my'), w('NS', '', 'wings'), w('CONJ', '', 'and'), w('VB', ';_I_', 'fly'), w('PUNC', '', ','), w('P-CONN', '', 'in_order'), w('TO', '', 'to'), w('VB', ';_Ip_', 'come'), w('RP', '', 'back'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] need[VBP;_Tt_] to[TO] spread[VB;_Tn_] my[PRO;_genm_] wings[NS] and[CONJ] fly[VB;_I_] ,[PUNC] in_order[P-CONN] to[TO] come[VB;_Ip_] back[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.47)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'Kim'), w('VBD', ';_Tn_', 'bought'), w('NPR', '', 'War_and_Peace'), w('P-CONN', '', '_*_'), w('TO', '', 'to'), w('VB', ';_Tn.pr_', 'read'), w('P-ROLE', '', 'to'), w('D', '', 'the'), w('NS', '', 'kids'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Kim[NPR] bought[VBD;_Tn_] War_and_Peace[NPR] _*_[P-CONN] to[TO] read[VB;_Tn.pr_] to[P-ROLE] the[D] kids[NS] .[PUNC]</tt>
+</dd></dl>
+<h4>6.8.3&nbsp;&nbsp;&nbsp;&nbsp;Participle clause subordinate conjunction</h4>
+<dl><dt>(6.50)</dt><dd>
+<tt>tphrase_set_string([w('P-CONN', '', 'Without'), w('BAG', ';_cat_VePASS_', 'being'), w('VVN', ';_Tn_', 'told'), w('PUNC', '', ','), w('D', '', 'the'), w('N', '', 'chauffeur'), w('VBD', ';_Ip_', 'drove'), w('RP', '', 'away'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Without[P-CONN] being[BAG;_cat_VePASS_] told[VVN;_Tn_] ,[PUNC] the[D] chauffeur[N] drove[VBD;_Ip_] away[RP] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.51)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'Blunt'), w('ADV', '', 'finally'), w('VBD', ';_I_', 'confessed'), w('P-CONN', '', 'after'), w('HAG', ';_cat_Ve_', 'having'), w('BEN', ';_cat_VePASS_', 'been'), w('VVN', ';_Dn.n_', 'granted'), w('N', '', 'immunity'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Blunt[NPR] finally[ADV] confessed[VBD;_I_] after[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_VePASS_] granted[VVN;_Dn.n_] immunity[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.52)</dt><dd>
+<tt>tphrase_set_string([w('P-CONN', '', 'With'), w('PRO', ';_genm_', 'their'), w('N', '', 'load'), w('P-ROLE', ';_phrase_', 'of'), w('NS', '', 'bombs'), w('VVN', ';_I_', 'gone'), w('PUNC', '', ','), w('D', '', 'the'), w('NS', '', 'planes'), w('VBD', ';_I_', 'moved'), w('ADV', '', 'swiftly'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>With[P-CONN] their[PRO;_genm_] load[N] of[P-ROLE;_phrase_] bombs[NS] gone[VVN;_I_] ,[PUNC] the[D] planes[NS] moved[VBD;_I_] swiftly[ADV] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.53)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'Jones'), w('VBD', ';_I_', 'sighed'), w('P-CONN', '', 'as_if'), w('VVN', ';_Tn_', 'relieved'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>Jones[NPR] sighed[VBD;_I_] as_if[P-CONN] relieved[VVN;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h4>6.8.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<dl><dt>(6.55)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_cat_Vg_', 'was'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] was[BED;_La_] happy[ADJ] _*_[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.56)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_cat_Vg_', 'was'), w('HAG', ';_cat_Ve_', 'having'), w('BEN', ';_cat_Vg_', 'been'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] was[BED;_La_] happy[ADJ] _*_[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<dl><dt>(6.57)</dt><dd>
+<tt>tphrase_set_string([w('NPR', '', 'John'), w('BED', ';_La_', 'was'), w('ADJ', '', 'happy'), w('P-CONN', '', '_*_'), w('HAG', ';_cat_Ve_', 'having'), w('BEN', ';_cat_Vg_', 'been'), w('HAG', ';_Tn_', 'having'), w('D', '', 'some'), w('N', '', 'tea'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>John[NPR] was[BED;_La_] happy[ADJ] _*_[P-CONN] having[HAG;_cat_Ve_] been[BEN;_cat_Vg_] having[HAG;_Tn_] some[D] tea[N] .[PUNC]</tt>
+</dd></dl>
+<h3>6.9&nbsp;&nbsp;&nbsp;&nbsp;Present participle clauses as preposition complements</h3>
+<dl><dt>(6.58)</dt><dd>
+<tt>tphrase_set_string([w('PRO', '', 'I'), w('VBD', ';_I_', 'arrived'), w('P-ROLE', '', 'without'), w('PRO', '', 'her'), w('VAG', ';_Tn_', 'noticing'), w('PRO', '', 'me'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>I[PRO] arrived[VBD;_I_] without[P-ROLE] her[PRO] noticing[VAG;_Tn_] me[PRO] .[PUNC]</tt>
+</dd></dl>
+<h3>6.10&nbsp;&nbsp;&nbsp;&nbsp;Relative clauses</h3>
+<h4>6.10.1&nbsp;&nbsp;&nbsp;&nbsp;Finite relative clauses</h4>
+<dl><dt>(6.64)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'horse'), w('C', '', 'that'), w('VBD', ';_I_', 'jumped')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] horse[N] that[C] jumped[VBD;_I_]</tt>
+</dd></dl>
+<dl><dt>(6.66)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'an'), w('N', '', 'enclosure'), w('D', '', 'a'), w('N', '', 'fence'), w('P-ROLE', ';_phrase_', 'around'), w('RPRO', '', 'which'), w('D', '', 'a'), w('N', '', 'horse'), w('VBD', ';_Ipr_', 'jumped'), w('P-ROLE', '', 'over')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>an[D] enclosure[N] a[D] fence[N] around[P-ROLE;_phrase_] which[RPRO] a[D] horse[N] jumped[VBD;_Ipr_] over[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(6.67)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'fence'), w('P-ROLE', '', 'over'), w('RPRO', '', 'which'), w('D', '', 'a'), w('N', '', 'horse'), w('VBD', ';_Ipr_', 'jumped')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] fence[N] over[P-ROLE] which[RPRO] a[D] horse[N] jumped[VBD;_Ipr_]</tt>
+</dd></dl>
+<dl><dt>(6.69)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'farmer'), w('P-ROLE', '', 'over'), w('RPRO', ';_genm_', 'whose'), w('N', '', 'fence'), w('D', '', 'a'), w('N', '', 'horse'), w('VBD', ';_Ipr_', 'jumped')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] farmer[N] over[P-ROLE] whose[RPRO;_genm_] fence[N] a[D] horse[N] jumped[VBD;_Ipr_]</tt>
+</dd></dl>
+<dl><dt>(6.70)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'fence'), w('D', '', 'a'), w('N', '', 'horse'), w('VBD', ';_Ipr_', 'jumped'), w('P-ROLE', '', 'over')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] fence[N] a[D] horse[N] jumped[VBD;_Ipr_] over[P-ROLE]</tt>
+</dd></dl>
+<dl><dt>(6.71)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'horse'), w('RPRO', '', 'which'), w('BED', ';_cat_VePASS_', 'was'), w('VVN', ';_Tn.pr_', 'jumped'), w('P-ROLE', '', 'over'), w('D', '', 'a'), w('N', '', 'fence')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] horse[N] which[RPRO] was[BED;_cat_VePASS_] jumped[VVN;_Tn.pr_] over[P-ROLE] a[D] fence[N]</tt>
+</dd></dl>
+<h4>6.10.2&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h4>6.10.3&nbsp;&nbsp;&nbsp;&nbsp;To-infinitive relative clauses</h4>
+<dl><dt>(6.78)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'horse'), w('P-CONN', '', 'for'), w('PRO', '', 'me'), w('TO', '', 'to'), w('VB', ';_Tn.pr_', 'jump'), w('P-ROLE', '', 'over'), w('D', '', 'a'), w('N', '', 'fence')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] horse[N] for[P-CONN] me[PRO] to[TO] jump[VB;_Tn.pr_] over[P-ROLE] a[D] fence[N]</tt>
+</dd></dl>
+<dl><dt>(6.79)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'the'), w('N', '', 'person/time/intention'), w('TO', '', 'to'), w('VB', ';_Tn.pr_', 'jump'), w('D', '', 'a'), w('N', '', 'horse'), w('P-ROLE', '', 'over'), w('D', '', 'a'), w('N', '', 'fence')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>the[D] person[N] to[TO] jump[VB;_Tn.pr_] a[D] horse[N] over[P-ROLE] a[D] fence[N]</tt>
+</dd></dl>
+<h4>6.10.4&nbsp;&nbsp;&nbsp;&nbsp;[Question]</h4>
+<h4>6.10.5&nbsp;&nbsp;&nbsp;&nbsp;Present participle reduced relative clauses</h4>
+<dl><dt>(6.82)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'horse'), w('VAG', ';_Ipr_', 'jumping'), w('P-ROLE', '', 'over'), w('D', '', 'a'), w('N', '', 'fence')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] horse[N] jumping[VAG;_Ipr_] over[P-ROLE] a[D] fence[N]</tt>
+</dd></dl>
+<h4>6.10.6&nbsp;&nbsp;&nbsp;&nbsp;Past participle reduced relative clauses</h4>
+<dl><dt>(6.84)</dt><dd>
+<tt>tphrase_set_string([w('D', '', 'a'), w('N', '', 'horse'), w('VVN', ';_Tn.pr_', 'jumped'), w('P-ROLE', '', 'over'), w('D', '', 'a'), w('N', '', 'fence')]), parse(noun_phrase('', nt, 'non_privileged')).</tt>
+<br>
+<br>
+<tt>a[D] horse[N] jumped[VVN;_Tn.pr_] over[P-ROLE] a[D] fence[N]</tt>
+</dd></dl>
+<h3>6.11&nbsp;&nbsp;&nbsp;&nbsp;Cleft constructions</h3>
+<dl><dt>(6.87)</dt><dd>
+<tt>tphrase_set_string([w('PRO', ';_provisional_', 'It'), w('BED', ';_cleft_Vn_', 'was'), w('D', '', 'an'), w('ADJ', '', 'atomic'), w('N', '', 'fission'), w('PRO', '', 'we'), w('VBD', ';_Tn_', 'saw'), w('PUNC', '', '.')]), parse(sentence).</tt>
+<br>
+<br>
+<tt>It[PRO;_provisional_] was[BED;_cleft_Vn_] an[D] atomic[ADJ] fission[N] we[PRO] saw[VBD;_Tn_] .[PUNC]</tt>
+</dd></dl>
+<h2>Chapter 7: Closing remarks</h2>
+</html>
