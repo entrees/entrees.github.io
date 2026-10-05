@@ -33,7 +33,7 @@
 <dl>
 <dt>(i)</dt><dd>browsing the corpus</dd>
 <dt>(ii)</dt><dd>accessing content by providing ID information</dd>
-<dt>(iii)</dt><dd>providing summary collections from, e.g., word class analysis, verb code analysis, and function analysis</dd>
+<dt>(iii)</dt><dd>providing summary collections from, e.g., word class analysis, verb code analysis, and role analysis</dd>
 <dt>(iv)</dt><dd>searching the corpus with the underlying search tools of (a) Grep (Magloire et al. 2021) for search with descriptions of character strings and (b) TGrep2 (Rohde 2005) for search with descriptions of tree nodes and relations between tree nodes</dd>
 <dt>(v)</dt><dd>seeing visualisations of the parse analysis from different perspectives: Tree, Word, and Graph</dd>
 </dl>
@@ -99,15 +99,15 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;The annotation of (<a href="#ex1">1</a>) includes word level analysis which involves deciding on the segmentation of words together with the assignment of a word class and word lemma to each segmented word. Word segmentation is typically straightforward for English, as word spacing and punctuation can usually be followed. However, it is also possible for a sequence of words to behave syntactically in an idiomatic way (e.g., &lsquo;as long as&rsquo;, &lsquo;with regard to&rsquo;, &lsquo;by the way&rsquo;). Such word sequences are analysed as if single words, with each component separated by underscore characters in a single character string.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;From word analysis there is then the projection of groupings either in the creation of phrases or clause layers of structure. To the groupings of structure there is then the assignment of form and function information. This results in tree structure for isolated utterances, typically sentences.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;From word analysis there is then the projection of groupings either in the creation of phrases or clause layers of structure. To the groupings of structure there is then the assignment of form and role information. This results in tree structure for isolated utterances, typically sentences.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;More particular aspects of the annotation scheme demonstrated by (<a href="#ex1">1</a>) are:</p>
 <ul>
 <li>words project word class nodes (<tt>PRO</tt>=pronoun, <tt>VBD</tt>=lexical verb with past tense form, <tt>TO</tt>=the <i>to</i>-infinitive clause marker, <tt>VB</tt>=lexical verb with infinitive form, <tt>PU</tt>=punctuation, <tt>CONJ</tt>=conjunction word, <tt>NS</tt>=plural noun, <tt>ADJ</tt>=adjective)</li>
 <li>clauses are typed (<tt>IP-MAT</tt>=declarative main clause, <tt>IP-INF</tt>=infinitive clause)</li>
 <li>coordination involves <tt>CONJP</tt> projections for conjuncts that are subsequent to the first conjunct and intermediate layers of structure (<tt>IML</tt>=clause intermediate level)</li>
-<li>clause level constituents are function marked (<tt>-SBJ</tt>=subject, <tt>-OB1</tt>=direct object, <tt>-PRD2</tt>=subject predicative)</li>
-<li>genitive case internal to noun phrases is function marked (<tt>-GENV</tt>)</li>
+<li>clause level constituents are role marked (<tt>-SBJ</tt>=subject, <tt>-OB1</tt>=direct object, <tt>-PRD2</tt>=subject predicative)</li>
+<li>genitive case internal to noun phrases is role marked (<tt>-GENV</tt>)</li>
 <li>pronouns and the antecedents of pronouns have resolved witness information (<tt>;{FOMAR}</tt> appearing with <tt>NP-SBJ</tt> and <tt>NP-GENV</tt>)</li>
 <li>verbs have codes (<tt>~It</tt>=selection of clause structure where there is an intransitive verb and a selected <i>to</i>-infinitive clause, <tt>~I</tt>=selection of clause structure where there is an intransitive verb with no selected elements other than the subject, <tt>~La</tt>=selection of clause structure where there is a linking verb with a subject predicative complement that is an adjective phrase)</li>
 </ul>
@@ -125,7 +125,7 @@
 
 <img src="word_class.png" alt="Words marked as relative pronouns (RPRO)" height="420">
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig5">5</a> gives a table with function markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, <tt>COM</tt>=comitative, etc.)&nbsp;and the lemmas of prepositions that realise the particular function, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced function occurs in the data (demonstrated below in section <a href="#sec5.1">5.1</a> with (<a href="#ex2">2</a>)).</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As an example of a line extracted overview which requires information beyond the word class layer of structure, Figure <a href="#fig5">5</a> gives a table with role markings (<tt>ABS</tt>=absolute, <tt>BNF</tt>=benefactive, <tt>CNT</tt>=contingency, <tt>COM</tt>=comitative, etc.)&nbsp;and the lemmas of prepositions that realise the particular role, all with counts, and also serving as clickable links to Grep searches for probing deeper into how the adverb lemma with the particular referenced role occurs in the data (demonstrated below in section <a href="#sec5.1">5.1</a> with (<a href="#ex2">2</a>)).</p>
 
 <p><a name="fig5">Figure 5: Function marking with prepositions (<tt>P-ROLE</tt>)</a></p>
 
@@ -162,7 +162,7 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;As figure <a href="#fig6">6</a> demonstrates, a Grep search is useful for searching through the yield lines of the annotation. Any search that involves a space character will automatically be restricted to finding its matches from only yield lines. When the matched line is a yield line from the corpus data which (as seen with (<a href="#ex1">1</a>) above) consists of a line with opening and closing brackets with the form: &lsquo;<tt>=N(" </tt>&rsquo; and &lsquo;<tt> ")</tt>&rsquo;, these opening and closing brackets are removed from the shown result and the segment of the line that matches the search expression is highlighted.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search pattern (<a href="#ex2">2</a>) will find instances of the lemma <tt>{against}</tt> restricted to having the <tt>P-ROLE</tt> (preposition) word class that occurs in a preposition phrase with <tt>-CNT</tt> (contingency) function.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Search pattern (<a href="#ex2">2</a>) will find instances of the lemma <tt>{against}</tt> restricted to having the <tt>P-ROLE</tt> (preposition) word class that occurs in a preposition phrase with <tt>-CNT</tt> (contingency) role.</p>
 
 <dl>
   <dt>(<a name="ex2">2</a>)</dt><dd></dd>
@@ -171,9 +171,9 @@
 
 <p align="justify">Note that the double quotes character (<tt>&quot;</tt>) cannot be used in grep search patterns made with the interface. In pattern (<a href="#ex2">2</a>), mention of double quote characters is avoided with use of the dot (&lsquo;<tt>.</tt>&rsquo;) character, which matches any single character. Figure <a href="#fig7">7</a> shows the top of the results page from searching with (<a href="#ex2">2</a>), with the number of matched lines now restricted to nineteen lines.</p>
 
-<p><a name="fig7">Figure 7: Grep search for lemma <tt>{against}</tt> occurring as a preposition with contingency function</a></p>
+<p><a name="fig7">Figure 7: Grep search for lemma <tt>{against}</tt> occurring as a preposition with contingency role</a></p>
 
-<img src="against2.png" alt="Grep search for lemma against occurring as a preposition with contingency function" height="250">
+<img src="against2.png" alt="Grep search for lemma against occurring as a preposition with contingency role" height="250">
 
 <p align="justify">If there are no tree yields included in the results and the number of matched lines is less than 100 (as in Figure <a href="#fig7">7</a>), then a &lsquo;See all tree results&rsquo; link is provided for opening in a tree page a display of all results as trees and a &lsquo;See all word results&rsquo; link is provided for opening in a word page a display of all results.</p>
 
@@ -236,7 +236,7 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;These breakdowns give a rough idea about the origins of results. For example, with Figure <a href="#fig10">10</a> we can see that free relatives are most frequent with the christine (spoken BNC) dataset (85.6446 instances per 10,000 words) and that there are hits with almost every file (39 of 40). A more thorough analysis of hit origins could be undertaken by downloading all the search results.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to overall hit and file numbers, there is a further list that collects the labels of all the nodes matched as the master node for a search hit. Each distinct label is followed by a count result for the number of times the label matched as a master node. For Figure <a href="#fig10">10</a>, while all master node matching labels start with <tt>NP</tt> to match the initial node regular expression (<tt>&sol;^NP&#92;b&sol;</tt>) of the search expression, the breakdown is useful for telling us about the different function roles of the matched noun phrases.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In addition to overall hit and file numbers, there is a further list that collects the labels of all the nodes matched as the master node for a search hit. Each distinct label is followed by a count result for the number of times the label matched as a master node. For Figure <a href="#fig10">10</a>, while all master node matching labels start with <tt>NP</tt> to match the initial node regular expression (<tt>&sol;^NP&#92;b&sol;</tt>) of the search expression, the breakdown is useful for telling us about the different roles of the matched noun phrases.</p>
 
 <h4><a name="sec5.2.2">5.2.2</a>&nbsp;&nbsp;&nbsp;Tree search results as graphical trees</h4>
 
@@ -331,7 +331,7 @@
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;In a graph like Figure <a href="#fig17">17</a>, word content from source sentences is always accompanied by (i) content between curly braces (&lsquo;<tt>&lcub;</tt>&rsquo;, &lsquo;<tt>&rcub;</tt>&rsquo;) to say the word class of the word, and (ii) numbering inside round brackets (&lsquo;<tt>(</tt>&rsquo;, &lsquo;<tt>)</tt>&rsquo;) to say the word position within the source sentence(s). Word position numbering involves two numbers separated by an underscore character (&lsquo;<tt>&lowbar;</tt>&rsquo;). The first number says which source sentence the word belongs to. The second number says the position of the word within its source sentence.</p>
 
-<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Square bracket content tells us about how words function, e.g., <tt>[arg0]</tt>=logical subject, <tt>[arg0]</tt>=direct object, <tt>[prd2]</tt>=subject predicative role. It is most typical for square bracket content to be part of the label for a directed arrow that connects graph nodes.</p>
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Square bracket content tells us about the roles of words, e.g., <tt>[arg0]</tt>=logical subject, <tt>[arg0]</tt>=direct object, <tt>[prd2]</tt>=subject predicative role. It is most typical for square bracket content to be part of the label for a directed arrow that connects graph nodes.</p>
 
 <p align="justify">&nbsp;&nbsp;&nbsp;&nbsp;Most words from source sentences have a presence within the corresponding graph, however the contribution of some words has to be seen in terms of consequences for graph nodes and their dependencies. Missing words include words that have a reference making contribution that is captured by node presence within the graph. These words can be:</p>
 <ul>
